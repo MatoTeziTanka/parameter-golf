@@ -2,6 +2,8 @@
 
 **Built with [PROTEUS](https://lightspeedup.com) by LightSpeedUp**
 
+> **Note:** This submission exceeds the 16MB artifact cap (16,150,005 bytes). We caught this in post-run audit. Fix in progress — shrinking MLP hidden dimension to fit FP16 embedding within budget. Updated score incoming.
+
 ## Approach
 
 Four published techniques stacked on the baseline:
