@@ -2,7 +2,7 @@
 
 **Built with [PROTEUS](https://lightspeedup.com) by LightSpeedUp**
 
-> **Note:** This submission exceeds the 16MB artifact cap (16,150,005 bytes). We caught this in post-run audit. Fix in progress — shrinking MLP hidden dimension to fit FP16 embedding within budget. Updated score incoming.
+> **Update:** Earlier version exceeded 16MB cap. Fixed by shrinking MLP hidden from 1024 to 992 to fit FP16 embedding within budget. Score and artifact below are from the valid run.
 
 ## Approach
 
@@ -40,13 +40,13 @@ Architecture unchanged from baseline:
 
 ## Key Metrics
 
-- Timed training stopped at `12977/20000` steps due to wallclock cap
-- Pre-quant eval at stop: `val_loss:2.0632`, `val_bpb:1.2219`
-- **Post-quant sliding window eval: `val_loss:2.0074`, `val_bpb:1.1889`**
-- Exact printed metric: `final_int8_zlib_roundtrip_exact val_bpb:1.18888355`
-- Train time: `600057ms` (`step_avg:46.24ms`)
-- Eval time: `73032ms` (sliding window, stride=64)
-- Peak memory: `10249 MiB allocated`
+- Timed training stopped at `13366/20000` steps due to wallclock cap
+- Pre-quant eval at stop: `val_loss:2.0643`, `val_bpb:1.2226`
+- **Post-quant sliding window eval: `val_loss:2.0085`, `val_bpb:1.1896`**
+- Exact printed metric: `final_int8_zlib_roundtrip_exact val_bpb:1.18956858`
+- Train time: `600026ms` (`step_avg:44.89ms`)
+- Eval time: `72611ms` (sliding window, stride=64)
+- Artifact size: `15,878,735 bytes` (99.2% of 16MB cap)
 
 ### Training volume
 
