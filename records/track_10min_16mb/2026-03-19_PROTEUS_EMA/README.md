@@ -2,8 +2,6 @@
 
 **Built with [PROTEUS](https://lightspeedup.com) by LightSpeedUp**
 
-> **Update:** Earlier version exceeded 16MB cap. Fixed by shrinking MLP hidden from 1024 to 992 to fit FP16 embedding within budget. Score and artifact below are from the valid run.
-
 ## Approach
 
 Four published techniques stacked on the baseline:
