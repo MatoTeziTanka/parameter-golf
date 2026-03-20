@@ -13,6 +13,18 @@ Four published techniques stacked on the baseline:
 
 Plus hyperparameter tuning: `WARMDOWN_ITERS=3600`, `MATRIX_LR=0.06`, `SCALAR_LR=0.06`, `TIED_EMBED_LR=0.04`.
 
+## What We Learned (and What's Next)
+
+This submission was our v1 — built in a single session, exploring from scratch. Along the way we tested and documented several negative results that may be useful to others:
+
+**INT4 post-training quantization fails catastrophically.** Per-row, per-group (gs=64), and QAT with STE all produce ~3.7 BPB roundtrip vs ~1.2 training BPB. Root cause: INT4 has 15 quantization levels, and error compounds through transformer layers — cosine similarity between original and quantized hidden states drops to 0.90 at 18 layers. INT8 stays above 0.995. Production INT4 (GPTQ/AWQ) uses Hessian-guided error compensation which is fundamentally different from round-to-nearest.
+
+**Shared-weight depth recurrence (LoopFormer) loses to more training tokens at this budget.** We tested 9 layers × 2 passes (18 effective layers) vs 9 layers × 1 pass on 8×H100 for 600s. 1-pass wins: 1.2265 BPB vs 1.2450 BPB. Fewer tokens per step outweighs the depth benefit at 17M params.
+
+**EMA reduces INT8 quantization loss** from 0.0072 BPB (baseline) to 0.0048 BPB. But the ~2ms/step overhead from the EMA update loop costs ~600 training steps, partially offsetting the gain.
+
+**Next targets:** INT6 quantization, zstd-22 compression, 3× MLP expansion, SmearGate, and paid prefix strategies as documented in [Issue #140](https://github.com/openai/parameter-golf/issues/140).
+
 ## Configuration
 
 ```bash
