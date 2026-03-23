@@ -1,6 +1,6 @@
 # PROTEUS v8 — Parameter Golf Submission
 
-**Built with [PROTEUS](https://lightspeedup.com) by LightSpeedUp**
+**Built with [PROTEUS](https://lightspeedup.com) by Light Speed Up**
 
 ## Result
 
@@ -90,4 +90,4 @@ RunPod 8×H100 SXM, PyTorch 2.8.0+cu128.
 
 ## Credits
 
-PROTEUS by LightSpeedUp. TTT concept inspired by PR #77 (@samacqua). Techniques drawn from the Parameter Golf community: SmearGate/BigramHash (@unnir), Muon optimizer, SWA, OrthoInit.
+PROTEUS by Light Speed Up. TTT concept inspired by PR #77 (@samacqua). Techniques drawn from the Parameter Golf community: SmearGate/BigramHash (@unnir), Muon optimizer, SWA, OrthoInit.
