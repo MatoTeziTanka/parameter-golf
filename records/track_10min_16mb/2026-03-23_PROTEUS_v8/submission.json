@@ -1,0 +1,20 @@
+{
+  "author": "Mato (LightSpeedUp)",
+  "github_id": "MatoTeziTanka",
+  "name": "PROTEUS v8",
+  "blurb": "11L INT6 uniform, depth-scaled residual, backward-looking LoRA TTT (5 epochs, cosine LR, score-every-epoch). Built with PROTEUS by LightSpeedUp — lightspeedup.com",
+  "date": "2026-03-23T19:00:00Z",
+  "val_loss": 1.3266,
+  "val_bpb": 0.7853,
+  "bytes_total": 15423398,
+  "bytes_code": 70991,
+  "seeds": {
+    "42":        {"val_bpb": 0.7852, "prune_pct": 3, "artifact_mb": 15.6},
+    "1337":      {"val_bpb": 0.7846, "prune_pct": 3, "artifact_mb": 15.8},
+    "2024_3pct": {"val_bpb": 0.7829, "prune_pct": 3, "artifact_mb": 16.2, "note": "over 16MB limit — rerun below"},
+    "2024_5pct": {"val_bpb": 0.7861, "prune_pct": 5, "artifact_mb": 15.4}
+  },
+  "submittable_seeds": ["42", "1337", "2024_5pct"],
+  "mean_val_bpb": 0.7853,
+  "std_val_bpb": 0.0008
+}
