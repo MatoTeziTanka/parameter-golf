@@ -47,11 +47,11 @@ th { text-align: left; padding: 0.6rem; color: var(--text-dim); border-bottom: 2
 td { padding: 0.6rem; border-bottom: 1px solid var(--border); }
 tr:hover { background: rgba(88,166,255,0.04); }
 
-.checklist { list-style: none; }
+.checklist { list-style: none; max-width: 700px; margin: 0 auto; }
 .checklist li { padding: 0.4rem 0; padding-left: 1.5rem; position: relative; }
 .checklist li::before { content: ''; position: absolute; left: 0; top: 0.65rem; width: 14px; height: 14px; border: 2px solid var(--border); border-radius: 3px; }
 
-.technique-list { list-style: none; }
+.technique-list { list-style: none; max-width: 700px; margin: 0 auto; }
 .technique-list li { padding: 0.3rem 0; padding-left: 1.5rem; position: relative; }
 .technique-list .legal::before { content: '\2713'; position: absolute; left: 0; color: var(--green); font-weight: bold; }
 .technique-list .banned::before { content: '\2717'; position: absolute; left: 0; color: var(--red); font-weight: bold; }
@@ -66,7 +66,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 .stat-box .value { font-size: 1.8rem; font-weight: 700; color: var(--accent); }
 .stat-box .label { color: var(--text-dim); font-size: 0.8rem; }
 
-.guide-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 1rem 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.guide-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 1rem auto; max-width: 700px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 .guide-compare .bad { background: rgba(248,81,73,0.08); padding: 1rem; }
 .guide-compare .good { background: rgba(63,185,80,0.08); padding: 1rem; }
 .guide-compare h4 { margin-bottom: 0.5rem; }
@@ -106,7 +106,39 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <a href="#resources">Resources</a>
 </nav>
 
+<div style="background:var(--surface);border-bottom:1px solid var(--border);padding:0.6rem 1rem;text-align:center;font-size:0.8rem;color:var(--text-dim);">
+  <strong style="color:var(--accent);">v0.1.0</strong> &middot; Last updated: March 28, 2026 &middot; Phase 1 (static) &middot; <a href="#changelog">Changelog</a> &middot; <a href="https://github.com/MatoTeziTanka/parameter-golf/tree/gh-pages">Source</a>
+</div>
+
 <div class="container">
+
+<!-- CHANGELOG -->
+<section id="changelog">
+<h2>Changelog &amp; Roadmap</h2>
+<div class="card">
+<h3 style="margin-top:0;color:var(--green);">v0.1.0 &mdash; March 28, 2026 (Phase 1: Static Foundation)</h3>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+  <li>Submission checklist (legal / banned / grey area)</li>
+  <li>Rule change history (March 22, 24, 27 rulings)</li>
+  <li>Dual leaderboard (neural-only + archive) &mdash; seeded data</li>
+  <li>Funding transparency tracker (7 entries, all PUBLIC_STATEMENT)</li>
+  <li>Blocked on compute board</li>
+  <li>Compute survival guide (serverless &gt; pods)</li>
+  <li>Contribute section with 6 issue templates</li>
+</ul>
+</div>
+<div class="card" style="border-color:var(--border);opacity:0.7;">
+<h3 style="margin-top:0;color:var(--text-dim);">Roadmap</h3>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:none;padding-left:0;">
+  <li>&#9744; <strong>v0.2.0</strong> &mdash; Auto-updating leaderboard (GitHub GraphQL API, 30-min cron)</li>
+  <li>&#9744; <strong>v0.3.0</strong> &mdash; Compliance engine (auto-flag banned techniques)</li>
+  <li>&#9744; <strong>v0.4.0</strong> &mdash; Technique map + BPB timeline + collaboration finder</li>
+  <li>&#9744; <strong>v0.5.0</strong> &mdash; Community input ingestion (auto-process Issues)</li>
+  <li>&#9744; <strong>v0.6.0</strong> &mdash; Cited research tracker (papers &rarr; PRs &rarr; BPB)</li>
+  <li>&#9744; <strong>v1.0.0</strong> &mdash; Full automation + community launch</li>
+</ul>
+</div>
+</section>
 
 <!-- SECTION 1: CHECKLIST -->
 <section id="checklist">
