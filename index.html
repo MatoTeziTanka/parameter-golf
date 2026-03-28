@@ -108,7 +108,23 @@ tr:hover { background: rgba(88,166,255,0.04); }
 
 <div style="background:var(--surface);border-bottom:1px solid var(--border);padding:0.6rem 1rem;text-align:center;font-size:0.8rem;color:var(--text-dim);">
   <strong style="color:var(--accent);">v0.1.0</strong> &middot; Last updated: March 28, 2026 &middot; Phase 1 (static) &middot; <a href="#changelog">Changelog</a> &middot; <a href="https://github.com/MatoTeziTanka/parameter-golf/tree/gh-pages">Source</a>
+  <span style="margin-left:1rem;">&#128065; <span id="counter-total">-</span> visitors &middot; <span style="color:var(--green);">&#9679;</span> <span id="counter-active">-</span> here now</span>
 </div>
+<script>
+(function(){
+  var API = 'https://styx.lightspeedup.com/api/agora/visit';
+  fetch(API).then(function(r){return r.json()}).then(function(d){
+    document.getElementById('counter-total').textContent = d.total.toLocaleString();
+    document.getElementById('counter-active').textContent = d.active;
+  }).catch(function(){});
+  setInterval(function(){
+    fetch(API.replace('/visit','/stats')).then(function(r){return r.json()}).then(function(d){
+      document.getElementById('counter-total').textContent = d.total.toLocaleString();
+      document.getElementById('counter-active').textContent = d.active;
+    }).catch(function(){});
+  }, 30000);
+})();
+</script>
 
 <div class="container">
 
