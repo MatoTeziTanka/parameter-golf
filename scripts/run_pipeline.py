@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """
-run_pipeline.py — Orchestrator for AGORA Phase 2 leaderboard pipeline.
+run_pipeline.py — Orchestrator for AGORA Phase 3 site pipeline.
 
 Steps:
   1. Run fetch_prs.py to update data/pr_cache.json
   2. Run classify.py to classify all PRs
-  3. Read index.html
-  4. Replace Neural-Only leaderboard tbody with ALIVE PRs sorted by BPB asc
-  5. Replace All Submissions archive tbody with ALL PRs sorted by BPB asc
-  6. Update the version bar timestamp
-  7. Write updated index.html
+  3. Run techniques.py to build data/techniques.json
+  4. Run timeline.py to generate inline SVG
+  5. Read index.html
+  6. Replace leaderboard / techniques / timeline sentinel sections
+  7. Update the version bar timestamp
+  8. Write updated index.html
 
 The HTML replacement uses sentinel comment blocks that are injected on first run
 and stable on subsequent runs:
@@ -33,6 +34,7 @@ import os
 import re
 import subprocess
 import sys
+from html import escape
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -43,6 +45,7 @@ from typing import Any
 
 REPO_ROOT = Path(__file__).parent.parent
 CACHE_PATH = REPO_ROOT / "data" / "pr_cache.json"
+TECHNIQUES_PATH = REPO_ROOT / "data" / "techniques.json"
 INDEX_HTML_PATH = REPO_ROOT / "index.html"
 SCRIPTS_DIR = Path(__file__).parent
 
@@ -50,6 +53,10 @@ NEURAL_START = "<!-- AGORA:LEADERBOARD_NEURAL_START -->"
 NEURAL_END = "<!-- AGORA:LEADERBOARD_NEURAL_END -->"
 ARCHIVE_START = "<!-- AGORA:LEADERBOARD_ARCHIVE_START -->"
 ARCHIVE_END = "<!-- AGORA:LEADERBOARD_ARCHIVE_END -->"
+TECHNIQUES_START = "<!-- AGORA:TECHNIQUES_START -->"
+TECHNIQUES_END = "<!-- AGORA:TECHNIQUES_END -->"
+TIMELINE_START = "<!-- AGORA:TIMELINE_START -->"
+TIMELINE_END = "<!-- AGORA:TIMELINE_END -->"
 
 PR_BASE_URL = "https://github.com/openai/parameter-golf/pull"
 
@@ -58,19 +65,25 @@ PR_BASE_URL = "https://github.com/openai/parameter-golf/pull"
 # Step 1 & 2: Run sub-scripts
 # ---------------------------------------------------------------------------
 
-def _run_script(script_name: str) -> bool:
-    """Run a script in the scripts/ directory. Returns True if success."""
+def _run_script(script_name: str, *args: str, capture_stdout: bool = False) -> bool | str:
+    """Run a script in the scripts/ directory."""
     script_path = SCRIPTS_DIR / script_name
     env = dict(os.environ)
-    print(f"[PIPELINE] Running {script_name}...", flush=True)
+    cmd = [sys.executable, str(script_path), *args]
+    print(f"[PIPELINE] Running {' '.join([script_name, *args]).strip()}...", flush=True)
     result = subprocess.run(
-        [sys.executable, str(script_path)],
+        cmd,
         env=env,
-        capture_output=False,  # let stdout/stderr flow through
+        capture_output=capture_stdout,
+        text=capture_stdout,
     )
+    if capture_stdout and result.stderr:
+        sys.stderr.write(result.stderr)
     if result.returncode != 0:
         print(f"[PIPELINE] {script_name} exited with code {result.returncode}", flush=True)
         return False
+    if capture_stdout:
+        return result.stdout
     return True
 
 
@@ -119,6 +132,140 @@ def _status_badge(status: str, seeds: int | None) -> str:
 def _pr_link(number: int) -> str:
     """Render a PR number as an HTML link."""
     return f'<a href="{PR_BASE_URL}/{number}">#{number}</a>'
+
+
+def _technique_badge(kind: str, count: int) -> str:
+    if kind == "banned":
+        return '<span class="badge badge-banned">BANNED</span>'
+    if count == 0:
+        return '<span class="badge badge-grey">UNTRIED</span>'
+    return '<span class="badge badge-legal">LEGAL</span>'
+
+
+def _render_technique_card(technique: dict[str, Any]) -> str:
+    best_alive = technique.get("best_alive")
+    best_html = "No ALIVE run yet"
+    if best_alive:
+        best_html = f"{_pr_link(int(best_alive['number']))} &middot; {_format_bpb(best_alive.get('bpb'))}"
+
+    modifier = ""
+    if technique.get("kind") == "banned":
+        modifier += " technique-card-banned"
+    if technique.get("count", 0) == 0:
+        modifier += " technique-card-empty"
+
+    return (
+        f'<article class="technique-card{modifier}">'
+        f'<div class="technique-card-head">'
+        f'<h3>{escape(technique["name"])}</h3>'
+        f'{_technique_badge(technique.get("kind", "legal"), int(technique.get("count", 0)))}'
+        f'</div>'
+        f'<p class="technique-card-sub">{technique.get("count", 0)} PRs &middot; {technique.get("author_count", 0)} people</p>'
+        f'<div class="technique-metrics">'
+        f'<div><span>Best ALIVE</span><strong>{best_html}</strong></div>'
+        f'<div><span>Alive / Dead</span><strong>{technique.get("alive_count", 0)} / {technique.get("dead_count", 0)}</strong></div>'
+        f'</div>'
+        f'<p class="technique-card-foot">AT-RISK {technique.get("at_risk_count", 0)} &middot; INCOMPLETE {technique.get("incomplete_count", 0)}</p>'
+        f'</article>'
+    )
+
+
+def _render_collaboration_line(technique: dict[str, Any]) -> str:
+    people: list[dict[str, Any]] = technique.get("people", [])
+    visible_people = people[:6]
+    chunks: list[str] = []
+    for person in visible_people:
+        pr_links = ", ".join(
+            _pr_link(int(pr["number"]))
+            for pr in person.get("prs", [])[:4]
+            if pr.get("number") is not None
+        )
+        if len(person.get("prs", [])) > 4:
+            pr_links += f" +{len(person['prs']) - 4}"
+        chunks.append(f"@{escape(person['author'])} ({pr_links})")
+
+    overflow = technique.get("author_count", 0) - len(visible_people)
+    overflow_html = f' <span class="technique-overflow">+{overflow} more people</span>' if overflow > 0 else ""
+    return (
+        f'<div class="collab-item">'
+        f'<div class="collab-title">'
+        f'<strong>{technique.get("author_count", 0)} people working on {escape(technique["name"])}</strong>'
+        f'<span class="badge badge-grey">{technique.get("count", 0)} PRs</span>'
+        f'</div>'
+        f'<div class="collab-links">{"; ".join(chunks)}{overflow_html}</div>'
+        f'</div>'
+    )
+
+
+def _render_techniques_section(techniques_payload: dict[str, Any]) -> str:
+    techniques = techniques_payload.get("techniques", [])
+    collaboration = [
+        item for item in techniques_payload.get("collaboration", []) if item.get("author_count", 0) >= 2
+    ][:10]
+    combinations = techniques_payload.get("untried_combinations", [])[:8]
+    untouched = techniques_payload.get("summary", {}).get("untouched_techniques", [])
+
+    intro_bits = [
+        f"Scanned {techniques_payload.get('summary', {}).get('pr_count', 0)} classified PRs.",
+        f"{len(techniques) - len(untouched)}/{len(techniques)} named techniques have at least one hit.",
+    ]
+    if untouched:
+        intro_bits.append("Untouched: " + ", ".join(escape(name) for name in untouched) + ".")
+
+    cards_html = "\n".join(_render_technique_card(item) for item in techniques)
+
+    if collaboration:
+        collaboration_html = "\n".join(_render_collaboration_line(item) for item in collaboration)
+    else:
+        collaboration_html = '<p style="color:var(--text-dim);">No multi-person clusters detected yet.</p>'
+
+    if combinations:
+        combinations_html = "".join(
+            (
+                '<div class="combo-chip">'
+                f"<strong>{escape(item['left'])} &times; {escape(item['right'])}</strong>"
+                f'<span>{item["left_count"]} + {item["right_count"]} runs, zero combined PRs</span>'
+                '</div>'
+            )
+            for item in combinations
+        )
+    else:
+        combinations_html = '<p style="color:var(--text-dim);">No clean untried combinations surfaced yet.</p>'
+
+    return (
+        f'<p style="color:var(--text-dim);margin-bottom:1rem;">{" ".join(intro_bits)}</p>'
+        '<div class="card">'
+        '<h3 style="margin-top:0;">Technique Map</h3>'
+        f'<div class="technique-grid">{cards_html}</div>'
+        '</div>'
+        '<div class="card">'
+        '<h3 style="margin-top:0;">Collaboration Finder</h3>'
+        '<p style="color:var(--text-dim);margin-bottom:1rem;">Top clusters where multiple researchers are circling the same idea.</p>'
+        f'<div class="collab-list">{collaboration_html}</div>'
+        '</div>'
+        '<div class="card">'
+        '<h3 style="margin-top:0;">Untried Combinations</h3>'
+        '<p style="color:var(--text-dim);margin-bottom:1rem;">Popular pairings with zero combined PRs so far.</p>'
+        f'<div class="combo-grid">{combinations_html}</div>'
+        '</div>'
+    )
+
+
+def _render_timeline_section(svg: str, prs: list[dict[str, Any]]) -> str:
+    tracked = sum(
+        1
+        for pr in prs
+        if pr.get("bpb") not in (None, 0, 0.0) and pr.get("status") in {"ALIVE", "AT_RISK", "DEAD"}
+    )
+    return (
+        '<p style="color:var(--text-dim);margin-bottom:1rem;">'
+        f'Cumulative SOTA curve built from {tracked} classified PRs with a positive BPB and final status '
+        'ALIVE, AT-RISK, or DEAD. Neural-only strips cache-heavy rulings so the March 27 cliff stays visible.'
+        '</p>'
+        '<div class="card chart-card">'
+        f'{svg}'
+        '</div>'
+    )
 
 
 def _dead_reason(pr: dict[str, Any]) -> str:
@@ -235,17 +382,19 @@ def _build_archive_rows(prs: list[dict[str, Any]]) -> str:
 # ---------------------------------------------------------------------------
 
 def _inject_sentinels(html: str) -> str:
-    """Add AGORA sentinel comments around the two tbody blocks on first run.
-
-    Approach:
-      - Find the tbody immediately following the 'Neural-Only' h3
-      - Find the tbody immediately following the 'All Submissions' h3
-      - Wrap each tbody content in sentinel comments
-
-    If sentinels already exist, return html unchanged.
-    """
-    if NEURAL_START in html and ARCHIVE_START in html:
-        return html  # already injected, nothing to do
+    """Add AGORA sentinel comments to leaderboard, techniques, and timeline blocks."""
+    markers = (
+        NEURAL_START,
+        NEURAL_END,
+        ARCHIVE_START,
+        ARCHIVE_END,
+        TECHNIQUES_START,
+        TECHNIQUES_END,
+        TIMELINE_START,
+        TIMELINE_END,
+    )
+    if all(marker in html for marker in markers):
+        return html
 
     # State machine: find first tbody after each header
     lines = html.split("\n")
@@ -300,6 +449,32 @@ def _inject_sentinels(html: str) -> str:
 
     result = "\n".join(new_lines)
 
+    if TECHNIQUES_START not in result:
+        result = re.sub(
+            r'(<section id="techniques">\s*<h2>.*?</h2>\s*)(.*?)(\s*</section>)',
+            lambda match: (
+                f"{match.group(1)}{TECHNIQUES_START}\n"
+                f"{(match.group(2).strip() or '<p style=\"color:var(--text-dim);\">Technique map pending.</p>')}\n"
+                f"{TECHNIQUES_END}{match.group(3)}"
+            ),
+            result,
+            count=1,
+            flags=re.DOTALL,
+        )
+
+    if TIMELINE_START not in result:
+        result = re.sub(
+            r'(<section id="timeline">\s*<h2>.*?</h2>\s*)(.*?)(\s*</section>)',
+            lambda match: (
+                f"{match.group(1)}{TIMELINE_START}\n"
+                f"{(match.group(2).strip() or '<p style=\"color:var(--text-dim);\">Timeline pending.</p>')}\n"
+                f"{TIMELINE_END}{match.group(3)}"
+            ),
+            result,
+            count=1,
+            flags=re.DOTALL,
+        )
+
     if NEURAL_START not in result:
         raise RuntimeError(
             "Failed to inject Neural-Only sentinel — header or tbody not found. "
@@ -310,6 +485,10 @@ def _inject_sentinels(html: str) -> str:
             "Failed to inject Archive sentinel — header or tbody not found. "
             "Check that 'All Submissions' h3 and its <tbody> exist in index.html."
         )
+    if TECHNIQUES_START not in result or TECHNIQUES_END not in result:
+        raise RuntimeError("Failed to inject Techniques sentinels — section not found.")
+    if TIMELINE_START not in result or TIMELINE_END not in result:
+        raise RuntimeError("Failed to inject Timeline sentinels — section not found.")
 
     return result
 
@@ -371,12 +550,26 @@ def main() -> None:
         print("[FATAL] classify.py failed. Cannot build leaderboard.", flush=True)
         sys.exit(1)
 
+    techniques_ok = _run_script("techniques.py")
+    if not techniques_ok:
+        print("[FATAL] techniques.py failed. Cannot build technique map.", flush=True)
+        sys.exit(1)
+
+    timeline_svg = _run_script("timeline.py", capture_stdout=True)
+    if not timeline_svg:
+        print("[FATAL] timeline.py failed. Cannot build BPB timeline.", flush=True)
+        sys.exit(1)
+
     # --- Step 3: Load classified cache ---
     print(f"[PIPELINE] Loading classified cache from {CACHE_PATH}", flush=True)
     with CACHE_PATH.open("r", encoding="utf-8") as f:
         cache: dict[str, Any] = json.load(f)
     prs: list[dict[str, Any]] = cache.get("prs", [])
     print(f"[PIPELINE] {len(prs)} classified PRs loaded", flush=True)
+
+    print(f"[PIPELINE] Loading technique payload from {TECHNIQUES_PATH}", flush=True)
+    with TECHNIQUES_PATH.open("r", encoding="utf-8") as f:
+        techniques_payload: dict[str, Any] = json.load(f)
 
     # Stats summary
     status_counts: dict[str, int] = {}
@@ -407,9 +600,17 @@ def main() -> None:
     print("[PIPELINE] Building All Submissions archive rows...", flush=True)
     archive_rows = _build_archive_rows(prs)
 
+    print("[PIPELINE] Building technique map HTML...", flush=True)
+    techniques_html = _render_techniques_section(techniques_payload)
+
+    print("[PIPELINE] Building timeline HTML...", flush=True)
+    timeline_html = _render_timeline_section(str(timeline_svg).strip(), prs)
+
     try:
         html = _replace_between_sentinels(html, NEURAL_START, NEURAL_END, neural_rows)
         html = _replace_between_sentinels(html, ARCHIVE_START, ARCHIVE_END, archive_rows)
+        html = _replace_between_sentinels(html, TECHNIQUES_START, TECHNIQUES_END, techniques_html)
+        html = _replace_between_sentinels(html, TIMELINE_START, TIMELINE_END, timeline_html)
     except RuntimeError as exc:
         print(f"[FATAL] Table replacement failed: {exc}", flush=True)
         sys.exit(1)
