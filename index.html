@@ -220,16 +220,16 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <table>
 <thead><tr><th>User</th><th>Grant</th><th>Self-Funded</th><th>Platforms</th><th>Proof</th><th>Best PR</th></tr></thead>
 <tbody>
-<tr><td><a href="https://github.com/greqone">@greqone</a></td><td>$25</td><td>~$800</td><td>Modal, RunPod</td><td>SELF_REPORTED</td><td>&mdash;</td></tr>
-<tr><td><a href="https://github.com/CiprianFlorin-Ifrim">@CiprianFlorin-Ifrim</a></td><td>?</td><td>~$800</td><td>RunPod</td><td>SELF_REPORTED</td><td>#920</td></tr>
+<tr><td><a href="https://github.com/greqone">@greqone</a></td><td>$25</td><td>~$800</td><td>Modal, RunPod</td><td>PUBLIC_STATEMENT</td><td>&mdash;</td></tr>
+<tr><td><a href="https://github.com/CiprianFlorin-Ifrim">@CiprianFlorin-Ifrim</a></td><td>?</td><td>~$800</td><td>RunPod</td><td>PUBLIC_STATEMENT</td><td>#920</td></tr>
 <tr><td><a href="https://github.com/MatoTeziTanka">@MatoTeziTanka</a></td><td>$25</td><td>pending proof</td><td>RunPod, Modal, Vast.ai</td><td>PENDING</td><td>#769 (closed)</td></tr>
-<tr><td><a href="https://github.com/NewyorkDev">@NewyorkDev</a></td><td>$25</td><td>~$250</td><td>RunPod, Vast.ai</td><td>SELF_REPORTED</td><td>#1006</td></tr>
-<tr><td><a href="https://github.com/ibarrajo">@ibarrajo</a></td><td>$525</td><td>~$130</td><td>RunPod</td><td>SELF_REPORTED</td><td>#1004</td></tr>
-<tr><td><a href="https://github.com/iverbovoy">@iverbovoy</a></td><td>$525</td><td>?</td><td>RunPod</td><td>SELF_REPORTED</td><td>#895</td></tr>
-<tr><td><a href="https://github.com/himanshudongre">@himanshudongre</a></td><td>$0</td><td>~$47</td><td>RunPod</td><td>SELF_REPORTED</td><td>#1013</td></tr>
+<tr><td><a href="https://github.com/NewyorkDev">@NewyorkDev</a></td><td>$25</td><td>~$250</td><td>RunPod, Vast.ai</td><td>PUBLIC_STATEMENT</td><td>#1006</td></tr>
+<tr><td><a href="https://github.com/ibarrajo">@ibarrajo</a></td><td>$525</td><td>~$130</td><td>RunPod</td><td>PUBLIC_STATEMENT</td><td>#1004</td></tr>
+<tr><td><a href="https://github.com/iverbovoy">@iverbovoy</a></td><td>$525</td><td>?</td><td>RunPod</td><td>PUBLIC_STATEMENT</td><td>#895</td></tr>
+<tr><td><a href="https://github.com/himanshudongre">@himanshudongre</a></td><td>$0</td><td>~$47</td><td>RunPod</td><td>PUBLIC_STATEMENT</td><td>#1013</td></tr>
 </tbody>
 </table>
-<p style="color:var(--text-dim);font-size:0.8rem;margin-top:0.5rem;"><a href="https://github.com/MatoTeziTanka/parameter-golf/issues/new?template=funding-report.yml">Report your spending</a> &mdash; opt-in only. Sources linked to public comments.</p>
+<p style="color:var(--text-dim);font-size:0.8rem;margin-top:0.5rem;"><a href="https://github.com/MatoTeziTanka/parameter-golf/issues/new?template=funding-report.yml">Report your spending</a> &mdash; opt-in only. All entries below are PUBLIC_STATEMENT (stated in public GitHub comments, linked). Nobody is VERIFIED yet &mdash; submit a billing screenshot to upgrade your proof level.</p>
 </section>
 
 <!-- SECTION 4: BLOCKED ON COMPUTE -->
@@ -290,15 +290,26 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </div>
 
 <div class="card">
-<h3>Google Colab (free/Pro, single H100 PCIe)</h3>
-<p>Batch size fix: <code>TRAIN_BATCH_TOKENS=65536</code>. Save to Drive. Resume on disconnect. ~6-7 hours for 20K steps.</p>
-<p style="color:var(--text-dim);font-size:0.85rem;">Colab H100 is PCIe, not SXM &mdash; fine for validation, but final 3-seed runs should use SXM hardware.</p>
+<h3>Google Colab (Free / Pro $9.99/mo / Pro+ $49.99/mo)</h3>
+<p>GPUs available: T4 (free), A100 40/80GB, H100, RTX PRO 6000 Blackwell ~96GB (varies by tier and availability). Student Pro access available through educational institutions.</p>
+<p>Batch size fix for single GPU: <code>TRAIN_BATCH_TOKENS=65536</code>. Save checkpoints to Drive. Resume on disconnect. ~6-7 hours for 20K steps on single H100.</p>
+<p style="color:var(--text-dim);font-size:0.85rem;">Note: Whether Colab's H100 is SXM or PCIe variant is unverified. Validate architecture on Colab, verify final submission timing on known SXM hardware.</p>
 </div>
 
 <div class="card">
-<h3>CPU Smoke Test (FREE &mdash; do this FIRST)</h3>
-<p><code>ITERATIONS=10 TRAIN_BATCH_TOKENS=4096 TRAIN_SEQ_LEN=256 python train_gpt.py</code></p>
-<p>Catches bugs in 30 seconds. If it doesn't work on CPU, it won't work on GPU. Save your money.</p>
+<h3>CPU Smoke Tests (FREE &mdash; do these FIRST)</h3>
+<p>We've run 5+ smoke tests during competition development. Each catches different failure modes:</p>
+<table style="margin:0.5rem 0;">
+<thead><tr><th>Test</th><th>What it catches</th><th>Command</th></tr></thead>
+<tbody>
+<tr><td>Quick forward pass</td><td>Import errors, shape mismatches, config bugs</td><td><code>ITERATIONS=10 TRAIN_BATCH_TOKENS=4096 TRAIN_SEQ_LEN=256 python train_gpt.py</code></td></tr>
+<tr><td>Artifact size check</td><td>Model too big for 16MB cap</td><td><code>python cpu_test.py</code> (validates INT6 roundtrip + size)</td></tr>
+<tr><td>Quantization roundtrip</td><td>Quantization breaks model quality</td><td><code>python cpu_test.py --matrix</code></td></tr>
+<tr><td>Eval pipeline</td><td>Sliding window + BPB computation errors</td><td><code>ITERATIONS=10 VAL_LOSS_EVERY=5 python train_gpt.py</code></td></tr>
+<tr><td>Full mini-run</td><td>Everything end-to-end on CPU</td><td><code>ITERATIONS=50 TRAIN_BATCH_TOKENS=4096 TRAIN_SEQ_LEN=256 VAL_LOSS_EVERY=25 python train_gpt.py</code></td></tr>
+</tbody>
+</table>
+<p style="color:var(--text-dim);font-size:0.85rem;">If it doesn't work on CPU, it won't work on GPU. Save your money. Our <code>cpu_test.py</code> is in the <a href="https://github.com/MatoTeziTanka/parameter-golf-private">community toolkit</a>.</p>
 </div>
 
 <div class="card">
@@ -307,10 +318,10 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <thead><tr><th>GPU</th><th>NVLink</th><th>DDP Speed</th><th>Where</th></tr></thead>
 <tbody>
 <tr><td>H100 SXM</td><td>Yes (900 GB/s)</td><td>Full speed</td><td>RunPod, Vast.ai</td></tr>
-<tr><td>H100 PCIe</td><td>No</td><td>~30% slower DDP</td><td>Colab, some cloud</td></tr>
+<tr><td>H100 PCIe</td><td>No</td><td>~30% slower DDP</td><td>Some cloud providers</td></tr>
 </tbody>
 </table>
-<p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.5rem;">Competition requires 8&times;H100 SXM. Validate on Colab, submit on SXM.</p>
+<p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.5rem;">Competition requires 8&times;H100 SXM for official timing. Colab H100 variant unverified &mdash; always confirm step timing matches expected SXM performance before submitting.</p>
 </div>
 </section>
 
