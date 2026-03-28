@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OLYMPUS: The Agora — Parameter Golf Community Companion</title>
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --text-dim: #8b949e; --text-bright: #f0f6fc;
+  --green: #3fb950; --yellow: #d29922; --red: #f85149; --blue: #58a6ff;
+  --accent: #bc8cff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; line-height: 1.6; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.header { text-align: center; padding: 2rem 1rem; border-bottom: 1px solid var(--border); }
+.header h1 { font-size: 2rem; color: var(--accent); margin-bottom: 0.25rem; }
+.header .subtitle { color: var(--text-dim); font-size: 1rem; }
+.header .powered { color: var(--text-dim); font-size: 0.8rem; margin-top: 0.5rem; }
+.header .disclosure { color: var(--text-dim); font-size: 0.75rem; margin-top: 0.75rem; max-width: 700px; margin-left: auto; margin-right: auto; font-style: italic; }
+
+.nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.25rem; padding: 1rem; background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
+.nav a { padding: 0.4rem 0.8rem; border-radius: 6px; color: var(--text-dim); font-size: 0.85rem; transition: all 0.2s; }
+.nav a:hover, .nav a.active { background: var(--border); color: var(--text-bright); text-decoration: none; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem; }
+section { margin-bottom: 3rem; }
+h2 { color: var(--accent); font-size: 1.4rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+h3 { color: var(--text-bright); font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+.badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+.badge-legal { background: rgba(63,185,80,0.15); color: var(--green); }
+.badge-banned { background: rgba(248,81,73,0.15); color: var(--red); }
+.badge-grey { background: rgba(210,153,34,0.15); color: var(--yellow); }
+.badge-alive { background: rgba(63,185,80,0.15); color: var(--green); }
+.badge-dead { background: rgba(248,81,73,0.15); color: var(--red); }
+.badge-risk { background: rgba(210,153,34,0.15); color: var(--yellow); }
+.badge-incomplete { background: rgba(139,148,158,0.15); color: var(--text-dim); }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+th { text-align: left; padding: 0.6rem; color: var(--text-dim); border-bottom: 2px solid var(--border); font-weight: 600; }
+td { padding: 0.6rem; border-bottom: 1px solid var(--border); }
+tr:hover { background: rgba(88,166,255,0.04); }
+
+.checklist { list-style: none; }
+.checklist li { padding: 0.4rem 0; padding-left: 1.5rem; position: relative; }
+.checklist li::before { content: ''; position: absolute; left: 0; top: 0.65rem; width: 14px; height: 14px; border: 2px solid var(--border); border-radius: 3px; }
+
+.technique-list { list-style: none; }
+.technique-list li { padding: 0.3rem 0; padding-left: 1.5rem; position: relative; }
+.technique-list .legal::before { content: '\2713'; position: absolute; left: 0; color: var(--green); font-weight: bold; }
+.technique-list .banned::before { content: '\2717'; position: absolute; left: 0; color: var(--red); font-weight: bold; }
+.technique-list .grey::before { content: '?'; position: absolute; left: 0; color: var(--yellow); font-weight: bold; }
+
+.timeline-entry { border-left: 3px solid var(--red); padding-left: 1rem; margin-bottom: 1rem; }
+.timeline-entry.legal-change { border-left-color: var(--green); }
+.timeline-date { color: var(--yellow); font-weight: 600; font-size: 0.9rem; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+.stat-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; }
+.stat-box .value { font-size: 1.8rem; font-weight: 700; color: var(--accent); }
+.stat-box .label { color: var(--text-dim); font-size: 0.8rem; }
+
+.guide-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 1rem 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.guide-compare .bad { background: rgba(248,81,73,0.08); padding: 1rem; }
+.guide-compare .good { background: rgba(63,185,80,0.08); padding: 1rem; }
+.guide-compare h4 { margin-bottom: 0.5rem; }
+.guide-compare .bad h4 { color: var(--red); }
+.guide-compare .good h4 { color: var(--green); }
+.guide-compare ul { list-style: none; font-size: 0.85rem; }
+.guide-compare li { padding: 0.2rem 0; }
+
+.footer { text-align: center; padding: 2rem; color: var(--text-dim); font-size: 0.8rem; border-top: 1px solid var(--border); }
+
+@media (max-width: 640px) {
+  .guide-compare { grid-template-columns: 1fr; }
+  .stat-grid { grid-template-columns: 1fr 1fr; }
+  .nav a { font-size: 0.75rem; padding: 0.3rem 0.5rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>OLYMPUS: The Agora</h1>
+  <div class="subtitle">Community Companion for OpenAI Parameter Golf</div>
+  <div class="powered">Powered by <a href="https://lightspeedup.com">Light Speed Up</a></div>
+  <div class="disclosure">Built by <a href="https://github.com/MatoTeziTanka">@MatoTeziTanka</a>, an active participant. Our PR #769 was closed in the March 27 ruling. All classifications are from public GitHub data and disputable via <a href="https://github.com/MatoTeziTanka/parameter-golf/issues">Issues</a>.</div>
+</div>
+
+<nav class="nav">
+  <a href="#checklist">Checklist</a>
+  <a href="#leaderboard">Leaderboard</a>
+  <a href="#funding">Funding</a>
+  <a href="#techniques">Techniques</a>
+  <a href="#blocked">Blocked</a>
+  <a href="#compute">Compute Guide</a>
+  <a href="#timeline">Timeline</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<div class="container">
+
+<!-- SECTION 1: CHECKLIST -->
+<section id="checklist">
+<h2>Submission Checklist</h2>
+<p style="color:var(--text-dim);margin-bottom:1rem;">Updated March 28, 2026. Check ALL boxes before submitting.</p>
+
+<div class="card">
+<h3>Before You Submit</h3>
+<ul class="checklist">
+  <li>Artifact &le; 16,000,000 bytes (code + compressed model)</li>
+  <li>Training completed in &le; 600 seconds on 8&times;H100 SXM</li>
+  <li>Evaluation completed in &le; 600 seconds (separate budget)</li>
+  <li>3 seeds: 42, 1337, 2024</li>
+  <li>BPB beats current SOTA by &ge; 0.005 nats (for record track)</li>
+  <li>submission.json included with val_bpb, seeds, artifact sizes</li>
+  <li>Training logs included for all 3 seeds</li>
+  <li>No network calls during training or eval</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Techniques &mdash; What's Legal RIGHT NOW</h3>
+<ul class="technique-list">
+  <li class="legal">Any neural architecture (transformers, SSMs, hybrids, MoE)</li>
+  <li class="legal">Any activation function (LeakyReLU&sup2;, GeGLU, SwiGLU, etc.)</li>
+  <li class="legal">Any optimizer (AdamW, Muon, SGD, etc.)</li>
+  <li class="legal">LR schedules, warmup, cosine decay</li>
+  <li class="legal">EMA, SWA, weight averaging</li>
+  <li class="legal">Sliding window evaluation</li>
+  <li class="legal">Quantization (INT6, INT8, GPTQ) &mdash; calibration within training budget</li>
+  <li class="legal">Flash Attention, torch.compile</li>
+  <li class="legal">Score-first single-pass TTT (properly normalized probabilities)</li>
+</ul>
+<ul class="technique-list" style="margin-top:1rem;">
+  <li class="banned">Hashed n-gram caches (improper normalization over vocab)</li>
+  <li class="banned">Two-pass rescoring (eval tokens leaked between passes)</li>
+  <li class="banned">GPTQ calibration on eval tokens (must fit in training 600s)</li>
+  <li class="banned">Pre-filling cache from training data at eval time</li>
+  <li class="banned">Multi-epoch TTT scoring same tokens twice</li>
+  <li class="banned">Oracle/hindsight selection between scoring passes</li>
+</ul>
+<ul class="technique-list" style="margin-top:1rem;">
+  <li class="grey">Properly normalized eval-time caches (CTW, Dirichlet)</li>
+  <li class="grey">Score-first TTT with complex mixing (depends on normalization)</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Rule Change History</h3>
+<div class="timeline-entry">
+  <div class="timeline-date">March 27, 2026</div>
+  <p>@valerio-oai closed 30+ PRs. Hashed n-gram caches banned (improper normalization). Two-pass rescoring banned (eval token leakage). GPTQ on eval tokens banned.</p>
+  <p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.25rem;">Affected: #769, #779, #809, #814, #824, #825, #828, #843, #846, #850, #851, #859, #868, #869, #870, #880, #881, #888, #893, #907, #913, #921, #925, #944, #945, #982</p>
+  <p style="color:var(--text-dim);font-size:0.85rem;">Source: <a href="https://github.com/openai/parameter-golf/issues/677">Issue #677</a></p>
+</div>
+<div class="timeline-entry legal-change">
+  <div class="timeline-date">March 24, 2026</div>
+  <p>Score-first TTT clarified as legal. Multi-epoch on already-scored tokens: legal IF properly normalized.</p>
+  <p style="color:var(--text-dim);font-size:0.85rem;">Source: <a href="https://github.com/openai/parameter-golf/issues/402">Issue #402</a> (ruling by @0hq)</p>
+</div>
+<div class="timeline-entry">
+  <div class="timeline-date">March 22, 2026</div>
+  <p>Eval-time GPTQ calibration on val tokens banned. PRs #593, #576 closed.</p>
+  <p style="color:var(--text-dim);font-size:0.85rem;">Source: PRs #593, #576, #569</p>
+</div>
+</div>
+</section>
+
+<!-- SECTION 2: LEADERBOARD (placeholder for Phase 2 API) -->
+<section id="leaderboard">
+<h2>Leaderboard</h2>
+<p style="color:var(--text-dim);margin-bottom:1rem;">Auto-updated from GitHub API. Two views: compliant submissions only, and the full archive.</p>
+
+<h3>Neural-Only (The Real Competition)</h3>
+<table>
+<thead><tr><th>#</th><th>PR</th><th>Author</th><th>BPB</th><th>Seeds</th><th>Artifact</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><a href="https://github.com/openai/parameter-golf/pull/549">#549</a></td><td>@sanjeevmadhav</td><td>1.1194</td><td>3/3</td><td>15.2 MB</td><td><span class="badge badge-alive">ALIVE</span></td></tr>
+<tr><td>2</td><td><a href="https://github.com/openai/parameter-golf/pull/1006">#1006</a></td><td>@NewyorkDev</td><td>1.1085</td><td>1/3</td><td>15.9 MB</td><td><span class="badge badge-incomplete">1 SEED</span></td></tr>
+<tr><td>3</td><td><a href="https://github.com/openai/parameter-golf/pull/1004">#1004</a></td><td>@ibarrajo</td><td>1.1182</td><td>1/3</td><td>14.9 MB</td><td><span class="badge badge-incomplete">1 SEED</span></td></tr>
+<tr><td>4</td><td><a href="https://github.com/openai/parameter-golf/pull/414">#414</a></td><td>@signalrush</td><td>1.1228</td><td>3/3</td><td>15.1 MB</td><td><span class="badge badge-alive">ALIVE</span></td></tr>
+</tbody>
+</table>
+<p style="color:var(--text-dim);font-size:0.8rem;margin-top:0.5rem;">Showing seeded data. Full API-powered leaderboard coming in Phase 2.</p>
+
+<h3>All Submissions (The Archive)</h3>
+<table>
+<thead><tr><th>#</th><th>Status</th><th>PR</th><th>Author</th><th>BPB</th><th>Seeds</th><th>Reason</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><span class="badge badge-dead">DEAD</span></td><td><a href="https://github.com/openai/parameter-golf/pull/925">#925</a></td><td>@THUQiXuan</td><td>0.0281</td><td>3/3</td><td>N-gram + TTT + prefill (03-27)</td></tr>
+<tr><td>2</td><td><span class="badge badge-risk">AT-RISK</span></td><td><a href="https://github.com/openai/parameter-golf/pull/986">#986</a></td><td>unknown</td><td>0.0830</td><td>3/3</td><td>Two-pass + prefill (pending)</td></tr>
+<tr><td>3</td><td><span class="badge badge-dead">DEAD</span></td><td><a href="https://github.com/openai/parameter-golf/pull/913">#913</a></td><td>@RoyiRa</td><td>0.0887</td><td>3/3</td><td>N-gram cache (03-27)</td></tr>
+<tr><td>4</td><td><span class="badge badge-dead">DEAD</span></td><td><a href="https://github.com/openai/parameter-golf/pull/893">#893</a></td><td>@aryanbhosale</td><td>0.1310</td><td>3/3</td><td>Two-pass (03-27)</td></tr>
+<tr><td>5</td><td><span class="badge badge-dead">DEAD</span></td><td><a href="https://github.com/openai/parameter-golf/pull/779">#779</a></td><td>@deanbrr</td><td>0.6683</td><td>3/3</td><td>N-gram cache (03-27)</td></tr>
+<tr><td>6</td><td><span class="badge badge-dead">DEAD</span></td><td><a href="https://github.com/openai/parameter-golf/pull/769">#769</a></td><td>@MatoTeziTanka</td><td>0.8495</td><td>3/3</td><td>N-gram cache (03-27)</td></tr>
+<tr><td>7</td><td><span class="badge badge-alive">ALIVE</span></td><td><a href="https://github.com/openai/parameter-golf/pull/549">#549</a></td><td>@sanjeevmadhav</td><td>1.1194</td><td>3/3</td><td>&mdash;</td></tr>
+</tbody>
+</table>
+<p style="color:var(--text-dim);font-size:0.8rem;margin-top:0.5rem;">Showing seeded data. Full archive coming in Phase 2. <a href="https://github.com/MatoTeziTanka/parameter-golf/issues/new?template=correction.yml">Dispute a classification</a>.</p>
+</section>
+
+<!-- SECTION 3: FUNDING -->
+<section id="funding">
+<h2>Funding Transparency</h2>
+<p style="color:var(--text-dim);margin-bottom:1rem;">Community-reported data only. Actual distribution may be higher. We invite OpenAI to publish official numbers.</p>
+
+<div class="stat-grid">
+  <div class="stat-box"><div class="value">$1,000,000</div><div class="label">OpenAI Promised</div></div>
+  <div class="stat-box"><div class="value">$1,175</div><div class="label">Grants Tracked</div></div>
+  <div class="stat-box"><div class="value">$2,460+</div><div class="label">Self-Funded Tracked</div></div>
+  <div class="stat-box"><div class="value">7</div><div class="label">Participants Tracked</div></div>
+</div>
+
+<table>
+<thead><tr><th>User</th><th>Grant</th><th>Self-Funded</th><th>Platforms</th><th>Proof</th><th>Best PR</th></tr></thead>
+<tbody>
+<tr><td><a href="https://github.com/greqone">@greqone</a></td><td>$25</td><td>~$800</td><td>Modal, RunPod</td><td>SELF_REPORTED</td><td>&mdash;</td></tr>
+<tr><td><a href="https://github.com/CiprianFlorin-Ifrim">@CiprianFlorin-Ifrim</a></td><td>?</td><td>~$800</td><td>RunPod</td><td>SELF_REPORTED</td><td>#920</td></tr>
+<tr><td><a href="https://github.com/MatoTeziTanka">@MatoTeziTanka</a></td><td>$25</td><td>pending proof</td><td>RunPod, Modal, Vast.ai</td><td>PENDING</td><td>#769 (closed)</td></tr>
+<tr><td><a href="https://github.com/NewyorkDev">@NewyorkDev</a></td><td>$25</td><td>~$250</td><td>RunPod, Vast.ai</td><td>SELF_REPORTED</td><td>#1006</td></tr>
+<tr><td><a href="https://github.com/ibarrajo">@ibarrajo</a></td><td>$525</td><td>~$130</td><td>RunPod</td><td>SELF_REPORTED</td><td>#1004</td></tr>
+<tr><td><a href="https://github.com/iverbovoy">@iverbovoy</a></td><td>$525</td><td>?</td><td>RunPod</td><td>SELF_REPORTED</td><td>#895</td></tr>
+<tr><td><a href="https://github.com/himanshudongre">@himanshudongre</a></td><td>$0</td><td>~$47</td><td>RunPod</td><td>SELF_REPORTED</td><td>#1013</td></tr>
+</tbody>
+</table>
+<p style="color:var(--text-dim);font-size:0.8rem;margin-top:0.5rem;"><a href="https://github.com/MatoTeziTanka/parameter-golf/issues/new?template=funding-report.yml">Report your spending</a> &mdash; opt-in only. Sources linked to public comments.</p>
+</section>
+
+<!-- SECTION 4: BLOCKED ON COMPUTE -->
+<section id="blocked">
+<h2>Blocked on Compute</h2>
+<p style="color:var(--text-dim);margin-bottom:1rem;">Researchers with promising ideas who can't test them. Opt-in submissions only.</p>
+
+<div class="card">
+  <strong><a href="https://github.com/himanshudongre">@himanshudongre</a></strong> &mdash; <a href="https://github.com/openai/parameter-golf/pull/1013">PR #1013</a><br>
+  <span style="color:var(--text-dim);">Wants to test: interleaved SSM placement + alternative kernel families</span><br>
+  <span style="color:var(--text-dim);">Needs: 1&times;H100 for ~2 hours | Spent: $47 | Status: <span class="badge badge-dead">BLOCKED</span> &mdash; pod terminated, out of credits</span>
+</div>
+
+<p style="color:var(--text-dim);font-size:0.8rem;margin-top:0.5rem;"><a href="https://github.com/MatoTeziTanka/parameter-golf/issues/new?template=blocked-on-compute.yml">Submit your blocked experiment</a></p>
+</section>
+
+<!-- SECTION 5: COMPUTE GUIDE -->
+<section id="compute">
+<h2>Compute Survival Guide</h2>
+
+<div class="card" style="border-color:var(--red);">
+<h3 style="color:var(--red);">The Golden Rule: Serverless, Not Pods</h3>
+<p>Your workload is 10 min train + 10 min eval. That's a perfect serverless job. There is ZERO reason to keep a pod alive.</p>
+<div class="guide-compare">
+  <div class="bad">
+    <h4>Pods (anti-pattern)</h4>
+    <ul>
+      <li>Billing starts at CREATION</li>
+      <li>Setup time = burning money idle</li>
+      <li>Forget to stop = bleeding money</li>
+      <li>Crash at second 5 = still paying</li>
+      <li>Pod terminates = lose everything</li>
+    </ul>
+  </div>
+  <div class="good">
+    <h4>Serverless (correct)</h4>
+    <ul>
+      <li>Billing starts when CODE runs</li>
+      <li>Pre-baked Docker = instant start</li>
+      <li>Auto-stops when done</li>
+      <li>Crash at second 5 = paid for 5s</li>
+      <li>Results returned before teardown</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<div class="card">
+<h3>RunPod Serverless (Recommended)</h3>
+<p>Docker image: <code>matotezitanka/proteus-pytorch:2.11.0-cuda12.8</code></p>
+<p>Submit job &rarr; it runs &rarr; results come back &rarr; billing stops. No SSH, no pod management.</p>
+<p style="color:var(--text-dim);font-size:0.85rem;">H100 SXM. ~$0.45 per 10-min training run (calculated, not yet verified via receipt).</p>
+</div>
+
+<div class="card">
+<h3>Modal ($30/month free)</h3>
+<p>Serverless by default. <code>modal run train.py</code> &mdash; that's it. $30 free every month = multiple runs.</p>
+</div>
+
+<div class="card">
+<h3>Google Colab (free/Pro, single H100 PCIe)</h3>
+<p>Batch size fix: <code>TRAIN_BATCH_TOKENS=65536</code>. Save to Drive. Resume on disconnect. ~6-7 hours for 20K steps.</p>
+<p style="color:var(--text-dim);font-size:0.85rem;">Colab H100 is PCIe, not SXM &mdash; fine for validation, but final 3-seed runs should use SXM hardware.</p>
+</div>
+
+<div class="card">
+<h3>CPU Smoke Test (FREE &mdash; do this FIRST)</h3>
+<p><code>ITERATIONS=10 TRAIN_BATCH_TOKENS=4096 TRAIN_SEQ_LEN=256 python train_gpt.py</code></p>
+<p>Catches bugs in 30 seconds. If it doesn't work on CPU, it won't work on GPU. Save your money.</p>
+</div>
+
+<div class="card">
+<h3>H100 SXM vs PCIe</h3>
+<table>
+<thead><tr><th>GPU</th><th>NVLink</th><th>DDP Speed</th><th>Where</th></tr></thead>
+<tbody>
+<tr><td>H100 SXM</td><td>Yes (900 GB/s)</td><td>Full speed</td><td>RunPod, Vast.ai</td></tr>
+<tr><td>H100 PCIe</td><td>No</td><td>~30% slower DDP</td><td>Colab, some cloud</td></tr>
+</tbody>
+</table>
+<p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.5rem;">Competition requires 8&times;H100 SXM. Validate on Colab, submit on SXM.</p>
+</div>
+</section>
+
+<!-- SECTION 6: TIMELINE (placeholder for Phase 3) -->
+<section id="timeline">
+<h2>BPB Timeline</h2>
+<p style="color:var(--text-dim);">Coming in Phase 3 &mdash; SOTA over time with key events marked.</p>
+</section>
+
+<!-- SECTION 7: TECHNIQUES (placeholder for Phase 3) -->
+<section id="techniques">
+<h2>Technique Map</h2>
+<p style="color:var(--text-dim);">Coming in Phase 3 &mdash; what's been tried, what works, what's untried. Sourced from <a href="https://github.com/openai/parameter-golf/issues/140">Issue #140</a>.</p>
+</section>
+
+<!-- SECTION 8: RESOURCES -->
+<section id="resources">
+<h2>Resources</h2>
+<div class="card">
+<ul style="list-style:none;">
+  <li style="padding:0.3rem 0;"><a href="https://github.com/openai/parameter-golf">Official repo: openai/parameter-golf</a></li>
+  <li style="padding:0.3rem 0;"><a href="https://github.com/openai/parameter-golf/issues/140">Issue #140: Live AI Commentary (technique deep dives)</a></li>
+  <li style="padding:0.3rem 0;"><a href="https://github.com/openai/parameter-golf/issues/677">Issue #677: Legality rulings + normalization debate</a></li>
+  <li style="padding:0.3rem 0;"><a href="https://github.com/openai/parameter-golf/issues/942">Issue #942: Compute credits discussion</a></li>
+  <li style="padding:0.3rem 0;"><a href="https://hub.docker.com/r/matotezitanka/proteus-pytorch">Docker image: matotezitanka/proteus-pytorch</a></li>
+  <li style="padding:0.3rem 0;"><a href="https://github.com/MatoTeziTanka/parameter-golf/issues">Submit corrections, funding, techniques, or feedback</a></li>
+</ul>
+</div>
+</section>
+
+</div>
+
+<div class="footer">
+  <p>OLYMPUS: The Agora &mdash; Powered by <a href="https://lightspeedup.com">Light Speed Up</a></p>
+  <p>Data sourced from <a href="https://github.com/openai/parameter-golf">openai/parameter-golf</a> GitHub API + <a href="https://github.com/openai/parameter-golf/issues/140">Issue #140</a> community commentary.</p>
+  <p>Open source. <a href="https://github.com/MatoTeziTanka/parameter-golf">View source</a>.</p>
+</div>
+
+</body>
+</html>
