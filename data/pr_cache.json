@@ -1,7 +1,35 @@
 {
-  "last_fetch": "2026-03-29T22:35:10.425281+00:00",
-  "api_calls_used": 28,
+  "last_fetch": "2026-03-29T23:37:15.005840+00:00",
+  "api_calls_used": 29,
   "prs": [
+    {
+      "number": 1103,
+      "title": "Non-record: Negative results — eval-time interventions, mixed-precision GPTQ, loss truncation",
+      "author": "abaybektursun",
+      "state": "OPEN",
+      "created": "2026-03-29T23:30:35Z",
+      "updated": "2026-03-29T23:35:14Z",
+      "bpb": 1.1147,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "GPTQ + INT6 + INT8 + N-gram",
+      "file_paths": [
+        "experiments/eval_time_knn/NEGATIVE_RESULTS.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1101,
       "title": "Add non-record pre-TTT anchor submission",
@@ -63,12 +91,12 @@
     },
     {
       "number": 1099,
-      "title": "Record: Coprime-Stride Loader + Full GPTQ + XSA-all — val_bpb 1.1136 (3-seed mean)",
+      "title": "Record: Coprime-Stride Loader + Full GPTQ + XSA-all — val_bpb 1.1133 (3-seed mean)",
       "author": "Bortlesboat",
       "state": "OPEN",
       "created": "2026-03-29T21:41:26Z",
-      "updated": "2026-03-29T21:41:26Z",
-      "bpb": 1.1136,
+      "updated": "2026-03-29T22:45:35Z",
+      "bpb": 1.1133,
       "seeds": 3,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + Muon + GPTQ + EMA",
@@ -77,8 +105,11 @@
         "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/submission.json",
         "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_gpt.py",
         "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_seed1337_9s.log",
         "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_seed42.log",
-        "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_seed999.log"
+        "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_seed42_9s.log",
+        "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_seed999.log",
+        "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_seed999_9s.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -131,7 +162,7 @@
       "author": "danielxmed",
       "state": "OPEN",
       "created": "2026-03-29T21:23:41Z",
-      "updated": "2026-03-29T22:07:21Z",
+      "updated": "2026-03-29T23:18:41Z",
       "bpb": 1.3355,
       "seeds": 2,
       "artifact_bytes": 16500000,
@@ -400,12 +431,12 @@
     },
     {
       "number": 1089,
-      "title": "Record Submission: 1.1086 BPB - Turbo-Muon + EngramLite + ParamBanking (11L 512d)",
+      "title": "Record Submission: 1.1091 BPB - Turbo-Muon + EngramLite + ParamBanking + XSA (11L 512d)",
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-03-29T18:10:07Z",
-      "updated": "2026-03-29T21:46:44Z",
-      "bpb": 1.1086,
+      "updated": "2026-03-29T22:51:18Z",
+      "bpb": 1.1091,
       "seeds": 3,
       "artifact_bytes": 15300000,
       "technique_summary": "Muon + GPTQ + INT6 + EMA",
@@ -415,6 +446,7 @@
         "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/requirements.txt",
         "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/submission.json",
         "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/train_gpt.py",
+        "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/train_gpt_human.py",
         "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/train_seed1337.log",
         "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/train_seed2025.log",
         "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/train_seed42.log"
@@ -4304,7 +4336,7 @@
       "author": "anthony-maio",
       "state": "OPEN",
       "created": "2026-03-27T18:51:06Z",
-      "updated": "2026-03-27T19:04:07Z",
+      "updated": "2026-03-29T23:16:01Z",
       "bpb": 1.6542,
       "seeds": null,
       "artifact_bytes": 1207916,
@@ -4317,14 +4349,14 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 973,
@@ -13502,11 +13534,11 @@
     },
     {
       "number": 698,
-      "title": "Add MergedTop3_v3 clean 8xH100 record-track submission",
+      "title": "11L XSA4 + EMA + BigramHash + GPTQ-lite",
       "author": "hesong0222-dev",
       "state": "OPEN",
       "created": "2026-03-25T08:56:32Z",
-      "updated": "2026-03-25T09:06:42Z",
+      "updated": "2026-03-29T22:49:38Z",
       "bpb": 1.16417381,
       "seeds": null,
       "artifact_bytes": 15635201,
@@ -13528,14 +13560,14 @@
       "compliance_keywords": [
         "gptq_eval"
       ],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 697,
