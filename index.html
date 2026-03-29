@@ -55,6 +55,11 @@ tr:hover { background: rgba(88,166,255,0.04); }
 .table-scroll { max-height: 600px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; }
 .table-scroll thead th { position: sticky; top: 0; background: var(--surface); z-index: 1; }
 
+.filter-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem; margin-bottom: 0.75rem; }
+.filter-btn { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.3rem 0.6rem; color: var(--text-dim); font-size: 0.78rem; cursor: pointer; transition: all 0.15s; }
+.filter-btn:hover { border-color: var(--accent); color: var(--text-bright); }
+.filter-btn.active { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
+
 
 .checklist { list-style: none; max-width: 700px; margin: 0 auto; }
 .checklist li { padding: 0.4rem 0; padding-left: 1.5rem; position: relative; }
@@ -259,9 +264,25 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <p style="color:var(--text-dim);margin-bottom:1rem;">Auto-updated from GitHub API. Two views: compliant submissions only, and the full archive.</p>
 
 <h3>Neural-Only (The Real Competition)</h3>
+<div class="filter-bar" data-table="neural">
+  <span style="color:var(--text-dim);font-size:0.8rem;margin-right:0.5rem;">Filter:</span>
+  <button class="filter-btn active" data-filter="all" data-col="status">All</button>
+  <button class="filter-btn" data-filter="alive" data-col="status">Alive</button>
+  <button class="filter-btn" data-filter="at_risk" data-col="status">At-Risk</button>
+  <span style="margin:0 0.25rem;color:var(--border);">|</span>
+  <button class="filter-btn active" data-filter="all" data-col="type">All Types</button>
+  <button class="filter-btn" data-filter="neural" data-col="type">Neural</button>
+  <button class="filter-btn" data-filter="cache" data-col="type">Cache</button>
+  <button class="filter-btn" data-filter="ttt" data-col="type">TTT</button>
+  <button class="filter-btn" data-filter="hybrid" data-col="type">Hybrid</button>
+  <span style="margin:0 0.25rem;color:var(--border);">|</span>
+  <button class="filter-btn active" data-filter="all" data-col="track">All Tracks</button>
+  <button class="filter-btn" data-filter="record" data-col="track">Record</button>
+  <button class="filter-btn" data-filter="non-record" data-col="track">Non-Record</button>
+</div>
 <div class="table-scroll">
-<table>
-<thead><tr><th>#</th><th>PR</th><th>Author</th><th>BPB</th><th>Seeds</th><th>Artifact</th><th>Status</th></tr></thead>
+<table id="table-neural">
+<thead><tr><th>Status</th><th>#</th><th>PR</th><th>Author</th><th>BPB</th><th>Seeds</th><th>Artifact</th><th>Type</th><th>Track</th></tr></thead>
 <tbody>
 <!-- AGORA:LEADERBOARD_NEURAL_START -->
 <tr><td>1</td><td><a href="https://github.com/openai/parameter-golf/pull/549">#549</a></td><td>@abaybektursun</td><td>1.1194</td><td>3/3</td><td>15.9 MB</td><td><span class="badge badge-alive">ALIVE</span></td></tr>
@@ -279,9 +300,27 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <p style="color:var(--text-dim);font-size:0.8rem;margin-top:0.5rem;">Live data from GitHub API. Last updated: March 28, 2026.</p>
 
 <h3>All Submissions (The Archive)</h3>
+<div class="filter-bar" data-table="archive">
+  <span style="color:var(--text-dim);font-size:0.8rem;margin-right:0.5rem;">Filter:</span>
+  <button class="filter-btn active" data-filter="all" data-col="status">All</button>
+  <button class="filter-btn" data-filter="alive" data-col="status">Alive</button>
+  <button class="filter-btn" data-filter="at_risk" data-col="status">At-Risk</button>
+  <button class="filter-btn" data-filter="incomplete" data-col="status">Incomplete</button>
+  <button class="filter-btn" data-filter="dead" data-col="status">Dead</button>
+  <span style="margin:0 0.25rem;color:var(--border);">|</span>
+  <button class="filter-btn active" data-filter="all" data-col="type">All Types</button>
+  <button class="filter-btn" data-filter="neural" data-col="type">Neural</button>
+  <button class="filter-btn" data-filter="cache" data-col="type">Cache</button>
+  <button class="filter-btn" data-filter="ttt" data-col="type">TTT</button>
+  <button class="filter-btn" data-filter="hybrid" data-col="type">Hybrid</button>
+  <span style="margin:0 0.25rem;color:var(--border);">|</span>
+  <button class="filter-btn active" data-filter="all" data-col="track">All Tracks</button>
+  <button class="filter-btn" data-filter="record" data-col="track">Record</button>
+  <button class="filter-btn" data-filter="non-record" data-col="track">Non-Record</button>
+</div>
 <div class="table-scroll">
-<table>
-<thead><tr><th>#</th><th>PR</th><th>Author</th><th>BPB</th><th>Seeds</th><th>Artifact</th><th>Status</th><th>Reason</th></tr></thead>
+<table id="table-archive">
+<thead><tr><th>Status</th><th>#</th><th>PR</th><th>Author</th><th>BPB</th><th>Seeds</th><th>Artifact</th><th>Type</th><th>Track</th><th>Reason</th></tr></thead>
 <tbody>
 <!-- AGORA:LEADERBOARD_ARCHIVE_START -->
 <tr><td>1</td><td><a href="https://github.com/openai/parameter-golf/pull/42">#42</a></td><td>@chonchiog</td><td>0.0005</td><td>2/3</td><td>16.0 MB</td><td><span class="badge badge-alive">ALIVE</span></td><td>&mdash;</td></tr>
@@ -1650,5 +1689,47 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <p>Open source. <a href="https://github.com/MatoTeziTanka/parameter-golf">View source</a>.</p>
 </div>
 
+<script>
+(function(){
+  // Filter state per table: { status: 'all', type: 'all', track: 'all' }
+  var state = { neural: {status:'all',type:'all',track:'all'}, archive: {status:'all',type:'all',track:'all'} };
+
+  function applyFilters(tableName) {
+    var s = state[tableName];
+    var table = document.getElementById('table-' + tableName);
+    if (!table) return;
+    var rows = table.querySelectorAll('tbody tr[data-status]');
+    var shown = 0;
+    rows.forEach(function(row) {
+      var matchStatus = s.status === 'all' || row.getAttribute('data-status') === s.status;
+      var matchType = s.type === 'all' || row.getAttribute('data-type') === s.type;
+      var matchTrack = s.track === 'all' || row.getAttribute('data-track') === s.track;
+      if (matchStatus && matchType && matchTrack) {
+        row.style.display = '';
+        shown++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  document.querySelectorAll('.filter-bar').forEach(function(bar) {
+    var tableName = bar.getAttribute('data-table');
+    bar.querySelectorAll('.filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var col = btn.getAttribute('data-col');
+        var val = btn.getAttribute('data-filter');
+        state[tableName][col] = val;
+        // Update active state for this column group
+        bar.querySelectorAll('.filter-btn[data-col="' + col + '"]').forEach(function(b) {
+          b.classList.remove('active');
+        });
+        btn.classList.add('active');
+        applyFilters(tableName);
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>

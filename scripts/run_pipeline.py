@@ -130,6 +130,28 @@ def _status_badge(status: str, seeds: int | None) -> str:
     return f'<span class="badge {cls}">{label}</span>'
 
 
+def _type_badge(technique_type: str) -> str:
+    """Render an HTML badge for technique type."""
+    badges: dict[str, tuple[str, str]] = {
+        "neural": ("badge-neural", "Neural"),
+        "cache": ("badge-cache", "Cache"),
+        "ttt": ("badge-ttt", "TTT"),
+        "hybrid": ("badge-hybrid", "Hybrid"),
+    }
+    cls, label = badges.get(technique_type, ("badge-incomplete", technique_type or "?"))
+    return f'<span class="badge {cls}">{label}</span>'
+
+
+def _track_badge(track: str) -> str:
+    """Render an HTML badge for submission track."""
+    badges: dict[str, tuple[str, str]] = {
+        "record": ("badge-record", "Record"),
+        "non-record": ("badge-nonrecord", "Non-Record"),
+    }
+    cls, label = badges.get(track, ("badge-incomplete", track or "?"))
+    return f'<span class="badge {cls}">{label}</span>'
+
+
 def _pr_link(number: int) -> str:
     """Render a PR number as an HTML link."""
     return f'<a href="{PR_BASE_URL}/{number}">#{number}</a>'
@@ -297,12 +319,46 @@ def _dead_reason(pr: dict[str, Any]) -> str:
 # Leaderboard table row builders
 # ---------------------------------------------------------------------------
 
+def _build_row(rank: int, pr: dict[str, Any], include_reason: bool = False) -> str:
+    """Build a single table row with data attributes for filtering.
+
+    Column order: Status | # | PR | Author | BPB | Seeds | Artifact | Type | Track [| Reason]
+    """
+    num = pr["number"]
+    author = pr.get("author", "unknown")
+    bpb = _format_bpb(pr.get("bpb"))
+    seeds = _format_seeds(pr.get("seeds"))
+    artifact = _format_artifact(pr.get("artifact_bytes"))
+    status = pr.get("status", "UNKNOWN")
+    status_badge = _status_badge(status, pr.get("seeds"))
+    ttype = pr.get("technique_type", "unknown")
+    track = pr.get("track", "unknown")
+
+    attrs = f'data-status="{status.lower()}" data-type="{ttype}" data-track="{track}"'
+
+    cells = (
+        f"<td>{status_badge}</td>"
+        f"<td>{rank}</td>"
+        f"<td>{_pr_link(num)}</td>"
+        f"<td>@{author}</td>"
+        f"<td>{bpb}</td>"
+        f"<td>{seeds}</td>"
+        f"<td>{artifact}</td>"
+        f"<td>{_type_badge(ttype)}</td>"
+        f"<td>{_track_badge(track)}</td>"
+    )
+    if include_reason:
+        reason = "&mdash;" if status == "ALIVE" else _dead_reason(pr)
+        cells += f"<td>{reason}</td>"
+
+    return f"<tr {attrs}>{cells}</tr>"
+
+
 def _build_neural_rows(prs: list[dict[str, Any]]) -> str:
     """Build tbody rows for the Neural-Only leaderboard.
 
     Shows ALIVE PRs only, with 3/3 seeds, known artifact, BPB >= 0.5.
     Sorted by BPB ascending (lower = better).
-    Columns: # | PR | Author | BPB | Seeds | Artifact | Status
     """
     alive = [
         p for p in prs
@@ -317,30 +373,11 @@ def _build_neural_rows(prs: list[dict[str, Any]]) -> str:
 
     if not alive:
         return (
-            '<tr><td colspan="7" style="text-align:center;color:var(--text-dim);">'
+            '<tr><td colspan="9" style="text-align:center;color:var(--text-dim);">'
             "No qualifying submissions found — requires 3/3 seeds, known artifact, BPB &ge; 0.5.</td></tr>"
         )
 
-    rows: list[str] = []
-    for rank, pr in enumerate(alive, start=1):
-        num = pr["number"]
-        author = pr.get("author", "unknown")
-        bpb = _format_bpb(pr.get("bpb"))
-        seeds = _format_seeds(pr.get("seeds"))
-        artifact = _format_artifact(pr.get("artifact_bytes"))
-        badge = _status_badge("ALIVE", pr.get("seeds"))
-        rows.append(
-            f"<tr>"
-            f"<td>{rank}</td>"
-            f"<td>{_pr_link(num)}</td>"
-            f"<td>@{author}</td>"
-            f"<td>{bpb}</td>"
-            f"<td>{seeds}</td>"
-            f"<td>{artifact}</td>"
-            f"<td>{badge}</td>"
-            f"</tr>"
-        )
-    return "\n".join(rows)
+    return "\n".join(_build_row(rank, pr) for rank, pr in enumerate(alive, start=1))
 
 
 _STATUS_SORT_ORDER = {"ALIVE": 0, "AT_RISK": 1, "INCOMPLETE": 2, "DEAD": 3, "UNKNOWN": 4}
@@ -349,7 +386,6 @@ def _build_archive_rows(prs: list[dict[str, Any]]) -> str:
     """Build tbody rows for the All Submissions archive.
 
     Shows ALL PRs, sorted ALIVE-first then by BPB ascending within each group.
-    Columns: # | PR | Author | BPB | Seeds | Artifact | Status | Reason
     """
     all_prs = list(prs)
     all_prs.sort(key=lambda p: (
@@ -359,33 +395,11 @@ def _build_archive_rows(prs: list[dict[str, Any]]) -> str:
 
     if not all_prs:
         return (
-            '<tr><td colspan="8" style="text-align:center;color:var(--text-dim);">'
+            '<tr><td colspan="10" style="text-align:center;color:var(--text-dim);">'
             "No submissions found — check fetch/classify pipeline.</td></tr>"
         )
 
-    rows: list[str] = []
-    for rank, pr in enumerate(all_prs, start=1):
-        num = pr["number"]
-        author = pr.get("author", "unknown")
-        bpb = _format_bpb(pr.get("bpb"))
-        seeds = _format_seeds(pr.get("seeds"))
-        artifact = _format_artifact(pr.get("artifact_bytes"))
-        status = pr.get("status", "UNKNOWN")
-        badge = _status_badge(status, pr.get("seeds"))
-        reason = "&mdash;" if status == "ALIVE" else _dead_reason(pr)
-        rows.append(
-            f"<tr>"
-            f"<td>{rank}</td>"
-            f"<td>{_pr_link(num)}</td>"
-            f"<td>@{author}</td>"
-            f"<td>{bpb}</td>"
-            f"<td>{seeds}</td>"
-            f"<td>{artifact}</td>"
-            f"<td>{badge}</td>"
-            f"<td>{reason}</td>"
-            f"</tr>"
-        )
-    return "\n".join(rows)
+    return "\n".join(_build_row(rank, pr, include_reason=True) for rank, pr in enumerate(all_prs, start=1))
 
 
 # ---------------------------------------------------------------------------
