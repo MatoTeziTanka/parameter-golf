@@ -2,72 +2,18 @@
   "team": "OLYMPUS / Light Speed Up / @MatoTeziTanka",
   "competition": "OpenAI Parameter Golf",
   "period": "2026-03-18 to 2026-03-29",
-  "proof_level": "DASHBOARD_VERIFIED",
+  "last_updated": "2026-03-29",
   "platforms": {
-    "modal": {
-      "total_usd": "73.72",
-      "source": "Modal billing API (workspace_billing_report)",
-      "proof": "API_VERIFIED",
-      "grant_usd": "0.00",
-      "self_funded_usd": "73.72",
-      "runs": 8,
-      "dates": "2026-03-21 to 2026-03-22",
-      "description": "proteus-pgolf app runs on Modal H100s",
-      "items": [
-        {
-          "date": "2026-03-21",
-          "app_id": "ap-5EQ8tSBrHapXgNNdEySmLs",
-          "cost_usd": "0.03"
-        },
-        {
-          "date": "2026-03-21",
-          "app_id": "ap-8vDYDaAG79XDeRFwKukwBK",
-          "cost_usd": "0.00"
-        },
-        {
-          "date": "2026-03-22",
-          "app_id": "ap-FqpRJBKcJfKsBbXfwyH24d",
-          "cost_usd": "17.42"
-        },
-        {
-          "date": "2026-03-22",
-          "app_id": "ap-Zs7xtdEYWB7l0Nbbh0E36b",
-          "cost_usd": "17.16"
-        },
-        {
-          "date": "2026-03-22",
-          "app_id": "ap-b4esG6eCZf1ojit2scaceH",
-          "cost_usd": "1.59"
-        },
-        {
-          "date": "2026-03-22",
-          "app_id": "ap-hH7tPsU1r3M1jsTlUTbiA4",
-          "cost_usd": "16.79"
-        },
-        {
-          "date": "2026-03-21",
-          "app_id": "ap-vK0iIdDOG7rYcL75NNljgQ",
-          "cost_usd": "17.48"
-        },
-        {
-          "date": "2026-03-22",
-          "app_id": "ap-yTIabk5IZzHuQ8lHOHM4Ta",
-          "cost_usd": "3.25"
-        }
-      ]
-    },
     "runpod": {
-      "total_usd": "643.39",
-      "source": "RunPod dashboard transaction history + API balance",
-      "proof": "DASHBOARD_VERIFIED",
-      "grant_usd": "25.00",
+      "total_spent_usd": "643.39",
       "self_funded_usd": "620.00",
+      "grant_usd": "25.00",
       "remaining_balance_usd": "1.61",
-      "total_loaded_usd": "645.00",
+      "proof": "DASHBOARD_VERIFIED",
+      "proof_detail": "35 Stripe reload transactions from RunPod dashboard + API balance query",
       "transactions": 35,
       "dates": "2026-03-19 to 2026-03-27",
       "gpu": "8xH100 SXM",
-      "description": "35 Stripe reloads + 1 OpenAI $25 credit. Training runs v1-v15, 3-seed validation, Le Mans experiments.",
       "daily_breakdown": {
         "2026-03-19": {
           "self_funded": 25,
@@ -105,13 +51,128 @@
           "txns": 2
         }
       }
+    },
+    "modal": {
+      "total_usage_usd": "757.75",
+      "credits_applied_usd": "560.00",
+      "self_funded_usd": "197.75",
+      "proof": "MIXED",
+      "proof_detail": "Workspace 1 (sethpizzaboy): billing API verified. Workspace 2 (matotezitanka): dashboard verified.",
+      "workspaces": {
+        "sethpizzaboy_matotezitanka": {
+          "usage_usd": "656.02",
+          "credits_usd": "530.00",
+          "out_of_pocket_usd": "126.02",
+          "pgolf_usd": "262.38",
+          "pythia_usd": "393.63",
+          "pgolf_apps": [
+            {
+              "name": "run_modal.train_8xh100",
+              "cost": "171.87"
+            },
+            {
+              "name": "run_pgolf.train",
+              "cost": "76.67"
+            },
+            {
+              "name": "run_modal.train_1xh100_dev",
+              "cost": "4.99"
+            },
+            {
+              "name": "<image build>",
+              "cost": "4.81"
+            },
+            {
+              "name": "modal_depth_width_grid.run_grid",
+              "cost": "4.02"
+            },
+            {
+              "name": "run_modal.stage_data",
+              "cost": "0.02"
+            },
+            {
+              "name": "run_modal.stage_script",
+              "cost": "0.00"
+            }
+          ],
+          "pythia_note": "30 inference benchmark apps (Kimi K2, Nemotron, DeepSeek, Qwen, etc.) \u2014 code-audited, zero pgolf references [V]"
+        },
+        "matotezitanka": {
+          "usage_usd": "101.73",
+          "credits_usd": "30.00",
+          "out_of_pocket_usd": "71.73",
+          "pgolf_usd": "80.10",
+          "pythia_usd": "21.64",
+          "pgolf_apps": [
+            {
+              "name": "run_pgolf.train",
+              "cost": "73.69"
+            },
+            {
+              "name": "<image build>",
+              "cost": "6.38"
+            },
+            {
+              "name": "run_pgolf.stage",
+              "cost": "0.03"
+            }
+          ],
+          "pythia_note": "16 inference apps \u2014 code-audited, zero pgolf references [V]"
+        }
+      },
+      "pgolf_total_usd": "342.48",
+      "pythia_total_usd": "415.27"
+    },
+    "colab": {
+      "total_spent_usd": "49.95",
+      "self_funded_usd": "49.95",
+      "grant_usd": "0.00",
+      "proof": "RECEIPT_VERIFIED",
+      "proof_detail": "5 Google Pay receipts for Colab Compute Units (100 units @ $9.99 each)",
+      "transactions": [
+        {
+          "date": "2026-03-21",
+          "amount": "9.99",
+          "description": "100 Colab Compute Units"
+        },
+        {
+          "date": "2026-03-23",
+          "amount": "9.99",
+          "description": "100 Colab Compute Units"
+        },
+        {
+          "date": "2026-03-25",
+          "amount": "9.99",
+          "description": "100 Colab Compute Units"
+        },
+        {
+          "date": "2026-03-27",
+          "amount": "9.99",
+          "description": "100 Colab Compute Units"
+        },
+        {
+          "date": "2026-03-29",
+          "amount": "9.99",
+          "description": "100 Colab Compute Units"
+        }
+      ]
     }
   },
   "summary": {
-    "total_spent_usd": "717.11",
-    "from_grants_usd": "25.00",
-    "self_funded_usd": "693.72",
-    "grant_percentage": "3.5%",
-    "self_funded_percentage": "96.5%"
+    "param_golf_total_usd": "1035.82",
+    "pythia_total_usd": "415.27",
+    "all_projects_total_usd": "1451.09",
+    "self_funded_usd": "867.70",
+    "modal_credits_usd": "560.00",
+    "openai_grant_usd": "25.00",
+    "self_funded_percentage": "83.7%",
+    "grant_percentage_of_pgolf": "2.4%"
+  },
+  "audit_methodology": {
+    "runpod": "Dashboard transaction history (35 line items) + GraphQL API balance query",
+    "modal_ws1": "Python billing API (workspace_billing_report) \u2014 8 items returned for pgolf date range",
+    "modal_ws2": "Dashboard usage breakdown \u2014 19 ephemeral apps listed",
+    "colab": "Google Pay email receipts (5 orders with order IDs)",
+    "pythia_separation": "All 46 PYTHIA benchmark scripts code-audited for pgolf references \u2014 zero found [V]. Classification: if app trains a 16MB model or stages data for that = pgolf. If app benchmarks commercial LLMs for MoE research = PYTHIA."
   }
 }
