@@ -1,7 +1,98 @@
 {
-  "last_fetch": "2026-03-29T21:36:05.410007+00:00",
-  "api_calls_used": 27,
+  "last_fetch": "2026-03-29T22:35:10.425281+00:00",
+  "api_calls_used": 28,
   "prs": [
+    {
+      "number": 1101,
+      "title": "Add non-record pre-TTT anchor submission",
+      "author": "amrayach",
+      "state": "OPEN",
+      "created": "2026-03-29T22:05:18Z",
+      "updated": "2026-03-29T22:05:18Z",
+      "bpb": 1.12904446,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-28_pre_ttt_anchor/README.md",
+        "records/track_non_record_16mb/2026-03-28_pre_ttt_anchor/requirements.txt",
+        "records/track_non_record_16mb/2026-03-28_pre_ttt_anchor/submission.json",
+        "records/track_non_record_16mb/2026-03-28_pre_ttt_anchor/train.log",
+        "records/track_non_record_16mb/2026-03-28_pre_ttt_anchor/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1100,
+      "title": "Non-record: LLaDA-MDLM Diffusion — val_var_bpb 1.1465 (first diffusion to beat AR baseline)",
+      "author": "agalimova",
+      "state": "OPEN",
+      "created": "2026-03-29T21:47:50Z",
+      "updated": "2026-03-29T21:47:50Z",
+      "bpb": 0.47,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "LeakyReLU²",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-29_LLaDA_MDLM_Diffusion/README.md",
+        "records/track_non_record_16mb/2026-03-29_LLaDA_MDLM_Diffusion/submission.json",
+        "records/track_non_record_16mb/2026-03-29_LLaDA_MDLM_Diffusion/train.log",
+        "records/track_non_record_16mb/2026-03-29_LLaDA_MDLM_Diffusion/train_mdlm.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1099,
+      "title": "Record: Coprime-Stride Loader + Full GPTQ + XSA-all — val_bpb 1.1136 (3-seed mean)",
+      "author": "Bortlesboat",
+      "state": "OPEN",
+      "created": "2026-03-29T21:41:26Z",
+      "updated": "2026-03-29T21:41:26Z",
+      "bpb": 1.1136,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/README.md",
+        "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/submission.json",
+        "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_gpt.py",
+        "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_seed42.log",
+        "records/track_10min_16mb/2026-03-29_V16_CoprimeSWA_EMA_1.1136/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1098,
       "title": "Add run_17 8xH100 submission (1.118685, <16MB)",
@@ -40,7 +131,7 @@
       "author": "danielxmed",
       "state": "OPEN",
       "created": "2026-03-29T21:23:41Z",
-      "updated": "2026-03-29T21:23:41Z",
+      "updated": "2026-03-29T22:07:21Z",
       "bpb": 1.3355,
       "seeds": 2,
       "artifact_bytes": 16500000,
@@ -313,12 +404,13 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-03-29T18:10:07Z",
-      "updated": "2026-03-29T20:01:21Z",
+      "updated": "2026-03-29T21:46:44Z",
       "bpb": 1.1086,
       "seeds": 3,
       "artifact_bytes": 15300000,
       "technique_summary": "Muon + GPTQ + INT6 + EMA",
       "file_paths": [
+        "Shrink/shrink.py",
         "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/README.md",
         "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/requirements.txt",
         "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/submission.json",
@@ -408,7 +500,7 @@
       "author": "Omrigotlieb",
       "state": "OPEN",
       "created": "2026-03-29T17:41:22Z",
-      "updated": "2026-03-29T21:30:23Z",
+      "updated": "2026-03-29T22:28:29Z",
       "bpb": 1.1349,
       "seeds": null,
       "artifact_bytes": 16329999,
@@ -8738,7 +8830,7 @@
       "author": "preyam2002",
       "state": "OPEN",
       "created": "2026-03-26T12:11:29Z",
-      "updated": "2026-03-26T12:38:18Z",
+      "updated": "2026-03-29T22:08:28Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -8753,15 +8845,15 @@
         "ttt",
         "gptq_eval"
       ],
+      "track": "record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 843,
@@ -11654,7 +11746,7 @@
       "author": "dcrow85",
       "state": "OPEN",
       "created": "2026-03-25T18:44:05Z",
-      "updated": "2026-03-26T18:17:37Z",
+      "updated": "2026-03-29T21:39:58Z",
       "bpb": 1.0321,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -11677,13 +11769,13 @@
       "compliance_keywords": [
         "ttt"
       ],
+      "track": "record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 754,
@@ -28326,7 +28418,7 @@
       "author": "MatthewHRockwell",
       "state": "OPEN",
       "created": "2026-03-20T16:40:39Z",
-      "updated": "2026-03-20T21:40:43Z",
+      "updated": "2026-03-29T22:05:54Z",
       "bpb": 1.1541,
       "seeds": null,
       "artifact_bytes": 15992610,
@@ -28339,14 +28431,14 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 229,
