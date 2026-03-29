@@ -1,7 +1,75 @@
 {
-  "last_fetch": "2026-03-29T19:34:38.434389+00:00",
-  "api_calls_used": 24,
+  "last_fetch": "2026-03-29T20:04:18.710120+00:00",
+  "api_calls_used": 25,
   "prs": [
+    {
+      "number": 1094,
+      "title": "Record: 0.4027 BPB — Swarm-Designed Causal BackoffNgramMixer (3-seed mean, std 0.0015)",
+      "author": "michaelwinczuk",
+      "state": "OPEN",
+      "created": "2026-03-29T19:53:40Z",
+      "updated": "2026-03-29T20:02:36Z",
+      "bpb": 0.4027,
+      "seeds": 3,
+      "artifact_bytes": 15972175,
+      "technique_summary": "TTT + Muon + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/README.md",
+        "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/kg_data.py",
+        "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/submission.json",
+        "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/swarm_agents.py",
+        "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "leaky_relu",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:ngram_path",
+        "path:ngram-path",
+        "path:backoff-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 1093,
+      "title": "Add Modal single-node 8xH100 launcher",
+      "author": "Muhtasham",
+      "state": "OPEN",
+      "created": "2026-03-29T19:46:28Z",
+      "updated": "2026-03-29T19:47:57Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        ".gitignore",
+        "README.md",
+        "modal_train.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1092,
       "title": "XSA-All 11L + LeakyReLU(0.75)² + Aggressive Legal TTT → 1.1219 BPB",
@@ -37,7 +105,7 @@
       "author": "MichaelMcCulloch",
       "state": "OPEN",
       "created": "2026-03-29T18:22:17Z",
-      "updated": "2026-03-29T18:58:03Z",
+      "updated": "2026-03-29T19:46:57Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -115,7 +183,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-03-29T18:10:07Z",
-      "updated": "2026-03-29T18:10:07Z",
+      "updated": "2026-03-29T20:01:21Z",
       "bpb": 1.1086,
       "seeds": 3,
       "artifact_bytes": 15300000,
@@ -325,7 +393,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-29T15:59:30Z",
-      "updated": "2026-03-29T17:36:42Z",
+      "updated": "2026-03-29T19:59:37Z",
       "bpb": 0.4961,
       "seeds": 3,
       "artifact_bytes": 9210000,
@@ -12796,9 +12864,9 @@
       "number": 711,
       "title": "Partitioned MoE + BigramHash + SlidingWindow + Int5/Int6 (Complexity-ML)",
       "author": "Complexity-ML",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-25T13:06:52Z",
-      "updated": "2026-03-25T13:27:49Z",
+      "updated": "2026-03-29T20:00:40Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -12815,15 +12883,13 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
-      "technique_type": "ttt"
+      "technique_type": "ttt",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 710,

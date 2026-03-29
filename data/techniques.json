@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-03-29T19:34:42Z",
+  "generated_at": "2026-03-29T20:04:22Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1043,
-    "matched_pr_count": 744,
+    "pr_count": 1045,
+    "matched_pr_count": 745,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
       "ALIVE": 35,
-      "AT_RISK": 94,
-      "DEAD": 302,
+      "AT_RISK": 95,
+      "DEAD": 303,
       "INCOMPLETE": 612,
       "UNKNOWN": 0
     }
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 365,
+      "count": 366,
       "author_count": 200,
       "alive_count": 6,
-      "dead_count": 137,
-      "at_risk_count": 45,
-      "incomplete_count": 177,
+      "dead_count": 138,
+      "at_risk_count": 46,
+      "incomplete_count": 176,
       "unknown_count": 0,
       "best_alive": {
         "number": 549,
@@ -734,6 +734,41 @@
           ]
         },
         {
+          "author": "michaelwinczuk",
+          "pr_count": 4,
+          "best_bpb": 0.0037,
+          "prs": [
+            {
+              "number": 977,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 1.1185,
+              "created": "2026-03-27T19:37:17Z"
+            },
+            {
+              "number": 1031,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 0.0037,
+              "created": "2026-03-28T18:38:55Z"
+            },
+            {
+              "number": 1081,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 1.122,
+              "created": "2026-03-29T15:11:37Z"
+            },
+            {
+              "number": 1094,
+              "author": "michaelwinczuk",
+              "status": "AT_RISK",
+              "bpb": 0.4027,
+              "created": "2026-03-29T19:53:40Z"
+            }
+          ]
+        },
+        {
           "author": "THUQiXuan",
           "pr_count": 4,
           "best_bpb": 0.02801,
@@ -1031,34 +1066,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1418,
               "created": "2026-03-24T06:32:12Z"
-            }
-          ]
-        },
-        {
-          "author": "michaelwinczuk",
-          "pr_count": 3,
-          "best_bpb": 0.0037,
-          "prs": [
-            {
-              "number": 977,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 1.1185,
-              "created": "2026-03-27T19:37:17Z"
-            },
-            {
-              "number": 1031,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 0.0037,
-              "created": "2026-03-28T18:38:55Z"
-            },
-            {
-              "number": 1081,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 1.122,
-              "created": "2026-03-29T15:11:37Z"
             }
           ]
         },
@@ -2050,7 +2057,7 @@
             {
               "number": 711,
               "author": "Complexity-ML",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-03-25T13:06:52Z"
             }
@@ -5484,7 +5491,7 @@
         {
           "number": 711,
           "author": "Complexity-ML",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-03-25T13:06:52Z"
         },
@@ -6544,18 +6551,25 @@
           "status": "INCOMPLETE",
           "bpb": 1.1219,
           "created": "2026-03-29T19:29:24Z"
+        },
+        {
+          "number": 1094,
+          "author": "michaelwinczuk",
+          "status": "AT_RISK",
+          "bpb": 0.4027,
+          "created": "2026-03-29T19:53:40Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 304,
+      "count": 305,
       "author_count": 211,
       "alive_count": 12,
-      "dead_count": 69,
-      "at_risk_count": 33,
-      "incomplete_count": 190,
+      "dead_count": 70,
+      "at_risk_count": 34,
+      "incomplete_count": 189,
       "unknown_count": 0,
       "best_alive": {
         "number": 549,
@@ -7026,6 +7040,34 @@
           ]
         },
         {
+          "author": "michaelwinczuk",
+          "pr_count": 3,
+          "best_bpb": 0.0037,
+          "prs": [
+            {
+              "number": 977,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 1.1185,
+              "created": "2026-03-27T19:37:17Z"
+            },
+            {
+              "number": 1031,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 0.0037,
+              "created": "2026-03-28T18:38:55Z"
+            },
+            {
+              "number": 1094,
+              "author": "michaelwinczuk",
+              "status": "AT_RISK",
+              "bpb": 0.4027,
+              "created": "2026-03-29T19:53:40Z"
+            }
+          ]
+        },
+        {
           "author": "haikosys",
           "pr_count": 3,
           "best_bpb": 0.0804,
@@ -7309,27 +7351,6 @@
               "status": "DEAD",
               "bpb": 1.1175,
               "created": "2026-03-24T18:39:30Z"
-            }
-          ]
-        },
-        {
-          "author": "michaelwinczuk",
-          "pr_count": 2,
-          "best_bpb": 0.0037,
-          "prs": [
-            {
-              "number": 977,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 1.1185,
-              "created": "2026-03-27T19:37:17Z"
-            },
-            {
-              "number": 1031,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 0.0037,
-              "created": "2026-03-28T18:38:55Z"
             }
           ]
         },
@@ -9700,7 +9721,7 @@
             {
               "number": 711,
               "author": "Complexity-ML",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-03-25T13:06:52Z"
             }
@@ -11601,7 +11622,7 @@
         {
           "number": 711,
           "author": "Complexity-ML",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-03-25T13:06:52Z"
         },
@@ -12297,17 +12318,24 @@
           "status": "INCOMPLETE",
           "bpb": 1.1219,
           "created": "2026-03-29T19:29:24Z"
+        },
+        {
+          "number": 1094,
+          "author": "michaelwinczuk",
+          "status": "AT_RISK",
+          "bpb": 0.4027,
+          "created": "2026-03-29T19:53:40Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 286,
+      "count": 287,
       "author_count": 168,
       "alive_count": 7,
       "dead_count": 90,
-      "at_risk_count": 37,
+      "at_risk_count": 38,
       "incomplete_count": 152,
       "unknown_count": 0,
       "best_alive": {
@@ -13437,6 +13465,27 @@
           ]
         },
         {
+          "author": "michaelwinczuk",
+          "pr_count": 2,
+          "best_bpb": 0.4027,
+          "prs": [
+            {
+              "number": 1081,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 1.122,
+              "created": "2026-03-29T15:11:37Z"
+            },
+            {
+              "number": 1094,
+              "author": "michaelwinczuk",
+              "status": "AT_RISK",
+              "bpb": 0.4027,
+              "created": "2026-03-29T19:53:40Z"
+            }
+          ]
+        },
+        {
           "author": "pentxayc",
           "pr_count": 2,
           "best_bpb": 0.4416,
@@ -14287,20 +14336,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1213,
               "created": "2026-03-22T04:15:33Z"
-            }
-          ]
-        },
-        {
-          "author": "michaelwinczuk",
-          "pr_count": 1,
-          "best_bpb": 1.122,
-          "prs": [
-            {
-              "number": 1081,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 1.122,
-              "created": "2026-03-29T15:11:37Z"
             }
           ]
         },
@@ -17497,17 +17532,24 @@
           "status": "AT_RISK",
           "bpb": 1.1086,
           "created": "2026-03-29T18:10:07Z"
+        },
+        {
+          "number": 1094,
+          "author": "michaelwinczuk",
+          "status": "AT_RISK",
+          "bpb": 0.4027,
+          "created": "2026-03-29T19:53:40Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 190,
-      "author_count": 96,
+      "count": 191,
+      "author_count": 97,
       "alive_count": 2,
       "dead_count": 77,
-      "at_risk_count": 34,
+      "at_risk_count": 35,
       "incomplete_count": 77,
       "unknown_count": 0,
       "best_alive": {
@@ -18815,6 +18857,20 @@
               "status": "DEAD",
               "bpb": 0.29519,
               "created": "2026-03-26T04:20:24Z"
+            }
+          ]
+        },
+        {
+          "author": "michaelwinczuk",
+          "pr_count": 1,
+          "best_bpb": 0.4027,
+          "prs": [
+            {
+              "number": 1094,
+              "author": "michaelwinczuk",
+              "status": "AT_RISK",
+              "bpb": 0.4027,
+              "created": "2026-03-29T19:53:40Z"
             }
           ]
         },
@@ -20849,6 +20905,13 @@
           "status": "AT_RISK",
           "bpb": 1.1086,
           "created": "2026-03-29T18:10:07Z"
+        },
+        {
+          "number": 1094,
+          "author": "michaelwinczuk",
+          "status": "AT_RISK",
+          "bpb": 0.4027,
+          "created": "2026-03-29T19:53:40Z"
         }
       ]
     },
@@ -25699,9 +25762,9 @@
       "count": 64,
       "author_count": 57,
       "alive_count": 2,
-      "dead_count": 12,
+      "dead_count": 13,
       "at_risk_count": 2,
-      "incomplete_count": 48,
+      "incomplete_count": 47,
       "unknown_count": 0,
       "best_alive": {
         "number": 180,
@@ -26438,7 +26501,7 @@
             {
               "number": 711,
               "author": "Complexity-ML",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-03-25T13:06:52Z"
             }
@@ -26911,7 +26974,7 @@
         {
           "number": 711,
           "author": "Complexity-ML",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-03-25T13:06:52Z"
         },
@@ -29314,9 +29377,9 @@
       "count": 15,
       "author_count": 12,
       "alive_count": 0,
-      "dead_count": 5,
+      "dead_count": 6,
       "at_risk_count": 0,
-      "incomplete_count": 10,
+      "incomplete_count": 9,
       "unknown_count": 0,
       "best_alive": null,
       "people": [
@@ -29349,7 +29412,7 @@
             {
               "number": 711,
               "author": "Complexity-ML",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-03-25T13:06:52Z"
             }
@@ -29584,7 +29647,7 @@
         {
           "number": 711,
           "author": "Complexity-ML",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-03-25T13:06:52Z"
         },
@@ -30917,11 +30980,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 134,
-      "author_count": 64,
+      "count": 135,
+      "author_count": 65,
       "alive_count": 0,
       "dead_count": 60,
-      "at_risk_count": 74,
+      "at_risk_count": 75,
       "incomplete_count": 0,
       "unknown_count": 0,
       "best_alive": null,
@@ -31903,6 +31966,20 @@
               "status": "DEAD",
               "bpb": 0.29519,
               "created": "2026-03-26T04:20:24Z"
+            }
+          ]
+        },
+        {
+          "author": "michaelwinczuk",
+          "pr_count": 1,
+          "best_bpb": 0.4027,
+          "prs": [
+            {
+              "number": 1094,
+              "author": "michaelwinczuk",
+              "status": "AT_RISK",
+              "bpb": 0.4027,
+              "created": "2026-03-29T19:53:40Z"
             }
           ]
         },
@@ -33251,6 +33328,13 @@
           "status": "AT_RISK",
           "bpb": 0.4961,
           "created": "2026-03-29T15:59:30Z"
+        },
+        {
+          "number": 1094,
+          "author": "michaelwinczuk",
+          "status": "AT_RISK",
+          "bpb": 0.4027,
+          "created": "2026-03-29T19:53:40Z"
         }
       ]
     },
@@ -33947,12 +34031,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 304,
+      "count": 305,
       "author_count": 211,
       "alive_count": 12,
-      "dead_count": 69,
-      "at_risk_count": 33,
-      "incomplete_count": 190,
+      "dead_count": 70,
+      "at_risk_count": 34,
+      "incomplete_count": 189,
       "unknown_count": 0,
       "best_alive": {
         "number": 549,
@@ -34423,6 +34507,34 @@
           ]
         },
         {
+          "author": "michaelwinczuk",
+          "pr_count": 3,
+          "best_bpb": 0.0037,
+          "prs": [
+            {
+              "number": 977,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 1.1185,
+              "created": "2026-03-27T19:37:17Z"
+            },
+            {
+              "number": 1031,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 0.0037,
+              "created": "2026-03-28T18:38:55Z"
+            },
+            {
+              "number": 1094,
+              "author": "michaelwinczuk",
+              "status": "AT_RISK",
+              "bpb": 0.4027,
+              "created": "2026-03-29T19:53:40Z"
+            }
+          ]
+        },
+        {
           "author": "haikosys",
           "pr_count": 3,
           "best_bpb": 0.0804,
@@ -34706,27 +34818,6 @@
               "status": "DEAD",
               "bpb": 1.1175,
               "created": "2026-03-24T18:39:30Z"
-            }
-          ]
-        },
-        {
-          "author": "michaelwinczuk",
-          "pr_count": 2,
-          "best_bpb": 0.0037,
-          "prs": [
-            {
-              "number": 977,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 1.1185,
-              "created": "2026-03-27T19:37:17Z"
-            },
-            {
-              "number": 1031,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 0.0037,
-              "created": "2026-03-28T18:38:55Z"
             }
           ]
         },
@@ -37097,7 +37188,7 @@
             {
               "number": 711,
               "author": "Complexity-ML",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-03-25T13:06:52Z"
             }
@@ -38998,7 +39089,7 @@
         {
           "number": 711,
           "author": "Complexity-ML",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-03-25T13:06:52Z"
         },
@@ -39694,18 +39785,25 @@
           "status": "INCOMPLETE",
           "bpb": 1.1219,
           "created": "2026-03-29T19:29:24Z"
+        },
+        {
+          "number": 1094,
+          "author": "michaelwinczuk",
+          "status": "AT_RISK",
+          "bpb": 0.4027,
+          "created": "2026-03-29T19:53:40Z"
         }
       ]
     },
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 365,
+      "count": 366,
       "author_count": 200,
       "alive_count": 6,
-      "dead_count": 137,
-      "at_risk_count": 45,
-      "incomplete_count": 177,
+      "dead_count": 138,
+      "at_risk_count": 46,
+      "incomplete_count": 176,
       "unknown_count": 0,
       "best_alive": {
         "number": 549,
@@ -40414,6 +40512,41 @@
           ]
         },
         {
+          "author": "michaelwinczuk",
+          "pr_count": 4,
+          "best_bpb": 0.0037,
+          "prs": [
+            {
+              "number": 977,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 1.1185,
+              "created": "2026-03-27T19:37:17Z"
+            },
+            {
+              "number": 1031,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 0.0037,
+              "created": "2026-03-28T18:38:55Z"
+            },
+            {
+              "number": 1081,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 1.122,
+              "created": "2026-03-29T15:11:37Z"
+            },
+            {
+              "number": 1094,
+              "author": "michaelwinczuk",
+              "status": "AT_RISK",
+              "bpb": 0.4027,
+              "created": "2026-03-29T19:53:40Z"
+            }
+          ]
+        },
+        {
           "author": "THUQiXuan",
           "pr_count": 4,
           "best_bpb": 0.02801,
@@ -40711,34 +40844,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1418,
               "created": "2026-03-24T06:32:12Z"
-            }
-          ]
-        },
-        {
-          "author": "michaelwinczuk",
-          "pr_count": 3,
-          "best_bpb": 0.0037,
-          "prs": [
-            {
-              "number": 977,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 1.1185,
-              "created": "2026-03-27T19:37:17Z"
-            },
-            {
-              "number": 1031,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 0.0037,
-              "created": "2026-03-28T18:38:55Z"
-            },
-            {
-              "number": 1081,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 1.122,
-              "created": "2026-03-29T15:11:37Z"
             }
           ]
         },
@@ -41730,7 +41835,7 @@
             {
               "number": 711,
               "author": "Complexity-ML",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-03-25T13:06:52Z"
             }
@@ -45164,7 +45269,7 @@
         {
           "number": 711,
           "author": "Complexity-ML",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-03-25T13:06:52Z"
         },
@@ -46224,17 +46329,24 @@
           "status": "INCOMPLETE",
           "bpb": 1.1219,
           "created": "2026-03-29T19:29:24Z"
+        },
+        {
+          "number": 1094,
+          "author": "michaelwinczuk",
+          "status": "AT_RISK",
+          "bpb": 0.4027,
+          "created": "2026-03-29T19:53:40Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 286,
+      "count": 287,
       "author_count": 168,
       "alive_count": 7,
       "dead_count": 90,
-      "at_risk_count": 37,
+      "at_risk_count": 38,
       "incomplete_count": 152,
       "unknown_count": 0,
       "best_alive": {
@@ -47364,6 +47476,27 @@
           ]
         },
         {
+          "author": "michaelwinczuk",
+          "pr_count": 2,
+          "best_bpb": 0.4027,
+          "prs": [
+            {
+              "number": 1081,
+              "author": "michaelwinczuk",
+              "status": "INCOMPLETE",
+              "bpb": 1.122,
+              "created": "2026-03-29T15:11:37Z"
+            },
+            {
+              "number": 1094,
+              "author": "michaelwinczuk",
+              "status": "AT_RISK",
+              "bpb": 0.4027,
+              "created": "2026-03-29T19:53:40Z"
+            }
+          ]
+        },
+        {
           "author": "pentxayc",
           "pr_count": 2,
           "best_bpb": 0.4416,
@@ -48214,20 +48347,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1213,
               "created": "2026-03-22T04:15:33Z"
-            }
-          ]
-        },
-        {
-          "author": "michaelwinczuk",
-          "pr_count": 1,
-          "best_bpb": 1.122,
-          "prs": [
-            {
-              "number": 1081,
-              "author": "michaelwinczuk",
-              "status": "INCOMPLETE",
-              "bpb": 1.122,
-              "created": "2026-03-29T15:11:37Z"
             }
           ]
         },
@@ -51424,17 +51543,24 @@
           "status": "AT_RISK",
           "bpb": 1.1086,
           "created": "2026-03-29T18:10:07Z"
+        },
+        {
+          "number": 1094,
+          "author": "michaelwinczuk",
+          "status": "AT_RISK",
+          "bpb": 0.4027,
+          "created": "2026-03-29T19:53:40Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 190,
-      "author_count": 96,
+      "count": 191,
+      "author_count": 97,
       "alive_count": 2,
       "dead_count": 77,
-      "at_risk_count": 34,
+      "at_risk_count": 35,
       "incomplete_count": 77,
       "unknown_count": 0,
       "best_alive": {
@@ -52742,6 +52868,20 @@
               "status": "DEAD",
               "bpb": 0.29519,
               "created": "2026-03-26T04:20:24Z"
+            }
+          ]
+        },
+        {
+          "author": "michaelwinczuk",
+          "pr_count": 1,
+          "best_bpb": 0.4027,
+          "prs": [
+            {
+              "number": 1094,
+              "author": "michaelwinczuk",
+              "status": "AT_RISK",
+              "bpb": 0.4027,
+              "created": "2026-03-29T19:53:40Z"
             }
           ]
         },
@@ -54776,6 +54916,13 @@
           "status": "AT_RISK",
           "bpb": 1.1086,
           "created": "2026-03-29T18:10:07Z"
+        },
+        {
+          "number": 1094,
+          "author": "michaelwinczuk",
+          "status": "AT_RISK",
+          "bpb": 0.4027,
+          "created": "2026-03-29T19:53:40Z"
         }
       ]
     },
@@ -56727,11 +56874,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 134,
-      "author_count": 64,
+      "count": 135,
+      "author_count": 65,
       "alive_count": 0,
       "dead_count": 60,
-      "at_risk_count": 74,
+      "at_risk_count": 75,
       "incomplete_count": 0,
       "unknown_count": 0,
       "best_alive": null,
@@ -57713,6 +57860,20 @@
               "status": "DEAD",
               "bpb": 0.29519,
               "created": "2026-03-26T04:20:24Z"
+            }
+          ]
+        },
+        {
+          "author": "michaelwinczuk",
+          "pr_count": 1,
+          "best_bpb": 0.4027,
+          "prs": [
+            {
+              "number": 1094,
+              "author": "michaelwinczuk",
+              "status": "AT_RISK",
+              "bpb": 0.4027,
+              "created": "2026-03-29T19:53:40Z"
             }
           ]
         },
@@ -59061,6 +59222,13 @@
           "status": "AT_RISK",
           "bpb": 0.4961,
           "created": "2026-03-29T15:59:30Z"
+        },
+        {
+          "number": 1094,
+          "author": "michaelwinczuk",
+          "status": "AT_RISK",
+          "bpb": 0.4027,
+          "created": "2026-03-29T19:53:40Z"
         }
       ]
     },
@@ -60546,9 +60714,9 @@
       "count": 64,
       "author_count": 57,
       "alive_count": 2,
-      "dead_count": 12,
+      "dead_count": 13,
       "at_risk_count": 2,
-      "incomplete_count": 48,
+      "incomplete_count": 47,
       "unknown_count": 0,
       "best_alive": {
         "number": 180,
@@ -61285,7 +61453,7 @@
             {
               "number": 711,
               "author": "Complexity-ML",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-03-25T13:06:52Z"
             }
@@ -61758,7 +61926,7 @@
         {
           "number": 711,
           "author": "Complexity-ML",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-03-25T13:06:52Z"
         },
@@ -65899,9 +66067,9 @@
       "count": 15,
       "author_count": 12,
       "alive_count": 0,
-      "dead_count": 5,
+      "dead_count": 6,
       "at_risk_count": 0,
-      "incomplete_count": 10,
+      "incomplete_count": 9,
       "unknown_count": 0,
       "best_alive": null,
       "people": [
@@ -65934,7 +66102,7 @@
             {
               "number": 711,
               "author": "Complexity-ML",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-03-25T13:06:52Z"
             }
@@ -66169,7 +66337,7 @@
         {
           "number": 711,
           "author": "Complexity-ML",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-03-25T13:06:52Z"
         },
@@ -67919,11 +68087,11 @@
     {
       "left": "TTT",
       "right": "Progressive Depth",
-      "left_count": 365,
+      "left_count": 366,
       "right_count": 3,
       "left_people": 200,
       "right_people": 1,
-      "score": 1095
+      "score": 1098
     },
     {
       "left": "SWA",
@@ -67991,11 +68159,11 @@
     {
       "left": "Muon optimizer",
       "right": "Progressive Depth",
-      "left_count": 304,
+      "left_count": 305,
       "right_count": 3,
       "left_people": 211,
       "right_people": 1,
-      "score": 912
+      "score": 915
     },
     {
       "left": "BigramHash",
@@ -68009,11 +68177,11 @@
     {
       "left": "EMA",
       "right": "Progressive Depth",
-      "left_count": 286,
+      "left_count": 287,
       "right_count": 3,
       "left_people": 168,
       "right_people": 1,
-      "score": 858
+      "score": 861
     },
     {
       "left": "QAT",
@@ -68045,11 +68213,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 365,
+      "left_count": 366,
       "right_count": 2,
       "left_people": 200,
       "right_people": 2,
-      "score": 730
+      "score": 732
     },
     {
       "left": "XSA",
@@ -68090,11 +68258,11 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 304,
+      "left_count": 305,
       "right_count": 2,
       "left_people": 211,
       "right_people": 2,
-      "score": 608
+      "score": 610
     },
     {
       "left": "QAT",
@@ -68126,29 +68294,29 @@
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 286,
+      "left_count": 287,
       "right_count": 2,
       "left_people": 168,
       "right_people": 2,
-      "score": 572
+      "score": 574
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 286,
+      "left_count": 287,
       "right_count": 2,
       "left_people": 168,
       "right_people": 2,
-      "score": 572
+      "score": 574
     },
     {
       "left": "GPTQ",
       "right": "Progressive Depth",
-      "left_count": 190,
+      "left_count": 191,
       "right_count": 3,
-      "left_people": 96,
+      "left_people": 97,
       "right_people": 1,
-      "score": 570
+      "score": 573
     },
     {
       "left": "BigramHash",
@@ -68216,20 +68384,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 190,
+      "left_count": 191,
       "right_count": 2,
-      "left_people": 96,
+      "left_people": 97,
       "right_people": 2,
-      "score": 380
+      "score": 382
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 190,
+      "left_count": 191,
       "right_count": 2,
-      "left_people": 96,
+      "left_people": 97,
       "right_people": 2,
-      "score": 380
+      "score": 382
     },
     {
       "left": "SwiGLU",
@@ -68243,11 +68411,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 365,
+      "left_count": 366,
       "right_count": 1,
       "left_people": 200,
       "right_people": 1,
-      "score": 365
+      "score": 366
     },
     {
       "left": "XSA",
@@ -68288,11 +68456,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 286,
+      "left_count": 287,
       "right_count": 1,
       "left_people": 168,
       "right_people": 1,
-      "score": 286
+      "score": 287
     },
     {
       "left": "Parallel Muon",
@@ -68369,11 +68537,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 190,
+      "left_count": 191,
       "right_count": 1,
-      "left_people": 96,
+      "left_people": 97,
       "right_people": 1,
-      "score": 190
+      "score": 191
     },
     {
       "left": "Parallel Muon",
