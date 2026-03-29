@@ -118,41 +118,43 @@ def _format_artifact(artifact_bytes: int | None) -> str:
 
 
 def _status_badge(status: str, seeds: int | None) -> str:
-    """Render an HTML badge for a PR status."""
-    badges: dict[str, tuple[str, str]] = {
-        "ALIVE": ("badge-alive", "ALIVE"),
-        "DEAD": ("badge-dead", "DEAD"),
-        "AT_RISK": ("badge-risk", "AT-RISK"),
-        "INCOMPLETE": ("badge-incomplete", "INCOMPLETE"),
-        "UNKNOWN": ("badge-incomplete", "UNKNOWN"),
+    """Render an HTML badge for a PR status with tooltip."""
+    badges: dict[str, tuple[str, str, str]] = {
+        "ALIVE": ("badge-alive", "ALIVE", "Open PR, 3/3 seeds, known artifact, passes compliance"),
+        "DEAD": ("badge-dead", "DEAD", "Closed by maintainer for compliance violation"),
+        "AT_RISK": ("badge-risk", "AT-RISK", "Open but flagged — banned technique keywords detected"),
+        "INCOMPLETE": ("badge-incomplete", "INCOMPLETE", "Missing required fields (seeds, artifact, or BPB)"),
+        "UNKNOWN": ("badge-incomplete", "UNKNOWN", "Classification failed — check flags"),
     }
     if status == "INCOMPLETE" and seeds is not None and seeds < 3:
-        cls, label = "badge-incomplete", f"{seeds} SEED{'S' if seeds != 1 else ''}"
+        cls = "badge-incomplete"
+        label = f"{seeds} SEED{'S' if seeds != 1 else ''}"
+        tip = f"Only {seeds}/3 seeds submitted — needs all 3 (42, 1337, 2024)"
     else:
-        cls, label = badges.get(status, ("badge-incomplete", status))
-    return f'<span class="badge {cls}">{label}</span>'
+        cls, label, tip = badges.get(status, ("badge-incomplete", status, ""))
+    return f'<span class="badge {cls}" title="{tip}">{label}</span>'
 
 
 def _type_badge(technique_type: str) -> str:
-    """Render an HTML badge for technique type."""
-    badges: dict[str, tuple[str, str]] = {
-        "neural": ("badge-neural", "Neural"),
-        "cache": ("badge-cache", "Cache"),
-        "ttt": ("badge-ttt", "TTT"),
-        "hybrid": ("badge-hybrid", "Hybrid"),
+    """Render an HTML badge for technique type with tooltip."""
+    badges: dict[str, tuple[str, str, str]] = {
+        "neural": ("badge-neural", "Neural", "Pure neural architecture — no caching or test-time training"),
+        "cache": ("badge-cache", "Cache", "Uses n-gram or eval-time caching — check compliance"),
+        "ttt": ("badge-ttt", "TTT", "Test-time training — adapts model weights during evaluation"),
+        "hybrid": ("badge-hybrid", "Hybrid", "Combines neural + cache or TTT techniques"),
     }
-    cls, label = badges.get(technique_type, ("badge-incomplete", technique_type or "?"))
-    return f'<span class="badge {cls}">{label}</span>'
+    cls, label, tip = badges.get(technique_type, ("badge-incomplete", technique_type or "?", "Type unknown"))
+    return f'<span class="badge {cls}" title="{tip}">{label}</span>'
 
 
 def _track_badge(track: str) -> str:
-    """Render an HTML badge for submission track."""
-    badges: dict[str, tuple[str, str]] = {
-        "record": ("badge-record", "Record"),
-        "non-record": ("badge-nonrecord", "Non-Record"),
+    """Render an HTML badge for submission track with tooltip."""
+    badges: dict[str, tuple[str, str, str]] = {
+        "record": ("badge-record", "Record", "Main track: 10min on 8xH100 SXM, artifact ≤ 16MB"),
+        "non-record": ("badge-nonrecord", "Non-Record", "Notable submission outside record constraints"),
     }
-    cls, label = badges.get(track, ("badge-incomplete", track or "?"))
-    return f'<span class="badge {cls}">{label}</span>'
+    cls, label, tip = badges.get(track, ("badge-incomplete", track or "?", "Track unknown"))
+    return f'<span class="badge {cls}" title="{tip}">{label}</span>'
 
 
 def _pr_link(number: int) -> str:
@@ -162,10 +164,10 @@ def _pr_link(number: int) -> str:
 
 def _technique_badge(kind: str, count: int) -> str:
     if kind == "banned":
-        return '<span class="badge badge-banned">BANNED</span>'
+        return '<span class="badge badge-banned" title="Banned by maintainers — submissions using this are DEAD">BANNED</span>'
     if count == 0:
-        return '<span class="badge badge-grey">UNTRIED</span>'
-    return '<span class="badge badge-legal">LEGAL</span>'
+        return '<span class="badge badge-grey" title="No PRs have tried this technique yet">UNTRIED</span>'
+    return '<span class="badge badge-legal" title="Legal technique — allowed in submissions">LEGAL</span>'
 
 
 def _render_technique_card(technique: dict[str, Any]) -> str:

@@ -36,7 +36,9 @@ h3 { color: var(--text-bright); font-size: 1.1rem; margin: 1.5rem 0 0.75rem; tex
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; }
 .card p, .card div, .card span, .card code { text-align: left; }
 .card h3 { text-align: center; }
-.badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+.badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; cursor: help; }
+[title] { cursor: help; }
+abbr[title] { text-decoration: underline dotted var(--text-dim); cursor: help; }
 .badge-legal { background: rgba(63,185,80,0.15); color: var(--green); }
 .badge-banned { background: rgba(248,81,73,0.15); color: var(--red); }
 .badge-grey { background: rgba(210,153,34,0.15); color: var(--yellow); }
@@ -213,14 +215,14 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <div class="card">
 <h3>Before You Submit</h3>
 <ul class="checklist">
-  <li>Artifact &le; 16,000,000 bytes (code + compressed model)</li>
-  <li>Training completed in &le; 600 seconds on 8&times;H100 SXM</li>
-  <li>Evaluation completed in &le; 600 seconds (separate budget)</li>
-  <li>3 seeds: 42, 1337, 2024</li>
-  <li>BPB beats current SOTA by &ge; 0.005 nats (for record track)</li>
-  <li>submission.json included with val_bpb, seeds, artifact sizes</li>
-  <li>Training logs included for all 3 seeds</li>
-  <li>No network calls during training or eval</li>
+  <li title="Total size of your training script + compressed model weights, measured in bytes">Artifact &le; 16,000,000 bytes (code + compressed model)</li>
+  <li title="Wall-clock time from first step to last step, measured on 8x NVIDIA H100 SXM GPUs">Training completed in &le; 600 seconds on 8&times;H100 SXM</li>
+  <li title="Separate 600-second budget for evaluation — not shared with training time">Evaluation completed in &le; 600 seconds (separate budget)</li>
+  <li title="All 3 random seeds must produce valid results — prevents cherry-picking">3 seeds: 42, 1337, 2024</li>
+  <li title="Your 3-seed mean BPB must beat the current best by at least 0.005 to be a new record">BPB beats current SOTA by &ge; 0.005 nats (for record track)</li>
+  <li title="JSON file with your val_bpb scores, seed results, and artifact sizes">submission.json included with val_bpb, seeds, artifact sizes</li>
+  <li title="stdout/stderr logs from all 3 training runs for reproducibility verification">Training logs included for all 3 seeds</li>
+  <li title="No downloading models, data, or making API calls during train or eval time">No network calls during training or eval</li>
 </ul>
 </div>
 
@@ -311,7 +313,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </div>
 <div class="table-scroll">
 <table id="table-neural">
-<thead><tr><th>Status</th><th>#</th><th>PR</th><th>Author</th><th>BPB</th><th>Seeds</th><th>Artifact</th><th>Type</th><th>Track</th></tr></thead>
+<thead><tr><th title="ALIVE / AT-RISK / INCOMPLETE / DEAD">Status</th><th title="Rank by BPB (lower is better)">#</th><th title="Pull request number on openai/parameter-golf">PR</th><th title="GitHub username">Author</th><th title="Bits per byte — lower is better. Competition metric.">BPB</th><th title="Seeds validated (need 3/3: seeds 42, 1337, 2024)">Seeds</th><th title="Compressed artifact size (code + model, max 16MB)">Artifact</th><th title="Neural / Cache / TTT / Hybrid">Type</th><th title="Record (10min 8xH100) or Non-Record">Track</th></tr></thead>
 <tbody>
 <!-- AGORA:LEADERBOARD_NEURAL_START -->
 <tr data-status="alive" data-type="ttt" data-track="record"><td><span class="badge badge-alive">ALIVE</span></td><td>1</td><td><a href="https://github.com/openai/parameter-golf/pull/549">#549</a></td><td>@abaybektursun</td><td>1.1194</td><td>3/3</td><td>15.9 MB</td><td><span class="badge badge-ttt">TTT</span></td><td><span class="badge badge-record">Record</span></td></tr>
@@ -349,7 +351,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </div>
 <div class="table-scroll">
 <table id="table-archive">
-<thead><tr><th>Status</th><th>#</th><th>PR</th><th>Author</th><th>BPB</th><th>Seeds</th><th>Artifact</th><th>Type</th><th>Track</th><th>Reason</th></tr></thead>
+<thead><tr><th title="ALIVE / AT-RISK / INCOMPLETE / DEAD">Status</th><th title="Rank by BPB (lower is better)">#</th><th title="Pull request number on openai/parameter-golf">PR</th><th title="GitHub username">Author</th><th title="Bits per byte — lower is better. Competition metric.">BPB</th><th title="Seeds validated (need 3/3: seeds 42, 1337, 2024)">Seeds</th><th title="Compressed artifact size (code + model, max 16MB)">Artifact</th><th title="Neural / Cache / TTT / Hybrid">Type</th><th title="Record (10min 8xH100) or Non-Record">Track</th><th title="Why this PR was closed or flagged">Reason</th></tr></thead>
 <tbody>
 <!-- AGORA:LEADERBOARD_ARCHIVE_START -->
 <tr data-status="alive" data-type="neural" data-track="record"><td><span class="badge badge-alive">ALIVE</span></td><td>1</td><td><a href="https://github.com/openai/parameter-golf/pull/42">#42</a></td><td>@chonchiog</td><td>0.0005</td><td>2/3</td><td>16.0 MB</td><td><span class="badge badge-neural">Neural</span></td><td><span class="badge badge-record">Record</span></td><td>&mdash;</td></tr>
@@ -1409,9 +1411,9 @@ tr:hover { background: rgba(88,166,255,0.04); }
 
 <div class="stat-grid">
   <div class="stat-box"><div class="value"><a href="https://openai.com/index/parameter-golf/" style="color:var(--accent);">$1,000,000</a></div><div class="label">OpenAI Promised (<a href="https://www.runpod.io/press/runpod-named-openai-infrastructure-partner" style="color:var(--blue);font-size:0.7rem;">via RunPod</a>)</div></div>
-  <div class="stat-box"><div class="value">$1,175</div><div class="label">Grants Tracked</div></div>
-  <div class="stat-box"><div class="value">$3,695+</div><div class="label">Self-Funded Tracked</div></div>
-  <div class="stat-box"><div class="value">7</div><div class="label">Participants Tracked</div></div>
+  <div class="stat-box" title="Total compute grants distributed to tracked participants"><div class="value">$1,175</div><div class="label">Grants Tracked</div></div>
+  <div class="stat-box" title="Total out-of-pocket spending by tracked participants (Stripe, Google Pay, etc.)"><div class="value">$3,695+</div><div class="label">Self-Funded Tracked</div></div>
+  <div class="stat-box" title="Participants who have reported their compute spending"><div class="value">7</div><div class="label">Participants Tracked</div></div>
 </div>
 
 <table>
@@ -1448,8 +1450,8 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <h2>Compute Survival Guide</h2>
 
 <div class="card" style="border-color:var(--red);">
-<h3 style="color:var(--red);">The Golden Rule: Serverless, Not Pods</h3>
-<p>Your workload is 10 min train + 10 min eval. That's a perfect serverless job. There is ZERO reason to keep a pod alive.</p>
+<h3 style="color:var(--red);">The Golden Rule: Serverless for Iteration, Pods Only for Final Submission</h3>
+<p>Use serverless for development, testing, and architecture validation. It's cheaper, faster, and auto-stops. But <strong style="color:var(--yellow);">official PR submissions must run on 8&times;H100 SXM with verifiable timing</strong> &mdash; serverless providers may use different hardware or add overhead that affects your reported step times. Use serverless to iterate, then do your final 3-seed submission run on a known 8&times;H100 SXM pod.</p>
 <div class="guide-compare">
   <div class="bad">
     <h4>Pods (anti-pattern)</h4>
