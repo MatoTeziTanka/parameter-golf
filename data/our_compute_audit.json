@@ -1,0 +1,135 @@
+{
+  "team": "OLYMPUS / Light Speed Up / @MatoTeziTanka",
+  "competition": "OpenAI Parameter Golf",
+  "period": "2026-03-18 to 2026-03-29",
+  "proof_level": "API_VERIFIED",
+  "platforms": {
+    "modal": {
+      "total_usd": "73.72",
+      "source": "Modal billing API (workspace_billing_report)",
+      "grant_usd": "0.00",
+      "self_funded_usd": "73.72",
+      "runs": 8,
+      "dates": "2026-03-21 to 2026-03-22",
+      "description": "proteus-pgolf app runs, 8xH100 training attempts",
+      "items": [
+        {
+          "date": "2026-03-21",
+          "app_id": "ap-5EQ8tSBrHapXgNNdEySmLs",
+          "cost_usd": "0.03"
+        },
+        {
+          "date": "2026-03-21",
+          "app_id": "ap-8vDYDaAG79XDeRFwKukwBK",
+          "cost_usd": "0.00"
+        },
+        {
+          "date": "2026-03-22",
+          "app_id": "ap-FqpRJBKcJfKsBbXfwyH24d",
+          "cost_usd": "17.42"
+        },
+        {
+          "date": "2026-03-22",
+          "app_id": "ap-Zs7xtdEYWB7l0Nbbh0E36b",
+          "cost_usd": "17.16"
+        },
+        {
+          "date": "2026-03-22",
+          "app_id": "ap-b4esG6eCZf1ojit2scaceH",
+          "cost_usd": "1.59"
+        },
+        {
+          "date": "2026-03-22",
+          "app_id": "ap-hH7tPsU1r3M1jsTlUTbiA4",
+          "cost_usd": "16.79"
+        },
+        {
+          "date": "2026-03-21",
+          "app_id": "ap-vK0iIdDOG7rYcL75NNljgQ",
+          "cost_usd": "17.48"
+        },
+        {
+          "date": "2026-03-22",
+          "app_id": "ap-yTIabk5IZzHuQ8lHOHM4Ta",
+          "cost_usd": "3.25"
+        }
+      ]
+    },
+    "runpod": {
+      "total_usd": "23.39",
+      "source": "RunPod GraphQL API (clientBalance) + OpenAI grant amount",
+      "grant_usd": "25.00",
+      "self_funded_usd": "0.00",
+      "remaining_balance_usd": "1.61",
+      "runs": 9,
+      "dates": "2026-03-19 to 2026-03-25",
+      "gpu": "8xH100 SXM",
+      "description": "Training runs v1 through v15, 3-seed validation on v1",
+      "runs_detail": [
+        {
+          "version": "v1",
+          "seed": 42,
+          "date": "2026-03-19",
+          "note": ""
+        },
+        {
+          "version": "v1",
+          "seed": 42,
+          "date": "2026-03-19",
+          "note": "r2 retry"
+        },
+        {
+          "version": "v1",
+          "seed": 42,
+          "date": "2026-03-20",
+          "note": "final"
+        },
+        {
+          "version": "v1",
+          "seed": 1337,
+          "date": "2026-03-20",
+          "note": ""
+        },
+        {
+          "version": "v1",
+          "seed": 2024,
+          "date": "2026-03-20",
+          "note": ""
+        },
+        {
+          "version": "v3",
+          "seed": 42,
+          "date": "2026-03-20",
+          "note": ""
+        },
+        {
+          "version": "v3",
+          "seed": 42,
+          "date": "2026-03-21",
+          "note": "final"
+        },
+        {
+          "version": "v13",
+          "seed": 42,
+          "date": "2026-03-24",
+          "note": "neural-only"
+        },
+        {
+          "version": "v15",
+          "seed": 42,
+          "date": "2026-03-25",
+          "note": "comp+stride32"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_spent_usd": "97.11",
+    "from_grants_usd": "25.00",
+    "self_funded_usd": "73.72",
+    "runpod_grant_remaining_usd": "1.61",
+    "total_gpu_runs": 17,
+    "waste_estimate_usd": "~50",
+    "waste_note": "Modal image build failures (L-005), RunPod pod idle time, failed container starts"
+  }
+}
