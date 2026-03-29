@@ -145,7 +145,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </div>
 <script>
 (function(){
-  var API = 'https://styx.lightspeedup.com/api/agora/visit';
+  var API = 'https://lightspeedup.com/api/agora/visit';
   fetch(API).then(function(r){return r.json()}).then(function(d){
     document.getElementById('counter-total').textContent = d.total.toLocaleString();
     document.getElementById('counter-active').textContent = d.active;
@@ -165,26 +165,58 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <section id="changelog">
 <h2>Changelog &amp; Roadmap</h2>
 <div class="card">
+<h3 style="margin-top:0;color:var(--green);">v0.5.0 &mdash; March 28, 2026 (All Phases Shipped)</h3>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+  <li>GitHub Actions cron &mdash; auto-updates every 30 minutes</li>
+  <li>6 issue templates for community input (funding, corrections, techniques, blocked, resources, feedback)</li>
+  <li>Community issue ingestion pipeline (fetch_community.py)</li>
+</ul>
+</div>
+<div class="card">
+<h3 style="margin-top:0;color:var(--green);">v0.4.0 &mdash; March 28, 2026 (Phase 4: Community Input)</h3>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+  <li>Issue templates: funding report, dispute classification, suggest technique, blocked on compute, share resource, general feedback</li>
+  <li>fetch_community.py &mdash; auto-processes GitHub Issues, updates data files, closes ingested issues</li>
+  <li>Pipeline integration &mdash; community input runs before classification</li>
+</ul>
+</div>
+<div class="card">
+<h3 style="margin-top:0;color:var(--green);">v0.3.0 &mdash; March 28, 2026 (Phase 3: Analytics)</h3>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+  <li>Technique map &mdash; 24 techniques tracked, grouped by PRs, alive/dead ratios</li>
+  <li>BPB timeline &mdash; inline SVG chart, SOTA over time, March 27 cliff marked</li>
+  <li>Collaboration finder &mdash; who's working on what, untried combinations</li>
+  <li>Built by Codex (gpt-5.4), audited by Claude Code</li>
+</ul>
+</div>
+<div class="card">
+<h3 style="margin-top:0;color:var(--green);">v0.2.0 &mdash; March 28, 2026 (Phase 2: Live API)</h3>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+  <li>Live leaderboard &mdash; 996 PRs fetched via GitHub GraphQL API</li>
+  <li>Compliance engine &mdash; auto-classifies ALIVE / DEAD / AT-RISK / INCOMPLETE</li>
+  <li>142 ALIVE, 291 DEAD, 88 AT-RISK, 475 INCOMPLETE</li>
+  <li>Cached + incremental fetching for efficiency</li>
+</ul>
+</div>
+<div class="card">
 <h3 style="margin-top:0;color:var(--green);">v0.1.0 &mdash; March 28, 2026 (Phase 1: Static Foundation)</h3>
 <ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
   <li>Submission checklist (legal / banned / grey area)</li>
   <li>Rule change history (March 22, 24, 27 rulings)</li>
-  <li>Dual leaderboard (neural-only + archive) &mdash; seeded data</li>
-  <li>Funding transparency tracker (7 entries, all PUBLIC_STATEMENT)</li>
+  <li>Dual leaderboard (seeded data)</li>
+  <li>Funding transparency tracker (7 entries)</li>
   <li>Blocked on compute board</li>
   <li>Compute survival guide (serverless &gt; pods)</li>
-  <li>Contribute section with 6 issue templates</li>
+  <li>Visitor counter (Redis-backed via OLYMPUS API)</li>
 </ul>
 </div>
 <div class="card" style="border-color:var(--border);opacity:0.7;">
 <h3 style="margin-top:0;color:var(--text-dim);">Roadmap</h3>
 <ul style="font-size:0.85rem;color:var(--text-dim);list-style:none;padding-left:0;">
-  <li>&#9744; <strong>v0.2.0</strong> &mdash; Auto-updating leaderboard (GitHub GraphQL API, 30-min cron)</li>
-  <li>&#9744; <strong>v0.3.0</strong> &mdash; Compliance engine (auto-flag banned techniques)</li>
-  <li>&#9744; <strong>v0.4.0</strong> &mdash; Technique map + BPB timeline + collaboration finder</li>
-  <li>&#9744; <strong>v0.5.0</strong> &mdash; Community input ingestion (auto-process Issues)</li>
   <li>&#9744; <strong>v0.6.0</strong> &mdash; Cited research tracker (papers &rarr; PRs &rarr; BPB)</li>
-  <li>&#9744; <strong>v1.0.0</strong> &mdash; Full automation + community launch</li>
+  <li>&#9744; <strong>v0.7.0</strong> &mdash; Cost efficiency ranking (dollars per BPB point)</li>
+  <li>&#9744; <strong>v0.8.0</strong> &mdash; Review queue metrics (PR wait times, peer reviewer recognition)</li>
+  <li>&#9744; <strong>v1.0.0</strong> &mdash; Community governance (threshold-based classification disputes)</li>
 </ul>
 </div>
 </section>
