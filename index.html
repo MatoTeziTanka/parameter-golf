@@ -79,13 +79,13 @@ tr:hover { background: rgba(88,166,255,0.04); }
 .technique-card { background: rgba(13,17,23,0.55); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; }
 .technique-card-banned { border-color: rgba(248,81,73,0.45); }
 .technique-card-empty { opacity: 0.82; }
-.technique-card-head { display: flex; align-items: flex-start; justify-content: center; gap: 0.75rem; margin-bottom: 0.35rem; }
-.technique-card-head h3 { margin: 0; font-size: 1rem; }
-.technique-card-sub { color: var(--text-dim); font-size: 0.82rem; margin-bottom: 0.85rem; }
+.technique-card-head { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem; }
+.technique-card-head h3 { margin: 0; font-size: 1rem; text-align: center; }
+.technique-card-sub { color: var(--text-dim); font-size: 0.82rem; margin-bottom: 0.85rem; text-align: center; }
 .technique-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; text-align: center; }
-.technique-metrics span { display: block; color: var(--text-dim); font-size: 0.75rem; margin-bottom: 0.15rem; }
-.technique-metrics strong { display: block; color: var(--text-bright); font-size: 0.92rem; }
-.technique-card-foot { color: var(--text-dim); font-size: 0.78rem; margin-top: 0.85rem; }
+.technique-metrics span { display: block; color: var(--text-dim); font-size: 0.75rem; margin-bottom: 0.15rem; text-align: center; }
+.technique-metrics strong { display: block; color: var(--text-bright); font-size: 0.92rem; text-align: center; }
+.technique-card-foot { color: var(--text-dim); font-size: 0.78rem; margin-top: 0.85rem; text-align: center; }
 
 .collab-list { display: grid; gap: 0.85rem; }
 .collab-item { padding-bottom: 0.85rem; border-bottom: 1px solid var(--border); }
@@ -95,9 +95,9 @@ tr:hover { background: rgba(88,166,255,0.04); }
 .technique-overflow { color: var(--text); }
 
 .combo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; }
-.combo-chip { background: rgba(188,140,255,0.08); border: 1px solid rgba(188,140,255,0.22); border-radius: 8px; padding: 0.85rem 0.9rem; }
-.combo-chip strong { display: block; color: var(--text-bright); margin-bottom: 0.25rem; font-size: 0.9rem; }
-.combo-chip span { color: var(--text-dim); font-size: 0.82rem; }
+.combo-chip { background: rgba(188,140,255,0.08); border: 1px solid rgba(188,140,255,0.22); border-radius: 8px; padding: 0.85rem 0.9rem; text-align: center; }
+.combo-chip strong { display: block; color: var(--text-bright); margin-bottom: 0.25rem; font-size: 0.9rem; text-align: center; }
+.combo-chip span { color: var(--text-dim); font-size: 0.82rem; display: block; text-align: center; }
 
 .chart-card { overflow: hidden; }
 .chart-card svg { display: block; width: 100%; height: auto; }
@@ -285,9 +285,9 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <thead><tr><th>Status</th><th>#</th><th>PR</th><th>Author</th><th>BPB</th><th>Seeds</th><th>Artifact</th><th>Type</th><th>Track</th></tr></thead>
 <tbody>
 <!-- AGORA:LEADERBOARD_NEURAL_START -->
-<tr data-status="alive" data-type="ttt" data-track="record"><td><span class="badge badge-alive">ALIVE</span></td><td>1</td><td><a href="https://github.com/openai/parameter-golf/pull/549">#549</a></td><td>@abaybektursun</td><td>1.1194</td><td>3/3</td><td>15.9 MB</td><td><span class="badge badge-ttt">TTT</span></td><td><span class="badge badge-record">Record</span></td></tr>
-<tr data-status="alive" data-type="ttt" data-track="record"><td><span class="badge badge-alive">ALIVE</span></td><td>2</td><td><a href="https://github.com/openai/parameter-golf/pull/414">#414</a></td><td>@signalrush</td><td>1.1233</td><td>3/3</td><td>15.6 MB</td><td><span class="badge badge-ttt">TTT</span></td><td><span class="badge badge-record">Record</span></td></tr>
-<tr data-status="alive" data-type="ttt" data-track="non-record"><td><span class="badge badge-alive">ALIVE</span></td><td>3</td><td><a href="https://github.com/openai/parameter-golf/pull/641">#641</a></td><td>@CiprianFlorin-Ifrim</td><td>1.1239</td><td>3/3</td><td>15.7 MB</td><td><span class="badge badge-ttt">TTT</span></td><td><span class="badge badge-nonrecord">Non-Record</span></td></tr>
+<tr data-status="alive" data-type="ttt" data-track="record"><td><span class="badge badge-alive">ALIVE</span></td><td>1</td><td><a href="https://github.com/openai/parameter-golf/pull/549">#549</a></td><td>@abaybektursun</td><td>1.1194</td><td>3/3</td><td>15.9 MB</td><td><span class="badge badge-neural">Neural</span> <span class="badge badge-ttt">TTT</span></td><td><span class="badge badge-record">Record</span></td></tr>
+<tr data-status="alive" data-type="neural" data-track="record"><td><span class="badge badge-alive">ALIVE</span></td><td>2</td><td><a href="https://github.com/openai/parameter-golf/pull/414">#414</a></td><td>@signalrush</td><td>1.1233</td><td>3/3</td><td>15.6 MB</td><td><span class="badge badge-neural">Neural</span></td><td><span class="badge badge-record">Record</span></td></tr>
+<tr data-status="alive" data-type="neural" data-track="non-record"><td><span class="badge badge-alive">ALIVE</span></td><td>3</td><td><a href="https://github.com/openai/parameter-golf/pull/641">#641</a></td><td>@CiprianFlorin-Ifrim</td><td>1.1239</td><td>3/3</td><td>15.7 MB</td><td><span class="badge badge-neural">Neural</span></td><td><span class="badge badge-nonrecord">Non-Record</span></td></tr>
 <tr data-status="alive" data-type="neural" data-track="record"><td><span class="badge badge-alive">ALIVE</span></td><td>4</td><td><a href="https://github.com/openai/parameter-golf/pull/265">#265</a></td><td>@unnir</td><td>1.1307</td><td>3/3</td><td>15.9 MB</td><td><span class="badge badge-neural">Neural</span></td><td><span class="badge badge-record">Record</span></td></tr>
 <tr data-status="alive" data-type="neural" data-track="record"><td><span class="badge badge-alive">ALIVE</span></td><td>5</td><td><a href="https://github.com/openai/parameter-golf/pull/65">#65</a></td><td>@aquariouseworkman</td><td>1.1556</td><td>3/3</td><td>15.9 MB</td><td><span class="badge badge-neural">Neural</span></td><td><span class="badge badge-record">Record</span></td></tr>
 <tr data-status="alive" data-type="ttt" data-track="record"><td><span class="badge badge-alive">ALIVE</span></td><td>6</td><td><a href="https://github.com/openai/parameter-golf/pull/640">#640</a></td><td>@CiprianFlorin-Ifrim</td><td>1.1570</td><td>3/3</td><td>16.0 MB</td><td><span class="badge badge-ttt">TTT</span></td><td><span class="badge badge-record">Record</span></td></tr>
