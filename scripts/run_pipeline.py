@@ -47,6 +47,7 @@ from typing import Any
 REPO_ROOT = Path(__file__).parent.parent
 CACHE_PATH = REPO_ROOT / "data" / "pr_cache.json"
 TECHNIQUES_PATH = REPO_ROOT / "data" / "techniques.json"
+CHANGELOG_PATH = REPO_ROOT / "data" / "changelog.json"
 INDEX_HTML_PATH = REPO_ROOT / "index.html"
 SCRIPTS_DIR = Path(__file__).parent
 
@@ -58,6 +59,8 @@ TECHNIQUES_START = "<!-- AGORA:TECHNIQUES_START -->"
 TECHNIQUES_END = "<!-- AGORA:TECHNIQUES_END -->"
 TIMELINE_START = "<!-- AGORA:TIMELINE_START -->"
 TIMELINE_END = "<!-- AGORA:TIMELINE_END -->"
+CHANGELOG_START = "<!-- AGORA:CHANGELOG_START -->"
+CHANGELOG_END = "<!-- AGORA:CHANGELOG_END -->"
 
 PR_BASE_URL = "https://github.com/openai/parameter-golf/pull"
 
@@ -289,6 +292,67 @@ def _render_timeline_section(svg: str, prs: list[dict[str, Any]]) -> str:
         f'{svg}'
         '</div>'
     )
+
+
+def _render_changelog(changelog: list[dict[str, Any]]) -> str:
+    """Render changelog entries from data/changelog.json into HTML cards."""
+    roadmap_items = [
+        ("v0.6.0", "Cited research tracker (papers &rarr; PRs &rarr; BPB)"),
+        ("v0.7.0", "Cost efficiency ranking (dollars per BPB point)"),
+        ("v0.8.0", "Review queue metrics (PR wait times, peer reviewer recognition)"),
+        ("v1.0.0", "Community governance (threshold-based classification disputes)"),
+    ]
+    cards: list[str] = []
+    for entry in changelog:
+        version = escape(entry["version"])
+        date = escape(entry["date"])
+        title = escape(entry["title"])
+        items = "".join(f"  <li>{escape(c)}</li>\n" for c in entry.get("changes", []))
+        cards.append(
+            f'<div class="card">\n'
+            f'<h3 style="margin-top:0;color:var(--green);">v{version} &mdash; {date} ({title})</h3>\n'
+            f'<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">\n'
+            f'{items}</ul>\n'
+            f'</div>'
+        )
+    # Roadmap
+    roadmap_lis = "".join(
+        f'  <li>&#9744; <strong>{v}</strong> &mdash; {desc}</li>\n'
+        for v, desc in roadmap_items
+    )
+    cards.append(
+        '<div class="card" style="border-color:var(--border);opacity:0.7;">\n'
+        '<h3 style="margin-top:0;color:var(--text-dim);">Roadmap</h3>\n'
+        '<ul style="font-size:0.85rem;color:var(--text-dim);list-style:none;padding-left:0;">\n'
+        f'{roadmap_lis}</ul>\n'
+        '</div>'
+    )
+    return "\n".join(cards)
+
+
+def _update_version_bar_from_changelog(html: str, changelog: list[dict[str, Any]], now: datetime) -> str:
+    """Sync the version bar with the latest changelog entry."""
+    if not changelog:
+        return html
+    latest = changelog[0]
+    version = latest["version"]
+    title = latest["title"]
+    date_str = now.strftime("%B %-d, %Y")
+    # Replace version
+    html = re.sub(
+        r'<strong style="color:var\(--accent\);">v[^<]+</strong>',
+        f'<strong style="color:var(--accent);">v{escape(version)}</strong>',
+        html,
+        count=1,
+    )
+    # Replace date and subtitle
+    html = re.sub(
+        r"(Last updated:\s*)[^&<]+(&middot;)\s*[^&<]+(&middot;)",
+        rf"\g<1>{date_str} \g<2> {escape(title)} \g<3>",
+        html,
+        count=1,
+    )
+    return html
 
 
 def _dead_reason(pr: dict[str, Any]) -> str:
@@ -534,17 +598,8 @@ def _replace_between_sentinels(html: str, start_marker: str, end_marker: str, ne
 
 
 def _update_version_bar(html: str, now: datetime) -> str:
-    """Update the 'Last updated' timestamp in the version bar."""
-    date_str = now.strftime("%B %-d, %Y")  # e.g. "March 29, 2026"
-    # Pattern: Last updated: <date text> (up to the next middot or angle bracket)
-    updated = re.sub(
-        r"(Last updated:\s*)[^&<]+",
-        rf"\g<1>{date_str} ",
-        html,
-        count=1,
-    )
-    # Don't overwrite version — it's managed manually in the HTML
-    return updated
+    """Legacy — replaced by _update_version_bar_from_changelog. Kept for compat."""
+    return html
 
 
 # ---------------------------------------------------------------------------
@@ -640,10 +695,22 @@ def main() -> None:
         print(f"[FATAL] Table replacement failed: {exc}", flush=True)
         sys.exit(1)
 
-    # --- Step 7: Update version bar ---
+    # --- Step 7: Render changelog + sync version bar ---
     now = datetime.now(timezone.utc)
-    print(f"[PIPELINE] Updating version bar timestamp to {now.date()}", flush=True)
-    html = _update_version_bar(html, now)
+    changelog: list[dict[str, Any]] = []
+    if CHANGELOG_PATH.exists():
+        with CHANGELOG_PATH.open("r", encoding="utf-8") as f:
+            changelog = json.load(f)
+        print(f"[PIPELINE] Loaded {len(changelog)} changelog entries", flush=True)
+        changelog_html = _render_changelog(changelog)
+        if CHANGELOG_START in html and CHANGELOG_END in html:
+            html = _replace_between_sentinels(html, CHANGELOG_START, CHANGELOG_END, changelog_html)
+            print("[PIPELINE] Changelog rendered from data/changelog.json", flush=True)
+        html = _update_version_bar_from_changelog(html, changelog, now)
+        print(f"[PIPELINE] Version bar synced to v{changelog[0]['version']}", flush=True)
+    else:
+        print("[WARN] data/changelog.json not found — skipping changelog render", flush=True)
+        html = _update_version_bar(html, now)
 
     # Also update the seeded-data notice paragraphs
     html = html.replace(

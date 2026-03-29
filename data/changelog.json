@@ -1,0 +1,101 @@
+[
+  {
+    "version": "0.5.4",
+    "date": "2026-03-29",
+    "title": "Filterable Leaderboards",
+    "changes": [
+      "Unified column order: Status | # | PR | Author | BPB | Seeds | Artifact | Type | Track",
+      "Clickable filter buttons above both tables (Status, Type, Track)",
+      "Type badges: Neural / Cache / TTT / Hybrid (from classifier)",
+      "Track badges: Record / Non-Record (from PR title and file paths)",
+      "Pipeline generates all badges and data attributes automatically"
+    ]
+  },
+  {
+    "version": "0.5.3",
+    "date": "2026-03-29",
+    "title": "Classification Overhaul",
+    "changes": [
+      "Neural leaderboard requires 3/3 seeds AND known artifact size",
+      "Classifier adds track (record/non-record) and technique_type (neural/cache/ttt/hybrid)",
+      "Tighter ALIVE requirements in pipeline"
+    ]
+  },
+  {
+    "version": "0.5.2",
+    "date": "2026-03-29",
+    "title": "Community Bug Alerts",
+    "changes": [
+      "Added bug alerts: BPB underestimation (#897) and INT6 scale clamp (#775)",
+      "Enabled Issues and Discussions on fork"
+    ]
+  },
+  {
+    "version": "0.5.1",
+    "date": "2026-03-29",
+    "title": "UX Overhaul",
+    "changes": [
+      "Changelog moved to bottom of page",
+      "Navigation updated — all sections linked in correct order",
+      "Scrollable leaderboard tables with sticky headers",
+      "Neural-only leaderboard cleaned — removed PRs with BPB < 0.5",
+      "Archive sorted ALIVE-first",
+      "Technique card text centering fixed",
+      "BPB floor gate added to classifier"
+    ]
+  },
+  {
+    "version": "0.5.0",
+    "date": "2026-03-28",
+    "title": "All Phases Shipped",
+    "changes": [
+      "GitHub Actions cron — auto-updates every 30 minutes",
+      "6 issue templates for community input",
+      "Community issue ingestion pipeline (fetch_community.py)"
+    ]
+  },
+  {
+    "version": "0.4.0",
+    "date": "2026-03-28",
+    "title": "Community Input",
+    "changes": [
+      "Issue templates: funding, corrections, techniques, blocked, resources, feedback",
+      "fetch_community.py — auto-processes GitHub Issues",
+      "Pipeline integration — community input runs before classification"
+    ]
+  },
+  {
+    "version": "0.3.0",
+    "date": "2026-03-28",
+    "title": "Analytics",
+    "changes": [
+      "Technique map — 24 techniques tracked, grouped by PRs",
+      "BPB timeline — inline SVG chart, March 27 cliff marked",
+      "Collaboration finder — who's working on what, untried combinations"
+    ]
+  },
+  {
+    "version": "0.2.0",
+    "date": "2026-03-28",
+    "title": "Live API",
+    "changes": [
+      "Live leaderboard — 996 PRs fetched via GitHub GraphQL API",
+      "Compliance engine — auto-classifies ALIVE / DEAD / AT-RISK / INCOMPLETE",
+      "Cached + incremental fetching"
+    ]
+  },
+  {
+    "version": "0.1.0",
+    "date": "2026-03-28",
+    "title": "Static Foundation",
+    "changes": [
+      "Submission checklist (legal / banned / grey area)",
+      "Rule change history (March 22, 24, 27 rulings)",
+      "Dual leaderboard (seeded data)",
+      "Funding transparency tracker (7 entries)",
+      "Blocked on compute board",
+      "Compute survival guide (serverless > pods)",
+      "Visitor counter (Redis-backed via OLYMPUS API)"
+    ]
+  }
+]
