@@ -28,11 +28,11 @@ a:hover { text-decoration: underline; }
 .nav a:hover, .nav a.active { background: var(--border); color: var(--text-bright); text-decoration: none; }
 
 .container { max-width: 95vw; margin: 0 auto; padding: 1.5rem 2rem; }
-section { margin-bottom: 3rem; }
-h2 { color: var(--accent); font-size: 1.4rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
-h3 { color: var(--text-bright); font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
+section { margin-bottom: 3rem; text-align: center; }
+h2 { color: var(--accent); font-size: 1.4rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); text-align: center; }
+h3 { color: var(--text-bright); font-size: 1.1rem; margin: 1.5rem 0 0.75rem; text-align: center; }
 
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; text-align: center; }
 .badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
 .badge-legal { background: rgba(63,185,80,0.15); color: var(--green); }
 .badge-banned { background: rgba(248,81,73,0.15); color: var(--red); }
@@ -49,23 +49,23 @@ h3 { color: var(--text-bright); font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
 .badge-hybrid { background: rgba(63,185,80,0.15); color: var(--green); }
 
 table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-th { text-align: left; padding: 0.6rem; color: var(--text-dim); border-bottom: 2px solid var(--border); font-weight: 600; }
-td { padding: 0.6rem; border-bottom: 1px solid var(--border); }
+th { text-align: center; padding: 0.6rem; color: var(--text-dim); border-bottom: 2px solid var(--border); font-weight: 600; }
+td { padding: 0.6rem; border-bottom: 1px solid var(--border); text-align: center; }
 tr:hover { background: rgba(88,166,255,0.04); }
 .table-scroll { max-height: 600px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; }
 .table-scroll thead th { position: sticky; top: 0; background: var(--surface); z-index: 1; }
 
-.filter-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem; margin-bottom: 0.75rem; }
+.filter-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.25rem; margin-bottom: 0.75rem; }
 .filter-btn { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.3rem 0.6rem; color: var(--text-dim); font-size: 0.78rem; cursor: pointer; transition: all 0.15s; }
 .filter-btn:hover { border-color: var(--accent); color: var(--text-bright); }
 .filter-btn.active { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
 
 
-.checklist { list-style: none; max-width: 700px; margin: 0 auto; }
+.checklist { list-style: none; max-width: 900px; margin: 0 auto; }
 .checklist li { padding: 0.4rem 0; padding-left: 1.5rem; position: relative; }
 .checklist li::before { content: ''; position: absolute; left: 0; top: 0.65rem; width: 14px; height: 14px; border: 2px solid var(--border); border-radius: 3px; }
 
-.technique-list { list-style: none; max-width: 700px; margin: 0 auto; }
+.technique-list { list-style: none; max-width: 900px; margin: 0 auto; }
 .technique-list li { padding: 0.3rem 0; padding-left: 1.5rem; position: relative; }
 .technique-list .legal::before { content: '\2713'; position: absolute; left: 0; color: var(--green); font-weight: bold; }
 .technique-list .banned::before { content: '\2717'; position: absolute; left: 0; color: var(--red); font-weight: bold; }
@@ -107,7 +107,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 .stat-box .value { font-size: 1.8rem; font-weight: 700; color: var(--accent); }
 .stat-box .label { color: var(--text-dim); font-size: 0.8rem; }
 
-.guide-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 1rem auto; max-width: 700px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.guide-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 1rem auto; max-width: 900px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 .guide-compare .bad { background: rgba(248,81,73,0.08); padding: 1rem; }
 .guide-compare .good { background: rgba(63,185,80,0.08); padding: 1rem; }
 .guide-compare h4 { margin-bottom: 0.5rem; }
