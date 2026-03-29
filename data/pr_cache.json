@@ -1,7 +1,39 @@
 {
-  "last_fetch": "2026-03-29T17:11:36.010081+00:00",
-  "api_calls_used": 19,
+  "last_fetch": "2026-03-29T17:35:29.498435+00:00",
+  "api_calls_used": 20,
   "prs": [
+    {
+      "number": 1085,
+      "title": "Non-record:11L GQA + MLP 3 + Partial RoPE + Int6 Attn/MLP + QAT40 ",
+      "author": "adityasasidhar",
+      "state": "OPEN",
+      "created": "2026-03-29T17:17:36Z",
+      "updated": "2026-03-29T17:17:36Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-17_NaiveBaseline/train.log",
+        "records/track_non_record_16mb/2026-03-27_11L_GQA_PartialRoPE_Int6AttnMLP_QAT40/README.md",
+        "records/track_non_record_16mb/2026-03-27_11L_GQA_PartialRoPE_Int6AttnMLP_QAT40/check_size.py",
+        "records/track_non_record_16mb/2026-03-27_11L_GQA_PartialRoPE_Int6AttnMLP_QAT40/run.txt",
+        "records/track_non_record_16mb/2026-03-27_11L_GQA_PartialRoPE_Int6AttnMLP_QAT40/submission.json",
+        "records/track_non_record_16mb/2026-03-27_11L_GQA_PartialRoPE_Int6AttnMLP_QAT40/train.log",
+        "records/track_non_record_16mb/2026-03-27_11L_GQA_PartialRoPE_Int6AttnMLP_QAT40/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1084,
       "title": "Non-Record: SLOT Eval-Time Augmentation on PR #549 SOTA Stack",
