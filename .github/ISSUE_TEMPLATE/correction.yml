@@ -1,0 +1,53 @@
+name: PR classification correction
+description: Dispute a PR classification
+title: "[Correction]: "
+labels:
+  - community
+  - correction
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to dispute how a PR is currently classified on AGORA.
+  - type: input
+    id: pr-number
+    attributes:
+      label: PR number
+      description: The PR number you want corrected.
+      placeholder: "123"
+    validations:
+      required: true
+  - type: dropdown
+    id: current-status
+    attributes:
+      label: Current status
+      description: What status does AGORA currently show?
+      options:
+        - ALIVE
+        - AT_RISK
+        - DEAD
+        - INCOMPLETE
+        - UNKNOWN
+    validations:
+      required: true
+  - type: dropdown
+    id: what-it-should-be
+    attributes:
+      label: What it should be
+      description: What should the status be instead?
+      options:
+        - ALIVE
+        - AT_RISK
+        - DEAD
+        - INCOMPLETE
+        - UNKNOWN
+    validations:
+      required: true
+  - type: input
+    id: evidence-link
+    attributes:
+      label: Evidence link
+      description: Link to the evidence supporting your correction.
+      placeholder: https://...
+    validations:
+      required: true

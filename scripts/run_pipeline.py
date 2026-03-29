@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 """
-run_pipeline.py — Orchestrator for AGORA Phase 3 site pipeline.
+run_pipeline.py — Orchestrator for the AGORA site pipeline.
 
 Steps:
   1. Run fetch_prs.py to update data/pr_cache.json
-  2. Run classify.py to classify all PRs
-  3. Run techniques.py to build data/techniques.json
-  4. Run timeline.py to generate inline SVG
-  5. Read index.html
-  6. Replace leaderboard / techniques / timeline sentinel sections
-  7. Update the version bar timestamp
-  8. Write updated index.html
+  2. Run fetch_community.py to sync community issue-form submissions
+  3. Run classify.py to classify all PRs
+  4. Run techniques.py to build data/techniques.json
+  5. Run timeline.py to generate inline SVG
+  6. Read index.html
+  7. Replace leaderboard / techniques / timeline sentinel sections
+  8. Update the version bar timestamp
+  9. Write updated index.html
 
 The HTML replacement uses sentinel comment blocks that are injected on first run
 and stable on subsequent runs:
@@ -26,7 +27,7 @@ Usage:
     python scripts/run_pipeline.py
 
 Environment:
-    GITHUB_TOKEN — passed through to fetch_prs.py
+    GITHUB_TOKEN — used by fetch_prs.py and required for fetch_community.py
 """
 
 import json
@@ -544,7 +545,15 @@ def main() -> None:
             print("[FATAL] No cache available. Cannot continue.", flush=True)
             sys.exit(1)
 
-    # --- Step 2: Classify PRs ---
+    # --- Step 2: Fetch community issue-form submissions ---
+    community_ok = _run_script("fetch_community.py")
+    if not community_ok:
+        print(
+            "[PIPELINE] fetch_community.py failed — continuing with existing community data",
+            flush=True,
+        )
+
+    # --- Step 3: Classify PRs ---
     classify_ok = _run_script("classify.py")
     if not classify_ok:
         print("[FATAL] classify.py failed. Cannot build leaderboard.", flush=True)
@@ -560,7 +569,7 @@ def main() -> None:
         print("[FATAL] timeline.py failed. Cannot build BPB timeline.", flush=True)
         sys.exit(1)
 
-    # --- Step 3: Load classified cache ---
+    # --- Step 4: Load classified cache ---
     print(f"[PIPELINE] Loading classified cache from {CACHE_PATH}", flush=True)
     with CACHE_PATH.open("r", encoding="utf-8") as f:
         cache: dict[str, Any] = json.load(f)

@@ -9,6 +9,23 @@ Canonical local layout:
 - `data/docs_selected.jsonl`
 - `data/docs_selected.source_manifest.json`
 
+## AGORA Community Data
+
+The community input pipeline writes structured issue-form submissions into:
+- `data/funding.json`
+- `data/corrections.json`
+- `data/blocked_experiments.json`
+- `data/community_techniques.json`
+- `data/community_resources.json`
+- `data/community_feedback.json`
+- `data/site_changelog.json`
+
+Refresh them with:
+
+```bash
+GITHUB_TOKEN=your_token python3 scripts/fetch_community.py
+```
+
 ## Downloading Published Data
 
 Download the cached FineWeb export for a tokenizer variant with:

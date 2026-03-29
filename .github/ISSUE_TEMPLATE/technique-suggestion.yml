@@ -1,0 +1,35 @@
+name: Technique suggestion
+description: Suggest a technique for the map
+title: "[Technique Suggestion]: "
+labels:
+  - community
+  - technique-suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share a technique you think belongs on the AGORA technique map.
+  - type: input
+    id: technique-name
+    attributes:
+      label: Technique name
+      description: Short name for the technique.
+      placeholder: Sliding window attention
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Explain the technique and why it matters.
+      placeholder: What does it do? Why is it useful here?
+    validations:
+      required: true
+  - type: input
+    id: related-prs
+    attributes:
+      label: Related PRs
+      description: Optional PR numbers or links that use this technique.
+      placeholder: "#123, #456"
+    validations:
+      required: false

@@ -1,0 +1,51 @@
+name: Blocked on compute
+description: Report a blocked experiment
+title: "[Blocked On Compute]: "
+labels:
+  - community
+  - blocked-on-compute
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell AGORA about an experiment you cannot finish because of compute limits.
+  - type: input
+    id: github-username
+    attributes:
+      label: GitHub username
+      description: Your GitHub handle.
+      placeholder: octocat
+    validations:
+      required: true
+  - type: input
+    id: pr-link
+    attributes:
+      label: PR link
+      description: Link to the related PR.
+      placeholder: https://github.com/openai/parameter-golf/pull/123
+    validations:
+      required: true
+  - type: textarea
+    id: what-you-want-to-test
+    attributes:
+      label: What you want to test
+      description: Describe the experiment you want to run.
+      placeholder: I want to compare...
+    validations:
+      required: true
+  - type: textarea
+    id: what-you-need
+    attributes:
+      label: What you need
+      description: What compute, credits, or access would unblock you?
+      placeholder: Need 2x A100 for 6 hours...
+    validations:
+      required: true
+  - type: input
+    id: how-much-spent
+    attributes:
+      label: How much spent
+      description: How much have you already spent on this attempt?
+      placeholder: "$40"
+    validations:
+      required: true

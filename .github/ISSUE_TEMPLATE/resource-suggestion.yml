@@ -1,0 +1,43 @@
+name: Compute resource suggestion
+description: Share a compute resource
+title: "[Resource Suggestion]: "
+labels:
+  - community
+  - resource-suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share a compute provider or free-tier option that others should know about.
+  - type: input
+    id: provider-name
+    attributes:
+      label: Provider name
+      description: Name of the compute provider.
+      placeholder: RunPod
+    validations:
+      required: true
+  - type: input
+    id: gpu-type
+    attributes:
+      label: GPU type
+      description: Which GPU(s) are available?
+      placeholder: RTX 4090
+    validations:
+      required: true
+  - type: input
+    id: pricing
+    attributes:
+      label: Pricing
+      description: Share pricing details or a pricing summary.
+      placeholder: "$0.29/hr spot"
+    validations:
+      required: true
+  - type: textarea
+    id: free-tier-details
+    attributes:
+      label: Free tier details
+      description: Describe any credits, limits, or free tier constraints.
+      placeholder: New users get...
+    validations:
+      required: true

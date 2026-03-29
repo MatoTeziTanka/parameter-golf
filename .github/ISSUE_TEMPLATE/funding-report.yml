@@ -1,0 +1,57 @@
+name: Funding report
+description: Report your compute spending
+title: "[Funding Report]: "
+labels:
+  - community
+  - funding-report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share your compute spending so AGORA can track how experiments are being funded.
+  - type: input
+    id: github-username
+    attributes:
+      label: GitHub username
+      description: Your GitHub handle.
+      placeholder: octocat
+    validations:
+      required: true
+  - type: input
+    id: grant-amount
+    attributes:
+      label: Grant amount
+      description: How much grant funding supported this work?
+      placeholder: "$100"
+    validations:
+      required: true
+  - type: input
+    id: self-funded-amount
+    attributes:
+      label: Self-funded amount
+      description: How much did you personally spend?
+      placeholder: "$25"
+    validations:
+      required: true
+  - type: checkboxes
+    id: platforms-used
+    attributes:
+      label: Platforms used
+      description: Which compute platforms did you use?
+      options:
+        - label: Modal
+        - label: RunPod
+        - label: Vast.ai
+        - label: Lambda Labs
+        - label: Google Colab
+        - label: Other
+    validations:
+      required: true
+  - type: input
+    id: proof-link
+    attributes:
+      label: Proof link
+      description: Link to logs, screenshots, invoices, or any public proof.
+      placeholder: https://...
+    validations:
+      required: true

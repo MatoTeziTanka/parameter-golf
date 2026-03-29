@@ -1,0 +1,27 @@
+name: General feedback
+description: General feedback
+title: "[General Feedback]: "
+labels:
+  - community
+  - general-feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share any feedback that does not fit the other community forms.
+  - type: input
+    id: subject
+    attributes:
+      label: Subject
+      description: Short summary of your feedback.
+      placeholder: Improve the timeline legend
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Tell us what you noticed, suggest, or want changed.
+      placeholder: I noticed...
+    validations:
+      required: true
