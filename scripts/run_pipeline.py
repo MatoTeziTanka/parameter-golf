@@ -300,18 +300,25 @@ def _dead_reason(pr: dict[str, Any]) -> str:
 def _build_neural_rows(prs: list[dict[str, Any]]) -> str:
     """Build tbody rows for the Neural-Only leaderboard.
 
-    Shows ALIVE PRs only, sorted by BPB ascending (lower = better).
+    Shows ALIVE PRs only, with 3/3 seeds, known artifact, BPB >= 0.5.
+    Sorted by BPB ascending (lower = better).
+    Columns: # | PR | Author | BPB | Seeds | Artifact | Status
     """
     alive = [
         p for p in prs
-        if p.get("status") == "ALIVE" and p.get("bpb") is not None
+        if p.get("status") == "ALIVE"
+        and p.get("bpb") is not None
+        and p.get("bpb", 0) >= 0.5
+        and p.get("seeds") is not None
+        and p.get("seeds", 0) >= 3
+        and p.get("artifact_bytes") is not None
     ]
     alive.sort(key=lambda p: p["bpb"])
 
     if not alive:
         return (
             '<tr><td colspan="7" style="text-align:center;color:var(--text-dim);">'
-            "No ALIVE submissions found — check fetch/classify pipeline.</td></tr>"
+            "No qualifying submissions found — requires 3/3 seeds, known artifact, BPB &ge; 0.5.</td></tr>"
         )
 
     rows: list[str] = []
@@ -336,22 +343,23 @@ def _build_neural_rows(prs: list[dict[str, Any]]) -> str:
     return "\n".join(rows)
 
 
+_STATUS_SORT_ORDER = {"ALIVE": 0, "AT_RISK": 1, "INCOMPLETE": 2, "DEAD": 3, "UNKNOWN": 4}
+
 def _build_archive_rows(prs: list[dict[str, Any]]) -> str:
     """Build tbody rows for the All Submissions archive.
 
-    Shows ALL PRs with a BPB, sorted by BPB ascending.
-    Color-coded by status.
+    Shows ALL PRs, sorted ALIVE-first then by BPB ascending within each group.
+    Columns: # | PR | Author | BPB | Seeds | Artifact | Status | Reason
     """
-    with_bpb = [p for p in prs if p.get("bpb") is not None]
-    without_bpb = [p for p in prs if p.get("bpb") is None]
-
-    # Sort PRs with BPB ascending, then append those without BPB
-    with_bpb.sort(key=lambda p: p["bpb"])
-    all_prs = with_bpb + without_bpb
+    all_prs = list(prs)
+    all_prs.sort(key=lambda p: (
+        _STATUS_SORT_ORDER.get(p.get("status", "UNKNOWN"), 4),
+        p.get("bpb") if p.get("bpb") is not None else 999,
+    ))
 
     if not all_prs:
         return (
-            '<tr><td colspan="7" style="text-align:center;color:var(--text-dim);">'
+            '<tr><td colspan="8" style="text-align:center;color:var(--text-dim);">'
             "No submissions found — check fetch/classify pipeline.</td></tr>"
         )
 
@@ -361,17 +369,19 @@ def _build_archive_rows(prs: list[dict[str, Any]]) -> str:
         author = pr.get("author", "unknown")
         bpb = _format_bpb(pr.get("bpb"))
         seeds = _format_seeds(pr.get("seeds"))
+        artifact = _format_artifact(pr.get("artifact_bytes"))
         status = pr.get("status", "UNKNOWN")
         badge = _status_badge(status, pr.get("seeds"))
         reason = "&mdash;" if status == "ALIVE" else _dead_reason(pr)
         rows.append(
             f"<tr>"
             f"<td>{rank}</td>"
-            f"<td>{badge}</td>"
             f"<td>{_pr_link(num)}</td>"
             f"<td>@{author}</td>"
             f"<td>{bpb}</td>"
             f"<td>{seeds}</td>"
+            f"<td>{artifact}</td>"
+            f"<td>{badge}</td>"
             f"<td>{reason}</td>"
             f"</tr>"
         )
@@ -519,15 +529,7 @@ def _update_version_bar(html: str, now: datetime) -> str:
         html,
         count=1,
     )
-    # Also bump version to v0.2.0 to reflect Phase 2 activation
-    updated = re.sub(
-        r"<strong style=\"color:var\(--accent\);\">v[0-9.]+</strong>",
-        '<strong style="color:var(--accent);">v0.2.0</strong>',
-        updated,
-        count=1,
-    )
-    # Update "Phase 1 (static)" to "Phase 2 (live API)"
-    updated = updated.replace("Phase 1 (static)", "Phase 2 (live API)", 1)
+    # Don't overwrite version — it's managed manually in the HTML
     return updated
 
 
