@@ -1,7 +1,224 @@
 {
-  "last_fetch": "2026-03-29T17:35:29.498435+00:00",
-  "api_calls_used": 20,
+  "last_fetch": "2026-03-29T18:49:54.199709+00:00",
+  "api_calls_used": 21,
   "prs": [
+    {
+      "number": 1091,
+      "title": "The Kitchen Sink",
+      "author": "MichaelMcCulloch",
+      "state": "OPEN",
+      "created": "2026-03-29T18:22:17Z",
+      "updated": "2026-03-29T18:49:24Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        ".gitignore",
+        "ablation.py",
+        "parameter-golf-execution-plan.md",
+        "pgolf/__init__.py",
+        "pgolf/budget.py",
+        "pgolf/config.py",
+        "pgolf/runner.py",
+        "pgolf/techniques.py",
+        "pr_sources/pr505_train_gpt.py",
+        "pr_sources/pr569_train_gpt.py",
+        "pr_sources/pr576_train_gpt.py",
+        "pr_sources/pr727_train_gpt.py",
+        "pr_sources/pr738_train_gpt.py",
+        "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/README.md",
+        "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/submission.json",
+        "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/train_gpt.py",
+        "run_ablation.sh",
+        "run_all_ablations.sh",
+        "run_phase2.sh",
+        "search.py",
+        "validate.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram_path",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 1090,
+      "title": "Non-record: 11L XSA + Score-First LoRA TTT (1.1573, 1xH100)",
+      "author": "swapp1990",
+      "state": "OPEN",
+      "created": "2026-03-29T18:12:07Z",
+      "updated": "2026-03-29T18:35:50Z",
+      "bpb": 1.1573,
+      "seeds": null,
+      "artifact_bytes": 15020000,
+      "technique_summary": "TTT + Muon + SwiGLU + LoRA + INT6 + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-24_11L_XSA_SwiGLU_LoRATTT_1xH100/README.md",
+        "records/track_non_record_16mb/2026-03-24_11L_XSA_SwiGLU_LoRATTT_1xH100/submission.json",
+        "records/track_non_record_16mb/2026-03-24_11L_XSA_SwiGLU_LoRATTT_1xH100/technical_report.md",
+        "records/track_non_record_16mb/2026-03-24_11L_XSA_SwiGLU_LoRATTT_1xH100/train.log",
+        "records/track_non_record_16mb/2026-03-24_11L_XSA_SwiGLU_LoRATTT_1xH100/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1089,
+      "title": "Record Submission: 1.1086 BPB - Turbo-Muon + EngramLite + ParamBanking (11L 512d)",
+      "author": "mikeapedia",
+      "state": "OPEN",
+      "created": "2026-03-29T18:10:07Z",
+      "updated": "2026-03-29T18:10:07Z",
+      "bpb": 1.1086,
+      "seeds": 3,
+      "artifact_bytes": 15300000,
+      "technique_summary": "Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/README.md",
+        "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/requirements.txt",
+        "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/submission.json",
+        "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/train_gpt.py",
+        "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/train_seed2025.log",
+        "records/track_10min_16mb/2026-03-28_TurboMuon_EngramLite_ParamBanking/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval",
+        "leaky_relu",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram_path",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 1088,
+      "title": "Non-Record Universal Transformer submission. (2x Attention layers, 3 Layer MLP, depth scheduling)",
+      "author": "serdardoesml",
+      "state": "OPEN",
+      "created": "2026-03-29T18:09:25Z",
+      "updated": "2026-03-29T18:09:25Z",
+      "bpb": 1.2542,
+      "seeds": null,
+      "artifact_bytes": 15982324,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-27_UT_DoubleAttn_3L-MLP/README.md",
+        "records/track_non_record_16mb/2026-03-27_UT_DoubleAttn_3L-MLP/submission.json",
+        "records/track_non_record_16mb/2026-03-27_UT_DoubleAttn_3L-MLP/train.log.txt",
+        "records/track_non_record_16mb/2026-03-27_UT_DoubleAttn_3L-MLP/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1087,
+      "title": "Record: 1.1407 BPB — LeakyReLU^2 + Delayed QAT + Score-First TTT",
+      "author": "Dhenenjay",
+      "state": "OPEN",
+      "created": "2026-03-29T17:56:50Z",
+      "updated": "2026-03-29T17:56:50Z",
+      "bpb": 1.1407,
+      "seeds": null,
+      "artifact_bytes": 15700000,
+      "technique_summary": "LeakyReLU² + TTT + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-29_LeakyReLU_PartialRoPE_DelayedQAT_TTT/README.md",
+        "records/track_10min_16mb/2026-03-29_LeakyReLU_PartialRoPE_DelayedQAT_TTT/submission.json",
+        "records/track_10min_16mb/2026-03-29_LeakyReLU_PartialRoPE_DelayedQAT_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-03-29_LeakyReLU_PartialRoPE_DelayedQAT_TTT/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1086,
+      "title": "Track A: 11L U-Net + BigramHash + SmearGate + Partial RoPE + QAT (1.1349 bpb)",
+      "author": "Omrigotlieb",
+      "state": "OPEN",
+      "created": "2026-03-29T17:41:22Z",
+      "updated": "2026-03-29T18:27:45Z",
+      "bpb": 1.1349,
+      "seeds": null,
+      "artifact_bytes": 16329999,
+      "technique_summary": "Muon + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "configs/local_runs.sh",
+        "configs/runpod_8xh100.sh",
+        "launch_runpod.sh",
+        "tests/__init__.py",
+        "tests/run_all.sh",
+        "tests/test_artifact_size.py",
+        "tests/test_bigram_hash.py",
+        "tests/test_ema.py",
+        "tests/test_eval_sliding.py",
+        "tests/test_ngram_cache.py",
+        "tests/test_quantization.py",
+        "tests/test_xsa.py",
+        "train_gpt.py",
+        "train_gpt_mlx.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval",
+        "leaky_relu",
+        "ngram_path",
+        "cache_path"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram_path",
+        "path:ngram-path",
+        "path:eval-cache-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1085,
       "title": "Non-record:11L GQA + MLP 3 + Partial RoPE + Int6 Attn/MLP + QAT40 ",
@@ -36,17 +253,26 @@
     },
     {
       "number": 1084,
-      "title": "Non-Record: SLOT Eval-Time Augmentation on PR #549 SOTA Stack",
+      "title": "Non-Record: SLOT Eval-Time Augmentation on PR #549 SOTA Stack val_bpb = 1.1185 (3-seed mean, std 0.0003) | ~15.9 MB | 8×H100 SXM",
       "author": "AnubhavBharadwaaj",
       "state": "OPEN",
       "created": "2026-03-29T16:31:32Z",
-      "updated": "2026-03-29T16:31:32Z",
+      "updated": "2026-03-29T18:38:19Z",
       "bpb": 1.1185,
       "seeds": 3,
       "artifact_bytes": 15900000,
       "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA",
       "file_paths": [
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/README.md",
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/submission.json",
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/train_baseline_seed1337.log",
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/train_ctw_seed1337.log",
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/train_gpt_improved_ctw_implementation_dont_have_compute_left_to_run_somebody_else_do_it.py",
         "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/README.md",
+        "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/anubhav_slot_seed1337.log",
+        "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/anubhav_slot_seed2025.log",
+        "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/anubhav_slot_seed42.log",
         "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/submission.json",
         "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/train_gpt.py"
       ],
@@ -66,11 +292,11 @@
     },
     {
       "number": 1083,
-      "title": "Bandit: ClownCar Crawler x Cubric Ngram9 — 0.4961 BPB (3-seed mean)",
+      "title": "Bandit: ClownCar Crawler x Cubric Ngram9 — 0.4961 BPB, 9.9mb",
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-29T15:59:30Z",
-      "updated": "2026-03-29T16:57:26Z",
+      "updated": "2026-03-29T17:36:42Z",
       "bpb": 0.4961,
       "seeds": 3,
       "artifact_bytes": 9210000,
@@ -24305,19 +24531,18 @@
       "author": "FlashyFlash3011",
       "state": "OPEN",
       "created": "2026-03-21T15:22:07Z",
-      "updated": "2026-03-29T16:05:55Z",
+      "updated": "2026-03-29T18:12:57Z",
       "bpb": 1.1144,
       "seeds": 1337,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA",
       "file_paths": [
         ".gitignore",
-        "RESULTS.md",
         "records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/README.md",
         "records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/submission.json",
         "records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/train_gpt.py",
-        "requirements.txt",
-        "run_experiments.sh"
+        "records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/train_seed1337.log",
+        "requirements.txt"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
