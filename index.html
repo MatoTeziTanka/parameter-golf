@@ -144,7 +144,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </nav>
 
 <div style="background:var(--surface);border-bottom:1px solid var(--border);padding:0.6rem 1rem;text-align:center;font-size:0.8rem;color:var(--text-dim);">
-  <strong style="color:var(--accent);">v0.5.1</strong> &middot; Last updated: March 29, 2026 &middot; UX overhaul &middot; <a href="#changelog">Changelog</a> &middot; <a href="https://github.com/MatoTeziTanka/parameter-golf/tree/gh-pages">Source</a>
+  <strong style="color:var(--accent);">v0.5.2</strong> &middot; Last updated: March 29, 2026 &middot; Bug alerts + UX overhaul &middot; <a href="#changelog">Changelog</a> &middot; <a href="https://github.com/MatoTeziTanka/parameter-golf/tree/gh-pages">Source</a>
   <span style="margin-left:1rem;">&#128065; <span id="counter-total">-</span> visitors &middot; <span style="color:var(--green);">&#9679;</span> <span id="counter-active">-</span> here now</span>
 </div>
 <script>
@@ -228,6 +228,21 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <div class="timeline-date">March 22, 2026</div>
   <p>Eval-time GPTQ calibration on val tokens banned. PRs #593, #576 closed.</p>
   <p style="color:var(--text-dim);font-size:0.85rem;">Source: PRs #593, #576, #569</p>
+</div>
+</div>
+
+<div class="card" style="border-color:var(--yellow);border-width:2px;">
+<h3 style="margin-top:0;color:var(--yellow);">&#9888; Community Bug Alerts</h3>
+<p style="font-size:0.9rem;margin-bottom:0.75rem;">Known issues that may affect your BPB score. Check before submitting.</p>
+<div style="margin-bottom:1rem;">
+<strong style="color:var(--red);">BPB Underestimation Bug</strong> <span class="badge badge-banned">~20% error</span>
+<p style="font-size:0.85rem;color:var(--text-dim);margin-top:0.25rem;">If your tokenizer does NOT contain U+2581 (&#9601;) as a standalone token, <code>build_sentencepiece_luts</code> overcounts byte boundaries by 2 bytes per word &mdash; inflating <code>val_byte_count</code> and making BPB appear ~20% lower than reality. Tokenizers with 1024 vocab (the competition default) DO have this token and are NOT affected. Custom tokenizers: check with <code>sp.id_to_piece()</code>.</p>
+<p style="font-size:0.8rem;color:var(--text-dim);">Source: <a href="https://github.com/openai/parameter-golf/issues/897">Issue #897</a></p>
+</div>
+<div>
+<strong style="color:var(--yellow);">INT6 Scale Clamp Wastes Quantization Levels</strong> <span class="badge badge-grey">affects ~93% of rows</span>
+<p style="font-size:0.85rem;color:var(--text-dim);margin-top:0.25rem;">The <code>clamp_min(1.0 / 31.0)</code> in <code>quantize_int6_per_row</code> forces a minimum scale of 0.032 even when weight rows have much smaller magnitudes. At WD=0.02, 93% of rows trigger this clamp &mdash; wasting INT6 resolution and widening the quantization gap. Higher weight decay (0.04+) makes it worse. Fix: lower or remove the clamp, then retrain with matching QAT.</p>
+<p style="font-size:0.8rem;color:var(--text-dim);">Source: <a href="https://github.com/openai/parameter-golf/issues/775">Issue #775</a></p>
 </div>
 </div>
 </section>
@@ -1614,6 +1629,13 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <!-- CHANGELOG -->
 <section id="changelog">
 <h2>Changelog &amp; Roadmap</h2>
+<div class="card">
+<h3 style="margin-top:0;color:var(--green);">v0.5.2 &mdash; March 29, 2026 (Community Bug Alerts)</h3>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+  <li>Added community bug alerts section to checklist &mdash; BPB underestimation bug (<a href="https://github.com/openai/parameter-golf/issues/897">#897</a>) and INT6 scale clamp issue (<a href="https://github.com/openai/parameter-golf/issues/775">#775</a>)</li>
+  <li>Enabled Issues and Discussions on fork &mdash; community feedback now accepted</li>
+</ul>
+</div>
 <div class="card">
 <h3 style="margin-top:0;color:var(--green);">v0.5.1 &mdash; March 29, 2026 (UX Overhaul)</h3>
 <ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
