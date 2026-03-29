@@ -33,7 +33,9 @@ section { margin-bottom: 3rem; text-align: center; }
 h2 { color: var(--accent); font-size: 1.4rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); text-align: center; }
 h3 { color: var(--text-bright); font-size: 1.1rem; margin: 1.5rem 0 0.75rem; text-align: center; }
 
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; text-align: center; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; }
+.card p, .card div, .card span, .card code { text-align: left; }
+.card h3 { text-align: center; }
 .badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
 .badge-legal { background: rgba(63,185,80,0.15); color: var(--green); }
 .badge-banned { background: rgba(248,81,73,0.15); color: var(--red); }
@@ -52,6 +54,8 @@ h3 { color: var(--text-bright); font-size: 1.1rem; margin: 1.5rem 0 0.75rem; tex
 table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
 th { text-align: center; padding: 0.6rem; color: var(--text-dim); border-bottom: 2px solid var(--border); font-weight: 600; }
 td { padding: 0.6rem; border-bottom: 1px solid var(--border); text-align: center; }
+.card table th, .card table td { text-align: left; }
+.card table { margin: 0.5rem auto; }
 tr:hover { background: rgba(88,166,255,0.04); }
 .table-scroll { max-height: 600px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; }
 .table-scroll thead th { position: sticky; top: 0; background: var(--surface); z-index: 1; }
@@ -72,7 +76,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 .technique-list .banned::before { content: '\2717'; position: absolute; left: 0; color: var(--red); font-weight: bold; }
 .technique-list .grey::before { content: '?'; position: absolute; left: 0; color: var(--yellow); font-weight: bold; }
 
-.timeline-entry { border-left: 3px solid var(--red); padding-left: 1rem; margin-bottom: 1rem; }
+.timeline-entry { border-left: 3px solid var(--red); padding-left: 1rem; margin-bottom: 1rem; text-align: left; max-width: 900px; margin-left: auto; margin-right: auto; }
 .timeline-entry.legal-change { border-left-color: var(--green); }
 .timeline-date { color: var(--yellow); font-weight: 600; font-size: 0.9rem; }
 
@@ -89,10 +93,10 @@ tr:hover { background: rgba(88,166,255,0.04); }
 .technique-card-foot { color: var(--text-dim); font-size: 0.78rem; margin-top: 0.85rem; text-align: center; }
 
 .collab-list { display: grid; gap: 0.85rem; }
-.collab-item { padding-bottom: 0.85rem; border-bottom: 1px solid var(--border); }
+.collab-item { padding-bottom: 0.85rem; border-bottom: 1px solid var(--border); text-align: left; }
 .collab-item:last-child { padding-bottom: 0; border-bottom: 0; }
-.collab-title { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.35rem; }
-.collab-links { color: var(--text-dim); font-size: 0.84rem; }
+.collab-title { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.35rem; text-align: left; }
+.collab-links { color: var(--text-dim); font-size: 0.84rem; text-align: left; word-break: break-word; }
 .technique-overflow { color: var(--text); }
 
 .combo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; }
@@ -109,8 +113,8 @@ tr:hover { background: rgba(88,166,255,0.04); }
 .stat-box .label { color: var(--text-dim); font-size: 0.8rem; }
 
 .guide-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 1rem auto; max-width: 900px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
-.guide-compare .bad { background: rgba(248,81,73,0.08); padding: 1rem; }
-.guide-compare .good { background: rgba(63,185,80,0.08); padding: 1rem; }
+.guide-compare .bad { background: rgba(248,81,73,0.08); padding: 1rem; text-align: left; }
+.guide-compare .good { background: rgba(63,185,80,0.08); padding: 1rem; text-align: left; }
 .guide-compare h4 { margin-bottom: 0.5rem; }
 .guide-compare .bad h4 { color: var(--red); }
 .guide-compare .good h4 { color: var(--green); }

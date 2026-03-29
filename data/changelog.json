@@ -1,8 +1,8 @@
 [
   {
-    "version": "0.5.6",
+    "version": "0.5.7",
     "date": "2026-03-29",
-    "title": "Layout & Polish",
+    "title": "Content Alignment Overhaul",
     "changes": [
       "Responsive layout — 4 breakpoints from mobile (640px) to ultrawide (1800px+), no more wasted screen space",
       "Center-aligned everything: section headers, table headers, table cells, cards, filter bars, stat boxes",
@@ -11,7 +11,12 @@
       "Multi-type badges: top 3 PRs show correct types from PR titles (#549 Neural+TTT, #414 Neural, #641 Neural Non-Record)",
       "Wider content areas: checklists/technique lists at 600px, guide-compare at 900px",
       "All bulleted lists: centered block with left-aligned text inside (changelog, rule history, bug alerts, compute guide)",
-      "Pods vs Serverless comparison: bullet points restored"
+      "Pods vs Serverless comparison: bullet points restored",
+      "Cards: centered heading, left-aligned body text (paragraphs, code, spans)",
+      "Timeline entries: centered block, left-aligned with colored border",
+      "Collaboration items: left-aligned text with word-break for long PR lists",
+      "Compute guide tables: left-aligned cells (descriptive text, not short values)",
+      "Guide-compare panels: left-aligned text inside pods/serverless comparison"
     ]
   },
   {
