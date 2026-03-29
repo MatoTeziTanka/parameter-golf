@@ -250,7 +250,17 @@ def classify_pr(pr: dict[str, Any]) -> dict[str, Any]:
         result["confidence"] = "HIGH"  # missing data is deterministic
         return result
 
-    # Gate 4: ALIVE — passed all checks
+    # Gate 4: BPB floor check — ALIVE PRs with impossibly low BPB for neural-only
+    # Neural-only approaches cannot achieve BPB < 0.5; flag as AT_RISK for manual review.
+    bpb = pr.get("bpb")
+    if bpb is not None and bpb > 0 and bpb < 0.5:
+        result["status"] = "AT_RISK"
+        result["flags"] = ["suspiciously-low-bpb"]
+        result["confidence"] = "MEDIUM"
+        result["flag_reason"] = "Suspiciously low BPB — likely non-neural"
+        return result
+
+    # Gate 5: ALIVE — passed all checks
     result["status"] = "ALIVE"
     result["flags"] = []
     result["confidence"] = "HIGH"
