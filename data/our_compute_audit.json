@@ -2,16 +2,17 @@
   "team": "OLYMPUS / Light Speed Up / @MatoTeziTanka",
   "competition": "OpenAI Parameter Golf",
   "period": "2026-03-18 to 2026-03-29",
-  "proof_level": "API_VERIFIED",
+  "proof_level": "DASHBOARD_VERIFIED",
   "platforms": {
     "modal": {
       "total_usd": "73.72",
       "source": "Modal billing API (workspace_billing_report)",
+      "proof": "API_VERIFIED",
       "grant_usd": "0.00",
       "self_funded_usd": "73.72",
       "runs": 8,
       "dates": "2026-03-21 to 2026-03-22",
-      "description": "proteus-pgolf app runs, 8xH100 training attempts",
+      "description": "proteus-pgolf app runs on Modal H100s",
       "items": [
         {
           "date": "2026-03-21",
@@ -56,80 +57,61 @@
       ]
     },
     "runpod": {
-      "total_usd": "23.39",
-      "source": "RunPod GraphQL API (clientBalance) + OpenAI grant amount",
+      "total_usd": "643.39",
+      "source": "RunPod dashboard transaction history + API balance",
+      "proof": "DASHBOARD_VERIFIED",
       "grant_usd": "25.00",
-      "self_funded_usd": "0.00",
+      "self_funded_usd": "620.00",
       "remaining_balance_usd": "1.61",
-      "runs": 9,
-      "dates": "2026-03-19 to 2026-03-25",
+      "total_loaded_usd": "645.00",
+      "transactions": 35,
+      "dates": "2026-03-19 to 2026-03-27",
       "gpu": "8xH100 SXM",
-      "description": "Training runs v1 through v15, 3-seed validation on v1",
-      "runs_detail": [
-        {
-          "version": "v1",
-          "seed": 42,
-          "date": "2026-03-19",
-          "note": ""
+      "description": "35 Stripe reloads + 1 OpenAI $25 credit. Training runs v1-v15, 3-seed validation, Le Mans experiments.",
+      "daily_breakdown": {
+        "2026-03-19": {
+          "self_funded": 25,
+          "grant": 0,
+          "txns": 2
         },
-        {
-          "version": "v1",
-          "seed": 42,
-          "date": "2026-03-19",
-          "note": "r2 retry"
+        "2026-03-20": {
+          "self_funded": 10,
+          "grant": 0,
+          "txns": 1
         },
-        {
-          "version": "v1",
-          "seed": 42,
-          "date": "2026-03-20",
-          "note": "final"
+        "2026-03-22": {
+          "self_funded": 70,
+          "grant": 25,
+          "txns": 8
         },
-        {
-          "version": "v1",
-          "seed": 1337,
-          "date": "2026-03-20",
-          "note": ""
+        "2026-03-23": {
+          "self_funded": 215,
+          "grant": 0,
+          "txns": 10
         },
-        {
-          "version": "v1",
-          "seed": 2024,
-          "date": "2026-03-20",
-          "note": ""
+        "2026-03-24": {
+          "self_funded": 70,
+          "grant": 0,
+          "txns": 2
         },
-        {
-          "version": "v3",
-          "seed": 42,
-          "date": "2026-03-20",
-          "note": ""
+        "2026-03-25": {
+          "self_funded": 190,
+          "grant": 0,
+          "txns": 10
         },
-        {
-          "version": "v3",
-          "seed": 42,
-          "date": "2026-03-21",
-          "note": "final"
-        },
-        {
-          "version": "v13",
-          "seed": 42,
-          "date": "2026-03-24",
-          "note": "neural-only"
-        },
-        {
-          "version": "v15",
-          "seed": 42,
-          "date": "2026-03-25",
-          "note": "comp+stride32"
+        "2026-03-27": {
+          "self_funded": 40,
+          "grant": 0,
+          "txns": 2
         }
-      ]
+      }
     }
   },
   "summary": {
-    "total_spent_usd": "97.11",
+    "total_spent_usd": "717.11",
     "from_grants_usd": "25.00",
-    "self_funded_usd": "73.72",
-    "runpod_grant_remaining_usd": "1.61",
-    "total_gpu_runs": 17,
-    "waste_estimate_usd": "~50",
-    "waste_note": "Modal image build failures (L-005), RunPod pod idle time, failed container starts"
+    "self_funded_usd": "693.72",
+    "grant_percentage": "3.5%",
+    "self_funded_percentage": "96.5%"
   }
 }
