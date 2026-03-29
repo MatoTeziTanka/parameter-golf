@@ -10,6 +10,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from techniques import annotate_prs, is_neural_only, load_prs
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
