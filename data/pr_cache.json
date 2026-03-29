@@ -1,7 +1,137 @@
 {
-  "last_fetch": "2026-03-29T20:37:17.382539+00:00",
-  "api_calls_used": 26,
+  "last_fetch": "2026-03-29T21:36:05.410007+00:00",
+  "api_calls_used": 27,
   "prs": [
+    {
+      "number": 1098,
+      "title": "Add run_17 8xH100 submission (1.118685, <16MB)",
+      "author": "adityakm24",
+      "state": "OPEN",
+      "created": "2026-03-29T21:35:42Z",
+      "updated": "2026-03-29T21:35:42Z",
+      "bpb": 1.11868501,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "data/mock_corpus.txt",
+        "records/track_10min_16mb/2026-03-29_Competitive_8xH100_Run17_TTT_1.1159/README.md",
+        "records/track_10min_16mb/2026-03-29_Competitive_8xH100_Run17_TTT_1.1159/submission.json",
+        "records/track_10min_16mb/2026-03-29_Competitive_8xH100_Run17_TTT_1.1159/train.log",
+        "records/track_10min_16mb/2026-03-29_Competitive_8xH100_Run17_TTT_1.1159/train_gpt.py",
+        "scripts/generate_mock_challenge_data.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1097,
+      "title": "Parameter golf jepa",
+      "author": "danielxmed",
+      "state": "OPEN",
+      "created": "2026-03-29T21:23:41Z",
+      "updated": "2026-03-29T21:23:41Z",
+      "bpb": 1.3355,
+      "seeds": 2,
+      "artifact_bytes": 16500000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "CLAUDE.md",
+        "records/track_10min_16mb/2026-03-29_JEPA-LM_Joint_Embedding_Predictive_Architecture/README.md",
+        "records/track_10min_16mb/2026-03-29_JEPA-LM_Joint_Embedding_Predictive_Architecture/submission.json",
+        "records/track_10min_16mb/2026-03-29_JEPA-LM_Joint_Embedding_Predictive_Architecture/train_gpt.py",
+        "records/track_10min_16mb/2026-03-29_JEPA-LM_Joint_Embedding_Predictive_Architecture/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-29_JEPA-LM_Joint_Embedding_Predictive_Architecture/train_seed42.log",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1096,
+      "title": "Record: Depth-Recurrent UT + Rank-1 LoRA Per-Iteration Adaptation — val_bpb 1.3342",
+      "author": "vimeto",
+      "state": "OPEN",
+      "created": "2026-03-29T21:06:15Z",
+      "updated": "2026-03-29T21:06:15Z",
+      "bpb": 1.3342,
+      "seeds": 2,
+      "artifact_bytes": 11390000,
+      "technique_summary": "Muon + LoRA + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-30_UT_Rank1LoRA_OutputLN_Birkhoff/README.md",
+        "records/track_10min_16mb/2026-03-30_UT_Rank1LoRA_OutputLN_Birkhoff/submission.json",
+        "records/track_10min_16mb/2026-03-30_UT_Rank1LoRA_OutputLN_Birkhoff/train_gpt.py",
+        "records/track_10min_16mb/2026-03-30_UT_Rank1LoRA_OutputLN_Birkhoff/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1095,
+      "title": "Record: Seed-Regenerated Random Model + Incremental N-gram Cache — val_bpb 0.0905",
+      "author": "vimeto",
+      "state": "OPEN",
+      "created": "2026-03-29T20:38:46Z",
+      "updated": "2026-03-29T20:45:47Z",
+      "bpb": 0.0905,
+      "seeds": 2,
+      "artifact_bytes": 15090000,
+      "technique_summary": "LeakyReLU² + TTT + LoRA + GPTQ + INT6 + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-29_SeedRegen_IncrementalNgram/README.md",
+        "records/track_10min_16mb/2026-03-29_SeedRegen_IncrementalNgram/submission.json",
+        "records/track_10min_16mb/2026-03-29_SeedRegen_IncrementalNgram/train_gpt.py",
+        "records/track_10min_16mb/2026-03-29_SeedRegen_IncrementalNgram/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "prefill",
+        "cache_eval",
+        "leaky_relu",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:ngram_path",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1094,
       "title": "Record: 0.4027 BPB — Swarm-Designed Causal BackoffNgramMixer (3-seed mean, std 0.0015)",
@@ -103,9 +233,9 @@
       "number": 1091,
       "title": "The Kitchen Sink",
       "author": "MichaelMcCulloch",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-29T18:22:17Z",
-      "updated": "2026-03-29T20:14:29Z",
+      "updated": "2026-03-29T21:16:01Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -140,12 +270,11 @@
       ],
       "track": "record",
       "technique_type": "hybrid",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "keyword:ngram_path",
-        "path:ngram-path"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "MEDIUM"
+      "confidence": "LOW"
     },
     {
       "number": 1090,
@@ -279,7 +408,7 @@
       "author": "Omrigotlieb",
       "state": "OPEN",
       "created": "2026-03-29T17:41:22Z",
-      "updated": "2026-03-29T18:27:45Z",
+      "updated": "2026-03-29T21:30:23Z",
       "bpb": 1.1349,
       "seeds": null,
       "artifact_bytes": 16329999,
@@ -394,7 +523,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-29T15:59:30Z",
-      "updated": "2026-03-29T19:59:37Z",
+      "updated": "2026-03-29T21:01:20Z",
       "bpb": 0.4961,
       "seeds": 3,
       "artifact_bytes": 9210000,
@@ -2938,7 +3067,7 @@
       "author": "dillon-blake",
       "state": "OPEN",
       "created": "2026-03-28T06:26:55Z",
-      "updated": "2026-03-28T06:26:55Z",
+      "updated": "2026-03-29T20:49:08Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 15860000,
@@ -2963,14 +3092,14 @@
       "compliance_keywords": [
         "leaky_relu"
       ],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 1006,
