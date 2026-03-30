@@ -1,14 +1,256 @@
 {
-  "last_fetch": "2026-03-29T23:37:15.005840+00:00",
-  "api_calls_used": 29,
+  "last_fetch": "2026-03-30T02:48:52.862010+00:00",
+  "api_calls_used": 30,
   "prs": [
+    {
+      "number": 1110,
+      "title": "Notable Non-Record: Universal Transformer — 1.2249 BPB — Depth Recurrence with Iteration Embeddings",
+      "author": "gowtham0992",
+      "state": "OPEN",
+      "created": "2026-03-30T02:42:20Z",
+      "updated": "2026-03-30T02:42:21Z",
+      "bpb": 1.2249,
+      "seeds": 42,
+      "artifact_bytes": 4946680,
+      "technique_summary": "GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-29_Universal_Transformer/README.md",
+        "records/track_10min_16mb/2026-03-29_Universal_Transformer/requirements.txt",
+        "records/track_10min_16mb/2026-03-29_Universal_Transformer/run.sh",
+        "records/track_10min_16mb/2026-03-29_Universal_Transformer/submission.json",
+        "records/track_10min_16mb/2026-03-29_Universal_Transformer/train_gpt.py",
+        "records/track_10min_16mb/2026-03-29_Universal_Transformer/train_seed42.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1109,
+      "title": "agent lab/mar29",
+      "author": "BenedictChannn",
+      "state": "CLOSED",
+      "created": "2026-03-30T01:52:17Z",
+      "updated": "2026-03-30T01:53:24Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        ".cursor/commands/council.md",
+        ".cursor/rules/parameter-golf.mdc",
+        ".cursor/skills/agent-lab/SKILL.md",
+        ".cursor/skills/engineering-worklog/SKILL.md",
+        ".cursor/skills/engineering-worklog/references/templates.md",
+        ".gitignore",
+        "AGENTS.md",
+        "README.md",
+        "agent_lab/README.md",
+        "agent_lab/architecture_review.md",
+        "agent_lab/experiments.tsv",
+        "agent_lab/ideas.md",
+        "agent_lab/plots/experiments.html",
+        "agent_lab/plots/experiments.svg",
+        "agent_lab/program.md",
+        "agent_lab/state.md",
+        "agent_lab/train_gpt.py",
+        "agent_lab/tranches.md",
+        "docs/build-logs/2026-03-28-agent-lab.md",
+        "docs/build-logs/2026-03-29-agent-lab.md",
+        "scripts/agent_lab/plot_experiments.py",
+        "scripts/agent_lab/run_exp.sh"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1108,
+      "title": "nGPT on the Hypersphere: Making Normalized Transformers Work at 16MB (Research)",
+      "author": "DbBested",
+      "state": "OPEN",
+      "created": "2026-03-30T01:41:26Z",
+      "updated": "2026-03-30T01:41:26Z",
+      "bpb": 1.2714,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-29_nGPT_Hypersphere_L2NormalizeHP/README.md",
+        "records/track_10min_16mb/2026-03-29_nGPT_Hypersphere_L2NormalizeHP/RYS.md",
+        "records/track_10min_16mb/2026-03-29_nGPT_Hypersphere_L2NormalizeHP/nGPT.md",
+        "records/track_10min_16mb/2026-03-29_nGPT_Hypersphere_L2NormalizeHP/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1107,
+      "title": "Mamba-3 SSD + Attention Hybrid with QAT (1.5633 bpb)",
+      "author": "mradassaad",
+      "state": "OPEN",
+      "created": "2026-03-30T00:55:11Z",
+      "updated": "2026-03-30T00:55:11Z",
+      "bpb": 1.5633,
+      "seeds": null,
+      "artifact_bytes": 10892315,
+      "technique_summary": "TTT + Muon + SSM + INT6",
+      "file_paths": [
+        "CLAUDE.md",
+        "records/track_non_record_16mb/2026-03-29_Mamba3Hybrid_QAT/README.md",
+        "records/track_non_record_16mb/2026-03-29_Mamba3Hybrid_QAT/requirements.txt",
+        "records/track_non_record_16mb/2026-03-29_Mamba3Hybrid_QAT/submission.json",
+        "records/track_non_record_16mb/2026-03-29_Mamba3Hybrid_QAT/train_mamba3_hybrid.py",
+        "records/track_non_record_16mb/2026-03-29_Mamba3Hybrid_QAT/train_seed1337.log",
+        "train_shared_ve.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1106,
+      "title": "Non-record: MDLM Diffusion — val_var_bpb 1.1465 (first diffusion to beat AR baseline)",
+      "author": "agalimova",
+      "state": "OPEN",
+      "created": "2026-03-30T00:41:22Z",
+      "updated": "2026-03-30T00:41:22Z",
+      "bpb": 1.1194,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "LeakyReLU²",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-29_LLaDA_MDLM_Diffusion/README.md",
+        "records/track_non_record_16mb/2026-03-29_LLaDA_MDLM_Diffusion/submission.json",
+        "records/track_non_record_16mb/2026-03-29_LLaDA_MDLM_Diffusion/train_mdlm.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1105,
+      "title": "Record: CUTLASS EVT Backward MLP Fusion + Brotli + Turbo-Muon + Memmap",
+      "author": "abaybektursun",
+      "state": "OPEN",
+      "created": "2026-03-30T00:03:19Z",
+      "updated": "2026-03-30T02:21:49Z",
+      "bpb": 1.1147,
+      "seeds": 42,
+      "artifact_bytes": 9940000,
+      "technique_summary": "Muon + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_TurboMuon/README.md",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_TurboMuon/cutlass_evt_fusion/PLAN.md",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_TurboMuon/cutlass_evt_fusion/bench_e2e.py",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_TurboMuon/cutlass_evt_fusion/bench_standalone.py",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_TurboMuon/cutlass_evt_fusion/bench_vs_triton.py",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_TurboMuon/cutlass_evt_fusion/csrc/gemm_act_grad.cu",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_TurboMuon/cutlass_evt_fusion/csrc/torch_binding.cpp",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_TurboMuon/cutlass_evt_fusion/setup.py",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_TurboMuon/cutlass_evt_fusion/test_correctness.py",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_TurboMuon/requirements.txt",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_TurboMuon/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1104,
+      "title": "[Non-record] 1-Stage Byte-level H-Net at 17.5M: Dynamic Chunking Learns Word Boundaries (39x-91x fewer params than H-Net paper)",
+      "author": "DariusFeher",
+      "state": "OPEN",
+      "created": "2026-03-29T23:52:12Z",
+      "updated": "2026-03-30T02:31:31Z",
+      "bpb": 1.3595,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-29_HNet_ByteVsSubword_Study/README.md",
+        "records/track_non_record_16mb/2026-03-29_HNet_ByteVsSubword_Study/submission.json",
+        "records/track_non_record_16mb/2026-03-29_HNet_ByteVsSubword_Study/train_byte260_4h.log",
+        "records/track_non_record_16mb/2026-03-29_HNet_ByteVsSubword_Study/train_byte260_best_10_min.log",
+        "records/track_non_record_16mb/2026-03-29_HNet_ByteVsSubword_Study/train_gpt_hnet.py",
+        "records/track_non_record_16mb/2026-03-29_HNet_ByteVsSubword_Study/train_gpt_hnet_byte.py",
+        "records/track_non_record_16mb/2026-03-29_HNet_ByteVsSubword_Study/train_sp1024_best_10_min.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1103,
       "title": "Non-record: Negative results — eval-time interventions, mixed-precision GPTQ, loss truncation",
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-29T23:30:35Z",
-      "updated": "2026-03-29T23:35:14Z",
+      "updated": "2026-03-29T23:44:49Z",
       "bpb": 1.1147,
       "seeds": null,
       "artifact_bytes": null,
@@ -63,9 +305,9 @@
       "number": 1100,
       "title": "Non-record: LLaDA-MDLM Diffusion — val_var_bpb 1.1465 (first diffusion to beat AR baseline)",
       "author": "agalimova",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-29T21:47:50Z",
-      "updated": "2026-03-29T21:47:50Z",
+      "updated": "2026-03-30T00:23:02Z",
       "bpb": 0.47,
       "seeds": null,
       "artifact_bytes": null,
@@ -82,12 +324,11 @@
       ],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1099,
@@ -162,7 +403,7 @@
       "author": "danielxmed",
       "state": "OPEN",
       "created": "2026-03-29T21:23:41Z",
-      "updated": "2026-03-29T23:18:41Z",
+      "updated": "2026-03-29T23:50:21Z",
       "bpb": 1.3355,
       "seeds": 2,
       "artifact_bytes": 16500000,
@@ -256,14 +497,14 @@
     },
     {
       "number": 1094,
-      "title": "Record: 0.4027 BPB — Swarm-Designed Causal BackoffNgramMixer (3-seed mean, std 0.0015)",
+      "title": "Record: 0.3958 BPB — Causal BackoffNgramMixer (3-seed, std 0.0011)",
       "author": "michaelwinczuk",
       "state": "OPEN",
       "created": "2026-03-29T19:53:40Z",
-      "updated": "2026-03-29T20:02:36Z",
-      "bpb": 0.4027,
+      "updated": "2026-03-30T02:08:19Z",
+      "bpb": 0.3958,
       "seeds": 3,
-      "artifact_bytes": 15972175,
+      "artifact_bytes": 15940706,
       "technique_summary": "TTT + Muon + GPTQ + EMA + N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/README.md",
@@ -435,7 +676,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-03-29T18:10:07Z",
-      "updated": "2026-03-29T22:51:18Z",
+      "updated": "2026-03-30T01:17:51Z",
       "bpb": 1.1091,
       "seeds": 3,
       "artifact_bytes": 15300000,
@@ -647,7 +888,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-29T15:59:30Z",
-      "updated": "2026-03-29T21:01:20Z",
+      "updated": "2026-03-30T02:08:55Z",
       "bpb": 0.4961,
       "seeds": 3,
       "artifact_bytes": 9210000,
@@ -883,7 +1124,7 @@
       "author": "sofiabod",
       "state": "CLOSED",
       "created": "2026-03-29T13:33:02Z",
-      "updated": "2026-03-29T14:52:32Z",
+      "updated": "2026-03-30T02:09:23Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 1527121,
@@ -3000,7 +3241,7 @@
       "author": "himanshudongre",
       "state": "OPEN",
       "created": "2026-03-28T10:15:02Z",
-      "updated": "2026-03-28T17:36:47Z",
+      "updated": "2026-03-30T02:32:18Z",
       "bpb": 1.1682,
       "seeds": null,
       "artifact_bytes": 13000000,
@@ -3016,14 +3257,14 @@
         "two_pass",
         "gptq_eval"
       ],
+      "track": "non-record",
+      "technique_type": "cache",
       "status": "AT_RISK",
       "flags": [
         "keyword:ngram",
         "keyword:two_pass"
       ],
-      "confidence": "LOW",
-      "track": "non-record",
-      "technique_type": "cache"
+      "confidence": "LOW"
     },
     {
       "number": 1012,
@@ -3547,11 +3788,11 @@
     },
     {
       "number": 996,
-      "title": "Pre-Enrichment + EMA-GPU + SmearGate + XSA4 (val_bpb=1.1470(mean), …",
+      "title": "Pre-Enrichment + EMA + SmearGate + XSA4 (val_bpb=1.1470(mean), …",
       "author": "Idan3011",
       "state": "OPEN",
       "created": "2026-03-28T00:53:22Z",
-      "updated": "2026-03-29T16:36:19Z",
+      "updated": "2026-03-30T02:21:07Z",
       "bpb": 1.147,
       "seeds": 3,
       "artifact_bytes": 14942971,
@@ -5975,7 +6216,7 @@
       "author": "THUQiXuan",
       "state": "CLOSED",
       "created": "2026-03-27T02:45:21Z",
-      "updated": "2026-03-27T23:01:37Z",
+      "updated": "2026-03-30T02:32:22Z",
       "bpb": 0.02807,
       "seeds": 3,
       "artifact_bytes": 12900000,
@@ -5999,13 +6240,13 @@
         "prefill",
         "ngram_path"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "DEAD",
       "flags": [
         "maintainer-closed:disallowed"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "hybrid"
+      "confidence": "HIGH"
     },
     {
       "number": 924,
@@ -6054,7 +6295,7 @@
       "author": "CiprianFlorin-Ifrim",
       "state": "OPEN",
       "created": "2026-03-27T01:41:36Z",
-      "updated": "2026-03-29T13:58:58Z",
+      "updated": "2026-03-30T02:32:25Z",
       "bpb": 1.109,
       "seeds": null,
       "artifact_bytes": 15950000,
@@ -6403,7 +6644,7 @@
       "author": "RoyiRa",
       "state": "CLOSED",
       "created": "2026-03-27T00:12:28Z",
-      "updated": "2026-03-27T22:53:06Z",
+      "updated": "2026-03-30T02:32:23Z",
       "bpb": 0.0887,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -6427,13 +6668,13 @@
         "ngram_path",
         "cache_path"
       ],
+      "track": "record",
+      "technique_type": "cache",
       "status": "DEAD",
       "flags": [
         "maintainer-closed:disallowed"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "cache"
+      "confidence": "HIGH"
     },
     {
       "number": 912,
@@ -7062,7 +7303,7 @@
       "author": "aryanbhosale",
       "state": "CLOSED",
       "created": "2026-03-26T19:32:05Z",
-      "updated": "2026-03-27T22:35:25Z",
+      "updated": "2026-03-30T02:32:26Z",
       "bpb": 0.131,
       "seeds": 3,
       "artifact_bytes": 15850000,
@@ -7086,13 +7327,13 @@
         "leaky_relu",
         "ngram_path"
       ],
+      "track": "record",
+      "technique_type": "cache",
       "status": "DEAD",
       "flags": [
         "maintainer-closed:closed for now"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "cache"
+      "confidence": "HIGH"
     },
     {
       "number": 892,
@@ -7350,7 +7591,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-26T19:03:36Z",
-      "updated": "2026-03-28T13:02:48Z",
+      "updated": "2026-03-30T00:19:04Z",
       "bpb": 1.2711,
       "seeds": null,
       "artifact_bytes": 48000000,
@@ -7367,6 +7608,8 @@
         "cache_eval",
         "ngram_path"
       ],
+      "track": "non-record",
+      "technique_type": "hybrid",
       "status": "AT_RISK",
       "flags": [
         "keyword:ngram",
@@ -7374,9 +7617,7 @@
         "keyword:ngram_path",
         "path:ngram-path"
       ],
-      "confidence": "MEDIUM",
-      "track": "non-record",
-      "technique_type": "hybrid"
+      "confidence": "MEDIUM"
     },
     {
       "number": 885,
@@ -8611,7 +8852,7 @@
       "author": "Prush69",
       "state": "OPEN",
       "created": "2026-03-26T14:20:12Z",
-      "updated": "2026-03-27T00:48:50Z",
+      "updated": "2026-03-30T02:32:39Z",
       "bpb": 1.1189,
       "seeds": null,
       "artifact_bytes": 14500000,
@@ -8630,14 +8871,14 @@
         "ttt",
         "leaky_relu"
       ],
+      "track": "record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 851,
@@ -8789,7 +9030,7 @@
       "author": "himanshudongre",
       "state": "CLOSED",
       "created": "2026-03-26T12:20:06Z",
-      "updated": "2026-03-27T22:35:49Z",
+      "updated": "2026-03-30T02:32:58Z",
       "bpb": 0.1434,
       "seeds": 3,
       "artifact_bytes": 13400000,
@@ -8815,13 +9056,13 @@
         "cache_eval",
         "ngram_path"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "DEAD",
       "flags": [
         "maintainer-closed:closed for now"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "hybrid"
+      "confidence": "HIGH"
     },
     {
       "number": 845,
@@ -9266,7 +9507,7 @@
       "author": "bigbag",
       "state": "CLOSED",
       "created": "2026-03-26T07:48:46Z",
-      "updated": "2026-03-27T23:02:22Z",
+      "updated": "2026-03-30T02:32:57Z",
       "bpb": 0.9074,
       "seeds": 3,
       "artifact_bytes": 15460000,
@@ -9289,13 +9530,13 @@
         "leaky_relu",
         "ngram_path"
       ],
+      "track": "record",
+      "technique_type": "cache",
       "status": "DEAD",
       "flags": [
         "maintainer-closed:disallowed"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "cache"
+      "confidence": "HIGH"
     },
     {
       "number": 827,
@@ -9373,7 +9614,7 @@
       "author": "hypery11",
       "state": "OPEN",
       "created": "2026-03-26T07:07:51Z",
-      "updated": "2026-03-26T14:30:48Z",
+      "updated": "2026-03-30T02:32:49Z",
       "bpb": 0.544,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -9393,14 +9634,14 @@
         "cache_eval",
         "leaky_relu"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "AT_RISK",
       "flags": [
         "keyword:ngram",
         "path:backoff-path"
       ],
-      "confidence": "MEDIUM",
-      "track": "record",
-      "technique_type": "hybrid"
+      "confidence": "MEDIUM"
     },
     {
       "number": 824,
@@ -9903,7 +10144,7 @@
       "author": "Naazimsnh02",
       "state": "OPEN",
       "created": "2026-03-26T04:18:04Z",
-      "updated": "2026-03-26T16:33:13Z",
+      "updated": "2026-03-30T02:32:51Z",
       "bpb": 0.636,
       "seeds": 2,
       "artifact_bytes": 15940000,
@@ -9929,6 +10170,8 @@
         "leaky_relu",
         "ngram_path"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "AT_RISK",
       "flags": [
         "keyword:ngram",
@@ -9936,9 +10179,7 @@
         "path:ngram-path",
         "path:backoff-path"
       ],
-      "confidence": "MEDIUM",
-      "track": "record",
-      "technique_type": "hybrid"
+      "confidence": "MEDIUM"
     },
     {
       "number": 807,
@@ -9978,7 +10219,7 @@
       "author": "ibarrajo",
       "state": "OPEN",
       "created": "2026-03-26T03:47:28Z",
-      "updated": "2026-03-26T14:24:50Z",
+      "updated": "2026-03-30T02:32:53Z",
       "bpb": 0.6678,
       "seeds": null,
       "artifact_bytes": 8600000,
@@ -9999,6 +10240,8 @@
         "ngram_path",
         "cache_path"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "AT_RISK",
       "flags": [
         "keyword:ngram",
@@ -10006,9 +10249,7 @@
         "path:ngram-path",
         "path:backoff-path"
       ],
-      "confidence": "MEDIUM",
-      "track": "record",
-      "technique_type": "hybrid"
+      "confidence": "MEDIUM"
     },
     {
       "number": 805,
@@ -10369,7 +10610,7 @@
       "author": "Robby955",
       "state": "CLOSED",
       "created": "2026-03-26T01:41:00Z",
-      "updated": "2026-03-27T20:56:42Z",
+      "updated": "2026-03-30T02:32:30Z",
       "bpb": 0.2292,
       "seeds": 2,
       "artifact_bytes": 14900000,
@@ -10390,13 +10631,13 @@
         "cache_eval",
         "cache_path"
       ],
+      "track": "record",
+      "technique_type": "cache",
       "status": "DEAD",
       "flags": [
         "closed-no-maintainer-comment"
       ],
-      "confidence": "LOW",
-      "track": "record",
-      "technique_type": "cache"
+      "confidence": "LOW"
     },
     {
       "number": 795,
@@ -10974,7 +11215,7 @@
       "author": "deanbrr",
       "state": "CLOSED",
       "created": "2026-03-25T22:26:17Z",
-      "updated": "2026-03-28T02:22:17Z",
+      "updated": "2026-03-30T02:32:41Z",
       "bpb": 0.6683,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -11003,13 +11244,13 @@
         "leaky_relu",
         "ngram_path"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "DEAD",
       "flags": [
         "maintainer-closed:disallowed"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "hybrid"
+      "confidence": "HIGH"
     },
     {
       "number": 778,
@@ -11309,7 +11550,7 @@
       "author": "MatoTeziTanka",
       "state": "CLOSED",
       "created": "2026-03-25T21:28:08Z",
-      "updated": "2026-03-28T14:20:07Z",
+      "updated": "2026-03-30T02:33:01Z",
       "bpb": 0.8495,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -11338,13 +11579,13 @@
         "leaky_relu",
         "ngram_path"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "DEAD",
       "flags": [
         "maintainer-closed:disallowed"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "hybrid"
+      "confidence": "HIGH"
     },
     {
       "number": 768,
@@ -11472,7 +11713,7 @@
       "author": "ndokutovich",
       "state": "OPEN",
       "created": "2026-03-25T20:26:04Z",
-      "updated": "2026-03-26T14:24:47Z",
+      "updated": "2026-03-30T02:32:55Z",
       "bpb": 0.9633,
       "seeds": 42,
       "artifact_bytes": 15560351,
@@ -11492,15 +11733,15 @@
         "leaky_relu",
         "ngram_path"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "AT_RISK",
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
         "path:ngram-path"
       ],
-      "confidence": "MEDIUM",
-      "track": "record",
-      "technique_type": "hybrid"
+      "confidence": "MEDIUM"
     },
     {
       "number": 763,
@@ -15628,7 +15869,7 @@
       "author": "MatoTeziTanka",
       "state": "OPEN",
       "created": "2026-03-24T17:12:33Z",
-      "updated": "2026-03-24T22:56:52Z",
+      "updated": "2026-03-30T02:33:10Z",
       "bpb": 1.1526,
       "seeds": 3,
       "artifact_bytes": 15400000,
@@ -15646,13 +15887,13 @@
         "ttt",
         "gptq_eval"
       ],
+      "track": "record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 632,
@@ -17752,7 +17993,7 @@
       "author": "MatoTeziTanka",
       "state": "CLOSED",
       "created": "2026-03-23T19:43:44Z",
-      "updated": "2026-03-24T17:05:34Z",
+      "updated": "2026-03-30T02:33:18Z",
       "bpb": 0.7853,
       "seeds": 3,
       "artifact_bytes": 15600000,
@@ -17773,13 +18014,13 @@
       "compliance_keywords": [
         "ttt"
       ],
+      "track": "record",
+      "technique_type": "ttt",
       "status": "DEAD",
       "flags": [
         "maintainer-closed:invalid"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 567,
@@ -18334,7 +18575,7 @@
       "author": "haimianbaobao007",
       "state": "OPEN",
       "created": "2026-03-23T16:16:55Z",
-      "updated": "2026-03-27T16:09:57Z",
+      "updated": "2026-03-30T00:09:08Z",
       "bpb": 1.714,
       "seeds": null,
       "artifact_bytes": null,
@@ -18347,15 +18588,15 @@
         "ttt",
         "leaky_relu"
       ],
+      "track": "record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
         "artifact-unknown",
         "no-submission-json"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 549,
@@ -19564,7 +19805,7 @@
       "author": "MatoTeziTanka",
       "state": "CLOSED",
       "created": "2026-03-23T07:58:41Z",
-      "updated": "2026-03-24T15:59:49Z",
+      "updated": "2026-03-30T02:33:24Z",
       "bpb": 0.9512,
       "seeds": 3,
       "artifact_bytes": 15400000,
@@ -19583,13 +19824,13 @@
       "compliance_keywords": [
         "ttt"
       ],
+      "track": "record",
+      "technique_type": "ttt",
       "status": "DEAD",
       "flags": [
         "maintainer-closed:closing"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 511,
@@ -32458,7 +32699,7 @@
       "author": "MatoTeziTanka",
       "state": "OPEN",
       "created": "2026-03-19T15:46:22Z",
-      "updated": "2026-03-25T20:53:44Z",
+      "updated": "2026-03-30T02:33:26Z",
       "bpb": 1.1836,
       "seeds": 3,
       "artifact_bytes": 15880000,
@@ -32479,13 +32720,13 @@
       "compliance_keywords": [
         "two_pass"
       ],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "AT_RISK",
       "flags": [
         "keyword:two_pass"
       ],
-      "confidence": "LOW",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "LOW"
     },
     {
       "number": 94,
