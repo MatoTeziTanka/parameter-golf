@@ -1,14 +1,78 @@
 {
-  "last_fetch": "2026-03-30T05:28:56.302452+00:00",
-  "api_calls_used": 31,
+  "last_fetch": "2026-03-30T07:07:47.994350+00:00",
+  "api_calls_used": 32,
   "prs": [
+    {
+      "number": 1123,
+      "title": "Non-Record Submission: 1.1986 BPB — HybridQuantGPT v6.1 rANS + Legal TTT",
+      "author": "sisegod",
+      "state": "OPEN",
+      "created": "2026-03-30T06:21:24Z",
+      "updated": "2026-03-30T06:21:24Z",
+      "bpb": 1.1986,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/README.md",
+        "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/eval_ttt.log",
+        "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/submission.json",
+        "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/train.log",
+        "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1122,
+      "title": "Record: EngramLite + Gated Skips + Full GPTQ + FA3 — val_bpb 1.1146 (1-seed, 2 pending)",
+      "author": "icryo",
+      "state": "OPEN",
+      "created": "2026-03-30T05:30:52Z",
+      "updated": "2026-03-30T05:30:52Z",
+      "bpb": 1.1146,
+      "seeds": 1,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-30_EngramLite_GatedSkips_FullGPTQ_FA3_1.1146/README.md",
+        "records/track_10min_16mb/2026-03-30_EngramLite_GatedSkips_FullGPTQ_FA3_1.1146/submission.json",
+        "records/track_10min_16mb/2026-03-30_EngramLite_GatedSkips_FullGPTQ_FA3_1.1146/train_gpt.py",
+        "records/track_10min_16mb/2026-03-30_EngramLite_GatedSkips_FullGPTQ_FA3_1.1146/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram_path",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1121,
       "title": "Notable Non-Record: H-Net Tokenization — 0.6846 BPB — Hierarchical Token Processing",
       "author": "gowtham0992",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-30T05:06:26Z",
-      "updated": "2026-03-30T05:06:26Z",
+      "updated": "2026-03-30T05:53:58Z",
       "bpb": 0.6846,
       "seeds": 42,
       "artifact_bytes": 14000183,
@@ -29,9 +93,9 @@
       ],
       "track": "non-record",
       "technique_type": "cache",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "keyword:ngram"
+        "closed-no-maintainer-comment"
       ],
       "confidence": "LOW"
     },
@@ -151,7 +215,7 @@
       "author": "adityakm24",
       "state": "OPEN",
       "created": "2026-03-30T04:15:35Z",
-      "updated": "2026-03-30T04:15:35Z",
+      "updated": "2026-03-30T06:34:28Z",
       "bpb": 1.1187,
       "seeds": null,
       "artifact_bytes": 15985833,
@@ -615,7 +679,7 @@
       "author": "DariusFeher",
       "state": "OPEN",
       "created": "2026-03-29T23:52:12Z",
-      "updated": "2026-03-30T02:31:31Z",
+      "updated": "2026-03-30T06:36:00Z",
       "bpb": 1.3595,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -1284,7 +1348,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-29T15:59:30Z",
-      "updated": "2026-03-30T02:08:55Z",
+      "updated": "2026-03-30T05:38:58Z",
       "bpb": 0.4961,
       "seeds": 3,
       "artifact_bytes": 9210000,
@@ -1874,9 +1938,9 @@
       "number": 1066,
       "title": "Add competitive 8xH100 run package (1.1259 bpb)",
       "author": "adityakm24",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-29T09:52:01Z",
-      "updated": "2026-03-29T09:52:01Z",
+      "updated": "2026-03-30T06:33:44Z",
       "bpb": 1.12587738,
       "seeds": null,
       "artifact_bytes": 15943528,
@@ -1897,12 +1961,11 @@
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1065,
@@ -2051,7 +2114,7 @@
       "author": "rolandnsharp",
       "state": "OPEN",
       "created": "2026-03-29T06:23:37Z",
-      "updated": "2026-03-29T06:52:55Z",
+      "updated": "2026-03-30T06:46:24Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 11200000,
