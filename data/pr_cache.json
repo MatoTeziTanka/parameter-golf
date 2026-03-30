@@ -1,7 +1,68 @@
 {
-  "last_fetch": "2026-03-30T13:28:16.153828+00:00",
-  "api_calls_used": 36,
+  "last_fetch": "2026-03-30T14:51:17.458234+00:00",
+  "api_calls_used": 37,
   "prs": [
+    {
+      "number": 1133,
+      "title": "Non-record: Sliding-Window Evaluation + Int8-Zlib Compression (1.34 bpb)",
+      "author": "swetapaul08",
+      "state": "OPEN",
+      "created": "2026-03-30T14:42:29Z",
+      "updated": "2026-03-30T14:44:32Z",
+      "bpb": 1.34398504,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_orbiluxlabs_exp05_sliding/README.md",
+        "records/track_non_record_16mb/2026-03-30_orbiluxlabs_exp05_sliding/exp05_sliding.txt",
+        "records/track_non_record_16mb/2026-03-30_orbiluxlabs_exp05_sliding/submission.json",
+        "records/track_non_record_16mb/2026-03-30_orbiluxlabs_exp05_sliding/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1132,
+      "title": "WIP: rough style modulation idea with smoke test",
+      "author": "jxning0422-dev",
+      "state": "OPEN",
+      "created": "2026-03-30T14:33:18Z",
+      "updated": "2026-03-30T14:33:18Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "champion_ablation_summary.md",
+        "run_latest_strategy_ablation.sh",
+        "run_style_seed_sweep.sh",
+        "train_gpt_style_freq.py",
+        "train_gpt_style_localmem.py",
+        "train_gpt_style_top.py",
+        "train_gpt_style_v2.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1131,
       "title": "Improve baseline with LeakyReLU² activation",
@@ -956,7 +1017,7 @@
       "author": "DariusFeher",
       "state": "OPEN",
       "created": "2026-03-29T23:52:12Z",
-      "updated": "2026-03-30T13:23:38Z",
+      "updated": "2026-03-30T13:30:13Z",
       "bpb": 1.3595,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -1657,9 +1718,9 @@
       "number": 1083,
       "title": "Bandit: ClownCar Crawler x Cubric Ngram9 — 0.4961 BPB, 9.9mb",
       "author": "newjordan",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-29T15:59:30Z",
-      "updated": "2026-03-30T05:38:58Z",
+      "updated": "2026-03-30T14:12:48Z",
       "bpb": 0.4961,
       "seeds": 3,
       "artifact_bytes": 9210000,
@@ -1723,9 +1784,9 @@
       ],
       "track": "record",
       "technique_type": "cache",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "keyword:ngram"
+        "closed-no-maintainer-comment"
       ],
       "confidence": "LOW"
     },
@@ -8362,7 +8423,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-26T19:03:36Z",
-      "updated": "2026-03-30T00:19:04Z",
+      "updated": "2026-03-30T14:26:43Z",
       "bpb": 1.2711,
       "seeds": null,
       "artifact_bytes": 48000000,
@@ -8501,7 +8562,7 @@
       "author": "IshiPareek",
       "state": "OPEN",
       "created": "2026-03-26T18:25:54Z",
-      "updated": "2026-03-27T20:07:10Z",
+      "updated": "2026-03-30T14:38:06Z",
       "bpb": 1.3762,
       "seeds": null,
       "artifact_bytes": null,
@@ -8510,21 +8571,22 @@
         "RESEARCH_LOG.md",
         "records/track_non_record_16mb/2026-03-25_LeakyReLU_TrigramHash/README.md",
         "records/track_non_record_16mb/2026-03-25_LeakyReLU_TrigramHash/submission.json",
-        "records/track_non_record_16mb/2026-03-25_LeakyReLU_TrigramHash/train_gpt.py"
+        "records/track_non_record_16mb/2026-03-25_LeakyReLU_TrigramHash/train_gpt.py",
+        "train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
         "gptq_eval",
         "leaky_relu"
       ],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 881,
@@ -8818,7 +8880,7 @@
       "author": "fielding",
       "state": "OPEN",
       "created": "2026-03-26T17:23:09Z",
-      "updated": "2026-03-29T04:19:13Z",
+      "updated": "2026-03-30T14:08:09Z",
       "bpb": 1.607,
       "seeds": 2,
       "artifact_bytes": 1920000,
@@ -8827,7 +8889,11 @@
         "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/README.md",
         "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/submission.json",
         "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/train_5L_200K.log",
-        "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/train_gpt.py"
+        "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/train_seed1337.log",
+        "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/train_seed2024.log",
+        "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/train_seed42.log",
+        "records/track_non_record_16mb/2026-03-28_Distillation/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -11197,9 +11263,9 @@
       "number": 800,
       "title": "Record: X-WING — Shared N-gram Tables + Cubric (val_bpb=0.5644)",
       "author": "newjordan",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-26T02:31:02Z",
-      "updated": "2026-03-27T02:05:12Z",
+      "updated": "2026-03-30T14:13:35Z",
       "bpb": 0.5644,
       "seeds": 3,
       "artifact_bytes": 15630000,
@@ -11263,15 +11329,13 @@
         "cache_eval",
         "ngram_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "keyword:ngram",
-        "keyword:ngram_path",
-        "path:ngram-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
-      "technique_type": "cache"
+      "technique_type": "cache",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 799,
@@ -18906,9 +18970,9 @@
       "number": 563,
       "title": "Add submission: 10L Enhanced with BigramHash(12240) + SOTA techniques",
       "author": "instax-dutta",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-23T18:23:57Z",
-      "updated": "2026-03-23T18:23:57Z",
+      "updated": "2026-03-30T14:16:51Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 1860000,
@@ -18924,15 +18988,13 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
-      "technique_type": "neural"
+      "technique_type": "neural",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 562,
@@ -25891,11 +25953,11 @@
       "author": "FlashyFlash3011",
       "state": "OPEN",
       "created": "2026-03-21T15:22:07Z",
-      "updated": "2026-03-30T13:23:10Z",
-      "bpb": 1.12164,
+      "updated": "2026-03-30T14:28:42Z",
+      "bpb": null,
       "seeds": 2,
       "artifact_bytes": 16000000,
-      "technique_summary": "TTT + Muon + INT6 + EMA",
+      "technique_summary": "TTT + INT6 + EMA",
       "file_paths": [
         ".gitignore",
         "records/track_10min_16mb/2026-03-27_GPTQLite_QAT_MaxLZMA_LegalTTT/README.md",
@@ -25913,6 +25975,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
+        "no-bpb",
         "seeds-only-2",
         "artifact-unknown"
       ],
