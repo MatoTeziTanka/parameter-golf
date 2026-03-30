@@ -1,14 +1,76 @@
 {
-  "last_fetch": "2026-03-30T19:04:30.909209+00:00",
-  "api_calls_used": 40,
+  "last_fetch": "2026-03-30T20:05:38.777254+00:00",
+  "api_calls_used": 41,
   "prs": [
     {
+      "number": 1148,
+      "title": "Record: 11L Muon Legal TTT + Entropy-Adaptive Epochs (8×H100) — val_bpb 1.1179 (3-seed mean)",
+      "author": "aamodbhatt",
+      "state": "OPEN",
+      "created": "2026-03-30T19:31:05Z",
+      "updated": "2026-03-30T19:32:34Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 15944410,
+      "technique_summary": "TTT + Muon + N-gram + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/README.md",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/submission.json",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_seed2025.log",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1147,
+      "title": "Partition Function Inflation: Why Hashed N-Gram Caches Produce Invalid BPB Scores (Non-Record, Analytical)",
+      "author": "Robby955",
+      "state": "OPEN",
+      "created": "2026-03-30T19:17:40Z",
+      "updated": "2026-03-30T19:34:19Z",
+      "bpb": 0.009,
+      "seeds": 2,
+      "artifact_bytes": null,
+      "technique_summary": "N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_PartitionFunctionInflation_Analytical/README.md",
+        "records/track_non_record_16mb/2026-03-30_PartitionFunctionInflation_Analytical/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
+    {
       "number": 1146,
-      "title": "Non-record: Elastic Associative Memory as a Language Model, 97% Intelligence Transfer in 14MBs",
+      "title": "Non-record: Discarding Transformers. Elastic Associative Memory as a Language Model, 97% Intelligence Transfer in 14MBs",
       "author": "nguthiru",
       "state": "OPEN",
       "created": "2026-03-30T19:00:14Z",
-      "updated": "2026-03-30T19:00:14Z",
+      "updated": "2026-03-30T19:23:15Z",
       "bpb": 2.4646,
       "seeds": null,
       "artifact_bytes": 14100000,
@@ -38,11 +100,11 @@
       "author": "AnirudhRahul",
       "state": "OPEN",
       "created": "2026-03-30T18:58:12Z",
-      "updated": "2026-03-30T19:04:20Z",
+      "updated": "2026-03-30T20:00:48Z",
       "bpb": 1.11085863,
       "seeds": 4,
       "artifact_bytes": null,
-      "technique_summary": "N-gram",
+      "technique_summary": "GPTQ + N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_OnlineNgramAgreement/README.md",
         "records/track_10min_16mb/2026-03-29_Loader_FullGPTQ_XSA11_OnlineNgramAgreement/online_best_agree_eval.py",
@@ -59,6 +121,7 @@
       "compliance_keywords": [
         "ngram",
         "two_pass",
+        "gptq_eval",
         "cache_eval",
         "ngram_path"
       ],
@@ -216,7 +279,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-30T17:18:30Z",
-      "updated": "2026-03-30T17:35:13Z",
+      "updated": "2026-03-30T19:36:15Z",
       "bpb": 1.1874,
       "seeds": 3,
       "artifact_bytes": 8842981,
@@ -844,7 +907,7 @@
       "author": "icryo",
       "state": "OPEN",
       "created": "2026-03-30T05:30:52Z",
-      "updated": "2026-03-30T18:54:52Z",
+      "updated": "2026-03-30T19:27:07Z",
       "bpb": 1.1146,
       "seeds": 1,
       "artifact_bytes": 16000000,
@@ -912,7 +975,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-30T04:57:49Z",
-      "updated": "2026-03-30T05:05:52Z",
+      "updated": "2026-03-30T19:41:18Z",
       "bpb": 1.1099,
       "seeds": 3,
       "artifact_bytes": 15554053,
@@ -1444,13 +1507,13 @@
     },
     {
       "number": 1105,
-      "title": "Record: Fused MLP (Triton+CUTLASS EVT) + MLP 3.5× + Mixed int5/int6 + SLOT + Brotli — 1.1086 BPB (seed 314, more seeds running)",
+      "title": "Record: Fused MLP (Triton+CUTLASS EVT) + MLP 3.5× + Mixed int5/int6 + SLOT + Brotli — 1.1088 BPB (3-seed mean)",
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-03-30T18:58:39Z",
-      "bpb": 1.1086,
-      "seeds": 2,
+      "updated": "2026-03-30T19:49:35Z",
+      "bpb": 1.1088,
+      "seeds": 3,
       "artifact_bytes": 14520000,
       "technique_summary": "Muon + GPTQ + INT6 + EMA",
       "file_paths": [
@@ -1475,7 +1538,6 @@
       "technique_type": "cache",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
         "artifact-unknown"
       ],
       "confidence": "HIGH"
@@ -1944,7 +2006,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-03-29T18:10:07Z",
-      "updated": "2026-03-30T18:51:58Z",
+      "updated": "2026-03-30T19:06:42Z",
       "bpb": 1.1091,
       "seeds": 3,
       "artifact_bytes": 15300000,
@@ -3681,7 +3743,7 @@
       "author": "yufengli-oai",
       "state": "OPEN",
       "created": "2026-03-28T21:37:17Z",
-      "updated": "2026-03-30T19:03:44Z",
+      "updated": "2026-03-30T19:32:35Z",
       "bpb": 1.1189,
       "seeds": 3,
       "artifact_bytes": null,
@@ -4036,14 +4098,14 @@
     },
     {
       "number": 1029,
-      "title": "Non-record: Knowledge Distillation — A Negative\n  Result (val_bpb=1.1553)",
+      "title": "Non-record: Knowledge  Distillation - A Negative Result (val_bpb=1.1529)",
       "author": "fielding",
       "state": "OPEN",
       "created": "2026-03-28T17:29:44Z",
-      "updated": "2026-03-30T14:55:38Z",
-      "bpb": 1.1553,
-      "seeds": null,
-      "artifact_bytes": 15400000,
+      "updated": "2026-03-30T19:59:49Z",
+      "bpb": 1.1529,
+      "seeds": 3,
+      "artifact_bytes": 15600000,
       "technique_summary": "EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-03-28_Distillation/README.md",
@@ -4067,7 +4129,6 @@
       "technique_type": "cache",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
         "artifact-unknown"
       ],
       "confidence": "HIGH"
@@ -5007,9 +5068,9 @@
       "number": 999,
       "title": "Record: 11L Muon TTT + Entropy-Adaptive Epochs (8×H100) — val_bpb 1.1179 (3-seed mean)",
       "author": "aamodbhatt",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-28T02:27:49Z",
-      "updated": "2026-03-28T03:33:25Z",
+      "updated": "2026-03-30T19:30:53Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 15944410,
@@ -5028,14 +5089,13 @@
         "ngram",
         "two_pass"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "keyword:ngram",
-        "keyword:two_pass"
-      ],
-      "confidence": "LOW",
       "track": "record",
-      "technique_type": "hybrid"
+      "technique_type": "hybrid",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 998,
@@ -9396,14 +9456,14 @@
     },
     {
       "number": 874,
-      "title": "Non-record: Random Linear Maps + Learned Adapters (val_bpb=1.607, 1.92MB artifact)",
+      "title": "Non-record: Random Linear Maps + Learned Adapters (val_bpb=1.93, 2.4MB artifact)",
       "author": "fielding",
       "state": "OPEN",
       "created": "2026-03-26T17:23:09Z",
-      "updated": "2026-03-30T14:08:09Z",
-      "bpb": 1.607,
-      "seeds": 2,
-      "artifact_bytes": 1920000,
+      "updated": "2026-03-30T20:00:14Z",
+      "bpb": 1.93,
+      "seeds": 3,
+      "artifact_bytes": 2400000,
       "technique_summary": "Muon + LoRA + INT6 + EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/README.md",
@@ -9412,8 +9472,7 @@
         "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/train_gpt.py",
         "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/train_seed1337.log",
         "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/train_seed2024.log",
-        "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/train_seed42.log",
-        "records/track_non_record_16mb/2026-03-28_Distillation/train_gpt.py"
+        "records/track_non_record_16mb/2026-03-26_RandomLinearMaps/train_seed42.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -9421,7 +9480,6 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
         "artifact-unknown"
       ],
       "confidence": "HIGH"
