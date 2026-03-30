@@ -1,7 +1,50 @@
 {
-  "last_fetch": "2026-03-30T10:21:58.974831+00:00",
-  "api_calls_used": 34,
+  "last_fetch": "2026-03-30T11:34:49.160926+00:00",
+  "api_calls_used": 35,
   "prs": [
+    {
+      "number": 1130,
+      "title": "Record: 1.1140 BPB — ResidLambdas + Split-LR + Train-Budget GPTQ + Coprime Loader (12-seed mean)",
+      "author": "Gusanidas",
+      "state": "OPEN",
+      "created": "2026-03-30T11:03:22Z",
+      "updated": "2026-03-30T11:03:53Z",
+      "bpb": 1.114,
+      "seeds": 12,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/README.md",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_1337.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_2.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_2026.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_22.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_222.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_2222.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_42.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_7.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_77.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_777.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_99.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/logs/seed_9999.log",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/submission.json",
+        "records/track_10min_16mb/2026-03-29_KitchenSinkV2/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1129,
       "title": "Record: CROWN-Q + GPTQ + Legal TTT — val_bpb 1.1174 (3-seed mean)",
@@ -787,7 +830,7 @@
       "author": "mradassaad",
       "state": "OPEN",
       "created": "2026-03-30T00:55:11Z",
-      "updated": "2026-03-30T00:55:11Z",
+      "updated": "2026-03-30T11:19:48Z",
       "bpb": 1.5633,
       "seeds": null,
       "artifact_bytes": 10892315,
@@ -885,7 +928,7 @@
       "author": "DariusFeher",
       "state": "OPEN",
       "created": "2026-03-29T23:52:12Z",
-      "updated": "2026-03-30T10:17:38Z",
+      "updated": "2026-03-30T11:18:18Z",
       "bpb": 1.3595,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -2321,7 +2364,7 @@
       "author": "rolandnsharp",
       "state": "OPEN",
       "created": "2026-03-29T06:23:37Z",
-      "updated": "2026-03-30T10:20:07Z",
+      "updated": "2026-03-30T10:25:52Z",
       "bpb": 0.002,
       "seeds": null,
       "artifact_bytes": 11200000,
@@ -14277,9 +14320,9 @@
       "number": 703,
       "title": "Record: PR549 + MiLe decay + 8-bit Muon + 1.04x LR + Cache+Backout — val_bpb 1.1176",
       "author": "Gusanidas",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-25T11:36:58Z",
-      "updated": "2026-03-26T06:56:16Z",
+      "updated": "2026-03-30T11:10:34Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -14296,14 +14339,13 @@
         "ttt",
         "cache_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
-      "technique_type": "hybrid"
+      "technique_type": "hybrid",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 702,
