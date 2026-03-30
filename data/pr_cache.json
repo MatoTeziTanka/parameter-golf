@@ -1,7 +1,173 @@
 {
-  "last_fetch": "2026-03-30T16:07:46.706772+00:00",
-  "api_calls_used": 38,
+  "last_fetch": "2026-03-30T17:30:16.757608+00:00",
+  "api_calls_used": 39,
   "prs": [
+    {
+      "number": 1141,
+      "title": "Non-record: AutoResearch Value Embeddings + MLP3x, 1.1801 bpb (1x RTX 4090)",
+      "author": "ivanontech",
+      "state": "OPEN",
+      "created": "2026-03-30T17:24:48Z",
+      "updated": "2026-03-30T17:24:48Z",
+      "bpb": 1.1801,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "Muon",
+      "file_paths": [
+        "README.md",
+        "records/track_non_record_16mb/2026-03-26_MLP3x_9L_512d_RTX4090/README.md",
+        "records/track_non_record_16mb/2026-03-26_MLP3x_9L_512d_RTX4090/submission.json",
+        "records/track_non_record_16mb/2026-03-26_MLP3x_9L_512d_RTX4090/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-26_MLP3x_9L_512d_RTX4090/train_log.txt",
+        "records/track_non_record_16mb/2026-03-27_Autoresearch_8L_512d_RTX4090/README.md",
+        "records/track_non_record_16mb/2026-03-27_Autoresearch_8L_512d_RTX4090/submission.json",
+        "records/track_non_record_16mb/2026-03-27_Autoresearch_8L_512d_RTX4090/train.py",
+        "records/track_non_record_16mb/2026-03-27_Autoresearch_8L_512d_RTX4090/train_log.txt",
+        "train_autoresearch.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1140,
+      "title": "Crawler —  8MB -1.1874 BPB (3-seed mean, 8xH100, 600s)",
+      "author": "newjordan",
+      "state": "OPEN",
+      "created": "2026-03-30T17:18:30Z",
+      "updated": "2026-03-30T17:26:07Z",
+      "bpb": 1.1874,
+      "seeds": 3,
+      "artifact_bytes": 9360000,
+      "technique_summary": "INT6 + N-gram",
+      "file_paths": [
+        ".gitignore",
+        "Nitrust/CLOWNCAR_IV_TARGET.md",
+        "Nitrust/COMMANDER_ORDERS.md",
+        "Nitrust/CRAWLER_DELTA_BOOSTER_MATRIX.md",
+        "Nitrust/HYPOTHESES.md",
+        "Nitrust/MEDUSA_TARGET.md",
+        "Nitrust/RUST_MODULE_BLUEPRINT.md",
+        "Nitrust/codex_spark.py",
+        "Nitrust/scripts/spark_shroud_junkyard_mini.sh",
+        "experiments/A_wing/RED/run.sh",
+        "experiments/A_wing/RED/train_gpt.py",
+        "experiments/A_wing/RED_2/run.sh",
+        "experiments/A_wing/RED_2/train_gpt.py",
+        "experiments/A_wing/RED_G/run.sh",
+        "experiments/A_wing/RED_G/train_gpt.py",
+        "experiments/A_wing/green/run.sh",
+        "experiments/A_wing/green/train_gpt.py",
+        "experiments/A_wing/green/train_seed1337.log",
+        "experiments/A_wing/green_1/run.sh",
+        "experiments/A_wing/green_1/train_gpt.py",
+        "experiments/A_wing/green_1A/run.sh",
+        "experiments/A_wing/green_1A/train_gpt.py",
+        "experiments/A_wing/green_2/run.sh",
+        "experiments/A_wing/green_2/train_gpt.py",
+        "experiments/A_wing/green_3/run.sh",
+        "experiments/A_wing/green_3/train_gpt.py",
+        "experiments/A_wing/purple/run.sh",
+        "experiments/A_wing/purple/train_gpt.py",
+        "experiments/A_wing/red/run.sh",
+        "experiments/A_wing/red/train_gpt.py",
+        "experiments/B_wing/bwing_II/HYPOTHESIS.md",
+        "experiments/B_wing/bwing_II/run.sh",
+        "experiments/B_wing/bwing_II/train_gpt.py",
+        "experiments/B_wing/bwing_III/HYPOTHESIS.md",
+        "experiments/B_wing/bwing_III/run.sh",
+        "experiments/B_wing/bwing_III/train_gpt.py",
+        "experiments/B_wing/bwing_III/train_seed1337.log",
+        "experiments/B_wing/bwing_IV/run.sh",
+        "experiments/B_wing/bwing_IV/train_gpt.py",
+        "experiments/B_wing/bwing_V/eval_sweep.py",
+        "experiments/B_wing/bwing_V/run.sh",
+        "experiments/B_wing/bwing_V/sweep.sh",
+        "experiments/B_wing/bwing_V/train_gpt.py",
+        "experiments/B_wing/bwing_V/train_seed1337.log",
+        "experiments/B_wing/bwing_alpha/HYPOTHESIS.md",
+        "experiments/B_wing/bwing_alpha/run.sh",
+        "experiments/B_wing/bwing_alpha/train_gpt.py",
+        "experiments/B_wing/bwing_entropy_shift/HYPOTHESIS.md",
+        "experiments/B_wing/bwing_entropy_shift/run.sh",
+        "experiments/B_wing/bwing_entropy_shift/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1139,
+      "title": "Non-record: AutoResearch Value Embeddings + MLP3x, 1.1801 bpb (1x RTX 4090)",
+      "author": "ivanontech",
+      "state": "OPEN",
+      "created": "2026-03-30T16:56:26Z",
+      "updated": "2026-03-30T16:56:26Z",
+      "bpb": 1.1801,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "Muon + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_AutoResearch_ValueEmbeds_MLP3x_1x4090/README.md",
+        "records/track_non_record_16mb/2026-03-30_AutoResearch_ValueEmbeds_MLP3x_1x4090/submission.json",
+        "records/track_non_record_16mb/2026-03-30_AutoResearch_ValueEmbeds_MLP3x_1x4090/train.log",
+        "records/track_non_record_16mb/2026-03-30_AutoResearch_ValueEmbeds_MLP3x_1x4090/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1138,
+      "title": "Non-record: Whole-Model GTA Megakernel Draft + Manual CUDA Reverse Pass",
+      "author": "greqone",
+      "state": "OPEN",
+      "created": "2026-03-30T16:44:28Z",
+      "updated": "2026-03-30T16:49:50Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/README.md",
+        "records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/submission.json",
+        "records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/train.log",
+        "records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1137,
       "title": " leakyRelu0.5^2 + GPTQ + EMA + BigramHash(1.3069)",
@@ -1104,14 +1270,14 @@
     },
     {
       "number": 1105,
-      "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Brotli + Memmap — 1.1138 BPB",
+      "title": "Record: Fused MLP (Triton+CUTLASS EVT) + MLP 3.5× + Mixed int5/int6 + Brotli — 1.1123 BPB (seed 314, more seeds running)",
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-03-30T05:18:12Z",
-      "bpb": 1.1138,
+      "updated": "2026-03-30T17:15:56Z",
+      "bpb": 1.1123,
       "seeds": 3,
-      "artifact_bytes": 15510000,
+      "artifact_bytes": 14520000,
       "technique_summary": "Muon + GPTQ + INT6 + EMA",
       "file_paths": [
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/README.md",
@@ -1128,10 +1294,11 @@
       "maintainer_comments": [],
       "compliance_keywords": [
         "gptq_eval",
+        "cache_eval",
         "leaky_relu"
       ],
       "track": "record",
-      "technique_type": "neural",
+      "technique_type": "cache",
       "status": "INCOMPLETE",
       "flags": [
         "artifact-unknown"
@@ -1602,7 +1769,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-03-29T18:10:07Z",
-      "updated": "2026-03-30T08:04:47Z",
+      "updated": "2026-03-30T17:21:29Z",
       "bpb": 1.1091,
       "seeds": 3,
       "artifact_bytes": 15300000,
@@ -3248,10 +3415,10 @@
       "author": "nothingLiva",
       "state": "OPEN",
       "created": "2026-03-28T23:06:05Z",
-      "updated": "2026-03-30T09:58:06Z",
+      "updated": "2026-03-30T16:45:35Z",
       "bpb": 1.1217,
       "seeds": 4,
-      "artifact_bytes": 15800000,
+      "artifact_bytes": 16000000,
       "technique_summary": "INT6 + INT8",
       "file_paths": [
         "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/README.md",
@@ -4046,9 +4213,9 @@
       "number": 1019,
       "title": "Record: AR Self-Gen GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.11473 (3-seed mean)",
       "author": "abaybektursun",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-03-28T13:34:01Z",
-      "updated": "2026-03-29T04:42:28Z",
+      "updated": "2026-03-30T16:59:20Z",
       "bpb": 1.1147,
       "seeds": 3,
       "artifact_bytes": 15910000,
@@ -4062,7 +4229,9 @@
         "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_seed42.log",
         "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_seed999.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "valerio-oai: Looks good to me too, and clears the 0.005 nats bar. Merging into the leaderboard!"
+      ],
       "compliance_keywords": [
         "ttt",
         "gptq_eval",
@@ -4070,9 +4239,9 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "artifact-unknown"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -5861,10 +6030,10 @@
       "author": "Adam-Jacuch",
       "state": "OPEN",
       "created": "2026-03-27T17:07:03Z",
-      "updated": "2026-03-30T15:43:31Z",
+      "updated": "2026-03-30T16:13:56Z",
       "bpb": 1.11837,
       "seeds": null,
-      "artifact_bytes": null,
+      "artifact_bytes": 16000000,
       "technique_summary": "",
       "file_paths": [
         "records/track_10min_16mb/2026-03-27_11L_KGIIR_Fused_Adam/README.md",
@@ -8693,9 +8862,9 @@
       "number": 882,
       "title": "Non-record: LeakyReLU(0.5)^2 + TrigramHash on PR414 stack (1.3762 bpb, 1xA100)",
       "author": "IshiPareek",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-26T18:25:54Z",
-      "updated": "2026-03-30T14:38:06Z",
+      "updated": "2026-03-30T16:56:23Z",
       "bpb": 1.3762,
       "seeds": null,
       "artifact_bytes": null,
@@ -8714,12 +8883,11 @@
       ],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 881,
@@ -13443,9 +13611,9 @@
       "number": 741,
       "title": "Record: Cosine TTT + Multi-Order N-gram Cache (3-seed mean val_bpb=0.9850)",
       "author": "andrewbaggio1",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-25T16:35:12Z",
-      "updated": "2026-03-25T16:46:56Z",
+      "updated": "2026-03-30T16:26:10Z",
       "bpb": 0.985,
       "seeds": 3,
       "artifact_bytes": 15620000,
@@ -13466,15 +13634,13 @@
         "ngram_path",
         "cache_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "keyword:ngram",
-        "keyword:ngram_path",
-        "path:ngram-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
-      "technique_type": "hybrid"
+      "technique_type": "hybrid",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 740,
@@ -13800,9 +13966,9 @@
       "number": 728,
       "title": "Record: AR Self-Gen GPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.11473 (3-seed mean)",
       "author": "abaybektursun",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-25T15:03:32Z",
-      "updated": "2026-03-29T04:42:26Z",
+      "updated": "2026-03-30T17:23:56Z",
       "bpb": 1.1147,
       "seeds": 3,
       "artifact_bytes": 15910000,
@@ -13828,7 +13994,7 @@
       "technique_type": "ttt",
       "status": "DEAD",
       "flags": [
-        "maintainer-closure-keyword:disallowed"
+        "maintainer-closed:disallowed"
       ],
       "confidence": "HIGH"
     },
@@ -15939,9 +16105,9 @@
       "number": 661,
       "title": "Non-record: 30ep Cosine TTT on SwiGLU + U-Net (1xH100, val_bpb=1.1175)",
       "author": "andrewbaggio1",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-25T00:08:43Z",
-      "updated": "2026-03-25T00:08:43Z",
+      "updated": "2026-03-30T16:26:13Z",
       "bpb": 1.1175,
       "seeds": null,
       "artifact_bytes": 7500000,
@@ -15956,14 +16122,13 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
-      "technique_type": "ttt"
+      "technique_type": "ttt",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 660,
@@ -20861,9 +21026,9 @@
       "number": 509,
       "title": "Non-record: Cosine TTT 30ep on SwiGLU + U-Net (1xH100, val_bpb=1.1175)",
       "author": "andrewbaggio1",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-23T06:19:00Z",
-      "updated": "2026-03-23T06:19:00Z",
+      "updated": "2026-03-30T16:26:15Z",
       "bpb": 1.1175,
       "seeds": null,
       "artifact_bytes": 7500000,
@@ -20878,14 +21043,13 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
-      "technique_type": "ttt"
+      "technique_type": "ttt",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 508,
@@ -26082,11 +26246,11 @@
     },
     {
       "number": 347,
-      "title": "GatedAttn + ValueResidual + Full QAT + lzma-9 + BigramHash(2048)",
+      "title": "Record: GatedAttn + ValueResidual + Full QAT + lzma-9 + BigramHash(2048)",
       "author": "FlashyFlash3011",
       "state": "OPEN",
       "created": "2026-03-21T15:22:07Z",
-      "updated": "2026-03-30T14:28:42Z",
+      "updated": "2026-03-30T17:14:33Z",
       "bpb": null,
       "seeds": 2,
       "artifact_bytes": 16000000,
