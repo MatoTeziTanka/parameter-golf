@@ -1,7 +1,105 @@
 {
-  "last_fetch": "2026-03-30T21:09:11.853343+00:00",
-  "api_calls_used": 42,
+  "last_fetch": "2026-03-30T22:03:54.287260+00:00",
+  "api_calls_used": 43,
   "prs": [
+    {
+      "number": 1154,
+      "title": "Non-record: Polar STE QAT for structural weights",
+      "author": "LucasErcolano",
+      "state": "OPEN",
+      "created": "2026-03-30T21:54:03Z",
+      "updated": "2026-03-30T21:54:03Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/README.md",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/benchmark_kv_backends.py",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/submission.json",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/train.log",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/triton_kv_ops.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1153,
+      "title": "Non-record: Triton KV-cache backend for autoregressive eval",
+      "author": "LucasErcolano",
+      "state": "OPEN",
+      "created": "2026-03-30T21:54:01Z",
+      "updated": "2026-03-30T21:54:01Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/README.md",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/benchmark_kv_backends.py",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/submission.json",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/train.log",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/triton_kv_ops.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_eval",
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1152,
+      "title": "Non-record: Connectome-JEPA — Sparse I/O Bottleneck (val_bpb 1.7942 ± 0.003, 1.97MB artifact, first JEPA submission)",
+      "author": "ericdatum",
+      "state": "OPEN",
+      "created": "2026-03-30T21:47:53Z",
+      "updated": "2026-03-30T21:47:53Z",
+      "bpb": 1.7942,
+      "seeds": 3,
+      "artifact_bytes": 1970000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_ConnectomeJEPA/README.md",
+        "records/track_non_record_16mb/2026-03-30_ConnectomeJEPA/requirements.txt",
+        "records/track_non_record_16mb/2026-03-30_ConnectomeJEPA/submission.json",
+        "records/track_non_record_16mb/2026-03-30_ConnectomeJEPA/train.log",
+        "records/track_non_record_16mb/2026-03-30_ConnectomeJEPA/train_connectome_jepa.py",
+        "records/track_non_record_16mb/2026-03-30_ConnectomeJEPA/train_seed_1337.log",
+        "records/track_non_record_16mb/2026-03-30_ConnectomeJEPA/train_seed_42.log",
+        "records/track_non_record_16mb/2026-03-30_ConnectomeJEPA/train_seed_7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1150,
       "title": "Legal TTT (SGD, 3-epoch) + SLOT (lr=0.003, steps=5) on PR #549 base -- val_bpb: 1.11512 (3-seed mean, beats merged SOTA 1.1194)",
@@ -451,7 +549,7 @@
       "author": "greqone",
       "state": "OPEN",
       "created": "2026-03-30T16:44:28Z",
-      "updated": "2026-03-30T16:49:50Z",
+      "updated": "2026-03-30T21:21:52Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -2112,7 +2210,7 @@
       "author": "serdardoesml",
       "state": "OPEN",
       "created": "2026-03-29T18:09:25Z",
-      "updated": "2026-03-29T18:09:25Z",
+      "updated": "2026-03-30T21:56:51Z",
       "bpb": 1.2542,
       "seeds": null,
       "artifact_bytes": 15982324,
