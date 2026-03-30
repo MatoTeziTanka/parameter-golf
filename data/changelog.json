@@ -1,10 +1,21 @@
 [
   {
+    "version": "0.5.9",
+    "date": "2026-03-30",
+    "title": "Funding Tracker Update + Proof Levels",
+    "changes": [
+      "Added @EthanYangTW: ~$1,557 self-funded on RunPod (VERIFIED via billing screenshot)",
+      "Proof level badges: VERIFIED (billing screenshot or full audit) vs PENDING (self-reported)",
+      "Updated totals: 8 participants tracked, $5,252+ self-funded",
+      "Second VERIFIED entry in the tracker"
+    ]
+  },
+  {
     "version": "0.5.8",
     "date": "2026-03-29",
     "title": "Tooltips + Compute Guide Clarity",
     "changes": [
-      "Tooltips on all badges: status, type, track — hover for explanation",
+      "Tooltips on all badges: status, type, track \u2014 hover for explanation",
       "Tooltips on all leaderboard column headers",
       "Tooltips on checklist items (what each requirement means)",
       "Tooltips on funding stat boxes",
@@ -18,7 +29,7 @@
     "date": "2026-03-29",
     "title": "Content Alignment Overhaul",
     "changes": [
-      "Responsive layout — 4 breakpoints from mobile (640px) to ultrawide (1800px+), no more wasted screen space",
+      "Responsive layout \u2014 4 breakpoints from mobile (640px) to ultrawide (1800px+), no more wasted screen space",
       "Center-aligned everything: section headers, table headers, table cells, cards, filter bars, stat boxes",
       "Checklists and technique lists: centered block with left-aligned text inside",
       "Tile centering fixed: technique cards, combo chips, collaboration items",
@@ -36,14 +47,14 @@
   {
     "version": "0.5.5",
     "date": "2026-03-29",
-    "title": "Funding Transparency — Verified",
+    "title": "Funding Transparency \u2014 Verified",
     "changes": [
       "Full compute audit: $1,035.82 param golf across 3 platforms, $867.70 self-funded",
-      "RunPod: $643.39 — 35 Stripe transactions, dashboard verified, daily breakdown",
+      "RunPod: $643.39 \u2014 35 Stripe transactions, dashboard verified, daily breakdown",
       "Modal: $342.48 param golf across 2 workspaces (56 apps total, 46 PYTHIA apps code-audited and separated)",
-      "Colab: $49.95 — 5 Google Pay receipts for compute units",
-      "PYTHIA research ($415.27) cleanly separated — all 46 benchmark scripts audited for pgolf references, zero found",
-      "First VERIFIED proof level in the funding tracker — full audit JSON with methodology published",
+      "Colab: $49.95 \u2014 5 Google Pay receipts for compute units",
+      "PYTHIA research ($415.27) cleanly separated \u2014 all 46 benchmark scripts audited for pgolf references, zero found",
+      "First VERIFIED proof level in the funding tracker \u2014 full audit JSON with methodology published",
       "Automated changelog: single source of truth in data/changelog.json"
     ]
   },
@@ -84,9 +95,9 @@
     "title": "UX Overhaul",
     "changes": [
       "Changelog moved to bottom of page",
-      "Navigation updated — all sections linked in correct order",
+      "Navigation updated \u2014 all sections linked in correct order",
       "Scrollable leaderboard tables with sticky headers",
-      "Neural-only leaderboard cleaned — removed PRs with BPB < 0.5",
+      "Neural-only leaderboard cleaned \u2014 removed PRs with BPB < 0.5",
       "Archive sorted ALIVE-first",
       "Technique card text centering fixed",
       "BPB floor gate added to classifier"
@@ -97,7 +108,7 @@
     "date": "2026-03-28",
     "title": "All Phases Shipped",
     "changes": [
-      "GitHub Actions cron — auto-updates every 30 minutes",
+      "GitHub Actions cron \u2014 auto-updates every 30 minutes",
       "6 issue templates for community input",
       "Community issue ingestion pipeline (fetch_community.py)"
     ]
@@ -108,8 +119,8 @@
     "title": "Community Input",
     "changes": [
       "Issue templates: funding, corrections, techniques, blocked, resources, feedback",
-      "fetch_community.py — auto-processes GitHub Issues",
-      "Pipeline integration — community input runs before classification"
+      "fetch_community.py \u2014 auto-processes GitHub Issues",
+      "Pipeline integration \u2014 community input runs before classification"
     ]
   },
   {
@@ -117,9 +128,9 @@
     "date": "2026-03-28",
     "title": "Analytics",
     "changes": [
-      "Technique map — 24 techniques tracked, grouped by PRs",
-      "BPB timeline — inline SVG chart, March 27 cliff marked",
-      "Collaboration finder — who's working on what, untried combinations"
+      "Technique map \u2014 24 techniques tracked, grouped by PRs",
+      "BPB timeline \u2014 inline SVG chart, March 27 cliff marked",
+      "Collaboration finder \u2014 who's working on what, untried combinations"
     ]
   },
   {
@@ -127,8 +138,8 @@
     "date": "2026-03-28",
     "title": "Live API",
     "changes": [
-      "Live leaderboard — 996 PRs fetched via GitHub GraphQL API",
-      "Compliance engine — auto-classifies ALIVE / DEAD / AT-RISK / INCOMPLETE",
+      "Live leaderboard \u2014 996 PRs fetched via GitHub GraphQL API",
+      "Compliance engine \u2014 auto-classifies ALIVE / DEAD / AT-RISK / INCOMPLETE",
       "Cached + incremental fetching"
     ]
   },
