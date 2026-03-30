@@ -1,7 +1,114 @@
 {
-  "last_fetch": "2026-03-30T08:55:55.746000+00:00",
-  "api_calls_used": 33,
+  "last_fetch": "2026-03-30T10:21:58.974831+00:00",
+  "api_calls_used": 34,
   "prs": [
+    {
+      "number": 1129,
+      "title": "Record: CROWN-Q + GPTQ + Legal TTT — val_bpb 1.1174 (3-seed mean)",
+      "author": "EthanYangTW",
+      "state": "OPEN",
+      "created": "2026-03-30T09:49:05Z",
+      "updated": "2026-03-30T09:54:20Z",
+      "bpb": 1.1174,
+      "seeds": 3,
+      "artifact_bytes": 15961751,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-30_V38_SqrtCooldown_3seed/README.md",
+        "records/track_10min_16mb/2026-03-30_V38_SqrtCooldown_3seed/submission.json",
+        "records/track_10min_16mb/2026-03-30_V38_SqrtCooldown_3seed/train_gpt.py",
+        "records/track_10min_16mb/2026-03-30_V38_SqrtCooldown_3seed/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-30_V38_SqrtCooldown_3seed/train_seed42.log",
+        "records/track_10min_16mb/2026-03-30_V38_SqrtCooldown_3seed/train_seed7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1128,
+      "title": "Record: SLOT + LeakyReLU² + Legal Score-First TTT + Parallel Muon — val_bpb 1.1154 (3-seed mean) val_bpb = 1.1154 (3-seed mean, std 0.0002) | ~15.9 MB | 8×H100 SXM",
+      "author": "AnubhavBharadwaaj",
+      "state": "OPEN",
+      "created": "2026-03-30T09:43:20Z",
+      "updated": "2026-03-30T10:05:36Z",
+      "bpb": 1.1154,
+      "seeds": 3,
+      "artifact_bytes": 15900000,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-30_SLOT_Record_LeakyReLU_TTT_ParallelMuon/README.md",
+        "records/track_10min_16mb/2026-03-30_SLOT_Record_LeakyReLU_TTT_ParallelMuon/anubhav_slot_higherlr_seed1337_fastpod_30mar2026_0135pm.log",
+        "records/track_10min_16mb/2026-03-30_SLOT_Record_LeakyReLU_TTT_ParallelMuon/anubhav_slot_higherlr_seed2025_30mar2026_0233pm.log",
+        "records/track_10min_16mb/2026-03-30_SLOT_Record_LeakyReLU_TTT_ParallelMuon/anubhav_slot_higherlr_seed42_30mar2026_0208pm.log",
+        "records/track_10min_16mb/2026-03-30_SLOT_Record_LeakyReLU_TTT_ParallelMuon/submission.json",
+        "records/track_10min_16mb/2026-03-30_SLOT_Record_LeakyReLU_TTT_ParallelMuon/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/README.md",
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/submission.json",
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/train_baseline_seed1337.log",
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/train_ctw_seed1337.log",
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-29_CTW_on_LeakyReLU_TTT_ParallelMuon/train_gpt_improved_ctw_implementation_dont_have_compute_left_to_run_somebody_else_do_it.py",
+        "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/README.md",
+        "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/anubhav_slot_seed1337.log",
+        "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/anubhav_slot_seed2025.log",
+        "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/anubhav_slot_seed42.log",
+        "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/submission.json",
+        "records/track_non_record_16mb/2026-03-29_SLOT_on_LeakyReLU_TTT_ParallelMuon/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1127,
+      "title": "Record: 11L XSA4 + EMA + LoRA TTT + Partial RoPE + dim480 — val_bpb 1.13112 (3-seed)",
+      "author": "dentity007",
+      "state": "OPEN",
+      "created": "2026-03-30T09:01:09Z",
+      "updated": "2026-03-30T09:01:09Z",
+      "bpb": 1.13112,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-30_11L_XSA4_EMA_LoRATTT_PartialRoPE_dim480_1.1311/README.md",
+        "records/track_10min_16mb/2026-03-30_11L_XSA4_EMA_LoRATTT_PartialRoPE_dim480_1.1311/submission.json",
+        "records/track_10min_16mb/2026-03-30_11L_XSA4_EMA_LoRATTT_PartialRoPE_dim480_1.1311/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1126,
       "title": "review: Rerun of PR #1089",
@@ -778,9 +885,9 @@
       "author": "DariusFeher",
       "state": "OPEN",
       "created": "2026-03-29T23:52:12Z",
-      "updated": "2026-03-30T06:36:00Z",
+      "updated": "2026-03-30T10:17:38Z",
       "bpb": 1.3595,
-      "seeds": 3,
+      "seeds": 2,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + INT8 + EMA",
       "file_paths": [
@@ -800,6 +907,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
+        "seeds-only-2",
         "artifact-unknown"
       ],
       "confidence": "HIGH"
@@ -2213,11 +2321,11 @@
       "author": "rolandnsharp",
       "state": "OPEN",
       "created": "2026-03-29T06:23:37Z",
-      "updated": "2026-03-30T06:46:24Z",
-      "bpb": null,
+      "updated": "2026-03-30T10:20:07Z",
+      "bpb": 0.002,
       "seeds": null,
       "artifact_bytes": 11200000,
-      "technique_summary": "TTT + Muon + INT6 + EMA",
+      "technique_summary": "TTT + Muon + INT8 + EMA",
       "file_paths": [
         "records/track_10min_16mb/2026-03-29_CausalOscillatorLM/README.md",
         "records/track_10min_16mb/2026-03-29_CausalOscillatorLM/submission.json",
@@ -2232,7 +2340,6 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
@@ -2851,7 +2958,7 @@
       "author": "nothingLiva",
       "state": "OPEN",
       "created": "2026-03-28T23:06:05Z",
-      "updated": "2026-03-28T23:06:05Z",
+      "updated": "2026-03-30T09:58:06Z",
       "bpb": 1.1217,
       "seeds": 4,
       "artifact_bytes": 15800000,
@@ -2868,13 +2975,13 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 1041,
