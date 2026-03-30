@@ -1,20 +1,48 @@
 {
-  "last_fetch": "2026-03-30T22:03:54.287260+00:00",
-  "api_calls_used": 43,
+  "last_fetch": "2026-03-30T23:04:20.828751+00:00",
+  "api_calls_used": 44,
   "prs": [
+    {
+      "number": 1155,
+      "title": "Non-record: MLX smoke test on MacBook Air M3 — val_bpb 2.3029",
+      "author": "Rhoahndur",
+      "state": "CLOSED",
+      "created": "2026-03-30T22:31:05Z",
+      "updated": "2026-03-30T22:34:05Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 9640000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_MLX_MacBookAir_M3_SmokeTest/README.md",
+        "records/track_non_record_16mb/2026-03-30_MLX_MacBookAir_M3_SmokeTest/submission.json",
+        "records/track_non_record_16mb/2026-03-30_MLX_MacBookAir_M3_SmokeTest/train.log",
+        "records/track_non_record_16mb/2026-03-30_MLX_MacBookAir_M3_SmokeTest/train_gpt_mlx.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1154,
       "title": "Non-record: Polar STE QAT for structural weights",
       "author": "LucasErcolano",
       "state": "OPEN",
       "created": "2026-03-30T21:54:03Z",
-      "updated": "2026-03-30T21:54:03Z",
-      "bpb": null,
+      "updated": "2026-03-30T22:37:31Z",
+      "bpb": 2.3861,
       "seeds": null,
-      "artifact_bytes": null,
+      "artifact_bytes": 88040960,
       "technique_summary": "",
       "file_paths": [
         "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/README.md",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/artifact_isolation_check.py",
         "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/benchmark_kv_backends.py",
         "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/submission.json",
         "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/train.log",
@@ -23,13 +51,13 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
+        "cache_eval",
         "cache_path"
       ],
       "track": "non-record",
       "technique_type": "cache",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
@@ -41,7 +69,7 @@
       "author": "LucasErcolano",
       "state": "OPEN",
       "created": "2026-03-30T21:54:01Z",
-      "updated": "2026-03-30T21:54:01Z",
+      "updated": "2026-03-30T22:37:10Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -263,11 +291,11 @@
     },
     {
       "number": 1145,
-      "title": "Record: 1.1109 BPB Loader FullGPTQ XSA11 + online ngram augment",
+      "title": "Record: 1.1109 BPB FullGPTQ XSA11 + online ngram augment",
       "author": "AnirudhRahul",
       "state": "OPEN",
       "created": "2026-03-30T18:58:12Z",
-      "updated": "2026-03-30T20:00:48Z",
+      "updated": "2026-03-30T22:28:59Z",
       "bpb": 1.11085863,
       "seeds": 4,
       "artifact_bytes": null,
