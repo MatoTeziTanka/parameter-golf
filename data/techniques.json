@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-03-30T20:05:44Z",
+  "generated_at": "2026-03-30T21:09:17Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1098,
-    "matched_pr_count": 791,
+    "pr_count": 1100,
+    "matched_pr_count": 792,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
       "ALIVE": 36,
-      "AT_RISK": 105,
+      "AT_RISK": 106,
       "DEAD": 321,
-      "INCOMPLETE": 636,
+      "INCOMPLETE": 637,
       "UNKNOWN": 0
     }
   },
@@ -20,11 +20,11 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 386,
+      "count": 387,
       "author_count": 207,
       "alive_count": 7,
       "dead_count": 146,
-      "at_risk_count": 50,
+      "at_risk_count": 51,
       "incomplete_count": 183,
       "unknown_count": 0,
       "best_alive": {
@@ -1252,6 +1252,34 @@
           ]
         },
         {
+          "author": "sahiee-dev",
+          "pr_count": 3,
+          "best_bpb": 1.08965,
+          "prs": [
+            {
+              "number": 430,
+              "author": "sahiee-dev",
+              "status": "DEAD",
+              "bpb": 1.08965,
+              "created": "2026-03-22T15:12:45Z"
+            },
+            {
+              "number": 824,
+              "author": "sahiee-dev",
+              "status": "DEAD",
+              "bpb": 1.08965,
+              "created": "2026-03-26T07:05:12Z"
+            },
+            {
+              "number": 1150,
+              "author": "sahiee-dev",
+              "status": "AT_RISK",
+              "bpb": 1.11512,
+              "created": "2026-03-30T20:14:28Z"
+            }
+          ]
+        },
+        {
           "author": "Upsalla",
           "pr_count": 3,
           "best_bpb": 1.0941,
@@ -1822,27 +1850,6 @@
               "status": "DEAD",
               "bpb": 1.11,
               "created": "2026-03-24T02:56:33Z"
-            }
-          ]
-        },
-        {
-          "author": "sahiee-dev",
-          "pr_count": 2,
-          "best_bpb": 1.08965,
-          "prs": [
-            {
-              "number": 430,
-              "author": "sahiee-dev",
-              "status": "DEAD",
-              "bpb": 1.08965,
-              "created": "2026-03-22T15:12:45Z"
-            },
-            {
-              "number": 824,
-              "author": "sahiee-dev",
-              "status": "DEAD",
-              "bpb": 1.08965,
-              "created": "2026-03-26T07:05:12Z"
             }
           ]
         },
@@ -6887,17 +6894,24 @@
           "status": "AT_RISK",
           "bpb": null,
           "created": "2026-03-30T19:31:05Z"
+        },
+        {
+          "number": 1150,
+          "author": "sahiee-dev",
+          "status": "AT_RISK",
+          "bpb": 1.11512,
+          "created": "2026-03-30T20:14:28Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 321,
-      "author_count": 218,
+      "count": 322,
+      "author_count": 219,
       "alive_count": 13,
       "dead_count": 74,
-      "at_risk_count": 38,
+      "at_risk_count": 39,
       "incomplete_count": 196,
       "unknown_count": 0,
       "best_alive": {
@@ -8786,6 +8800,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.1147,
               "created": "2026-03-25T14:45:44Z"
+            }
+          ]
+        },
+        {
+          "author": "sahiee-dev",
+          "pr_count": 1,
+          "best_bpb": 1.11512,
+          "prs": [
+            {
+              "number": 1150,
+              "author": "sahiee-dev",
+              "status": "AT_RISK",
+              "bpb": 1.11512,
+              "created": "2026-03-30T20:14:28Z"
             }
           ]
         },
@@ -12927,17 +12955,24 @@
           "status": "AT_RISK",
           "bpb": null,
           "created": "2026-03-30T19:31:05Z"
+        },
+        {
+          "number": 1150,
+          "author": "sahiee-dev",
+          "status": "AT_RISK",
+          "bpb": 1.11512,
+          "created": "2026-03-30T20:14:28Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 303,
-      "author_count": 174,
+      "count": 304,
+      "author_count": 175,
       "alive_count": 8,
       "dead_count": 95,
-      "at_risk_count": 42,
+      "at_risk_count": 43,
       "incomplete_count": 158,
       "unknown_count": 0,
       "best_alive": {
@@ -14994,6 +15029,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.1147,
               "created": "2026-03-25T14:45:44Z"
+            }
+          ]
+        },
+        {
+          "author": "sahiee-dev",
+          "pr_count": 1,
+          "best_bpb": 1.11512,
+          "prs": [
+            {
+              "number": 1150,
+              "author": "sahiee-dev",
+              "status": "AT_RISK",
+              "bpb": 1.11512,
+              "created": "2026-03-30T20:14:28Z"
             }
           ]
         },
@@ -18407,17 +18456,24 @@
           "status": "INCOMPLETE",
           "bpb": 1.1801,
           "created": "2026-03-30T16:56:26Z"
+        },
+        {
+          "number": 1150,
+          "author": "sahiee-dev",
+          "status": "AT_RISK",
+          "bpb": 1.11512,
+          "created": "2026-03-30T20:14:28Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 212,
+      "count": 213,
       "author_count": 103,
       "alive_count": 3,
       "dead_count": 82,
-      "at_risk_count": 42,
+      "at_risk_count": 43,
       "incomplete_count": 85,
       "unknown_count": 0,
       "best_alive": {
@@ -19281,6 +19337,34 @@
           ]
         },
         {
+          "author": "sahiee-dev",
+          "pr_count": 3,
+          "best_bpb": 1.08965,
+          "prs": [
+            {
+              "number": 430,
+              "author": "sahiee-dev",
+              "status": "DEAD",
+              "bpb": 1.08965,
+              "created": "2026-03-22T15:12:45Z"
+            },
+            {
+              "number": 824,
+              "author": "sahiee-dev",
+              "status": "DEAD",
+              "bpb": 1.08965,
+              "created": "2026-03-26T07:05:12Z"
+            },
+            {
+              "number": 1150,
+              "author": "sahiee-dev",
+              "status": "AT_RISK",
+              "bpb": 1.11512,
+              "created": "2026-03-30T20:14:28Z"
+            }
+          ]
+        },
+        {
           "author": "NewyorkDev",
           "pr_count": 3,
           "best_bpb": 1.1085,
@@ -19529,27 +19613,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1122,
               "created": "2026-03-29T06:15:28Z"
-            }
-          ]
-        },
-        {
-          "author": "sahiee-dev",
-          "pr_count": 2,
-          "best_bpb": 1.08965,
-          "prs": [
-            {
-              "number": 430,
-              "author": "sahiee-dev",
-              "status": "DEAD",
-              "bpb": 1.08965,
-              "created": "2026-03-22T15:12:45Z"
-            },
-            {
-              "number": 824,
-              "author": "sahiee-dev",
-              "status": "DEAD",
-              "bpb": 1.08965,
-              "created": "2026-03-26T07:05:12Z"
             }
           ]
         },
@@ -22116,6 +22179,13 @@
           "status": "AT_RISK",
           "bpb": 1.11085863,
           "created": "2026-03-30T18:58:12Z"
+        },
+        {
+          "number": 1150,
+          "author": "sahiee-dev",
+          "status": "AT_RISK",
+          "bpb": 1.11512,
+          "created": "2026-03-30T20:14:28Z"
         }
       ]
     },
@@ -32569,11 +32639,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 149,
-      "author_count": 67,
+      "count": 150,
+      "author_count": 68,
       "alive_count": 0,
       "dead_count": 65,
-      "at_risk_count": 84,
+      "at_risk_count": 85,
       "incomplete_count": 0,
       "unknown_count": 0,
       "best_alive": null,
@@ -33937,6 +34007,20 @@
           ]
         },
         {
+          "author": "sahiee-dev",
+          "pr_count": 1,
+          "best_bpb": 1.11512,
+          "prs": [
+            {
+              "number": 1150,
+              "author": "sahiee-dev",
+              "status": "AT_RISK",
+              "bpb": 1.11512,
+              "created": "2026-03-30T20:14:28Z"
+            }
+          ]
+        },
+        {
           "author": "TimPietruskyRunPod",
           "pr_count": 1,
           "best_bpb": 1.1179,
@@ -35134,6 +35218,13 @@
           "status": "AT_RISK",
           "bpb": null,
           "created": "2026-03-30T19:31:05Z"
+        },
+        {
+          "number": 1150,
+          "author": "sahiee-dev",
+          "status": "AT_RISK",
+          "bpb": 1.11512,
+          "created": "2026-03-30T20:14:28Z"
         }
       ]
     },
@@ -35865,11 +35956,11 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 321,
-      "author_count": 218,
+      "count": 322,
+      "author_count": 219,
       "alive_count": 13,
       "dead_count": 74,
-      "at_risk_count": 38,
+      "at_risk_count": 39,
       "incomplete_count": 196,
       "unknown_count": 0,
       "best_alive": {
@@ -37758,6 +37849,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.1147,
               "created": "2026-03-25T14:45:44Z"
+            }
+          ]
+        },
+        {
+          "author": "sahiee-dev",
+          "pr_count": 1,
+          "best_bpb": 1.11512,
+          "prs": [
+            {
+              "number": 1150,
+              "author": "sahiee-dev",
+              "status": "AT_RISK",
+              "bpb": 1.11512,
+              "created": "2026-03-30T20:14:28Z"
             }
           ]
         },
@@ -41899,17 +42004,24 @@
           "status": "AT_RISK",
           "bpb": null,
           "created": "2026-03-30T19:31:05Z"
+        },
+        {
+          "number": 1150,
+          "author": "sahiee-dev",
+          "status": "AT_RISK",
+          "bpb": 1.11512,
+          "created": "2026-03-30T20:14:28Z"
         }
       ]
     },
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 386,
+      "count": 387,
       "author_count": 207,
       "alive_count": 7,
       "dead_count": 146,
-      "at_risk_count": 50,
+      "at_risk_count": 51,
       "incomplete_count": 183,
       "unknown_count": 0,
       "best_alive": {
@@ -43137,6 +43249,34 @@
           ]
         },
         {
+          "author": "sahiee-dev",
+          "pr_count": 3,
+          "best_bpb": 1.08965,
+          "prs": [
+            {
+              "number": 430,
+              "author": "sahiee-dev",
+              "status": "DEAD",
+              "bpb": 1.08965,
+              "created": "2026-03-22T15:12:45Z"
+            },
+            {
+              "number": 824,
+              "author": "sahiee-dev",
+              "status": "DEAD",
+              "bpb": 1.08965,
+              "created": "2026-03-26T07:05:12Z"
+            },
+            {
+              "number": 1150,
+              "author": "sahiee-dev",
+              "status": "AT_RISK",
+              "bpb": 1.11512,
+              "created": "2026-03-30T20:14:28Z"
+            }
+          ]
+        },
+        {
           "author": "Upsalla",
           "pr_count": 3,
           "best_bpb": 1.0941,
@@ -43707,27 +43847,6 @@
               "status": "DEAD",
               "bpb": 1.11,
               "created": "2026-03-24T02:56:33Z"
-            }
-          ]
-        },
-        {
-          "author": "sahiee-dev",
-          "pr_count": 2,
-          "best_bpb": 1.08965,
-          "prs": [
-            {
-              "number": 430,
-              "author": "sahiee-dev",
-              "status": "DEAD",
-              "bpb": 1.08965,
-              "created": "2026-03-22T15:12:45Z"
-            },
-            {
-              "number": 824,
-              "author": "sahiee-dev",
-              "status": "DEAD",
-              "bpb": 1.08965,
-              "created": "2026-03-26T07:05:12Z"
             }
           ]
         },
@@ -48772,17 +48891,24 @@
           "status": "AT_RISK",
           "bpb": null,
           "created": "2026-03-30T19:31:05Z"
+        },
+        {
+          "number": 1150,
+          "author": "sahiee-dev",
+          "status": "AT_RISK",
+          "bpb": 1.11512,
+          "created": "2026-03-30T20:14:28Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 303,
-      "author_count": 174,
+      "count": 304,
+      "author_count": 175,
       "alive_count": 8,
       "dead_count": 95,
-      "at_risk_count": 42,
+      "at_risk_count": 43,
       "incomplete_count": 158,
       "unknown_count": 0,
       "best_alive": {
@@ -50839,6 +50965,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.1147,
               "created": "2026-03-25T14:45:44Z"
+            }
+          ]
+        },
+        {
+          "author": "sahiee-dev",
+          "pr_count": 1,
+          "best_bpb": 1.11512,
+          "prs": [
+            {
+              "number": 1150,
+              "author": "sahiee-dev",
+              "status": "AT_RISK",
+              "bpb": 1.11512,
+              "created": "2026-03-30T20:14:28Z"
             }
           ]
         },
@@ -54252,17 +54392,24 @@
           "status": "INCOMPLETE",
           "bpb": 1.1801,
           "created": "2026-03-30T16:56:26Z"
+        },
+        {
+          "number": 1150,
+          "author": "sahiee-dev",
+          "status": "AT_RISK",
+          "bpb": 1.11512,
+          "created": "2026-03-30T20:14:28Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 212,
+      "count": 213,
       "author_count": 103,
       "alive_count": 3,
       "dead_count": 82,
-      "at_risk_count": 42,
+      "at_risk_count": 43,
       "incomplete_count": 85,
       "unknown_count": 0,
       "best_alive": {
@@ -55126,6 +55273,34 @@
           ]
         },
         {
+          "author": "sahiee-dev",
+          "pr_count": 3,
+          "best_bpb": 1.08965,
+          "prs": [
+            {
+              "number": 430,
+              "author": "sahiee-dev",
+              "status": "DEAD",
+              "bpb": 1.08965,
+              "created": "2026-03-22T15:12:45Z"
+            },
+            {
+              "number": 824,
+              "author": "sahiee-dev",
+              "status": "DEAD",
+              "bpb": 1.08965,
+              "created": "2026-03-26T07:05:12Z"
+            },
+            {
+              "number": 1150,
+              "author": "sahiee-dev",
+              "status": "AT_RISK",
+              "bpb": 1.11512,
+              "created": "2026-03-30T20:14:28Z"
+            }
+          ]
+        },
+        {
           "author": "NewyorkDev",
           "pr_count": 3,
           "best_bpb": 1.1085,
@@ -55374,27 +55549,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1122,
               "created": "2026-03-29T06:15:28Z"
-            }
-          ]
-        },
-        {
-          "author": "sahiee-dev",
-          "pr_count": 2,
-          "best_bpb": 1.08965,
-          "prs": [
-            {
-              "number": 430,
-              "author": "sahiee-dev",
-              "status": "DEAD",
-              "bpb": 1.08965,
-              "created": "2026-03-22T15:12:45Z"
-            },
-            {
-              "number": 824,
-              "author": "sahiee-dev",
-              "status": "DEAD",
-              "bpb": 1.08965,
-              "created": "2026-03-26T07:05:12Z"
             }
           ]
         },
@@ -57961,6 +58115,13 @@
           "status": "AT_RISK",
           "bpb": 1.11085863,
           "created": "2026-03-30T18:58:12Z"
+        },
+        {
+          "number": 1150,
+          "author": "sahiee-dev",
+          "status": "AT_RISK",
+          "bpb": 1.11512,
+          "created": "2026-03-30T20:14:28Z"
         }
       ]
     },
@@ -59933,11 +60094,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 149,
-      "author_count": 67,
+      "count": 150,
+      "author_count": 68,
       "alive_count": 0,
       "dead_count": 65,
-      "at_risk_count": 84,
+      "at_risk_count": 85,
       "incomplete_count": 0,
       "unknown_count": 0,
       "best_alive": null,
@@ -61301,6 +61462,20 @@
           ]
         },
         {
+          "author": "sahiee-dev",
+          "pr_count": 1,
+          "best_bpb": 1.11512,
+          "prs": [
+            {
+              "number": 1150,
+              "author": "sahiee-dev",
+              "status": "AT_RISK",
+              "bpb": 1.11512,
+              "created": "2026-03-30T20:14:28Z"
+            }
+          ]
+        },
+        {
           "author": "TimPietruskyRunPod",
           "pr_count": 1,
           "best_bpb": 1.1179,
@@ -62498,6 +62673,13 @@
           "status": "AT_RISK",
           "bpb": null,
           "created": "2026-03-30T19:31:05Z"
+        },
+        {
+          "number": 1150,
+          "author": "sahiee-dev",
+          "status": "AT_RISK",
+          "bpb": 1.11512,
+          "created": "2026-03-30T20:14:28Z"
         }
       ]
     },
@@ -71773,11 +71955,11 @@
     {
       "left": "TTT",
       "right": "Progressive Depth",
-      "left_count": 386,
+      "left_count": 387,
       "right_count": 3,
       "left_people": 207,
       "right_people": 1,
-      "score": 1158
+      "score": 1161
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -71827,11 +72009,11 @@
     {
       "left": "Muon optimizer",
       "right": "Progressive Depth",
-      "left_count": 321,
+      "left_count": 322,
       "right_count": 3,
-      "left_people": 218,
+      "left_people": 219,
       "right_people": 1,
-      "score": 963
+      "score": 966
     },
     {
       "left": "BigramHash",
@@ -71845,11 +72027,11 @@
     {
       "left": "EMA",
       "right": "Progressive Depth",
-      "left_count": 303,
+      "left_count": 304,
       "right_count": 3,
-      "left_people": 174,
+      "left_people": 175,
       "right_people": 1,
-      "score": 909
+      "score": 912
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -71890,11 +72072,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 386,
+      "left_count": 387,
       "right_count": 2,
       "left_people": 207,
       "right_people": 2,
-      "score": 772
+      "score": 774
     },
     {
       "left": "XSA",
@@ -71933,6 +72115,15 @@
       "score": 693
     },
     {
+      "left": "Muon optimizer",
+      "right": "Differential Attention",
+      "left_count": 322,
+      "right_count": 2,
+      "left_people": 219,
+      "right_people": 2,
+      "score": 644
+    },
+    {
       "left": "SwiGLU",
       "right": "Ternary Weights",
       "left_count": 46,
@@ -71942,40 +72133,31 @@
       "score": 644
     },
     {
-      "left": "Muon optimizer",
-      "right": "Differential Attention",
-      "left_count": 321,
-      "right_count": 2,
-      "left_people": 218,
-      "right_people": 2,
-      "score": 642
-    },
-    {
       "left": "GPTQ",
       "right": "Progressive Depth",
-      "left_count": 212,
+      "left_count": 213,
       "right_count": 3,
       "left_people": 103,
       "right_people": 1,
-      "score": 636
+      "score": 639
     },
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 303,
+      "left_count": 304,
       "right_count": 2,
-      "left_people": 174,
+      "left_people": 175,
       "right_people": 2,
-      "score": 606
+      "score": 608
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 303,
+      "left_count": 304,
       "right_count": 2,
-      "left_people": 174,
+      "left_people": 175,
       "right_people": 2,
-      "score": 606
+      "score": 608
     },
     {
       "left": "QAT",
@@ -72043,20 +72225,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 212,
+      "left_count": 213,
       "right_count": 2,
       "left_people": 103,
       "right_people": 2,
-      "score": 424
+      "score": 426
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 212,
+      "left_count": 213,
       "right_count": 2,
       "left_people": 103,
       "right_people": 2,
-      "score": 424
+      "score": 426
     },
     {
       "left": "BigramHash",
@@ -72070,11 +72252,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 386,
+      "left_count": 387,
       "right_count": 1,
       "left_people": 207,
       "right_people": 1,
-      "score": 386
+      "score": 387
     },
     {
       "left": "Parallel Muon",
@@ -72106,11 +72288,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 303,
+      "left_count": 304,
       "right_count": 1,
-      "left_people": 174,
+      "left_people": 175,
       "right_people": 1,
-      "score": 303
+      "score": 304
     },
     {
       "left": "QAT",
@@ -72178,11 +72360,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 212,
+      "left_count": 213,
       "right_count": 1,
       "left_people": 103,
       "right_people": 1,
-      "score": 212
+      "score": 213
     },
     {
       "left": "MoE",

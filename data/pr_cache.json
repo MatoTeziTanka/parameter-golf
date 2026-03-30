@@ -1,7 +1,76 @@
 {
-  "last_fetch": "2026-03-30T20:05:38.777254+00:00",
-  "api_calls_used": 41,
+  "last_fetch": "2026-03-30T21:09:11.853343+00:00",
+  "api_calls_used": 42,
   "prs": [
+    {
+      "number": 1150,
+      "title": "Legal TTT (SGD, 3-epoch) + SLOT (lr=0.003, steps=5) on PR #549 base -- val_bpb: 1.11512 (3-seed mean, beats merged SOTA 1.1194)",
+      "author": "sahiee-dev",
+      "state": "OPEN",
+      "created": "2026-03-30T20:14:28Z",
+      "updated": "2026-03-30T20:18:26Z",
+      "bpb": 1.11512,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-30_SLOT_SGD_Final/README.md",
+        "records/track_10min_16mb/2026-03-30_SLOT_SGD_Final/seed1337_slot.log",
+        "records/track_10min_16mb/2026-03-30_SLOT_SGD_Final/seed2025_slot.log",
+        "records/track_10min_16mb/2026-03-30_SLOT_SGD_Final/seed42_slot.log",
+        "records/track_10min_16mb/2026-03-30_SLOT_SGD_Final/submission.json",
+        "records/track_10min_16mb/2026-03-30_SLOT_SGD_Final/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1149,
+      "title": "Add non-record submission: faithful KV-cache quantization backends on 1x RTX 3090",
+      "author": "LucasErcolano",
+      "state": "OPEN",
+      "created": "2026-03-30T20:10:39Z",
+      "updated": "2026-03-30T20:10:39Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/README.md",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/submission.json",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/train.log",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_eval",
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1148,
       "title": "Record: 11L Muon Legal TTT + Entropy-Adaptive Epochs (8×H100) — val_bpb 1.1179 (3-seed mean)",
@@ -168,11 +237,11 @@
     },
     {
       "number": 1143,
-      "title": "Scylla (novel tokenizer) + Legal Score-First TTT (val_bpb: 1.08056553)",
+      "title": "Record: Scylla (novel tokenizer) + Legal Score-First TTT (val_bpb: 1.08056553)",
       "author": "simon-marcus",
       "state": "OPEN",
       "created": "2026-03-30T18:53:55Z",
-      "updated": "2026-03-30T18:55:44Z",
+      "updated": "2026-03-30T20:45:24Z",
       "bpb": 1.08056553,
       "seeds": 2,
       "artifact_bytes": null,
@@ -1511,7 +1580,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-03-30T19:49:35Z",
+      "updated": "2026-03-30T20:26:03Z",
       "bpb": 1.1088,
       "seeds": 3,
       "artifact_bytes": 14520000,
@@ -7811,11 +7880,11 @@
     },
     {
       "number": 920,
-      "title": "[Record Submission] - 74.3M Ternary U-Net Transformer (v2 - Continuation from #PR640)",
+      "title": "[Record Submission] - 1.1539: 74.3M Ternary U-Net Transformer (v2 - Continuation from #PR640)",
       "author": "CiprianFlorin-Ifrim",
       "state": "OPEN",
       "created": "2026-03-27T01:37:18Z",
-      "updated": "2026-03-29T13:54:55Z",
+      "updated": "2026-03-30T20:23:32Z",
       "bpb": 1.1539,
       "seeds": 3,
       "artifact_bytes": 15951196,
