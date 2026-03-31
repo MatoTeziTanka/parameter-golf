@@ -1,7 +1,46 @@
 {
-  "last_fetch": "2026-03-31T18:12:33.136772+00:00",
-  "api_calls_used": 56,
+  "last_fetch": "2026-03-31T19:33:47.546413+00:00",
+  "api_calls_used": 57,
   "prs": [
+    {
+      "number": 1186,
+      "title": "Non-record: Negative Results — Architecture, TTT Variants, Quantization, and N-gram Cache Illegality",
+      "author": "andrewbaggio1",
+      "state": "OPEN",
+      "created": "2026-03-31T18:15:05Z",
+      "updated": "2026-03-31T18:15:05Z",
+      "bpb": 0.045,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-25_CosineTTT_NgramCache_8xH100/README.md",
+        "records/track_10min_16mb/2026-03-25_CosineTTT_NgramCache_8xH100/submission.json",
+        "records/track_10min_16mb/2026-03-25_CosineTTT_NgramCache_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-03-25_CosineTTT_NgramCache_8xH100/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-25_CosineTTT_NgramCache_8xH100/train_seed42.log",
+        "records/track_10min_16mb/2026-03-25_CosineTTT_NgramCache_8xH100/train_seed7.log",
+        "records/track_10min_16mb/2026-03-31_Negative_Results_Architecture_TTT_Quantization/README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval",
+        "leaky_relu",
+        "ngram_path",
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:ngram_path",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1185,
       "title": "[10min_16mb] 0.9641 BPB: LeakyReLU² + Score-First TTT + N-gram Backoff Cache",
@@ -280,7 +319,7 @@
       "author": "bigbag",
       "state": "OPEN",
       "created": "2026-03-31T09:45:23Z",
-      "updated": "2026-03-31T13:20:39Z",
+      "updated": "2026-03-31T18:53:45Z",
       "bpb": 1.0914,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -1233,11 +1272,11 @@
     },
     {
       "number": 1145,
-      "title": "Record: 1.1109 BPB FullGPTQ XSA11 + online ngram augment",
+      "title": "Record: 1.1109 BPB FullGPTQ XSA11 + online (legal) ngram augment",
       "author": "AnirudhRahul",
       "state": "OPEN",
       "created": "2026-03-30T18:58:12Z",
-      "updated": "2026-03-30T22:28:59Z",
+      "updated": "2026-03-31T19:00:04Z",
       "bpb": 1.11085863,
       "seeds": 4,
       "artifact_bytes": null,
@@ -2026,9 +2065,9 @@
       "number": 1122,
       "title": "Record: EngramLite + Gated Skips + Full GPTQ + FA3 — val_bpb 1.1146 (1-seed, 2 pending)",
       "author": "icryo",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-30T05:30:52Z",
-      "updated": "2026-03-30T19:27:07Z",
+      "updated": "2026-03-31T19:15:08Z",
       "bpb": 1.1146,
       "seeds": 1,
       "artifact_bytes": 16000000,
@@ -2050,12 +2089,11 @@
       ],
       "track": "record",
       "technique_type": "hybrid",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "keyword:ngram_path",
-        "path:ngram-path"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "MEDIUM"
+      "confidence": "LOW"
     },
     {
       "number": 1121,
@@ -2626,7 +2664,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-03-31T17:37:59Z",
+      "updated": "2026-03-31T19:03:20Z",
       "bpb": 1.1125,
       "seeds": 3,
       "artifact_bytes": 14520000,
