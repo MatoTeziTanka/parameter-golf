@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-03-31T19:33:54Z",
+  "generated_at": "2026-03-31T20:48:27Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1132,
-    "matched_pr_count": 816,
+    "pr_count": 1143,
+    "matched_pr_count": 822,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -11,8 +11,8 @@
     "status_counts": {
       "ALIVE": 149,
       "AT_RISK": 115,
-      "DEAD": 330,
-      "INCOMPLETE": 538,
+      "DEAD": 331,
+      "INCOMPLETE": 548,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 403,
+      "count": 404,
       "author_count": 211,
       "alive_count": 58,
       "dead_count": 150,
       "at_risk_count": 58,
-      "incomplete_count": 137,
+      "incomplete_count": 138,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -1595,6 +1595,34 @@
           ]
         },
         {
+          "author": "dentity007",
+          "pr_count": 3,
+          "best_bpb": 1.1287,
+          "prs": [
+            {
+              "number": 406,
+              "author": "dentity007",
+              "status": "ALIVE",
+              "bpb": 1.1287,
+              "created": "2026-03-22T05:58:23Z"
+            },
+            {
+              "number": 1127,
+              "author": "dentity007",
+              "status": "ALIVE",
+              "bpb": 1.13112,
+              "created": "2026-03-30T09:01:09Z"
+            },
+            {
+              "number": 1191,
+              "author": "dentity007",
+              "status": "INCOMPLETE",
+              "bpb": 1.3587,
+              "created": "2026-03-31T20:39:26Z"
+            }
+          ]
+        },
+        {
           "author": "timowhite88",
           "pr_count": 3,
           "best_bpb": 1.1303,
@@ -2137,27 +2165,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.5633,
               "created": "2026-03-30T00:55:11Z"
-            }
-          ]
-        },
-        {
-          "author": "dentity007",
-          "pr_count": 2,
-          "best_bpb": 1.1287,
-          "prs": [
-            {
-              "number": 406,
-              "author": "dentity007",
-              "status": "ALIVE",
-              "bpb": 1.1287,
-              "created": "2026-03-22T05:58:23Z"
-            },
-            {
-              "number": 1127,
-              "author": "dentity007",
-              "status": "ALIVE",
-              "bpb": 1.13112,
-              "created": "2026-03-30T09:01:09Z"
             }
           ]
         },
@@ -7153,18 +7160,25 @@
           "status": "AT_RISK",
           "bpb": 0.045,
           "created": "2026-03-31T18:15:05Z"
+        },
+        {
+          "number": 1191,
+          "author": "dentity007",
+          "status": "INCOMPLETE",
+          "bpb": 1.3587,
+          "created": "2026-03-31T20:39:26Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 330,
-      "author_count": 223,
+      "count": 332,
+      "author_count": 224,
       "alive_count": 61,
       "dead_count": 75,
       "at_risk_count": 44,
-      "incomplete_count": 150,
+      "incomplete_count": 152,
       "unknown_count": 0,
       "best_alive": {
         "number": 1172,
@@ -8646,6 +8660,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.2907,
               "created": "2026-03-27T18:23:24Z"
+            }
+          ]
+        },
+        {
+          "author": "Durlabhkumarjha",
+          "pr_count": 2,
+          "best_bpb": 1.3365,
+          "prs": [
+            {
+              "number": 1167,
+              "author": "Durlabhkumarjha",
+              "status": "DEAD",
+              "bpb": 1.3736,
+              "created": "2026-03-31T03:10:27Z"
+            },
+            {
+              "number": 1190,
+              "author": "Durlabhkumarjha",
+              "status": "INCOMPLETE",
+              "bpb": 1.3365,
+              "created": "2026-03-31T20:38:57Z"
             }
           ]
         },
@@ -10358,20 +10393,6 @@
           ]
         },
         {
-          "author": "Durlabhkumarjha",
-          "pr_count": 1,
-          "best_bpb": 1.3736,
-          "prs": [
-            {
-              "number": 1167,
-              "author": "Durlabhkumarjha",
-              "status": "DEAD",
-              "bpb": 1.3736,
-              "created": "2026-03-31T03:10:27Z"
-            }
-          ]
-        },
-        {
           "author": "DanishjeetSingh",
           "pr_count": 1,
           "best_bpb": 1.41057617,
@@ -10788,6 +10809,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-26T12:11:29Z"
+            }
+          ]
+        },
+        {
+          "author": "rithvik-duddupudi",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1188,
+              "author": "rithvik-duddupudi",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-31T20:07:30Z"
             }
           ]
         },
@@ -13354,18 +13389,32 @@
           "status": "AT_RISK",
           "bpb": 0.9641,
           "created": "2026-03-31T16:48:30Z"
+        },
+        {
+          "number": 1188,
+          "author": "rithvik-duddupudi",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-03-31T20:07:30Z"
+        },
+        {
+          "number": 1190,
+          "author": "Durlabhkumarjha",
+          "status": "INCOMPLETE",
+          "bpb": 1.3365,
+          "created": "2026-03-31T20:38:57Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 314,
-      "author_count": 178,
+      "count": 315,
+      "author_count": 179,
       "alive_count": 58,
       "dead_count": 96,
       "at_risk_count": 51,
-      "incomplete_count": 109,
+      "incomplete_count": 110,
       "unknown_count": 0,
       "best_alive": {
         "number": 807,
@@ -16356,6 +16405,20 @@
           ]
         },
         {
+          "author": "Durlabhkumarjha",
+          "pr_count": 1,
+          "best_bpb": 1.3365,
+          "prs": [
+            {
+              "number": 1190,
+              "author": "Durlabhkumarjha",
+              "status": "INCOMPLETE",
+              "bpb": 1.3365,
+              "created": "2026-03-31T20:38:57Z"
+            }
+          ]
+        },
+        {
           "author": "rthgit",
           "pr_count": 1,
           "best_bpb": 1.3379,
@@ -19016,6 +19079,13 @@
           "status": "AT_RISK",
           "bpb": 1.1227,
           "created": "2026-03-31T15:35:29Z"
+        },
+        {
+          "number": 1190,
+          "author": "Durlabhkumarjha",
+          "status": "INCOMPLETE",
+          "bpb": 1.3365,
+          "created": "2026-03-31T20:38:57Z"
         }
       ]
     },
@@ -24851,12 +24921,12 @@
     {
       "name": "LeakyReLU\u00b2",
       "kind": "legal",
-      "count": 83,
-      "author_count": 63,
+      "count": 85,
+      "author_count": 65,
       "alive_count": 17,
       "dead_count": 23,
       "at_risk_count": 14,
-      "incomplete_count": 29,
+      "incomplete_count": 31,
       "unknown_count": 0,
       "best_alive": {
         "number": 672,
@@ -25719,6 +25789,20 @@
           ]
         },
         {
+          "author": "dentity007",
+          "pr_count": 1,
+          "best_bpb": 1.356,
+          "prs": [
+            {
+              "number": 1192,
+              "author": "dentity007",
+              "status": "INCOMPLETE",
+              "bpb": 1.356,
+              "created": "2026-03-31T20:40:00Z"
+            }
+          ]
+        },
+        {
           "author": "aptsalt",
           "pr_count": 1,
           "best_bpb": 1.362,
@@ -25785,6 +25869,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-30T16:07:13Z"
+            }
+          ]
+        },
+        {
+          "author": "rithvik-duddupudi",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1188,
+              "author": "rithvik-duddupudi",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-31T20:07:30Z"
             }
           ]
         },
@@ -26468,6 +26566,20 @@
           "status": "AT_RISK",
           "bpb": 0.9641,
           "created": "2026-03-31T16:48:30Z"
+        },
+        {
+          "number": 1188,
+          "author": "rithvik-duddupudi",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-03-31T20:07:30Z"
+        },
+        {
+          "number": 1192,
+          "author": "dentity007",
+          "status": "INCOMPLETE",
+          "bpb": 1.356,
+          "created": "2026-03-31T20:40:00Z"
         }
       ]
     },
@@ -31817,12 +31929,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 17,
-      "author_count": 12,
+      "count": 18,
+      "author_count": 13,
       "alive_count": 1,
       "dead_count": 5,
       "at_risk_count": 4,
-      "incomplete_count": 7,
+      "incomplete_count": 8,
       "unknown_count": 0,
       "best_alive": {
         "number": 914,
@@ -32006,6 +32118,20 @@
           ]
         },
         {
+          "author": "dentity007",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1197,
+              "author": "dentity007",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-31T20:41:06Z"
+            }
+          ]
+        },
+        {
           "author": "ivanontech",
           "pr_count": 1,
           "best_bpb": null,
@@ -32153,6 +32279,13 @@
           "status": "AT_RISK",
           "bpb": 1.3639,
           "created": "2026-03-31T03:32:38Z"
+        },
+        {
+          "number": 1197,
+          "author": "dentity007",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-03-31T20:41:06Z"
         }
       ]
     },
@@ -32787,12 +32920,12 @@
     {
       "name": "JEPA",
       "kind": "legal",
-      "count": 12,
-      "author_count": 11,
+      "count": 13,
+      "author_count": 12,
       "alive_count": 3,
       "dead_count": 0,
       "at_risk_count": 0,
-      "incomplete_count": 9,
+      "incomplete_count": 10,
       "unknown_count": 0,
       "best_alive": {
         "number": 896,
@@ -32934,6 +33067,20 @@
           ]
         },
         {
+          "author": "dentity007",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1196,
+              "author": "dentity007",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-31T20:41:04Z"
+            }
+          ]
+        },
+        {
           "author": "gravelBridge",
           "pr_count": 1,
           "best_bpb": null,
@@ -33046,6 +33193,13 @@
           "status": "ALIVE",
           "bpb": 1.7942,
           "created": "2026-03-30T21:47:53Z"
+        },
+        {
+          "number": 1196,
+          "author": "dentity007",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-03-31T20:41:04Z"
         }
       ]
     },
@@ -37089,12 +37243,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 330,
-      "author_count": 223,
+      "count": 332,
+      "author_count": 224,
       "alive_count": 61,
       "dead_count": 75,
       "at_risk_count": 44,
-      "incomplete_count": 150,
+      "incomplete_count": 152,
       "unknown_count": 0,
       "best_alive": {
         "number": 1172,
@@ -38576,6 +38730,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.2907,
               "created": "2026-03-27T18:23:24Z"
+            }
+          ]
+        },
+        {
+          "author": "Durlabhkumarjha",
+          "pr_count": 2,
+          "best_bpb": 1.3365,
+          "prs": [
+            {
+              "number": 1167,
+              "author": "Durlabhkumarjha",
+              "status": "DEAD",
+              "bpb": 1.3736,
+              "created": "2026-03-31T03:10:27Z"
+            },
+            {
+              "number": 1190,
+              "author": "Durlabhkumarjha",
+              "status": "INCOMPLETE",
+              "bpb": 1.3365,
+              "created": "2026-03-31T20:38:57Z"
             }
           ]
         },
@@ -40288,20 +40463,6 @@
           ]
         },
         {
-          "author": "Durlabhkumarjha",
-          "pr_count": 1,
-          "best_bpb": 1.3736,
-          "prs": [
-            {
-              "number": 1167,
-              "author": "Durlabhkumarjha",
-              "status": "DEAD",
-              "bpb": 1.3736,
-              "created": "2026-03-31T03:10:27Z"
-            }
-          ]
-        },
-        {
           "author": "DanishjeetSingh",
           "pr_count": 1,
           "best_bpb": 1.41057617,
@@ -40718,6 +40879,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-26T12:11:29Z"
+            }
+          ]
+        },
+        {
+          "author": "rithvik-duddupudi",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1188,
+              "author": "rithvik-duddupudi",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-31T20:07:30Z"
             }
           ]
         },
@@ -43284,18 +43459,32 @@
           "status": "AT_RISK",
           "bpb": 0.9641,
           "created": "2026-03-31T16:48:30Z"
+        },
+        {
+          "number": 1188,
+          "author": "rithvik-duddupudi",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-03-31T20:07:30Z"
+        },
+        {
+          "number": 1190,
+          "author": "Durlabhkumarjha",
+          "status": "INCOMPLETE",
+          "bpb": 1.3365,
+          "created": "2026-03-31T20:38:57Z"
         }
       ]
     },
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 403,
+      "count": 404,
       "author_count": 211,
       "alive_count": 58,
       "dead_count": 150,
       "at_risk_count": 58,
-      "incomplete_count": 137,
+      "incomplete_count": 138,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -44865,6 +45054,34 @@
           ]
         },
         {
+          "author": "dentity007",
+          "pr_count": 3,
+          "best_bpb": 1.1287,
+          "prs": [
+            {
+              "number": 406,
+              "author": "dentity007",
+              "status": "ALIVE",
+              "bpb": 1.1287,
+              "created": "2026-03-22T05:58:23Z"
+            },
+            {
+              "number": 1127,
+              "author": "dentity007",
+              "status": "ALIVE",
+              "bpb": 1.13112,
+              "created": "2026-03-30T09:01:09Z"
+            },
+            {
+              "number": 1191,
+              "author": "dentity007",
+              "status": "INCOMPLETE",
+              "bpb": 1.3587,
+              "created": "2026-03-31T20:39:26Z"
+            }
+          ]
+        },
+        {
           "author": "timowhite88",
           "pr_count": 3,
           "best_bpb": 1.1303,
@@ -45407,27 +45624,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.5633,
               "created": "2026-03-30T00:55:11Z"
-            }
-          ]
-        },
-        {
-          "author": "dentity007",
-          "pr_count": 2,
-          "best_bpb": 1.1287,
-          "prs": [
-            {
-              "number": 406,
-              "author": "dentity007",
-              "status": "ALIVE",
-              "bpb": 1.1287,
-              "created": "2026-03-22T05:58:23Z"
-            },
-            {
-              "number": 1127,
-              "author": "dentity007",
-              "status": "ALIVE",
-              "bpb": 1.13112,
-              "created": "2026-03-30T09:01:09Z"
             }
           ]
         },
@@ -50423,18 +50619,25 @@
           "status": "AT_RISK",
           "bpb": 0.045,
           "created": "2026-03-31T18:15:05Z"
+        },
+        {
+          "number": 1191,
+          "author": "dentity007",
+          "status": "INCOMPLETE",
+          "bpb": 1.3587,
+          "created": "2026-03-31T20:39:26Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 314,
-      "author_count": 178,
+      "count": 315,
+      "author_count": 179,
       "alive_count": 58,
       "dead_count": 96,
       "at_risk_count": 51,
-      "incomplete_count": 109,
+      "incomplete_count": 110,
       "unknown_count": 0,
       "best_alive": {
         "number": 807,
@@ -53425,6 +53628,20 @@
           ]
         },
         {
+          "author": "Durlabhkumarjha",
+          "pr_count": 1,
+          "best_bpb": 1.3365,
+          "prs": [
+            {
+              "number": 1190,
+              "author": "Durlabhkumarjha",
+              "status": "INCOMPLETE",
+              "bpb": 1.3365,
+              "created": "2026-03-31T20:38:57Z"
+            }
+          ]
+        },
+        {
           "author": "rthgit",
           "pr_count": 1,
           "best_bpb": 1.3379,
@@ -56085,6 +56302,13 @@
           "status": "AT_RISK",
           "bpb": 1.1227,
           "created": "2026-03-31T15:35:29Z"
+        },
+        {
+          "number": 1190,
+          "author": "Durlabhkumarjha",
+          "status": "INCOMPLETE",
+          "bpb": 1.3365,
+          "created": "2026-03-31T20:38:57Z"
         }
       ]
     },
@@ -64666,12 +64890,12 @@
     {
       "name": "LeakyReLU\u00b2",
       "kind": "legal",
-      "count": 83,
-      "author_count": 63,
+      "count": 85,
+      "author_count": 65,
       "alive_count": 17,
       "dead_count": 23,
       "at_risk_count": 14,
-      "incomplete_count": 29,
+      "incomplete_count": 31,
       "unknown_count": 0,
       "best_alive": {
         "number": 672,
@@ -65534,6 +65758,20 @@
           ]
         },
         {
+          "author": "dentity007",
+          "pr_count": 1,
+          "best_bpb": 1.356,
+          "prs": [
+            {
+              "number": 1192,
+              "author": "dentity007",
+              "status": "INCOMPLETE",
+              "bpb": 1.356,
+              "created": "2026-03-31T20:40:00Z"
+            }
+          ]
+        },
+        {
           "author": "aptsalt",
           "pr_count": 1,
           "best_bpb": 1.362,
@@ -65600,6 +65838,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-30T16:07:13Z"
+            }
+          ]
+        },
+        {
+          "author": "rithvik-duddupudi",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1188,
+              "author": "rithvik-duddupudi",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-31T20:07:30Z"
             }
           ]
         },
@@ -66283,6 +66535,20 @@
           "status": "AT_RISK",
           "bpb": 0.9641,
           "created": "2026-03-31T16:48:30Z"
+        },
+        {
+          "number": 1188,
+          "author": "rithvik-duddupudi",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-03-31T20:07:30Z"
+        },
+        {
+          "number": 1192,
+          "author": "dentity007",
+          "status": "INCOMPLETE",
+          "bpb": 1.356,
+          "created": "2026-03-31T20:40:00Z"
         }
       ]
     },
@@ -71983,6 +72249,369 @@
       ]
     },
     {
+      "name": "SSM/Mamba/S4D",
+      "kind": "legal",
+      "count": 18,
+      "author_count": 13,
+      "alive_count": 1,
+      "dead_count": 5,
+      "at_risk_count": 4,
+      "incomplete_count": 8,
+      "unknown_count": 0,
+      "best_alive": {
+        "number": 914,
+        "author": "mkenney2",
+        "bpb": 1.1873
+      },
+      "people": [
+        {
+          "author": "gowtham0992",
+          "pr_count": 3,
+          "best_bpb": 1.0467,
+          "prs": [
+            {
+              "number": 872,
+              "author": "gowtham0992",
+              "status": "DEAD",
+              "bpb": 1.0467,
+              "created": "2026-03-26T17:18:32Z"
+            },
+            {
+              "number": 873,
+              "author": "gowtham0992",
+              "status": "DEAD",
+              "bpb": 1.0467,
+              "created": "2026-03-26T17:21:26Z"
+            },
+            {
+              "number": 1168,
+              "author": "gowtham0992",
+              "status": "AT_RISK",
+              "bpb": 1.3639,
+              "created": "2026-03-31T03:32:38Z"
+            }
+          ]
+        },
+        {
+          "author": "himanshudongre",
+          "pr_count": 2,
+          "best_bpb": 1.1682,
+          "prs": [
+            {
+              "number": 1012,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-28T10:14:53Z"
+            },
+            {
+              "number": 1013,
+              "author": "himanshudongre",
+              "status": "AT_RISK",
+              "bpb": 1.1682,
+              "created": "2026-03-28T10:15:02Z"
+            }
+          ]
+        },
+        {
+          "author": "mkenney2",
+          "pr_count": 2,
+          "best_bpb": 1.1873,
+          "prs": [
+            {
+              "number": 599,
+              "author": "mkenney2",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-24T05:31:33Z"
+            },
+            {
+              "number": 914,
+              "author": "mkenney2",
+              "status": "ALIVE",
+              "bpb": 1.1873,
+              "created": "2026-03-27T00:24:57Z"
+            }
+          ]
+        },
+        {
+          "author": "dnldsz",
+          "pr_count": 2,
+          "best_bpb": 1.2907,
+          "prs": [
+            {
+              "number": 969,
+              "author": "dnldsz",
+              "status": "DEAD",
+              "bpb": 1.2907,
+              "created": "2026-03-27T18:20:01Z"
+            },
+            {
+              "number": 970,
+              "author": "dnldsz",
+              "status": "INCOMPLETE",
+              "bpb": 1.2907,
+              "created": "2026-03-27T18:23:24Z"
+            }
+          ]
+        },
+        {
+          "author": "sargonxg",
+          "pr_count": 1,
+          "best_bpb": 0.04,
+          "prs": [
+            {
+              "number": 780,
+              "author": "sargonxg",
+              "status": "AT_RISK",
+              "bpb": 0.04,
+              "created": "2026-03-25T22:40:00Z"
+            }
+          ]
+        },
+        {
+          "author": "Prush69",
+          "pr_count": 1,
+          "best_bpb": 1.1189,
+          "prs": [
+            {
+              "number": 852,
+              "author": "Prush69",
+              "status": "INCOMPLETE",
+              "bpb": 1.1189,
+              "created": "2026-03-26T14:20:12Z"
+            }
+          ]
+        },
+        {
+          "author": "sseanliu",
+          "pr_count": 1,
+          "best_bpb": 1.1581,
+          "prs": [
+            {
+              "number": 831,
+              "author": "sseanliu",
+              "status": "AT_RISK",
+              "bpb": 1.1581,
+              "created": "2026-03-26T08:02:01Z"
+            }
+          ]
+        },
+        {
+          "author": "CiprianFlorin-Ifrim",
+          "pr_count": 1,
+          "best_bpb": 1.2064,
+          "prs": [
+            {
+              "number": 903,
+              "author": "CiprianFlorin-Ifrim",
+              "status": "INCOMPLETE",
+              "bpb": 1.2064,
+              "created": "2026-03-26T22:24:02Z"
+            }
+          ]
+        },
+        {
+          "author": "mradassaad",
+          "pr_count": 1,
+          "best_bpb": 1.5633,
+          "prs": [
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            }
+          ]
+        },
+        {
+          "author": "timothywangdev",
+          "pr_count": 1,
+          "best_bpb": 1.848,
+          "prs": [
+            {
+              "number": 220,
+              "author": "timothywangdev",
+              "status": "INCOMPLETE",
+              "bpb": 1.848,
+              "created": "2026-03-20T15:09:53Z"
+            }
+          ]
+        },
+        {
+          "author": "dentity007",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1197,
+              "author": "dentity007",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-31T20:41:06Z"
+            }
+          ]
+        },
+        {
+          "author": "ivanontech",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 718,
+              "author": "ivanontech",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-03-25T13:31:19Z"
+            }
+          ]
+        },
+        {
+          "author": "Teddygat0r",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 608,
+              "author": "Teddygat0r",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-03-24T09:59:53Z"
+            }
+          ]
+        }
+      ],
+      "prs": [
+        {
+          "number": 220,
+          "author": "timothywangdev",
+          "status": "INCOMPLETE",
+          "bpb": 1.848,
+          "created": "2026-03-20T15:09:53Z"
+        },
+        {
+          "number": 599,
+          "author": "mkenney2",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-03-24T05:31:33Z"
+        },
+        {
+          "number": 608,
+          "author": "Teddygat0r",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-03-24T09:59:53Z"
+        },
+        {
+          "number": 718,
+          "author": "ivanontech",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-03-25T13:31:19Z"
+        },
+        {
+          "number": 780,
+          "author": "sargonxg",
+          "status": "AT_RISK",
+          "bpb": 0.04,
+          "created": "2026-03-25T22:40:00Z"
+        },
+        {
+          "number": 831,
+          "author": "sseanliu",
+          "status": "AT_RISK",
+          "bpb": 1.1581,
+          "created": "2026-03-26T08:02:01Z"
+        },
+        {
+          "number": 852,
+          "author": "Prush69",
+          "status": "INCOMPLETE",
+          "bpb": 1.1189,
+          "created": "2026-03-26T14:20:12Z"
+        },
+        {
+          "number": 872,
+          "author": "gowtham0992",
+          "status": "DEAD",
+          "bpb": 1.0467,
+          "created": "2026-03-26T17:18:32Z"
+        },
+        {
+          "number": 873,
+          "author": "gowtham0992",
+          "status": "DEAD",
+          "bpb": 1.0467,
+          "created": "2026-03-26T17:21:26Z"
+        },
+        {
+          "number": 903,
+          "author": "CiprianFlorin-Ifrim",
+          "status": "INCOMPLETE",
+          "bpb": 1.2064,
+          "created": "2026-03-26T22:24:02Z"
+        },
+        {
+          "number": 914,
+          "author": "mkenney2",
+          "status": "ALIVE",
+          "bpb": 1.1873,
+          "created": "2026-03-27T00:24:57Z"
+        },
+        {
+          "number": 969,
+          "author": "dnldsz",
+          "status": "DEAD",
+          "bpb": 1.2907,
+          "created": "2026-03-27T18:20:01Z"
+        },
+        {
+          "number": 970,
+          "author": "dnldsz",
+          "status": "INCOMPLETE",
+          "bpb": 1.2907,
+          "created": "2026-03-27T18:23:24Z"
+        },
+        {
+          "number": 1012,
+          "author": "himanshudongre",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-03-28T10:14:53Z"
+        },
+        {
+          "number": 1013,
+          "author": "himanshudongre",
+          "status": "AT_RISK",
+          "bpb": 1.1682,
+          "created": "2026-03-28T10:15:02Z"
+        },
+        {
+          "number": 1107,
+          "author": "mradassaad",
+          "status": "INCOMPLETE",
+          "bpb": 1.5633,
+          "created": "2026-03-30T00:55:11Z"
+        },
+        {
+          "number": 1168,
+          "author": "gowtham0992",
+          "status": "AT_RISK",
+          "bpb": 1.3639,
+          "created": "2026-03-31T03:32:38Z"
+        },
+        {
+          "number": 1197,
+          "author": "dentity007",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-03-31T20:41:06Z"
+        }
+      ]
+    },
+    {
       "name": "Parallel Muon",
       "kind": "legal",
       "count": 22,
@@ -72391,348 +73020,6 @@
           "status": "AT_RISK",
           "bpb": 1.1145,
           "created": "2026-03-31T05:33:43Z"
-        }
-      ]
-    },
-    {
-      "name": "SSM/Mamba/S4D",
-      "kind": "legal",
-      "count": 17,
-      "author_count": 12,
-      "alive_count": 1,
-      "dead_count": 5,
-      "at_risk_count": 4,
-      "incomplete_count": 7,
-      "unknown_count": 0,
-      "best_alive": {
-        "number": 914,
-        "author": "mkenney2",
-        "bpb": 1.1873
-      },
-      "people": [
-        {
-          "author": "gowtham0992",
-          "pr_count": 3,
-          "best_bpb": 1.0467,
-          "prs": [
-            {
-              "number": 872,
-              "author": "gowtham0992",
-              "status": "DEAD",
-              "bpb": 1.0467,
-              "created": "2026-03-26T17:18:32Z"
-            },
-            {
-              "number": 873,
-              "author": "gowtham0992",
-              "status": "DEAD",
-              "bpb": 1.0467,
-              "created": "2026-03-26T17:21:26Z"
-            },
-            {
-              "number": 1168,
-              "author": "gowtham0992",
-              "status": "AT_RISK",
-              "bpb": 1.3639,
-              "created": "2026-03-31T03:32:38Z"
-            }
-          ]
-        },
-        {
-          "author": "himanshudongre",
-          "pr_count": 2,
-          "best_bpb": 1.1682,
-          "prs": [
-            {
-              "number": 1012,
-              "author": "himanshudongre",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-03-28T10:14:53Z"
-            },
-            {
-              "number": 1013,
-              "author": "himanshudongre",
-              "status": "AT_RISK",
-              "bpb": 1.1682,
-              "created": "2026-03-28T10:15:02Z"
-            }
-          ]
-        },
-        {
-          "author": "mkenney2",
-          "pr_count": 2,
-          "best_bpb": 1.1873,
-          "prs": [
-            {
-              "number": 599,
-              "author": "mkenney2",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-03-24T05:31:33Z"
-            },
-            {
-              "number": 914,
-              "author": "mkenney2",
-              "status": "ALIVE",
-              "bpb": 1.1873,
-              "created": "2026-03-27T00:24:57Z"
-            }
-          ]
-        },
-        {
-          "author": "dnldsz",
-          "pr_count": 2,
-          "best_bpb": 1.2907,
-          "prs": [
-            {
-              "number": 969,
-              "author": "dnldsz",
-              "status": "DEAD",
-              "bpb": 1.2907,
-              "created": "2026-03-27T18:20:01Z"
-            },
-            {
-              "number": 970,
-              "author": "dnldsz",
-              "status": "INCOMPLETE",
-              "bpb": 1.2907,
-              "created": "2026-03-27T18:23:24Z"
-            }
-          ]
-        },
-        {
-          "author": "sargonxg",
-          "pr_count": 1,
-          "best_bpb": 0.04,
-          "prs": [
-            {
-              "number": 780,
-              "author": "sargonxg",
-              "status": "AT_RISK",
-              "bpb": 0.04,
-              "created": "2026-03-25T22:40:00Z"
-            }
-          ]
-        },
-        {
-          "author": "Prush69",
-          "pr_count": 1,
-          "best_bpb": 1.1189,
-          "prs": [
-            {
-              "number": 852,
-              "author": "Prush69",
-              "status": "INCOMPLETE",
-              "bpb": 1.1189,
-              "created": "2026-03-26T14:20:12Z"
-            }
-          ]
-        },
-        {
-          "author": "sseanliu",
-          "pr_count": 1,
-          "best_bpb": 1.1581,
-          "prs": [
-            {
-              "number": 831,
-              "author": "sseanliu",
-              "status": "AT_RISK",
-              "bpb": 1.1581,
-              "created": "2026-03-26T08:02:01Z"
-            }
-          ]
-        },
-        {
-          "author": "CiprianFlorin-Ifrim",
-          "pr_count": 1,
-          "best_bpb": 1.2064,
-          "prs": [
-            {
-              "number": 903,
-              "author": "CiprianFlorin-Ifrim",
-              "status": "INCOMPLETE",
-              "bpb": 1.2064,
-              "created": "2026-03-26T22:24:02Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 1,
-          "best_bpb": 1.5633,
-          "prs": [
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
-            }
-          ]
-        },
-        {
-          "author": "timothywangdev",
-          "pr_count": 1,
-          "best_bpb": 1.848,
-          "prs": [
-            {
-              "number": 220,
-              "author": "timothywangdev",
-              "status": "INCOMPLETE",
-              "bpb": 1.848,
-              "created": "2026-03-20T15:09:53Z"
-            }
-          ]
-        },
-        {
-          "author": "ivanontech",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 718,
-              "author": "ivanontech",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-03-25T13:31:19Z"
-            }
-          ]
-        },
-        {
-          "author": "Teddygat0r",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 608,
-              "author": "Teddygat0r",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-03-24T09:59:53Z"
-            }
-          ]
-        }
-      ],
-      "prs": [
-        {
-          "number": 220,
-          "author": "timothywangdev",
-          "status": "INCOMPLETE",
-          "bpb": 1.848,
-          "created": "2026-03-20T15:09:53Z"
-        },
-        {
-          "number": 599,
-          "author": "mkenney2",
-          "status": "INCOMPLETE",
-          "bpb": null,
-          "created": "2026-03-24T05:31:33Z"
-        },
-        {
-          "number": 608,
-          "author": "Teddygat0r",
-          "status": "DEAD",
-          "bpb": null,
-          "created": "2026-03-24T09:59:53Z"
-        },
-        {
-          "number": 718,
-          "author": "ivanontech",
-          "status": "DEAD",
-          "bpb": null,
-          "created": "2026-03-25T13:31:19Z"
-        },
-        {
-          "number": 780,
-          "author": "sargonxg",
-          "status": "AT_RISK",
-          "bpb": 0.04,
-          "created": "2026-03-25T22:40:00Z"
-        },
-        {
-          "number": 831,
-          "author": "sseanliu",
-          "status": "AT_RISK",
-          "bpb": 1.1581,
-          "created": "2026-03-26T08:02:01Z"
-        },
-        {
-          "number": 852,
-          "author": "Prush69",
-          "status": "INCOMPLETE",
-          "bpb": 1.1189,
-          "created": "2026-03-26T14:20:12Z"
-        },
-        {
-          "number": 872,
-          "author": "gowtham0992",
-          "status": "DEAD",
-          "bpb": 1.0467,
-          "created": "2026-03-26T17:18:32Z"
-        },
-        {
-          "number": 873,
-          "author": "gowtham0992",
-          "status": "DEAD",
-          "bpb": 1.0467,
-          "created": "2026-03-26T17:21:26Z"
-        },
-        {
-          "number": 903,
-          "author": "CiprianFlorin-Ifrim",
-          "status": "INCOMPLETE",
-          "bpb": 1.2064,
-          "created": "2026-03-26T22:24:02Z"
-        },
-        {
-          "number": 914,
-          "author": "mkenney2",
-          "status": "ALIVE",
-          "bpb": 1.1873,
-          "created": "2026-03-27T00:24:57Z"
-        },
-        {
-          "number": 969,
-          "author": "dnldsz",
-          "status": "DEAD",
-          "bpb": 1.2907,
-          "created": "2026-03-27T18:20:01Z"
-        },
-        {
-          "number": 970,
-          "author": "dnldsz",
-          "status": "INCOMPLETE",
-          "bpb": 1.2907,
-          "created": "2026-03-27T18:23:24Z"
-        },
-        {
-          "number": 1012,
-          "author": "himanshudongre",
-          "status": "INCOMPLETE",
-          "bpb": null,
-          "created": "2026-03-28T10:14:53Z"
-        },
-        {
-          "number": 1013,
-          "author": "himanshudongre",
-          "status": "AT_RISK",
-          "bpb": 1.1682,
-          "created": "2026-03-28T10:15:02Z"
-        },
-        {
-          "number": 1107,
-          "author": "mradassaad",
-          "status": "INCOMPLETE",
-          "bpb": 1.5633,
-          "created": "2026-03-30T00:55:11Z"
-        },
-        {
-          "number": 1168,
-          "author": "gowtham0992",
-          "status": "AT_RISK",
-          "bpb": 1.3639,
-          "created": "2026-03-31T03:32:38Z"
         }
       ]
     },
@@ -73367,12 +73654,12 @@
     {
       "name": "JEPA",
       "kind": "legal",
-      "count": 12,
-      "author_count": 11,
+      "count": 13,
+      "author_count": 12,
       "alive_count": 3,
       "dead_count": 0,
       "at_risk_count": 0,
-      "incomplete_count": 9,
+      "incomplete_count": 10,
       "unknown_count": 0,
       "best_alive": {
         "number": 896,
@@ -73514,6 +73801,20 @@
           ]
         },
         {
+          "author": "dentity007",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1196,
+              "author": "dentity007",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-31T20:41:04Z"
+            }
+          ]
+        },
+        {
           "author": "gravelBridge",
           "pr_count": 1,
           "best_bpb": null,
@@ -73626,6 +73927,13 @@
           "status": "ALIVE",
           "bpb": 1.7942,
           "created": "2026-03-30T21:47:53Z"
+        },
+        {
+          "number": 1196,
+          "author": "dentity007",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-03-31T20:41:04Z"
         }
       ]
     },
@@ -74158,11 +74466,11 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "SWA",
-      "left_count": 83,
+      "left_count": 85,
       "right_count": 72,
-      "left_people": 63,
+      "left_people": 65,
       "right_people": 62,
-      "score": 5976
+      "score": 6120
     },
     {
       "left": "QAT",
@@ -74183,6 +74491,15 @@
       "score": 1584
     },
     {
+      "left": "LeakyReLU\u00b2",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 85,
+      "right_count": 18,
+      "left_people": 65,
+      "right_people": 13,
+      "score": 1530
+    },
+    {
       "left": "QAT",
       "right": "MoE",
       "left_count": 101,
@@ -74192,67 +74509,67 @@
       "score": 1515
     },
     {
-      "left": "LeakyReLU\u00b2",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 83,
-      "right_count": 17,
-      "left_people": 63,
+      "left": "QAT",
+      "right": "JEPA",
+      "left_count": 101,
+      "right_count": 13,
+      "left_people": 82,
       "right_people": 12,
-      "score": 1411
-    },
-    {
-      "left": "LeakyReLU\u00b2",
-      "right": "MoE",
-      "left_count": 83,
-      "right_count": 15,
-      "left_people": 63,
-      "right_people": 12,
-      "score": 1245
-    },
-    {
-      "left": "LeakyReLU\u00b2",
-      "right": "Ternary Weights",
-      "left_count": 83,
-      "right_count": 15,
-      "left_people": 63,
-      "right_people": 12,
-      "score": 1245
+      "score": 1313
     },
     {
       "left": "SWA",
       "right": "SSM/Mamba/S4D",
       "left_count": 72,
-      "right_count": 17,
+      "right_count": 18,
       "left_people": 62,
+      "right_people": 13,
+      "score": 1296
+    },
+    {
+      "left": "LeakyReLU\u00b2",
+      "right": "MoE",
+      "left_count": 85,
+      "right_count": 15,
+      "left_people": 65,
       "right_people": 12,
-      "score": 1224
+      "score": 1275
     },
     {
-      "left": "QAT",
-      "right": "JEPA",
-      "left_count": 101,
-      "right_count": 12,
-      "left_people": 82,
-      "right_people": 11,
-      "score": 1212
-    },
-    {
-      "left": "TTT",
-      "right": "Progressive Depth",
-      "left_count": 403,
-      "right_count": 3,
-      "left_people": 211,
-      "right_people": 1,
-      "score": 1209
+      "left": "LeakyReLU\u00b2",
+      "right": "Ternary Weights",
+      "left_count": 85,
+      "right_count": 15,
+      "left_people": 65,
+      "right_people": 12,
+      "score": 1275
     },
     {
       "left": "BigramHash",
       "right": "SSM/Mamba/S4D",
       "left_count": 68,
-      "right_count": 17,
+      "right_count": 18,
       "left_people": 61,
+      "right_people": 13,
+      "score": 1224
+    },
+    {
+      "left": "TTT",
+      "right": "Progressive Depth",
+      "left_count": 404,
+      "right_count": 3,
+      "left_people": 211,
+      "right_people": 1,
+      "score": 1212
+    },
+    {
+      "left": "LeakyReLU\u00b2",
+      "right": "JEPA",
+      "left_count": 85,
+      "right_count": 13,
+      "left_people": 65,
       "right_people": 12,
-      "score": 1156
+      "score": 1105
     },
     {
       "left": "SWA",
@@ -74271,6 +74588,15 @@
       "left_people": 62,
       "right_people": 12,
       "score": 1080
+    },
+    {
+      "left": "XSA",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 57,
+      "right_count": 18,
+      "left_people": 45,
+      "right_people": 13,
+      "score": 1026
     },
     {
       "left": "BigramHash",
@@ -74282,49 +74608,40 @@
       "score": 1020
     },
     {
-      "left": "LeakyReLU\u00b2",
-      "right": "JEPA",
-      "left_count": 83,
-      "right_count": 12,
-      "left_people": 63,
-      "right_people": 11,
-      "score": 996
-    },
-    {
       "left": "Muon optimizer",
       "right": "Progressive Depth",
-      "left_count": 330,
+      "left_count": 332,
       "right_count": 3,
-      "left_people": 223,
+      "left_people": 224,
       "right_people": 1,
-      "score": 990
-    },
-    {
-      "left": "XSA",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 57,
-      "right_count": 17,
-      "left_people": 45,
-      "right_people": 12,
-      "score": 969
+      "score": 996
     },
     {
       "left": "EMA",
       "right": "Progressive Depth",
-      "left_count": 314,
+      "left_count": 315,
       "right_count": 3,
-      "left_people": 178,
+      "left_people": 179,
       "right_people": 1,
-      "score": 942
+      "score": 945
     },
     {
       "left": "SWA",
       "right": "JEPA",
       "left_count": 72,
-      "right_count": 12,
+      "right_count": 13,
       "left_people": 62,
-      "right_people": 11,
-      "score": 864
+      "right_people": 12,
+      "score": 936
+    },
+    {
+      "left": "BigramHash",
+      "right": "JEPA",
+      "left_count": 68,
+      "right_count": 13,
+      "left_people": 61,
+      "right_people": 12,
+      "score": 884
     },
     {
       "left": "XSA",
@@ -74345,31 +74662,31 @@
       "score": 855
     },
     {
-      "left": "BigramHash",
-      "right": "JEPA",
-      "left_count": 68,
-      "right_count": 12,
-      "left_people": 61,
-      "right_people": 11,
-      "score": 816
+      "left": "SwiGLU",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 46,
+      "right_count": 18,
+      "left_people": 39,
+      "right_people": 13,
+      "score": 828
     },
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 403,
+      "left_count": 404,
       "right_count": 2,
       "left_people": 211,
       "right_people": 2,
-      "score": 806
+      "score": 808
     },
     {
-      "left": "SwiGLU",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 46,
-      "right_count": 17,
-      "left_people": 39,
+      "left": "XSA",
+      "right": "JEPA",
+      "left_count": 57,
+      "right_count": 13,
+      "left_people": 45,
       "right_people": 12,
-      "score": 782
+      "score": 741
     },
     {
       "left": "QAT",
@@ -74390,22 +74707,13 @@
       "score": 690
     },
     {
-      "left": "XSA",
-      "right": "JEPA",
-      "left_count": 57,
-      "right_count": 12,
-      "left_people": 45,
-      "right_people": 11,
-      "score": 684
-    },
-    {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 330,
+      "left_count": 332,
       "right_count": 2,
-      "left_people": 223,
+      "left_people": 224,
       "right_people": 2,
-      "score": 660
+      "score": 664
     },
     {
       "left": "GPTQ",
@@ -74419,20 +74727,20 @@
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 314,
+      "left_count": 315,
       "right_count": 2,
-      "left_people": 178,
+      "left_people": 179,
       "right_people": 2,
-      "score": 628
+      "score": 630
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 314,
+      "left_count": 315,
       "right_count": 2,
-      "left_people": 178,
+      "left_people": 179,
       "right_people": 2,
-      "score": 628
+      "score": 630
     },
     {
       "left": "QAT",
@@ -74444,22 +74752,31 @@
       "score": 606
     },
     {
-      "left": "LeakyReLU\u00b2",
-      "right": "Value Residual",
-      "left_count": 83,
-      "right_count": 7,
-      "left_people": 63,
-      "right_people": 6,
-      "score": 581
-    },
-    {
       "left": "SwiGLU",
       "right": "JEPA",
       "left_count": 46,
-      "right_count": 12,
+      "right_count": 13,
       "left_people": 39,
-      "right_people": 11,
-      "score": 552
+      "right_people": 12,
+      "score": 598
+    },
+    {
+      "left": "LeakyReLU\u00b2",
+      "right": "Value Residual",
+      "left_count": 85,
+      "right_count": 7,
+      "left_people": 65,
+      "right_people": 6,
+      "score": 595
+    },
+    {
+      "left": "LeakyReLU\u00b2",
+      "right": "Weight Sharing",
+      "left_count": 85,
+      "right_count": 6,
+      "left_people": 65,
+      "right_people": 4,
+      "score": 510
     },
     {
       "left": "SWA",
@@ -74469,15 +74786,6 @@
       "left_people": 62,
       "right_people": 6,
       "score": 504
-    },
-    {
-      "left": "LeakyReLU\u00b2",
-      "right": "Weight Sharing",
-      "left_count": 83,
-      "right_count": 6,
-      "left_people": 63,
-      "right_people": 4,
-      "score": 498
     },
     {
       "left": "GPTQ",
@@ -74518,20 +74826,20 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 403,
+      "left_count": 404,
       "right_count": 1,
       "left_people": 211,
       "right_people": 1,
-      "score": 403
+      "score": 404
     },
     {
       "left": "Parallel Muon",
       "right": "SSM/Mamba/S4D",
       "left_count": 22,
-      "right_count": 17,
+      "right_count": 18,
       "left_people": 12,
-      "right_people": 12,
-      "score": 374
+      "right_people": 13,
+      "score": 396
     },
     {
       "left": "XSA",
@@ -74563,11 +74871,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 314,
+      "left_count": 315,
       "right_count": 1,
-      "left_people": 178,
+      "left_people": 179,
       "right_people": 1,
-      "score": 314
+      "score": 315
     },
     {
       "left": "QAT",
@@ -74579,6 +74887,15 @@
       "score": 303
     },
     {
+      "left": "Parallel Muon",
+      "right": "JEPA",
+      "left_count": 22,
+      "right_count": 13,
+      "left_people": 12,
+      "right_people": 12,
+      "score": 286
+    },
+    {
       "left": "SwiGLU",
       "right": "Weight Sharing",
       "left_count": 46,
@@ -74588,31 +74905,22 @@
       "score": 276
     },
     {
-      "left": "Parallel Muon",
-      "right": "JEPA",
-      "left_count": 22,
-      "right_count": 12,
-      "left_people": 12,
-      "right_people": 11,
-      "score": 264
-    },
-    {
       "left": "SSM/Mamba/S4D",
       "right": "MoE",
-      "left_count": 17,
+      "left_count": 18,
       "right_count": 15,
-      "left_people": 12,
+      "left_people": 13,
       "right_people": 12,
-      "score": 255
+      "score": 270
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "Progressive Depth",
-      "left_count": 83,
+      "left_count": 85,
       "right_count": 3,
-      "left_people": 63,
+      "left_people": 65,
       "right_people": 1,
-      "score": 249
+      "score": 255
     },
     {
       "left": "MoE",
@@ -74663,19 +74971,19 @@
       "left": "MoE",
       "right": "JEPA",
       "left_count": 15,
-      "right_count": 12,
+      "right_count": 13,
       "left_people": 12,
-      "right_people": 11,
-      "score": 180
+      "right_people": 12,
+      "score": 195
     },
     {
       "left": "Ternary Weights",
       "right": "JEPA",
       "left_count": 15,
-      "right_count": 12,
+      "right_count": 13,
       "left_people": 12,
-      "right_people": 11,
-      "score": 180
+      "right_people": 12,
+      "score": 195
     },
     {
       "left": "XSA",
@@ -74689,20 +74997,20 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "Differential Attention",
-      "left_count": 83,
+      "left_count": 85,
       "right_count": 2,
-      "left_people": 63,
+      "left_people": 65,
       "right_people": 2,
-      "score": 166
+      "score": 170
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "U-Net skips",
-      "left_count": 83,
+      "left_count": 85,
       "right_count": 2,
-      "left_people": 63,
+      "left_people": 65,
       "right_people": 2,
-      "score": 166
+      "score": 170
     },
     {
       "left": "Parallel Muon",
@@ -74752,11 +75060,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Value Residual",
-      "left_count": 17,
+      "left_count": 18,
       "right_count": 7,
-      "left_people": 12,
+      "left_people": 13,
       "right_people": 6,
-      "score": 119
+      "score": 126
     },
     {
       "left": "XSA",
@@ -74777,6 +75085,15 @@
       "score": 114
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Weight Sharing",
+      "left_count": 18,
+      "right_count": 6,
+      "left_people": 13,
+      "right_people": 4,
+      "score": 108
+    },
+    {
       "left": "MoE",
       "right": "Value Residual",
       "left_count": 15,
@@ -74793,15 +75110,6 @@
       "left_people": 12,
       "right_people": 6,
       "score": 105
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Weight Sharing",
-      "left_count": 17,
-      "right_count": 6,
-      "left_people": 12,
-      "right_people": 4,
-      "score": 102
     },
     {
       "left": "QAT",
@@ -74831,6 +75139,15 @@
       "score": 92
     },
     {
+      "left": "JEPA",
+      "right": "Value Residual",
+      "left_count": 13,
+      "right_count": 7,
+      "left_people": 12,
+      "right_people": 6,
+      "score": 91
+    },
+    {
       "left": "Ternary Weights",
       "right": "Weight Sharing",
       "left_count": 15,
@@ -74840,22 +75157,22 @@
       "score": 90
     },
     {
-      "left": "JEPA",
-      "right": "Value Residual",
-      "left_count": 12,
-      "right_count": 7,
-      "left_people": 11,
-      "right_people": 6,
-      "score": 84
-    },
-    {
       "left": "LeakyReLU\u00b2",
       "right": "Flash Attention",
-      "left_count": 83,
+      "left_count": 85,
       "right_count": 1,
-      "left_people": 63,
+      "left_people": 65,
       "right_people": 1,
-      "score": 83
+      "score": 85
+    },
+    {
+      "left": "JEPA",
+      "right": "Weight Sharing",
+      "left_count": 13,
+      "right_count": 6,
+      "left_people": 12,
+      "right_people": 4,
+      "score": 78
     },
     {
       "left": "SWA",
@@ -74864,15 +75181,6 @@
       "right_count": 1,
       "left_people": 62,
       "right_people": 1,
-      "score": 72
-    },
-    {
-      "left": "JEPA",
-      "right": "Weight Sharing",
-      "left_count": 12,
-      "right_count": 6,
-      "left_people": 11,
-      "right_people": 4,
       "score": 72
     },
     {
@@ -74905,11 +75213,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Progressive Depth",
-      "left_count": 17,
+      "left_count": 18,
       "right_count": 3,
-      "left_people": 12,
+      "left_people": 13,
       "right_people": 1,
-      "score": 51
+      "score": 54
     },
     {
       "left": "SwiGLU",
@@ -74968,29 +75276,29 @@
     {
       "left": "JEPA",
       "right": "Progressive Depth",
-      "left_count": 12,
+      "left_count": 13,
       "right_count": 3,
-      "left_people": 11,
+      "left_people": 12,
       "right_people": 1,
+      "score": 39
+    },
+    {
+      "left": "SSM/Mamba/S4D",
+      "right": "Differential Attention",
+      "left_count": 18,
+      "right_count": 2,
+      "left_people": 13,
+      "right_people": 2,
       "score": 36
     },
     {
       "left": "SSM/Mamba/S4D",
-      "right": "Differential Attention",
-      "left_count": 17,
-      "right_count": 2,
-      "left_people": 12,
-      "right_people": 2,
-      "score": 34
-    },
-    {
-      "left": "SSM/Mamba/S4D",
       "right": "U-Net skips",
-      "left_count": 17,
+      "left_count": 18,
       "right_count": 2,
-      "left_people": 12,
+      "left_people": 13,
       "right_people": 2,
-      "score": 34
+      "score": 36
     },
     {
       "left": "MoE",
@@ -75031,20 +75339,20 @@
     {
       "left": "JEPA",
       "right": "Differential Attention",
-      "left_count": 12,
+      "left_count": 13,
       "right_count": 2,
-      "left_people": 11,
+      "left_people": 12,
       "right_people": 2,
-      "score": 24
+      "score": 26
     },
     {
       "left": "JEPA",
       "right": "U-Net skips",
-      "left_count": 12,
+      "left_count": 13,
       "right_count": 2,
-      "left_people": 11,
+      "left_people": 12,
       "right_people": 2,
-      "score": 24
+      "score": 26
     },
     {
       "left": "Parallel Muon",
@@ -75065,6 +75373,15 @@
       "score": 21
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Flash Attention",
+      "left_count": 18,
+      "right_count": 1,
+      "left_people": 13,
+      "right_people": 1,
+      "score": 18
+    },
+    {
       "left": "Weight Sharing",
       "right": "Progressive Depth",
       "left_count": 6,
@@ -75072,15 +75389,6 @@
       "left_people": 4,
       "right_people": 1,
       "score": 18
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Flash Attention",
-      "left_count": 17,
-      "right_count": 1,
-      "left_people": 12,
-      "right_people": 1,
-      "score": 17
     },
     {
       "left": "MoE",
@@ -75121,11 +75429,11 @@
     {
       "left": "JEPA",
       "right": "Flash Attention",
-      "left_count": 12,
+      "left_count": 13,
       "right_count": 1,
-      "left_people": 11,
+      "left_people": 12,
       "right_people": 1,
-      "score": 12
+      "score": 13
     },
     {
       "left": "Weight Sharing",

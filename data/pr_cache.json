@@ -1,7 +1,340 @@
 {
-  "last_fetch": "2026-03-31T19:33:47.546413+00:00",
-  "api_calls_used": 57,
+  "last_fetch": "2026-03-31T20:48:20.792244+00:00",
+  "api_calls_used": 58,
   "prs": [
+    {
+      "number": 1198,
+      "title": "Add non-record 16MB submission: Hybrid Sparse Diffusion 2H on 8xH100",
+      "author": "ymrohit",
+      "state": "OPEN",
+      "created": "2026-03-31T20:43:38Z",
+      "updated": "2026-03-31T20:47:24Z",
+      "bpb": 1.62241719,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-31_HybridSparseDiffusion_2h_8xH100/README.md",
+        "records/track_non_record_16mb/2026-03-31_HybridSparseDiffusion_2h_8xH100/submission.json",
+        "records/track_non_record_16mb/2026-03-31_HybridSparseDiffusion_2h_8xH100/train.log",
+        "records/track_non_record_16mb/2026-03-31_HybridSparseDiffusion_2h_8xH100/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1197,
+      "title": "Non-record: Mamba-Inspired SSM Hybrid 3:1 (val_bpb 3.3168)",
+      "author": "dentity007",
+      "state": "OPEN",
+      "created": "2026-03-31T20:41:06Z",
+      "updated": "2026-03-31T20:41:06Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "SSM",
+      "file_paths": [
+        "APPROACH.md",
+        "records/track_non_record_16mb/2026-03-31_MambaSSMHybrid/README.md",
+        "records/track_non_record_16mb/2026-03-31_MambaSSMHybrid/submission.json",
+        "records/track_non_record_16mb/2026-03-31_MambaSSMHybrid/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1196,
+      "title": "Non-record: LLM-JEPA — Joint Embedding Prediction (val_bpb 2.2020)",
+      "author": "dentity007",
+      "state": "OPEN",
+      "created": "2026-03-31T20:41:04Z",
+      "updated": "2026-03-31T20:41:04Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "APPROACH.md",
+        "records/track_non_record_16mb/2026-03-31_LLMJEPA_JointEmbeddingPrediction/README.md",
+        "records/track_non_record_16mb/2026-03-31_LLMJEPA_JointEmbeddingPrediction/submission.json",
+        "records/track_non_record_16mb/2026-03-31_LLMJEPA_JointEmbeddingPrediction/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1195,
+      "title": "Non-record: Learning Adapters on Random Linear Maps (val_bpb 2.2017)",
+      "author": "dentity007",
+      "state": "OPEN",
+      "created": "2026-03-31T20:41:01Z",
+      "updated": "2026-03-31T20:41:01Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "APPROACH.md",
+        "records/track_non_record_16mb/2026-03-31_RandomLinearMapAdapters/README.md",
+        "records/track_non_record_16mb/2026-03-31_RandomLinearMapAdapters/submission.json",
+        "records/track_non_record_16mb/2026-03-31_RandomLinearMapAdapters/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1194,
+      "title": "Non-record: Text Diffusion (MDLM) — Masked Discrete Diffusion (val_bpb 3.3801)",
+      "author": "dentity007",
+      "state": "OPEN",
+      "created": "2026-03-31T20:40:59Z",
+      "updated": "2026-03-31T20:40:59Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "APPROACH.md",
+        "records/track_non_record_16mb/2026-03-31_TextDiffusion_MDLM/README.md",
+        "records/track_non_record_16mb/2026-03-31_TextDiffusion_MDLM/submission.json",
+        "records/track_non_record_16mb/2026-03-31_TextDiffusion_MDLM/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1193,
+      "title": "Non-record: Universal Transformer + Adaptive Density (val_bpb 1.4390)",
+      "author": "dentity007",
+      "state": "OPEN",
+      "created": "2026-03-31T20:40:56Z",
+      "updated": "2026-03-31T20:40:56Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 2870000,
+      "technique_summary": "",
+      "file_paths": [
+        "APPROACH.md",
+        "records/track_non_record_16mb/2026-03-31_UniversalTransformer_AdaptiveDensity/README.md",
+        "records/track_non_record_16mb/2026-03-31_UniversalTransformer_AdaptiveDensity/submission.json",
+        "records/track_non_record_16mb/2026-03-31_UniversalTransformer_AdaptiveDensity/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1192,
+      "title": "Non-record: Fused Triton Megakernels — RMSNorm + LeakyReLU² (val_bpb 1.3560)",
+      "author": "dentity007",
+      "state": "OPEN",
+      "created": "2026-03-31T20:40:00Z",
+      "updated": "2026-03-31T20:40:00Z",
+      "bpb": 1.356,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "APPROACH.md",
+        "records/track_non_record_16mb/2026-03-31_Megakernels_FusedTriton/README.md",
+        "records/track_non_record_16mb/2026-03-31_Megakernels_FusedTriton/submission.json",
+        "records/track_non_record_16mb/2026-03-31_Megakernels_FusedTriton/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1191,
+      "title": "Non-record: H-Net Dynamic Chunking — Learned Tokenization Layer (val_bpb 1.3587)",
+      "author": "dentity007",
+      "state": "OPEN",
+      "created": "2026-03-31T20:39:26Z",
+      "updated": "2026-03-31T20:39:26Z",
+      "bpb": 1.3587,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + INT8",
+      "file_paths": [
+        "APPROACH.md",
+        "records/track_non_record_16mb/2026-03-31_HNet_DynamicChunking_LearnedTokenization/README.md",
+        "records/track_non_record_16mb/2026-03-31_HNet_DynamicChunking_LearnedTokenization/submission.json",
+        "records/track_non_record_16mb/2026-03-31_HNet_DynamicChunking_LearnedTokenization/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1190,
+      "title": "Non-record: 10L MLP3x + Muon | val_bpb=1.3365 | Single Colab GPU",
+      "author": "Durlabhkumarjha",
+      "state": "OPEN",
+      "created": "2026-03-31T20:38:57Z",
+      "updated": "2026-03-31T20:38:57Z",
+      "bpb": 1.3365,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "Muon + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-31_10L_MLP3x_Muon_1GPU_Colab/README.md",
+        "records/track_non_record_16mb/2026-03-31_10L_MLP3x_Muon_1GPU_Colab/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1188,
+      "title": "Orchestrated 10L Int5 record stack, LeakyReLU² toggle, RunPod helpers",
+      "author": "rithvik-duddupudi",
+      "state": "OPEN",
+      "created": "2026-03-31T20:07:30Z",
+      "updated": "2026-03-31T20:07:30Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + INT6",
+      "file_paths": [
+        "docs/PLAN-h100-novel-budget.md",
+        "docs/PLAN-leaderboard-novel-improve.md",
+        "docs/PLAN-readme-records-workflow.md",
+        "docs/PLAN-records-innovation-score.md",
+        "docs/WORKFLOW_DOCUMENTATION.md",
+        "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/README.md",
+        "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/requirements-record.txt",
+        "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/submission.json",
+        "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/train_gpt.py",
+        "requirements-orchestrated-stack.txt",
+        "scripts/run_orchestrated_full_ab.sh",
+        "scripts/run_orchestrated_stack_8xh100.sh",
+        "scripts/smoke_orchestrated_8xh100.sh",
+        "tests/test_orchestrated_mlp_activation.py",
+        "tests/test_orchestrated_smoke_hyperparams.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1187,
+      "title": "Rithv/orchestrated 10l int5",
+      "author": "rithvik-duddupudi",
+      "state": "CLOSED",
+      "created": "2026-03-31T19:53:23Z",
+      "updated": "2026-03-31T19:53:31Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "docs/PLAN-h100-novel-budget.md",
+        "docs/PLAN-leaderboard-novel-improve.md",
+        "docs/PLAN-readme-records-workflow.md",
+        "docs/PLAN-records-innovation-score.md",
+        "docs/WORKFLOW_DOCUMENTATION.md",
+        "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/README.md",
+        "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/requirements-record.txt",
+        "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/submission.json",
+        "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/train_gpt.py",
+        "requirements-orchestrated-stack.txt",
+        "scripts/run_orchestrated_full_ab.sh",
+        "scripts/run_orchestrated_stack_8xh100.sh",
+        "scripts/smoke_orchestrated_8xh100.sh",
+        "tests/test_orchestrated_mlp_activation.py",
+        "tests/test_orchestrated_smoke_hyperparams.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1186,
       "title": "Non-record: Negative Results — Architecture, TTT Variants, Quantization, and N-gram Cache Illegality",
@@ -1614,7 +1947,7 @@
       "author": "Hieuabssy",
       "state": "CLOSED",
       "created": "2026-03-30T15:53:13Z",
-      "updated": "2026-03-30T15:53:47Z",
+      "updated": "2026-03-31T20:31:40Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -2134,7 +2467,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-30T04:57:49Z",
-      "updated": "2026-03-31T16:19:45Z",
+      "updated": "2026-03-31T19:43:19Z",
       "bpb": 1.1099,
       "seeds": 3,
       "artifact_bytes": 15554053,
