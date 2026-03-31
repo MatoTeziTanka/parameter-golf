@@ -1,7 +1,65 @@
 {
-  "last_fetch": "2026-03-31T10:07:52.799027+00:00",
-  "api_calls_used": 50,
+  "last_fetch": "2026-03-31T11:27:33.766025+00:00",
+  "api_calls_used": 51,
   "prs": [
+    {
+      "number": 1179,
+      "title": "Record: Split-LR + BigramHash(2816x160) + Full GPTQ + Brotli — val_bpb 1.1105 (3-seed mean)",
+      "author": "dexhunter",
+      "state": "OPEN",
+      "created": "2026-03-31T11:16:23Z",
+      "updated": "2026-03-31T11:17:43Z",
+      "bpb": 1.111,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-31_SplitLR_Dim160_FullGPTQ_Brotli/README.md",
+        "records/track_10min_16mb/2026-03-31_SplitLR_Dim160_FullGPTQ_Brotli/requirements.txt",
+        "records/track_10min_16mb/2026-03-31_SplitLR_Dim160_FullGPTQ_Brotli/submission.json",
+        "records/track_10min_16mb/2026-03-31_SplitLR_Dim160_FullGPTQ_Brotli/train_gpt.py",
+        "records/track_10min_16mb/2026-03-31_SplitLR_Dim160_FullGPTQ_Brotli/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-31_SplitLR_Dim160_FullGPTQ_Brotli/train_seed2025.log",
+        "records/track_10min_16mb/2026-03-31_SplitLR_Dim160_FullGPTQ_Brotli/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1178,
+      "title": "Codex/sliding window eval",
+      "author": "smirror",
+      "state": "CLOSED",
+      "created": "2026-03-31T10:26:48Z",
+      "updated": "2026-03-31T10:27:19Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "README_R02.md",
+        "mlx_local.sh",
+        "train_gpt.py",
+        "train_gpt_mlx.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1177,
       "title": "review: Rerun of PR #1120 (Rascal) on 8xH100 SXM",
@@ -149,7 +207,7 @@
       "author": "dexhunter",
       "state": "OPEN",
       "created": "2026-03-31T06:22:04Z",
-      "updated": "2026-03-31T09:12:19Z",
+      "updated": "2026-03-31T11:23:33Z",
       "bpb": 1.1015,
       "seeds": 3,
       "artifact_bytes": 15650000,
@@ -2379,12 +2437,12 @@
     },
     {
       "number": 1105,
-      "title": "Record: Fused MLP (Triton+CUTLASS EVT) + MLP 3.5× + Mixed int5/int6 + SLOT + Brotli — 1.1088 BPB (3-seed mean)",
+      "title": "Record: Fused MLP (Triton+CUTLASS EVT) + MLP 3.5× + Mixed int5/int6 + Brotli — 1.1125 BPB (3-seed mean)",
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-03-31T02:26:55Z",
-      "bpb": 1.1088,
+      "updated": "2026-03-31T11:08:26Z",
+      "bpb": 1.1125,
       "seeds": 3,
       "artifact_bytes": 14520000,
       "technique_summary": "Muon + GPTQ + INT6 + EMA",
