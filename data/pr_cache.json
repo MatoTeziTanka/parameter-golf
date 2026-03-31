@@ -1,7 +1,70 @@
 {
-  "last_fetch": "2026-03-31T14:08:58.397070+00:00",
-  "api_calls_used": 53,
+  "last_fetch": "2026-03-31T15:47:23.667292+00:00",
+  "api_calls_used": 54,
   "prs": [
+    {
+      "number": 1182,
+      "title": "[track_10min_16mb] XSA7 + BigramHash + ValueResidual + Legal TTT — val_bpb=1.1227",
+      "author": "adityakm24",
+      "state": "OPEN",
+      "created": "2026-03-31T15:35:29Z",
+      "updated": "2026-03-31T15:36:24Z",
+      "bpb": 1.1227,
+      "seeds": 3,
+      "artifact_bytes": 15944685,
+      "technique_summary": "TTT + Muon + INT6 + EMA + N-gram + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-31_XSA7_BigramHash_ValueResidual_TTT/README.md",
+        "records/track_10min_16mb/2026-03-31_XSA7_BigramHash_ValueResidual_TTT/submission.json",
+        "records/track_10min_16mb/2026-03-31_XSA7_BigramHash_ValueResidual_TTT/train.log",
+        "records/track_10min_16mb/2026-03-31_XSA7_BigramHash_ValueResidual_TTT/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1181,
+      "title": "RecurLoRA: Quantization-Stable Shallow Recurrence with Low-Rank Corrective Adapters",
+      "author": "Tanush1912",
+      "state": "OPEN",
+      "created": "2026-03-31T15:28:50Z",
+      "updated": "2026-03-31T15:28:50Z",
+      "bpb": 1.1182,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-31_RecurLoRA_Slope09_QKGain4_TTT/README.md",
+        "records/track_10min_16mb/2026-03-31_RecurLoRA_Slope09_QKGain4_TTT/requirements.txt",
+        "records/track_10min_16mb/2026-03-31_RecurLoRA_Slope09_QKGain4_TTT/submission.json",
+        "records/track_10min_16mb/2026-03-31_RecurLoRA_Slope09_QKGain4_TTT/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1180,
       "title": "SR-CM-P2Loss: 1.0577 bpb (~15.06MB)",
@@ -177,11 +240,11 @@
     },
     {
       "number": 1173,
-      "title": "Add non-record 16MB submission: Ternary QAT vs Int5 proxy study",
+      "title": "Add non-record 16MB submission: mixed ternary QAT proxy study",
       "author": "imitation-alpha",
       "state": "OPEN",
       "created": "2026-03-31T06:24:34Z",
-      "updated": "2026-03-31T13:55:44Z",
+      "updated": "2026-03-31T14:41:07Z",
       "bpb": 3.26066687,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -1147,9 +1210,9 @@
       "number": 1143,
       "title": "Record: Scylla (novel tokenizer) + Legal Score-First TTT (val_bpb: 1.08056553)",
       "author": "simon-marcus",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-30T18:53:55Z",
-      "updated": "2026-03-31T13:42:52Z",
+      "updated": "2026-03-31T14:44:56Z",
       "bpb": 1.08056553,
       "seeds": 2,
       "artifact_bytes": null,
@@ -1180,12 +1243,11 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1142,
@@ -2849,7 +2911,7 @@
       "author": "teddyoweh",
       "state": "OPEN",
       "created": "2026-03-29T19:29:24Z",
-      "updated": "2026-03-29T19:29:24Z",
+      "updated": "2026-03-31T15:10:24Z",
       "bpb": 1.1219,
       "seeds": 1337,
       "artifact_bytes": 15916230,
@@ -18088,7 +18150,7 @@
       "author": "AtomChen0425",
       "state": "OPEN",
       "created": "2026-03-24T16:35:21Z",
-      "updated": "2026-03-27T17:50:12Z",
+      "updated": "2026-03-31T14:59:25Z",
       "bpb": 1.2767,
       "seeds": null,
       "artifact_bytes": 15858193,
@@ -18099,14 +18161,14 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
         "no-submission-json"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 631,
@@ -24627,7 +24689,7 @@
       "author": "DeividasMat",
       "state": "OPEN",
       "created": "2026-03-22T13:50:52Z",
-      "updated": "2026-03-31T11:30:37Z",
+      "updated": "2026-03-31T14:47:20Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -24665,6 +24727,7 @@
         "scripts/run_remote_profile.sh",
         "scripts/run_smoke_profile.sh",
         "scripts/run_top10_patterns_80m.sh",
+        "scripts/run_top5_chase_150m.sh",
         "scripts/run_wd04_120m.sh",
         "train_gpt.py"
       ],
