@@ -1,7 +1,77 @@
 {
-  "last_fetch": "2026-03-31T03:38:58.704450+00:00",
-  "api_calls_used": 46,
+  "last_fetch": "2026-03-31T05:45:28.264741+00:00",
+  "api_calls_used": 47,
   "prs": [
+    {
+      "number": 1171,
+      "title": "1.1145 BPB: Parallel Muon + INT5 GPTQ + Legal TTT",
+      "author": "EthanYangTW",
+      "state": "OPEN",
+      "created": "2026-03-31T05:33:43Z",
+      "updated": "2026-03-31T05:36:07Z",
+      "bpb": 1.1145,
+      "seeds": 3,
+      "artifact_bytes": 16120000,
+      "technique_summary": "LeakyReLU² + TTT + Muon + GPTQ + INT6 + EMA + N-gram + Two-pass",
+      "file_paths": [
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1170,
+      "title": "Non-record: 11L NativeFlowMatcher + Legal TTT — val_bpb 1.1199 (single seed)",
+      "author": "Christopher-Lee-McClendon",
+      "state": "OPEN",
+      "created": "2026-03-31T04:52:31Z",
+      "updated": "2026-03-31T04:52:31Z",
+      "bpb": 0.00321,
+      "seeds": 42,
+      "artifact_bytes": 15745776,
+      "technique_summary": "TTT + Muon + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-31_11L_NativeFlowMatcher_LegalTTT/README.md",
+        "records/track_non_record_16mb/2026-03-31_11L_NativeFlowMatcher_LegalTTT/final_model.int6.ptz",
+        "records/track_non_record_16mb/2026-03-31_11L_NativeFlowMatcher_LegalTTT/submission.json",
+        "records/track_non_record_16mb/2026-03-31_11L_NativeFlowMatcher_LegalTTT/supplementary/eval_e2ettt_flow7k_legal_ttt.log",
+        "records/track_non_record_16mb/2026-03-31_11L_NativeFlowMatcher_LegalTTT/supplementary/eval_nflow7k_legal_ttt.log",
+        "records/track_non_record_16mb/2026-03-31_11L_NativeFlowMatcher_LegalTTT/supplementary/eval_nflow7k_nottt.log",
+        "records/track_non_record_16mb/2026-03-31_11L_NativeFlowMatcher_LegalTTT/supplementary/slurm_eval_nflow7k_legal_ttt.sh",
+        "records/track_non_record_16mb/2026-03-31_11L_NativeFlowMatcher_LegalTTT/supplementary/slurm_eval_nflow7k_nottt.sh",
+        "records/track_non_record_16mb/2026-03-31_11L_NativeFlowMatcher_LegalTTT/supplementary/slurm_pr940_nflow_7k.sh",
+        "records/track_non_record_16mb/2026-03-31_11L_NativeFlowMatcher_LegalTTT/train.log",
+        "records/track_non_record_16mb/2026-03-31_11L_NativeFlowMatcher_LegalTTT/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1169,
       "title": "Turbo-Muon + EngramLite + ParamBanking + GPTQ Reserve Opt — val_bpb 1.1126 (3-seed mean)",
@@ -95,11 +165,11 @@
     },
     {
       "number": 1166,
-      "title": "Non-record: 10L E2E TTT-Linear + FlowRefiner — val_bpb 1.1347",
+      "title": "Non-record: 10L E2E TTT-Linear + FlowRefiner — val_bpb 1.1347 (README request)",
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-03-31T03:03:12Z",
-      "updated": "2026-03-31T03:17:17Z",
+      "updated": "2026-03-31T04:08:31Z",
       "bpb": 1.1347,
       "seeds": 42,
       "artifact_bytes": 15199107,
@@ -228,7 +298,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-31T02:15:00Z",
-      "updated": "2026-03-31T02:16:27Z",
+      "updated": "2026-03-31T05:23:46Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -822,7 +892,7 @@
       "author": "simon-marcus",
       "state": "OPEN",
       "created": "2026-03-30T18:53:55Z",
-      "updated": "2026-03-30T20:45:24Z",
+      "updated": "2026-03-31T05:41:11Z",
       "bpb": 1.08056553,
       "seeds": 2,
       "artifact_bytes": null,
@@ -2628,7 +2698,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-03-29T18:10:07Z",
-      "updated": "2026-03-31T03:19:43Z",
+      "updated": "2026-03-31T04:36:45Z",
       "bpb": 1.1091,
       "seeds": 3,
       "artifact_bytes": 15300000,
@@ -16506,7 +16576,7 @@
       "author": "andrewbaggio1",
       "state": "OPEN",
       "created": "2026-03-25T03:22:29Z",
-      "updated": "2026-03-31T02:51:42Z",
+      "updated": "2026-03-31T03:47:28Z",
       "bpb": 1.0781,
       "seeds": 3,
       "artifact_bytes": 15620000,
@@ -20395,7 +20465,7 @@
       "author": "haimianbaobao007",
       "state": "OPEN",
       "created": "2026-03-23T16:16:55Z",
-      "updated": "2026-03-30T00:09:08Z",
+      "updated": "2026-03-31T05:22:33Z",
       "bpb": 1.714,
       "seeds": null,
       "artifact_bytes": null,
