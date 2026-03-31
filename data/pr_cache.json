@@ -1,7 +1,69 @@
 {
-  "last_fetch": "2026-03-31T08:37:30.703386+00:00",
-  "api_calls_used": 49,
+  "last_fetch": "2026-03-31T10:07:52.799027+00:00",
+  "api_calls_used": 50,
   "prs": [
+    {
+      "number": 1177,
+      "title": "review: Rerun of PR #1120 (Rascal) on 8xH100 SXM",
+      "author": "dexhunter",
+      "state": "OPEN",
+      "created": "2026-03-31T10:06:09Z",
+      "updated": "2026-03-31T10:06:09Z",
+      "bpb": 1.10979,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-30_Rascal_8xH100/RERUN_NOTES.md",
+        "records/track_10min_16mb/2026-03-30_Rascal_8xH100/RERUN_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1176,
+      "title": "Record: QK-Gain 4.0 + XSA-11 + Muon-TTT + SLOT — val_bpb 1.0962 (3-seed mean)",
+      "author": "bigbag",
+      "state": "OPEN",
+      "created": "2026-03-31T09:45:23Z",
+      "updated": "2026-03-31T09:54:16Z",
+      "bpb": 1.0962,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + N-gram + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-31_QKGain4_XSA11_TTT_SLOT/README.md",
+        "records/track_10min_16mb/2026-03-31_QKGain4_XSA11_TTT_SLOT/submission.json",
+        "records/track_10min_16mb/2026-03-31_QKGain4_XSA11_TTT_SLOT/train_gpt.py",
+        "records/track_10min_16mb/2026-03-31_QKGain4_XSA11_TTT_SLOT/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-31_QKGain4_XSA11_TTT_SLOT/train_seed2024.log",
+        "records/track_10min_16mb/2026-03-31_QKGain4_XSA11_TTT_SLOT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1174,
       "title": "[Non-Record] 5L MLP×4 EMA=0.97 Optuna — GH200 proxy, val_bpb=1.3069 (int6+zlib)",
@@ -85,9 +147,9 @@
       "number": 1172,
       "title": "Record: SLOT + Split-LR + Full GPTQ + XSA-all — val_bpb 1.1015 (3-seed mean)",
       "author": "dexhunter",
-      "state": "CLOSED",
+      "state": "OPEN",
       "created": "2026-03-31T06:22:04Z",
-      "updated": "2026-03-31T07:03:27Z",
+      "updated": "2026-03-31T09:12:19Z",
       "bpb": 1.1015,
       "seeds": 3,
       "artifact_bytes": 15650000,
@@ -108,11 +170,9 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "DEAD",
-      "flags": [
-        "closed-no-maintainer-comment"
-      ],
-      "confidence": "LOW"
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 1171,
@@ -4232,11 +4292,11 @@
     },
     {
       "number": 1048,
-      "title": "Non-record: Compression moonshots — 8 negative/marginal findings (Procrustes, SWA smoothness, selective fp16, pruning+zstd)",
+      "title": "Non-record: Cross-seed rotational symmetry in transformer weights — 33 checkpoint experiments (Procrustes, pruning×zstd, block-level quantization outliers)",
       "author": "mrdavtan",
       "state": "OPEN",
       "created": "2026-03-29T00:59:25Z",
-      "updated": "2026-03-29T00:59:25Z",
+      "updated": "2026-03-31T09:29:58Z",
       "bpb": 0.2056,
       "seeds": null,
       "artifact_bytes": 14300000,
@@ -24482,7 +24542,7 @@
       "author": "DeividasMat",
       "state": "OPEN",
       "created": "2026-03-22T13:50:52Z",
-      "updated": "2026-03-27T19:59:32Z",
+      "updated": "2026-03-31T09:02:58Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -24519,19 +24579,20 @@
         "scripts/run_remote_profile.sh",
         "scripts/run_smoke_profile.sh",
         "scripts/run_top10_patterns_80m.sh",
+        "scripts/run_wd04_120m.sh",
         "train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 424,
