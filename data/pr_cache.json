@@ -1,17 +1,129 @@
 {
-  "last_fetch": "2026-03-31T05:45:28.264741+00:00",
-  "api_calls_used": 47,
+  "last_fetch": "2026-03-31T07:21:08.337141+00:00",
+  "api_calls_used": 48,
   "prs": [
+    {
+      "number": 1174,
+      "title": "[Non-Record] 5L MLP×4 EMA=0.97 Optuna — GH200 proxy, val_bpb=1.3069 (int6+zlib)",
+      "author": "Okropniak",
+      "state": "OPEN",
+      "created": "2026-03-31T07:00:20Z",
+      "updated": "2026-03-31T07:00:20Z",
+      "bpb": 1.3069,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-31_5L_MLP4_EMA097_Optuna_GH200proxy/README.md",
+        "records/track_non_record_16mb/2026-03-31_5L_MLP4_EMA097_Optuna_GH200proxy/submission.json",
+        "records/track_non_record_16mb/2026-03-31_5L_MLP4_EMA097_Optuna_GH200proxy/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1173,
+      "title": "Add non-record 16MB submission: Ternary QAT vs Int5 proxy study",
+      "author": "imitation-alpha",
+      "state": "OPEN",
+      "created": "2026-03-31T06:24:34Z",
+      "updated": "2026-03-31T06:24:34Z",
+      "bpb": 3.26066687,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/.gitignore",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/README.md",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_baseline_small_int5_seed1337.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_baseline_small_int5_seed2024.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_baseline_small_int5_seed42.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_deep_ternary14_seed1337.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_deep_ternary14_seed2024.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_deep_ternary14_seed42.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_full_ternary_seed1337.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_full_ternary_seed2024.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_full_ternary_seed42.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_mixed_ternary_seed1337.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_mixed_ternary_seed2024.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/matrix_mixed_ternary_seed42.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/phase0_baseline_smoke.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/phase0_baseline_smoke_stable.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/phase1_ternary_smoke.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/phase3_mixed_smoke.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/phase4_deep_ternary_smoke_s42.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/proxy_int5_10l_seed42_20260323_tmux.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/proxy_mixed_10l_seed42_20260323_tmux.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/proxy_mixed_11l640_seed1337_20260329_tmux.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/logs/proxy_mixed_11l640_seed42_20260329_tmux.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/make_proxy_dataset.py",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/requirements.txt",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/results_summary.md",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/run_proxy_experiment.sh",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/submission.json",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/technical_report.md",
+        "records/track_non_record_16mb/2026-03-23_Ternary_QAT_vs_Int5/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1172,
+      "title": "Record: SLOT + Split-LR + Full GPTQ + XSA-all — val_bpb 1.1015 (3-seed mean)",
+      "author": "dexhunter",
+      "state": "CLOSED",
+      "created": "2026-03-31T06:22:04Z",
+      "updated": "2026-03-31T07:03:27Z",
+      "bpb": 1.1015,
+      "seeds": 3,
+      "artifact_bytes": 15650000,
+      "technique_summary": "LeakyReLU² + TTT + Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-31_SLOT_SplitLR_GPTQ_XSA_1.1015/README.md",
+        "records/track_10min_16mb/2026-03-31_SLOT_SplitLR_GPTQ_XSA_1.1015/submission.json",
+        "records/track_10min_16mb/2026-03-31_SLOT_SplitLR_GPTQ_XSA_1.1015/train_gpt.py",
+        "records/track_10min_16mb/2026-03-31_SLOT_SplitLR_GPTQ_XSA_1.1015/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-31_SLOT_SplitLR_GPTQ_XSA_1.1015/train_seed2025.log",
+        "records/track_10min_16mb/2026-03-31_SLOT_SplitLR_GPTQ_XSA_1.1015/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1171,
       "title": "1.1145 BPB: Parallel Muon + INT5 GPTQ + Legal TTT",
       "author": "EthanYangTW",
       "state": "OPEN",
       "created": "2026-03-31T05:33:43Z",
-      "updated": "2026-03-31T05:36:07Z",
+      "updated": "2026-03-31T07:21:02Z",
       "bpb": 1.1145,
       "seeds": 3,
-      "artifact_bytes": 16120000,
+      "artifact_bytes": 15380000,
       "technique_summary": "LeakyReLU² + TTT + Muon + GPTQ + INT6 + EMA + N-gram + Two-pass",
       "file_paths": [
         "train_gpt.py"
@@ -1222,9 +1334,9 @@
       "number": 1134,
       "title": "Vihaan gelu submission 2026 03 30",
       "author": "WinterBlossom0",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-30T14:52:27Z",
-      "updated": "2026-03-30T14:52:27Z",
+      "updated": "2026-03-31T06:08:27Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1241,13 +1353,11 @@
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1133,
@@ -1414,7 +1524,7 @@
       "author": "AnubhavBharadwaaj",
       "state": "OPEN",
       "created": "2026-03-30T09:43:20Z",
-      "updated": "2026-03-31T00:11:14Z",
+      "updated": "2026-03-31T07:03:45Z",
       "bpb": 1.1154,
       "seeds": 3,
       "artifact_bytes": 15900000,
