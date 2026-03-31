@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-03-31T11:27:40Z",
+  "generated_at": "2026-03-31T12:09:49Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1125,
-    "matched_pr_count": 810,
+    "pr_count": 1126,
+    "matched_pr_count": 811,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -12,7 +12,7 @@
       "ALIVE": 148,
       "AT_RISK": 113,
       "DEAD": 327,
-      "INCOMPLETE": 537,
+      "INCOMPLETE": 538,
       "UNKNOWN": 0
     }
   },
@@ -7075,12 +7075,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 327,
-      "author_count": 220,
+      "count": 328,
+      "author_count": 221,
       "alive_count": 61,
       "dead_count": 73,
       "at_risk_count": 43,
-      "incomplete_count": 150,
+      "incomplete_count": 151,
       "unknown_count": 0,
       "best_alive": {
         "number": 1172,
@@ -8912,6 +8912,20 @@
               "status": "AT_RISK",
               "bpb": 0.9958,
               "created": "2026-03-26T18:58:06Z"
+            }
+          ]
+        },
+        {
+          "author": "estesryan",
+          "pr_count": 1,
+          "best_bpb": 1.0577016,
+          "prs": [
+            {
+              "number": 1180,
+              "author": "estesryan",
+              "status": "INCOMPLETE",
+              "bpb": 1.0577016,
+              "created": "2026-03-31T11:32:19Z"
             }
           ]
         },
@@ -13207,6 +13221,13 @@
           "status": "AT_RISK",
           "bpb": 1.0962,
           "created": "2026-03-31T09:45:23Z"
+        },
+        {
+          "number": 1180,
+          "author": "estesryan",
+          "status": "INCOMPLETE",
+          "bpb": 1.0577016,
+          "created": "2026-03-31T11:32:19Z"
         }
       ]
     },
@@ -36774,12 +36795,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 327,
-      "author_count": 220,
+      "count": 328,
+      "author_count": 221,
       "alive_count": 61,
       "dead_count": 73,
       "at_risk_count": 43,
-      "incomplete_count": 150,
+      "incomplete_count": 151,
       "unknown_count": 0,
       "best_alive": {
         "number": 1172,
@@ -38611,6 +38632,20 @@
               "status": "AT_RISK",
               "bpb": 0.9958,
               "created": "2026-03-26T18:58:06Z"
+            }
+          ]
+        },
+        {
+          "author": "estesryan",
+          "pr_count": 1,
+          "best_bpb": 1.0577016,
+          "prs": [
+            {
+              "number": 1180,
+              "author": "estesryan",
+              "status": "INCOMPLETE",
+              "bpb": 1.0577016,
+              "created": "2026-03-31T11:32:19Z"
             }
           ]
         },
@@ -42906,6 +42941,13 @@
           "status": "AT_RISK",
           "bpb": 1.0962,
           "created": "2026-03-31T09:45:23Z"
+        },
+        {
+          "number": 1180,
+          "author": "estesryan",
+          "status": "INCOMPLETE",
+          "bpb": 1.0577016,
+          "created": "2026-03-31T11:32:19Z"
         }
       ]
     },
@@ -73652,6 +73694,15 @@
       "score": 1005
     },
     {
+      "left": "Muon optimizer",
+      "right": "Progressive Depth",
+      "left_count": 328,
+      "right_count": 3,
+      "left_people": 221,
+      "right_people": 1,
+      "score": 984
+    },
+    {
       "left": "LeakyReLU\u00b2",
       "right": "JEPA",
       "left_count": 82,
@@ -73659,15 +73710,6 @@
       "left_people": 62,
       "right_people": 11,
       "score": 984
-    },
-    {
-      "left": "Muon optimizer",
-      "right": "Progressive Depth",
-      "left_count": 327,
-      "right_count": 3,
-      "left_people": 220,
-      "right_people": 1,
-      "score": 981
     },
     {
       "left": "XSA",
@@ -73780,11 +73822,11 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 327,
+      "left_count": 328,
       "right_count": 2,
-      "left_people": 220,
+      "left_people": 221,
       "right_people": 2,
-      "score": 654
+      "score": 656
     },
     {
       "left": "EMA",
