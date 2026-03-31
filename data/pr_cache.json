@@ -1,7 +1,438 @@
 {
-  "last_fetch": "2026-03-31T00:00:14.992012+00:00",
-  "api_calls_used": 45,
+  "last_fetch": "2026-03-31T03:38:58.704450+00:00",
+  "api_calls_used": 46,
   "prs": [
+    {
+      "number": 1169,
+      "title": "Turbo-Muon + EngramLite + ParamBanking + GPTQ Reserve Opt — val_bpb 1.1126 (3-seed mean)",
+      "author": "Bortlesboat",
+      "state": "OPEN",
+      "created": "2026-03-31T03:38:33Z",
+      "updated": "2026-03-31T03:38:33Z",
+      "bpb": 1.1126,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-30_V18_FusedTritonOp/README.md",
+        "records/track_10min_16mb/2026-03-30_V18_FusedTritonOp/requirements.txt",
+        "records/track_10min_16mb/2026-03-30_V18_FusedTritonOp/runpod_setup.sh",
+        "records/track_10min_16mb/2026-03-30_V18_FusedTritonOp/submission.json",
+        "records/track_10min_16mb/2026-03-30_V18_FusedTritonOp/train_gpt.py",
+        "records/track_10min_16mb/2026-03-30_V18_FusedTritonOp/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-30_V18_FusedTritonOp/train_seed42.log",
+        "records/track_10min_16mb/2026-03-30_V18_FusedTritonOp/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1168,
+      "title": "Notable Non-Record: H-Net Dynamic Chunking — 1.3639 BPB — Learned Content-Dependent Segmentation",
+      "author": "gowtham0992",
+      "state": "OPEN",
+      "created": "2026-03-31T03:32:38Z",
+      "updated": "2026-03-31T03:35:59Z",
+      "bpb": 1.3639,
+      "seeds": 42,
+      "artifact_bytes": 10394755,
+      "technique_summary": "SSM + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-30_HNet_Dynamic_Chunking/README.md",
+        "records/track_10min_16mb/2026-03-30_HNet_Dynamic_Chunking/requirements.txt",
+        "records/track_10min_16mb/2026-03-30_HNet_Dynamic_Chunking/run.sh",
+        "records/track_10min_16mb/2026-03-30_HNet_Dynamic_Chunking/submission.json",
+        "records/track_10min_16mb/2026-03-30_HNet_Dynamic_Chunking/train_gpt.py",
+        "records/track_10min_16mb/2026-03-30_HNet_Dynamic_Chunking/train_seed42.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1167,
+      "title": "Submission: val_bpb=1.3736 | 10 layers + Muon + mlp_mult=3Update default NUM_LAYERS and MLP_MULT values",
+      "author": "Durlabhkumarjha",
+      "state": "OPEN",
+      "created": "2026-03-31T03:10:27Z",
+      "updated": "2026-03-31T03:10:27Z",
+      "bpb": 1.3736,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "Muon",
+      "file_paths": [
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1166,
+      "title": "Non-record: 10L E2E TTT-Linear + FlowRefiner — val_bpb 1.1347",
+      "author": "Christopher-Lee-McClendon",
+      "state": "OPEN",
+      "created": "2026-03-31T03:03:12Z",
+      "updated": "2026-03-31T03:17:17Z",
+      "bpb": 1.1347,
+      "seeds": 42,
+      "artifact_bytes": 15199107,
+      "technique_summary": "TTT + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_10L_E2E_TTT_FlowRefiner/README.md",
+        "records/track_non_record_16mb/2026-03-30_10L_E2E_TTT_FlowRefiner/final_model.int6.ptz",
+        "records/track_non_record_16mb/2026-03-30_10L_E2E_TTT_FlowRefiner/submission.json",
+        "records/track_non_record_16mb/2026-03-30_10L_E2E_TTT_FlowRefiner/supplementary/varA_11L_train.log",
+        "records/track_non_record_16mb/2026-03-30_10L_E2E_TTT_FlowRefiner/supplementary/varA_run_seed42.sh",
+        "records/track_non_record_16mb/2026-03-30_10L_E2E_TTT_FlowRefiner/supplementary/varB_run_seed42.sh",
+        "records/track_non_record_16mb/2026-03-30_10L_E2E_TTT_FlowRefiner/supplementary/varC_int5mix_train.log",
+        "records/track_non_record_16mb/2026-03-30_10L_E2E_TTT_FlowRefiner/supplementary/varC_run_seed42.sh",
+        "records/track_non_record_16mb/2026-03-30_10L_E2E_TTT_FlowRefiner/train.log",
+        "records/track_non_record_16mb/2026-03-30_10L_E2E_TTT_FlowRefiner/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1165,
+      "title": "Structured Embedding Init (BPB 1.2314)",
+      "author": "brandonpf",
+      "state": "OPEN",
+      "created": "2026-03-31T02:54:32Z",
+      "updated": "2026-03-31T02:54:32Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-28_StructuredEmbeddingInit/README.md",
+        "records/track_10min_16mb/2026-03-28_StructuredEmbeddingInit/embedding_mask.npy",
+        "records/track_10min_16mb/2026-03-28_StructuredEmbeddingInit/structured_embeddings.npy",
+        "records/track_10min_16mb/2026-03-28_StructuredEmbeddingInit/submission.json",
+        "records/track_10min_16mb/2026-03-28_StructuredEmbeddingInit/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1164,
+      "title": "Non-record: random-map adapter train/eval ablations on 8xH100",
+      "author": "papalino456",
+      "state": "OPEN",
+      "created": "2026-03-31T02:43:11Z",
+      "updated": "2026-03-31T02:43:11Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/README.md",
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/ablations_summary.tsv",
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/logs/baseline.log",
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/logs/lora_ttt.log",
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/logs/random_train.log",
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/logs/random_train_ttt.log",
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/logs/random_ttt.log",
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/plot_ablation_losses.py",
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/run_all_ablations.py",
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/run_all_ablations.sh",
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/submission.json",
+        "records/track_non_record_16mb/2026-03-31_RandomMapAdapters_TrainEval/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1163,
+      "title": "[record] LR warmdown v1 (WARMDOWN_ITERS=900) with confirmed 10-min runs",
+      "author": "intelligentiaomni",
+      "state": "OPEN",
+      "created": "2026-03-31T02:32:05Z",
+      "updated": "2026-03-31T02:39:08Z",
+      "bpb": 1.56446831,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-31_LR_Warmdown_V1/README.md",
+        "records/track_10min_16mb/2026-03-31_LR_Warmdown_V1/run2.log",
+        "records/track_10min_16mb/2026-03-31_LR_Warmdown_V1/run3.log",
+        "records/track_10min_16mb/2026-03-31_LR_Warmdown_V1/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1162,
+      "title": "Meta-analysis: Mining 975 Expensive Training Runs (Part 1/3)",
+      "author": "abaybektursun",
+      "state": "OPEN",
+      "created": "2026-03-31T02:15:00Z",
+      "updated": "2026-03-31T02:16:27Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT6 + EMA + N-gram",
+      "file_paths": [
+        "meta_analysis/README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1161,
+      "title": "Meta-analysis: Mining 975 Expensive Training Runs (Part 1/3)",
+      "author": "abaybektursun",
+      "state": "CLOSED",
+      "created": "2026-03-31T02:11:40Z",
+      "updated": "2026-03-31T02:12:29Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT6 + EMA + N-gram",
+      "file_paths": [
+        "meta_analysis/site/404.html",
+        "meta_analysis/site/__next.__PAGE__.txt",
+        "meta_analysis/site/__next._full.txt",
+        "meta_analysis/site/__next._head.txt",
+        "meta_analysis/site/__next._index.txt",
+        "meta_analysis/site/__next._tree.txt",
+        "meta_analysis/site/_next/static/chunks/02i7dfk78~t~2.js",
+        "meta_analysis/site/_next/static/chunks/03~yq9q893hmn.js",
+        "meta_analysis/site/_next/static/chunks/05dgn8~24wm~j.js",
+        "meta_analysis/site/_next/static/chunks/081l3w46f4vbj.js",
+        "meta_analysis/site/_next/static/chunks/0b2l.mrrphfv7.js",
+        "meta_analysis/site/_next/static/chunks/0b5yd18v4zlw1.js",
+        "meta_analysis/site/_next/static/chunks/0dbhjjzl8qfwv.js",
+        "meta_analysis/site/_next/static/chunks/0mrmac07jfpnk.js",
+        "meta_analysis/site/_next/static/chunks/0pszwlzgbq8fz.js",
+        "meta_analysis/site/_next/static/chunks/0ymplhcmi61cu.css",
+        "meta_analysis/site/_next/static/chunks/13j~uzrbesmg3.js",
+        "meta_analysis/site/_next/static/chunks/turbopack-034.szj~lk8or.js",
+        "meta_analysis/site/_next/static/f_AZA57uE553Pd27griai/_buildManifest.js",
+        "meta_analysis/site/_next/static/f_AZA57uE553Pd27griai/_clientMiddlewareManifest.js",
+        "meta_analysis/site/_next/static/f_AZA57uE553Pd27griai/_ssgManifest.js",
+        "meta_analysis/site/_next/static/media/1bffadaabf893a1e-s.16ipb6fqu393i.woff2",
+        "meta_analysis/site/_next/static/media/2bbe8d2671613f1f-s.067x_6k0k23tk.woff2",
+        "meta_analysis/site/_next/static/media/2c55a0e60120577a-s.0bjc5tiuqdqro.woff2",
+        "meta_analysis/site/_next/static/media/5476f68d60460930-s.0wxq9webf.ew4.woff2",
+        "meta_analysis/site/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+        "meta_analysis/site/_next/static/media/9c72aa0f40e4eef8-s.0m6w47a4e5dy9.woff2",
+        "meta_analysis/site/_next/static/media/ad66f9afd8947f86-s.11u06r12fd6v_.woff2",
+        "meta_analysis/site/_next/static/media/favicon.0x3dzn~oxb6tn.ico",
+        "meta_analysis/site/_not-found.html",
+        "meta_analysis/site/_not-found.txt",
+        "meta_analysis/site/_not-found/__next._full.txt",
+        "meta_analysis/site/_not-found/__next._head.txt",
+        "meta_analysis/site/_not-found/__next._index.txt",
+        "meta_analysis/site/_not-found/__next._not-found.__PAGE__.txt",
+        "meta_analysis/site/_not-found/__next._not-found.txt",
+        "meta_analysis/site/_not-found/__next._tree.txt",
+        "meta_analysis/site/data/author_distribution.json",
+        "meta_analysis/site/data/author_trajectories.json",
+        "meta_analysis/site/data/backbone_quality.json",
+        "meta_analysis/site/data/bpb_distributions.json",
+        "meta_analysis/site/data/bytes_scatter.json",
+        "meta_analysis/site/data/cache_lift.json",
+        "meta_analysis/site/data/convergence_pair.json",
+        "meta_analysis/site/data/curve_atlas.json",
+        "meta_analysis/site/data/curve_bundle.json",
+        "meta_analysis/site/data/early_vs_final.json",
+        "meta_analysis/site/data/invalidity_quartiles.json",
+        "meta_analysis/site/data/mae_by_tier.json",
+        "meta_analysis/site/data/meta_convergence.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "cache_path"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1160,
+      "title": "Non-record: Distributed 8xH100 Polar STE + QJL KV-cache baseline",
+      "author": "LucasErcolano",
+      "state": "CLOSED",
+      "created": "2026-03-31T02:00:28Z",
+      "updated": "2026-03-31T02:04:02Z",
+      "bpb": 1.4594,
+      "seeds": 314,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_Distributed_H100x8_PolarSTE_QJL_Baseline/README.md",
+        "records/track_non_record_16mb/2026-03-30_Distributed_H100x8_PolarSTE_QJL_Baseline/requirements.txt",
+        "records/track_non_record_16mb/2026-03-30_Distributed_H100x8_PolarSTE_QJL_Baseline/run_h100x8.sh",
+        "records/track_non_record_16mb/2026-03-30_Distributed_H100x8_PolarSTE_QJL_Baseline/submission.json",
+        "records/track_non_record_16mb/2026-03-30_Distributed_H100x8_PolarSTE_QJL_Baseline/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-30_Distributed_H100x8_PolarSTE_QJL_Baseline/train_seed314_budgetfix.log",
+        "records/track_non_record_16mb/2026-03-30_Distributed_H100x8_PolarSTE_QJL_Baseline/triton_kv_ops.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1159,
+      "title": "Add non-record 16MB submission: Dirichlet PPM + Legal TTT on 8xH100",
+      "author": "JDAppleseed",
+      "state": "OPEN",
+      "created": "2026-03-31T00:01:58Z",
+      "updated": "2026-03-31T00:01:58Z",
+      "bpb": 0.36930761,
+      "seeds": null,
+      "artifact_bytes": 10176408,
+      "technique_summary": "TTT + INT6 + EMA",
+      "file_paths": [
+        ".gitignore",
+        "CLOUD_SETUP.md",
+        "FRONTIER.md",
+        "FRONTIER_RUNS.md",
+        "README.md",
+        "WORKSPACE.md",
+        "flash_attn_interface.py",
+        "frontier_cache.py",
+        "frontier_checkpoint.py",
+        "frontier_eval.py",
+        "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/README.md",
+        "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/flash_attn_interface.py",
+        "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/frontier_cache.py",
+        "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/frontier_checkpoint.py",
+        "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/frontier_eval.py",
+        "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/requirements.txt",
+        "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/research/__init__.py",
+        "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/research/submission_metrics.py",
+        "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/submission.json",
+        "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/train.log",
+        "records/track_non_record_16mb/2026-03-27_DirichletPPM_LegalTTT_8xH100/train_gpt.py",
+        "requirements-cloud.txt",
+        "requirements-common.txt",
+        "requirements-local.txt",
+        "requirements.txt",
+        "research/__init__.py",
+        "research/byte_budget.py",
+        "research/compare_runs.py",
+        "research/frontier_registry.py",
+        "research/notes/h100_dirichlet_full_run_2026-03-27.md",
+        "research/notes/h100_entropy_half_run_followup_2026-03-26.md",
+        "research/notes/h100_result_summary_2026-03-26.md",
+        "research/presets.py",
+        "research/results/.gitkeep",
+        "research/run.py",
+        "research/submission_metrics.py",
+        "research/submission_readiness.py",
+        "research_only/README.md",
+        "scripts/__init__.py",
+        "scripts/check_data.py",
+        "scripts/check_env.py",
+        "scripts/check_frontier_env.py",
+        "scripts/install_cloud.sh",
+        "scripts/submission_readiness.py",
+        "tests/test_frontier_cache.py",
+        "tests/test_frontier_eval.py",
+        "tests/test_submission_metrics.py",
+        "tests/test_submission_readiness.py",
+        "train_gpt.py",
+        "train_gpt_frontier.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "cache_eval",
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "path:eval-cache-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1156,
       "title": "Record: EGGROLL v2 — val_bpb 1.1161 (3-seed mean, std 0.0001)",
@@ -27,10 +458,8 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -66,7 +495,7 @@
       "author": "LucasErcolano",
       "state": "OPEN",
       "created": "2026-03-30T21:54:03Z",
-      "updated": "2026-03-30T22:37:31Z",
+      "updated": "2026-03-31T02:03:47Z",
       "bpb": 2.3861,
       "seeds": null,
       "artifact_bytes": 88040960,
@@ -75,6 +504,7 @@
         "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/README.md",
         "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/artifact_isolation_check.py",
         "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/benchmark_kv_backends.py",
+        "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/run_record_h100x8.sh",
         "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/submission.json",
         "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/train.log",
         "records/track_non_record_16mb/2026-03-30_KVCache_QJL_Polar_Turbo_1x3090/train_gpt.py",
@@ -89,8 +519,7 @@
       "technique_type": "cache",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -153,10 +582,8 @@
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -223,8 +650,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -315,8 +741,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -387,8 +812,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH"
     },
@@ -459,10 +883,8 @@
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -505,7 +927,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-30T17:18:30Z",
-      "updated": "2026-03-30T19:36:15Z",
+      "updated": "2026-03-31T02:30:23Z",
       "bpb": 1.1874,
       "seeds": 3,
       "artifact_bytes": 8842981,
@@ -608,7 +1030,7 @@
       "author": "greqone",
       "state": "OPEN",
       "created": "2026-03-30T16:44:28Z",
-      "updated": "2026-03-30T21:21:52Z",
+      "updated": "2026-03-31T02:06:48Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -626,8 +1048,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -781,8 +1202,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -884,10 +1304,8 @@
       ],
       "track": "record",
       "technique_type": "hybrid",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -916,10 +1334,8 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -928,7 +1344,7 @@
       "author": "AnubhavBharadwaaj",
       "state": "OPEN",
       "created": "2026-03-30T09:43:20Z",
-      "updated": "2026-03-30T10:05:36Z",
+      "updated": "2026-03-31T00:11:14Z",
       "bpb": 1.1154,
       "seeds": 3,
       "artifact_bytes": 15900000,
@@ -991,10 +1407,8 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -1091,7 +1505,6 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -1122,8 +1535,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -1266,7 +1678,6 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -1389,10 +1800,8 @@
       ],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -1419,8 +1828,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -1521,8 +1929,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "artifact-unknown"
+        "no-bpb"
       ],
       "confidence": "HIGH"
     },
@@ -1697,8 +2104,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -1737,7 +2143,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-03-30T20:26:03Z",
+      "updated": "2026-03-31T02:26:55Z",
       "bpb": 1.1088,
       "seeds": 3,
       "artifact_bytes": 14520000,
@@ -1762,10 +2168,8 @@
       ],
       "track": "record",
       "technique_type": "cache",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -1796,8 +2200,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH"
     },
@@ -1853,8 +2256,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -1916,10 +2318,8 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -1959,7 +2359,7 @@
       "author": "danielxmed",
       "state": "OPEN",
       "created": "2026-03-29T21:23:41Z",
-      "updated": "2026-03-29T23:50:21Z",
+      "updated": "2026-03-31T01:36:49Z",
       "bpb": 1.3355,
       "seeds": 2,
       "artifact_bytes": 16500000,
@@ -1979,8 +2379,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH"
     },
@@ -2142,10 +2541,8 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -2221,8 +2618,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -2232,7 +2628,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-03-29T18:10:07Z",
-      "updated": "2026-03-30T19:06:42Z",
+      "updated": "2026-03-31T03:19:43Z",
       "bpb": 1.1091,
       "seeds": 3,
       "artifact_bytes": 15300000,
@@ -2286,8 +2682,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -2318,8 +2713,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -2395,8 +2789,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -2465,10 +2858,8 @@
       ],
       "track": "non-record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -2573,8 +2964,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -2702,8 +3092,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "artifact-unknown"
+        "no-bpb"
       ],
       "confidence": "HIGH"
     },
@@ -2830,8 +3219,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -2857,8 +3245,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -2889,8 +3276,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-1",
-        "artifact-unknown"
+        "seeds-only-1"
       ],
       "confidence": "HIGH"
     },
@@ -2918,8 +3304,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -2950,8 +3335,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -3028,7 +3412,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -3056,8 +3439,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "artifact-unknown"
+        "no-bpb"
       ],
       "confidence": "HIGH"
     },
@@ -3123,8 +3505,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH"
     },
@@ -3230,7 +3611,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -3260,8 +3640,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -3293,10 +3672,8 @@
       ],
       "track": "record",
       "technique_type": "hybrid",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -3359,8 +3736,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -3393,10 +3769,8 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -3516,7 +3890,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -3548,10 +3921,8 @@
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -3616,8 +3987,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -3650,8 +4020,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -3809,8 +4178,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -3838,8 +4206,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -3897,10 +4264,8 @@
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -4018,8 +4383,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -4119,7 +4483,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-only-2",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -4148,8 +4511,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -4255,8 +4617,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -4353,10 +4714,8 @@
       ],
       "track": "non-record",
       "technique_type": "cache",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -4419,8 +4778,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -4504,8 +4862,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -4613,8 +4970,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -4775,10 +5131,8 @@
         "ttt",
         "gptq_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -4804,8 +5158,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -4891,8 +5244,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -4957,10 +5309,8 @@
       "compliance_keywords": [
         "gptq_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -5022,8 +5372,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -5097,8 +5446,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -5128,8 +5476,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -5162,8 +5509,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -5191,8 +5537,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -5224,8 +5569,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -5255,8 +5599,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -5283,8 +5626,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -5393,8 +5735,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -5418,7 +5759,6 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -5431,7 +5771,7 @@
       "author": "Idan3011",
       "state": "OPEN",
       "created": "2026-03-28T00:53:22Z",
-      "updated": "2026-03-30T02:21:07Z",
+      "updated": "2026-03-31T00:25:23Z",
       "bpb": 1.147,
       "seeds": 3,
       "artifact_bytes": 14942971,
@@ -5450,10 +5790,8 @@
       ],
       "track": "record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -5579,8 +5917,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -5726,10 +6063,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -5792,7 +6127,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -5935,8 +6269,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -6004,8 +6337,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -6051,8 +6383,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -6082,10 +6413,8 @@
         "gptq_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -6143,10 +6472,8 @@
         "ttt",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -6203,8 +6530,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -6233,8 +6559,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -6267,8 +6592,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -6276,15 +6600,15 @@
     },
     {
       "number": 972,
-      "title": "Normalized N-gram + Bayesian First-Match (val_bpb 0.3922)",
+      "title": "[Closed] Phrase Cache + N-gram Backoff + EMA-GPU (val_bpb=0.2722)    ",
       "author": "Idan3011",
       "state": "CLOSED",
       "created": "2026-03-27T18:35:45Z",
-      "updated": "2026-03-27T19:58:33Z",
-      "bpb": 1.1855,
-      "seeds": 3,
+      "updated": "2026-03-31T01:16:02Z",
+      "bpb": 0.2722,
+      "seeds": null,
       "artifact_bytes": 14942971,
-      "technique_summary": "Muon + GPTQ + INT6 + INT8 + EMA + N-gram + Two-pass",
+      "technique_summary": "TTT + EMA + N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-03-27_Normalized_Ngram_Bayesian_FirstMatch_0.3922/README.md",
         "records/track_10min_16mb/2026-03-27_Normalized_Ngram_Bayesian_FirstMatch_0.3922/submission.json",
@@ -6293,19 +6617,18 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
+        "ttt",
         "ngram",
-        "two_pass",
-        "gptq_eval",
         "cache_eval",
         "ngram_path"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "DEAD",
       "flags": [
         "closed-no-maintainer-comment"
       ],
-      "confidence": "LOW",
-      "track": "record",
-      "technique_type": "cache"
+      "confidence": "LOW"
     },
     {
       "number": 971,
@@ -6379,8 +6702,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -6522,7 +6844,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-only-2",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -6557,8 +6878,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -6584,10 +6904,8 @@
         "gptq_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -6738,8 +7056,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -6806,10 +7123,8 @@
         "cache_eval",
         "cache_path"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "hybrid"
@@ -6894,8 +7209,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -7044,8 +7358,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -7346,10 +7659,8 @@
       "compliance_keywords": [
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -7496,8 +7807,7 @@
       "technique_type": "cache",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -7550,8 +7860,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -7581,8 +7890,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -7749,8 +8057,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -7778,8 +8085,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -7810,10 +8116,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -7842,8 +8146,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -7957,7 +8260,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -8067,7 +8369,6 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -8269,10 +8570,8 @@
         "ttt",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -8426,8 +8725,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -8512,7 +8810,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -8614,8 +8911,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -8643,8 +8939,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -8680,7 +8975,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -8709,8 +9003,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -8738,7 +9031,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -8834,10 +9126,8 @@
       "compliance_keywords": [
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -8881,8 +9171,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -8929,7 +9218,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -9230,7 +9518,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-26T19:03:36Z",
-      "updated": "2026-03-30T14:26:43Z",
+      "updated": "2026-03-31T03:03:08Z",
       "bpb": 1.2711,
       "seeds": null,
       "artifact_bytes": 48000000,
@@ -9319,10 +9607,8 @@
         "gptq_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -9492,8 +9778,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -9590,8 +9875,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "artifact-unknown"
+        "no-bpb"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -9675,8 +9959,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -9704,10 +9987,8 @@
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -10143,10 +10424,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -10325,10 +10604,8 @@
       "compliance_keywords": [
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -10412,8 +10689,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -10516,8 +10792,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -10623,10 +10898,8 @@
         "gptq_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -10764,8 +11037,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -10831,8 +11103,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -10862,8 +11133,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -10932,10 +11202,8 @@
         "gptq_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -11001,8 +11269,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -11012,9 +11279,9 @@
       "number": 834,
       "title": "Record: 0.1663 BPB - N-gram-Aware Training + Frozen N-gram Oracle + Backoff TTT",
       "author": "AnirudhRahul",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-26T08:14:43Z",
-      "updated": "2026-03-26T08:35:31Z",
+      "updated": "2026-03-31T00:26:19Z",
       "bpb": 0.1663,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -11035,14 +11302,13 @@
         "prefill",
         "cache_eval"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "keyword:ngram",
-        "path:backoff-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
-      "technique_type": "hybrid"
+      "technique_type": "hybrid",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 832,
@@ -11070,8 +11336,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -11342,8 +11607,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -11374,8 +11638,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -11403,8 +11666,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -11667,8 +11929,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -11707,11 +11968,11 @@
     },
     {
       "number": 810,
-      "title": " Record: Phrase Cache + N-gram Backoff + EMA-GPU (val_bpb=0.2722)",
+      "title": " [Closed] Phrase Cache + N-gram Backoff + EMA-GPU (val_bpb=0.2722)",
       "author": "Idan3011",
       "state": "CLOSED",
       "created": "2026-03-26T04:39:04Z",
-      "updated": "2026-03-28T00:49:01Z",
+      "updated": "2026-03-31T01:21:14Z",
       "bpb": 0.2722,
       "seeds": 3,
       "artifact_bytes": 14942971,
@@ -11731,13 +11992,13 @@
         "gptq_eval",
         "cache_eval"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "DEAD",
       "flags": [
         "closed-no-maintainer-comment"
       ],
-      "confidence": "LOW",
-      "track": "record",
-      "technique_type": "hybrid"
+      "confidence": "LOW"
     },
     {
       "number": 809,
@@ -11846,10 +12107,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -11915,8 +12174,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -11948,8 +12206,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -12056,8 +12313,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -12480,10 +12736,8 @@
         "ttt",
         "gptq_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -12678,8 +12932,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -12710,8 +12963,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -12992,8 +13244,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -13056,8 +13307,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -13296,10 +13546,8 @@
       ],
       "track": "non-record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -13356,8 +13604,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -13595,8 +13842,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -13628,10 +13874,8 @@
         "cache_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "hybrid"
@@ -13727,10 +13971,8 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -13847,8 +14089,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -13904,8 +14145,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -13964,8 +14204,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -14241,8 +14480,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -14311,10 +14549,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -14342,8 +14578,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -14502,7 +14737,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -14608,10 +14842,8 @@
         "cache_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "hybrid"
@@ -15003,10 +15235,8 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -15090,8 +15320,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -15151,7 +15380,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -15250,10 +15478,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -15283,8 +15509,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -15418,10 +15643,8 @@
         "gptq_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -15485,8 +15708,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -15548,8 +15770,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -15579,8 +15800,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -15647,8 +15867,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -15994,7 +16213,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -16022,8 +16240,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -16052,8 +16269,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -16085,8 +16301,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -16153,10 +16368,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -16215,8 +16428,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -16282,8 +16494,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -16295,7 +16506,7 @@
       "author": "andrewbaggio1",
       "state": "OPEN",
       "created": "2026-03-25T03:22:29Z",
-      "updated": "2026-03-25T03:22:29Z",
+      "updated": "2026-03-31T02:51:42Z",
       "bpb": 1.0781,
       "seeds": 3,
       "artifact_bytes": 15620000,
@@ -16313,13 +16524,11 @@
         "ttt",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
-      "technique_type": "ttt"
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 671,
@@ -16340,10 +16549,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -16396,10 +16603,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -16429,8 +16634,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -16459,8 +16663,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -16498,8 +16701,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -16526,10 +16728,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -16555,8 +16755,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -16641,8 +16840,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -16701,10 +16899,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -16920,8 +17116,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -17045,7 +17240,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -17171,10 +17365,8 @@
       "compliance_keywords": [
         "gptq_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -17204,8 +17396,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -17233,8 +17424,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -17438,10 +17628,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -17468,8 +17656,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -17534,10 +17721,8 @@
         "gptq_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -17568,10 +17753,8 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -17594,7 +17777,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -17628,8 +17810,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -17738,8 +17919,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -17910,7 +18090,6 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -18212,8 +18391,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -18281,8 +18459,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -18317,10 +18494,8 @@
         "cache_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "cache"
@@ -18368,8 +18543,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -18467,8 +18641,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -18525,10 +18698,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -18556,8 +18727,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -18586,8 +18756,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -18648,8 +18817,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -18684,8 +18852,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -18813,8 +18980,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -18946,8 +19112,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -18974,7 +19139,6 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -19007,10 +19171,8 @@
         "ttt",
         "gptq_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -19106,8 +19268,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -19223,8 +19384,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -19258,8 +19418,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -19333,10 +19492,8 @@
         "ttt",
         "gptq_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -19409,10 +19566,8 @@
         "ttt",
         "gptq_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -19561,10 +19716,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -19593,8 +19746,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -19721,8 +19873,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -19803,10 +19954,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -19876,8 +20025,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -20024,10 +20172,8 @@
         "ttt",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -20055,8 +20201,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -20145,8 +20290,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -20206,8 +20350,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -20366,8 +20509,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -20498,8 +20640,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -20529,8 +20670,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -20586,8 +20726,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -20614,8 +20753,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -20674,10 +20812,8 @@
         "ttt",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -20704,8 +20840,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -21110,8 +21245,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -21144,10 +21278,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -21203,8 +21335,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -21409,10 +21540,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -21442,8 +21571,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -21695,8 +21823,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -21723,8 +21850,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -21784,8 +21910,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -21843,8 +21968,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -21871,8 +21995,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -22075,8 +22198,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -22132,10 +22254,8 @@
       "compliance_keywords": [
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -22164,8 +22284,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -22304,7 +22423,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -22332,8 +22450,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -22397,8 +22514,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -22546,8 +22662,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -22604,10 +22719,8 @@
       "compliance_keywords": [
         "gptq_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -22660,8 +22773,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -22695,7 +22807,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -22723,8 +22834,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -22844,8 +22954,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -22903,8 +23012,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -22931,10 +23039,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -22991,10 +23097,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -23106,8 +23210,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -23223,8 +23326,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "artifact-unknown"
+        "no-bpb"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -23254,8 +23356,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -23282,10 +23383,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -23311,8 +23410,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -23352,8 +23450,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -23408,10 +23505,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -23468,8 +23563,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -23496,8 +23590,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -23524,8 +23617,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -23559,8 +23651,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -23627,8 +23718,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -23713,7 +23803,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -23773,8 +23862,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "artifact-unknown"
+        "no-bpb"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -23867,8 +23955,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -23895,8 +23982,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -23983,8 +24069,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -24021,8 +24106,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -24122,8 +24206,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -24179,8 +24262,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "artifact-unknown"
+        "no-bpb"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -24208,10 +24290,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -24294,8 +24374,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -24350,8 +24429,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -24378,10 +24456,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -24536,8 +24612,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -24631,8 +24706,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -24768,8 +24842,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -24826,10 +24899,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -24855,8 +24926,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -24916,8 +24986,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -25040,10 +25109,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -25071,13 +25138,14 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
+      "status": "AT_RISK",
       "flags": [
-        "artifact-unknown"
+        "suspiciously-low-bpb"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "track": "record",
-      "technique_type": "ttt"
+      "technique_type": "ttt",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
     },
     {
       "number": 398,
@@ -25102,10 +25170,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -25133,10 +25199,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -25218,8 +25282,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -25247,8 +25310,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -25434,8 +25496,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -25526,7 +25587,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -25552,10 +25612,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -25585,8 +25643,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -25612,8 +25669,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -25693,8 +25749,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -25904,13 +25959,14 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
+      "status": "AT_RISK",
       "flags": [
-        "artifact-unknown"
+        "suspiciously-low-bpb"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "track": "non-record",
-      "technique_type": "ttt"
+      "technique_type": "ttt",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
     },
     {
       "number": 374,
@@ -25935,8 +25991,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -26057,8 +26112,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -26115,8 +26169,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -26146,8 +26199,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -26175,8 +26227,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -26253,8 +26304,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -26346,7 +26396,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -26376,8 +26425,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -26432,7 +26480,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -26507,8 +26554,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -26538,8 +26584,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -26566,8 +26611,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -26594,8 +26638,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -26651,8 +26694,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -26755,10 +26797,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -26783,10 +26823,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -26820,8 +26858,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH"
     },
@@ -26876,8 +26913,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -26935,7 +26971,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -26970,8 +27005,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -26997,8 +27031,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -27027,8 +27060,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -27057,8 +27089,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -27107,10 +27138,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -27170,7 +27199,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -27224,8 +27252,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -27253,10 +27280,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -27285,8 +27310,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -27314,10 +27338,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -27376,8 +27398,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -27411,8 +27432,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -27473,8 +27493,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -27501,8 +27520,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -27567,8 +27585,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -27662,8 +27679,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -27688,10 +27704,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -27752,8 +27766,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -27778,10 +27791,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -27836,8 +27847,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -27864,8 +27874,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -27912,10 +27921,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -27940,7 +27947,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -27978,8 +27984,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -28008,8 +28013,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -28077,8 +28081,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -28102,10 +28105,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt"
@@ -28137,8 +28138,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -28198,8 +28198,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -28228,8 +28227,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -28258,8 +28256,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -28288,8 +28285,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -28320,8 +28316,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -28380,8 +28375,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "artifact-unknown"
+        "no-bpb"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -28412,8 +28406,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -28438,10 +28431,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -28506,8 +28497,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -28601,8 +28591,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -28631,8 +28620,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -28671,8 +28659,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -28727,10 +28714,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -28758,8 +28743,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -28786,8 +28770,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -28844,7 +28827,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -28957,8 +28939,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -28985,8 +28966,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -29051,10 +29031,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -29080,8 +29058,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -29157,7 +29134,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -29236,8 +29212,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -29295,8 +29270,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -29351,10 +29325,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -29384,8 +29356,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -29441,7 +29412,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -29527,8 +29497,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -29588,8 +29557,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -29671,10 +29639,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -29700,8 +29666,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -29758,8 +29723,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -29786,8 +29750,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -29814,8 +29777,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -29964,7 +29926,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -30076,8 +30037,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -30192,10 +30152,8 @@
         "cocohearts: please clean up ur diff"
       ],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -30221,7 +30179,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -30327,8 +30284,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -30385,8 +30341,7 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -30412,8 +30367,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -30527,8 +30481,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -30599,10 +30552,8 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -30629,8 +30580,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -30659,8 +30609,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -30688,8 +30637,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -30725,10 +30673,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -30800,8 +30746,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -30827,7 +30772,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -30857,10 +30801,8 @@
       "compliance_keywords": [
         "cache_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "cache"
@@ -30914,8 +30856,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -30982,7 +30923,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -31016,8 +30956,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -31108,10 +31047,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -31175,8 +31112,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -31203,8 +31139,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -31257,10 +31192,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -31286,8 +31219,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -31346,8 +31278,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -31376,8 +31307,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -31409,8 +31339,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -31436,7 +31365,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -31466,8 +31394,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-1",
-        "artifact-unknown"
+        "seeds-only-1"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -31494,8 +31421,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -31526,8 +31452,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -31557,8 +31482,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -31648,11 +31572,11 @@
     },
     {
       "number": 187,
-      "title": "Record: EMA-GPU + Multi-Order N-gram Backoff + PE Confidence (val_bpb=0.9393)",
+      "title": "[Closed] EMA + Multi-Order N-gram Backoff + PE Confidence (val_bpb=0.9393)",
       "author": "Idan3011",
       "state": "CLOSED",
       "created": "2026-03-20T07:23:51Z",
-      "updated": "2026-03-26T04:37:25Z",
+      "updated": "2026-03-31T01:20:41Z",
       "bpb": 0.9393,
       "seeds": null,
       "artifact_bytes": 14942971,
@@ -31672,13 +31596,13 @@
         "gptq_eval",
         "cache_eval"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "DEAD",
       "flags": [
         "closed-no-maintainer-comment"
       ],
-      "confidence": "LOW",
-      "track": "record",
-      "technique_type": "hybrid"
+      "confidence": "LOW"
     },
     {
       "number": 186,
@@ -31795,8 +31719,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -31898,8 +31821,7 @@
       "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -31963,8 +31885,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -32022,7 +31943,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -32050,8 +31970,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -32081,10 +32000,8 @@
         "gptq_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -32143,10 +32060,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -32172,8 +32087,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -32233,8 +32147,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -32259,10 +32172,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -32296,8 +32207,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -32331,8 +32241,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -32358,8 +32267,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -32417,8 +32325,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -32447,8 +32354,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -32506,8 +32412,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -32618,10 +32523,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -32651,8 +32554,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -32716,7 +32618,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -32823,8 +32724,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -32882,8 +32782,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -33036,8 +32935,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -33049,7 +32947,7 @@
       "author": "ankitmaloo",
       "state": "OPEN",
       "created": "2026-03-20T00:20:12Z",
-      "updated": "2026-03-25T18:43:35Z",
+      "updated": "2026-03-31T00:24:52Z",
       "bpb": 1.1925,
       "seeds": null,
       "artifact_bytes": null,
@@ -33108,15 +33006,15 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
         "artifact-unknown",
         "no-submission-json"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 141,
@@ -33137,10 +33035,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural"
@@ -33168,8 +33064,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -33196,8 +33091,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -33226,8 +33120,7 @@
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -33254,8 +33147,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -33423,8 +33315,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -33453,8 +33344,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -33481,8 +33371,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -33509,8 +33398,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -33567,10 +33455,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -33596,10 +33482,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -33718,8 +33602,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -33745,7 +33628,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -33800,7 +33682,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -33833,8 +33714,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -33914,8 +33794,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -33945,8 +33824,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -34072,8 +33950,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -34153,8 +34030,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -34181,8 +34057,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -34212,8 +34087,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -34266,8 +34140,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -34335,7 +34208,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -34363,8 +34235,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-1",
-        "artifact-unknown"
+        "seeds-only-1"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -34427,8 +34298,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -34456,8 +34326,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -34484,8 +34353,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -34559,7 +34427,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH",
@@ -34592,8 +34459,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -34620,8 +34486,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -34648,10 +34513,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -34732,8 +34595,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -34807,8 +34669,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -34837,8 +34698,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
@@ -34865,8 +34725,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -34944,10 +34803,8 @@
         "cocohearts: @unixmadtoonslab pls clean ur diff to only include sota submission"
       ],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural"
@@ -34975,8 +34832,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "artifact-unknown"
+        "no-bpb"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -35005,8 +34861,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "artifact-unknown"
+        "no-bpb"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -35139,8 +34994,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-1",
-        "artifact-unknown"
+        "seeds-only-1"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -35241,8 +35095,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH",
       "track": "record",
@@ -35307,10 +35160,8 @@
         "ttt",
         "gptq_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt"
@@ -35543,8 +35394,7 @@
       "compliance_keywords": [],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH",
       "track": "non-record",
