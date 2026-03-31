@@ -1,7 +1,105 @@
 {
-  "last_fetch": "2026-03-31T15:47:23.667292+00:00",
-  "api_calls_used": 54,
+  "last_fetch": "2026-03-31T17:01:48.245989+00:00",
+  "api_calls_used": 55,
   "prs": [
+    {
+      "number": 1185,
+      "title": "[10min_16mb] 0.9641 BPB: LeakyReLU² + Score-First TTT + N-gram Backoff Cache",
+      "author": "skoustav35",
+      "state": "OPEN",
+      "created": "2026-03-31T16:48:30Z",
+      "updated": "2026-03-31T16:48:30Z",
+      "bpb": 0.9641,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-31_LeakyReLU2_LegalTTT_NGramCache_XSA/.gitignore",
+        "records/track_10min_16mb/2026-03-31_LeakyReLU2_LegalTTT_NGramCache_XSA/README.md",
+        "records/track_10min_16mb/2026-03-31_LeakyReLU2_LegalTTT_NGramCache_XSA/requirements.txt",
+        "records/track_10min_16mb/2026-03-31_LeakyReLU2_LegalTTT_NGramCache_XSA/submission.json",
+        "records/track_10min_16mb/2026-03-31_LeakyReLU2_LegalTTT_NGramCache_XSA/train_gpt.py",
+        "records/track_10min_16mb/2026-03-31_LeakyReLU2_LegalTTT_NGramCache_XSA/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-31_LeakyReLU2_LegalTTT_NGramCache_XSA/train_seed2025.log",
+        "records/track_10min_16mb/2026-03-31_LeakyReLU2_LegalTTT_NGramCache_XSA/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval",
+        "leaky_relu",
+        "ngram_path",
+        "cache_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:ngram_path",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 1184,
+      "title": "Record: Scylla + Full GPTQ + XSA-all + FA3 — val_bpb 0.9485 (3-seed mean)",
+      "author": "icryo",
+      "state": "OPEN",
+      "created": "2026-03-31T16:01:28Z",
+      "updated": "2026-03-31T16:01:28Z",
+      "bpb": 0.9485,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/README.md",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/candidate.meta.npz",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/candidate.vocab",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/submission.json",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/train_gpt.py",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/train_seed2025.log",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1183,
+      "title": "  Non-record: Retrodiction Training (Petz Recovery Map) — val_bpb 1.508",
+      "author": "akaiHuang",
+      "state": "OPEN",
+      "created": "2026-03-31T15:58:32Z",
+      "updated": "2026-03-31T15:58:32Z",
+      "bpb": 1.508,
+      "seeds": null,
+      "artifact_bytes": 14800000,
+      "technique_summary": "INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-31_Retrodiction_PetzRecoveryMap_16L_M1Max/README.md",
+        "records/track_non_record_16mb/2026-03-31_Retrodiction_PetzRecoveryMap_16L_M1Max/submission.json",
+        "records/track_non_record_16mb/2026-03-31_Retrodiction_PetzRecoveryMap_16L_M1Max/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1182,
       "title": "[track_10min_16mb] XSA7 + BigramHash + ValueResidual + Legal TTT — val_bpb=1.1227",
@@ -156,7 +254,7 @@
       "author": "dexhunter",
       "state": "OPEN",
       "created": "2026-03-31T10:06:09Z",
-      "updated": "2026-03-31T10:06:09Z",
+      "updated": "2026-03-31T16:48:58Z",
       "bpb": 1.10979,
       "seeds": 3,
       "artifact_bytes": null,
@@ -1316,8 +1414,8 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-30T17:18:30Z",
-      "updated": "2026-03-31T02:30:23Z",
-      "bpb": 1.1874,
+      "updated": "2026-03-31T16:39:33Z",
+      "bpb": 1.18672385,
       "seeds": 3,
       "artifact_bytes": 8842981,
       "technique_summary": "INT6 + N-gram",
@@ -2000,7 +2098,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-30T04:57:49Z",
-      "updated": "2026-03-30T19:41:18Z",
+      "updated": "2026-03-31T16:19:45Z",
       "bpb": 1.1099,
       "seeds": 3,
       "artifact_bytes": 15554053,
