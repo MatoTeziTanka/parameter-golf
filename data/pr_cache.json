@@ -1,7 +1,66 @@
 {
-  "last_fetch": "2026-03-31T21:42:03.449379+00:00",
-  "api_calls_used": 59,
+  "last_fetch": "2026-03-31T22:37:50.753880+00:00",
+  "api_calls_used": 60,
   "prs": [
+    {
+      "number": 1203,
+      "title": "Add non-record recurrent 0011+g2 R768 submission",
+      "author": "raider99k",
+      "state": "OPEN",
+      "created": "2026-03-31T22:23:29Z",
+      "updated": "2026-03-31T22:23:29Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 12618732,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-31_Recurrent0011G2_SP1024_R768_1xH100_600s/README.md",
+        "records/track_non_record_16mb/2026-03-31_Recurrent0011G2_SP1024_R768_1xH100_600s/submission.json",
+        "records/track_non_record_16mb/2026-03-31_Recurrent0011G2_SP1024_R768_1xH100_600s/train.log",
+        "records/track_non_record_16mb/2026-03-31_Recurrent0011G2_SP1024_R768_1xH100_600s/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1202,
+      "title": "Record: Unified Attention + FA3 + Legal TTT (val_bpb=1.1412, 3-seed)",
+      "author": "VirajDeshwal",
+      "state": "OPEN",
+      "created": "2026-03-31T21:53:17Z",
+      "updated": "2026-03-31T22:29:44Z",
+      "bpb": 1.1412,
+      "seeds": 3,
+      "artifact_bytes": 15970000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "README.md",
+        "records/track_10min_16mb/2026-03-31_UnifiedAttention_FA3_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-03-31_UnifiedAttention_FA3_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-03-31_UnifiedAttention_FA3_LegalTTT/train.log",
+        "records/track_10min_16mb/2026-03-31_UnifiedAttention_FA3_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-03-31_UnifiedAttention_FA3_LegalTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-31_UnifiedAttention_FA3_LegalTTT/train_seed2025.log",
+        "records/track_10min_16mb/2026-03-31_UnifiedAttention_FA3_LegalTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1201,
       "title": "records: add 2026-03-27 TrigramHash run, harden quantization safety, and clean docs",
@@ -17474,7 +17533,7 @@
       "author": "andrewbaggio1",
       "state": "OPEN",
       "created": "2026-03-25T03:22:29Z",
-      "updated": "2026-03-31T18:10:29Z",
+      "updated": "2026-03-31T22:12:34Z",
       "bpb": 1.0781,
       "seeds": 3,
       "artifact_bytes": 15620000,
