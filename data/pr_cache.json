@@ -1,7 +1,38 @@
 {
-  "last_fetch": "2026-03-30T23:04:20.828751+00:00",
-  "api_calls_used": 44,
+  "last_fetch": "2026-03-31T00:00:14.992012+00:00",
+  "api_calls_used": 45,
   "prs": [
+    {
+      "number": 1156,
+      "title": "Record: EGGROLL v2 — val_bpb 1.1161 (3-seed mean, std 0.0001)",
+      "author": "haikosys",
+      "state": "OPEN",
+      "created": "2026-03-30T23:08:12Z",
+      "updated": "2026-03-30T23:08:12Z",
+      "bpb": 1.1161,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-30_EGGROLL_PostGPTQ_BinRefinement/submission.json",
+        "records/track_10min_16mb/2026-03-30_EGGROLL_PostGPTQ_BinRefinement/train_gpt.py",
+        "records/track_10min_16mb/2026-03-30_EGGROLL_PostGPTQ_BinRefinement/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-30_EGGROLL_PostGPTQ_BinRefinement/train_seed2024.log",
+        "records/track_10min_16mb/2026-03-30_EGGROLL_PostGPTQ_BinRefinement/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1155,
       "title": "Non-record: MLX smoke test on MacBook Air M3 — val_bpb 2.3029",
@@ -31566,7 +31597,7 @@
       "author": "shuofengzhang",
       "state": "OPEN",
       "created": "2026-03-20T07:36:51Z",
-      "updated": "2026-03-24T19:22:31Z",
+      "updated": "2026-03-30T23:43:41Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -31579,6 +31610,8 @@
       "compliance_keywords": [
         "ttt"
       ],
+      "track": "record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
@@ -31586,9 +31619,7 @@
         "artifact-unknown",
         "no-submission-json"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 188,

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-03-30T23:04:27Z",
+  "generated_at": "2026-03-31T00:00:20Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1104,
-    "matched_pr_count": 794,
+    "pr_count": 1105,
+    "matched_pr_count": 795,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -12,7 +12,7 @@
       "ALIVE": 36,
       "AT_RISK": 106,
       "DEAD": 322,
-      "INCOMPLETE": 640,
+      "INCOMPLETE": 641,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 387,
+      "count": 388,
       "author_count": 207,
       "alive_count": 7,
       "dead_count": 146,
       "at_risk_count": 51,
-      "incomplete_count": 183,
+      "incomplete_count": 184,
       "unknown_count": 0,
       "best_alive": {
         "number": 1019,
@@ -811,6 +811,41 @@
           ]
         },
         {
+          "author": "haikosys",
+          "pr_count": 4,
+          "best_bpb": 0.0638,
+          "prs": [
+            {
+              "number": 918,
+              "author": "haikosys",
+              "status": "AT_RISK",
+              "bpb": 0.1653,
+              "created": "2026-03-27T01:29:44Z"
+            },
+            {
+              "number": 933,
+              "author": "haikosys",
+              "status": "AT_RISK",
+              "bpb": 0.0804,
+              "created": "2026-03-27T04:51:24Z"
+            },
+            {
+              "number": 982,
+              "author": "haikosys",
+              "status": "DEAD",
+              "bpb": 0.0638,
+              "created": "2026-03-27T20:42:52Z"
+            },
+            {
+              "number": 1156,
+              "author": "haikosys",
+              "status": "INCOMPLETE",
+              "bpb": 1.1161,
+              "created": "2026-03-30T23:08:12Z"
+            }
+          ]
+        },
+        {
           "author": "bigbag",
           "pr_count": 4,
           "best_bpb": 0.1584,
@@ -1108,34 +1143,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1418,
               "created": "2026-03-24T06:32:12Z"
-            }
-          ]
-        },
-        {
-          "author": "haikosys",
-          "pr_count": 3,
-          "best_bpb": 0.0638,
-          "prs": [
-            {
-              "number": 918,
-              "author": "haikosys",
-              "status": "AT_RISK",
-              "bpb": 0.1653,
-              "created": "2026-03-27T01:29:44Z"
-            },
-            {
-              "number": 933,
-              "author": "haikosys",
-              "status": "AT_RISK",
-              "bpb": 0.0804,
-              "created": "2026-03-27T04:51:24Z"
-            },
-            {
-              "number": 982,
-              "author": "haikosys",
-              "status": "DEAD",
-              "bpb": 0.0638,
-              "created": "2026-03-27T20:42:52Z"
             }
           ]
         },
@@ -6901,6 +6908,13 @@
           "status": "AT_RISK",
           "bpb": 1.11512,
           "created": "2026-03-30T20:14:28Z"
+        },
+        {
+          "number": 1156,
+          "author": "haikosys",
+          "status": "INCOMPLETE",
+          "bpb": 1.1161,
+          "created": "2026-03-30T23:08:12Z"
         }
       ]
     },
@@ -18469,12 +18483,12 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 213,
+      "count": 214,
       "author_count": 103,
       "alive_count": 3,
       "dead_count": 82,
       "at_risk_count": 43,
-      "incomplete_count": 85,
+      "incomplete_count": 86,
       "unknown_count": 0,
       "best_alive": {
         "number": 1019,
@@ -19491,6 +19505,27 @@
           ]
         },
         {
+          "author": "haikosys",
+          "pr_count": 2,
+          "best_bpb": 0.0638,
+          "prs": [
+            {
+              "number": 982,
+              "author": "haikosys",
+              "status": "DEAD",
+              "bpb": 0.0638,
+              "created": "2026-03-27T20:42:52Z"
+            },
+            {
+              "number": 1156,
+              "author": "haikosys",
+              "status": "INCOMPLETE",
+              "bpb": 1.1161,
+              "created": "2026-03-30T23:08:12Z"
+            }
+          ]
+        },
+        {
           "author": "callithyia",
           "pr_count": 2,
           "best_bpb": 0.08808,
@@ -19809,20 +19844,6 @@
               "status": "INCOMPLETE",
               "bpb": 0.017,
               "created": "2026-03-23T01:48:57Z"
-            }
-          ]
-        },
-        {
-          "author": "haikosys",
-          "pr_count": 1,
-          "best_bpb": 0.0638,
-          "prs": [
-            {
-              "number": 982,
-              "author": "haikosys",
-              "status": "DEAD",
-              "bpb": 0.0638,
-              "created": "2026-03-27T20:42:52Z"
             }
           ]
         },
@@ -22186,6 +22207,13 @@
           "status": "AT_RISK",
           "bpb": 1.11512,
           "created": "2026-03-30T20:14:28Z"
+        },
+        {
+          "number": 1156,
+          "author": "haikosys",
+          "status": "INCOMPLETE",
+          "bpb": 1.1161,
+          "created": "2026-03-30T23:08:12Z"
         }
       ]
     },
@@ -42059,12 +42087,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 387,
+      "count": 388,
       "author_count": 207,
       "alive_count": 7,
       "dead_count": 146,
       "at_risk_count": 51,
-      "incomplete_count": 183,
+      "incomplete_count": 184,
       "unknown_count": 0,
       "best_alive": {
         "number": 1019,
@@ -42850,6 +42878,41 @@
           ]
         },
         {
+          "author": "haikosys",
+          "pr_count": 4,
+          "best_bpb": 0.0638,
+          "prs": [
+            {
+              "number": 918,
+              "author": "haikosys",
+              "status": "AT_RISK",
+              "bpb": 0.1653,
+              "created": "2026-03-27T01:29:44Z"
+            },
+            {
+              "number": 933,
+              "author": "haikosys",
+              "status": "AT_RISK",
+              "bpb": 0.0804,
+              "created": "2026-03-27T04:51:24Z"
+            },
+            {
+              "number": 982,
+              "author": "haikosys",
+              "status": "DEAD",
+              "bpb": 0.0638,
+              "created": "2026-03-27T20:42:52Z"
+            },
+            {
+              "number": 1156,
+              "author": "haikosys",
+              "status": "INCOMPLETE",
+              "bpb": 1.1161,
+              "created": "2026-03-30T23:08:12Z"
+            }
+          ]
+        },
+        {
           "author": "bigbag",
           "pr_count": 4,
           "best_bpb": 0.1584,
@@ -43147,34 +43210,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1418,
               "created": "2026-03-24T06:32:12Z"
-            }
-          ]
-        },
-        {
-          "author": "haikosys",
-          "pr_count": 3,
-          "best_bpb": 0.0638,
-          "prs": [
-            {
-              "number": 918,
-              "author": "haikosys",
-              "status": "AT_RISK",
-              "bpb": 0.1653,
-              "created": "2026-03-27T01:29:44Z"
-            },
-            {
-              "number": 933,
-              "author": "haikosys",
-              "status": "AT_RISK",
-              "bpb": 0.0804,
-              "created": "2026-03-27T04:51:24Z"
-            },
-            {
-              "number": 982,
-              "author": "haikosys",
-              "status": "DEAD",
-              "bpb": 0.0638,
-              "created": "2026-03-27T20:42:52Z"
             }
           ]
         },
@@ -48940,6 +48975,13 @@
           "status": "AT_RISK",
           "bpb": 1.11512,
           "created": "2026-03-30T20:14:28Z"
+        },
+        {
+          "number": 1156,
+          "author": "haikosys",
+          "status": "INCOMPLETE",
+          "bpb": 1.1161,
+          "created": "2026-03-30T23:08:12Z"
         }
       ]
     },
@@ -54447,12 +54489,12 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 213,
+      "count": 214,
       "author_count": 103,
       "alive_count": 3,
       "dead_count": 82,
       "at_risk_count": 43,
-      "incomplete_count": 85,
+      "incomplete_count": 86,
       "unknown_count": 0,
       "best_alive": {
         "number": 1019,
@@ -55469,6 +55511,27 @@
           ]
         },
         {
+          "author": "haikosys",
+          "pr_count": 2,
+          "best_bpb": 0.0638,
+          "prs": [
+            {
+              "number": 982,
+              "author": "haikosys",
+              "status": "DEAD",
+              "bpb": 0.0638,
+              "created": "2026-03-27T20:42:52Z"
+            },
+            {
+              "number": 1156,
+              "author": "haikosys",
+              "status": "INCOMPLETE",
+              "bpb": 1.1161,
+              "created": "2026-03-30T23:08:12Z"
+            }
+          ]
+        },
+        {
           "author": "callithyia",
           "pr_count": 2,
           "best_bpb": 0.08808,
@@ -55787,20 +55850,6 @@
               "status": "INCOMPLETE",
               "bpb": 0.017,
               "created": "2026-03-23T01:48:57Z"
-            }
-          ]
-        },
-        {
-          "author": "haikosys",
-          "pr_count": 1,
-          "best_bpb": 0.0638,
-          "prs": [
-            {
-              "number": 982,
-              "author": "haikosys",
-              "status": "DEAD",
-              "bpb": 0.0638,
-              "created": "2026-03-27T20:42:52Z"
             }
           ]
         },
@@ -58164,6 +58213,13 @@
           "status": "AT_RISK",
           "bpb": 1.11512,
           "created": "2026-03-30T20:14:28Z"
+        },
+        {
+          "number": 1156,
+          "author": "haikosys",
+          "status": "INCOMPLETE",
+          "bpb": 1.1161,
+          "created": "2026-03-30T23:08:12Z"
         }
       ]
     },
@@ -72048,11 +72104,11 @@
     {
       "left": "TTT",
       "right": "Progressive Depth",
-      "left_count": 387,
+      "left_count": 388,
       "right_count": 3,
       "left_people": 207,
       "right_people": 1,
-      "score": 1161
+      "score": 1164
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -72165,11 +72221,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 387,
+      "left_count": 388,
       "right_count": 2,
       "left_people": 207,
       "right_people": 2,
-      "score": 774
+      "score": 776
     },
     {
       "left": "XSA",
@@ -72228,11 +72284,11 @@
     {
       "left": "GPTQ",
       "right": "Progressive Depth",
-      "left_count": 213,
+      "left_count": 214,
       "right_count": 3,
       "left_people": 103,
       "right_people": 1,
-      "score": 639
+      "score": 642
     },
     {
       "left": "EMA",
@@ -72309,20 +72365,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 213,
+      "left_count": 214,
       "right_count": 2,
       "left_people": 103,
       "right_people": 2,
-      "score": 426
+      "score": 428
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 213,
+      "left_count": 214,
       "right_count": 2,
       "left_people": 103,
       "right_people": 2,
-      "score": 426
+      "score": 428
     },
     {
       "left": "BigramHash",
@@ -72336,11 +72392,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 387,
+      "left_count": 388,
       "right_count": 1,
       "left_people": 207,
       "right_people": 1,
-      "score": 387
+      "score": 388
     },
     {
       "left": "Parallel Muon",
@@ -72444,11 +72500,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 213,
+      "left_count": 214,
       "right_count": 1,
       "left_people": 103,
       "right_people": 1,
-      "score": 213
+      "score": 214
     },
     {
       "left": "MoE",
