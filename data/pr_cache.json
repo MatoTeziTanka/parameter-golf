@@ -1,14 +1,140 @@
 {
-  "last_fetch": "2026-04-01T11:30:30.890995+00:00",
-  "api_calls_used": 67,
+  "last_fetch": "2026-04-01T13:42:25.944137+00:00",
+  "api_calls_used": 68,
   "prs": [
+    {
+      "number": 1221,
+      "title": "Non-record: Oscillatory Recurrence at Layer 0 (1.1915 BPB, 3-seed)",
+      "author": "amabito",
+      "state": "OPEN",
+      "created": "2026-04-01T13:41:48Z",
+      "updated": "2026-04-01T13:41:48Z",
+      "bpb": 1.1915,
+      "seeds": 3,
+      "artifact_bytes": 15020000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-01_Oscillatory_Recurrence_Layer0/README.md",
+        "records/track_non_record_16mb/2026-04-01_Oscillatory_Recurrence_Layer0/submission.json",
+        "records/track_non_record_16mb/2026-04-01_Oscillatory_Recurrence_Layer0/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1220,
+      "title": "Trunghiu",
+      "author": "Hieuabssy",
+      "state": "OPEN",
+      "created": "2026-04-01T13:39:21Z",
+      "updated": "2026-04-01T13:39:21Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "log/README.md",
+        "log/submission.json",
+        "log/train_gpt.py",
+        "log/train_seed_1337.txt",
+        "log/train_seed_2026.txt",
+        "log/train_seed_42.txt",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1219,
+      "title": "Record: PR #1105 + window attn + mixed seq_len — 1.1084 bpb (3-seed mean) 1.1084 bpb",
+      "author": "Gusanidas",
+      "state": "OPEN",
+      "created": "2026-04-01T13:21:37Z",
+      "updated": "2026-04-01T13:21:37Z",
+      "bpb": 1.1084,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "GPTQ + N-gram",
+      "file_paths": [
+        "cutlass_evt_fusion/csrc/gemm_act_grad.cu",
+        "cutlass_evt_fusion/csrc/torch_binding.cpp",
+        "cutlass_evt_fusion/setup.py",
+        "fused_expert_ext/CMakeLists.txt",
+        "fused_expert_ext/fused_expert_blend.cpp",
+        "records/track_10min_16mb/2026-04-01_WindowAttn_MixedSeq/README.md",
+        "records/track_10min_16mb/2026-04-01_WindowAttn_MixedSeq/eval_fused.py",
+        "records/track_10min_16mb/2026-04-01_WindowAttn_MixedSeq/requirements.txt",
+        "records/track_10min_16mb/2026-04-01_WindowAttn_MixedSeq/seed1337.log",
+        "records/track_10min_16mb/2026-04-01_WindowAttn_MixedSeq/seed42.log",
+        "records/track_10min_16mb/2026-04-01_WindowAttn_MixedSeq/seed7.log",
+        "records/track_10min_16mb/2026-04-01_WindowAttn_MixedSeq/submission.json",
+        "records/track_10min_16mb/2026-04-01_WindowAttn_MixedSeq/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1218,
+      "title": "Record: 4096-Vocab + 4.0-MLP-mult + 0.085-WD + Simplifications — val_bpb 1.09785 (3-seed mean)",
+      "author": "clarkkev",
+      "state": "OPEN",
+      "created": "2026-04-01T11:54:49Z",
+      "updated": "2026-04-01T12:40:17Z",
+      "bpb": 1.10411,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_Vocab4096_MLPMult4_WD085/README.md",
+        "records/track_10min_16mb/2026-04-01_Vocab4096_MLPMult4_WD085/requirements.txt",
+        "records/track_10min_16mb/2026-04-01_Vocab4096_MLPMult4_WD085/submission.json",
+        "records/track_10min_16mb/2026-04-01_Vocab4096_MLPMult4_WD085/train_gpt.py",
+        "records/track_10min_16mb/2026-04-01_Vocab4096_MLPMult4_WD085/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-01_Vocab4096_MLPMult4_WD085/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-01_Vocab4096_MLPMult4_WD085/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1217,
       "title": "Record: MuonEq-R + Context-Only SLOT + QK_GAIN=5.0 — val_bpb 1.1027 (3-seed mean)",
       "author": "bigbag",
       "state": "OPEN",
       "created": "2026-04-01T10:37:01Z",
-      "updated": "2026-04-01T10:39:26Z",
+      "updated": "2026-04-01T12:24:13Z",
       "bpb": 1.1027,
       "seeds": 3,
       "artifact_bytes": 15800000,
@@ -511,7 +637,7 @@
       "author": "raider99k",
       "state": "OPEN",
       "created": "2026-03-31T22:23:29Z",
-      "updated": "2026-03-31T22:23:29Z",
+      "updated": "2026-04-01T12:04:12Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 12618732,
@@ -18013,7 +18139,7 @@
       "author": "Aristide021",
       "state": "OPEN",
       "created": "2026-03-25T03:47:16Z",
-      "updated": "2026-03-25T03:47:16Z",
+      "updated": "2026-04-01T12:49:23Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -18032,14 +18158,14 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 672,
