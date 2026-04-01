@@ -1,7 +1,36 @@
 {
-  "last_fetch": "2026-04-01T15:08:35.265302+00:00",
-  "api_calls_used": 69,
+  "last_fetch": "2026-04-01T16:31:58.307638+00:00",
+  "api_calls_used": 70,
   "prs": [
+    {
+      "number": 1222,
+      "title": "[Non-record] TTT-E2E: Meta-learned test-time training via FOMAML",
+      "author": "abaybektursun",
+      "state": "OPEN",
+      "created": "2026-04-01T15:13:14Z",
+      "updated": "2026-04-01T15:13:14Z",
+      "bpb": 0.076,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/README.md",
+        "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/train_ttt_e2e.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1221,
       "title": "Non-record: Oscillatory Recurrence at Layer 0 (1.1915 BPB, 3-seed)",
@@ -8220,7 +8249,7 @@
       "author": "anthony-maio",
       "state": "OPEN",
       "created": "2026-03-27T18:51:06Z",
-      "updated": "2026-03-29T23:16:01Z",
+      "updated": "2026-04-01T15:38:34Z",
       "bpb": 1.6542,
       "seeds": null,
       "artifact_bytes": 1207916,
@@ -9618,7 +9647,7 @@
       "author": "anthony-maio",
       "state": "OPEN",
       "created": "2026-03-27T04:33:35Z",
-      "updated": "2026-03-27T05:23:36Z",
+      "updated": "2026-04-01T15:34:56Z",
       "bpb": 1.158,
       "seeds": 1337,
       "artifact_bytes": null,
@@ -9632,13 +9661,13 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 931,
@@ -10564,7 +10593,7 @@
       "author": "anthony-maio",
       "state": "OPEN",
       "created": "2026-03-26T22:28:16Z",
-      "updated": "2026-03-26T22:30:54Z",
+      "updated": "2026-04-01T15:37:07Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 13700000,
@@ -10578,14 +10607,14 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 904,
@@ -10593,7 +10622,7 @@
       "author": "anthony-maio",
       "state": "OPEN",
       "created": "2026-03-26T22:28:14Z",
-      "updated": "2026-03-26T22:29:55Z",
+      "updated": "2026-04-01T15:36:04Z",
       "bpb": 1.2734,
       "seeds": null,
       "artifact_bytes": 15800000,
@@ -10607,13 +10636,13 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 903,
@@ -29295,35 +29324,29 @@
       "author": "andreanjos",
       "state": "OPEN",
       "created": "2026-03-21T07:04:44Z",
-      "updated": "2026-03-27T03:55:20Z",
+      "updated": "2026-04-01T15:34:07Z",
       "bpb": 1.1864,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "INT8",
       "file_paths": [
-        ".gitignore",
         "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/README.md",
         "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/submission.json",
         "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/train.log",
         "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/train_gpt.py",
         "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/train_seed1338.log",
-        "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/train_seed1339.log",
-        "records/track_10min_16mb/2026-03-27_MLP3x_LeakyReLU_QAT_Int6_SlideEval/README.md",
-        "records/track_10min_16mb/2026-03-27_MLP3x_LeakyReLU_QAT_Int6_SlideEval/submission.json",
-        "records/track_10min_16mb/2026-03-27_MLP3x_LeakyReLU_QAT_Int6_SlideEval/train.log",
-        "records/track_10min_16mb/2026-03-27_MLP3x_LeakyReLU_QAT_Int6_SlideEval/train_gpt.py",
-        "train_gpt.py"
+        "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/train_seed1339.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 320,
