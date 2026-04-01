@@ -1,7 +1,97 @@
 {
-  "last_fetch": "2026-04-01T05:27:57.311313+00:00",
-  "api_calls_used": 63,
+  "last_fetch": "2026-04-01T07:01:24.180306+00:00",
+  "api_calls_used": 64,
   "prs": [
+    {
+      "number": 1214,
+      "title": "Non-record: Emergent weight symmetry in QO projections + learnable SymMix",
+      "author": "gersh",
+      "state": "OPEN",
+      "created": "2026-04-01T06:30:36Z",
+      "updated": "2026-04-01T06:38:50Z",
+      "bpb": 0.0001,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/README.md",
+        "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/requirements.txt",
+        "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/submission.json",
+        "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/train_baseline_seed1337.log",
+        "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-01_Emergent_QO_Symmetry_SymMix/train_symmix_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1213,
+      "title": "work in prog: local tests ",
+      "author": "pireylow",
+      "state": "CLOSED",
+      "created": "2026-04-01T06:05:45Z",
+      "updated": "2026-04-01T06:06:40Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "train_gpt_mlx_novel.py",
+        "train_gpt_mlx_og.py",
+        "train_gpt_novel.py",
+        "train_gpt_og.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1212,
+      "title": "Record: Window Attention + Mixed Seq_Len Training, bpb 1.1108, eval at 6144 (5-seed mean)",
+      "author": "Gusanidas",
+      "state": "OPEN",
+      "created": "2026-04-01T05:42:13Z",
+      "updated": "2026-04-01T05:44:17Z",
+      "bpb": 1.1108,
+      "seeds": 5,
+      "artifact_bytes": 15730000,
+      "technique_summary": "LeakyReLU² + TTT + Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-31_KitchenSinkV3/README.md",
+        "records/track_10min_16mb/2026-03-31_KitchenSinkV3/run_v3_seed1337.log",
+        "records/track_10min_16mb/2026-03-31_KitchenSinkV3/run_v3_seed2.log",
+        "records/track_10min_16mb/2026-03-31_KitchenSinkV3/run_v3_seed22.log",
+        "records/track_10min_16mb/2026-03-31_KitchenSinkV3/run_v3_seed42.log",
+        "records/track_10min_16mb/2026-03-31_KitchenSinkV3/run_v3_seed7.log",
+        "records/track_10min_16mb/2026-03-31_KitchenSinkV3/submission.json",
+        "records/track_10min_16mb/2026-03-31_KitchenSinkV3/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1211,
       "title": "Merge Autoresearch/mar28",
@@ -4136,7 +4226,7 @@
       "author": "adityasasidhar",
       "state": "OPEN",
       "created": "2026-03-29T17:17:36Z",
-      "updated": "2026-03-29T17:17:36Z",
+      "updated": "2026-04-01T05:47:33Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
