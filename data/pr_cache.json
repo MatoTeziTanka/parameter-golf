@@ -1,7 +1,96 @@
 {
-  "last_fetch": "2026-04-01T22:04:34.169396+00:00",
-  "api_calls_used": 75,
+  "last_fetch": "2026-04-01T23:06:12.027845+00:00",
+  "api_calls_used": 76,
   "prs": [
+    {
+      "number": 1235,
+      "title": "Non-record: 21L PRP experiment",
+      "author": "maksblu",
+      "state": "OPEN",
+      "created": "2026-04-01T22:32:48Z",
+      "updated": "2026-04-01T22:32:48Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 17700000,
+      "technique_summary": "SwiGLU + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_21L_PRP/README.md",
+        "records/track_10min_16mb/2026-04-01_21L_PRP/prp.py",
+        "records/track_10min_16mb/2026-04-01_21L_PRP/submission.json",
+        "records/track_10min_16mb/2026-04-01_21L_PRP/train.log",
+        "records/track_10min_16mb/2026-04-01_21L_PRP/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1234,
+      "title": "Non-record: AR Self-Generated GPTQ Calibration (val_bpb=1.1461)",
+      "author": "ibarrajo",
+      "state": "OPEN",
+      "created": "2026-04-01T22:28:04Z",
+      "updated": "2026-04-01T22:28:04Z",
+      "bpb": 1.1461,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_ApproachG_SelfGenGPTQ/README.md",
+        "records/track_10min_16mb/2026-04-01_ApproachG_SelfGenGPTQ/run.sh",
+        "records/track_10min_16mb/2026-04-01_ApproachG_SelfGenGPTQ/submission.json",
+        "records/track_10min_16mb/2026-04-01_ApproachG_SelfGenGPTQ/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1233,
+      "title": "Non-record: Focal Loss (gamma=2.0) — val_bpb=1.1460",
+      "author": "ibarrajo",
+      "state": "OPEN",
+      "created": "2026-04-01T22:28:00Z",
+      "updated": "2026-04-01T22:28:00Z",
+      "bpb": 1.146,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_ApproachH_FocalLoss/README.md",
+        "records/track_10min_16mb/2026-04-01_ApproachH_FocalLoss/run.sh",
+        "records/track_10min_16mb/2026-04-01_ApproachH_FocalLoss/submission.json",
+        "records/track_10min_16mb/2026-04-01_ApproachH_FocalLoss/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1232,
       "title": "feat: Non-record 11L PR940 Stack (no n-gram in use) + 20k Steps + Legal TTT (1.0929 BPB)",
@@ -556,7 +645,7 @@
       "author": "clarkkev",
       "state": "OPEN",
       "created": "2026-04-01T11:54:49Z",
-      "updated": "2026-04-01T12:40:17Z",
+      "updated": "2026-04-01T22:52:45Z",
       "bpb": 1.10411,
       "seeds": 3,
       "artifact_bytes": 16000000,

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-01T22:04:42Z",
+  "generated_at": "2026-04-01T23:06:20Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1177,
-    "matched_pr_count": 845,
+    "pr_count": 1180,
+    "matched_pr_count": 848,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -12,7 +12,7 @@
       "ALIVE": 154,
       "AT_RISK": 122,
       "DEAD": 340,
-      "INCOMPLETE": 561,
+      "INCOMPLETE": 564,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 419,
+      "count": 421,
       "author_count": 217,
       "alive_count": 61,
       "dead_count": 155,
       "at_risk_count": 61,
-      "incomplete_count": 142,
+      "incomplete_count": 144,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -496,6 +496,69 @@
           ]
         },
         {
+          "author": "ibarrajo",
+          "pr_count": 8,
+          "best_bpb": 0.6678,
+          "prs": [
+            {
+              "number": 136,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.2101,
+              "created": "2026-03-19T22:23:29Z"
+            },
+            {
+              "number": 290,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1354,
+              "created": "2026-03-21T00:01:11Z"
+            },
+            {
+              "number": 806,
+              "author": "ibarrajo",
+              "status": "DEAD",
+              "bpb": 0.6678,
+              "created": "2026-03-26T03:47:28Z"
+            },
+            {
+              "number": 991,
+              "author": "ibarrajo",
+              "status": "DEAD",
+              "bpb": 1.1145,
+              "created": "2026-03-28T00:04:18Z"
+            },
+            {
+              "number": 1001,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1188,
+              "created": "2026-03-28T03:58:32Z"
+            },
+            {
+              "number": 1004,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1182,
+              "created": "2026-03-28T05:36:42Z"
+            },
+            {
+              "number": 1233,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.146,
+              "created": "2026-04-01T22:28:00Z"
+            },
+            {
+              "number": 1234,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1461,
+              "created": "2026-04-01T22:28:04Z"
+            }
+          ]
+        },
+        {
           "author": "andrewbaggio1",
           "pr_count": 7,
           "best_bpb": 0.045,
@@ -702,55 +765,6 @@
               "status": "AT_RISK",
               "bpb": 1.1027,
               "created": "2026-04-01T10:37:01Z"
-            }
-          ]
-        },
-        {
-          "author": "ibarrajo",
-          "pr_count": 6,
-          "best_bpb": 0.6678,
-          "prs": [
-            {
-              "number": 136,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.2101,
-              "created": "2026-03-19T22:23:29Z"
-            },
-            {
-              "number": 290,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.1354,
-              "created": "2026-03-21T00:01:11Z"
-            },
-            {
-              "number": 806,
-              "author": "ibarrajo",
-              "status": "DEAD",
-              "bpb": 0.6678,
-              "created": "2026-03-26T03:47:28Z"
-            },
-            {
-              "number": 991,
-              "author": "ibarrajo",
-              "status": "DEAD",
-              "bpb": 1.1145,
-              "created": "2026-03-28T00:04:18Z"
-            },
-            {
-              "number": 1001,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.1188,
-              "created": "2026-03-28T03:58:32Z"
-            },
-            {
-              "number": 1004,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.1182,
-              "created": "2026-03-28T05:36:42Z"
             }
           ]
         },
@@ -7419,6 +7433,20 @@
           "status": "INCOMPLETE",
           "bpb": 1.0929,
           "created": "2026-04-01T20:31:50Z"
+        },
+        {
+          "number": 1233,
+          "author": "ibarrajo",
+          "status": "INCOMPLETE",
+          "bpb": 1.146,
+          "created": "2026-04-01T22:28:00Z"
+        },
+        {
+          "number": 1234,
+          "author": "ibarrajo",
+          "status": "INCOMPLETE",
+          "bpb": 1.1461,
+          "created": "2026-04-01T22:28:04Z"
         }
       ]
     },
@@ -19659,12 +19687,12 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 236,
+      "count": 238,
       "author_count": 112,
       "alive_count": 43,
       "dead_count": 83,
       "at_risk_count": 50,
-      "incomplete_count": 60,
+      "incomplete_count": 62,
       "unknown_count": 0,
       "best_alive": {
         "number": 1229,
@@ -20366,6 +20394,48 @@
           ]
         },
         {
+          "author": "ibarrajo",
+          "pr_count": 5,
+          "best_bpb": 1.1145,
+          "prs": [
+            {
+              "number": 991,
+              "author": "ibarrajo",
+              "status": "DEAD",
+              "bpb": 1.1145,
+              "created": "2026-03-28T00:04:18Z"
+            },
+            {
+              "number": 1001,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1188,
+              "created": "2026-03-28T03:58:32Z"
+            },
+            {
+              "number": 1004,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1182,
+              "created": "2026-03-28T05:36:42Z"
+            },
+            {
+              "number": 1233,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.146,
+              "created": "2026-04-01T22:28:00Z"
+            },
+            {
+              "number": 1234,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1461,
+              "created": "2026-04-01T22:28:04Z"
+            }
+          ]
+        },
+        {
           "author": "hypery11",
           "pr_count": 4,
           "best_bpb": 0.8881,
@@ -20691,34 +20761,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1194,
               "created": "2026-03-30T07:21:10Z"
-            }
-          ]
-        },
-        {
-          "author": "ibarrajo",
-          "pr_count": 3,
-          "best_bpb": 1.1145,
-          "prs": [
-            {
-              "number": 991,
-              "author": "ibarrajo",
-              "status": "DEAD",
-              "bpb": 1.1145,
-              "created": "2026-03-28T00:04:18Z"
-            },
-            {
-              "number": 1001,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.1188,
-              "created": "2026-03-28T03:58:32Z"
-            },
-            {
-              "number": 1004,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.1182,
-              "created": "2026-03-28T05:36:42Z"
             }
           ]
         },
@@ -23761,6 +23803,20 @@
           "status": "INCOMPLETE",
           "bpb": 1.0929,
           "created": "2026-04-01T20:31:50Z"
+        },
+        {
+          "number": 1233,
+          "author": "ibarrajo",
+          "status": "INCOMPLETE",
+          "bpb": 1.146,
+          "created": "2026-04-01T22:28:00Z"
+        },
+        {
+          "number": 1234,
+          "author": "ibarrajo",
+          "status": "INCOMPLETE",
+          "bpb": 1.1461,
+          "created": "2026-04-01T22:28:04Z"
         }
       ]
     },
@@ -31560,12 +31616,12 @@
     {
       "name": "SwiGLU",
       "kind": "legal",
-      "count": 46,
-      "author_count": 39,
+      "count": 47,
+      "author_count": 40,
       "alive_count": 2,
       "dead_count": 18,
       "at_risk_count": 1,
-      "incomplete_count": 25,
+      "incomplete_count": 26,
       "unknown_count": 0,
       "best_alive": {
         "number": 215,
@@ -32011,6 +32067,20 @@
               "status": "DEAD",
               "bpb": null,
               "created": "2026-03-18T19:11:39Z"
+            }
+          ]
+        },
+        {
+          "author": "maksblu",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1235,
+              "author": "maksblu",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T22:32:48Z"
             }
           ]
         },
@@ -32491,6 +32561,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.1573,
           "created": "2026-03-29T18:12:07Z"
+        },
+        {
+          "number": 1235,
+          "author": "maksblu",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T22:32:48Z"
         }
       ]
     },
@@ -44872,12 +44949,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 419,
+      "count": 421,
       "author_count": 217,
       "alive_count": 61,
       "dead_count": 155,
       "at_risk_count": 61,
-      "incomplete_count": 142,
+      "incomplete_count": 144,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -45348,6 +45425,69 @@
           ]
         },
         {
+          "author": "ibarrajo",
+          "pr_count": 8,
+          "best_bpb": 0.6678,
+          "prs": [
+            {
+              "number": 136,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.2101,
+              "created": "2026-03-19T22:23:29Z"
+            },
+            {
+              "number": 290,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1354,
+              "created": "2026-03-21T00:01:11Z"
+            },
+            {
+              "number": 806,
+              "author": "ibarrajo",
+              "status": "DEAD",
+              "bpb": 0.6678,
+              "created": "2026-03-26T03:47:28Z"
+            },
+            {
+              "number": 991,
+              "author": "ibarrajo",
+              "status": "DEAD",
+              "bpb": 1.1145,
+              "created": "2026-03-28T00:04:18Z"
+            },
+            {
+              "number": 1001,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1188,
+              "created": "2026-03-28T03:58:32Z"
+            },
+            {
+              "number": 1004,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1182,
+              "created": "2026-03-28T05:36:42Z"
+            },
+            {
+              "number": 1233,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.146,
+              "created": "2026-04-01T22:28:00Z"
+            },
+            {
+              "number": 1234,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1461,
+              "created": "2026-04-01T22:28:04Z"
+            }
+          ]
+        },
+        {
           "author": "andrewbaggio1",
           "pr_count": 7,
           "best_bpb": 0.045,
@@ -45554,55 +45694,6 @@
               "status": "AT_RISK",
               "bpb": 1.1027,
               "created": "2026-04-01T10:37:01Z"
-            }
-          ]
-        },
-        {
-          "author": "ibarrajo",
-          "pr_count": 6,
-          "best_bpb": 0.6678,
-          "prs": [
-            {
-              "number": 136,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.2101,
-              "created": "2026-03-19T22:23:29Z"
-            },
-            {
-              "number": 290,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.1354,
-              "created": "2026-03-21T00:01:11Z"
-            },
-            {
-              "number": 806,
-              "author": "ibarrajo",
-              "status": "DEAD",
-              "bpb": 0.6678,
-              "created": "2026-03-26T03:47:28Z"
-            },
-            {
-              "number": 991,
-              "author": "ibarrajo",
-              "status": "DEAD",
-              "bpb": 1.1145,
-              "created": "2026-03-28T00:04:18Z"
-            },
-            {
-              "number": 1001,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.1188,
-              "created": "2026-03-28T03:58:32Z"
-            },
-            {
-              "number": 1004,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.1182,
-              "created": "2026-03-28T05:36:42Z"
             }
           ]
         },
@@ -52271,6 +52362,20 @@
           "status": "INCOMPLETE",
           "bpb": 1.0929,
           "created": "2026-04-01T20:31:50Z"
+        },
+        {
+          "number": 1233,
+          "author": "ibarrajo",
+          "status": "INCOMPLETE",
+          "bpb": 1.146,
+          "created": "2026-04-01T22:28:00Z"
+        },
+        {
+          "number": 1234,
+          "author": "ibarrajo",
+          "status": "INCOMPLETE",
+          "bpb": 1.1461,
+          "created": "2026-04-01T22:28:04Z"
         }
       ]
     },
@@ -58114,12 +58219,12 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 236,
+      "count": 238,
       "author_count": 112,
       "alive_count": 43,
       "dead_count": 83,
       "at_risk_count": 50,
-      "incomplete_count": 60,
+      "incomplete_count": 62,
       "unknown_count": 0,
       "best_alive": {
         "number": 1229,
@@ -58821,6 +58926,48 @@
           ]
         },
         {
+          "author": "ibarrajo",
+          "pr_count": 5,
+          "best_bpb": 1.1145,
+          "prs": [
+            {
+              "number": 991,
+              "author": "ibarrajo",
+              "status": "DEAD",
+              "bpb": 1.1145,
+              "created": "2026-03-28T00:04:18Z"
+            },
+            {
+              "number": 1001,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1188,
+              "created": "2026-03-28T03:58:32Z"
+            },
+            {
+              "number": 1004,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1182,
+              "created": "2026-03-28T05:36:42Z"
+            },
+            {
+              "number": 1233,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.146,
+              "created": "2026-04-01T22:28:00Z"
+            },
+            {
+              "number": 1234,
+              "author": "ibarrajo",
+              "status": "INCOMPLETE",
+              "bpb": 1.1461,
+              "created": "2026-04-01T22:28:04Z"
+            }
+          ]
+        },
+        {
           "author": "hypery11",
           "pr_count": 4,
           "best_bpb": 0.8881,
@@ -59146,34 +59293,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1194,
               "created": "2026-03-30T07:21:10Z"
-            }
-          ]
-        },
-        {
-          "author": "ibarrajo",
-          "pr_count": 3,
-          "best_bpb": 1.1145,
-          "prs": [
-            {
-              "number": 991,
-              "author": "ibarrajo",
-              "status": "DEAD",
-              "bpb": 1.1145,
-              "created": "2026-03-28T00:04:18Z"
-            },
-            {
-              "number": 1001,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.1188,
-              "created": "2026-03-28T03:58:32Z"
-            },
-            {
-              "number": 1004,
-              "author": "ibarrajo",
-              "status": "INCOMPLETE",
-              "bpb": 1.1182,
-              "created": "2026-03-28T05:36:42Z"
             }
           ]
         },
@@ -62216,6 +62335,20 @@
           "status": "INCOMPLETE",
           "bpb": 1.0929,
           "created": "2026-04-01T20:31:50Z"
+        },
+        {
+          "number": 1233,
+          "author": "ibarrajo",
+          "status": "INCOMPLETE",
+          "bpb": 1.146,
+          "created": "2026-04-01T22:28:00Z"
+        },
+        {
+          "number": 1234,
+          "author": "ibarrajo",
+          "status": "INCOMPLETE",
+          "bpb": 1.1461,
+          "created": "2026-04-01T22:28:04Z"
         }
       ]
     },
@@ -72894,12 +73027,12 @@
     {
       "name": "SwiGLU",
       "kind": "legal",
-      "count": 46,
-      "author_count": 39,
+      "count": 47,
+      "author_count": 40,
       "alive_count": 2,
       "dead_count": 18,
       "at_risk_count": 1,
-      "incomplete_count": 25,
+      "incomplete_count": 26,
       "unknown_count": 0,
       "best_alive": {
         "number": 215,
@@ -73345,6 +73478,20 @@
               "status": "DEAD",
               "bpb": null,
               "created": "2026-03-18T19:11:39Z"
+            }
+          ]
+        },
+        {
+          "author": "maksblu",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1235,
+              "author": "maksblu",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T22:32:48Z"
             }
           ]
         },
@@ -73825,6 +73972,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.1573,
           "created": "2026-03-29T18:12:07Z"
+        },
+        {
+          "number": 1235,
+          "author": "maksblu",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T22:32:48Z"
         }
       ]
     },
@@ -77090,6 +77244,15 @@
       "score": 915
     },
     {
+      "left": "SwiGLU",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 47,
+      "right_count": 19,
+      "left_people": 40,
+      "right_people": 13,
+      "score": 893
+    },
+    {
       "left": "BigramHash",
       "right": "JEPA",
       "left_count": 68,
@@ -77099,22 +77262,13 @@
       "score": 884
     },
     {
-      "left": "SwiGLU",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 46,
-      "right_count": 19,
-      "left_people": 39,
-      "right_people": 13,
-      "score": 874
-    },
-    {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 419,
+      "left_count": 421,
       "right_count": 2,
       "left_people": 217,
       "right_people": 2,
-      "score": 838
+      "score": 842
     },
     {
       "left": "XSA",
@@ -77137,11 +77291,11 @@
     {
       "left": "SwiGLU",
       "right": "Ternary Weights",
-      "left_count": 46,
+      "left_count": 47,
       "right_count": 15,
-      "left_people": 39,
+      "left_people": 40,
       "right_people": 12,
-      "score": 690
+      "score": 705
     },
     {
       "left": "Muon optimizer",
@@ -77171,6 +77325,15 @@
       "score": 648
     },
     {
+      "left": "SwiGLU",
+      "right": "JEPA",
+      "left_count": 47,
+      "right_count": 13,
+      "left_people": 40,
+      "right_people": 12,
+      "score": 611
+    },
+    {
       "left": "LeakyReLU\u00b2",
       "right": "Value Residual",
       "left_count": 87,
@@ -77187,15 +77350,6 @@
       "left_people": 82,
       "right_people": 4,
       "score": 606
-    },
-    {
-      "left": "SwiGLU",
-      "right": "JEPA",
-      "left_count": 46,
-      "right_count": 13,
-      "left_people": 39,
-      "right_people": 12,
-      "score": 598
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -77227,20 +77381,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 236,
+      "left_count": 238,
       "right_count": 2,
       "left_people": 112,
       "right_people": 2,
-      "score": 472
+      "score": 476
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 236,
+      "left_count": 238,
       "right_count": 2,
       "left_people": 112,
       "right_people": 2,
-      "score": 472
+      "score": 476
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -77263,11 +77417,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 419,
+      "left_count": 421,
       "right_count": 1,
       "left_people": 217,
       "right_people": 1,
-      "score": 419
+      "score": 421
     },
     {
       "left": "Parallel Muon",
@@ -77371,11 +77525,11 @@
     {
       "left": "SwiGLU",
       "right": "Weight Sharing",
-      "left_count": 46,
+      "left_count": 47,
       "right_count": 6,
-      "left_people": 39,
+      "left_people": 40,
       "right_people": 4,
-      "score": 276
+      "score": 282
     },
     {
       "left": "MoE",
@@ -77389,20 +77543,20 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 236,
+      "left_count": 238,
       "right_count": 1,
       "left_people": 112,
       "right_people": 1,
-      "score": 236
+      "score": 238
     },
     {
       "left": "SwiGLU",
       "right": "Progressive Depth",
-      "left_count": 46,
+      "left_count": 47,
       "right_count": 5,
-      "left_people": 39,
+      "left_people": 40,
       "right_people": 2,
-      "score": 230
+      "score": 235
     },
     {
       "left": "MoE",
@@ -77569,20 +77723,20 @@
     {
       "left": "SwiGLU",
       "right": "Differential Attention",
-      "left_count": 46,
+      "left_count": 47,
       "right_count": 2,
-      "left_people": 39,
+      "left_people": 40,
       "right_people": 2,
-      "score": 92
+      "score": 94
     },
     {
       "left": "SwiGLU",
       "right": "U-Net skips",
-      "left_count": 46,
+      "left_count": 47,
       "right_count": 2,
-      "left_people": 39,
+      "left_people": 40,
       "right_people": 2,
-      "score": 92
+      "score": 94
     },
     {
       "left": "JEPA",
@@ -77677,11 +77831,11 @@
     {
       "left": "SwiGLU",
       "right": "Flash Attention",
-      "left_count": 46,
+      "left_count": 47,
       "right_count": 1,
-      "left_people": 39,
+      "left_people": 40,
       "right_people": 1,
-      "score": 46
+      "score": 47
     },
     {
       "left": "Parallel Muon",
