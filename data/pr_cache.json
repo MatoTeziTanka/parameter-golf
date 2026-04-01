@@ -1,7 +1,143 @@
 {
-  "last_fetch": "2026-04-01T19:07:15.962659+00:00",
-  "api_calls_used": 72,
+  "last_fetch": "2026-04-01T20:07:53.098828+00:00",
+  "api_calls_used": 73,
   "prs": [
+    {
+      "number": 1229,
+      "title": "Record: Scored-Position SLOT + Per-Sample Delta + GPTQ (val_bpb: 0.9300)",
+      "author": "resouer",
+      "state": "OPEN",
+      "created": "2026-04-01T19:56:29Z",
+      "updated": "2026-04-01T19:56:29Z",
+      "bpb": 0.93,
+      "seeds": 3,
+      "artifact_bytes": 15600000,
+      "technique_summary": "GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_ScoredPos-SLOT-PerSample-GPTQ-QKGain_0.9300/README.md",
+        "records/track_10min_16mb/2026-04-01_ScoredPos-SLOT-PerSample-GPTQ-QKGain_0.9300/requirements.txt",
+        "records/track_10min_16mb/2026-04-01_ScoredPos-SLOT-PerSample-GPTQ-QKGain_0.9300/submission.json",
+        "records/track_10min_16mb/2026-04-01_ScoredPos-SLOT-PerSample-GPTQ-QKGain_0.9300/train_gpt.py",
+        "records/track_10min_16mb/2026-04-01_ScoredPos-SLOT-PerSample-GPTQ-QKGain_0.9300/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-01_ScoredPos-SLOT-PerSample-GPTQ-QKGain_0.9300/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-01_ScoredPos-SLOT-PerSample-GPTQ-QKGain_0.9300/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1228,
+      "title": "Non Record: Partially Random MLP",
+      "author": "meinlebenswerk",
+      "state": "OPEN",
+      "created": "2026-04-01T19:36:00Z",
+      "updated": "2026-04-01T19:36:00Z",
+      "bpb": 1.1527,
+      "seeds": 3,
+      "artifact_bytes": 15950000,
+      "technique_summary": "TTT + MoE + LoRA + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_random_mlp/README.md",
+        "records/track_10min_16mb/2026-04-01_random_mlp/baseline_no_moe_xsa4_ve3_12l_5r7l_seed1337.txt",
+        "records/track_10min_16mb/2026-04-01_random_mlp/baseline_no_moe_xsa4_ve3_12l_5r7l_seed2026.txt",
+        "records/track_10min_16mb/2026-04-01_random_mlp/baseline_no_moe_xsa4_ve3_12l_5r7l_seed999.txt",
+        "records/track_10min_16mb/2026-04-01_random_mlp/run.sh",
+        "records/track_10min_16mb/2026-04-01_random_mlp/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1227,
+      "title": "Non-record: 28 Experiments in 5 Days — What Works, What Fails, and Why Small-Scale Tests Lie",
+      "author": "himanshudongre",
+      "state": "OPEN",
+      "created": "2026-04-01T19:25:43Z",
+      "updated": "2026-04-01T19:25:43Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + SSM + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/README.md",
+        "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/exp_complementary_training.py",
+        "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/exp_fixed_share_logistic.py",
+        "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/exp_local_distill_qat.py",
+        "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/exp_qat_learned_centroids.py",
+        "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/results_distill_qat.json",
+        "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/results_vocab4096_mlp4x.json",
+        "records/track_non_record_16mb/2026-04-02_28_Experiments_5_Days_Scale_Deception/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1226,
+      "title": "Non-record: 4090 single-GPU ablations on ValCalib GPTQ + XSA stack (partial logs)",
+      "author": "Wolfie8935",
+      "state": "OPEN",
+      "created": "2026-04-01T19:08:04Z",
+      "updated": "2026-04-01T19:08:04Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "GPTQ",
+      "file_paths": [
+        "WINNING_RUNBOOK.md",
+        "commands/run_remaining_after_a2_4090.sh",
+        "commands/runpod_experiments.sh",
+        "commands/summarize_logs.py",
+        "records/track_10min_16mb/2026-03-20_10L_Int5MLP_MuonWD04_SWA50/README.md",
+        "records/track_10min_16mb/2026-03-20_10L_Int5MLP_MuonWD04_SWA50/eval/eval.sh",
+        "records/track_10min_16mb/2026-03-20_10L_Int5MLP_MuonWD04_SWA50/eval/smoke.sh",
+        "records/track_10min_16mb/2026-03-20_10L_Int5MLP_MuonWD04_SWA50/prepare.sh",
+        "records/track_10min_16mb/2026-03-20_10L_Int5MLP_MuonWD04_SWA50/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-01_Wolfie8935_4090_ValCalib_ablations/README.md",
+        "records/track_non_record_16mb/2026-04-01_Wolfie8935_4090_ValCalib_ablations/requirements.txt",
+        "records/track_non_record_16mb/2026-04-01_Wolfie8935_4090_ValCalib_ablations/submission.json",
+        "records/track_non_record_16mb/2026-04-01_Wolfie8935_4090_ValCalib_ablations/train_a1_calib192_seed314.log",
+        "records/track_non_record_16mb/2026-04-01_Wolfie8935_4090_ValCalib_ablations/train_a2_calib320_seed314.log",
+        "records/track_non_record_16mb/2026-04-01_Wolfie8935_4090_ValCalib_ablations/train_b1_block256_seed314.log",
+        "records/track_non_record_16mb/2026-04-01_Wolfie8935_4090_ValCalib_ablations/train_ctrl_seed314.log",
+        "records/track_non_record_16mb/2026-04-01_Wolfie8935_4090_ValCalib_ablations/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1225,
       "title": "Add entry for fireworksai26",
@@ -150,14 +286,15 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-01T15:13:14Z",
-      "updated": "2026-04-01T17:17:36Z",
-      "bpb": 0.022,
+      "updated": "2026-04-01T19:51:27Z",
+      "bpb": 0.073,
       "seeds": null,
-      "artifact_bytes": null,
+      "artifact_bytes": 5750000,
       "technique_summary": "TTT + GPTQ + INT6",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/README.md",
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/sweep_naive_ttt.py",
+        "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/sweep_v2.py",
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/train_ttt_e2e.py",
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/ttt_e2e_run.log"
       ],
@@ -171,7 +308,6 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -3982,7 +4118,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-04-01T18:08:20Z",
+      "updated": "2026-04-01T19:55:33Z",
       "bpb": 1.1052,
       "seeds": 3,
       "artifact_bytes": 302000000,
@@ -5160,7 +5296,7 @@
       "author": "manfromnowhere143",
       "state": "OPEN",
       "created": "2026-03-29T11:31:02Z",
-      "updated": "2026-03-29T11:31:02Z",
+      "updated": "2026-04-01T19:54:03Z",
       "bpb": 1.119,
       "seeds": null,
       "artifact_bytes": 15948863,
