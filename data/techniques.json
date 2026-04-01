@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-01T02:53:52Z",
+  "generated_at": "2026-04-01T05:28:02Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1151,
-    "matched_pr_count": 828,
+    "pr_count": 1156,
+    "matched_pr_count": 830,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 151,
-      "AT_RISK": 115,
-      "DEAD": 335,
-      "INCOMPLETE": 550,
+      "ALIVE": 150,
+      "AT_RISK": 117,
+      "DEAD": 336,
+      "INCOMPLETE": 553,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 407,
-      "author_count": 213,
+      "count": 409,
+      "author_count": 214,
       "alive_count": 59,
       "dead_count": 153,
-      "at_risk_count": 57,
-      "incomplete_count": 138,
+      "at_risk_count": 58,
+      "incomplete_count": 139,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -482,6 +482,62 @@
           ]
         },
         {
+          "author": "andrewbaggio1",
+          "pr_count": 7,
+          "best_bpb": 0.045,
+          "prs": [
+            {
+              "number": 509,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.1175,
+              "created": "2026-03-23T06:19:00Z"
+            },
+            {
+              "number": 661,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.1175,
+              "created": "2026-03-25T00:08:43Z"
+            },
+            {
+              "number": 672,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.0781,
+              "created": "2026-03-25T03:22:29Z"
+            },
+            {
+              "number": 685,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.0366,
+              "created": "2026-03-25T05:44:18Z"
+            },
+            {
+              "number": 741,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 0.985,
+              "created": "2026-03-25T16:35:12Z"
+            },
+            {
+              "number": 1186,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 0.045,
+              "created": "2026-03-31T18:15:05Z"
+            },
+            {
+              "number": 1209,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 1.1064,
+              "created": "2026-04-01T04:48:56Z"
+            }
+          ]
+        },
+        {
           "author": "sofiabod",
           "pr_count": 7,
           "best_bpb": 0.083,
@@ -534,55 +590,6 @@
               "status": "DEAD",
               "bpb": null,
               "created": "2026-03-29T13:33:02Z"
-            }
-          ]
-        },
-        {
-          "author": "andrewbaggio1",
-          "pr_count": 6,
-          "best_bpb": 0.045,
-          "prs": [
-            {
-              "number": 509,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.1175,
-              "created": "2026-03-23T06:19:00Z"
-            },
-            {
-              "number": 661,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.1175,
-              "created": "2026-03-25T00:08:43Z"
-            },
-            {
-              "number": 672,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.0781,
-              "created": "2026-03-25T03:22:29Z"
-            },
-            {
-              "number": 685,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.0366,
-              "created": "2026-03-25T05:44:18Z"
-            },
-            {
-              "number": 741,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 0.985,
-              "created": "2026-03-25T16:35:12Z"
-            },
-            {
-              "number": 1186,
-              "author": "andrewbaggio1",
-              "status": "AT_RISK",
-              "bpb": 0.045,
-              "created": "2026-03-31T18:15:05Z"
             }
           ]
         },
@@ -4164,6 +4171,20 @@
           ]
         },
         {
+          "author": "RAVINDRA8008",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1207,
+              "author": "RAVINDRA8008",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T04:06:18Z"
+            }
+          ]
+        },
+        {
           "author": "resouer",
           "pr_count": 1,
           "best_bpb": null,
@@ -7223,6 +7244,20 @@
           "status": "ALIVE",
           "bpb": 1.1063,
           "created": "2026-04-01T00:46:06Z"
+        },
+        {
+          "number": 1207,
+          "author": "RAVINDRA8008",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T04:06:18Z"
+        },
+        {
+          "number": 1209,
+          "author": "andrewbaggio1",
+          "status": "AT_RISK",
+          "bpb": 1.1064,
+          "created": "2026-04-01T04:48:56Z"
         }
       ]
     },
@@ -7231,9 +7266,9 @@
       "kind": "legal",
       "count": 334,
       "author_count": 226,
-      "alive_count": 61,
+      "alive_count": 60,
       "dead_count": 75,
-      "at_risk_count": 45,
+      "at_risk_count": 46,
       "incomplete_count": 153,
       "unknown_count": 0,
       "best_alive": {
@@ -7299,8 +7334,8 @@
             {
               "number": 1105,
               "author": "abaybektursun",
-              "status": "ALIVE",
-              "bpb": 1.1125,
+              "status": "AT_RISK",
+              "bpb": 1.1052,
               "created": "2026-03-30T00:03:19Z"
             }
           ]
@@ -13302,8 +13337,8 @@
         {
           "number": 1105,
           "author": "abaybektursun",
-          "status": "ALIVE",
-          "bpb": 1.1125,
+          "status": "AT_RISK",
+          "bpb": 1.1052,
           "created": "2026-03-30T00:03:19Z"
         },
         {
@@ -13507,12 +13542,12 @@
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 316,
-      "author_count": 180,
-      "alive_count": 58,
+      "count": 318,
+      "author_count": 181,
+      "alive_count": 57,
       "dead_count": 97,
-      "at_risk_count": 51,
-      "incomplete_count": 110,
+      "at_risk_count": 53,
+      "incomplete_count": 111,
       "unknown_count": 0,
       "best_alive": {
         "number": 807,
@@ -13780,8 +13815,8 @@
             {
               "number": 1105,
               "author": "abaybektursun",
-              "status": "ALIVE",
-              "bpb": 1.1125,
+              "status": "AT_RISK",
+              "bpb": 1.1052,
               "created": "2026-03-30T00:03:19Z"
             },
             {
@@ -14158,6 +14193,41 @@
           ]
         },
         {
+          "author": "andrewbaggio1",
+          "pr_count": 4,
+          "best_bpb": 1.0781,
+          "prs": [
+            {
+              "number": 509,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.1175,
+              "created": "2026-03-23T06:19:00Z"
+            },
+            {
+              "number": 661,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.1175,
+              "created": "2026-03-25T00:08:43Z"
+            },
+            {
+              "number": 672,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.0781,
+              "created": "2026-03-25T03:22:29Z"
+            },
+            {
+              "number": 1209,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 1.1064,
+              "created": "2026-04-01T04:48:56Z"
+            }
+          ]
+        },
+        {
           "author": "AnubhavBharadwaaj",
           "pr_count": 4,
           "best_bpb": 1.1154,
@@ -14420,34 +14490,6 @@
               "status": "AT_RISK",
               "bpb": 0.9757,
               "created": "2026-03-25T22:17:49Z"
-            }
-          ]
-        },
-        {
-          "author": "andrewbaggio1",
-          "pr_count": 3,
-          "best_bpb": 1.0781,
-          "prs": [
-            {
-              "number": 509,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.1175,
-              "created": "2026-03-23T06:19:00Z"
-            },
-            {
-              "number": 661,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.1175,
-              "created": "2026-03-25T00:08:43Z"
-            },
-            {
-              "number": 672,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.0781,
-              "created": "2026-03-25T03:22:29Z"
             }
           ]
         },
@@ -16853,6 +16895,20 @@
           ]
         },
         {
+          "author": "RAVINDRA8008",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1207,
+              "author": "RAVINDRA8008",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T04:06:18Z"
+            }
+          ]
+        },
+        {
           "author": "RohanMulay1",
           "pr_count": 1,
           "best_bpb": null,
@@ -19027,8 +19083,8 @@
         {
           "number": 1105,
           "author": "abaybektursun",
-          "status": "ALIVE",
-          "bpb": 1.1125,
+          "status": "AT_RISK",
+          "bpb": 1.1052,
           "created": "2026-03-30T00:03:19Z"
         },
         {
@@ -19205,18 +19261,32 @@
           "status": "ALIVE",
           "bpb": 1.1063,
           "created": "2026-04-01T00:46:06Z"
+        },
+        {
+          "number": 1207,
+          "author": "RAVINDRA8008",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T04:06:18Z"
+        },
+        {
+          "number": 1209,
+          "author": "andrewbaggio1",
+          "status": "AT_RISK",
+          "bpb": 1.1064,
+          "created": "2026-04-01T04:48:56Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 222,
-      "author_count": 105,
-      "alive_count": 41,
+      "count": 224,
+      "author_count": 107,
+      "alive_count": 40,
       "dead_count": 82,
-      "at_risk_count": 45,
-      "incomplete_count": 54,
+      "at_risk_count": 47,
+      "incomplete_count": 55,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -19521,7 +19591,7 @@
         {
           "author": "abaybektursun",
           "pr_count": 9,
-          "best_bpb": 1.1125,
+          "best_bpb": 1.1052,
           "prs": [
             {
               "number": 473,
@@ -19582,8 +19652,8 @@
             {
               "number": 1105,
               "author": "abaybektursun",
-              "status": "ALIVE",
-              "bpb": 1.1125,
+              "status": "AT_RISK",
+              "bpb": 1.1052,
               "created": "2026-03-30T00:03:19Z"
             }
           ]
@@ -20898,6 +20968,20 @@
           ]
         },
         {
+          "author": "andrewbaggio1",
+          "pr_count": 1,
+          "best_bpb": 1.1064,
+          "prs": [
+            {
+              "number": 1209,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 1.1064,
+              "created": "2026-04-01T04:48:56Z"
+            }
+          ]
+        },
+        {
           "author": "mikeapedia",
           "pr_count": 1,
           "best_bpb": 1.1091,
@@ -21482,6 +21566,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-26T12:11:29Z"
+            }
+          ]
+        },
+        {
+          "author": "RAVINDRA8008",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1207,
+              "author": "RAVINDRA8008",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T04:06:18Z"
             }
           ]
         },
@@ -22862,8 +22960,8 @@
         {
           "number": 1105,
           "author": "abaybektursun",
-          "status": "ALIVE",
-          "bpb": 1.1125,
+          "status": "AT_RISK",
+          "bpb": 1.1052,
           "created": "2026-03-30T00:03:19Z"
         },
         {
@@ -23068,6 +23166,20 @@
           "status": "ALIVE",
           "bpb": 1.2074,
           "created": "2026-04-01T02:51:17Z"
+        },
+        {
+          "number": 1207,
+          "author": "RAVINDRA8008",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T04:06:18Z"
+        },
+        {
+          "number": 1209,
+          "author": "andrewbaggio1",
+          "status": "AT_RISK",
+          "bpb": 1.1064,
+          "created": "2026-04-01T04:48:56Z"
         }
       ]
     },
@@ -33891,11 +34003,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 160,
+      "count": 162,
       "author_count": 73,
       "alive_count": 0,
       "dead_count": 68,
-      "at_risk_count": 92,
+      "at_risk_count": 94,
       "incomplete_count": 0,
       "unknown_count": 0,
       "best_alive": null,
@@ -34048,6 +34160,55 @@
           ]
         },
         {
+          "author": "abaybektursun",
+          "pr_count": 6,
+          "best_bpb": 0.001,
+          "prs": [
+            {
+              "number": 772,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 0.001,
+              "created": "2026-03-25T21:35:20Z"
+            },
+            {
+              "number": 886,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 1.2711,
+              "created": "2026-03-26T19:03:36Z"
+            },
+            {
+              "number": 1103,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 1.1147,
+              "created": "2026-03-29T23:30:35Z"
+            },
+            {
+              "number": 1105,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 1.1052,
+              "created": "2026-03-30T00:03:19Z"
+            },
+            {
+              "number": 1161,
+              "author": "abaybektursun",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-03-31T02:11:40Z"
+            },
+            {
+              "number": 1162,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": null,
+              "created": "2026-03-31T02:15:00Z"
+            }
+          ]
+        },
+        {
           "author": "AnirudhRahul",
           "pr_count": 6,
           "best_bpb": 0.0214,
@@ -34142,48 +34303,6 @@
               "status": "AT_RISK",
               "bpb": 1.3639,
               "created": "2026-03-31T03:32:38Z"
-            }
-          ]
-        },
-        {
-          "author": "abaybektursun",
-          "pr_count": 5,
-          "best_bpb": 0.001,
-          "prs": [
-            {
-              "number": 772,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": 0.001,
-              "created": "2026-03-25T21:35:20Z"
-            },
-            {
-              "number": 886,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": 1.2711,
-              "created": "2026-03-26T19:03:36Z"
-            },
-            {
-              "number": 1103,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": 1.1147,
-              "created": "2026-03-29T23:30:35Z"
-            },
-            {
-              "number": 1161,
-              "author": "abaybektursun",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-03-31T02:11:40Z"
-            },
-            {
-              "number": 1162,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": null,
-              "created": "2026-03-31T02:15:00Z"
             }
           ]
         },
@@ -34517,6 +34636,34 @@
           ]
         },
         {
+          "author": "andrewbaggio1",
+          "pr_count": 3,
+          "best_bpb": 0.045,
+          "prs": [
+            {
+              "number": 741,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 0.985,
+              "created": "2026-03-25T16:35:12Z"
+            },
+            {
+              "number": 1186,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 0.045,
+              "created": "2026-03-31T18:15:05Z"
+            },
+            {
+              "number": 1209,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 1.1064,
+              "created": "2026-04-01T04:48:56Z"
+            }
+          ]
+        },
+        {
           "author": "haikosys",
           "pr_count": 3,
           "best_bpb": 0.0638,
@@ -34723,27 +34870,6 @@
               "status": "DEAD",
               "bpb": 0.02742,
               "created": "2026-03-27T09:04:20Z"
-            }
-          ]
-        },
-        {
-          "author": "andrewbaggio1",
-          "pr_count": 2,
-          "best_bpb": 0.045,
-          "prs": [
-            {
-              "number": 741,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 0.985,
-              "created": "2026-03-25T16:35:12Z"
-            },
-            {
-              "number": 1186,
-              "author": "andrewbaggio1",
-              "status": "AT_RISK",
-              "bpb": 0.045,
-              "created": "2026-03-31T18:15:05Z"
             }
           ]
         },
@@ -36500,6 +36626,13 @@
           "created": "2026-03-29T23:30:35Z"
         },
         {
+          "number": 1105,
+          "author": "abaybektursun",
+          "status": "AT_RISK",
+          "bpb": 1.1052,
+          "created": "2026-03-30T00:03:19Z"
+        },
+        {
           "number": 1110,
           "author": "gowtham0992",
           "status": "AT_RISK",
@@ -36652,6 +36785,13 @@
           "status": "AT_RISK",
           "bpb": 1.1431,
           "created": "2026-04-01T01:18:36Z"
+        },
+        {
+          "number": 1209,
+          "author": "andrewbaggio1",
+          "status": "AT_RISK",
+          "bpb": 1.1064,
+          "created": "2026-04-01T04:48:56Z"
         }
       ]
     },
@@ -37427,9 +37567,9 @@
       "kind": "legal",
       "count": 334,
       "author_count": 226,
-      "alive_count": 61,
+      "alive_count": 60,
       "dead_count": 75,
-      "at_risk_count": 45,
+      "at_risk_count": 46,
       "incomplete_count": 153,
       "unknown_count": 0,
       "best_alive": {
@@ -37495,8 +37635,8 @@
             {
               "number": 1105,
               "author": "abaybektursun",
-              "status": "ALIVE",
-              "bpb": 1.1125,
+              "status": "AT_RISK",
+              "bpb": 1.1052,
               "created": "2026-03-30T00:03:19Z"
             }
           ]
@@ -43498,8 +43638,8 @@
         {
           "number": 1105,
           "author": "abaybektursun",
-          "status": "ALIVE",
-          "bpb": 1.1125,
+          "status": "AT_RISK",
+          "bpb": 1.1052,
           "created": "2026-03-30T00:03:19Z"
         },
         {
@@ -43703,12 +43843,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 407,
-      "author_count": 213,
+      "count": 409,
+      "author_count": 214,
       "alive_count": 59,
       "dead_count": 153,
-      "at_risk_count": 57,
-      "incomplete_count": 138,
+      "at_risk_count": 58,
+      "incomplete_count": 139,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -44165,6 +44305,62 @@
           ]
         },
         {
+          "author": "andrewbaggio1",
+          "pr_count": 7,
+          "best_bpb": 0.045,
+          "prs": [
+            {
+              "number": 509,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.1175,
+              "created": "2026-03-23T06:19:00Z"
+            },
+            {
+              "number": 661,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.1175,
+              "created": "2026-03-25T00:08:43Z"
+            },
+            {
+              "number": 672,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.0781,
+              "created": "2026-03-25T03:22:29Z"
+            },
+            {
+              "number": 685,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.0366,
+              "created": "2026-03-25T05:44:18Z"
+            },
+            {
+              "number": 741,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 0.985,
+              "created": "2026-03-25T16:35:12Z"
+            },
+            {
+              "number": 1186,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 0.045,
+              "created": "2026-03-31T18:15:05Z"
+            },
+            {
+              "number": 1209,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 1.1064,
+              "created": "2026-04-01T04:48:56Z"
+            }
+          ]
+        },
+        {
           "author": "sofiabod",
           "pr_count": 7,
           "best_bpb": 0.083,
@@ -44217,55 +44413,6 @@
               "status": "DEAD",
               "bpb": null,
               "created": "2026-03-29T13:33:02Z"
-            }
-          ]
-        },
-        {
-          "author": "andrewbaggio1",
-          "pr_count": 6,
-          "best_bpb": 0.045,
-          "prs": [
-            {
-              "number": 509,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.1175,
-              "created": "2026-03-23T06:19:00Z"
-            },
-            {
-              "number": 661,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.1175,
-              "created": "2026-03-25T00:08:43Z"
-            },
-            {
-              "number": 672,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.0781,
-              "created": "2026-03-25T03:22:29Z"
-            },
-            {
-              "number": 685,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.0366,
-              "created": "2026-03-25T05:44:18Z"
-            },
-            {
-              "number": 741,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 0.985,
-              "created": "2026-03-25T16:35:12Z"
-            },
-            {
-              "number": 1186,
-              "author": "andrewbaggio1",
-              "status": "AT_RISK",
-              "bpb": 0.045,
-              "created": "2026-03-31T18:15:05Z"
             }
           ]
         },
@@ -47847,6 +47994,20 @@
           ]
         },
         {
+          "author": "RAVINDRA8008",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1207,
+              "author": "RAVINDRA8008",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T04:06:18Z"
+            }
+          ]
+        },
+        {
           "author": "resouer",
           "pr_count": 1,
           "best_bpb": null,
@@ -50906,18 +51067,32 @@
           "status": "ALIVE",
           "bpb": 1.1063,
           "created": "2026-04-01T00:46:06Z"
+        },
+        {
+          "number": 1207,
+          "author": "RAVINDRA8008",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T04:06:18Z"
+        },
+        {
+          "number": 1209,
+          "author": "andrewbaggio1",
+          "status": "AT_RISK",
+          "bpb": 1.1064,
+          "created": "2026-04-01T04:48:56Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 316,
-      "author_count": 180,
-      "alive_count": 58,
+      "count": 318,
+      "author_count": 181,
+      "alive_count": 57,
       "dead_count": 97,
-      "at_risk_count": 51,
-      "incomplete_count": 110,
+      "at_risk_count": 53,
+      "incomplete_count": 111,
       "unknown_count": 0,
       "best_alive": {
         "number": 807,
@@ -51185,8 +51360,8 @@
             {
               "number": 1105,
               "author": "abaybektursun",
-              "status": "ALIVE",
-              "bpb": 1.1125,
+              "status": "AT_RISK",
+              "bpb": 1.1052,
               "created": "2026-03-30T00:03:19Z"
             },
             {
@@ -51563,6 +51738,41 @@
           ]
         },
         {
+          "author": "andrewbaggio1",
+          "pr_count": 4,
+          "best_bpb": 1.0781,
+          "prs": [
+            {
+              "number": 509,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.1175,
+              "created": "2026-03-23T06:19:00Z"
+            },
+            {
+              "number": 661,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.1175,
+              "created": "2026-03-25T00:08:43Z"
+            },
+            {
+              "number": 672,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 1.0781,
+              "created": "2026-03-25T03:22:29Z"
+            },
+            {
+              "number": 1209,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 1.1064,
+              "created": "2026-04-01T04:48:56Z"
+            }
+          ]
+        },
+        {
           "author": "AnubhavBharadwaaj",
           "pr_count": 4,
           "best_bpb": 1.1154,
@@ -51825,34 +52035,6 @@
               "status": "AT_RISK",
               "bpb": 0.9757,
               "created": "2026-03-25T22:17:49Z"
-            }
-          ]
-        },
-        {
-          "author": "andrewbaggio1",
-          "pr_count": 3,
-          "best_bpb": 1.0781,
-          "prs": [
-            {
-              "number": 509,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.1175,
-              "created": "2026-03-23T06:19:00Z"
-            },
-            {
-              "number": 661,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.1175,
-              "created": "2026-03-25T00:08:43Z"
-            },
-            {
-              "number": 672,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 1.0781,
-              "created": "2026-03-25T03:22:29Z"
             }
           ]
         },
@@ -54258,6 +54440,20 @@
           ]
         },
         {
+          "author": "RAVINDRA8008",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1207,
+              "author": "RAVINDRA8008",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T04:06:18Z"
+            }
+          ]
+        },
+        {
           "author": "RohanMulay1",
           "pr_count": 1,
           "best_bpb": null,
@@ -56432,8 +56628,8 @@
         {
           "number": 1105,
           "author": "abaybektursun",
-          "status": "ALIVE",
-          "bpb": 1.1125,
+          "status": "AT_RISK",
+          "bpb": 1.1052,
           "created": "2026-03-30T00:03:19Z"
         },
         {
@@ -56610,18 +56806,32 @@
           "status": "ALIVE",
           "bpb": 1.1063,
           "created": "2026-04-01T00:46:06Z"
+        },
+        {
+          "number": 1207,
+          "author": "RAVINDRA8008",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T04:06:18Z"
+        },
+        {
+          "number": 1209,
+          "author": "andrewbaggio1",
+          "status": "AT_RISK",
+          "bpb": 1.1064,
+          "created": "2026-04-01T04:48:56Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 222,
-      "author_count": 105,
-      "alive_count": 41,
+      "count": 224,
+      "author_count": 107,
+      "alive_count": 40,
       "dead_count": 82,
-      "at_risk_count": 45,
-      "incomplete_count": 54,
+      "at_risk_count": 47,
+      "incomplete_count": 55,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -56926,7 +57136,7 @@
         {
           "author": "abaybektursun",
           "pr_count": 9,
-          "best_bpb": 1.1125,
+          "best_bpb": 1.1052,
           "prs": [
             {
               "number": 473,
@@ -56987,8 +57197,8 @@
             {
               "number": 1105,
               "author": "abaybektursun",
-              "status": "ALIVE",
-              "bpb": 1.1125,
+              "status": "AT_RISK",
+              "bpb": 1.1052,
               "created": "2026-03-30T00:03:19Z"
             }
           ]
@@ -58303,6 +58513,20 @@
           ]
         },
         {
+          "author": "andrewbaggio1",
+          "pr_count": 1,
+          "best_bpb": 1.1064,
+          "prs": [
+            {
+              "number": 1209,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 1.1064,
+              "created": "2026-04-01T04:48:56Z"
+            }
+          ]
+        },
+        {
           "author": "mikeapedia",
           "pr_count": 1,
           "best_bpb": 1.1091,
@@ -58887,6 +59111,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-26T12:11:29Z"
+            }
+          ]
+        },
+        {
+          "author": "RAVINDRA8008",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1207,
+              "author": "RAVINDRA8008",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T04:06:18Z"
             }
           ]
         },
@@ -60267,8 +60505,8 @@
         {
           "number": 1105,
           "author": "abaybektursun",
-          "status": "ALIVE",
-          "bpb": 1.1125,
+          "status": "AT_RISK",
+          "bpb": 1.1052,
           "created": "2026-03-30T00:03:19Z"
         },
         {
@@ -60473,6 +60711,20 @@
           "status": "ALIVE",
           "bpb": 1.2074,
           "created": "2026-04-01T02:51:17Z"
+        },
+        {
+          "number": 1207,
+          "author": "RAVINDRA8008",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T04:06:18Z"
+        },
+        {
+          "number": 1209,
+          "author": "andrewbaggio1",
+          "status": "AT_RISK",
+          "bpb": 1.1064,
+          "created": "2026-04-01T04:48:56Z"
         }
       ]
     },
@@ -62487,11 +62739,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 160,
+      "count": 162,
       "author_count": 73,
       "alive_count": 0,
       "dead_count": 68,
-      "at_risk_count": 92,
+      "at_risk_count": 94,
       "incomplete_count": 0,
       "unknown_count": 0,
       "best_alive": null,
@@ -62644,6 +62896,55 @@
           ]
         },
         {
+          "author": "abaybektursun",
+          "pr_count": 6,
+          "best_bpb": 0.001,
+          "prs": [
+            {
+              "number": 772,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 0.001,
+              "created": "2026-03-25T21:35:20Z"
+            },
+            {
+              "number": 886,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 1.2711,
+              "created": "2026-03-26T19:03:36Z"
+            },
+            {
+              "number": 1103,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 1.1147,
+              "created": "2026-03-29T23:30:35Z"
+            },
+            {
+              "number": 1105,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 1.1052,
+              "created": "2026-03-30T00:03:19Z"
+            },
+            {
+              "number": 1161,
+              "author": "abaybektursun",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-03-31T02:11:40Z"
+            },
+            {
+              "number": 1162,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": null,
+              "created": "2026-03-31T02:15:00Z"
+            }
+          ]
+        },
+        {
           "author": "AnirudhRahul",
           "pr_count": 6,
           "best_bpb": 0.0214,
@@ -62738,48 +63039,6 @@
               "status": "AT_RISK",
               "bpb": 1.3639,
               "created": "2026-03-31T03:32:38Z"
-            }
-          ]
-        },
-        {
-          "author": "abaybektursun",
-          "pr_count": 5,
-          "best_bpb": 0.001,
-          "prs": [
-            {
-              "number": 772,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": 0.001,
-              "created": "2026-03-25T21:35:20Z"
-            },
-            {
-              "number": 886,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": 1.2711,
-              "created": "2026-03-26T19:03:36Z"
-            },
-            {
-              "number": 1103,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": 1.1147,
-              "created": "2026-03-29T23:30:35Z"
-            },
-            {
-              "number": 1161,
-              "author": "abaybektursun",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-03-31T02:11:40Z"
-            },
-            {
-              "number": 1162,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": null,
-              "created": "2026-03-31T02:15:00Z"
             }
           ]
         },
@@ -63113,6 +63372,34 @@
           ]
         },
         {
+          "author": "andrewbaggio1",
+          "pr_count": 3,
+          "best_bpb": 0.045,
+          "prs": [
+            {
+              "number": 741,
+              "author": "andrewbaggio1",
+              "status": "DEAD",
+              "bpb": 0.985,
+              "created": "2026-03-25T16:35:12Z"
+            },
+            {
+              "number": 1186,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 0.045,
+              "created": "2026-03-31T18:15:05Z"
+            },
+            {
+              "number": 1209,
+              "author": "andrewbaggio1",
+              "status": "AT_RISK",
+              "bpb": 1.1064,
+              "created": "2026-04-01T04:48:56Z"
+            }
+          ]
+        },
+        {
           "author": "haikosys",
           "pr_count": 3,
           "best_bpb": 0.0638,
@@ -63319,27 +63606,6 @@
               "status": "DEAD",
               "bpb": 0.02742,
               "created": "2026-03-27T09:04:20Z"
-            }
-          ]
-        },
-        {
-          "author": "andrewbaggio1",
-          "pr_count": 2,
-          "best_bpb": 0.045,
-          "prs": [
-            {
-              "number": 741,
-              "author": "andrewbaggio1",
-              "status": "DEAD",
-              "bpb": 0.985,
-              "created": "2026-03-25T16:35:12Z"
-            },
-            {
-              "number": 1186,
-              "author": "andrewbaggio1",
-              "status": "AT_RISK",
-              "bpb": 0.045,
-              "created": "2026-03-31T18:15:05Z"
             }
           ]
         },
@@ -65096,6 +65362,13 @@
           "created": "2026-03-29T23:30:35Z"
         },
         {
+          "number": 1105,
+          "author": "abaybektursun",
+          "status": "AT_RISK",
+          "bpb": 1.1052,
+          "created": "2026-03-30T00:03:19Z"
+        },
+        {
           "number": 1110,
           "author": "gowtham0992",
           "status": "AT_RISK",
@@ -65248,6 +65521,13 @@
           "status": "AT_RISK",
           "bpb": 1.1431,
           "created": "2026-04-01T01:18:36Z"
+        },
+        {
+          "number": 1209,
+          "author": "andrewbaggio1",
+          "status": "AT_RISK",
+          "bpb": 1.1064,
+          "created": "2026-04-01T04:48:56Z"
         }
       ]
     },
@@ -74909,6 +75189,15 @@
       "score": 1275
     },
     {
+      "left": "TTT",
+      "right": "Progressive Depth",
+      "left_count": 409,
+      "right_count": 3,
+      "left_people": 214,
+      "right_people": 1,
+      "score": 1227
+    },
+    {
       "left": "BigramHash",
       "right": "SSM/Mamba/S4D",
       "left_count": 68,
@@ -74916,15 +75205,6 @@
       "left_people": 61,
       "right_people": 13,
       "score": 1224
-    },
-    {
-      "left": "TTT",
-      "right": "Progressive Depth",
-      "left_count": 407,
-      "right_count": 3,
-      "left_people": 213,
-      "right_people": 1,
-      "score": 1221
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -74983,11 +75263,11 @@
     {
       "left": "EMA",
       "right": "Progressive Depth",
-      "left_count": 316,
+      "left_count": 318,
       "right_count": 3,
-      "left_people": 180,
+      "left_people": 181,
       "right_people": 1,
-      "score": 948
+      "score": 954
     },
     {
       "left": "SWA",
@@ -75037,11 +75317,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 407,
+      "left_count": 409,
       "right_count": 2,
-      "left_people": 213,
+      "left_people": 214,
       "right_people": 2,
-      "score": 814
+      "score": 818
     },
     {
       "left": "XSA",
@@ -75071,6 +75351,15 @@
       "score": 690
     },
     {
+      "left": "GPTQ",
+      "right": "Progressive Depth",
+      "left_count": 224,
+      "right_count": 3,
+      "left_people": 107,
+      "right_people": 1,
+      "score": 672
+    },
+    {
       "left": "Muon optimizer",
       "right": "Differential Attention",
       "left_count": 334,
@@ -75080,31 +75369,22 @@
       "score": 668
     },
     {
-      "left": "GPTQ",
-      "right": "Progressive Depth",
-      "left_count": 222,
-      "right_count": 3,
-      "left_people": 105,
-      "right_people": 1,
-      "score": 666
-    },
-    {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 316,
+      "left_count": 318,
       "right_count": 2,
-      "left_people": 180,
+      "left_people": 181,
       "right_people": 2,
-      "score": 632
+      "score": 636
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 316,
+      "left_count": 318,
       "right_count": 2,
-      "left_people": 180,
+      "left_people": 181,
       "right_people": 2,
-      "score": 632
+      "score": 636
     },
     {
       "left": "QAT",
@@ -75154,20 +75434,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 222,
+      "left_count": 224,
       "right_count": 2,
-      "left_people": 105,
+      "left_people": 107,
       "right_people": 2,
-      "score": 444
+      "score": 448
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 222,
+      "left_count": 224,
       "right_count": 2,
-      "left_people": 105,
+      "left_people": 107,
       "right_people": 2,
-      "score": 444
+      "score": 448
     },
     {
       "left": "SWA",
@@ -75179,6 +75459,15 @@
       "score": 432
     },
     {
+      "left": "TTT",
+      "right": "Flash Attention",
+      "left_count": 409,
+      "right_count": 1,
+      "left_people": 214,
+      "right_people": 1,
+      "score": 409
+    },
+    {
       "left": "BigramHash",
       "right": "Weight Sharing",
       "left_count": 68,
@@ -75186,15 +75475,6 @@
       "left_people": 61,
       "right_people": 4,
       "score": 408
-    },
-    {
-      "left": "TTT",
-      "right": "Flash Attention",
-      "left_count": 407,
-      "right_count": 1,
-      "left_people": 213,
-      "right_people": 1,
-      "score": 407
     },
     {
       "left": "Parallel Muon",
@@ -75235,11 +75515,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 316,
+      "left_count": 318,
       "right_count": 1,
-      "left_people": 180,
+      "left_people": 181,
       "right_people": 1,
-      "score": 316
+      "score": 318
     },
     {
       "left": "QAT",
@@ -75298,11 +75578,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 222,
+      "left_count": 224,
       "right_count": 1,
-      "left_people": 105,
+      "left_people": 107,
       "right_people": 1,
-      "score": 222
+      "score": 224
     },
     {
       "left": "SWA",

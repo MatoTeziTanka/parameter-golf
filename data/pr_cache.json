@@ -1,7 +1,206 @@
 {
-  "last_fetch": "2026-04-01T02:53:43.902020+00:00",
-  "api_calls_used": 62,
+  "last_fetch": "2026-04-01T05:27:57.311313+00:00",
+  "api_calls_used": 63,
   "prs": [
+    {
+      "number": 1211,
+      "title": "Merge Autoresearch/mar28",
+      "author": "demouo",
+      "state": "CLOSED",
+      "created": "2026-04-01T05:05:22Z",
+      "updated": "2026-04-01T05:05:58Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "gpu_watcher.py",
+        "program.md",
+        "program_for_cowork.md",
+        "reset_idle.py",
+        "results.tsv",
+        "set_pending.py",
+        "train_gpt.py",
+        "train_gpt_mlx.py",
+        "wait_for_result.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1210,
+      "title": "Non-record: Custom tokenizer with web-content symbols + pre-tokenized dataset",
+      "author": "mikeapedia",
+      "state": "OPEN",
+      "created": "2026-04-01T04:55:55Z",
+      "updated": "2026-04-01T05:02:45Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/README.md",
+        "records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/analyze_patterns.py",
+        "records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/retokenize.py",
+        "records/track_non_record_16mb/2026-03-31_CustomTokenizer_SplitDigits_WebSymbols/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1209,
+      "title": "Record: Full GPTQ + Score-First TTT + SLOT — val_bpb 1.1064 (3-seed mean)",
+      "author": "andrewbaggio1",
+      "state": "OPEN",
+      "created": "2026-04-01T04:48:56Z",
+      "updated": "2026-04-01T04:48:56Z",
+      "bpb": 1.1064,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_FullGPTQ_ScoreFirstTTT_SLOT_8xH100/README.md",
+        "records/track_10min_16mb/2026-04-01_FullGPTQ_ScoreFirstTTT_SLOT_8xH100/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1208,
+      "title": "Nightcrawler — 1.176bpb   10mb ",
+      "author": "newjordan",
+      "state": "OPEN",
+      "created": "2026-04-01T04:16:49Z",
+      "updated": "2026-04-01T04:25:31Z",
+      "bpb": 1.176,
+      "seeds": 444,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        ".gitignore",
+        "CLAUDE.md",
+        "LAB_PROTOCOL.md",
+        "PIPELINE.md",
+        "crawler/2026-03-29_BW5/README.md",
+        "crawler/2026-03-29_BW5/run.sh",
+        "crawler/2026-03-29_BW5/train_gpt.py",
+        "crawler/2026-03-31_BW7_MegaGate/pod_setup.sh",
+        "crawler/2026-03-31_BW7_MegaGate/run_ablation.sh",
+        "crawler/2026-03-31_BW7_MegaGate/train_gpt.py",
+        "crawler/2026-04-01_BW10_GPTQ/ablation.md",
+        "crawler/2026-04-01_BW10_GPTQ/hypothesis.md",
+        "crawler/2026-04-01_BW10_GPTQ/run.sh",
+        "crawler/2026-04-01_BW10_GPTQ/run_ablation.sh",
+        "crawler/2026-04-01_BW10_GPTQ/train_gpt.py",
+        "crawler/2026-04-01_BW11_5Flat/ablation.md",
+        "crawler/2026-04-01_BW11_5Flat/gate.sh",
+        "crawler/2026-04-01_BW11_5Flat/hypothesis.md",
+        "crawler/2026-04-01_BW11_5Flat/run.sh",
+        "crawler/2026-04-01_BW11_5Flat/train_gpt.py",
+        "crawler/2026-04-01_BW8_Tap/gate.sh",
+        "crawler/2026-04-01_BW8_Tap/hypothesis.md",
+        "crawler/2026-04-01_BW8_Tap/run.sh",
+        "crawler/2026-04-01_BW8_Tap/train_gpt.py",
+        "crawler/2026-04-01_BW9_Anchor/gate.sh",
+        "crawler/2026-04-01_BW9_Anchor/hypothesis.md",
+        "crawler/2026-04-01_BW9_Anchor/train_gpt.py",
+        "crawler/CLAUDE.md",
+        "crawler/LEADER.md",
+        "crawler/SCIENCE.md",
+        "junkyard/Nitrust/CLOWNCAR_IV_TARGET.md",
+        "junkyard/Nitrust/COMMANDER_ORDERS.md",
+        "junkyard/Nitrust/CRAWLER_DELTA_BOOSTER_MATRIX.md",
+        "junkyard/Nitrust/HYPOTHESES.md",
+        "junkyard/Nitrust/MEDUSA_TARGET.md",
+        "junkyard/Nitrust/RUST_MODULE_BLUEPRINT.md",
+        "junkyard/Nitrust/codex_spark.py",
+        "junkyard/Nitrust/rust/target/.rustc_info.json",
+        "junkyard/Nitrust/rust/target/CACHEDIR.TAG",
+        "junkyard/Nitrust/rust/target/debug/.cargo-lock",
+        "junkyard/Nitrust/rust/target/debug/.fingerprint/autocfg-c6d1abbd042e8fe2/dep-lib-autocfg",
+        "junkyard/Nitrust/rust/target/debug/.fingerprint/autocfg-c6d1abbd042e8fe2/invoked.timestamp",
+        "junkyard/Nitrust/rust/target/debug/.fingerprint/autocfg-c6d1abbd042e8fe2/lib-autocfg",
+        "junkyard/Nitrust/rust/target/debug/.fingerprint/autocfg-c6d1abbd042e8fe2/lib-autocfg.json",
+        "junkyard/Nitrust/rust/target/debug/.fingerprint/bitflags-889af1a2c711a232/dep-lib-bitflags",
+        "junkyard/Nitrust/rust/target/debug/.fingerprint/bitflags-889af1a2c711a232/invoked.timestamp",
+        "junkyard/Nitrust/rust/target/debug/.fingerprint/bitflags-889af1a2c711a232/lib-bitflags",
+        "junkyard/Nitrust/rust/target/debug/.fingerprint/bitflags-889af1a2c711a232/lib-bitflags.json",
+        "junkyard/Nitrust/rust/target/debug/.fingerprint/cfg-if-1829710863dec7ce/dep-lib-cfg_if",
+        "junkyard/Nitrust/rust/target/debug/.fingerprint/cfg-if-1829710863dec7ce/invoked.timestamp"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_path"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1207,
+      "title": "HYDRA-Ω: SLOT-Optimized Parameter-Efficient Language Model (WIP)",
+      "author": "RAVINDRA8008",
+      "state": "OPEN",
+      "created": "2026-04-01T04:06:18Z",
+      "updated": "2026-04-01T04:06:18Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_HYDRA_OMEGA/README.md",
+        "records/track_10min_16mb/2026-04-01_HYDRA_OMEGA/submission.json",
+        "records/track_10min_16mb/2026-04-01_HYDRA_OMEGA/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1206,
       "title": "Non-record: Universal Transformer (4h unlimited compute track)",
@@ -642,7 +841,7 @@
       "author": "skoustav35",
       "state": "OPEN",
       "created": "2026-03-31T16:48:30Z",
-      "updated": "2026-03-31T16:48:30Z",
+      "updated": "2026-04-01T04:11:10Z",
       "bpb": 0.9641,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -1091,7 +1290,7 @@
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-03-31T04:52:31Z",
-      "updated": "2026-04-01T02:32:36Z",
+      "updated": "2026-04-01T03:53:43Z",
       "bpb": 0.00321,
       "seeds": 42,
       "artifact_bytes": 15745776,
@@ -2061,7 +2260,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-30T17:18:30Z",
-      "updated": "2026-03-31T17:07:39Z",
+      "updated": "2026-04-01T03:49:22Z",
       "bpb": 1.18672385,
       "seeds": 3,
       "artifact_bytes": 8842981,
@@ -3270,20 +3469,24 @@
     },
     {
       "number": 1105,
-      "title": "Record: Fused MLP (Triton+CUTLASS EVT) + MLP 3.5× + Mixed int5/int6 + Brotli — 1.1125 BPB (3-seed mean)",
+      "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty— 1.1052 BPB (3-seed mean)",
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-03-31T19:03:20Z",
-      "bpb": 1.1125,
+      "updated": "2026-04-01T04:46:06Z",
+      "bpb": 1.1052,
       "seeds": 3,
-      "artifact_bytes": 14520000,
-      "technique_summary": "Muon + GPTQ + INT6 + EMA",
+      "artifact_bytes": 302000000,
+      "technique_summary": "Muon + GPTQ + INT6 + EMA + N-gram",
       "file_paths": [
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/CMakeLists.txt",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/README.md",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/cutlass_evt_fusion/csrc/gemm_act_grad.cu",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/cutlass_evt_fusion/csrc/torch_binding.cpp",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/cutlass_evt_fusion/setup.py",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/eval_fused.py",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/fused_expert_blend.cpp",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/pyproject.toml",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/requirements.txt",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/submission.json",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_gpt.py",
@@ -3293,15 +3496,18 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
+        "ngram",
         "gptq_eval",
         "cache_eval",
         "leaky_relu"
       ],
       "track": "record",
       "technique_type": "cache",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1104,
@@ -3759,7 +3965,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-03-29T18:10:07Z",
-      "updated": "2026-03-31T04:36:45Z",
+      "updated": "2026-04-01T03:34:03Z",
       "bpb": 1.1091,
       "seeds": 3,
       "artifact_bytes": 15300000,
@@ -6452,39 +6658,45 @@
       "author": "SoHarshh",
       "state": "OPEN",
       "created": "2026-03-28T08:06:32Z",
-      "updated": "2026-03-28T08:33:54Z",
+      "updated": "2026-04-01T05:13:48Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "TTT + EMA",
       "file_paths": [
+        "PLAN.md",
         "records/track_10min_16mb/2026-03-28_12L_INT4_bQAT_VE/README.md",
         "records/track_10min_16mb/2026-03-28_12L_INT4_bQAT_VE/submission.json",
         "records/track_10min_16mb/2026-03-28_12L_INT4_bQAT_VE/train_gpt.py",
+        "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/README.md",
+        "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/submission.json",
+        "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/train_gpt.py",
+        "requirements.txt",
         "run.sh",
-        "train_gpt_v2.py"
+        "train_gpt_v2.py",
+        "train_gpt_v3.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
         "ttt"
       ],
+      "track": "record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 1008,
-      "title": "Add non-record unlimited-compute 11L LeakyTTT 16h local RTX 4060 Ti run",
+      "title": "Non-record:  11L LeakyTTT 16hr | local RTX 4060 Ti |",
       "author": "monkeyKingProgrammer",
       "state": "OPEN",
       "created": "2026-03-28T07:44:02Z",
-      "updated": "2026-03-28T08:55:24Z",
+      "updated": "2026-04-01T04:58:40Z",
       "bpb": 1.15377788,
       "seeds": null,
       "artifact_bytes": 15807729,
@@ -6501,13 +6713,13 @@
         "ttt",
         "leaky_relu"
       ],
+      "track": "non-record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 1007,
@@ -9163,36 +9375,28 @@
       "author": "andreanjos",
       "state": "OPEN",
       "created": "2026-03-27T04:19:25Z",
-      "updated": "2026-03-27T04:19:25Z",
+      "updated": "2026-04-01T02:54:57Z",
       "bpb": 1.1653,
       "seeds": null,
       "artifact_bytes": 15030000,
       "technique_summary": "INT6",
       "file_paths": [
-        ".gitignore",
-        "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/README.md",
-        "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/submission.json",
-        "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/train.log",
-        "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/train_gpt.py",
-        "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/train_seed1338.log",
-        "records/track_10min_16mb/2026-03-21_OptimizerTuning_SlideEval64/train_seed1339.log",
         "records/track_10min_16mb/2026-03-27_MLP3x_LeakyReLU_QAT_Int6_SlideEval/README.md",
         "records/track_10min_16mb/2026-03-27_MLP3x_LeakyReLU_QAT_Int6_SlideEval/submission.json",
         "records/track_10min_16mb/2026-03-27_MLP3x_LeakyReLU_QAT_Int6_SlideEval/train.log",
-        "records/track_10min_16mb/2026-03-27_MLP3x_LeakyReLU_QAT_Int6_SlideEval/train_gpt.py",
-        "train_gpt.py"
+        "records/track_10min_16mb/2026-03-27_MLP3x_LeakyReLU_QAT_Int6_SlideEval/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
         "leaky_relu"
       ],
+      "track": "record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 928,
