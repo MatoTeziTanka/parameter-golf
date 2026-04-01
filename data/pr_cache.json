@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-01T21:09:08.033130+00:00",
-  "api_calls_used": 74,
+  "last_fetch": "2026-04-01T22:04:34.169396+00:00",
+  "api_calls_used": 75,
   "prs": [
     {
       "number": 1232,
@@ -5837,9 +5837,9 @@
       "number": 1058,
       "title": "Publish coprime multi-shard loader candidate 1.11796805 as non-record package",
       "author": "resouer",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-29T05:38:25Z",
-      "updated": "2026-03-29T08:48:17Z",
+      "updated": "2026-04-01T21:25:31Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -5858,12 +5858,11 @@
       ],
       "track": "non-record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1057,
@@ -16552,9 +16551,9 @@
       "number": 740,
       "title": "Record: 9L XSA-all + LeakyReLU² + 5-gram eval cache — val_bpb 1.0909 (3-seed mean)",
       "author": "resouer",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-25T16:34:18Z",
-      "updated": "2026-03-25T18:24:56Z",
+      "updated": "2026-04-01T21:25:29Z",
       "bpb": 1.0909,
       "seeds": 3,
       "artifact_bytes": 14700000,
@@ -16570,15 +16569,13 @@
         "leaky_relu",
         "ngram_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "keyword:ngram",
-        "keyword:ngram_path",
-        "path:ngram-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
-      "technique_type": "cache"
+      "technique_type": "cache",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 739,
