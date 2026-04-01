@@ -1,7 +1,45 @@
 {
-  "last_fetch": "2026-04-01T07:01:24.180306+00:00",
-  "api_calls_used": 64,
+  "last_fetch": "2026-04-01T08:45:52.505661+00:00",
+  "api_calls_used": 65,
   "prs": [
+    {
+      "number": 1215,
+      "title": "12L rANS + LeakyReLU(0.95)² + Soft XSA (1.1601 BPB, non_record_16mb)",
+      "author": "turbo-indubitable",
+      "state": "OPEN",
+      "created": "2026-04-01T08:33:57Z",
+      "updated": "2026-04-01T08:33:57Z",
+      "bpb": 1.1601,
+      "seeds": null,
+      "artifact_bytes": 15912601,
+      "technique_summary": "INT6 + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/README.md",
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/script-log-evalcode-etc/analysis/ablation_results_list.md",
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/script-log-evalcode-etc/analysis/rans_vs_zstd.md",
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/script-log-evalcode-etc/eval/eval_extras.py",
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/script-log-evalcode-etc/eval/eval_int4_bpb.py",
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/script-log-evalcode-etc/eval/reproduce_results.sh",
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/script-log-evalcode-etc/runlogs/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/script-log-evalcode-etc/scripts/capacity_sweep.sh",
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/script-log-evalcode-etc/scripts/rans_bpb_verify.py",
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/script-log-evalcode-etc/scripts/test_xsa_diagonal.py",
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/submission.json",
+        "records/track_non_record_16mb/2026-04-01_12L_rANS_SoftXSA_IndubIndustries/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1214,
       "title": "Non-record: Emergent weight symmetry in QO projections + learnable SymMix",
@@ -64,7 +102,7 @@
       "author": "Gusanidas",
       "state": "OPEN",
       "created": "2026-04-01T05:42:13Z",
-      "updated": "2026-04-01T05:44:17Z",
+      "updated": "2026-04-01T07:52:33Z",
       "bpb": 1.1108,
       "seeds": 5,
       "artifact_bytes": 15730000,
@@ -130,7 +168,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-04-01T04:55:55Z",
-      "updated": "2026-04-01T05:02:45Z",
+      "updated": "2026-04-01T08:23:30Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1088,11 +1126,11 @@
     },
     {
       "number": 1180,
-      "title": "SR-CM-P2Loss: 1.0577 bpb (~15.06MB)",
+      "title": "Loss function comparison (CE vs P2 variants) under parameter-golf constraints",
       "author": "estesryan",
       "state": "OPEN",
       "created": "2026-03-31T11:32:19Z",
-      "updated": "2026-03-31T12:57:15Z",
+      "updated": "2026-04-01T07:24:17Z",
       "bpb": 1.0577016,
       "seeds": null,
       "artifact_bytes": 15058763,
@@ -6921,7 +6959,7 @@
       "author": "ibarrajo",
       "state": "OPEN",
       "created": "2026-03-28T05:36:42Z",
-      "updated": "2026-03-28T05:36:42Z",
+      "updated": "2026-04-01T07:03:51Z",
       "bpb": 1.1182,
       "seeds": null,
       "artifact_bytes": 15535414,
@@ -6940,13 +6978,13 @@
         "ttt",
         "gptq_eval"
       ],
+      "track": "non-record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 1003,
