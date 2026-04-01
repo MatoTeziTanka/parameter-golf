@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-03-31T23:38:01Z",
+  "generated_at": "2026-04-01T02:53:52Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1148,
-    "matched_pr_count": 825,
+    "pr_count": 1151,
+    "matched_pr_count": 828,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 150,
-      "AT_RISK": 114,
-      "DEAD": 334,
+      "ALIVE": 151,
+      "AT_RISK": 115,
+      "DEAD": 335,
       "INCOMPLETE": 550,
       "UNKNOWN": 0
     }
@@ -20,10 +20,10 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 406,
+      "count": 407,
       "author_count": 213,
       "alive_count": 59,
-      "dead_count": 152,
+      "dead_count": 153,
       "at_risk_count": 57,
       "incomplete_count": 138,
       "unknown_count": 0,
@@ -559,7 +559,7 @@
             {
               "number": 672,
               "author": "andrewbaggio1",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0781,
               "created": "2026-03-25T03:22:29Z"
             },
@@ -1728,6 +1728,27 @@
           ]
         },
         {
+          "author": "msisovic",
+          "pr_count": 2,
+          "best_bpb": 0.0025,
+          "prs": [
+            {
+              "number": 686,
+              "author": "msisovic",
+              "status": "DEAD",
+              "bpb": 0.0025,
+              "created": "2026-03-25T05:58:51Z"
+            },
+            {
+              "number": 1204,
+              "author": "msisovic",
+              "status": "ALIVE",
+              "bpb": 1.1063,
+              "created": "2026-04-01T00:46:06Z"
+            }
+          ]
+        },
+        {
           "author": "charmquark1984",
           "pr_count": 2,
           "best_bpb": 0.028,
@@ -2473,20 +2494,6 @@
               "status": "INCOMPLETE",
               "bpb": 0.002,
               "created": "2026-03-29T06:23:37Z"
-            }
-          ]
-        },
-        {
-          "author": "msisovic",
-          "pr_count": 1,
-          "best_bpb": 0.0025,
-          "prs": [
-            {
-              "number": 686,
-              "author": "msisovic",
-              "status": "DEAD",
-              "bpb": 0.0025,
-              "created": "2026-03-25T05:58:51Z"
             }
           ]
         },
@@ -5722,7 +5729,7 @@
         {
           "number": 672,
           "author": "andrewbaggio1",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0781,
           "created": "2026-03-25T03:22:29Z"
         },
@@ -7209,17 +7216,24 @@
           "status": "ALIVE",
           "bpb": 1.1412,
           "created": "2026-03-31T21:53:17Z"
+        },
+        {
+          "number": 1204,
+          "author": "msisovic",
+          "status": "ALIVE",
+          "bpb": 1.1063,
+          "created": "2026-04-01T00:46:06Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 333,
-      "author_count": 225,
+      "count": 334,
+      "author_count": 226,
       "alive_count": 61,
       "dead_count": 75,
-      "at_risk_count": 44,
+      "at_risk_count": 45,
       "incomplete_count": 153,
       "unknown_count": 0,
       "best_alive": {
@@ -9591,6 +9605,20 @@
               "status": "DEAD",
               "bpb": 1.1418,
               "created": "2026-03-22T22:22:46Z"
+            }
+          ]
+        },
+        {
+          "author": "SergheiBrinza",
+          "pr_count": 1,
+          "best_bpb": 1.1431,
+          "prs": [
+            {
+              "number": 1205,
+              "author": "SergheiBrinza",
+              "status": "AT_RISK",
+              "bpb": 1.1431,
+              "created": "2026-04-01T01:18:36Z"
             }
           ]
         },
@@ -13466,16 +13494,23 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-03-31T20:49:01Z"
+        },
+        {
+          "number": 1205,
+          "author": "SergheiBrinza",
+          "status": "AT_RISK",
+          "bpb": 1.1431,
+          "created": "2026-04-01T01:18:36Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 315,
-      "author_count": 179,
+      "count": 316,
+      "author_count": 180,
       "alive_count": 58,
-      "dead_count": 96,
+      "dead_count": 97,
       "at_risk_count": 51,
       "incomplete_count": 110,
       "unknown_count": 0,
@@ -14410,7 +14445,7 @@
             {
               "number": 672,
               "author": "andrewbaggio1",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0781,
               "created": "2026-03-25T03:22:29Z"
             }
@@ -15554,6 +15589,20 @@
               "status": "DEAD",
               "bpb": 1.0887,
               "created": "2026-03-23T01:05:38Z"
+            }
+          ]
+        },
+        {
+          "author": "msisovic",
+          "pr_count": 1,
+          "best_bpb": 1.1063,
+          "prs": [
+            {
+              "number": 1204,
+              "author": "msisovic",
+              "status": "ALIVE",
+              "bpb": 1.1063,
+              "created": "2026-04-01T00:46:06Z"
             }
           ]
         },
@@ -17907,7 +17956,7 @@
         {
           "number": 672,
           "author": "andrewbaggio1",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0781,
           "created": "2026-03-25T03:22:29Z"
         },
@@ -19149,15 +19198,22 @@
           "status": "INCOMPLETE",
           "bpb": 1.3365,
           "created": "2026-03-31T20:38:57Z"
+        },
+        {
+          "number": 1204,
+          "author": "msisovic",
+          "status": "ALIVE",
+          "bpb": 1.1063,
+          "created": "2026-04-01T00:46:06Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 220,
-      "author_count": 103,
-      "alive_count": 39,
+      "count": 222,
+      "author_count": 105,
+      "alive_count": 41,
       "dead_count": 82,
       "at_risk_count": 45,
       "incomplete_count": 54,
@@ -20828,6 +20884,20 @@
           ]
         },
         {
+          "author": "msisovic",
+          "pr_count": 1,
+          "best_bpb": 1.1063,
+          "prs": [
+            {
+              "number": 1204,
+              "author": "msisovic",
+              "status": "ALIVE",
+              "bpb": 1.1063,
+              "created": "2026-04-01T00:46:06Z"
+            }
+          ]
+        },
+        {
           "author": "mikeapedia",
           "pr_count": 1,
           "best_bpb": 1.1091,
@@ -21244,6 +21314,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.1807,
               "created": "2026-03-26T03:40:02Z"
+            }
+          ]
+        },
+        {
+          "author": "oneKn8",
+          "pr_count": 1,
+          "best_bpb": 1.2074,
+          "prs": [
+            {
+              "number": 1206,
+              "author": "oneKn8",
+              "status": "ALIVE",
+              "bpb": 1.2074,
+              "created": "2026-04-01T02:51:17Z"
             }
           ]
         },
@@ -22970,6 +23054,20 @@
           "status": "ALIVE",
           "bpb": 0.9485,
           "created": "2026-03-31T16:01:28Z"
+        },
+        {
+          "number": 1204,
+          "author": "msisovic",
+          "status": "ALIVE",
+          "bpb": 1.1063,
+          "created": "2026-04-01T00:46:06Z"
+        },
+        {
+          "number": 1206,
+          "author": "oneKn8",
+          "status": "ALIVE",
+          "bpb": 1.2074,
+          "created": "2026-04-01T02:51:17Z"
         }
       ]
     },
@@ -24986,15 +25084,15 @@
       "kind": "legal",
       "count": 85,
       "author_count": 65,
-      "alive_count": 17,
-      "dead_count": 24,
+      "alive_count": 16,
+      "dead_count": 25,
       "at_risk_count": 13,
       "incomplete_count": 31,
       "unknown_count": 0,
       "best_alive": {
-        "number": 672,
-        "author": "andrewbaggio1",
-        "bpb": 1.0781
+        "number": 1172,
+        "author": "dexhunter",
+        "bpb": 1.1015
       },
       "people": [
         {
@@ -25551,7 +25649,7 @@
             {
               "number": 672,
               "author": "andrewbaggio1",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0781,
               "created": "2026-03-25T03:22:29Z"
             }
@@ -26206,7 +26304,7 @@
         {
           "number": 672,
           "author": "andrewbaggio1",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0781,
           "created": "2026-03-25T03:22:29Z"
         },
@@ -33793,11 +33891,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 159,
-      "author_count": 72,
+      "count": 160,
+      "author_count": 73,
       "alive_count": 0,
       "dead_count": 68,
-      "at_risk_count": 91,
+      "at_risk_count": 92,
       "incomplete_count": 0,
       "unknown_count": 0,
       "best_alive": null,
@@ -35294,6 +35392,20 @@
           ]
         },
         {
+          "author": "SergheiBrinza",
+          "pr_count": 1,
+          "best_bpb": 1.1431,
+          "prs": [
+            {
+              "number": 1205,
+              "author": "SergheiBrinza",
+              "status": "AT_RISK",
+              "bpb": 1.1431,
+              "created": "2026-04-01T01:18:36Z"
+            }
+          ]
+        },
+        {
           "author": "yashverms",
           "pr_count": 1,
           "best_bpb": 1.1715,
@@ -36533,6 +36645,13 @@
           "status": "AT_RISK",
           "bpb": 0.045,
           "created": "2026-03-31T18:15:05Z"
+        },
+        {
+          "number": 1205,
+          "author": "SergheiBrinza",
+          "status": "AT_RISK",
+          "bpb": 1.1431,
+          "created": "2026-04-01T01:18:36Z"
         }
       ]
     },
@@ -37306,11 +37425,11 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 333,
-      "author_count": 225,
+      "count": 334,
+      "author_count": 226,
       "alive_count": 61,
       "dead_count": 75,
-      "at_risk_count": 44,
+      "at_risk_count": 45,
       "incomplete_count": 153,
       "unknown_count": 0,
       "best_alive": {
@@ -39682,6 +39801,20 @@
               "status": "DEAD",
               "bpb": 1.1418,
               "created": "2026-03-22T22:22:46Z"
+            }
+          ]
+        },
+        {
+          "author": "SergheiBrinza",
+          "pr_count": 1,
+          "best_bpb": 1.1431,
+          "prs": [
+            {
+              "number": 1205,
+              "author": "SergheiBrinza",
+              "status": "AT_RISK",
+              "bpb": 1.1431,
+              "created": "2026-04-01T01:18:36Z"
             }
           ]
         },
@@ -43557,16 +43690,23 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-03-31T20:49:01Z"
+        },
+        {
+          "number": 1205,
+          "author": "SergheiBrinza",
+          "status": "AT_RISK",
+          "bpb": 1.1431,
+          "created": "2026-04-01T01:18:36Z"
         }
       ]
     },
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 406,
+      "count": 407,
       "author_count": 213,
       "alive_count": 59,
-      "dead_count": 152,
+      "dead_count": 153,
       "at_risk_count": 57,
       "incomplete_count": 138,
       "unknown_count": 0,
@@ -44102,7 +44242,7 @@
             {
               "number": 672,
               "author": "andrewbaggio1",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0781,
               "created": "2026-03-25T03:22:29Z"
             },
@@ -45271,6 +45411,27 @@
           ]
         },
         {
+          "author": "msisovic",
+          "pr_count": 2,
+          "best_bpb": 0.0025,
+          "prs": [
+            {
+              "number": 686,
+              "author": "msisovic",
+              "status": "DEAD",
+              "bpb": 0.0025,
+              "created": "2026-03-25T05:58:51Z"
+            },
+            {
+              "number": 1204,
+              "author": "msisovic",
+              "status": "ALIVE",
+              "bpb": 1.1063,
+              "created": "2026-04-01T00:46:06Z"
+            }
+          ]
+        },
+        {
           "author": "charmquark1984",
           "pr_count": 2,
           "best_bpb": 0.028,
@@ -46016,20 +46177,6 @@
               "status": "INCOMPLETE",
               "bpb": 0.002,
               "created": "2026-03-29T06:23:37Z"
-            }
-          ]
-        },
-        {
-          "author": "msisovic",
-          "pr_count": 1,
-          "best_bpb": 0.0025,
-          "prs": [
-            {
-              "number": 686,
-              "author": "msisovic",
-              "status": "DEAD",
-              "bpb": 0.0025,
-              "created": "2026-03-25T05:58:51Z"
             }
           ]
         },
@@ -49265,7 +49412,7 @@
         {
           "number": 672,
           "author": "andrewbaggio1",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0781,
           "created": "2026-03-25T03:22:29Z"
         },
@@ -50752,16 +50899,23 @@
           "status": "ALIVE",
           "bpb": 1.1412,
           "created": "2026-03-31T21:53:17Z"
+        },
+        {
+          "number": 1204,
+          "author": "msisovic",
+          "status": "ALIVE",
+          "bpb": 1.1063,
+          "created": "2026-04-01T00:46:06Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 315,
-      "author_count": 179,
+      "count": 316,
+      "author_count": 180,
       "alive_count": 58,
-      "dead_count": 96,
+      "dead_count": 97,
       "at_risk_count": 51,
       "incomplete_count": 110,
       "unknown_count": 0,
@@ -51696,7 +51850,7 @@
             {
               "number": 672,
               "author": "andrewbaggio1",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0781,
               "created": "2026-03-25T03:22:29Z"
             }
@@ -52840,6 +52994,20 @@
               "status": "DEAD",
               "bpb": 1.0887,
               "created": "2026-03-23T01:05:38Z"
+            }
+          ]
+        },
+        {
+          "author": "msisovic",
+          "pr_count": 1,
+          "best_bpb": 1.1063,
+          "prs": [
+            {
+              "number": 1204,
+              "author": "msisovic",
+              "status": "ALIVE",
+              "bpb": 1.1063,
+              "created": "2026-04-01T00:46:06Z"
             }
           ]
         },
@@ -55193,7 +55361,7 @@
         {
           "number": 672,
           "author": "andrewbaggio1",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0781,
           "created": "2026-03-25T03:22:29Z"
         },
@@ -56435,15 +56603,22 @@
           "status": "INCOMPLETE",
           "bpb": 1.3365,
           "created": "2026-03-31T20:38:57Z"
+        },
+        {
+          "number": 1204,
+          "author": "msisovic",
+          "status": "ALIVE",
+          "bpb": 1.1063,
+          "created": "2026-04-01T00:46:06Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 220,
-      "author_count": 103,
-      "alive_count": 39,
+      "count": 222,
+      "author_count": 105,
+      "alive_count": 41,
       "dead_count": 82,
       "at_risk_count": 45,
       "incomplete_count": 54,
@@ -58114,6 +58289,20 @@
           ]
         },
         {
+          "author": "msisovic",
+          "pr_count": 1,
+          "best_bpb": 1.1063,
+          "prs": [
+            {
+              "number": 1204,
+              "author": "msisovic",
+              "status": "ALIVE",
+              "bpb": 1.1063,
+              "created": "2026-04-01T00:46:06Z"
+            }
+          ]
+        },
+        {
           "author": "mikeapedia",
           "pr_count": 1,
           "best_bpb": 1.1091,
@@ -58530,6 +58719,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.1807,
               "created": "2026-03-26T03:40:02Z"
+            }
+          ]
+        },
+        {
+          "author": "oneKn8",
+          "pr_count": 1,
+          "best_bpb": 1.2074,
+          "prs": [
+            {
+              "number": 1206,
+              "author": "oneKn8",
+              "status": "ALIVE",
+              "bpb": 1.2074,
+              "created": "2026-04-01T02:51:17Z"
             }
           ]
         },
@@ -60256,6 +60459,20 @@
           "status": "ALIVE",
           "bpb": 0.9485,
           "created": "2026-03-31T16:01:28Z"
+        },
+        {
+          "number": 1204,
+          "author": "msisovic",
+          "status": "ALIVE",
+          "bpb": 1.1063,
+          "created": "2026-04-01T00:46:06Z"
+        },
+        {
+          "number": 1206,
+          "author": "oneKn8",
+          "status": "ALIVE",
+          "bpb": 1.2074,
+          "created": "2026-04-01T02:51:17Z"
         }
       ]
     },
@@ -62270,11 +62487,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 159,
-      "author_count": 72,
+      "count": 160,
+      "author_count": 73,
       "alive_count": 0,
       "dead_count": 68,
-      "at_risk_count": 91,
+      "at_risk_count": 92,
       "incomplete_count": 0,
       "unknown_count": 0,
       "best_alive": null,
@@ -63771,6 +63988,20 @@
           ]
         },
         {
+          "author": "SergheiBrinza",
+          "pr_count": 1,
+          "best_bpb": 1.1431,
+          "prs": [
+            {
+              "number": 1205,
+              "author": "SergheiBrinza",
+              "status": "AT_RISK",
+              "bpb": 1.1431,
+              "created": "2026-04-01T01:18:36Z"
+            }
+          ]
+        },
+        {
           "author": "yashverms",
           "pr_count": 1,
           "best_bpb": 1.1715,
@@ -65010,6 +65241,13 @@
           "status": "AT_RISK",
           "bpb": 0.045,
           "created": "2026-03-31T18:15:05Z"
+        },
+        {
+          "number": 1205,
+          "author": "SergheiBrinza",
+          "status": "AT_RISK",
+          "bpb": 1.1431,
+          "created": "2026-04-01T01:18:36Z"
         }
       ]
     },
@@ -65018,15 +65256,15 @@
       "kind": "legal",
       "count": 85,
       "author_count": 65,
-      "alive_count": 17,
-      "dead_count": 24,
+      "alive_count": 16,
+      "dead_count": 25,
       "at_risk_count": 13,
       "incomplete_count": 31,
       "unknown_count": 0,
       "best_alive": {
-        "number": 672,
-        "author": "andrewbaggio1",
-        "bpb": 1.0781
+        "number": 1172,
+        "author": "dexhunter",
+        "bpb": 1.1015
       },
       "people": [
         {
@@ -65583,7 +65821,7 @@
             {
               "number": 672,
               "author": "andrewbaggio1",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0781,
               "created": "2026-03-25T03:22:29Z"
             }
@@ -66238,7 +66476,7 @@
         {
           "number": 672,
           "author": "andrewbaggio1",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0781,
           "created": "2026-03-25T03:22:29Z"
         },
@@ -74682,11 +74920,11 @@
     {
       "left": "TTT",
       "right": "Progressive Depth",
-      "left_count": 406,
+      "left_count": 407,
       "right_count": 3,
       "left_people": 213,
       "right_people": 1,
-      "score": 1218
+      "score": 1221
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -74736,20 +74974,20 @@
     {
       "left": "Muon optimizer",
       "right": "Progressive Depth",
-      "left_count": 333,
+      "left_count": 334,
       "right_count": 3,
-      "left_people": 225,
+      "left_people": 226,
       "right_people": 1,
-      "score": 999
+      "score": 1002
     },
     {
       "left": "EMA",
       "right": "Progressive Depth",
-      "left_count": 315,
+      "left_count": 316,
       "right_count": 3,
-      "left_people": 179,
+      "left_people": 180,
       "right_people": 1,
-      "score": 945
+      "score": 948
     },
     {
       "left": "SWA",
@@ -74799,11 +75037,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 406,
+      "left_count": 407,
       "right_count": 2,
       "left_people": 213,
       "right_people": 2,
-      "score": 812
+      "score": 814
     },
     {
       "left": "XSA",
@@ -74835,38 +75073,38 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 333,
+      "left_count": 334,
       "right_count": 2,
-      "left_people": 225,
+      "left_people": 226,
       "right_people": 2,
-      "score": 666
+      "score": 668
     },
     {
       "left": "GPTQ",
       "right": "Progressive Depth",
-      "left_count": 220,
+      "left_count": 222,
       "right_count": 3,
-      "left_people": 103,
+      "left_people": 105,
       "right_people": 1,
-      "score": 660
+      "score": 666
     },
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 315,
+      "left_count": 316,
       "right_count": 2,
-      "left_people": 179,
+      "left_people": 180,
       "right_people": 2,
-      "score": 630
+      "score": 632
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 315,
+      "left_count": 316,
       "right_count": 2,
-      "left_people": 179,
+      "left_people": 180,
       "right_people": 2,
-      "score": 630
+      "score": 632
     },
     {
       "left": "QAT",
@@ -74916,20 +75154,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 220,
+      "left_count": 222,
       "right_count": 2,
-      "left_people": 103,
+      "left_people": 105,
       "right_people": 2,
-      "score": 440
+      "score": 444
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 220,
+      "left_count": 222,
       "right_count": 2,
-      "left_people": 103,
+      "left_people": 105,
       "right_people": 2,
-      "score": 440
+      "score": 444
     },
     {
       "left": "SWA",
@@ -74952,11 +75190,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 406,
+      "left_count": 407,
       "right_count": 1,
       "left_people": 213,
       "right_people": 1,
-      "score": 406
+      "score": 407
     },
     {
       "left": "Parallel Muon",
@@ -74997,11 +75235,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 315,
+      "left_count": 316,
       "right_count": 1,
-      "left_people": 179,
+      "left_people": 180,
       "right_people": 1,
-      "score": 315
+      "score": 316
     },
     {
       "left": "QAT",
@@ -75060,11 +75298,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 220,
+      "left_count": 222,
       "right_count": 1,
-      "left_people": 103,
+      "left_people": 105,
       "right_people": 1,
-      "score": 220
+      "score": 222
     },
     {
       "left": "SWA",
