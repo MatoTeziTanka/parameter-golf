@@ -1,7 +1,52 @@
 {
-  "last_fetch": "2026-04-01T08:45:52.505661+00:00",
-  "api_calls_used": 65,
+  "last_fetch": "2026-04-01T10:09:04.908919+00:00",
+  "api_calls_used": 66,
   "prs": [
+    {
+      "number": 1216,
+      "title": "11L INT6 XSA-all + EMA + VE — ttt_bpb 1.1487",
+      "author": "SoHarshh",
+      "state": "OPEN",
+      "created": "2026-04-01T09:58:54Z",
+      "updated": "2026-04-01T09:58:54Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16469999,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        ".gitignore",
+        "records/track_10min_16mb/2026-03-28_12L_INT4_bQAT_VE/README.md",
+        "records/track_10min_16mb/2026-03-28_12L_INT4_bQAT_VE/submission.json",
+        "records/track_10min_16mb/2026-03-28_12L_INT4_bQAT_VE/train_gpt.py",
+        "records/track_10min_16mb/2026-03-28_12L_banked_VE/README.md",
+        "records/track_10min_16mb/2026-03-28_12L_banked_VE/submission.json",
+        "records/track_10min_16mb/2026-03-28_12L_banked_VE/train_gpt.py",
+        "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/README.md",
+        "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/submission.json",
+        "records/track_10min_16mb/2026-03-28_13L_INT4_attn_failed/train_gpt.py",
+        "records/track_10min_16mb/2026-04-01_11L_INT6_XSA_all/README.md",
+        "records/track_10min_16mb/2026-04-01_11L_INT6_XSA_all/submission.json",
+        "records/track_10min_16mb/2026-04-01_11L_INT6_XSA_all/train_gpt.py",
+        "requirements.txt",
+        "run.sh",
+        "train_gpt_v2.py",
+        "train_gpt_v3.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1215,
       "title": "12L rANS + LeakyReLU(0.95)² + Soft XSA (1.1601 BPB, non_record_16mb)",
