@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-01T20:08:00Z",
+  "generated_at": "2026-04-01T21:09:15Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1174,
-    "matched_pr_count": 842,
+    "pr_count": 1177,
+    "matched_pr_count": 845,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
       "ALIVE": 154,
-      "AT_RISK": 122,
-      "DEAD": 337,
-      "INCOMPLETE": 561,
+      "AT_RISK": 123,
+      "DEAD": 338,
+      "INCOMPLETE": 562,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 416,
-      "author_count": 216,
+      "count": 419,
+      "author_count": 217,
       "alive_count": 61,
-      "dead_count": 153,
-      "at_risk_count": 60,
-      "incomplete_count": 142,
+      "dead_count": 154,
+      "at_risk_count": 61,
+      "incomplete_count": 143,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -259,7 +259,7 @@
         },
         {
           "author": "Christopher-Lee-McClendon",
-          "pr_count": 11,
+          "pr_count": 12,
           "best_bpb": 0.00321,
           "prs": [
             {
@@ -338,6 +338,13 @@
               "status": "AT_RISK",
               "bpb": 0.00321,
               "created": "2026-03-31T04:52:31Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
             }
           ]
         },
@@ -2158,6 +2165,27 @@
               "status": "DEAD",
               "bpb": 1.1144,
               "created": "2026-03-27T13:11:46Z"
+            }
+          ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
             }
           ]
         },
@@ -7370,18 +7398,39 @@
           "status": "INCOMPLETE",
           "bpb": 1.1527,
           "created": "2026-04-01T19:36:00Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
+        },
+        {
+          "number": 1232,
+          "author": "Christopher-Lee-McClendon",
+          "status": "INCOMPLETE",
+          "bpb": 1.0929,
+          "created": "2026-04-01T20:31:50Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 338,
-      "author_count": 228,
+      "count": 341,
+      "author_count": 229,
       "alive_count": 62,
-      "dead_count": 75,
-      "at_risk_count": 47,
-      "incomplete_count": 154,
+      "dead_count": 76,
+      "at_risk_count": 48,
+      "incomplete_count": 155,
       "unknown_count": 0,
       "best_alive": {
         "number": 1172,
@@ -7453,6 +7502,62 @@
           ]
         },
         {
+          "author": "Christopher-Lee-McClendon",
+          "pr_count": 7,
+          "best_bpb": 0.00321,
+          "prs": [
+            {
+              "number": 456,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.1532,
+              "created": "2026-03-22T20:02:06Z"
+            },
+            {
+              "number": 461,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.14458,
+              "created": "2026-03-22T21:35:04Z"
+            },
+            {
+              "number": 526,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.14252,
+              "created": "2026-03-23T12:36:14Z"
+            },
+            {
+              "number": 537,
+              "author": "Christopher-Lee-McClendon",
+              "status": "ALIVE",
+              "bpb": 1.13872,
+              "created": "2026-03-23T15:02:29Z"
+            },
+            {
+              "number": 598,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.1334,
+              "created": "2026-03-24T04:54:11Z"
+            },
+            {
+              "number": 1170,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 0.00321,
+              "created": "2026-03-31T04:52:31Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
+            }
+          ]
+        },
+        {
           "author": "aryanbhosale",
           "pr_count": 7,
           "best_bpb": 0.131,
@@ -7505,55 +7610,6 @@
               "status": "DEAD",
               "bpb": 0.131,
               "created": "2026-03-26T19:32:05Z"
-            }
-          ]
-        },
-        {
-          "author": "Christopher-Lee-McClendon",
-          "pr_count": 6,
-          "best_bpb": 0.00321,
-          "prs": [
-            {
-              "number": 456,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.1532,
-              "created": "2026-03-22T20:02:06Z"
-            },
-            {
-              "number": 461,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.14458,
-              "created": "2026-03-22T21:35:04Z"
-            },
-            {
-              "number": 526,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.14252,
-              "created": "2026-03-23T12:36:14Z"
-            },
-            {
-              "number": 537,
-              "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.13872,
-              "created": "2026-03-23T15:02:29Z"
-            },
-            {
-              "number": 598,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.1334,
-              "created": "2026-03-24T04:54:11Z"
-            },
-            {
-              "number": 1170,
-              "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00321,
-              "created": "2026-03-31T04:52:31Z"
             }
           ]
         },
@@ -8541,6 +8597,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.11565196,
               "created": "2026-03-26T11:12:34Z"
+            }
+          ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
             }
           ]
         },
@@ -13718,18 +13795,39 @@
           "status": "ALIVE",
           "bpb": 1.10411,
           "created": "2026-04-01T11:54:49Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
+        },
+        {
+          "number": 1232,
+          "author": "Christopher-Lee-McClendon",
+          "status": "INCOMPLETE",
+          "bpb": 1.0929,
+          "created": "2026-04-01T20:31:50Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 321,
-      "author_count": 182,
+      "count": 324,
+      "author_count": 183,
       "alive_count": 58,
-      "dead_count": 97,
-      "at_risk_count": 53,
-      "incomplete_count": 113,
+      "dead_count": 98,
+      "at_risk_count": 54,
+      "incomplete_count": 114,
       "unknown_count": 0,
       "best_alive": {
         "number": 807,
@@ -14018,6 +14116,62 @@
           ]
         },
         {
+          "author": "Christopher-Lee-McClendon",
+          "pr_count": 7,
+          "best_bpb": 0.00321,
+          "prs": [
+            {
+              "number": 598,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.1334,
+              "created": "2026-03-24T04:54:11Z"
+            },
+            {
+              "number": 628,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0983,
+              "created": "2026-03-24T15:50:18Z"
+            },
+            {
+              "number": 644,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0944,
+              "created": "2026-03-24T20:25:07Z"
+            },
+            {
+              "number": 668,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.092,
+              "created": "2026-03-25T01:25:36Z"
+            },
+            {
+              "number": 1166,
+              "author": "Christopher-Lee-McClendon",
+              "status": "ALIVE",
+              "bpb": 1.1335,
+              "created": "2026-03-31T03:03:12Z"
+            },
+            {
+              "number": 1170,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 0.00321,
+              "created": "2026-03-31T04:52:31Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
+            }
+          ]
+        },
+        {
           "author": "aryanbhosale",
           "pr_count": 7,
           "best_bpb": 0.131,
@@ -14070,55 +14224,6 @@
               "status": "DEAD",
               "bpb": 0.131,
               "created": "2026-03-26T19:32:05Z"
-            }
-          ]
-        },
-        {
-          "author": "Christopher-Lee-McClendon",
-          "pr_count": 6,
-          "best_bpb": 0.00321,
-          "prs": [
-            {
-              "number": 598,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.1334,
-              "created": "2026-03-24T04:54:11Z"
-            },
-            {
-              "number": 628,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.0983,
-              "created": "2026-03-24T15:50:18Z"
-            },
-            {
-              "number": 644,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.0944,
-              "created": "2026-03-24T20:25:07Z"
-            },
-            {
-              "number": 668,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.092,
-              "created": "2026-03-25T01:25:36Z"
-            },
-            {
-              "number": 1166,
-              "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.1335,
-              "created": "2026-03-31T03:03:12Z"
-            },
-            {
-              "number": 1170,
-              "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00321,
-              "created": "2026-03-31T04:52:31Z"
             }
           ]
         },
@@ -15295,6 +15400,27 @@
               "status": "ALIVE",
               "bpb": 1.1154,
               "created": "2026-03-24T10:01:14Z"
+            }
+          ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
             }
           ]
         },
@@ -19506,18 +19632,39 @@
           "status": "INCOMPLETE",
           "bpb": 1.1527,
           "created": "2026-04-01T19:36:00Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
+        },
+        {
+          "number": 1232,
+          "author": "Christopher-Lee-McClendon",
+          "status": "INCOMPLETE",
+          "bpb": 1.0929,
+          "created": "2026-04-01T20:31:50Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 233,
-      "author_count": 111,
+      "count": 236,
+      "author_count": 112,
       "alive_count": 43,
-      "dead_count": 82,
-      "at_risk_count": 49,
-      "incomplete_count": 59,
+      "dead_count": 83,
+      "at_risk_count": 50,
+      "incomplete_count": 60,
       "unknown_count": 0,
       "best_alive": {
         "number": 1229,
@@ -19954,7 +20101,7 @@
         },
         {
           "author": "Christopher-Lee-McClendon",
-          "pr_count": 6,
+          "pr_count": 7,
           "best_bpb": 1.092,
           "prs": [
             {
@@ -19998,6 +20145,13 @@
               "status": "INCOMPLETE",
               "bpb": 1.092,
               "created": "2026-03-25T01:25:36Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
             }
           ]
         },
@@ -20845,6 +20999,27 @@
               "status": "ALIVE",
               "bpb": 1.1126,
               "created": "2026-03-31T03:38:33Z"
+            }
+          ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
             }
           ]
         },
@@ -23565,6 +23740,27 @@
           "status": "ALIVE",
           "bpb": 0.93,
           "created": "2026-04-01T19:56:29Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
+        },
+        {
+          "number": 1232,
+          "author": "Christopher-Lee-McClendon",
+          "status": "INCOMPLETE",
+          "bpb": 1.0929,
+          "created": "2026-04-01T20:31:50Z"
         }
       ]
     },
@@ -34309,11 +34505,11 @@
     {
       "name": "Progressive Depth",
       "kind": "legal",
-      "count": 3,
-      "author_count": 1,
+      "count": 5,
+      "author_count": 2,
       "alive_count": 0,
-      "dead_count": 0,
-      "at_risk_count": 1,
+      "dead_count": 1,
+      "at_risk_count": 2,
       "incomplete_count": 2,
       "unknown_count": 0,
       "best_alive": null,
@@ -34345,6 +34541,27 @@
               "created": "2026-03-26T20:25:58Z"
             }
           ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
+            }
+          ]
         }
       ],
       "prs": [
@@ -34368,6 +34585,20 @@
           "status": "INCOMPLETE",
           "bpb": 0.06,
           "created": "2026-03-26T20:25:58Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
         }
       ]
     },
@@ -34549,12 +34780,12 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 166,
+      "count": 167,
       "author_count": 75,
       "alive_count": 0,
       "dead_count": 68,
       "at_risk_count": 98,
-      "incomplete_count": 0,
+      "incomplete_count": 1,
       "unknown_count": 0,
       "best_alive": null,
       "people": [
@@ -35392,6 +35623,27 @@
           ]
         },
         {
+          "author": "Christopher-Lee-McClendon",
+          "pr_count": 2,
+          "best_bpb": 0.00321,
+          "prs": [
+            {
+              "number": 1170,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 0.00321,
+              "created": "2026-03-31T04:52:31Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
+            }
+          ]
+        },
+        {
           "author": "minh-stakc",
           "pr_count": 2,
           "best_bpb": 0.0235,
@@ -35696,20 +35948,6 @@
               "status": "DEAD",
               "bpb": 3.5e-07,
               "created": "2026-03-27T14:23:22Z"
-            }
-          ]
-        },
-        {
-          "author": "Christopher-Lee-McClendon",
-          "pr_count": 1,
-          "best_bpb": 0.00321,
-          "prs": [
-            {
-              "number": 1170,
-              "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00321,
-              "created": "2026-03-31T04:52:31Z"
             }
           ]
         },
@@ -37408,17 +37646,24 @@
           "status": "AT_RISK",
           "bpb": null,
           "created": "2026-04-01T19:25:43Z"
+        },
+        {
+          "number": 1232,
+          "author": "Christopher-Lee-McClendon",
+          "status": "INCOMPLETE",
+          "bpb": 1.0929,
+          "created": "2026-04-01T20:31:50Z"
         }
       ]
     },
     {
       "name": "Two-Pass",
       "kind": "banned",
-      "count": 42,
-      "author_count": 25,
+      "count": 44,
+      "author_count": 26,
       "alive_count": 0,
-      "dead_count": 19,
-      "at_risk_count": 22,
+      "dead_count": 20,
+      "at_risk_count": 23,
       "incomplete_count": 1,
       "unknown_count": 0,
       "best_alive": null,
@@ -37644,6 +37889,27 @@
               "status": "AT_RISK",
               "bpb": 1.1027,
               "created": "2026-04-01T10:37:01Z"
+            }
+          ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
             }
           ]
         },
@@ -38187,6 +38453,20 @@
           "status": "AT_RISK",
           "bpb": 1.1027,
           "created": "2026-04-01T10:37:01Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
         }
       ]
     }
@@ -38195,12 +38475,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 338,
-      "author_count": 228,
+      "count": 341,
+      "author_count": 229,
       "alive_count": 62,
-      "dead_count": 75,
-      "at_risk_count": 47,
-      "incomplete_count": 154,
+      "dead_count": 76,
+      "at_risk_count": 48,
+      "incomplete_count": 155,
       "unknown_count": 0,
       "best_alive": {
         "number": 1172,
@@ -38272,6 +38552,62 @@
           ]
         },
         {
+          "author": "Christopher-Lee-McClendon",
+          "pr_count": 7,
+          "best_bpb": 0.00321,
+          "prs": [
+            {
+              "number": 456,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.1532,
+              "created": "2026-03-22T20:02:06Z"
+            },
+            {
+              "number": 461,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.14458,
+              "created": "2026-03-22T21:35:04Z"
+            },
+            {
+              "number": 526,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.14252,
+              "created": "2026-03-23T12:36:14Z"
+            },
+            {
+              "number": 537,
+              "author": "Christopher-Lee-McClendon",
+              "status": "ALIVE",
+              "bpb": 1.13872,
+              "created": "2026-03-23T15:02:29Z"
+            },
+            {
+              "number": 598,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.1334,
+              "created": "2026-03-24T04:54:11Z"
+            },
+            {
+              "number": 1170,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 0.00321,
+              "created": "2026-03-31T04:52:31Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
+            }
+          ]
+        },
+        {
           "author": "aryanbhosale",
           "pr_count": 7,
           "best_bpb": 0.131,
@@ -38324,55 +38660,6 @@
               "status": "DEAD",
               "bpb": 0.131,
               "created": "2026-03-26T19:32:05Z"
-            }
-          ]
-        },
-        {
-          "author": "Christopher-Lee-McClendon",
-          "pr_count": 6,
-          "best_bpb": 0.00321,
-          "prs": [
-            {
-              "number": 456,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.1532,
-              "created": "2026-03-22T20:02:06Z"
-            },
-            {
-              "number": 461,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.14458,
-              "created": "2026-03-22T21:35:04Z"
-            },
-            {
-              "number": 526,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.14252,
-              "created": "2026-03-23T12:36:14Z"
-            },
-            {
-              "number": 537,
-              "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.13872,
-              "created": "2026-03-23T15:02:29Z"
-            },
-            {
-              "number": 598,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.1334,
-              "created": "2026-03-24T04:54:11Z"
-            },
-            {
-              "number": 1170,
-              "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00321,
-              "created": "2026-03-31T04:52:31Z"
             }
           ]
         },
@@ -39360,6 +39647,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.11565196,
               "created": "2026-03-26T11:12:34Z"
+            }
+          ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
             }
           ]
         },
@@ -44537,18 +44845,39 @@
           "status": "ALIVE",
           "bpb": 1.10411,
           "created": "2026-04-01T11:54:49Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
+        },
+        {
+          "number": 1232,
+          "author": "Christopher-Lee-McClendon",
+          "status": "INCOMPLETE",
+          "bpb": 1.0929,
+          "created": "2026-04-01T20:31:50Z"
         }
       ]
     },
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 416,
-      "author_count": 216,
+      "count": 419,
+      "author_count": 217,
       "alive_count": 61,
-      "dead_count": 153,
-      "at_risk_count": 60,
-      "incomplete_count": 142,
+      "dead_count": 154,
+      "at_risk_count": 61,
+      "incomplete_count": 143,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -44782,7 +45111,7 @@
         },
         {
           "author": "Christopher-Lee-McClendon",
-          "pr_count": 11,
+          "pr_count": 12,
           "best_bpb": 0.00321,
           "prs": [
             {
@@ -44861,6 +45190,13 @@
               "status": "AT_RISK",
               "bpb": 0.00321,
               "created": "2026-03-31T04:52:31Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
             }
           ]
         },
@@ -46681,6 +47017,27 @@
               "status": "DEAD",
               "bpb": 1.1144,
               "created": "2026-03-27T13:11:46Z"
+            }
+          ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
             }
           ]
         },
@@ -51893,18 +52250,39 @@
           "status": "INCOMPLETE",
           "bpb": 1.1527,
           "created": "2026-04-01T19:36:00Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
+        },
+        {
+          "number": 1232,
+          "author": "Christopher-Lee-McClendon",
+          "status": "INCOMPLETE",
+          "bpb": 1.0929,
+          "created": "2026-04-01T20:31:50Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 321,
-      "author_count": 182,
+      "count": 324,
+      "author_count": 183,
       "alive_count": 58,
-      "dead_count": 97,
-      "at_risk_count": 53,
-      "incomplete_count": 113,
+      "dead_count": 98,
+      "at_risk_count": 54,
+      "incomplete_count": 114,
       "unknown_count": 0,
       "best_alive": {
         "number": 807,
@@ -52193,6 +52571,62 @@
           ]
         },
         {
+          "author": "Christopher-Lee-McClendon",
+          "pr_count": 7,
+          "best_bpb": 0.00321,
+          "prs": [
+            {
+              "number": 598,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.1334,
+              "created": "2026-03-24T04:54:11Z"
+            },
+            {
+              "number": 628,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0983,
+              "created": "2026-03-24T15:50:18Z"
+            },
+            {
+              "number": 644,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0944,
+              "created": "2026-03-24T20:25:07Z"
+            },
+            {
+              "number": 668,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.092,
+              "created": "2026-03-25T01:25:36Z"
+            },
+            {
+              "number": 1166,
+              "author": "Christopher-Lee-McClendon",
+              "status": "ALIVE",
+              "bpb": 1.1335,
+              "created": "2026-03-31T03:03:12Z"
+            },
+            {
+              "number": 1170,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 0.00321,
+              "created": "2026-03-31T04:52:31Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
+            }
+          ]
+        },
+        {
           "author": "aryanbhosale",
           "pr_count": 7,
           "best_bpb": 0.131,
@@ -52245,55 +52679,6 @@
               "status": "DEAD",
               "bpb": 0.131,
               "created": "2026-03-26T19:32:05Z"
-            }
-          ]
-        },
-        {
-          "author": "Christopher-Lee-McClendon",
-          "pr_count": 6,
-          "best_bpb": 0.00321,
-          "prs": [
-            {
-              "number": 598,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.1334,
-              "created": "2026-03-24T04:54:11Z"
-            },
-            {
-              "number": 628,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.0983,
-              "created": "2026-03-24T15:50:18Z"
-            },
-            {
-              "number": 644,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.0944,
-              "created": "2026-03-24T20:25:07Z"
-            },
-            {
-              "number": 668,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.092,
-              "created": "2026-03-25T01:25:36Z"
-            },
-            {
-              "number": 1166,
-              "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.1335,
-              "created": "2026-03-31T03:03:12Z"
-            },
-            {
-              "number": 1170,
-              "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00321,
-              "created": "2026-03-31T04:52:31Z"
             }
           ]
         },
@@ -53470,6 +53855,27 @@
               "status": "ALIVE",
               "bpb": 1.1154,
               "created": "2026-03-24T10:01:14Z"
+            }
+          ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
             }
           ]
         },
@@ -57681,18 +58087,39 @@
           "status": "INCOMPLETE",
           "bpb": 1.1527,
           "created": "2026-04-01T19:36:00Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
+        },
+        {
+          "number": 1232,
+          "author": "Christopher-Lee-McClendon",
+          "status": "INCOMPLETE",
+          "bpb": 1.0929,
+          "created": "2026-04-01T20:31:50Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 233,
-      "author_count": 111,
+      "count": 236,
+      "author_count": 112,
       "alive_count": 43,
-      "dead_count": 82,
-      "at_risk_count": 49,
-      "incomplete_count": 59,
+      "dead_count": 83,
+      "at_risk_count": 50,
+      "incomplete_count": 60,
       "unknown_count": 0,
       "best_alive": {
         "number": 1229,
@@ -58129,7 +58556,7 @@
         },
         {
           "author": "Christopher-Lee-McClendon",
-          "pr_count": 6,
+          "pr_count": 7,
           "best_bpb": 1.092,
           "prs": [
             {
@@ -58173,6 +58600,13 @@
               "status": "INCOMPLETE",
               "bpb": 1.092,
               "created": "2026-03-25T01:25:36Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
             }
           ]
         },
@@ -59020,6 +59454,27 @@
               "status": "ALIVE",
               "bpb": 1.1126,
               "created": "2026-03-31T03:38:33Z"
+            }
+          ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
             }
           ]
         },
@@ -61740,6 +62195,27 @@
           "status": "ALIVE",
           "bpb": 0.93,
           "created": "2026-04-01T19:56:29Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
+        },
+        {
+          "number": 1232,
+          "author": "Christopher-Lee-McClendon",
+          "status": "INCOMPLETE",
+          "bpb": 1.0929,
+          "created": "2026-04-01T20:31:50Z"
         }
       ]
     },
@@ -63754,12 +64230,12 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 166,
+      "count": 167,
       "author_count": 75,
       "alive_count": 0,
       "dead_count": 68,
       "at_risk_count": 98,
-      "incomplete_count": 0,
+      "incomplete_count": 1,
       "unknown_count": 0,
       "best_alive": null,
       "people": [
@@ -64597,6 +65073,27 @@
           ]
         },
         {
+          "author": "Christopher-Lee-McClendon",
+          "pr_count": 2,
+          "best_bpb": 0.00321,
+          "prs": [
+            {
+              "number": 1170,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 0.00321,
+              "created": "2026-03-31T04:52:31Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
+            }
+          ]
+        },
+        {
           "author": "minh-stakc",
           "pr_count": 2,
           "best_bpb": 0.0235,
@@ -64901,20 +65398,6 @@
               "status": "DEAD",
               "bpb": 3.5e-07,
               "created": "2026-03-27T14:23:22Z"
-            }
-          ]
-        },
-        {
-          "author": "Christopher-Lee-McClendon",
-          "pr_count": 1,
-          "best_bpb": 0.00321,
-          "prs": [
-            {
-              "number": 1170,
-              "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00321,
-              "created": "2026-03-31T04:52:31Z"
             }
           ]
         },
@@ -66613,6 +67096,13 @@
           "status": "AT_RISK",
           "bpb": null,
           "created": "2026-04-01T19:25:43Z"
+        },
+        {
+          "number": 1232,
+          "author": "Christopher-Lee-McClendon",
+          "status": "INCOMPLETE",
+          "bpb": 1.0929,
+          "created": "2026-04-01T20:31:50Z"
         }
       ]
     },
@@ -73341,11 +73831,11 @@
     {
       "name": "Two-Pass",
       "kind": "banned",
-      "count": 42,
-      "author_count": 25,
+      "count": 44,
+      "author_count": 26,
       "alive_count": 0,
-      "dead_count": 19,
-      "at_risk_count": 22,
+      "dead_count": 20,
+      "at_risk_count": 23,
       "incomplete_count": 1,
       "unknown_count": 0,
       "best_alive": null,
@@ -73571,6 +74061,27 @@
               "status": "AT_RISK",
               "bpb": 1.1027,
               "created": "2026-04-01T10:37:01Z"
+            }
+          ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
             }
           ]
         },
@@ -74114,6 +74625,20 @@
           "status": "AT_RISK",
           "bpb": 1.1027,
           "created": "2026-04-01T10:37:01Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
         }
       ]
     },
@@ -76126,6 +76651,106 @@
       ]
     },
     {
+      "name": "Progressive Depth",
+      "kind": "legal",
+      "count": 5,
+      "author_count": 2,
+      "alive_count": 0,
+      "dead_count": 1,
+      "at_risk_count": 2,
+      "incomplete_count": 2,
+      "unknown_count": 0,
+      "best_alive": null,
+      "people": [
+        {
+          "author": "iverbovoy",
+          "pr_count": 3,
+          "best_bpb": 0.051,
+          "prs": [
+            {
+              "number": 835,
+              "author": "iverbovoy",
+              "status": "INCOMPLETE",
+              "bpb": 1.319,
+              "created": "2026-03-26T08:26:21Z"
+            },
+            {
+              "number": 856,
+              "author": "iverbovoy",
+              "status": "AT_RISK",
+              "bpb": 0.051,
+              "created": "2026-03-26T14:51:46Z"
+            },
+            {
+              "number": 895,
+              "author": "iverbovoy",
+              "status": "INCOMPLETE",
+              "bpb": 0.06,
+              "created": "2026-03-26T20:25:58Z"
+            }
+          ]
+        },
+        {
+          "author": "nestamidavaine",
+          "pr_count": 2,
+          "best_bpb": 1.1163,
+          "prs": [
+            {
+              "number": 1230,
+              "author": "nestamidavaine",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:27:22Z"
+            },
+            {
+              "number": 1231,
+              "author": "nestamidavaine",
+              "status": "AT_RISK",
+              "bpb": 1.1163,
+              "created": "2026-04-01T20:29:59Z"
+            }
+          ]
+        }
+      ],
+      "prs": [
+        {
+          "number": 835,
+          "author": "iverbovoy",
+          "status": "INCOMPLETE",
+          "bpb": 1.319,
+          "created": "2026-03-26T08:26:21Z"
+        },
+        {
+          "number": 856,
+          "author": "iverbovoy",
+          "status": "AT_RISK",
+          "bpb": 0.051,
+          "created": "2026-03-26T14:51:46Z"
+        },
+        {
+          "number": 895,
+          "author": "iverbovoy",
+          "status": "INCOMPLETE",
+          "bpb": 0.06,
+          "created": "2026-03-26T20:25:58Z"
+        },
+        {
+          "number": 1230,
+          "author": "nestamidavaine",
+          "status": "DEAD",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:27:22Z"
+        },
+        {
+          "number": 1231,
+          "author": "nestamidavaine",
+          "status": "AT_RISK",
+          "bpb": 1.1163,
+          "created": "2026-04-01T20:29:59Z"
+        }
+      ]
+    },
+    {
       "name": "Differential Attention",
       "kind": "legal",
       "count": 2,
@@ -76242,71 +76867,6 @@
           "status": "ALIVE",
           "bpb": 1.1477,
           "created": "2026-03-21T00:25:33Z"
-        }
-      ]
-    },
-    {
-      "name": "Progressive Depth",
-      "kind": "legal",
-      "count": 3,
-      "author_count": 1,
-      "alive_count": 0,
-      "dead_count": 0,
-      "at_risk_count": 1,
-      "incomplete_count": 2,
-      "unknown_count": 0,
-      "best_alive": null,
-      "people": [
-        {
-          "author": "iverbovoy",
-          "pr_count": 3,
-          "best_bpb": 0.051,
-          "prs": [
-            {
-              "number": 835,
-              "author": "iverbovoy",
-              "status": "INCOMPLETE",
-              "bpb": 1.319,
-              "created": "2026-03-26T08:26:21Z"
-            },
-            {
-              "number": 856,
-              "author": "iverbovoy",
-              "status": "AT_RISK",
-              "bpb": 0.051,
-              "created": "2026-03-26T14:51:46Z"
-            },
-            {
-              "number": 895,
-              "author": "iverbovoy",
-              "status": "INCOMPLETE",
-              "bpb": 0.06,
-              "created": "2026-03-26T20:25:58Z"
-            }
-          ]
-        }
-      ],
-      "prs": [
-        {
-          "number": 835,
-          "author": "iverbovoy",
-          "status": "INCOMPLETE",
-          "bpb": 1.319,
-          "created": "2026-03-26T08:26:21Z"
-        },
-        {
-          "number": 856,
-          "author": "iverbovoy",
-          "status": "AT_RISK",
-          "bpb": 0.051,
-          "created": "2026-03-26T14:51:46Z"
-        },
-        {
-          "number": 895,
-          "author": "iverbovoy",
-          "status": "INCOMPLETE",
-          "bpb": 0.06,
-          "created": "2026-03-26T20:25:58Z"
         }
       ]
     },
@@ -76458,15 +77018,6 @@
       "score": 1292
     },
     {
-      "left": "TTT",
-      "right": "Progressive Depth",
-      "left_count": 416,
-      "right_count": 3,
-      "left_people": 216,
-      "right_people": 1,
-      "score": 1248
-    },
-    {
       "left": "XSA",
       "right": "SSM/Mamba/S4D",
       "left_count": 61,
@@ -76512,15 +77063,6 @@
       "score": 1020
     },
     {
-      "left": "Muon optimizer",
-      "right": "Progressive Depth",
-      "left_count": 338,
-      "right_count": 3,
-      "left_people": 228,
-      "right_people": 1,
-      "score": 1014
-    },
-    {
       "left": "XSA",
       "right": "MoE",
       "left_count": 61,
@@ -76528,15 +77070,6 @@
       "left_people": 49,
       "right_people": 13,
       "score": 976
-    },
-    {
-      "left": "EMA",
-      "right": "Progressive Depth",
-      "left_count": 321,
-      "right_count": 3,
-      "left_people": 182,
-      "right_people": 1,
-      "score": 963
     },
     {
       "left": "SWA",
@@ -76577,11 +77110,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 416,
+      "left_count": 419,
       "right_count": 2,
-      "left_people": 216,
+      "left_people": 217,
       "right_people": 2,
-      "score": 832
+      "score": 838
     },
     {
       "left": "XSA",
@@ -76602,15 +77135,6 @@
       "score": 707
     },
     {
-      "left": "GPTQ",
-      "right": "Progressive Depth",
-      "left_count": 233,
-      "right_count": 3,
-      "left_people": 111,
-      "right_people": 1,
-      "score": 699
-    },
-    {
       "left": "SwiGLU",
       "right": "Ternary Weights",
       "left_count": 46,
@@ -76622,29 +77146,29 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 338,
+      "left_count": 341,
       "right_count": 2,
-      "left_people": 228,
+      "left_people": 229,
       "right_people": 2,
-      "score": 676
+      "score": 682
     },
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 321,
+      "left_count": 324,
       "right_count": 2,
-      "left_people": 182,
+      "left_people": 183,
       "right_people": 2,
-      "score": 642
+      "score": 648
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 321,
+      "left_count": 324,
       "right_count": 2,
-      "left_people": 182,
+      "left_people": 183,
       "right_people": 2,
-      "score": 642
+      "score": 648
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -76683,6 +77207,15 @@
       "score": 522
     },
     {
+      "left": "QAT",
+      "right": "Progressive Depth",
+      "left_count": 101,
+      "right_count": 5,
+      "left_people": 82,
+      "right_people": 2,
+      "score": 505
+    },
+    {
       "left": "SWA",
       "right": "Value Residual",
       "left_count": 72,
@@ -76694,20 +77227,29 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 233,
+      "left_count": 236,
       "right_count": 2,
-      "left_people": 111,
+      "left_people": 112,
       "right_people": 2,
-      "score": 466
+      "score": 472
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 233,
+      "left_count": 236,
       "right_count": 2,
-      "left_people": 111,
+      "left_people": 112,
       "right_people": 2,
-      "score": 466
+      "score": 472
+    },
+    {
+      "left": "LeakyReLU\u00b2",
+      "right": "Progressive Depth",
+      "left_count": 87,
+      "right_count": 5,
+      "left_people": 67,
+      "right_people": 2,
+      "score": 435
     },
     {
       "left": "SWA",
@@ -76719,6 +77261,15 @@
       "score": 432
     },
     {
+      "left": "TTT",
+      "right": "Flash Attention",
+      "left_count": 419,
+      "right_count": 1,
+      "left_people": 217,
+      "right_people": 1,
+      "score": 419
+    },
+    {
       "left": "Parallel Muon",
       "right": "SSM/Mamba/S4D",
       "left_count": 22,
@@ -76726,15 +77277,6 @@
       "left_people": 12,
       "right_people": 13,
       "score": 418
-    },
-    {
-      "left": "TTT",
-      "right": "Flash Attention",
-      "left_count": 416,
-      "right_count": 1,
-      "left_people": 216,
-      "right_people": 1,
-      "score": 416
     },
     {
       "left": "BigramHash",
@@ -76755,6 +77297,15 @@
       "score": 366
     },
     {
+      "left": "SWA",
+      "right": "Progressive Depth",
+      "left_count": 72,
+      "right_count": 5,
+      "left_people": 62,
+      "right_people": 2,
+      "score": 360
+    },
+    {
       "left": "Parallel Muon",
       "right": "MoE",
       "left_count": 22,
@@ -76762,6 +77313,15 @@
       "left_people": 12,
       "right_people": 13,
       "score": 352
+    },
+    {
+      "left": "BigramHash",
+      "right": "Progressive Depth",
+      "left_count": 68,
+      "right_count": 5,
+      "left_people": 61,
+      "right_people": 2,
+      "score": 340
     },
     {
       "left": "Parallel Muon",
@@ -76775,11 +77335,20 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 321,
+      "left_count": 324,
       "right_count": 1,
-      "left_people": 182,
+      "left_people": 183,
       "right_people": 1,
-      "score": 321
+      "score": 324
+    },
+    {
+      "left": "XSA",
+      "right": "Progressive Depth",
+      "left_count": 61,
+      "right_count": 5,
+      "left_people": 49,
+      "right_people": 2,
+      "score": 305
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -76789,15 +77358,6 @@
       "left_people": 13,
       "right_people": 13,
       "score": 304
-    },
-    {
-      "left": "QAT",
-      "right": "Progressive Depth",
-      "left_count": 101,
-      "right_count": 3,
-      "left_people": 82,
-      "right_people": 1,
-      "score": 303
     },
     {
       "left": "Parallel Muon",
@@ -76818,15 +77378,6 @@
       "score": 276
     },
     {
-      "left": "LeakyReLU\u00b2",
-      "right": "Progressive Depth",
-      "left_count": 87,
-      "right_count": 3,
-      "left_people": 67,
-      "right_people": 1,
-      "score": 261
-    },
-    {
       "left": "MoE",
       "right": "Ternary Weights",
       "left_count": 16,
@@ -76838,20 +77389,20 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 233,
+      "left_count": 236,
       "right_count": 1,
-      "left_people": 111,
+      "left_people": 112,
       "right_people": 1,
-      "score": 233
+      "score": 236
     },
     {
-      "left": "SWA",
+      "left": "SwiGLU",
       "right": "Progressive Depth",
-      "left_count": 72,
-      "right_count": 3,
-      "left_people": 62,
-      "right_people": 1,
-      "score": 216
+      "left_count": 46,
+      "right_count": 5,
+      "left_people": 39,
+      "right_people": 2,
+      "score": 230
     },
     {
       "left": "MoE",
@@ -76861,15 +77412,6 @@
       "left_people": 13,
       "right_people": 12,
       "score": 208
-    },
-    {
-      "left": "BigramHash",
-      "right": "Progressive Depth",
-      "left_count": 68,
-      "right_count": 3,
-      "left_people": 61,
-      "right_people": 1,
-      "score": 204
     },
     {
       "left": "QAT",
@@ -76888,15 +77430,6 @@
       "left_people": 12,
       "right_people": 12,
       "score": 195
-    },
-    {
-      "left": "XSA",
-      "right": "Progressive Depth",
-      "left_count": 61,
-      "right_count": 3,
-      "left_people": 49,
-      "right_people": 1,
-      "score": 183
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -76933,15 +77466,6 @@
       "left_people": 62,
       "right_people": 2,
       "score": 144
-    },
-    {
-      "left": "SwiGLU",
-      "right": "Progressive Depth",
-      "left_count": 46,
-      "right_count": 3,
-      "left_people": 39,
-      "right_people": 1,
-      "score": 138
     },
     {
       "left": "BigramHash",
@@ -77007,6 +77531,15 @@
       "score": 112
     },
     {
+      "left": "Parallel Muon",
+      "right": "Progressive Depth",
+      "left_count": 22,
+      "right_count": 5,
+      "left_people": 12,
+      "right_people": 2,
+      "score": 110
+    },
+    {
       "left": "Ternary Weights",
       "right": "Value Residual",
       "left_count": 15,
@@ -77023,6 +77556,15 @@
       "left_people": 82,
       "right_people": 1,
       "score": 101
+    },
+    {
+      "left": "SSM/Mamba/S4D",
+      "right": "Progressive Depth",
+      "left_count": 19,
+      "right_count": 5,
+      "left_people": 13,
+      "right_people": 2,
+      "score": 95
     },
     {
       "left": "SwiGLU",
@@ -77070,6 +77612,15 @@
       "score": 87
     },
     {
+      "left": "MoE",
+      "right": "Progressive Depth",
+      "left_count": 16,
+      "right_count": 5,
+      "left_people": 13,
+      "right_people": 2,
+      "score": 80
+    },
+    {
       "left": "JEPA",
       "right": "Weight Sharing",
       "left_count": 13,
@@ -77077,6 +77628,15 @@
       "left_people": 12,
       "right_people": 4,
       "score": 78
+    },
+    {
+      "left": "Ternary Weights",
+      "right": "Progressive Depth",
+      "left_count": 15,
+      "right_count": 5,
+      "left_people": 12,
+      "right_people": 2,
+      "score": 75
     },
     {
       "left": "SWA",
@@ -77097,13 +77657,13 @@
       "score": 68
     },
     {
-      "left": "Parallel Muon",
+      "left": "JEPA",
       "right": "Progressive Depth",
-      "left_count": 22,
-      "right_count": 3,
+      "left_count": 13,
+      "right_count": 5,
       "left_people": 12,
-      "right_people": 1,
-      "score": 66
+      "right_people": 2,
+      "score": 65
     },
     {
       "left": "XSA",
@@ -77115,24 +77675,6 @@
       "score": 61
     },
     {
-      "left": "SSM/Mamba/S4D",
-      "right": "Progressive Depth",
-      "left_count": 19,
-      "right_count": 3,
-      "left_people": 13,
-      "right_people": 1,
-      "score": 57
-    },
-    {
-      "left": "MoE",
-      "right": "Progressive Depth",
-      "left_count": 16,
-      "right_count": 3,
-      "left_people": 13,
-      "right_people": 1,
-      "score": 48
-    },
-    {
       "left": "SwiGLU",
       "right": "Flash Attention",
       "left_count": 46,
@@ -77140,15 +77682,6 @@
       "left_people": 39,
       "right_people": 1,
       "score": 46
-    },
-    {
-      "left": "Ternary Weights",
-      "right": "Progressive Depth",
-      "left_count": 15,
-      "right_count": 3,
-      "left_people": 12,
-      "right_people": 1,
-      "score": 45
     },
     {
       "left": "Parallel Muon",
@@ -77178,15 +77711,6 @@
       "score": 42
     },
     {
-      "left": "JEPA",
-      "right": "Progressive Depth",
-      "left_count": 13,
-      "right_count": 3,
-      "left_people": 12,
-      "right_people": 1,
-      "score": 39
-    },
-    {
       "left": "SSM/Mamba/S4D",
       "right": "Differential Attention",
       "left_count": 19,
@@ -77203,6 +77727,15 @@
       "left_people": 13,
       "right_people": 2,
       "score": 38
+    },
+    {
+      "left": "Value Residual",
+      "right": "Progressive Depth",
+      "left_count": 7,
+      "right_count": 5,
+      "left_people": 6,
+      "right_people": 2,
+      "score": 35
     },
     {
       "left": "MoE",
@@ -77237,6 +77770,15 @@
       "left_count": 15,
       "right_count": 2,
       "left_people": 12,
+      "right_people": 2,
+      "score": 30
+    },
+    {
+      "left": "Weight Sharing",
+      "right": "Progressive Depth",
+      "left_count": 6,
+      "right_count": 5,
+      "left_people": 4,
       "right_people": 2,
       "score": 30
     },
@@ -77268,15 +77810,6 @@
       "score": 22
     },
     {
-      "left": "Value Residual",
-      "right": "Progressive Depth",
-      "left_count": 7,
-      "right_count": 3,
-      "left_people": 6,
-      "right_people": 1,
-      "score": 21
-    },
-    {
       "left": "SSM/Mamba/S4D",
       "right": "Flash Attention",
       "left_count": 19,
@@ -77284,15 +77817,6 @@
       "left_people": 13,
       "right_people": 1,
       "score": 19
-    },
-    {
-      "left": "Weight Sharing",
-      "right": "Progressive Depth",
-      "left_count": 6,
-      "right_count": 3,
-      "left_people": 4,
-      "right_people": 1,
-      "score": 18
     },
     {
       "left": "MoE",
@@ -77358,6 +77882,24 @@
       "score": 12
     },
     {
+      "left": "Progressive Depth",
+      "right": "Differential Attention",
+      "left_count": 5,
+      "right_count": 2,
+      "left_people": 2,
+      "right_people": 2,
+      "score": 10
+    },
+    {
+      "left": "Progressive Depth",
+      "right": "U-Net skips",
+      "left_count": 5,
+      "right_count": 2,
+      "left_people": 2,
+      "right_people": 2,
+      "score": 10
+    },
+    {
       "left": "Value Residual",
       "right": "Flash Attention",
       "left_count": 7,
@@ -77377,21 +77919,12 @@
     },
     {
       "left": "Progressive Depth",
-      "right": "Differential Attention",
-      "left_count": 3,
-      "right_count": 2,
-      "left_people": 1,
-      "right_people": 2,
-      "score": 6
-    },
-    {
-      "left": "Progressive Depth",
-      "right": "U-Net skips",
-      "left_count": 3,
-      "right_count": 2,
-      "left_people": 1,
-      "right_people": 2,
-      "score": 6
+      "right": "Flash Attention",
+      "left_count": 5,
+      "right_count": 1,
+      "left_people": 2,
+      "right_people": 1,
+      "score": 5
     },
     {
       "left": "Differential Attention",
@@ -77401,15 +77934,6 @@
       "left_people": 2,
       "right_people": 2,
       "score": 4
-    },
-    {
-      "left": "Progressive Depth",
-      "right": "Flash Attention",
-      "left_count": 3,
-      "right_count": 1,
-      "left_people": 1,
-      "right_people": 1,
-      "score": 3
     },
     {
       "left": "Differential Attention",
