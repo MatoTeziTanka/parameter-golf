@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-01T16:32:07Z",
+  "generated_at": "2026-04-01T17:53:23Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1167,
-    "matched_pr_count": 837,
+    "pr_count": 1170,
+    "matched_pr_count": 838,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
       "ALIVE": 153,
-      "AT_RISK": 120,
+      "AT_RISK": 121,
       "DEAD": 337,
-      "INCOMPLETE": 557,
+      "INCOMPLETE": 559,
       "UNKNOWN": 0
     }
   },
@@ -413,7 +413,7 @@
               "number": 1222,
               "author": "abaybektursun",
               "status": "INCOMPLETE",
-              "bpb": 0.076,
+              "bpb": 0.022,
               "created": "2026-04-01T15:13:14Z"
             }
           ]
@@ -7333,7 +7333,7 @@
           "number": 1222,
           "author": "abaybektursun",
           "status": "INCOMPLETE",
-          "bpb": 0.076,
+          "bpb": 0.022,
           "created": "2026-04-01T15:13:14Z"
         }
       ]
@@ -19456,12 +19456,12 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 229,
-      "author_count": 109,
+      "count": 231,
+      "author_count": 110,
       "alive_count": 42,
       "dead_count": 82,
       "at_risk_count": 49,
-      "incomplete_count": 56,
+      "incomplete_count": 58,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -19694,6 +19694,83 @@
           ]
         },
         {
+          "author": "abaybektursun",
+          "pr_count": 10,
+          "best_bpb": 0.022,
+          "prs": [
+            {
+              "number": 473,
+              "author": "abaybektursun",
+              "status": "DEAD",
+              "bpb": 1.1214,
+              "created": "2026-03-22T23:28:14Z"
+            },
+            {
+              "number": 549,
+              "author": "abaybektursun",
+              "status": "ALIVE",
+              "bpb": 1.1194,
+              "created": "2026-03-23T16:08:26Z"
+            },
+            {
+              "number": 593,
+              "author": "abaybektursun",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-03-24T01:45:34Z"
+            },
+            {
+              "number": 670,
+              "author": "abaybektursun",
+              "status": "INCOMPLETE",
+              "bpb": 1.1171,
+              "created": "2026-03-25T02:20:33Z"
+            },
+            {
+              "number": 728,
+              "author": "abaybektursun",
+              "status": "DEAD",
+              "bpb": 1.1147,
+              "created": "2026-03-25T15:03:32Z"
+            },
+            {
+              "number": 756,
+              "author": "abaybektursun",
+              "status": "INCOMPLETE",
+              "bpb": 1.1142,
+              "created": "2026-03-25T18:57:51Z"
+            },
+            {
+              "number": 1019,
+              "author": "abaybektursun",
+              "status": "ALIVE",
+              "bpb": 1.1147,
+              "created": "2026-03-28T13:34:01Z"
+            },
+            {
+              "number": 1103,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 1.1147,
+              "created": "2026-03-29T23:30:35Z"
+            },
+            {
+              "number": 1105,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 1.1052,
+              "created": "2026-03-30T00:03:19Z"
+            },
+            {
+              "number": 1222,
+              "author": "abaybektursun",
+              "status": "INCOMPLETE",
+              "bpb": 0.022,
+              "created": "2026-04-01T15:13:14Z"
+            }
+          ]
+        },
+        {
           "author": "gowtham0992",
           "pr_count": 9,
           "best_bpb": 0.6846,
@@ -19760,76 +19837,6 @@
               "status": "AT_RISK",
               "bpb": 1.3639,
               "created": "2026-03-31T03:32:38Z"
-            }
-          ]
-        },
-        {
-          "author": "abaybektursun",
-          "pr_count": 9,
-          "best_bpb": 1.1052,
-          "prs": [
-            {
-              "number": 473,
-              "author": "abaybektursun",
-              "status": "DEAD",
-              "bpb": 1.1214,
-              "created": "2026-03-22T23:28:14Z"
-            },
-            {
-              "number": 549,
-              "author": "abaybektursun",
-              "status": "ALIVE",
-              "bpb": 1.1194,
-              "created": "2026-03-23T16:08:26Z"
-            },
-            {
-              "number": 593,
-              "author": "abaybektursun",
-              "status": "DEAD",
-              "bpb": 1.1163,
-              "created": "2026-03-24T01:45:34Z"
-            },
-            {
-              "number": 670,
-              "author": "abaybektursun",
-              "status": "INCOMPLETE",
-              "bpb": 1.1171,
-              "created": "2026-03-25T02:20:33Z"
-            },
-            {
-              "number": 728,
-              "author": "abaybektursun",
-              "status": "DEAD",
-              "bpb": 1.1147,
-              "created": "2026-03-25T15:03:32Z"
-            },
-            {
-              "number": 756,
-              "author": "abaybektursun",
-              "status": "INCOMPLETE",
-              "bpb": 1.1142,
-              "created": "2026-03-25T18:57:51Z"
-            },
-            {
-              "number": 1019,
-              "author": "abaybektursun",
-              "status": "ALIVE",
-              "bpb": 1.1147,
-              "created": "2026-03-28T13:34:01Z"
-            },
-            {
-              "number": 1103,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": 1.1147,
-              "created": "2026-03-29T23:30:35Z"
-            },
-            {
-              "number": 1105,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": 1.1052,
-              "created": "2026-03-30T00:03:19Z"
             }
           ]
         },
@@ -21822,6 +21829,20 @@
           ]
         },
         {
+          "author": "vermissa0ss",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1224,
+              "author": "vermissa0ss",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T17:02:18Z"
+            }
+          ]
+        },
+        {
           "author": "whitestone1121-web",
           "pr_count": 1,
           "best_bpb": null,
@@ -23439,6 +23460,20 @@
           "status": "AT_RISK",
           "bpb": 1.1084,
           "created": "2026-04-01T13:21:37Z"
+        },
+        {
+          "number": 1222,
+          "author": "abaybektursun",
+          "status": "INCOMPLETE",
+          "bpb": 0.022,
+          "created": "2026-04-01T15:13:14Z"
+        },
+        {
+          "number": 1224,
+          "author": "vermissa0ss",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T17:02:18Z"
         }
       ]
     },
@@ -30021,12 +30056,12 @@
     {
       "name": "XSA",
       "kind": "legal",
-      "count": 59,
-      "author_count": 47,
+      "count": 60,
+      "author_count": 48,
       "alive_count": 15,
       "dead_count": 17,
       "at_risk_count": 7,
-      "incomplete_count": 20,
+      "incomplete_count": 21,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -30775,6 +30810,20 @@
               "created": "2026-04-01T09:58:54Z"
             }
           ]
+        },
+        {
+          "author": "vermissa0ss",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1224,
+              "author": "vermissa0ss",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T17:02:18Z"
+            }
+          ]
         }
       ],
       "prs": [
@@ -31190,6 +31239,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-01T09:58:54Z"
+        },
+        {
+          "number": 1224,
+          "author": "vermissa0ss",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T17:02:18Z"
         }
       ]
     },
@@ -44719,7 +44775,7 @@
               "number": 1222,
               "author": "abaybektursun",
               "status": "INCOMPLETE",
-              "bpb": 0.076,
+              "bpb": 0.022,
               "created": "2026-04-01T15:13:14Z"
             }
           ]
@@ -51639,7 +51695,7 @@
           "number": 1222,
           "author": "abaybektursun",
           "status": "INCOMPLETE",
-          "bpb": 0.076,
+          "bpb": 0.022,
           "created": "2026-04-01T15:13:14Z"
         }
       ]
@@ -57414,12 +57470,12 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 229,
-      "author_count": 109,
+      "count": 231,
+      "author_count": 110,
       "alive_count": 42,
       "dead_count": 82,
       "at_risk_count": 49,
-      "incomplete_count": 56,
+      "incomplete_count": 58,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -57652,6 +57708,83 @@
           ]
         },
         {
+          "author": "abaybektursun",
+          "pr_count": 10,
+          "best_bpb": 0.022,
+          "prs": [
+            {
+              "number": 473,
+              "author": "abaybektursun",
+              "status": "DEAD",
+              "bpb": 1.1214,
+              "created": "2026-03-22T23:28:14Z"
+            },
+            {
+              "number": 549,
+              "author": "abaybektursun",
+              "status": "ALIVE",
+              "bpb": 1.1194,
+              "created": "2026-03-23T16:08:26Z"
+            },
+            {
+              "number": 593,
+              "author": "abaybektursun",
+              "status": "DEAD",
+              "bpb": 1.1163,
+              "created": "2026-03-24T01:45:34Z"
+            },
+            {
+              "number": 670,
+              "author": "abaybektursun",
+              "status": "INCOMPLETE",
+              "bpb": 1.1171,
+              "created": "2026-03-25T02:20:33Z"
+            },
+            {
+              "number": 728,
+              "author": "abaybektursun",
+              "status": "DEAD",
+              "bpb": 1.1147,
+              "created": "2026-03-25T15:03:32Z"
+            },
+            {
+              "number": 756,
+              "author": "abaybektursun",
+              "status": "INCOMPLETE",
+              "bpb": 1.1142,
+              "created": "2026-03-25T18:57:51Z"
+            },
+            {
+              "number": 1019,
+              "author": "abaybektursun",
+              "status": "ALIVE",
+              "bpb": 1.1147,
+              "created": "2026-03-28T13:34:01Z"
+            },
+            {
+              "number": 1103,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 1.1147,
+              "created": "2026-03-29T23:30:35Z"
+            },
+            {
+              "number": 1105,
+              "author": "abaybektursun",
+              "status": "AT_RISK",
+              "bpb": 1.1052,
+              "created": "2026-03-30T00:03:19Z"
+            },
+            {
+              "number": 1222,
+              "author": "abaybektursun",
+              "status": "INCOMPLETE",
+              "bpb": 0.022,
+              "created": "2026-04-01T15:13:14Z"
+            }
+          ]
+        },
+        {
           "author": "gowtham0992",
           "pr_count": 9,
           "best_bpb": 0.6846,
@@ -57718,76 +57851,6 @@
               "status": "AT_RISK",
               "bpb": 1.3639,
               "created": "2026-03-31T03:32:38Z"
-            }
-          ]
-        },
-        {
-          "author": "abaybektursun",
-          "pr_count": 9,
-          "best_bpb": 1.1052,
-          "prs": [
-            {
-              "number": 473,
-              "author": "abaybektursun",
-              "status": "DEAD",
-              "bpb": 1.1214,
-              "created": "2026-03-22T23:28:14Z"
-            },
-            {
-              "number": 549,
-              "author": "abaybektursun",
-              "status": "ALIVE",
-              "bpb": 1.1194,
-              "created": "2026-03-23T16:08:26Z"
-            },
-            {
-              "number": 593,
-              "author": "abaybektursun",
-              "status": "DEAD",
-              "bpb": 1.1163,
-              "created": "2026-03-24T01:45:34Z"
-            },
-            {
-              "number": 670,
-              "author": "abaybektursun",
-              "status": "INCOMPLETE",
-              "bpb": 1.1171,
-              "created": "2026-03-25T02:20:33Z"
-            },
-            {
-              "number": 728,
-              "author": "abaybektursun",
-              "status": "DEAD",
-              "bpb": 1.1147,
-              "created": "2026-03-25T15:03:32Z"
-            },
-            {
-              "number": 756,
-              "author": "abaybektursun",
-              "status": "INCOMPLETE",
-              "bpb": 1.1142,
-              "created": "2026-03-25T18:57:51Z"
-            },
-            {
-              "number": 1019,
-              "author": "abaybektursun",
-              "status": "ALIVE",
-              "bpb": 1.1147,
-              "created": "2026-03-28T13:34:01Z"
-            },
-            {
-              "number": 1103,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": 1.1147,
-              "created": "2026-03-29T23:30:35Z"
-            },
-            {
-              "number": 1105,
-              "author": "abaybektursun",
-              "status": "AT_RISK",
-              "bpb": 1.1052,
-              "created": "2026-03-30T00:03:19Z"
             }
           ]
         },
@@ -59780,6 +59843,20 @@
           ]
         },
         {
+          "author": "vermissa0ss",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1224,
+              "author": "vermissa0ss",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T17:02:18Z"
+            }
+          ]
+        },
+        {
           "author": "whitestone1121-web",
           "pr_count": 1,
           "best_bpb": null,
@@ -61397,6 +61474,20 @@
           "status": "AT_RISK",
           "bpb": 1.1084,
           "created": "2026-04-01T13:21:37Z"
+        },
+        {
+          "number": 1222,
+          "author": "abaybektursun",
+          "status": "INCOMPLETE",
+          "bpb": 0.022,
+          "created": "2026-04-01T15:13:14Z"
+        },
+        {
+          "number": 1224,
+          "author": "vermissa0ss",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T17:02:18Z"
         }
       ]
     },
@@ -70830,12 +70921,12 @@
     {
       "name": "XSA",
       "kind": "legal",
-      "count": 59,
-      "author_count": 47,
+      "count": 60,
+      "author_count": 48,
       "alive_count": 15,
       "dead_count": 17,
       "at_risk_count": 7,
-      "incomplete_count": 20,
+      "incomplete_count": 21,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -71584,6 +71675,20 @@
               "created": "2026-04-01T09:58:54Z"
             }
           ]
+        },
+        {
+          "author": "vermissa0ss",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1224,
+              "author": "vermissa0ss",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T17:02:18Z"
+            }
+          ]
         }
       ],
       "prs": [
@@ -71999,6 +72104,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-01T09:58:54Z"
+        },
+        {
+          "number": 1224,
+          "author": "vermissa0ss",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-01T17:02:18Z"
         }
       ]
     },
@@ -76062,11 +76174,11 @@
     {
       "left": "XSA",
       "right": "SSM/Mamba/S4D",
-      "left_count": 59,
+      "left_count": 60,
       "right_count": 18,
-      "left_people": 47,
+      "left_people": 48,
       "right_people": 13,
-      "score": 1062
+      "score": 1080
     },
     {
       "left": "BigramHash",
@@ -76107,20 +76219,20 @@
     {
       "left": "XSA",
       "right": "MoE",
-      "left_count": 59,
+      "left_count": 60,
       "right_count": 15,
-      "left_people": 47,
+      "left_people": 48,
       "right_people": 12,
-      "score": 885
+      "score": 900
     },
     {
       "left": "XSA",
       "right": "Ternary Weights",
-      "left_count": 59,
+      "left_count": 60,
       "right_count": 15,
-      "left_people": 47,
+      "left_people": 48,
       "right_people": 12,
-      "score": 885
+      "score": 900
     },
     {
       "left": "BigramHash",
@@ -76152,11 +76264,11 @@
     {
       "left": "XSA",
       "right": "JEPA",
-      "left_count": 59,
+      "left_count": 60,
       "right_count": 13,
-      "left_people": 47,
+      "left_people": 48,
       "right_people": 12,
-      "score": 767
+      "score": 780
     },
     {
       "left": "QAT",
@@ -76168,6 +76280,15 @@
       "score": 707
     },
     {
+      "left": "GPTQ",
+      "right": "Progressive Depth",
+      "left_count": 231,
+      "right_count": 3,
+      "left_people": 110,
+      "right_people": 1,
+      "score": 693
+    },
+    {
       "left": "SwiGLU",
       "right": "Ternary Weights",
       "left_count": 46,
@@ -76175,15 +76296,6 @@
       "left_people": 39,
       "right_people": 12,
       "score": 690
-    },
-    {
-      "left": "GPTQ",
-      "right": "Progressive Depth",
-      "left_count": 229,
-      "right_count": 3,
-      "left_people": 109,
-      "right_people": 1,
-      "score": 687
     },
     {
       "left": "Muon optimizer",
@@ -76260,20 +76372,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 229,
+      "left_count": 231,
       "right_count": 2,
-      "left_people": 109,
+      "left_people": 110,
       "right_people": 2,
-      "score": 458
+      "score": 462
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 229,
+      "left_count": 231,
       "right_count": 2,
-      "left_people": 109,
+      "left_people": 110,
       "right_people": 2,
-      "score": 458
+      "score": 462
     },
     {
       "left": "SWA",
@@ -76314,11 +76426,11 @@
     {
       "left": "XSA",
       "right": "Weight Sharing",
-      "left_count": 59,
+      "left_count": 60,
       "right_count": 6,
-      "left_people": 47,
+      "left_people": 48,
       "right_people": 4,
-      "score": 354
+      "score": 360
     },
     {
       "left": "Parallel Muon",
@@ -76395,11 +76507,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 229,
+      "left_count": 231,
       "right_count": 1,
-      "left_people": 109,
+      "left_people": 110,
       "right_people": 1,
-      "score": 229
+      "score": 231
     },
     {
       "left": "MoE",
@@ -76458,11 +76570,11 @@
     {
       "left": "XSA",
       "right": "Progressive Depth",
-      "left_count": 59,
+      "left_count": 60,
       "right_count": 3,
-      "left_people": 47,
+      "left_people": 48,
       "right_people": 1,
-      "score": 177
+      "score": 180
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -76539,20 +76651,20 @@
     {
       "left": "XSA",
       "right": "Differential Attention",
-      "left_count": 59,
+      "left_count": 60,
       "right_count": 2,
-      "left_people": 47,
+      "left_people": 48,
       "right_people": 2,
-      "score": 118
+      "score": 120
     },
     {
       "left": "XSA",
       "right": "U-Net skips",
-      "left_count": 59,
+      "left_count": 60,
       "right_count": 2,
-      "left_people": 47,
+      "left_people": 48,
       "right_people": 2,
-      "score": 118
+      "score": 120
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -76674,11 +76786,11 @@
     {
       "left": "XSA",
       "right": "Flash Attention",
-      "left_count": 59,
+      "left_count": 60,
       "right_count": 1,
-      "left_people": 47,
+      "left_people": 48,
       "right_people": 1,
-      "score": 59
+      "score": 60
     },
     {
       "left": "SSM/Mamba/S4D",
