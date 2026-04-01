@@ -1,7 +1,124 @@
 {
-  "last_fetch": "2026-04-01T23:06:12.027845+00:00",
-  "api_calls_used": 76,
+  "last_fetch": "2026-04-01T23:57:43.669095+00:00",
+  "api_calls_used": 77,
   "prs": [
+    {
+      "number": 1239,
+      "title": "[Non-Record] Whirlpool v5b — Non-Euclidean Lorentzian Attention on the Hyperboloid Manifold",
+      "author": "tmancino",
+      "state": "OPEN",
+      "created": "2026-04-01T23:55:33Z",
+      "updated": "2026-04-01T23:55:33Z",
+      "bpb": 1.5918,
+      "seeds": 314,
+      "artifact_bytes": 12200000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-01_WhirlpoolV5b_LorentzianTransformer/README.md",
+        "records/track_non_record_16mb/2026-04-01_WhirlpoolV5b_LorentzianTransformer/submission.json",
+        "records/track_non_record_16mb/2026-04-01_WhirlpoolV5b_LorentzianTransformer/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-01_WhirlpoolV5b_LorentzianTransformer/train_seed314.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1238,
+      "title": "Non-record: TurboQuant mixed-precision int4/int5 (val_bpb=1.1521)",
+      "author": "ibarrajo",
+      "state": "OPEN",
+      "created": "2026-04-01T23:54:53Z",
+      "updated": "2026-04-01T23:54:53Z",
+      "bpb": 1.1521,
+      "seeds": null,
+      "artifact_bytes": 2100000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-31_ApproachD_TurboQuant_MixedPrecision/README.md",
+        "records/track_10min_16mb/2026-03-31_ApproachD_TurboQuant_MixedPrecision/run.sh",
+        "records/track_10min_16mb/2026-03-31_ApproachD_TurboQuant_MixedPrecision/submission.json",
+        "records/track_10min_16mb/2026-03-31_ApproachD_TurboQuant_MixedPrecision/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1237,
+      "title": "Non-record: Fused Triton relu^2 kernel — negative result (val_bpb=1.1198)",
+      "author": "ibarrajo",
+      "state": "OPEN",
+      "created": "2026-04-01T23:54:43Z",
+      "updated": "2026-04-01T23:54:43Z",
+      "bpb": 1.1198,
+      "seeds": null,
+      "artifact_bytes": 15100000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_ApproachF_FusedTriton/README.md",
+        "records/track_10min_16mb/2026-04-01_ApproachF_FusedTriton/run.sh",
+        "records/track_10min_16mb/2026-04-01_ApproachF_FusedTriton/submission.json",
+        "records/track_10min_16mb/2026-04-01_ApproachF_FusedTriton/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1236,
+      "title": "Non-record: SLOT eval-time delta optimization + QK-Gain (val_bpb=1.1179)",
+      "author": "ibarrajo",
+      "state": "OPEN",
+      "created": "2026-04-01T23:54:36Z",
+      "updated": "2026-04-01T23:54:36Z",
+      "bpb": 1.1179,
+      "seeds": null,
+      "artifact_bytes": 15200000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_ApproachE_SLOT_QKGain/README.md",
+        "records/track_10min_16mb/2026-04-01_ApproachE_SLOT_QKGain/run.sh",
+        "records/track_10min_16mb/2026-04-01_ApproachE_SLOT_QKGain/submission.json",
+        "records/track_10min_16mb/2026-04-01_ApproachE_SLOT_QKGain/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1235,
       "title": "Non-record: 21L PRP experiment",
