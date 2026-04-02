@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-02T10:54:53.827009+00:00",
-  "api_calls_used": 83,
+  "last_fetch": "2026-04-02T11:49:52.636529+00:00",
+  "api_calls_used": 84,
   "prs": [
     {
       "number": 1255,
@@ -102,9 +102,9 @@
       "number": 1252,
       "title": "Record(?): WARP (Word-Aware Representation Priors) — val_bpb 1.0713 | 1xH100 10min | 13.65 MB",
       "author": "ahmetdenizyilmaz",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-02T08:33:33Z",
-      "updated": "2026-04-02T08:33:33Z",
+      "updated": "2026-04-02T11:38:53Z",
       "bpb": 1.0713,
       "seeds": 1337,
       "artifact_bytes": 13653989,
@@ -123,9 +123,11 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1251,
@@ -11489,7 +11491,7 @@
       "author": "Akhilesh-Gogikar",
       "state": "OPEN",
       "created": "2026-03-26T23:29:05Z",
-      "updated": "2026-04-02T10:27:37Z",
+      "updated": "2026-04-02T11:47:46Z",
       "bpb": 0.013,
       "seeds": 5,
       "artifact_bytes": 12000000,
@@ -11503,6 +11505,7 @@
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/fineweb_8192_bpe.model",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/fineweb_8192_bpe.vocab",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hp_1hr_best.log",
+        "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hp_lr035_refinement.log",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hp_sweep_results.log",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hybrid_1hr_marathon.log",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hybrid_mac_benchmark.log",
@@ -11512,6 +11515,7 @@
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/run_hp_sweep.sh",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/run_hybrid_mac.sh",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/run_mlx_reasoner.sh",
+        "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/run_runpod_8xh100.sh",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/setup.sh",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/submission.json",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/train_gpt.py",
