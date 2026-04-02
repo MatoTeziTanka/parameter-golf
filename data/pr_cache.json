@@ -1,14 +1,74 @@
 {
-  "last_fetch": "2026-04-02T18:09:51.468452+00:00",
-  "api_calls_used": 89,
+  "last_fetch": "2026-04-02T19:29:58.129674+00:00",
+  "api_calls_used": 90,
   "prs": [
+    {
+      "number": 1262,
+      "title": "Starter kit: align submission schema and path safety",
+      "author": "SID-6921",
+      "state": "OPEN",
+      "created": "2026-04-02T18:48:45Z",
+      "updated": "2026-04-02T18:53:27Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "starter_kit/START_HERE.md",
+        "starter_kit/notes/EXPERIMENT_LOG_TEMPLATE.md",
+        "starter_kit/scripts/01_runpod_bootstrap.sh",
+        "starter_kit/scripts/02_smoke_run.sh",
+        "starter_kit/scripts/03_full_run.sh",
+        "starter_kit/scripts/prepare_submission.py",
+        "starter_kit/templates/README_submission_template.md",
+        "starter_kit/templates/submission.json.template"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1261,
+      "title": "Add non-record 1xH100 budget seq2048 run (val_bpb 1.3029)",
+      "author": "Aniket-pd",
+      "state": "OPEN",
+      "created": "2026-04-02T18:42:37Z",
+      "updated": "2026-04-02T19:00:00Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 11851989,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-02_1xH100_Budget_Seq2048_LRTune/README.md",
+        "records/track_non_record_16mb/2026-04-02_1xH100_Budget_Seq2048_LRTune/submission.json",
+        "records/track_non_record_16mb/2026-04-02_1xH100_Budget_Seq2048_LRTune/train.log",
+        "records/track_non_record_16mb/2026-04-02_1xH100_Budget_Seq2048_LRTune/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1260,
       "title": "Record: MuonEq-R + Depth Recurrence + Mixed Int5/Int6 GPTQ — val_bpb 1.0929 (3-seed mean)",
       "author": "dexhunter",
       "state": "OPEN",
       "created": "2026-04-02T17:35:11Z",
-      "updated": "2026-04-02T17:35:11Z",
+      "updated": "2026-04-02T19:18:26Z",
       "bpb": 1.0929,
       "seeds": 3,
       "artifact_bytes": 15981324,
@@ -759,7 +819,7 @@
       "author": "maksblu",
       "state": "OPEN",
       "created": "2026-04-01T22:32:48Z",
-      "updated": "2026-04-01T22:32:48Z",
+      "updated": "2026-04-02T19:00:26Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 17700000,
@@ -768,6 +828,7 @@
         "records/track_10min_16mb/2026-04-01_21L_PRP/README.md",
         "records/track_10min_16mb/2026-04-01_21L_PRP/prp.py",
         "records/track_10min_16mb/2026-04-01_21L_PRP/submission.json",
+        "records/track_10min_16mb/2026-04-01_21L_PRP/tokenizer_getter.py",
         "records/track_10min_16mb/2026-04-01_21L_PRP/train.log",
         "records/track_10min_16mb/2026-04-01_21L_PRP/train_gpt.py"
       ],
@@ -10298,7 +10359,7 @@
       "author": "Bharath-970",
       "state": "OPEN",
       "created": "2026-03-27T12:39:35Z",
-      "updated": "2026-03-27T12:39:35Z",
+      "updated": "2026-04-02T18:40:02Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 1300000,
@@ -10335,14 +10396,14 @@
         "gptq_eval",
         "leaky_relu"
       ],
+      "track": "record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 950,
@@ -13638,14 +13699,14 @@
     },
     {
       "number": 855,
-      "title": "Non-Record: First Viable 3-Loop Recurrence — Birkhoff + Output-LN + Timestep Scaling (val_bpb=1.2659, 14 eff layers from 6 unique blocks)",
+      "title": "Non-Record: Depth Recurrence Research — 20 Ablation Runs, 8 Techniques, 5 Series (best val_bpb=1.2624, 14 eff layers from 6 unique blocks)",
       "author": "aazizyan",
       "state": "OPEN",
       "created": "2026-03-26T14:36:10Z",
-      "updated": "2026-03-26T14:41:29Z",
-      "bpb": 1.2659,
+      "updated": "2026-04-02T18:41:49Z",
+      "bpb": 1.2624,
       "seeds": null,
-      "artifact_bytes": 10700000,
+      "artifact_bytes": 16000000,
       "technique_summary": "INT8",
       "file_paths": [
         "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/README.md",
@@ -13661,8 +13722,20 @@
         "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s2_I.txt",
         "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s2_J.txt",
         "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s2_K.txt",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s3_L.txt",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s3_M.txt",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s3_N.txt",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s3_O.txt",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s4_P.txt",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s4_Q.txt",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s4_R.txt",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s4_S.txt",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/logs/s5_T.txt",
         "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/research_notes.md",
         "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/scripts/run_fullscale.sh",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/scripts/run_fullscale2.sh",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/scripts/run_fullscale3.sh",
+        "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/scripts/run_fullscale4.sh",
         "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/scripts/run_screening.sh",
         "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/submission.json",
         "records/track_non_record_16mb/2026-03-26_RecurrenceFix_3Loop_Birkhoff_OutputLN_TimestepScale/train_gpt.py",
@@ -13670,13 +13743,13 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 854,
