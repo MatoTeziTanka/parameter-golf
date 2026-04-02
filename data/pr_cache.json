@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-02T06:49:23.690547+00:00",
-  "api_calls_used": 80,
+  "last_fetch": "2026-04-02T08:08:50.616646+00:00",
+  "api_calls_used": 81,
   "prs": [
     {
       "number": 1247,
@@ -486,11 +486,11 @@
     },
     {
       "number": 1231,
-      "title": "Non-record: Stable Growing Recurrence, Progressive Depth + Error Feedback ",
+      "title": "Non-record: Stable Growing Recurrence, Progressive Depth + Error Feedback (1.1163 BPB)",
       "author": "nestamidavaine",
       "state": "OPEN",
       "created": "2026-04-01T20:29:59Z",
-      "updated": "2026-04-01T20:30:34Z",
+      "updated": "2026-04-02T07:37:49Z",
       "bpb": 1.1163,
       "seeds": 3,
       "artifact_bytes": 88253,
@@ -11248,7 +11248,7 @@
       "author": "Akhilesh-Gogikar",
       "state": "OPEN",
       "created": "2026-03-26T23:29:05Z",
-      "updated": "2026-03-28T07:19:46Z",
+      "updated": "2026-04-02T07:50:46Z",
       "bpb": 0.013,
       "seeds": 5,
       "artifact_bytes": 12000000,
@@ -11257,10 +11257,16 @@
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/ABLATION_TODO.md",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/IMPLEMENTATION_PLAN.md",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/README.md",
+        "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/bakeoff_results.json",
+        "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/bakeoff_results.md",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/fineweb_8192_bpe.model",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/fineweb_8192_bpe.vocab",
+        "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hybrid_1hr_marathon.log",
+        "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hybrid_mac_benchmark.log",
+        "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hybrid_mac_benchmark_rerun.log",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/requirements.txt",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/run_cuda_feedback.sh",
+        "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/run_hybrid_mac.sh",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/run_mlx_reasoner.sh",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/setup.sh",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/submission.json",
@@ -11274,13 +11280,13 @@
         "cache_eval",
         "leaky_relu"
       ],
+      "track": "record",
+      "technique_type": "hybrid",
       "status": "AT_RISK",
       "flags": [
         "keyword:ngram"
       ],
-      "confidence": "LOW",
-      "track": "record",
-      "technique_type": "hybrid"
+      "confidence": "LOW"
     },
     {
       "number": 910,
