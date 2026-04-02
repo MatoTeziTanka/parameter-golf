@@ -1,7 +1,64 @@
 {
-  "last_fetch": "2026-04-02T14:39:39.839842+00:00",
-  "api_calls_used": 86,
+  "last_fetch": "2026-04-02T16:03:11.665207+00:00",
+  "api_calls_used": 87,
   "prs": [
+    {
+      "number": 1258,
+      "title": "11L INT7 + MuonWD + SWA (preliminary)",
+      "author": "jorge-asenjo",
+      "state": "OPEN",
+      "created": "2026-04-02T15:30:14Z",
+      "updated": "2026-04-02T15:30:14Z",
+      "bpb": 1.3874,
+      "seeds": null,
+      "artifact_bytes": 2600000,
+      "technique_summary": "Muon + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-20_11L_INT7_MuonWD_SWA/README.md",
+        "records/track_10min_16mb/2026-03-20_11L_INT7_MuonWD_SWA/submission.json",
+        "records/track_10min_16mb/2026-03-20_11L_INT7_MuonWD_SWA/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1257,
+      "title": "Add: 11L Complement Training + TTT + No-JEPA submission (val_bpb 1.0855)",
+      "author": "BoxiYu",
+      "state": "OPEN",
+      "created": "2026-04-02T15:18:43Z",
+      "updated": "2026-04-02T15:18:43Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-29_11L_TTT_A100_1.0863/README.md",
+        "records/track_10min_16mb/2026-03-29_11L_TTT_A100_1.0863/final_model.int6.ptz",
+        "records/track_10min_16mb/2026-03-29_11L_TTT_A100_1.0863/submission.json",
+        "records/track_10min_16mb/2026-03-29_11L_TTT_A100_1.0863/train.log",
+        "records/track_10min_16mb/2026-03-29_11L_TTT_A100_1.0863/train_sota1006.py",
+        "records/track_non_record_16mb/2026-03-30_11L_ComplementTTT_NoEPA_A100_1.0855/README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1256,
       "title": "Non-record: LeakyReLU(0.5)^2 on SmearGate + BigramHash + Int6 stack (1.1444 bpb)",
@@ -307,7 +364,7 @@
       "author": "deborahnelson8788726",
       "state": "OPEN",
       "created": "2026-04-02T02:44:32Z",
-      "updated": "2026-04-02T14:37:28Z",
+      "updated": "2026-04-02T15:49:24Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 14200000,
@@ -315,7 +372,10 @@
       "file_paths": [
         "records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/README.md",
         "records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/submission.json",
-        "records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/train_gpt.py"
+        "records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/train_gpt.py",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/submission.json",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -759,7 +819,7 @@
       "author": "nestamidavaine",
       "state": "OPEN",
       "created": "2026-04-01T20:29:59Z",
-      "updated": "2026-04-02T07:37:49Z",
+      "updated": "2026-04-02T15:50:36Z",
       "bpb": 1.1163,
       "seeds": 3,
       "artifact_bytes": 88253,
@@ -4454,7 +4514,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-30T04:57:49Z",
-      "updated": "2026-03-31T19:43:19Z",
+      "updated": "2026-04-02T15:57:32Z",
       "bpb": 1.1099,
       "seeds": 3,
       "artifact_bytes": 15554053,
