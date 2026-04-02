@@ -1,7 +1,38 @@
 {
-  "last_fetch": "2026-04-02T16:03:11.665207+00:00",
-  "api_calls_used": 87,
+  "last_fetch": "2026-04-02T17:25:50.595382+00:00",
+  "api_calls_used": 88,
   "prs": [
+    {
+      "number": 1259,
+      "title": "Non-record: KNN Hidden State Retrieval — Scale Deception from Weak to Strong Models (8xH100)",
+      "author": "himanshudongre",
+      "state": "OPEN",
+      "created": "2026-04-02T16:13:22Z",
+      "updated": "2026-04-02T16:13:22Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15800000,
+      "technique_summary": "TTT + SSM",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-02_KNN_Scale_Deception_8xH100/README.md",
+        "records/track_non_record_16mb/2026-04-02_KNN_Scale_Deception_8xH100/knn_eval_patch.py",
+        "records/track_non_record_16mb/2026-04-02_KNN_Scale_Deception_8xH100/knn_vectorized.py",
+        "records/track_non_record_16mb/2026-04-02_KNN_Scale_Deception_8xH100/submission.json",
+        "records/track_non_record_16mb/2026-04-02_KNN_Scale_Deception_8xH100/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1258,
       "title": "11L INT7 + MuonWD + SWA (preliminary)",
@@ -34,7 +65,7 @@
       "author": "BoxiYu",
       "state": "OPEN",
       "created": "2026-04-02T15:18:43Z",
-      "updated": "2026-04-02T15:18:43Z",
+      "updated": "2026-04-02T16:55:13Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -334,7 +365,7 @@
       "author": "fahmitech",
       "state": "OPEN",
       "created": "2026-04-02T05:18:24Z",
-      "updated": "2026-04-02T05:18:24Z",
+      "updated": "2026-04-02T16:32:30Z",
       "bpb": 0.0052,
       "seeds": 1337,
       "artifact_bytes": 16000000,
@@ -364,7 +395,7 @@
       "author": "deborahnelson8788726",
       "state": "OPEN",
       "created": "2026-04-02T02:44:32Z",
-      "updated": "2026-04-02T15:49:24Z",
+      "updated": "2026-04-02T16:45:08Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 14200000,
@@ -489,9 +520,9 @@
       "number": 1242,
       "title": "Record: Scylla + n-gram + legal TTT — val_bpb 1.0903 (3-seed mean)",
       "author": "Campbellb",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-02T02:03:08Z",
-      "updated": "2026-04-02T02:04:50Z",
+      "updated": "2026-04-02T16:10:41Z",
       "bpb": 1.0903,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -512,10 +543,9 @@
       ],
       "track": "record",
       "technique_type": "hybrid",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "keyword:ngram",
-        "keyword:two_pass"
+        "closed-no-maintainer-comment"
       ],
       "confidence": "LOW"
     },
@@ -4514,7 +4544,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-30T04:57:49Z",
-      "updated": "2026-04-02T15:57:32Z",
+      "updated": "2026-04-02T17:22:04Z",
       "bpb": 1.1099,
       "seeds": 3,
       "artifact_bytes": 15554053,
@@ -28493,7 +28523,7 @@
       "author": "Sambhav242005",
       "state": "OPEN",
       "created": "2026-03-22T01:35:57Z",
-      "updated": "2026-03-29T11:28:30Z",
+      "updated": "2026-04-02T16:30:28Z",
       "bpb": 1.4061,
       "seeds": null,
       "artifact_bytes": 4390000,

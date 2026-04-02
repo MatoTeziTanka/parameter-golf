@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-02T16:03:21Z",
+  "generated_at": "2026-04-02T17:26:00Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1203,
-    "matched_pr_count": 869,
+    "pr_count": 1204,
+    "matched_pr_count": 870,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
       "ALIVE": 155,
-      "AT_RISK": 121,
-      "DEAD": 344,
-      "INCOMPLETE": 583,
+      "AT_RISK": 120,
+      "DEAD": 345,
+      "INCOMPLETE": 584,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 436,
+      "count": 437,
       "author_count": 223,
       "alive_count": 62,
-      "dead_count": 159,
-      "at_risk_count": 59,
-      "incomplete_count": 156,
+      "dead_count": 160,
+      "at_risk_count": 58,
+      "incomplete_count": 157,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -1056,6 +1056,41 @@
           ]
         },
         {
+          "author": "himanshudongre",
+          "pr_count": 4,
+          "best_bpb": 0.1434,
+          "prs": [
+            {
+              "number": 826,
+              "author": "himanshudongre",
+              "status": "DEAD",
+              "bpb": 0.29509,
+              "created": "2026-03-26T07:13:38Z"
+            },
+            {
+              "number": 846,
+              "author": "himanshudongre",
+              "status": "DEAD",
+              "bpb": 0.1434,
+              "created": "2026-03-26T12:20:06Z"
+            },
+            {
+              "number": 1227,
+              "author": "himanshudongre",
+              "status": "AT_RISK",
+              "bpb": null,
+              "created": "2026-04-01T19:25:43Z"
+            },
+            {
+              "number": 1259,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-02T16:13:22Z"
+            }
+          ]
+        },
+        {
           "author": "MatoTeziTanka",
           "pr_count": 4,
           "best_bpb": 0.7853,
@@ -1374,34 +1409,6 @@
               "status": "DEAD",
               "bpb": 0.1315,
               "created": "2026-03-26T14:20:25Z"
-            }
-          ]
-        },
-        {
-          "author": "himanshudongre",
-          "pr_count": 3,
-          "best_bpb": 0.1434,
-          "prs": [
-            {
-              "number": 826,
-              "author": "himanshudongre",
-              "status": "DEAD",
-              "bpb": 0.29509,
-              "created": "2026-03-26T07:13:38Z"
-            },
-            {
-              "number": 846,
-              "author": "himanshudongre",
-              "status": "DEAD",
-              "bpb": 0.1434,
-              "created": "2026-03-26T12:20:06Z"
-            },
-            {
-              "number": 1227,
-              "author": "himanshudongre",
-              "status": "AT_RISK",
-              "bpb": null,
-              "created": "2026-04-01T19:25:43Z"
             }
           ]
         },
@@ -3016,7 +3023,7 @@
             {
               "number": 1242,
               "author": "Campbellb",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 1.0903,
               "created": "2026-04-02T02:03:08Z"
             }
@@ -7626,7 +7633,7 @@
         {
           "number": 1242,
           "author": "Campbellb",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 1.0903,
           "created": "2026-04-02T02:03:08Z"
         },
@@ -7699,6 +7706,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-02T15:18:43Z"
+        },
+        {
+          "number": 1259,
+          "author": "himanshudongre",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-02T16:13:22Z"
         }
       ]
     },
@@ -7708,8 +7722,8 @@
       "count": 346,
       "author_count": 233,
       "alive_count": 62,
-      "dead_count": 80,
-      "at_risk_count": 46,
+      "dead_count": 81,
+      "at_risk_count": 45,
       "incomplete_count": 158,
       "unknown_count": 0,
       "best_alive": {
@@ -9679,7 +9693,7 @@
             {
               "number": 1242,
               "author": "Campbellb",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 1.0903,
               "created": "2026-04-02T02:03:08Z"
             }
@@ -14163,7 +14177,7 @@
         {
           "number": 1242,
           "author": "Campbellb",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 1.0903,
           "created": "2026-04-02T02:03:08Z"
         },
@@ -33784,12 +33798,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 20,
+      "count": 21,
       "author_count": 13,
       "alive_count": 1,
       "dead_count": 5,
       "at_risk_count": 5,
-      "incomplete_count": 9,
+      "incomplete_count": 10,
       "unknown_count": 0,
       "best_alive": {
         "number": 914,
@@ -33797,6 +33811,41 @@
         "bpb": 1.1873
       },
       "people": [
+        {
+          "author": "himanshudongre",
+          "pr_count": 4,
+          "best_bpb": 1.1682,
+          "prs": [
+            {
+              "number": 1012,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-28T10:14:53Z"
+            },
+            {
+              "number": 1013,
+              "author": "himanshudongre",
+              "status": "AT_RISK",
+              "bpb": 1.1682,
+              "created": "2026-03-28T10:15:02Z"
+            },
+            {
+              "number": 1227,
+              "author": "himanshudongre",
+              "status": "AT_RISK",
+              "bpb": null,
+              "created": "2026-04-01T19:25:43Z"
+            },
+            {
+              "number": 1259,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-02T16:13:22Z"
+            }
+          ]
+        },
         {
           "author": "gowtham0992",
           "pr_count": 3,
@@ -33850,34 +33899,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.147,
               "created": "2026-04-02T02:30:36Z"
-            }
-          ]
-        },
-        {
-          "author": "himanshudongre",
-          "pr_count": 3,
-          "best_bpb": 1.1682,
-          "prs": [
-            {
-              "number": 1012,
-              "author": "himanshudongre",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-03-28T10:14:53Z"
-            },
-            {
-              "number": 1013,
-              "author": "himanshudongre",
-              "status": "AT_RISK",
-              "bpb": 1.1682,
-              "created": "2026-03-28T10:15:02Z"
-            },
-            {
-              "number": 1227,
-              "author": "himanshudongre",
-              "status": "AT_RISK",
-              "bpb": null,
-              "created": "2026-04-01T19:25:43Z"
             }
           ]
         },
@@ -34169,6 +34190,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.147,
           "created": "2026-04-02T02:30:36Z"
+        },
+        {
+          "number": 1259,
+          "author": "himanshudongre",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-02T16:13:22Z"
         }
       ]
     },
@@ -35735,8 +35763,8 @@
       "count": 168,
       "author_count": 76,
       "alive_count": 0,
-      "dead_count": 72,
-      "at_risk_count": 95,
+      "dead_count": 73,
+      "at_risk_count": 94,
       "incomplete_count": 1,
       "unknown_count": 0,
       "best_alive": null,
@@ -37191,7 +37219,7 @@
             {
               "number": 1242,
               "author": "Campbellb",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 1.0903,
               "created": "2026-04-02T02:03:08Z"
             }
@@ -38623,7 +38651,7 @@
         {
           "number": 1242,
           "author": "Campbellb",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 1.0903,
           "created": "2026-04-02T02:03:08Z"
         }
@@ -38635,8 +38663,8 @@
       "count": 46,
       "author_count": 27,
       "alive_count": 0,
-      "dead_count": 20,
-      "at_risk_count": 25,
+      "dead_count": 21,
+      "at_risk_count": 24,
       "incomplete_count": 1,
       "unknown_count": 0,
       "best_alive": null,
@@ -39062,7 +39090,7 @@
             {
               "number": 1242,
               "author": "Campbellb",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 1.0903,
               "created": "2026-04-02T02:03:08Z"
             }
@@ -39472,7 +39500,7 @@
         {
           "number": 1242,
           "author": "Campbellb",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 1.0903,
           "created": "2026-04-02T02:03:08Z"
         }
@@ -39486,8 +39514,8 @@
       "count": 346,
       "author_count": 233,
       "alive_count": 62,
-      "dead_count": 80,
-      "at_risk_count": 46,
+      "dead_count": 81,
+      "at_risk_count": 45,
       "incomplete_count": 158,
       "unknown_count": 0,
       "best_alive": {
@@ -41457,7 +41485,7 @@
             {
               "number": 1242,
               "author": "Campbellb",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 1.0903,
               "created": "2026-04-02T02:03:08Z"
             }
@@ -45941,7 +45969,7 @@
         {
           "number": 1242,
           "author": "Campbellb",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 1.0903,
           "created": "2026-04-02T02:03:08Z"
         },
@@ -45978,12 +46006,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 436,
+      "count": 437,
       "author_count": 223,
       "alive_count": 62,
-      "dead_count": 159,
-      "at_risk_count": 59,
-      "incomplete_count": 156,
+      "dead_count": 160,
+      "at_risk_count": 58,
+      "incomplete_count": 157,
       "unknown_count": 0,
       "best_alive": {
         "number": 1184,
@@ -47014,6 +47042,41 @@
           ]
         },
         {
+          "author": "himanshudongre",
+          "pr_count": 4,
+          "best_bpb": 0.1434,
+          "prs": [
+            {
+              "number": 826,
+              "author": "himanshudongre",
+              "status": "DEAD",
+              "bpb": 0.29509,
+              "created": "2026-03-26T07:13:38Z"
+            },
+            {
+              "number": 846,
+              "author": "himanshudongre",
+              "status": "DEAD",
+              "bpb": 0.1434,
+              "created": "2026-03-26T12:20:06Z"
+            },
+            {
+              "number": 1227,
+              "author": "himanshudongre",
+              "status": "AT_RISK",
+              "bpb": null,
+              "created": "2026-04-01T19:25:43Z"
+            },
+            {
+              "number": 1259,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-02T16:13:22Z"
+            }
+          ]
+        },
+        {
           "author": "MatoTeziTanka",
           "pr_count": 4,
           "best_bpb": 0.7853,
@@ -47332,34 +47395,6 @@
               "status": "DEAD",
               "bpb": 0.1315,
               "created": "2026-03-26T14:20:25Z"
-            }
-          ]
-        },
-        {
-          "author": "himanshudongre",
-          "pr_count": 3,
-          "best_bpb": 0.1434,
-          "prs": [
-            {
-              "number": 826,
-              "author": "himanshudongre",
-              "status": "DEAD",
-              "bpb": 0.29509,
-              "created": "2026-03-26T07:13:38Z"
-            },
-            {
-              "number": 846,
-              "author": "himanshudongre",
-              "status": "DEAD",
-              "bpb": 0.1434,
-              "created": "2026-03-26T12:20:06Z"
-            },
-            {
-              "number": 1227,
-              "author": "himanshudongre",
-              "status": "AT_RISK",
-              "bpb": null,
-              "created": "2026-04-01T19:25:43Z"
             }
           ]
         },
@@ -48974,7 +49009,7 @@
             {
               "number": 1242,
               "author": "Campbellb",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 1.0903,
               "created": "2026-04-02T02:03:08Z"
             }
@@ -53584,7 +53619,7 @@
         {
           "number": 1242,
           "author": "Campbellb",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 1.0903,
           "created": "2026-04-02T02:03:08Z"
         },
@@ -53657,6 +53692,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-02T15:18:43Z"
+        },
+        {
+          "number": 1259,
+          "author": "himanshudongre",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-02T16:13:22Z"
         }
       ]
     },
@@ -65927,8 +65969,8 @@
       "count": 168,
       "author_count": 76,
       "alive_count": 0,
-      "dead_count": 72,
-      "at_risk_count": 95,
+      "dead_count": 73,
+      "at_risk_count": 94,
       "incomplete_count": 1,
       "unknown_count": 0,
       "best_alive": null,
@@ -67383,7 +67425,7 @@
             {
               "number": 1242,
               "author": "Campbellb",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 1.0903,
               "created": "2026-04-02T02:03:08Z"
             }
@@ -68815,7 +68857,7 @@
         {
           "number": 1242,
           "author": "Campbellb",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 1.0903,
           "created": "2026-04-02T02:03:08Z"
         }
@@ -75738,8 +75780,8 @@
       "count": 46,
       "author_count": 27,
       "alive_count": 0,
-      "dead_count": 20,
-      "at_risk_count": 25,
+      "dead_count": 21,
+      "at_risk_count": 24,
       "incomplete_count": 1,
       "unknown_count": 0,
       "best_alive": null,
@@ -76165,7 +76207,7 @@
             {
               "number": 1242,
               "author": "Campbellb",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 1.0903,
               "created": "2026-04-02T02:03:08Z"
             }
@@ -76575,7 +76617,7 @@
         {
           "number": 1242,
           "author": "Campbellb",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 1.0903,
           "created": "2026-04-02T02:03:08Z"
         }
@@ -76912,12 +76954,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 20,
+      "count": 21,
       "author_count": 13,
       "alive_count": 1,
       "dead_count": 5,
       "at_risk_count": 5,
-      "incomplete_count": 9,
+      "incomplete_count": 10,
       "unknown_count": 0,
       "best_alive": {
         "number": 914,
@@ -76925,6 +76967,41 @@
         "bpb": 1.1873
       },
       "people": [
+        {
+          "author": "himanshudongre",
+          "pr_count": 4,
+          "best_bpb": 1.1682,
+          "prs": [
+            {
+              "number": 1012,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-28T10:14:53Z"
+            },
+            {
+              "number": 1013,
+              "author": "himanshudongre",
+              "status": "AT_RISK",
+              "bpb": 1.1682,
+              "created": "2026-03-28T10:15:02Z"
+            },
+            {
+              "number": 1227,
+              "author": "himanshudongre",
+              "status": "AT_RISK",
+              "bpb": null,
+              "created": "2026-04-01T19:25:43Z"
+            },
+            {
+              "number": 1259,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-02T16:13:22Z"
+            }
+          ]
+        },
         {
           "author": "gowtham0992",
           "pr_count": 3,
@@ -76978,34 +77055,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.147,
               "created": "2026-04-02T02:30:36Z"
-            }
-          ]
-        },
-        {
-          "author": "himanshudongre",
-          "pr_count": 3,
-          "best_bpb": 1.1682,
-          "prs": [
-            {
-              "number": 1012,
-              "author": "himanshudongre",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-03-28T10:14:53Z"
-            },
-            {
-              "number": 1013,
-              "author": "himanshudongre",
-              "status": "AT_RISK",
-              "bpb": 1.1682,
-              "created": "2026-03-28T10:15:02Z"
-            },
-            {
-              "number": 1227,
-              "author": "himanshudongre",
-              "status": "AT_RISK",
-              "bpb": null,
-              "created": "2026-04-01T19:25:43Z"
             }
           ]
         },
@@ -77297,6 +77346,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.147,
           "created": "2026-04-02T02:30:36Z"
+        },
+        {
+          "number": 1259,
+          "author": "himanshudongre",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-02T16:13:22Z"
         }
       ]
     },
@@ -78965,10 +79021,10 @@
       "left": "LeakyReLU\u00b2",
       "right": "SSM/Mamba/S4D",
       "left_count": 91,
-      "right_count": 20,
+      "right_count": 21,
       "left_people": 71,
       "right_people": 13,
-      "score": 1820
+      "score": 1911
     },
     {
       "left": "QAT",
@@ -78989,6 +79045,15 @@
       "score": 1606
     },
     {
+      "left": "SWA",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 73,
+      "right_count": 21,
+      "left_people": 63,
+      "right_people": 13,
+      "score": 1533
+    },
+    {
       "left": "QAT",
       "right": "JEPA",
       "left_count": 101,
@@ -78998,13 +79063,13 @@
       "score": 1515
     },
     {
-      "left": "SWA",
+      "left": "BigramHash",
       "right": "SSM/Mamba/S4D",
-      "left_count": 73,
-      "right_count": 20,
+      "left_count": 70,
+      "right_count": 21,
       "left_people": 63,
       "right_people": 13,
-      "score": 1460
+      "score": 1470
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -79025,15 +79090,6 @@
       "score": 1456
     },
     {
-      "left": "BigramHash",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 70,
-      "right_count": 20,
-      "left_people": 63,
-      "right_people": 13,
-      "score": 1400
-    },
-    {
       "left": "LeakyReLU\u00b2",
       "right": "JEPA",
       "left_count": 91,
@@ -79046,10 +79102,10 @@
       "left": "XSA",
       "right": "SSM/Mamba/S4D",
       "left_count": 62,
-      "right_count": 20,
+      "right_count": 21,
       "left_people": 50,
       "right_people": 13,
-      "score": 1240
+      "score": 1302
     },
     {
       "left": "SWA",
@@ -79118,10 +79174,10 @@
       "left": "SwiGLU",
       "right": "SSM/Mamba/S4D",
       "left_count": 47,
-      "right_count": 20,
+      "right_count": 21,
       "left_people": 40,
       "right_people": 13,
-      "score": 940
+      "score": 987
     },
     {
       "left": "XSA",
@@ -79135,11 +79191,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 436,
+      "left_count": 437,
       "right_count": 2,
       "left_people": 223,
       "right_people": 2,
-      "score": 872
+      "score": 874
     },
     {
       "left": "SwiGLU",
@@ -79259,6 +79315,15 @@
       "score": 492
     },
     {
+      "left": "Parallel Muon",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 22,
+      "right_count": 21,
+      "left_people": 12,
+      "right_people": 13,
+      "score": 462
+    },
+    {
       "left": "LeakyReLU\u00b2",
       "right": "Progressive Depth",
       "left_count": 91,
@@ -79266,15 +79331,6 @@
       "left_people": 71,
       "right_people": 2,
       "score": 455
-    },
-    {
-      "left": "Parallel Muon",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 22,
-      "right_count": 20,
-      "left_people": 12,
-      "right_people": 13,
-      "score": 440
     },
     {
       "left": "SWA",
@@ -79288,11 +79344,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 436,
+      "left_count": 437,
       "right_count": 1,
       "left_people": 223,
       "right_people": 1,
-      "score": 436
+      "score": 437
     },
     {
       "left": "BigramHash",
@@ -79349,6 +79405,15 @@
       "score": 350
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "MoE",
+      "left_count": 21,
+      "right_count": 16,
+      "left_people": 13,
+      "right_people": 13,
+      "score": 336
+    },
+    {
       "left": "EMA",
       "right": "Flash Attention",
       "left_count": 332,
@@ -79365,15 +79430,6 @@
       "left_people": 12,
       "right_people": 14,
       "score": 330
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "MoE",
-      "left_count": 20,
-      "right_count": 16,
-      "left_people": 13,
-      "right_people": 13,
-      "score": 320
     },
     {
       "left": "XSA",
@@ -79475,6 +79531,15 @@
       "score": 154
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Value Residual",
+      "left_count": 21,
+      "right_count": 7,
+      "left_people": 13,
+      "right_people": 6,
+      "score": 147
+    },
+    {
       "left": "SWA",
       "right": "Differential Attention",
       "left_count": 73,
@@ -79493,15 +79558,6 @@
       "score": 140
     },
     {
-      "left": "SSM/Mamba/S4D",
-      "right": "Value Residual",
-      "left_count": 20,
-      "right_count": 7,
-      "left_people": 13,
-      "right_people": 6,
-      "score": 140
-    },
-    {
       "left": "Parallel Muon",
       "right": "Weight Sharing",
       "left_count": 22,
@@ -79509,6 +79565,15 @@
       "left_people": 12,
       "right_people": 4,
       "score": 132
+    },
+    {
+      "left": "SSM/Mamba/S4D",
+      "right": "Weight Sharing",
+      "left_count": 21,
+      "right_count": 6,
+      "left_people": 13,
+      "right_people": 4,
+      "score": 126
     },
     {
       "left": "XSA",
@@ -79527,15 +79592,6 @@
       "left_people": 50,
       "right_people": 2,
       "score": 124
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Weight Sharing",
-      "left_count": 20,
-      "right_count": 6,
-      "left_people": 13,
-      "right_people": 4,
-      "score": 120
     },
     {
       "left": "MoE",
@@ -79574,6 +79630,15 @@
       "score": 105
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Progressive Depth",
+      "left_count": 21,
+      "right_count": 5,
+      "left_people": 13,
+      "right_people": 2,
+      "score": 105
+    },
+    {
       "left": "QAT",
       "right": "Flash Attention",
       "left_count": 101,
@@ -79581,15 +79646,6 @@
       "left_people": 82,
       "right_people": 1,
       "score": 101
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Progressive Depth",
-      "left_count": 20,
-      "right_count": 5,
-      "left_people": 13,
-      "right_people": 2,
-      "score": 100
     },
     {
       "left": "Ternary Weights",
@@ -79718,6 +79774,24 @@
       "score": 44
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Differential Attention",
+      "left_count": 21,
+      "right_count": 2,
+      "left_people": 13,
+      "right_people": 2,
+      "score": 42
+    },
+    {
+      "left": "SSM/Mamba/S4D",
+      "right": "U-Net skips",
+      "left_count": 21,
+      "right_count": 2,
+      "left_people": 13,
+      "right_people": 2,
+      "score": 42
+    },
+    {
       "left": "Value Residual",
       "right": "Weight Sharing",
       "left_count": 7,
@@ -79725,24 +79799,6 @@
       "left_people": 6,
       "right_people": 4,
       "score": 42
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Differential Attention",
-      "left_count": 20,
-      "right_count": 2,
-      "left_people": 13,
-      "right_people": 2,
-      "score": 40
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "U-Net skips",
-      "left_count": 20,
-      "right_count": 2,
-      "left_people": 13,
-      "right_people": 2,
-      "score": 40
     },
     {
       "left": "Value Residual",
@@ -79828,11 +79884,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Flash Attention",
-      "left_count": 20,
+      "left_count": 21,
       "right_count": 1,
       "left_people": 13,
       "right_people": 1,
-      "score": 20
+      "score": 21
     },
     {
       "left": "MoE",
