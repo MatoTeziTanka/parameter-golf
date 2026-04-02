@@ -1,14 +1,14 @@
 {
-  "last_fetch": "2026-04-02T23:00:07.898204+00:00",
-  "api_calls_used": 94,
+  "last_fetch": "2026-04-02T23:47:19.908526+00:00",
+  "api_calls_used": 95,
   "prs": [
     {
       "number": 1274,
       "title": "Record: Scylla + Parallel Residuals + Depth Recurrence + Legal TTT — val_bpb 1.0876 (3-seed mean)",
       "author": "MatoTeziTanka",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-02T22:48:50Z",
-      "updated": "2026-04-02T22:48:50Z",
+      "updated": "2026-04-02T23:44:27Z",
       "bpb": 1.0876,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -41,10 +41,9 @@
       ],
       "track": "record",
       "technique_type": "hybrid",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "keyword:ngram",
-        "keyword:two_pass"
+        "closed-no-maintainer-comment"
       ],
       "confidence": "LOW"
     },
@@ -319,7 +318,7 @@
       "author": "SID-6921",
       "state": "OPEN",
       "created": "2026-04-02T18:48:45Z",
-      "updated": "2026-04-02T22:59:00Z",
+      "updated": "2026-04-02T23:31:27Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -341,6 +340,7 @@
         "starter_kit/scripts/03_full_run.sh",
         "starter_kit/scripts/04_non_record_a40_campaign.sh",
         "starter_kit/scripts/05_non_record_a40_top_chase.sh",
+        "starter_kit/scripts/06_non_record_h100_top_chase.sh",
         "starter_kit/scripts/prepare_submission.py",
         "starter_kit/scripts/rank_campaign_results.py",
         "starter_kit/templates/README_submission_template.md",
@@ -839,7 +839,7 @@
       "author": "mkenney2",
       "state": "OPEN",
       "created": "2026-04-02T02:30:36Z",
-      "updated": "2026-04-02T22:53:36Z",
+      "updated": "2026-04-02T23:05:34Z",
       "bpb": 1.147,
       "seeds": 2,
       "artifact_bytes": 15700000,
@@ -3409,11 +3409,11 @@
       ],
       "track": "non-record",
       "technique_type": "cache",
-      "status": "AT_RISK",
+      "status": "NOTABLE",
       "flags": [
-        "keyword:ngram"
+        "title-contains-notable"
       ],
-      "confidence": "LOW"
+      "confidence": "HIGH"
     },
     {
       "number": 1167,
@@ -5057,11 +5057,11 @@
       ],
       "track": "non-record",
       "technique_type": "cache",
-      "status": "AT_RISK",
+      "status": "NOTABLE",
       "flags": [
-        "keyword:ngram"
+        "title-contains-notable"
       ],
-      "confidence": "LOW"
+      "confidence": "HIGH"
     },
     {
       "number": 1118,
@@ -5147,8 +5147,10 @@
       ],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "ALIVE",
-      "flags": [],
+      "status": "NOTABLE",
+      "flags": [
+        "title-contains-notable"
+      ],
       "confidence": "HIGH"
     },
     {
@@ -5242,11 +5244,11 @@
       ],
       "track": "non-record",
       "technique_type": "cache",
-      "status": "AT_RISK",
+      "status": "NOTABLE",
       "flags": [
-        "keyword:ngram"
+        "title-contains-notable"
       ],
-      "confidence": "LOW"
+      "confidence": "HIGH"
     },
     {
       "number": 1112,
@@ -5342,11 +5344,11 @@
       ],
       "track": "non-record",
       "technique_type": "cache",
-      "status": "AT_RISK",
+      "status": "NOTABLE",
       "flags": [
-        "keyword:ngram"
+        "title-contains-notable"
       ],
-      "confidence": "LOW"
+      "confidence": "HIGH"
     },
     {
       "number": 1109,
@@ -11614,10 +11616,9 @@
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
+      "status": "NOTABLE",
       "flags": [
-        "seeds-unknown",
-        "no-submission-json"
+        "title-contains-notable"
       ],
       "confidence": "HIGH"
     },
@@ -12340,10 +12341,9 @@
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
+      "status": "NOTABLE",
       "flags": [
-        "seeds-unknown",
-        "no-submission-json"
+        "title-contains-notable"
       ],
       "confidence": "HIGH"
     },
@@ -35154,7 +35154,7 @@
       "author": "manfromnowhere143",
       "state": "OPEN",
       "created": "2026-03-20T06:55:29Z",
-      "updated": "2026-03-29T12:05:01Z",
+      "updated": "2026-04-02T23:16:51Z",
       "bpb": 1.119,
       "seeds": null,
       "artifact_bytes": 15948863,
@@ -37646,11 +37646,11 @@
       ],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "AT_RISK",
+      "status": "NOTABLE",
       "flags": [
-        "keyword:two_pass"
+        "title-contains-notable"
       ],
-      "confidence": "LOW"
+      "confidence": "HIGH"
     },
     {
       "number": 94,
