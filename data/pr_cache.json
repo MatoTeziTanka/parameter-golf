@@ -1,7 +1,207 @@
 {
-  "last_fetch": "2026-04-02T08:08:50.616646+00:00",
-  "api_calls_used": 81,
+  "last_fetch": "2026-04-02T09:35:40.127057+00:00",
+  "api_calls_used": 82,
   "prs": [
+    {
+      "number": 1254,
+      "title": "Record: XSA + LoRA TTT (val_bpb=1.1070)",
+      "author": "Elarwei001",
+      "state": "OPEN",
+      "created": "2026-04-02T09:26:24Z",
+      "updated": "2026-04-02T09:26:24Z",
+      "bpb": 1.107,
+      "seeds": null,
+      "artifact_bytes": 14400000,
+      "technique_summary": "TTT + LoRA + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_XSA_LoRA_TTT/README.md",
+        "records/track_10min_16mb/2026-04-02_XSA_LoRA_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-02_XSA_LoRA_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-02_XSA_LoRA_TTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1253,
+      "title": "[non_record_16mb] 12L dim=448 LeakyReLU^2 BGVOCAB=2048 GH200 proxy (val_bpb=1.2326)",
+      "author": "Okropniak",
+      "state": "OPEN",
+      "created": "2026-04-02T08:50:21Z",
+      "updated": "2026-04-02T08:50:21Z",
+      "bpb": 1.2326,
+      "seeds": null,
+      "artifact_bytes": 15582679,
+      "technique_summary": "LeakyReLU² + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-02_12L_dim448_leaky_GH200/README.md",
+        "records/track_non_record_16mb/2026-04-02_12L_dim448_leaky_GH200/submission.json",
+        "records/track_non_record_16mb/2026-04-02_12L_dim448_leaky_GH200/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1252,
+      "title": "Record(?): WARP (Word-Aware Representation Priors) — val_bpb 1.0713 | 1xH100 10min | 13.65 MB",
+      "author": "ahmetdenizyilmaz",
+      "state": "OPEN",
+      "created": "2026-04-02T08:33:33Z",
+      "updated": "2026-04-02T08:33:33Z",
+      "bpb": 1.0713,
+      "seeds": 1337,
+      "artifact_bytes": 13653989,
+      "technique_summary": "LeakyReLU² + TTT + Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_WARP_WordAware_Representation_Priors/README.md",
+        "records/track_10min_16mb/2026-04-02_WARP_WordAware_Representation_Priors/submission.json",
+        "records/track_10min_16mb/2026-04-02_WARP_WordAware_Representation_Priors/train_gpt.py",
+        "records/track_10min_16mb/2026-04-02_WARP_WordAware_Representation_Priors/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1251,
+      "title": "Non-record: Online Hessian GPTQ (val_bpb=1.1349)",
+      "author": "ibarrajo",
+      "state": "OPEN",
+      "created": "2026-04-02T08:10:57Z",
+      "updated": "2026-04-02T08:10:57Z",
+      "bpb": 1.1349,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_ApproachL_MaxPerf/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1250,
+      "title": "Non-record: Full Attention + LZMA + small BigramHash (val_bpb=1.2094)",
+      "author": "ibarrajo",
+      "state": "OPEN",
+      "created": "2026-04-02T08:10:48Z",
+      "updated": "2026-04-02T08:10:48Z",
+      "bpb": 1.2094,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_ApproachK_FusedTritonGQA/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1249,
+      "title": "Non-record: GQA + LZMA + SLOT eval optimization (val_bpb=1.1240)",
+      "author": "ibarrajo",
+      "state": "OPEN",
+      "created": "2026-04-02T08:10:40Z",
+      "updated": "2026-04-02T08:10:40Z",
+      "bpb": 1.124,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_ApproachJ_GQA_LZMA_SLOT/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1248,
+      "title": "Non-record: GQA + LZMA + Selective Pruning (val_bpb=1.1264)",
+      "author": "ibarrajo",
+      "state": "OPEN",
+      "created": "2026-04-02T08:10:33Z",
+      "updated": "2026-04-02T08:10:33Z",
+      "bpb": 1.1264,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_ApproachI_GQA_LZMA/run.sh",
+        "records/track_10min_16mb/2026-04-01_ApproachI_GQA_LZMA/submission.json",
+        "records/track_10min_16mb/2026-04-01_ApproachI_GQA_LZMA/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1247,
       "title": "Proposal: Validate ASQU on the March 22 10min/16MB control line",
@@ -880,7 +1080,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-01T15:13:14Z",
-      "updated": "2026-04-02T02:51:54Z",
+      "updated": "2026-04-02T09:32:39Z",
       "bpb": 0.079,
       "seeds": null,
       "artifact_bytes": 1410000,
@@ -889,6 +1089,7 @@
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/README.md",
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/sweep_naive_ttt.py",
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/sweep_v2.py",
+        "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/train_e2e_proper.py",
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/train_ttt_e2e.py",
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/ttt_e2e_run.log"
       ],
@@ -936,7 +1137,7 @@
       "author": "Hieuabssy",
       "state": "OPEN",
       "created": "2026-04-01T13:39:21Z",
-      "updated": "2026-04-02T02:37:40Z",
+      "updated": "2026-04-02T08:38:01Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1511,7 +1712,7 @@
       "author": "msisovic",
       "state": "OPEN",
       "created": "2026-04-01T00:46:06Z",
-      "updated": "2026-04-02T05:59:40Z",
+      "updated": "2026-04-02T09:22:34Z",
       "bpb": 1.1063,
       "seeds": 3,
       "artifact_bytes": 15940000,
@@ -1520,6 +1721,7 @@
         "records/track_10min_16mb/2026-03-31_ParallelResiduals_MiniDepthRecurrence/README.md",
         "records/track_10min_16mb/2026-03-31_ParallelResiduals_MiniDepthRecurrence/requirements.txt",
         "records/track_10min_16mb/2026-03-31_ParallelResiduals_MiniDepthRecurrence/submission.json",
+        "records/track_10min_16mb/2026-03-31_ParallelResiduals_MiniDepthRecurrence/train_gpt.py",
         "records/track_10min_16mb/2026-03-31_ParallelResiduals_MiniDepthRecurrence/train_seed1337.log",
         "records/track_10min_16mb/2026-03-31_ParallelResiduals_MiniDepthRecurrence/train_seed2024.log",
         "records/track_10min_16mb/2026-03-31_ParallelResiduals_MiniDepthRecurrence/train_seed42.log"
@@ -7621,7 +7823,7 @@
       "author": "abaybektursun",
       "state": "MERGED",
       "created": "2026-03-28T13:34:01Z",
-      "updated": "2026-03-30T17:30:38Z",
+      "updated": "2026-04-02T08:28:01Z",
       "bpb": 1.1147,
       "seeds": 3,
       "artifact_bytes": 15910000,
@@ -8076,7 +8278,7 @@
       "author": "ibarrajo",
       "state": "OPEN",
       "created": "2026-03-28T05:36:42Z",
-      "updated": "2026-04-01T07:03:51Z",
+      "updated": "2026-04-02T08:21:08Z",
       "bpb": 1.1182,
       "seeds": null,
       "artifact_bytes": 15535414,
