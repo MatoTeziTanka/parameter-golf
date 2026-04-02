@@ -1,7 +1,250 @@
 {
-  "last_fetch": "2026-04-02T22:02:06.508733+00:00",
-  "api_calls_used": 93,
+  "last_fetch": "2026-04-02T23:00:07.898204+00:00",
+  "api_calls_used": 94,
   "prs": [
+    {
+      "number": 1274,
+      "title": "Record: Scylla + Parallel Residuals + Depth Recurrence + Legal TTT — val_bpb 1.0876 (3-seed mean)",
+      "author": "MatoTeziTanka",
+      "state": "OPEN",
+      "created": "2026-04-02T22:48:50Z",
+      "updated": "2026-04-02T22:48:50Z",
+      "bpb": 1.0876,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA + N-gram + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_Scylla_ParallelResiduals_DepthRecurrence_TTT/README.md",
+        "records/track_10min_16mb/2026-04-02_Scylla_ParallelResiduals_DepthRecurrence_TTT/requirements.txt",
+        "records/track_10min_16mb/2026-04-02_Scylla_ParallelResiduals_DepthRecurrence_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-02_Scylla_ParallelResiduals_DepthRecurrence_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-02_Scylla_ParallelResiduals_DepthRecurrence_TTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-02_Scylla_ParallelResiduals_DepthRecurrence_TTT/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-02_Scylla_ParallelResiduals_DepthRecurrence_TTT/train_seed42.log",
+        "run_results/run_A2_fixed_9L.log",
+        "run_results/run_A_fixed.log",
+        "run_results/run_A_fixed_detail.log",
+        "run_results/run_B_learnable.log",
+        "run_results/run_C_ablation.log",
+        "test_combined_cpu.py",
+        "test_gptq_cpu.py",
+        "test_gptq_e2e_cpu.py",
+        "train_gpt_v2.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1273,
+      "title": "Non-record: Annealed Muon 1.58-bit Ternary — val_bpb 1.2196 (8xH100 SXM)",
+      "author": "DushyantChetiwal",
+      "state": "OPEN",
+      "created": "2026-04-02T22:45:33Z",
+      "updated": "2026-04-02T22:45:33Z",
+      "bpb": 1.2196,
+      "seeds": null,
+      "artifact_bytes": 14860000,
+      "technique_summary": "Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-29_Annealed_Muon_1.58bit_8KV/README.md",
+        "records/track_non_record_16mb/2026-03-29_Annealed_Muon_1.58bit_8KV/submission.json",
+        "records/track_non_record_16mb/2026-03-29_Annealed_Muon_1.58bit_8KV/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-29_Annealed_Muon_1.58bit_8KV/train_log.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1272,
+      "title": "Non-record: Comprehensive Negative Results — What Doesn't Work on Strong Models",
+      "author": "andrewbaggio1",
+      "state": "OPEN",
+      "created": "2026-04-02T22:41:11Z",
+      "updated": "2026-04-02T22:41:11Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + GPTQ + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_Negative_Results_Comprehensive/README.md",
+        "records/track_10min_16mb/2026-04-02_Negative_Results_Comprehensive/correct_meta.npz",
+        "records/track_10min_16mb/2026-04-02_Negative_Results_Comprehensive/ngram_test.py",
+        "records/track_10min_16mb/2026-04-02_Negative_Results_Comprehensive/online_logit_bias.py",
+        "records/track_10min_16mb/2026-04-02_Negative_Results_Comprehensive/retokenize_proper.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval",
+        "ngram_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:ngram_path",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 1271,
+      "title": "Non-record: Scylla Tokenizer Byte Accounting Audit — Sub-1.0 Was a Measurement Error",
+      "author": "andrewbaggio1",
+      "state": "OPEN",
+      "created": "2026-04-02T22:40:51Z",
+      "updated": "2026-04-02T22:40:51Z",
+      "bpb": 1.1289,
+      "seeds": 1337,
+      "artifact_bytes": null,
+      "technique_summary": "GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_Scylla_Byte_Accounting_Audit/README.md",
+        "records/track_10min_16mb/2026-04-02_Scylla_Byte_Accounting_Audit/correct_meta.npz",
+        "records/track_10min_16mb/2026-04-02_Scylla_Byte_Accounting_Audit/retokenize_proper.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1270,
+      "title": "Non-Record: Unified Attention + FA3 + 1hr training (val_bpb=1.1088)",
+      "author": "VirajDeshwal",
+      "state": "OPEN",
+      "created": "2026-04-02T22:34:30Z",
+      "updated": "2026-04-02T22:34:30Z",
+      "bpb": 1.1088,
+      "seeds": null,
+      "artifact_bytes": 15820000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-01_UnifiedAttention_FA3_1hour/README.md",
+        "records/track_non_record_16mb/2026-04-01_UnifiedAttention_FA3_1hour/submission.json",
+        "records/track_non_record_16mb/2026-04-01_UnifiedAttention_FA3_1hour/train.log",
+        "records/track_non_record_16mb/2026-04-01_UnifiedAttention_FA3_1hour/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1269,
+      "title": "[Submission] Jtss-ux - 1.1301 BPB (10min_16mb)",
+      "author": "Jtss-ux",
+      "state": "OPEN",
+      "created": "2026-04-02T22:21:57Z",
+      "updated": "2026-04-02T22:50:56Z",
+      "bpb": 1.1301,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon",
+      "file_paths": [
+        "audit_baseline.py",
+        "audit_challenger.py",
+        "deploy_proof_pod.py",
+        "download_sp8192.py",
+        "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/submission.json",
+        "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_seed314.log",
+        "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_seed42.log",
+        "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_seed999.log",
+        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/README.md",
+        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/submission.json",
+        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/train_gpt.py",
+        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/train_seed1337.log",
+        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/train_seed2025.log",
+        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/train_seed42.log",
+        "run_local_ternary.ps1",
+        "train_challenger.py",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1268,
+      "title": "Non-record: Mamba3 Hybrid + GPTQ Long Context (1.1875 BPB)",
+      "author": "samquiring",
+      "state": "OPEN",
+      "created": "2026-04-02T22:02:43Z",
+      "updated": "2026-04-02T22:02:43Z",
+      "bpb": 1.1875,
+      "seeds": null,
+      "artifact_bytes": 15510000,
+      "technique_summary": "SSM + GPTQ + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/README.md",
+        "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/submission.json",
+        "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/train_seed314.log",
+        "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-02_Mamba3_Long_Context_GPTQ/train_seed7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1264,
       "title": "[non-record track] Hierarchical Shared Attention (HSA): multi-level sharing across attention heads",
@@ -76,12 +319,17 @@
       "author": "SID-6921",
       "state": "OPEN",
       "created": "2026-04-02T18:48:45Z",
-      "updated": "2026-04-02T20:24:20Z",
+      "updated": "2026-04-02T22:59:00Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
       "technique_summary": "",
       "file_paths": [
+        "records/track_non_record_16mb/2026-04-02_R08_LRMatrixUp_A40_17M/README.md",
+        "records/track_non_record_16mb/2026-04-02_R08_LRMatrixUp_A40_17M/requirements.txt",
+        "records/track_non_record_16mb/2026-04-02_R08_LRMatrixUp_A40_17M/submission.json",
+        "records/track_non_record_16mb/2026-04-02_R08_LRMatrixUp_A40_17M/train.log",
+        "records/track_non_record_16mb/2026-04-02_R08_LRMatrixUp_A40_17M/train_gpt.py",
         "records/track_non_record_16mb/2026-04-02_StockBaseline_A40_17M/README.md",
         "records/track_non_record_16mb/2026-04-02_StockBaseline_A40_17M/requirements.txt",
         "records/track_non_record_16mb/2026-04-02_StockBaseline_A40_17M/submission.json",
@@ -92,10 +340,12 @@
         "starter_kit/scripts/02_smoke_run.sh",
         "starter_kit/scripts/03_full_run.sh",
         "starter_kit/scripts/04_non_record_a40_campaign.sh",
+        "starter_kit/scripts/05_non_record_a40_top_chase.sh",
         "starter_kit/scripts/prepare_submission.py",
         "starter_kit/scripts/rank_campaign_results.py",
         "starter_kit/templates/README_submission_template.md",
-        "starter_kit/templates/submission.json.template"
+        "starter_kit/templates/submission.json.template",
+        "train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -589,7 +839,7 @@
       "author": "mkenney2",
       "state": "OPEN",
       "created": "2026-04-02T02:30:36Z",
-      "updated": "2026-04-02T02:30:36Z",
+      "updated": "2026-04-02T22:53:36Z",
       "bpb": 1.147,
       "seeds": 2,
       "artifact_bytes": 15700000,
@@ -13522,7 +13772,7 @@
       "author": "JoeProAI",
       "state": "OPEN",
       "created": "2026-03-26T15:58:39Z",
-      "updated": "2026-03-31T17:39:38Z",
+      "updated": "2026-04-02T22:56:43Z",
       "bpb": 1.13391,
       "seeds": 3,
       "artifact_bytes": 16265723,
