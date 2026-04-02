@@ -1,7 +1,37 @@
 {
-  "last_fetch": "2026-04-02T03:18:43.815116+00:00",
-  "api_calls_used": 78,
+  "last_fetch": "2026-04-02T05:20:12.156164+00:00",
+  "api_calls_used": 79,
   "prs": [
+    {
+      "number": 1247,
+      "title": "Proposal: Validate ASQU on the March 22 10min/16MB control line",
+      "author": "fahmitech",
+      "state": "OPEN",
+      "created": "2026-04-02T05:18:24Z",
+      "updated": "2026-04-02T05:18:24Z",
+      "bpb": 0.0052,
+      "seeds": 1337,
+      "artifact_bytes": 16000000,
+      "technique_summary": "GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_11L_XSA4_PartialRoPE_LNScale_VE128_ASQU_EMA_GPTQlite/README.md",
+        "records/track_10min_16mb/2026-04-02_11L_XSA4_PartialRoPE_LNScale_VE128_ASQU_EMA_GPTQlite/submission.json",
+        "records/track_10min_16mb/2026-04-02_11L_XSA4_PartialRoPE_LNScale_VE128_ASQU_EMA_GPTQlite/train_gpt.py",
+        "records/track_10min_16mb/2026-04-02_11L_XSA4_PartialRoPE_LNScale_VE128_ASQU_EMA_GPTQlite/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
     {
       "number": 1246,
       "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
@@ -2636,7 +2666,7 @@
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-03-31T03:03:12Z",
-      "updated": "2026-03-31T21:25:57Z",
+      "updated": "2026-04-02T04:01:00Z",
       "bpb": 1.1335,
       "seeds": 4,
       "artifact_bytes": 15100000,
@@ -4682,7 +4712,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-04-02T00:57:10Z",
+      "updated": "2026-04-02T05:17:41Z",
       "bpb": 1.1052,
       "seeds": 3,
       "artifact_bytes": 302000000,
@@ -37673,7 +37703,7 @@
       "author": "yesbhautik",
       "state": "OPEN",
       "created": "2026-03-19T07:32:20Z",
-      "updated": "2026-03-23T22:16:34Z",
+      "updated": "2026-04-02T05:09:45Z",
       "bpb": 1.125,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -37694,11 +37724,11 @@
         "ttt",
         "gptq_eval"
       ],
+      "track": "record",
+      "technique_type": "ttt",
       "status": "ALIVE",
       "flags": [],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 63,
