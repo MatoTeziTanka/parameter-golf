@@ -1,7 +1,36 @@
 {
-  "last_fetch": "2026-04-02T11:49:52.636529+00:00",
-  "api_calls_used": 84,
+  "last_fetch": "2026-04-02T13:21:42.878548+00:00",
+  "api_calls_used": 85,
   "prs": [
+    {
+      "number": 1256,
+      "title": "Non-record: LeakyReLU(0.5)^2 on SmearGate + BigramHash + Int6 stack (1.1444 bpb)",
+      "author": "oidebrett",
+      "state": "OPEN",
+      "created": "2026-04-02T12:16:44Z",
+      "updated": "2026-04-02T12:16:44Z",
+      "bpb": 1.1444,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-02_LeakyReLU_SmearGate_BigramHash_Int6_SWA/README.md",
+        "records/track_non_record_16mb/2026-04-02_LeakyReLU_SmearGate_BigramHash_Int6_SWA/submission.json",
+        "records/track_non_record_16mb/2026-04-02_LeakyReLU_SmearGate_BigramHash_Int6_SWA/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-02_LeakyReLU_SmearGate_BigramHash_Int6_SWA/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1255,
       "title": "Non-record Submission: Text Diffusion + Retrodiction + TTT + Depth Recurrence",
@@ -1752,7 +1781,7 @@
       "author": "msisovic",
       "state": "OPEN",
       "created": "2026-04-01T00:46:06Z",
-      "updated": "2026-04-02T09:51:35Z",
+      "updated": "2026-04-02T12:12:35Z",
       "bpb": 1.1063,
       "seeds": 3,
       "artifact_bytes": 15940000,
