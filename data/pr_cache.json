@@ -1,7 +1,45 @@
 {
-  "last_fetch": "2026-04-02T09:35:40.127057+00:00",
-  "api_calls_used": 82,
+  "last_fetch": "2026-04-02T10:54:53.827009+00:00",
+  "api_calls_used": 83,
   "prs": [
+    {
+      "number": 1255,
+      "title": "Non-record Submission: Text Diffusion + Retrodiction + TTT + Depth Recurrence",
+      "author": "akaiHuang",
+      "state": "OPEN",
+      "created": "2026-04-02T09:43:59Z",
+      "updated": "2026-04-02T09:54:45Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-31_Retrodiction_PetzRecoveryMap_16L_M1Max/README.md",
+        "records/track_non_record_16mb/2026-03-31_Retrodiction_PetzRecoveryMap_16L_M1Max/submission.json",
+        "records/track_non_record_16mb/2026-03-31_Retrodiction_PetzRecoveryMap_16L_M1Max/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-02_Meadow_TextDiffusion_Retrodiction_TTT_DepthRecurrence/README.md",
+        "records/track_non_record_16mb/2026-04-02_Meadow_TextDiffusion_Retrodiction_TTT_DepthRecurrence/RUNBOOK.md",
+        "records/track_non_record_16mb/2026-04-02_Meadow_TextDiffusion_Retrodiction_TTT_DepthRecurrence/bpe_v4096.model",
+        "records/track_non_record_16mb/2026-04-02_Meadow_TextDiffusion_Retrodiction_TTT_DepthRecurrence/eval_sequential_unmasking.py",
+        "records/track_non_record_16mb/2026-04-02_Meadow_TextDiffusion_Retrodiction_TTT_DepthRecurrence/eval_ttt.py",
+        "records/track_non_record_16mb/2026-04-02_Meadow_TextDiffusion_Retrodiction_TTT_DepthRecurrence/submission.json",
+        "records/track_non_record_16mb/2026-04-02_Meadow_TextDiffusion_Retrodiction_TTT_DepthRecurrence/train.log",
+        "records/track_non_record_16mb/2026-04-02_Meadow_TextDiffusion_Retrodiction_TTT_DepthRecurrence/train_cdm.py",
+        "records/track_non_record_16mb/2026-04-02_Meadow_TextDiffusion_Retrodiction_TTT_DepthRecurrence/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1254,
       "title": "Record: XSA + LoRA TTT (val_bpb=1.1070)",
@@ -1712,7 +1750,7 @@
       "author": "msisovic",
       "state": "OPEN",
       "created": "2026-04-01T00:46:06Z",
-      "updated": "2026-04-02T09:22:34Z",
+      "updated": "2026-04-02T09:51:35Z",
       "bpb": 1.1063,
       "seeds": 3,
       "artifact_bytes": 15940000,
@@ -6374,28 +6412,29 @@
     },
     {
       "number": 1062,
-      "title": "Non-record: LeakyReLU(0.9)² slope sweep (local validation, compute pending)",
+      "title": "Non-record: LeakyReLU(0.9)² slope sweep — preliminary baseline 1.1222 BPB",
       "author": "yaowubarbara",
       "state": "OPEN",
       "created": "2026-03-29T07:02:56Z",
-      "updated": "2026-03-29T08:51:28Z",
-      "bpb": null,
+      "updated": "2026-04-02T09:58:28Z",
+      "bpb": 1.1222,
       "seeds": null,
       "artifact_bytes": 16000000,
-      "technique_summary": "",
+      "technique_summary": "TTT + GPTQ + INT6 + EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-03-29_LeakyReLU09_SlopeSweep/README.md",
         "records/track_non_record_16mb/2026-03-29_LeakyReLU09_SlopeSweep/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
         "leaky_relu"
       ],
       "track": "non-record",
-      "technique_type": "neural",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
         "seeds-unknown",
         "no-submission-json"
       ],
@@ -11450,7 +11489,7 @@
       "author": "Akhilesh-Gogikar",
       "state": "OPEN",
       "created": "2026-03-26T23:29:05Z",
-      "updated": "2026-04-02T07:50:46Z",
+      "updated": "2026-04-02T10:27:37Z",
       "bpb": 0.013,
       "seeds": 5,
       "artifact_bytes": 12000000,
@@ -11463,11 +11502,14 @@
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/bakeoff_results.md",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/fineweb_8192_bpe.model",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/fineweb_8192_bpe.vocab",
+        "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hp_1hr_best.log",
+        "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hp_sweep_results.log",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hybrid_1hr_marathon.log",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hybrid_mac_benchmark.log",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/hybrid_mac_benchmark_rerun.log",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/requirements.txt",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/run_cuda_feedback.sh",
+        "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/run_hp_sweep.sh",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/run_hybrid_mac.sh",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/run_mlx_reasoner.sh",
         "records/track_10min_16mb/2026-03-25_Ternary_Feedback_TTT/setup.sh",
