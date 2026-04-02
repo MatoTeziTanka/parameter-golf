@@ -10,6 +10,7 @@ Status definitions:
   DEAD       — Closed by a maintainer (valerio-oai, 0hq, cocohearts) with a
                compliance-terminating comment, or CLOSED/MERGED state with
                maintainer mention of banned technique.
+  NOTABLE    — Accepted as Notable Non-Record by organizers. Overrides AT_RISK.
   AT_RISK    — OPEN but body or file paths contain banned-technique signals.
   INCOMPLETE — OPEN but missing required fields (BPB, seeds < 3, no submission.json,
                or artifact unknown).
@@ -355,6 +356,14 @@ def classify_pr(pr: dict[str, Any]) -> dict[str, Any]:
         result["status"] = "DEAD"
         result["flags"] = ["closed-no-maintainer-comment"]
         result["confidence"] = "LOW"
+        return result
+
+    # Gate 1.5: NOTABLE check — PRs accepted as Notable Non-Record override AT_RISK
+    title_lower = (pr.get("title") or "").lower()
+    if "notable" in title_lower or "notable non-record" in title_lower:
+        result["status"] = "NOTABLE"
+        result["flags"] = ["title-contains-notable"]
+        result["confidence"] = "HIGH"
         return result
 
     # Gate 2: AT_RISK check (OPEN PRs with compliance signals)

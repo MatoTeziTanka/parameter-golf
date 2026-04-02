@@ -122,6 +122,7 @@ def _status_badge(status: str, seeds: int | None) -> str:
     badges: dict[str, tuple[str, str, str]] = {
         "ALIVE": ("badge-alive", "ALIVE", "Open PR, 3/3 seeds, known artifact, passes compliance"),
         "DEAD": ("badge-dead", "DEAD", "Closed by maintainer for compliance violation"),
+        "NOTABLE": ("badge-notable", "NOTABLE", "Accepted as Notable Non-Record by competition organizers"),
         "AT_RISK": ("badge-risk", "AT-RISK", "Open but flagged — banned technique keywords detected"),
         "INCOMPLETE": ("badge-incomplete", "INCOMPLETE", "Missing required fields (seeds, artifact, or BPB)"),
         "UNKNOWN": ("badge-incomplete", "UNKNOWN", "Classification failed — check flags"),
