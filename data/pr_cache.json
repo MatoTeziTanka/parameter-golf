@@ -1,7 +1,75 @@
 {
-  "last_fetch": "2026-04-02T21:03:00.320953+00:00",
-  "api_calls_used": 92,
+  "last_fetch": "2026-04-02T22:02:06.508733+00:00",
+  "api_calls_used": 93,
   "prs": [
+    {
+      "number": 1264,
+      "title": "[non-record track] Hierarchical Shared Attention (HSA): multi-level sharing across attention heads",
+      "author": "andrewmouldon",
+      "state": "OPEN",
+      "created": "2026-04-02T21:43:19Z",
+      "updated": "2026-04-02T21:43:19Z",
+      "bpb": 1.2262,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-02_Hierarchical_Shared_Attention/README.md",
+        "records/track_non_record_16mb/2026-04-02_Hierarchical_Shared_Attention/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-02_Hierarchical_Shared_Attention/train_log_baseline_1337.txt",
+        "records/track_non_record_16mb/2026-04-02_Hierarchical_Shared_Attention/train_log_baseline_2025.txt",
+        "records/track_non_record_16mb/2026-04-02_Hierarchical_Shared_Attention/train_log_baseline_42.txt",
+        "records/track_non_record_16mb/2026-04-02_Hierarchical_Shared_Attention/train_log_hsa_1337.txt",
+        "records/track_non_record_16mb/2026-04-02_Hierarchical_Shared_Attention/train_log_hsa_2025.txt",
+        "records/track_non_record_16mb/2026-04-02_Hierarchical_Shared_Attention/train_log_hsa_42.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1263,
+      "title": "Record: 11L LeakyReLU² + XSA-all + QK-Gain 4.0 + Full GPTQ + SLOT — val_bpb 0.9354 (3-seed mean)",
+      "author": "xexyz",
+      "state": "OPEN",
+      "created": "2026-04-02T21:14:24Z",
+      "updated": "2026-04-02T21:14:24Z",
+      "bpb": 0.9354,
+      "seeds": 3,
+      "artifact_bytes": 15800000,
+      "technique_summary": "Muon + GPTQ + INT6 + EMA + N-gram + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_LeakyReLU2_XSA11_GPTQ_SLOT_0.9354/README.md",
+        "records/track_10min_16mb/2026-04-02_LeakyReLU2_XSA11_GPTQ_SLOT_0.9354/logs/seed1337.log",
+        "records/track_10min_16mb/2026-04-02_LeakyReLU2_XSA11_GPTQ_SLOT_0.9354/logs/seed42.log",
+        "records/track_10min_16mb/2026-04-02_LeakyReLU2_XSA11_GPTQ_SLOT_0.9354/logs/seed7.log",
+        "records/track_10min_16mb/2026-04-02_LeakyReLU2_XSA11_GPTQ_SLOT_0.9354/submission.json",
+        "records/track_10min_16mb/2026-04-02_LeakyReLU2_XSA11_GPTQ_SLOT_0.9354/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1262,
       "title": "Starter kit: align submission schema and path safety",
@@ -2813,7 +2881,7 @@
       "author": "bigbag",
       "state": "OPEN",
       "created": "2026-03-31T09:45:23Z",
-      "updated": "2026-03-31T18:53:45Z",
+      "updated": "2026-04-02T21:52:24Z",
       "bpb": 1.0914,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -5172,7 +5240,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-04-02T17:54:33Z",
+      "updated": "2026-04-02T21:36:45Z",
       "bpb": 0.0025,
       "seeds": 3,
       "artifact_bytes": 302000000,
