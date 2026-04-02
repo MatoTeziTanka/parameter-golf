@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-02T05:20:12.156164+00:00",
-  "api_calls_used": 79,
+  "last_fetch": "2026-04-02T06:49:23.690547+00:00",
+  "api_calls_used": 80,
   "prs": [
     {
       "number": 1247,
@@ -1511,7 +1511,7 @@
       "author": "msisovic",
       "state": "OPEN",
       "created": "2026-04-01T00:46:06Z",
-      "updated": "2026-04-01T18:02:58Z",
+      "updated": "2026-04-02T05:59:40Z",
       "bpb": 1.1063,
       "seeds": 3,
       "artifact_bytes": 15940000,
@@ -1524,7 +1524,9 @@
         "records/track_10min_16mb/2026-03-31_ParallelResiduals_MiniDepthRecurrence/train_seed2024.log",
         "records/track_10min_16mb/2026-03-31_ParallelResiduals_MiniDepthRecurrence/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "valerio-oai: Hi! This looks potentially interesting: could you add `train_gpt.py` to make this reviewable?"
+      ],
       "compliance_keywords": [
         "ttt",
         "gptq_eval"
@@ -2078,9 +2080,9 @@
       "number": 1185,
       "title": "[10min_16mb] 0.9641 BPB: LeakyReLU² + Score-First TTT + N-gram Backoff Cache",
       "author": "skoustav35",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-31T16:48:30Z",
-      "updated": "2026-04-01T04:11:10Z",
+      "updated": "2026-04-02T06:26:43Z",
       "bpb": 0.9641,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -2095,7 +2097,9 @@
         "records/track_10min_16mb/2026-03-31_LeakyReLU2_LegalTTT_NGramCache_XSA/train_seed2025.log",
         "records/track_10min_16mb/2026-03-31_LeakyReLU2_LegalTTT_NGramCache_XSA/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "valerio-oai: Hi! Even though you aren't using the hashed n-gram cache and using Laplace smoothing instead, I think your implementation as currently coded still uses knowledge of the eval token ahead of time to calculate the blended ngram probability, which is not allowed, you should calculate and renormalize over the whole vocab size, or with some other heuristic that does not use oracle knowledge of the eval token. If you did that, I would be more inclined to treat this as legal. Closing for now."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -2106,13 +2110,11 @@
       ],
       "track": "record",
       "technique_type": "hybrid",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "keyword:ngram",
-        "keyword:ngram_path",
-        "path:ngram-path"
+        "maintainer-closed:not allowed"
       ],
-      "confidence": "MEDIUM"
+      "confidence": "HIGH"
     },
     {
       "number": 1184,
@@ -3499,7 +3501,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-30T17:18:30Z",
-      "updated": "2026-04-01T03:49:22Z",
+      "updated": "2026-04-02T06:16:37Z",
       "bpb": 1.18672385,
       "seeds": 3,
       "artifact_bytes": 8842981,
@@ -4708,15 +4710,15 @@
     },
     {
       "number": 1105,
-      "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty— 1.1052 BPB (3-seed mean)",
+      "title": "Record: Fused MLP (Triton+CUTLASS EVT) + Fast Causal N-Gram Tilt & Subword Certainty (3-seed mean)",
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-04-02T05:17:41Z",
-      "bpb": 1.1052,
+      "updated": "2026-04-02T06:08:45Z",
+      "bpb": 0.002,
       "seeds": 3,
       "artifact_bytes": 302000000,
-      "technique_summary": "Muon + GPTQ + INT6 + EMA + N-gram",
+      "technique_summary": "Muon + GPTQ + INT6 + EMA + N-gram + Two-pass",
       "file_paths": [
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/CMakeLists.txt",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/README.md",
@@ -4725,28 +4727,36 @@
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/cutlass_evt_fusion/setup.py",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/eval_fused.py",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/fused_expert_blend.cpp",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/ngram_eval_seed1337.log",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/ngram_eval_seed314.log",
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/ngram_eval_seed42.log",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/pyproject.toml",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/requirements.txt",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/submission.json",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_gpt.py",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_seed1337.log",
         "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_seed314.log",
-        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_seed999.log"
+        "records/track_10min_16mb/2026-03-29_FusedMLP_Brotli_Memmap/train_seed42.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
         "ngram",
+        "two_pass",
         "gptq_eval",
         "cache_eval",
-        "leaky_relu"
+        "leaky_relu",
+        "ngram_path"
       ],
       "track": "record",
       "technique_type": "cache",
       "status": "AT_RISK",
       "flags": [
-        "keyword:ngram"
+        "keyword:ngram",
+        "keyword:two_pass",
+        "keyword:ngram_path",
+        "path:ngram-path"
       ],
-      "confidence": "LOW"
+      "confidence": "MEDIUM"
     },
     {
       "number": 1104,
@@ -7361,9 +7371,9 @@
       "number": 1026,
       "title": "N-gram Cache + Entropy-Adaptive Alpha: 1.0945 BPB",
       "author": "danielxmed",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-28T15:40:26Z",
-      "updated": "2026-03-28T15:42:56Z",
+      "updated": "2026-04-02T06:08:48Z",
       "bpb": 1.0945,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -7393,7 +7403,9 @@
         "test_ngram_adaptive.py",
         "train_gpt.py"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "valerio-oai: Hi, I think this submission uses an invalid n-gram cache since it only computes the blended ngram-llm probability for the target token, and does not renormalize the rest of the distribution. Closing for now."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -7401,16 +7413,13 @@
         "ngram_path",
         "cache_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "keyword:ngram",
-        "keyword:ngram_path",
-        "path:ngram-path",
-        "path:eval-cache-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
-      "technique_type": "hybrid"
+      "technique_type": "hybrid",
+      "status": "DEAD",
+      "flags": [
+        "maintainer-closed:closing"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1025,
