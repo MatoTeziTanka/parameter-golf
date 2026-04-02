@@ -311,8 +311,8 @@ def _is_incomplete(pr: dict[str, Any]) -> tuple[bool, list[str]]:
         flags.append(f"seeds-only-{seeds}")
 
     # Artifact must be known — None means it was never parsed from the PR body.
-    # The pipeline sets artifact_size=None when the artifact field was "?" or missing.
-    artifact_size = pr.get("artifact_size")
+    # The pipeline sets artifact_bytes (or legacy artifact_size) to None when missing.
+    artifact_size = pr.get("artifact_bytes", pr.get("artifact_size"))
     if artifact_size is None:
         flags.append("artifact-unknown")
 
