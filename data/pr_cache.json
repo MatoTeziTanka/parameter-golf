@@ -1,7 +1,222 @@
 {
-  "last_fetch": "2026-04-01T23:57:43.669095+00:00",
-  "api_calls_used": 77,
+  "last_fetch": "2026-04-02T03:18:43.815116+00:00",
+  "api_calls_used": 78,
   "prs": [
+    {
+      "number": 1246,
+      "title": "Record: Trinity Ternary GPT — val_bpb 0.9650 (ternary roundtrip)",
+      "author": "deborahnelson8788726",
+      "state": "OPEN",
+      "created": "2026-04-02T02:44:32Z",
+      "updated": "2026-04-02T02:59:53Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 14200000,
+      "technique_summary": "EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/README.md",
+        "records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/submission.json",
+        "records/track_10min_16mb/2026-04-01_Trinity_Ternary_ReluSq_UNet_NeoMuon/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1245,
+      "title": "[Non-Record] Hymba-8L: Hybrid SSM + Sliding Window Attention with 32K Context (1.1470 BPB)",
+      "author": "mkenney2",
+      "state": "OPEN",
+      "created": "2026-04-02T02:30:36Z",
+      "updated": "2026-04-02T02:30:36Z",
+      "bpb": 1.147,
+      "seeds": 2,
+      "artifact_bytes": 15700000,
+      "technique_summary": "TTT + SSM + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/README.md",
+        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/log_seed1337.txt",
+        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/log_seed42.txt",
+        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/log_seed7.txt",
+        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/submission.json",
+        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1244,
+      "title": "Non-record RTX4060Ti 11L LeakyTTT 24h local (1.1443 BPB)",
+      "author": "monkeyKingProgrammer",
+      "state": "OPEN",
+      "created": "2026-04-02T02:25:48Z",
+      "updated": "2026-04-02T02:35:00Z",
+      "bpb": 1.14430187,
+      "seeds": null,
+      "artifact_bytes": 15702576,
+      "technique_summary": "LeakyReLU² + TTT + Muon + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-02_11L_24h_Local4060Ti_LeakyTTT/README.md",
+        "records/track_non_record_16mb/2026-04-02_11L_24h_Local4060Ti_LeakyTTT/stack24h_base_s1337.txt",
+        "records/track_non_record_16mb/2026-04-02_11L_24h_Local4060Ti_LeakyTTT/submission.json",
+        "records/track_non_record_16mb/2026-04-02_11L_24h_Local4060Ti_LeakyTTT/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-02_11L_24h_Local4060Ti_LeakyTTT/train_gpt_stack.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1243,
+      "title": "JEPArdy! Non-Record Submission - JEPA + Leader-Stack - val_bpb 1.1230",
+      "author": "simon-marcus",
+      "state": "OPEN",
+      "created": "2026-04-02T02:15:24Z",
+      "updated": "2026-04-02T02:18:18Z",
+      "bpb": 1.2243657,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-01_JEPA_LeaderStack_StoragePass/README.md",
+        "records/track_non_record_16mb/2026-04-01_JEPA_LeaderStack_StoragePass/requirements.txt",
+        "records/track_non_record_16mb/2026-04-01_JEPA_LeaderStack_StoragePass/storage_seed1337.log",
+        "records/track_non_record_16mb/2026-04-01_JEPA_LeaderStack_StoragePass/storage_seed2026.log",
+        "records/track_non_record_16mb/2026-04-01_JEPA_LeaderStack_StoragePass/storage_seed42.log",
+        "records/track_non_record_16mb/2026-04-01_JEPA_LeaderStack_StoragePass/submission.json",
+        "records/track_non_record_16mb/2026-04-01_JEPA_LeaderStack_StoragePass/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-01_JEPA_LeaderStack_StoragePass/train_seed1337.log",
+        "records/track_non_record_16mb/2026-04-01_JEPA_LeaderStack_StoragePass/train_seed2026.log",
+        "records/track_non_record_16mb/2026-04-01_JEPA_LeaderStack_StoragePass/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1242,
+      "title": "Record: Scylla + n-gram + legal TTT — val_bpb 1.0903 (3-seed mean)",
+      "author": "Campbellb",
+      "state": "OPEN",
+      "created": "2026-04-02T02:03:08Z",
+      "updated": "2026-04-02T02:04:50Z",
+      "bpb": 1.0903,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + INT6 + N-gram + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_scylla-tuned-ttt/README.md",
+        "records/track_10min_16mb/2026-04-01_scylla-tuned-ttt/submission.json",
+        "records/track_10min_16mb/2026-04-01_scylla-tuned-ttt/train_gpt.py",
+        "records/track_10min_16mb/2026-04-01_scylla-tuned-ttt/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-01_scylla-tuned-ttt/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-01_scylla-tuned-ttt/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1241,
+      "title": "MDLM Diffusion — val_var_bpb 0.9901, EOS learning + full dataset shard rotation, 33M params, 1x AWS A10G",
+      "author": "aiejvn",
+      "state": "OPEN",
+      "created": "2026-04-02T01:38:56Z",
+      "updated": "2026-04-02T02:02:35Z",
+      "bpb": 0.9901,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-01_MDLM_EOS_FullDataset_A10G/README.md",
+        "records/track_non_record_16mb/2026-04-01_MDLM_EOS_FullDataset_A10G/submission.json",
+        "records/track_non_record_16mb/2026-04-01_MDLM_EOS_FullDataset_A10G/train_mdlm.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1240,
+      "title": "Non-record: Does SLOT violate causal dependence? (empirical test + question)",
+      "author": "andrewbaggio1",
+      "state": "OPEN",
+      "created": "2026-04-02T00:33:22Z",
+      "updated": "2026-04-02T00:33:22Z",
+      "bpb": 0.93,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-01_FullGPTQ_ScoreFirstTTT_SLOT_8xH100/README.md",
+        "records/track_10min_16mb/2026-04-01_FullGPTQ_ScoreFirstTTT_SLOT_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-04-01_SLOT_Causal_Dependence_Analysis/README.md",
+        "records/track_10min_16mb/2026-04-01_SLOT_Causal_Dependence_Analysis/proof_output.log",
+        "records/track_10min_16mb/2026-04-01_SLOT_Causal_Dependence_Analysis/prove_slot_causal_violation.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1239,
       "title": "[Non-Record] Whirlpool v5b — Non-Euclidean Lorentzian Attention on the Hyperboloid Manifold",
@@ -631,15 +846,15 @@
     },
     {
       "number": 1222,
-      "title": "[Non-record] TTT-E2E: Meta-learned test-time training via FOMAML",
+      "title": "[Non-record] Prime MLP TTT: Naive vs Meta-Learned (E2E)",
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-01T15:13:14Z",
-      "updated": "2026-04-01T19:51:27Z",
-      "bpb": 0.073,
+      "updated": "2026-04-02T02:51:54Z",
+      "bpb": 0.079,
       "seeds": null,
-      "artifact_bytes": 5750000,
-      "technique_summary": "TTT + GPTQ + INT6",
+      "artifact_bytes": 1410000,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/README.md",
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/sweep_naive_ttt.py",
@@ -691,7 +906,7 @@
       "author": "Hieuabssy",
       "state": "OPEN",
       "created": "2026-04-01T13:39:21Z",
-      "updated": "2026-04-01T18:55:13Z",
+      "updated": "2026-04-02T02:37:40Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -762,7 +977,7 @@
       "author": "clarkkev",
       "state": "OPEN",
       "created": "2026-04-01T11:54:49Z",
-      "updated": "2026-04-01T22:52:45Z",
+      "updated": "2026-04-02T02:47:20Z",
       "bpb": 1.10411,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -4467,7 +4682,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-04-01T19:55:33Z",
+      "updated": "2026-04-02T00:57:10Z",
       "bpb": 1.1052,
       "seeds": 3,
       "artifact_bytes": 302000000,
@@ -4509,11 +4724,11 @@
       "author": "DariusFeher",
       "state": "OPEN",
       "created": "2026-03-29T23:52:12Z",
-      "updated": "2026-03-31T13:34:07Z",
+      "updated": "2026-04-02T00:32:17Z",
       "bpb": 1.3595,
       "seeds": 2,
       "artifact_bytes": 16000000,
-      "technique_summary": "TTT + INT8 + EMA",
+      "technique_summary": "EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-03-29_HNet_ByteVsSubword_Study/README.md",
         "records/track_non_record_16mb/2026-03-29_HNet_ByteVsSubword_Study/submission.json",
@@ -4524,11 +4739,9 @@
         "records/track_non_record_16mb/2026-03-29_HNet_ByteVsSubword_Study/train_sp1024_best_10_min.log"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [
-        "ttt"
-      ],
+      "compliance_keywords": [],
       "track": "non-record",
-      "technique_type": "ttt",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-only-2"
@@ -7788,11 +8001,11 @@
     },
     {
       "number": 1005,
-      "title": "[Non-Record] Extended Compute Scaling Analysis: 1.0853 BPB at 50K steps (11.5 hours) on 4×A100MIG",
+      "title": "Non-Record: Extended Compute Scaling Analysis: 1.0853 BPB at 50K steps (11.5 hours) on 4×A100MIG",
       "author": "OnlyJundong",
       "state": "OPEN",
       "created": "2026-03-28T05:40:07Z",
-      "updated": "2026-03-28T05:40:07Z",
+      "updated": "2026-04-02T00:53:22Z",
       "bpb": 1.0853,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -7810,13 +8023,13 @@
       "compliance_keywords": [
         "ttt"
       ],
+      "track": "non-record",
+      "technique_type": "ttt",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-only-2"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "ttt"
+      "confidence": "HIGH"
     },
     {
       "number": 1004,
