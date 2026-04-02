@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-02T13:21:42.878548+00:00",
-  "api_calls_used": 85,
+  "last_fetch": "2026-04-02T14:39:39.839842+00:00",
+  "api_calls_used": 86,
   "prs": [
     {
       "number": 1256,
@@ -307,7 +307,7 @@
       "author": "deborahnelson8788726",
       "state": "OPEN",
       "created": "2026-04-02T02:44:32Z",
-      "updated": "2026-04-02T02:59:53Z",
+      "updated": "2026-04-02T14:37:28Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 14200000,
@@ -1149,10 +1149,10 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-01T15:13:14Z",
-      "updated": "2026-04-02T09:32:39Z",
+      "updated": "2026-04-02T13:25:21Z",
       "bpb": 0.079,
       "seeds": null,
-      "artifact_bytes": 1410000,
+      "artifact_bytes": 16000000,
       "technique_summary": "TTT + GPTQ + INT6 + EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/README.md",
@@ -1277,7 +1277,7 @@
       "author": "clarkkev",
       "state": "OPEN",
       "created": "2026-04-01T11:54:49Z",
-      "updated": "2026-04-02T02:47:20Z",
+      "updated": "2026-04-02T14:18:55Z",
       "bpb": 1.10411,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -3436,9 +3436,9 @@
       "number": 1150,
       "title": "Legal TTT (SGD, 3-epoch) + SLOT (lr=0.003, steps=5) on PR #549 base -- val_bpb: 1.11512 (3-seed mean, beats merged SOTA 1.1194)",
       "author": "sahiee-dev",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-30T20:14:28Z",
-      "updated": "2026-03-31T08:03:08Z",
+      "updated": "2026-04-02T13:28:51Z",
       "bpb": 1.11512,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -3462,10 +3462,9 @@
       ],
       "track": "record",
       "technique_type": "hybrid",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "keyword:ngram",
-        "keyword:two_pass"
+        "closed-no-maintainer-comment"
       ],
       "confidence": "LOW"
     },
@@ -4985,8 +4984,8 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-04-02T06:08:45Z",
-      "bpb": 0.002,
+      "updated": "2026-04-02T14:38:11Z",
+      "bpb": 0.0025,
       "seeds": 3,
       "artifact_bytes": 302000000,
       "technique_summary": "Muon + GPTQ + INT6 + EMA + N-gram + Two-pass",
