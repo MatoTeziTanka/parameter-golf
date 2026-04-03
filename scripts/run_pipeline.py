@@ -146,7 +146,7 @@ def _status_badge(status: str, seeds: int | None) -> str:
         tip = f"Only {seeds}/3 seeds submitted — needs all 3 (42, 1337, 2024)"
     else:
         cls, label, tip = badges.get(status, ("badge-incomplete", status, ""))
-    return f'<span class="badge {cls}" title="{tip}">{label}</span>'
+    return f'<span class="badge {cls}"{_tooltip_attr(tip)}>{label}</span>'
 
 
 def _type_badge(technique_type: str) -> str:
@@ -158,7 +158,7 @@ def _type_badge(technique_type: str) -> str:
         "hybrid": ("badge-hybrid", "Hybrid", "Combines neural + cache or TTT techniques"),
     }
     cls, label, tip = badges.get(technique_type, ("badge-incomplete", technique_type or "?", "Type unknown"))
-    return f'<span class="badge {cls}" title="{tip}">{label}</span>'
+    return f'<span class="badge {cls}"{_tooltip_attr(tip)}>{label}</span>'
 
 
 def _track_badge(track: str) -> str:
@@ -168,7 +168,7 @@ def _track_badge(track: str) -> str:
         "non-record": ("badge-nonrecord", "Non-Record", "Notable submission outside record constraints"),
     }
     cls, label, tip = badges.get(track, ("badge-incomplete", track or "?", "Track unknown"))
-    return f'<span class="badge {cls}" title="{tip}">{label}</span>'
+    return f'<span class="badge {cls}"{_tooltip_attr(tip)}>{label}</span>'
 
 
 def _pr_link(number: int) -> str:
@@ -178,10 +178,10 @@ def _pr_link(number: int) -> str:
 
 def _technique_badge(kind: str, count: int) -> str:
     if kind == "banned":
-        return '<span class="badge badge-banned" title="Banned by maintainers — submissions using this are DEAD">BANNED</span>'
+        return f'<span class="badge badge-banned"{_tooltip_attr("Banned by maintainers — submissions using this are DEAD")}>BANNED</span>'
     if count == 0:
-        return '<span class="badge badge-grey" title="No PRs have tried this technique yet">UNTRIED</span>'
-    return '<span class="badge badge-legal" title="Legal technique — allowed in submissions">LEGAL</span>'
+        return f'<span class="badge badge-grey"{_tooltip_attr("No PRs have tried this technique yet")}>UNTRIED</span>'
+    return f'<span class="badge badge-legal"{_tooltip_attr("Legal technique — allowed in submissions")}>LEGAL</span>'
 
 
 def _render_technique_card(technique: dict[str, Any]) -> str:
@@ -333,9 +333,21 @@ def _render_timeline_section(svg: str, prs: list[dict[str, Any]]) -> str:
     )
 
 
-def _tip(text: str, tooltip: str) -> str:
-    """Render text with a tooltip title attribute."""
+def _render_with_tooltip(text: str, tooltip: str | None) -> str:
+    """Render text wrapped in a <span> with a tooltip title attribute.
+
+    If tooltip is None or empty, returns text unwrapped.
+    """
+    if not tooltip:
+        return text
     return f'<span title="{escape(tooltip)}">{text}</span>'
+
+
+def _tooltip_attr(tooltip: str | None) -> str:
+    """Return a title='...' attribute string, or empty string if no tooltip."""
+    if not tooltip:
+        return ""
+    return f' title="{escape(tooltip)}"'
 
 
 def _render_checklist(data: dict[str, Any]) -> str:
@@ -346,7 +358,7 @@ def _render_checklist(data: dict[str, Any]) -> str:
 
     # Checklist card
     checklist_lis = "\n".join(
-        f'  <li title="{escape(item["tooltip"])}">{item["text"]}</li>'
+        f'  <li{_tooltip_attr(item.get("tooltip"))}>{item["text"]}</li>'
         for item in items
     )
     html = (
@@ -359,15 +371,15 @@ def _render_checklist(data: dict[str, Any]) -> str:
 
     # Technique legality card
     legal_lis = "\n".join(
-        f'  <li class="legal">{t["text"]}</li>'
+        f'  <li class="legal"{_tooltip_attr(t.get("tooltip"))}>{t["text"]}</li>'
         for t in techniques.get("legal", [])
     )
     banned_lis = "\n".join(
-        f'  <li class="banned">{t["text"]}</li>'
+        f'  <li class="banned"{_tooltip_attr(t.get("tooltip"))}>{t["text"]}</li>'
         for t in techniques.get("banned", [])
     )
     grey_lis = "\n".join(
-        f'  <li class="grey">{t["text"]}</li>'
+        f'  <li class="grey"{_tooltip_attr(t.get("tooltip"))}>{t["text"]}</li>'
         for t in techniques.get("grey_area", [])
     )
     html += (
