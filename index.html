@@ -212,83 +212,12 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <!-- SECTION 1: CHECKLIST -->
 <section id="checklist">
 <h2>Submission Checklist</h2>
-<p style="color:var(--text-dim);margin-bottom:1rem;">Updated March 28, 2026. Check ALL boxes before submitting.</p>
-
-<div class="card">
-<h3>Before You Submit</h3>
-<ul class="checklist">
-  <li title="Total size of your training script + compressed model weights, measured in bytes">Artifact &le; 16,000,000 bytes (code + compressed model)</li>
-  <li title="Wall-clock time from first step to last step, measured on 8x NVIDIA H100 SXM GPUs">Training completed in &le; 600 seconds on 8&times;H100 SXM</li>
-  <li title="Separate 600-second budget for evaluation — not shared with training time">Evaluation completed in &le; 600 seconds (separate budget)</li>
-  <li title="All 3 random seeds must produce valid results — prevents cherry-picking">3 seeds: 42, 1337, 2024</li>
-  <li title="Your 3-seed mean BPB must beat the current best by at least 0.005 to be a new record">BPB beats current SOTA by &ge; 0.005 nats (for record track)</li>
-  <li title="JSON file with your val_bpb scores, seed results, and artifact sizes">submission.json included with val_bpb, seeds, artifact sizes</li>
-  <li title="stdout/stderr logs from all 3 training runs for reproducibility verification">Training logs included for all 3 seeds</li>
-  <li title="No downloading models, data, or making API calls during train or eval time">No network calls during training or eval</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Techniques &mdash; What's Legal RIGHT NOW</h3>
-<ul class="technique-list">
-  <li class="legal">Any neural architecture (transformers, SSMs, hybrids, MoE)</li>
-  <li class="legal">Any activation function (LeakyReLU&sup2;, GeGLU, SwiGLU, etc.)</li>
-  <li class="legal">Any optimizer (AdamW, Muon, SGD, etc.)</li>
-  <li class="legal">LR schedules, warmup, cosine decay</li>
-  <li class="legal">EMA, SWA, weight averaging</li>
-  <li class="legal">Sliding window evaluation</li>
-  <li class="legal">Quantization (INT6, INT8, GPTQ) &mdash; calibration within training budget</li>
-  <li class="legal">Flash Attention, torch.compile</li>
-  <li class="legal">Score-first single-pass TTT (properly normalized probabilities)</li>
-</ul>
-<ul class="technique-list" style="margin-top:1rem;">
-  <li class="banned">Hashed n-gram caches (improper normalization over vocab)</li>
-  <li class="banned">Two-pass rescoring (eval tokens leaked between passes)</li>
-  <li class="banned">GPTQ calibration on eval tokens (must fit in training 600s)</li>
-  <li class="banned">Pre-filling cache from training data at eval time</li>
-  <li class="banned">Multi-epoch TTT scoring same tokens twice</li>
-  <li class="banned">Oracle/hindsight selection between scoring passes</li>
-</ul>
-<ul class="technique-list" style="margin-top:1rem;">
-  <li class="grey">Properly normalized eval-time caches (CTW, Dirichlet)</li>
-  <li class="grey">Score-first TTT with complex mixing (depends on normalization)</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Rule Change History</h3>
-<div class="timeline-entry">
-  <div class="timeline-date">March 27, 2026</div>
-  <p>@valerio-oai closed 30+ PRs. Hashed n-gram caches banned (improper normalization). Two-pass rescoring banned (eval token leakage). GPTQ on eval tokens banned.</p>
-  <p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.25rem;">Affected: #769, #779, #809, #814, #824, #825, #828, #843, #846, #850, #851, #859, #868, #869, #870, #880, #881, #888, #893, #907, #913, #921, #925, #944, #945, #982</p>
-  <p style="color:var(--text-dim);font-size:0.85rem;">Source: <a href="https://github.com/openai/parameter-golf/issues/677">Issue #677</a></p>
-</div>
-<div class="timeline-entry legal-change">
-  <div class="timeline-date">March 24, 2026</div>
-  <p>Score-first TTT clarified as legal. Multi-epoch on already-scored tokens: legal IF properly normalized.</p>
-  <p style="color:var(--text-dim);font-size:0.85rem;">Source: <a href="https://github.com/openai/parameter-golf/issues/402">Issue #402</a> (ruling by @0hq)</p>
-</div>
-<div class="timeline-entry">
-  <div class="timeline-date">March 22, 2026</div>
-  <p>Eval-time GPTQ calibration on val tokens banned. PRs #593, #576 closed.</p>
-  <p style="color:var(--text-dim);font-size:0.85rem;">Source: PRs #593, #576, #569</p>
-</div>
-</div>
-
-<div class="card" style="border-color:var(--yellow);border-width:2px;">
-<h3 style="margin-top:0;color:var(--yellow);">&#9888; Community Bug Alerts</h3>
-<p style="font-size:0.9rem;margin-bottom:0.75rem;">Known issues that may affect your BPB score. Check before submitting.</p>
-<div style="margin-bottom:1rem;">
-<strong style="color:var(--red);">BPB Underestimation Bug</strong> <span class="badge badge-banned">~20% error</span>
-<p style="font-size:0.85rem;color:var(--text-dim);margin-top:0.25rem;">If your tokenizer does NOT contain U+2581 (&#9601;) as a standalone token, <code>build_sentencepiece_luts</code> overcounts byte boundaries by 2 bytes per word &mdash; inflating <code>val_byte_count</code> and making BPB appear ~20% lower than reality. Tokenizers with 1024 vocab (the competition default) DO have this token and are NOT affected. Custom tokenizers: check with <code>sp.id_to_piece()</code>.</p>
-<p style="font-size:0.8rem;color:var(--text-dim);">Source: <a href="https://github.com/openai/parameter-golf/issues/897">Issue #897</a></p>
-</div>
-<div>
-<strong style="color:var(--yellow);">INT6 Scale Clamp Wastes Quantization Levels</strong> <span class="badge badge-grey">affects ~93% of rows</span>
-<p style="font-size:0.85rem;color:var(--text-dim);margin-top:0.25rem;">The <code>clamp_min(1.0 / 31.0)</code> in <code>quantize_int6_per_row</code> forces a minimum scale of 0.032 even when weight rows have much smaller magnitudes. At WD=0.02, 93% of rows trigger this clamp &mdash; wasting INT6 resolution and widening the quantization gap. Higher weight decay (0.04+) makes it worse. Fix: lower or remove the clamp, then retrain with matching QAT.</p>
-<p style="font-size:0.8rem;color:var(--text-dim);">Source: <a href="https://github.com/openai/parameter-golf/issues/775">Issue #775</a></p>
-</div>
-</div>
+<!-- AGORA:CHECKLIST_START -->
+<!-- AGORA:CHECKLIST_END -->
+<!-- AGORA:RULINGS_START -->
+<!-- AGORA:RULINGS_END -->
+<!-- AGORA:ALERTS_START -->
+<!-- AGORA:ALERTS_END -->
 </section>
 
 <!-- SECTION 2: LEADERBOARD (placeholder for Phase 2 API) -->
@@ -1763,80 +1692,8 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <!-- SECTION 5: COMPUTE GUIDE -->
 <section id="compute">
 <h2>Compute Survival Guide</h2>
-
-<div class="card" style="border-color:var(--red);">
-<h3 style="color:var(--red);">The Golden Rule: Serverless for Iteration, Pods Only for Final Submission</h3>
-<p>Use serverless for development, testing, and architecture validation. It's cheaper, faster, and auto-stops. But <strong style="color:var(--yellow);">official PR submissions must run on 8&times;H100 SXM with verifiable timing</strong> &mdash; serverless providers may use different hardware or add overhead that affects your reported step times. Use serverless to iterate, then do your final 3-seed submission run on a known 8&times;H100 SXM pod.</p>
-<div class="guide-compare">
-  <div class="bad">
-    <h4>Pods (anti-pattern)</h4>
-    <ul>
-      <li>Billing starts at CREATION</li>
-      <li>Setup time = burning money idle</li>
-      <li>Forget to stop = bleeding money</li>
-      <li>Crash at second 5 = still paying</li>
-      <li>Pod terminates = lose everything</li>
-    </ul>
-  </div>
-  <div class="good">
-    <h4>Serverless (correct)</h4>
-    <ul>
-      <li>Billing starts when CODE runs</li>
-      <li>Pre-baked Docker = instant start</li>
-      <li>Auto-stops when done</li>
-      <li>Crash at second 5 = paid for 5s</li>
-      <li>Results returned before teardown</li>
-    </ul>
-  </div>
-</div>
-</div>
-
-<div class="card">
-<h3>RunPod Serverless (Recommended)</h3>
-<p>Docker image: <code>matotezitanka/proteus-pytorch:2.11.0-cuda12.8</code></p>
-<p>Submit job &rarr; it runs &rarr; results come back &rarr; billing stops. No SSH, no pod management.</p>
-<p style="color:var(--text-dim);font-size:0.85rem;">H100 SXM. ~$0.45 per 10-min training run (calculated, not yet verified via receipt).</p>
-</div>
-
-<div class="card">
-<h3>Modal ($30/month free)</h3>
-<p>Serverless by default. <code>modal run train.py</code> &mdash; that's it. $30 free every month = multiple runs.</p>
-</div>
-
-<div class="card">
-<h3>Google Colab (Free / Pro $9.99/mo / Pro+ $49.99/mo)</h3>
-<p>GPUs available: T4 (free), A100 40/80GB, H100, RTX PRO 6000 Blackwell ~96GB (varies by tier and availability). Student Pro access available through educational institutions.</p>
-<p>Batch size fix for single GPU: <code>TRAIN_BATCH_TOKENS=65536</code>. Save checkpoints to Drive. Resume on disconnect. ~6-7 hours for 20K steps on single H100.</p>
-<p style="color:var(--text-dim);font-size:0.85rem;">Note: Whether Colab's H100 is SXM or PCIe variant is unverified. Validate architecture on Colab, verify final submission timing on known SXM hardware.</p>
-</div>
-
-<div class="card">
-<h3>CPU Smoke Tests (FREE &mdash; do these FIRST)</h3>
-<p>We've run 5+ smoke tests during competition development. Each catches different failure modes:</p>
-<table style="margin:0.5rem 0;">
-<thead><tr><th>Test</th><th>What it catches</th><th>Command</th></tr></thead>
-<tbody>
-<tr><td>Quick forward pass</td><td>Import errors, shape mismatches, config bugs</td><td><code>ITERATIONS=10 TRAIN_BATCH_TOKENS=4096 TRAIN_SEQ_LEN=256 python train_gpt.py</code></td></tr>
-<tr><td>Artifact size check</td><td>Model too big for 16MB cap</td><td><code>python cpu_test.py</code> (validates INT6 roundtrip + size)</td></tr>
-<tr><td>Quantization roundtrip</td><td>Quantization breaks model quality</td><td><code>python cpu_test.py --matrix</code></td></tr>
-<tr><td>Eval pipeline</td><td>Sliding window + BPB computation errors</td><td><code>ITERATIONS=10 VAL_LOSS_EVERY=5 python train_gpt.py</code></td></tr>
-<tr><td>Full mini-run</td><td>Everything end-to-end on CPU</td><td><code>ITERATIONS=50 TRAIN_BATCH_TOKENS=4096 TRAIN_SEQ_LEN=256 VAL_LOSS_EVERY=25 python train_gpt.py</code></td></tr>
-</tbody>
-</table>
-<p style="color:var(--text-dim);font-size:0.85rem;">If it doesn't work on CPU, it won't work on GPU. Save your money. Our <code>cpu_test.py</code> is in the <a href="https://github.com/MatoTeziTanka/parameter-golf-private">community toolkit</a>.</p>
-</div>
-
-<div class="card">
-<h3>H100 SXM vs PCIe</h3>
-<table>
-<thead><tr><th>GPU</th><th>NVLink</th><th>DDP Speed</th><th>Where</th></tr></thead>
-<tbody>
-<tr><td>H100 SXM</td><td>Yes (900 GB/s)</td><td>Full speed</td><td>RunPod, Vast.ai</td></tr>
-<tr><td>H100 PCIe</td><td>No</td><td>~30% slower DDP</td><td>Some cloud providers</td></tr>
-</tbody>
-</table>
-<p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.5rem;">Competition requires 8&times;H100 SXM for official timing. Colab H100 variant unverified &mdash; always confirm step timing matches expected SXM performance before submitting.</p>
-</div>
+<!-- AGORA:COMPUTE_START -->
+<!-- AGORA:COMPUTE_END -->
 </section>
 
 <!-- SECTION 6: TIMELINE (placeholder for Phase 3) -->

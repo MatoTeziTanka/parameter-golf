@@ -1,0 +1,32 @@
+[
+  {
+    "date": "March 27, 2026",
+    "title": "Major ban wave \u2014 30+ PRs closed",
+    "description": "@valerio-oai closed 30+ PRs. Hashed n-gram caches banned (improper normalization). Two-pass rescoring banned (eval token leakage). GPTQ on eval tokens banned.",
+    "affected_prs": [769, 779, 809, 814, 824, 825, 828, 843, 846, 850, 851, 859, 868, 869, 870, 880, 881, 888, 893, 907, 913, 921, 925, 944, 945, 982],
+    "source": "https://github.com/openai/parameter-golf/issues/677",
+    "source_label": "Issue #677",
+    "actor": "@valerio-oai",
+    "type": "ban"
+  },
+  {
+    "date": "March 24, 2026",
+    "title": "Score-first TTT clarified as legal",
+    "description": "Score-first TTT clarified as legal. Multi-epoch on already-scored tokens: legal IF properly normalized.",
+    "affected_prs": [],
+    "source": "https://github.com/openai/parameter-golf/issues/402",
+    "source_label": "Issue #402 (ruling by @0hq)",
+    "actor": "@0hq",
+    "type": "clarification"
+  },
+  {
+    "date": "March 22, 2026",
+    "title": "Eval-time GPTQ calibration banned",
+    "description": "Eval-time GPTQ calibration on val tokens banned. PRs #593, #576 closed.",
+    "affected_prs": [],
+    "source": null,
+    "source_label": "PRs #593, #576, #569",
+    "actor": null,
+    "type": "ban"
+  }
+]

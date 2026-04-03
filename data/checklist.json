@@ -1,0 +1,113 @@
+{
+  "last_updated": "March 28, 2026",
+  "items": [
+    {
+      "text": "Artifact \u2264 16,000,000 bytes (code + compressed model)",
+      "tooltip": "Total size of your training script + compressed model weights, measured in bytes"
+    },
+    {
+      "text": "Training completed in \u2264 600 seconds on 8\u00d7H100 SXM",
+      "tooltip": "Wall-clock time from first step to last step, measured on 8x NVIDIA H100 SXM GPUs"
+    },
+    {
+      "text": "Evaluation completed in \u2264 600 seconds (separate budget)",
+      "tooltip": "Separate 600-second budget for evaluation \u2014 not shared with training time"
+    },
+    {
+      "text": "3 seeds: 42, 1337, 2024",
+      "tooltip": "All 3 random seeds must produce valid results \u2014 prevents cherry-picking"
+    },
+    {
+      "text": "BPB beats current SOTA by \u2265 0.005 nats (for record track)",
+      "tooltip": "Your 3-seed mean BPB must beat the current best by at least 0.005 to be a new record"
+    },
+    {
+      "text": "submission.json included with val_bpb, seeds, artifact sizes",
+      "tooltip": "JSON file with your val_bpb scores, seed results, and artifact sizes"
+    },
+    {
+      "text": "Training logs included for all 3 seeds",
+      "tooltip": "stdout/stderr logs from all 3 training runs for reproducibility verification"
+    },
+    {
+      "text": "No network calls during training or eval",
+      "tooltip": "No downloading models, data, or making API calls during train or eval time"
+    }
+  ],
+  "techniques": {
+    "legal": [
+      {
+        "text": "Any neural architecture (transformers, SSMs, hybrids, MoE)",
+        "tooltip": "All neural architectures are allowed"
+      },
+      {
+        "text": "Any activation function (LeakyReLU\u00b2, GeGLU, SwiGLU, etc.)",
+        "tooltip": "No restrictions on activation functions"
+      },
+      {
+        "text": "Any optimizer (AdamW, Muon, SGD, etc.)",
+        "tooltip": "All optimizers are allowed"
+      },
+      {
+        "text": "LR schedules, warmup, cosine decay",
+        "tooltip": "Learning rate scheduling strategies are unrestricted"
+      },
+      {
+        "text": "EMA, SWA, weight averaging",
+        "tooltip": "Exponential moving average and stochastic weight averaging are legal"
+      },
+      {
+        "text": "Sliding window evaluation",
+        "tooltip": "Standard sliding window approach for evaluation"
+      },
+      {
+        "text": "Quantization (INT6, INT8, GPTQ) \u2014 calibration within training budget",
+        "tooltip": "Quantization allowed if calibration happens within the 600s training budget"
+      },
+      {
+        "text": "Flash Attention, torch.compile",
+        "tooltip": "Performance optimizations are allowed"
+      },
+      {
+        "text": "Score-first single-pass TTT (properly normalized probabilities)",
+        "tooltip": "Test-time training is legal if scoring is single-pass and probabilities are properly normalized"
+      }
+    ],
+    "banned": [
+      {
+        "text": "Hashed n-gram caches (improper normalization over vocab)",
+        "tooltip": "Banned March 27 \u2014 n-gram caches don't properly normalize probability distributions over the full vocabulary"
+      },
+      {
+        "text": "Two-pass rescoring (eval tokens leaked between passes)",
+        "tooltip": "Banned March 27 \u2014 information from first eval pass leaks into second pass"
+      },
+      {
+        "text": "GPTQ calibration on eval tokens (must fit in training 600s)",
+        "tooltip": "Banned March 22 \u2014 calibration on evaluation data is not allowed; must happen during training"
+      },
+      {
+        "text": "Pre-filling cache from training data at eval time",
+        "tooltip": "Banned March 27 \u2014 loading training-derived caches during evaluation is not permitted"
+      },
+      {
+        "text": "Multi-epoch TTT scoring same tokens twice",
+        "tooltip": "Banned \u2014 test-time training must not score the same tokens in multiple passes"
+      },
+      {
+        "text": "Oracle/hindsight selection between scoring passes",
+        "tooltip": "Banned \u2014 using results from one scoring pass to select strategy for another is not allowed"
+      }
+    ],
+    "grey_area": [
+      {
+        "text": "Properly normalized eval-time caches (CTW, Dirichlet)",
+        "tooltip": "May be legal if probability normalization is correct \u2014 under review"
+      },
+      {
+        "text": "Score-first TTT with complex mixing (depends on normalization)",
+        "tooltip": "Legality depends on whether the mixing preserves proper probability normalization"
+      }
+    ]
+  }
+}

@@ -61,6 +61,19 @@ TIMELINE_START = "<!-- AGORA:TIMELINE_START -->"
 TIMELINE_END = "<!-- AGORA:TIMELINE_END -->"
 CHANGELOG_START = "<!-- AGORA:CHANGELOG_START -->"
 CHANGELOG_END = "<!-- AGORA:CHANGELOG_END -->"
+CHECKLIST_START = "<!-- AGORA:CHECKLIST_START -->"
+CHECKLIST_END = "<!-- AGORA:CHECKLIST_END -->"
+RULINGS_START = "<!-- AGORA:RULINGS_START -->"
+RULINGS_END = "<!-- AGORA:RULINGS_END -->"
+ALERTS_START = "<!-- AGORA:ALERTS_START -->"
+ALERTS_END = "<!-- AGORA:ALERTS_END -->"
+COMPUTE_START = "<!-- AGORA:COMPUTE_START -->"
+COMPUTE_END = "<!-- AGORA:COMPUTE_END -->"
+
+CHECKLIST_PATH = REPO_ROOT / "data" / "checklist.json"
+RULINGS_PATH = REPO_ROOT / "data" / "rulings.json"
+ALERTS_PATH = REPO_ROOT / "data" / "alerts.json"
+COMPUTE_PATH = REPO_ROOT / "data" / "compute_guide.json"
 
 PR_BASE_URL = "https://github.com/openai/parameter-golf/pull"
 
@@ -295,6 +308,228 @@ def _render_timeline_section(svg: str, prs: list[dict[str, Any]]) -> str:
         f'{svg}'
         '</div>'
     )
+
+
+def _tip(text: str, tooltip: str) -> str:
+    """Render text with a tooltip title attribute."""
+    return f'<span title="{escape(tooltip)}">{text}</span>'
+
+
+def _render_checklist(data: dict[str, Any]) -> str:
+    """Render the submission checklist + technique legality from data/checklist.json."""
+    updated = escape(data.get("last_updated", ""))
+    items = data.get("items", [])
+    techniques = data.get("techniques", {})
+
+    # Checklist card
+    checklist_lis = "\n".join(
+        f'  <li title="{escape(item["tooltip"])}">{item["text"]}</li>'
+        for item in items
+    )
+    html = (
+        f'<p style="color:var(--text-dim);margin-bottom:1rem;">Updated {updated}. Check ALL boxes before submitting.</p>\n'
+        '<div class="card">\n'
+        '<h3>Before You Submit</h3>\n'
+        f'<ul class="checklist">\n{checklist_lis}\n</ul>\n'
+        '</div>\n'
+    )
+
+    # Technique legality card
+    legal_lis = "\n".join(
+        f'  <li class="legal">{t["text"]}</li>'
+        for t in techniques.get("legal", [])
+    )
+    banned_lis = "\n".join(
+        f'  <li class="banned">{t["text"]}</li>'
+        for t in techniques.get("banned", [])
+    )
+    grey_lis = "\n".join(
+        f'  <li class="grey">{t["text"]}</li>'
+        for t in techniques.get("grey_area", [])
+    )
+    html += (
+        '<div class="card">\n'
+        '<h3>Techniques &mdash; What\'s Legal RIGHT NOW</h3>\n'
+        f'<ul class="technique-list">\n{legal_lis}\n</ul>\n'
+        f'<ul class="technique-list" style="margin-top:1rem;">\n{banned_lis}\n</ul>\n'
+        f'<ul class="technique-list" style="margin-top:1rem;">\n{grey_lis}\n</ul>\n'
+        '</div>'
+    )
+    return html
+
+
+def _render_rulings(rulings: list[dict[str, Any]]) -> str:
+    """Render the rule change history from data/rulings.json."""
+    entries: list[str] = []
+    for ruling in rulings:
+        date = escape(ruling.get("date", ""))
+        desc = escape(ruling.get("description", ""))
+        rtype = ruling.get("type", "ban")
+        modifier = " legal-change" if rtype == "clarification" else ""
+
+        parts = [
+            f'<div class="timeline-entry{modifier}">',
+            f'  <div class="timeline-date">{date}</div>',
+            f'  <p>{desc}</p>',
+        ]
+
+        affected = ruling.get("affected_prs", [])
+        if affected:
+            pr_list = ", ".join(f"#{n}" for n in affected)
+            parts.append(
+                f'  <p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.25rem;">Affected: {pr_list}</p>'
+            )
+
+        source = ruling.get("source")
+        source_label = ruling.get("source_label", "")
+        if source:
+            parts.append(
+                f'  <p style="color:var(--text-dim);font-size:0.85rem;">Source: <a href="{escape(source)}">{escape(source_label)}</a></p>'
+            )
+        elif source_label:
+            parts.append(
+                f'  <p style="color:var(--text-dim);font-size:0.85rem;">Source: {escape(source_label)}</p>'
+            )
+
+        parts.append('</div>')
+        entries.append("\n".join(parts))
+
+    return (
+        '<div class="card">\n'
+        '<h3>Rule Change History</h3>\n'
+        + "\n".join(entries) +
+        '\n</div>'
+    )
+
+
+def _render_alerts(alerts: list[dict[str, Any]]) -> str:
+    """Render community bug alerts from data/alerts.json."""
+    if not alerts:
+        return ""
+
+    items: list[str] = []
+    for i, alert in enumerate(alerts):
+        title = alert.get("title", "")
+        severity = alert.get("severity", "warning")
+        badge_text = escape(alert.get("badge_text", ""))
+        desc = alert.get("description", "")  # may contain HTML tags like <code>
+        source = alert.get("source", "")
+        source_label = escape(alert.get("source_label", ""))
+
+        color = "var(--red)" if severity == "critical" else "var(--yellow)"
+        badge_cls = "badge-banned" if severity == "critical" else "badge-grey"
+
+        margin = ' style="margin-bottom:1rem;"' if i < len(alerts) - 1 else ""
+        source_html = ""
+        if source:
+            source_html = f'\n<p style="font-size:0.8rem;color:var(--text-dim);">Source: <a href="{escape(source)}">{source_label}</a></p>'
+
+        items.append(
+            f'<div{margin}>\n'
+            f'<strong style="color:{color};">{escape(title)}</strong> '
+            f'<span class="badge {badge_cls}">{badge_text}</span>\n'
+            f'<p style="font-size:0.85rem;color:var(--text-dim);margin-top:0.25rem;">{desc}</p>'
+            f'{source_html}\n'
+            '</div>'
+        )
+
+    return (
+        '<div class="card" style="border-color:var(--yellow);border-width:2px;">\n'
+        '<h3 style="margin-top:0;color:var(--yellow);">&#9888; Community Bug Alerts</h3>\n'
+        '<p style="font-size:0.9rem;margin-bottom:0.75rem;">Known issues that may affect your BPB score. Check before submitting.</p>\n'
+        + "\n".join(items) +
+        '\n</div>'
+    )
+
+
+def _render_compute_guide(data: dict[str, Any]) -> str:
+    """Render the compute survival guide from data/compute_guide.json."""
+    golden = data.get("golden_rule", {})
+    providers = data.get("providers", [])
+    smoke_tests = data.get("smoke_tests", [])
+    hw = data.get("hardware_comparison", {})
+
+    # Golden rule card
+    comparison = golden.get("comparison", {})
+    bad = comparison.get("bad", {})
+    good = comparison.get("good", {})
+    bad_lis = "\n".join(f"      <li>{escape(item)}</li>" for item in bad.get("items", []))
+    good_lis = "\n".join(f"      <li>{escape(item)}</li>" for item in good.get("items", []))
+
+    html = (
+        f'<div class="card" style="border-color:var(--red);">\n'
+        f'<h3 style="color:var(--red);">{escape(golden.get("title", ""))}</h3>\n'
+        f'<p>{escape(golden.get("description", ""))} <strong style="color:var(--yellow);">{golden.get("highlight", "")}</strong> &mdash;{golden.get("description_suffix", "")}</p>\n'
+        '<div class="guide-compare">\n'
+        f'  <div class="bad">\n    <h4>{escape(bad.get("heading", ""))}</h4>\n    <ul>\n{bad_lis}\n    </ul>\n  </div>\n'
+        f'  <div class="good">\n    <h4>{escape(good.get("heading", ""))}</h4>\n    <ul>\n{good_lis}\n    </ul>\n  </div>\n'
+        '</div>\n'
+        '</div>\n'
+    )
+
+    # Provider cards
+    for provider in providers:
+        name = escape(provider.get("name", ""))
+        tag = provider.get("tag", "")
+        tag_str = f" ({escape(tag)})" if tag else ""
+        desc = provider.get("description", "")  # may contain <code>
+        docker = provider.get("docker_image")
+        note = provider.get("note")
+        tips = provider.get("tips")
+
+        html += f'<div class="card">\n<h3>{name}{tag_str}</h3>\n'
+        if docker:
+            html += f'<p>Docker image: <code>{escape(docker)}</code></p>\n'
+        html += f'<p>{desc}</p>\n'
+        if tips:
+            html += f'<p>{tips}</p>\n'
+        if note:
+            html += f'<p style="color:var(--text-dim);font-size:0.85rem;">{note}</p>\n'
+        html += '</div>\n'
+
+    # Smoke tests card
+    def _smoke_test_cmd(t: dict[str, Any]) -> str:
+        cmd = f'<code>{escape(t["command"])}</code>'
+        note = t.get("command_note")
+        if note:
+            cmd += f" ({escape(note)})"
+        return cmd
+
+    test_rows = "\n".join(
+        f'<tr><td>{escape(t["name"])}</td><td>{escape(t["catches"])}</td><td>{_smoke_test_cmd(t)}</td></tr>'
+        for t in smoke_tests
+    )
+    html += (
+        '<div class="card">\n'
+        '<h3>CPU Smoke Tests (FREE &mdash; do these FIRST)</h3>\n'
+        '<p>We\'ve run 5+ smoke tests during competition development. Each catches different failure modes:</p>\n'
+        '<table style="margin:0.5rem 0;">\n'
+        '<thead><tr><th>Test</th><th>What it catches</th><th>Command</th></tr></thead>\n'
+        f'<tbody>\n{test_rows}\n</tbody>\n'
+        '</table>\n'
+        '<p style="color:var(--text-dim);font-size:0.85rem;">If it doesn\'t work on CPU, it won\'t work on GPU. Save your money. '
+        'Our <code>cpu_test.py</code> is in the <a href="https://github.com/MatoTeziTanka/parameter-golf-private">community toolkit</a>.</p>\n'
+        '</div>\n'
+    )
+
+    # Hardware comparison card
+    hw_rows = "\n".join(
+        f'<tr><td>{escape(r["gpu"])}</td><td>{escape(r["nvlink"])}</td><td>{escape(r["ddp_speed"])}</td><td>{escape(r["where"])}</td></tr>'
+        for r in hw.get("rows", [])
+    )
+    hw_note = hw.get("note", "")
+    html += (
+        '<div class="card">\n'
+        f'<h3>{escape(hw.get("title", "H100 SXM vs PCIe"))}</h3>\n'
+        '<table>\n'
+        '<thead><tr><th>GPU</th><th>NVLink</th><th>DDP Speed</th><th>Where</th></tr></thead>\n'
+        f'<tbody>\n{hw_rows}\n</tbody>\n'
+        '</table>\n'
+        f'<p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.5rem;">{escape(hw_note)}</p>\n'
+        '</div>'
+    )
+
+    return html
 
 
 def _render_changelog(changelog: list[dict[str, Any]]) -> str:
@@ -654,6 +889,20 @@ def main() -> None:
     with TECHNIQUES_PATH.open("r", encoding="utf-8") as f:
         techniques_payload: dict[str, Any] = json.load(f)
 
+    # Load data-driven section JSON files (with fallback for missing files)
+    def _load_json(path: Path, default: Any, label: str) -> Any:
+        if path.exists():
+            with path.open("r", encoding="utf-8") as fj:
+                return json.load(fj)
+        print(f"[WARN] {path} not found — {label} section will be empty", flush=True)
+        return default
+
+    print("[PIPELINE] Loading data-driven section files...", flush=True)
+    checklist_data = _load_json(CHECKLIST_PATH, {"items": [], "techniques": {}}, "checklist")
+    rulings_data = _load_json(RULINGS_PATH, [], "rulings")
+    alerts_data = _load_json(ALERTS_PATH, [], "alerts")
+    compute_data = _load_json(COMPUTE_PATH, {"golden_rule": {}, "providers": [], "smoke_tests": [], "hardware_comparison": {}}, "compute")
+
     # Stats summary
     status_counts: dict[str, int] = {}
     for pr in prs:
@@ -689,11 +938,21 @@ def main() -> None:
     print("[PIPELINE] Building timeline HTML...", flush=True)
     timeline_html = _render_timeline_section(str(timeline_svg).strip(), prs)
 
+    print("[PIPELINE] Building checklist, rulings, alerts, compute guide HTML...", flush=True)
+    checklist_html = _render_checklist(checklist_data)
+    rulings_html = _render_rulings(rulings_data)
+    alerts_html = _render_alerts(alerts_data)
+    compute_html = _render_compute_guide(compute_data)
+
     try:
         html = _replace_between_sentinels(html, NEURAL_START, NEURAL_END, neural_rows)
         html = _replace_between_sentinels(html, ARCHIVE_START, ARCHIVE_END, archive_rows)
         html = _replace_between_sentinels(html, TECHNIQUES_START, TECHNIQUES_END, techniques_html)
         html = _replace_between_sentinels(html, TIMELINE_START, TIMELINE_END, timeline_html)
+        html = _replace_between_sentinels(html, CHECKLIST_START, CHECKLIST_END, checklist_html)
+        html = _replace_between_sentinels(html, RULINGS_START, RULINGS_END, rulings_html)
+        html = _replace_between_sentinels(html, ALERTS_START, ALERTS_END, alerts_html)
+        html = _replace_between_sentinels(html, COMPUTE_START, COMPUTE_END, compute_html)
     except RuntimeError as exc:
         print(f"[FATAL] Table replacement failed: {exc}", flush=True)
         sys.exit(1)

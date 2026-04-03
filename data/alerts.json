@@ -1,0 +1,18 @@
+[
+  {
+    "title": "BPB Underestimation Bug",
+    "severity": "critical",
+    "badge_text": "~20% error",
+    "description": "If your tokenizer does NOT contain U+2581 (\u2581) as a standalone token, <code>build_sentencepiece_luts</code> overcounts byte boundaries by 2 bytes per word \u2014 inflating <code>val_byte_count</code> and making BPB appear ~20% lower than reality. Tokenizers with 1024 vocab (the competition default) DO have this token and are NOT affected. Custom tokenizers: check with <code>sp.id_to_piece()</code>.",
+    "source": "https://github.com/openai/parameter-golf/issues/897",
+    "source_label": "Issue #897"
+  },
+  {
+    "title": "INT6 Scale Clamp Wastes Quantization Levels",
+    "severity": "warning",
+    "badge_text": "affects ~93% of rows",
+    "description": "The <code>clamp_min(1.0 / 31.0)</code> in <code>quantize_int6_per_row</code> forces a minimum scale of 0.032 even when weight rows have much smaller magnitudes. At WD=0.02, 93% of rows trigger this clamp \u2014 wasting INT6 resolution and widening the quantization gap. Higher weight decay (0.04+) makes it worse. Fix: lower or remove the clamp, then retrain with matching QAT.",
+    "source": "https://github.com/openai/parameter-golf/issues/775",
+    "source_label": "Issue #775"
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "golden_rule": {
+    "title": "The Golden Rule: Serverless for Iteration, Pods Only for Final Submission",
+    "description": "Use serverless for development, testing, and architecture validation. It's cheaper, faster, and auto-stops. But",
+    "highlight": "official PR submissions must run on 8\u00d7H100 SXM with verifiable timing",
+    "description_suffix": "\u2014 serverless providers may use different hardware or add overhead that affects your reported step times. Use serverless to iterate, then do your final 3-seed submission run on a known 8\u00d7H100 SXM pod.",
+    "comparison": {
+      "bad": {
+        "heading": "Pods (anti-pattern)",
+        "items": [
+          "Billing starts at CREATION",
+          "Setup time = burning money idle",
+          "Forget to stop = bleeding money",
+          "Crash at second 5 = still paying",
+          "Pod terminates = lose everything"
+        ]
+      },
+      "good": {
+        "heading": "Serverless (correct)",
+        "items": [
+          "Billing starts when CODE runs",
+          "Pre-baked Docker = instant start",
+          "Auto-stops when done",
+          "Crash at second 5 = paid for 5s",
+          "Results returned before teardown"
+        ]
+      }
+    }
+  },
+  "providers": [
+    {
+      "name": "RunPod Serverless",
+      "tag": "Recommended",
+      "description": "Submit job \u2192 it runs \u2192 results come back \u2192 billing stops. No SSH, no pod management.",
+      "docker_image": "matotezitanka/proteus-pytorch:2.11.0-cuda12.8",
+      "note": "H100 SXM. ~$0.45 per 10-min training run (calculated, not yet verified via receipt)."
+    },
+    {
+      "name": "Modal",
+      "tag": "$30/month free",
+      "description": "Serverless by default. <code>modal run train.py</code> \u2014 that's it. $30 free every month = multiple runs.",
+      "docker_image": null,
+      "note": null
+    },
+    {
+      "name": "Google Colab",
+      "tag": "Free / Pro $9.99/mo / Pro+ $49.99/mo",
+      "description": "GPUs available: T4 (free), A100 40/80GB, H100, RTX PRO 6000 Blackwell ~96GB (varies by tier and availability). Student Pro access available through educational institutions.",
+      "docker_image": null,
+      "note": "Whether Colab's H100 is SXM or PCIe variant is unverified. Validate architecture on Colab, verify final submission timing on known SXM hardware.",
+      "tips": "Batch size fix for single GPU: <code>TRAIN_BATCH_TOKENS=65536</code>. Save checkpoints to Drive. Resume on disconnect. ~6-7 hours for 20K steps on single H100."
+    }
+  ],
+  "smoke_tests": [
+    {
+      "name": "Quick forward pass",
+      "catches": "Import errors, shape mismatches, config bugs",
+      "command": "ITERATIONS=10 TRAIN_BATCH_TOKENS=4096 TRAIN_SEQ_LEN=256 python train_gpt.py"
+    },
+    {
+      "name": "Artifact size check",
+      "catches": "Model too big for 16MB cap",
+      "command": "python cpu_test.py",
+      "command_note": "validates INT6 roundtrip + size"
+    },
+    {
+      "name": "Quantization roundtrip",
+      "catches": "Quantization breaks model quality",
+      "command": "python cpu_test.py --matrix",
+      "command_note": null
+    },
+    {
+      "name": "Eval pipeline",
+      "catches": "Sliding window + BPB computation errors",
+      "command": "ITERATIONS=10 VAL_LOSS_EVERY=5 python train_gpt.py"
+    },
+    {
+      "name": "Full mini-run",
+      "catches": "Everything end-to-end on CPU",
+      "command": "ITERATIONS=50 TRAIN_BATCH_TOKENS=4096 TRAIN_SEQ_LEN=256 VAL_LOSS_EVERY=25 python train_gpt.py"
+    }
+  ],
+  "hardware_comparison": {
+    "title": "H100 SXM vs PCIe",
+    "rows": [
+      {
+        "gpu": "H100 SXM",
+        "nvlink": "Yes (900 GB/s)",
+        "ddp_speed": "Full speed",
+        "where": "RunPod, Vast.ai"
+      },
+      {
+        "gpu": "H100 PCIe",
+        "nvlink": "No",
+        "ddp_speed": "~30% slower DDP",
+        "where": "Some cloud providers"
+      }
+    ],
+    "note": "Competition requires 8\u00d7H100 SXM for official timing. Colab H100 variant unverified \u2014 always confirm step timing matches expected SXM performance before submitting."
+  }
+}
