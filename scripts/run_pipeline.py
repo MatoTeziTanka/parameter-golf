@@ -36,6 +36,7 @@ import re
 import subprocess
 import sys
 from html import escape
+from charts import generate_artifact_histogram, generate_technique_popularity, generate_compliance_rate
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -69,6 +70,12 @@ ALERTS_START = "<!-- AGORA:ALERTS_START -->"
 ALERTS_END = "<!-- AGORA:ALERTS_END -->"
 COMPUTE_START = "<!-- AGORA:COMPUTE_START -->"
 COMPUTE_END = "<!-- AGORA:COMPUTE_END -->"
+CHART_ARTIFACT_START = "<!-- AGORA:CHART_ARTIFACT_START -->"
+CHART_ARTIFACT_END = "<!-- AGORA:CHART_ARTIFACT_END -->"
+CHART_TECHNIQUE_POP_START = "<!-- AGORA:CHART_TECHNIQUE_POP_START -->"
+CHART_TECHNIQUE_POP_END = "<!-- AGORA:CHART_TECHNIQUE_POP_END -->"
+CHART_COMPLIANCE_START = "<!-- AGORA:CHART_COMPLIANCE_START -->"
+CHART_COMPLIANCE_END = "<!-- AGORA:CHART_COMPLIANCE_END -->"
 
 CHECKLIST_PATH = REPO_ROOT / "data" / "checklist.json"
 RULINGS_PATH = REPO_ROOT / "data" / "rulings.json"
@@ -567,12 +574,21 @@ def _render_compute_guide(data: dict[str, Any]) -> str:
     return html
 
 
+def _render_chart_card(title: str, svg: str) -> str:
+    """Wrap an SVG chart in a card div."""
+    return (
+        '<div class="card chart-card">'
+        f'{svg}'
+        '</div>'
+    )
+
+
 def _render_changelog(changelog: list[dict[str, Any]]) -> str:
     """Render changelog entries from data/changelog.json into HTML cards."""
     roadmap_items = [
-        ("v0.6.0", "Cited research tracker (papers &rarr; PRs &rarr; BPB)"),
-        ("v0.7.0", "Cost efficiency ranking (dollars per BPB point)"),
-        ("v0.8.0", "Review queue metrics (PR wait times, peer reviewer recognition)"),
+        ("v0.8.0", "Cited research tracker (papers &rarr; PRs &rarr; BPB)"),
+        ("v0.9.0", "Cost efficiency ranking (dollars per BPB point)"),
+        ("v0.10.0", "Review queue metrics (PR wait times, peer reviewer recognition)"),
         ("v1.0.0", "Community governance (threshold-based classification disputes)"),
     ]
     cards: list[str] = []
@@ -979,6 +995,11 @@ def main() -> None:
     alerts_html = _render_alerts(alerts_data)
     compute_html = _render_compute_guide(compute_data)
 
+    print("[PIPELINE] Building Phase 4 analytics charts...", flush=True)
+    artifact_chart = _render_chart_card("Artifact Size Distribution", generate_artifact_histogram(prs))
+    technique_pop_chart = _render_chart_card("Technique Popularity", generate_technique_popularity(prs))
+    compliance_chart = _render_chart_card("Compliance Rate", generate_compliance_rate(prs))
+
     try:
         html = _replace_between_sentinels(html, NEURAL_START, NEURAL_END, neural_rows)
         html = _replace_between_sentinels(html, ARCHIVE_START, ARCHIVE_END, archive_rows)
@@ -988,6 +1009,9 @@ def main() -> None:
         html = _replace_between_sentinels(html, RULINGS_START, RULINGS_END, rulings_html)
         html = _replace_between_sentinels(html, ALERTS_START, ALERTS_END, alerts_html)
         html = _replace_between_sentinels(html, COMPUTE_START, COMPUTE_END, compute_html)
+        html = _replace_between_sentinels(html, CHART_ARTIFACT_START, CHART_ARTIFACT_END, artifact_chart)
+        html = _replace_between_sentinels(html, CHART_TECHNIQUE_POP_START, CHART_TECHNIQUE_POP_END, technique_pop_chart)
+        html = _replace_between_sentinels(html, CHART_COMPLIANCE_START, CHART_COMPLIANCE_END, compliance_chart)
     except RuntimeError as exc:
         print(f"[FATAL] Table replacement failed: {exc}", flush=True)
         sys.exit(1)

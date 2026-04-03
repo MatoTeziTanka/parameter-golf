@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.7.0",
+    "date": "2026-04-03",
+    "title": "Full Automation — Zero Hardcoded Content",
+    "changes": [
+      "Phase 1: Checklist, technique legality, rule history, bug alerts, compute guide all driven from JSON data files",
+      "Phase 2: BPB timeline auto-scales axes from data range, date axis extends to today, fixed hardcoded 'Mar' label bug",
+      "Phase 2: Neural-only vs all-techniques toggle buttons on BPB timeline chart",
+      "Phase 3: All tooltips flow through _render_with_tooltip / _tooltip_attr helpers — no manual title attributes",
+      "Phase 4: Artifact size histogram, technique popularity stacked area chart, compliance rate area chart",
+      "Pipeline gracefully degrades if any data JSON file is missing",
+      "Adaptive tick spacing on timeline X-axis (2d/3d/7d based on span)"
+    ]
+  },
+  {
     "version": "0.6.0",
     "date": "2026-04-03",
     "title": "#677 Compliance + NoesisGenesis Framework",
