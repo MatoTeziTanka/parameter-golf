@@ -1,7 +1,155 @@
 {
-  "last_fetch": "2026-04-02T23:47:19.908526+00:00",
-  "api_calls_used": 95,
+  "last_fetch": "2026-04-03T02:39:59.284354+00:00",
+  "api_calls_used": 96,
   "prs": [
+    {
+      "number": 1279,
+      "title": "Record: MuonEq-R + Depth Recurrence + N61 Mixed GPTQ — val_bpb 1.0924 (3-seed mean)",
+      "author": "dexhunter",
+      "state": "OPEN",
+      "created": "2026-04-03T02:38:38Z",
+      "updated": "2026-04-03T02:38:38Z",
+      "bpb": 1.0924,
+      "seeds": 3,
+      "artifact_bytes": 21396,
+      "technique_summary": "TTT + Muon + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-03_MuonEqR_DepthRecurrence_N61MixedQuant/README.md",
+        "records/track_10min_16mb/2026-04-03_MuonEqR_DepthRecurrence_N61MixedQuant/submission.json",
+        "records/track_10min_16mb/2026-04-03_MuonEqR_DepthRecurrence_N61MixedQuant/train_gpt.py",
+        "records/track_10min_16mb/2026-04-03_MuonEqR_DepthRecurrence_N61MixedQuant/train_seed0.log",
+        "records/track_10min_16mb/2026-04-03_MuonEqR_DepthRecurrence_N61MixedQuant/train_seed42.log",
+        "records/track_10min_16mb/2026-04-03_MuonEqR_DepthRecurrence_N61MixedQuant/train_seed7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1278,
+      "title": "WIP: Depth Recurrence via Weight-Shared Transformer Blocks",
+      "author": "GitGeeks",
+      "state": "OPEN",
+      "created": "2026-04-03T02:32:12Z",
+      "updated": "2026-04-03T02:32:12Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared/README.md",
+        "records/track_10min_16mb/2026-04-02_DepthRecurrence_WeightShared/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1277,
+      "title": "Non-record: JEPA EMA teacher + attention predictor + MLP3x + 10L",
+      "author": "Ochakov64",
+      "state": "OPEN",
+      "created": "2026-04-03T02:20:11Z",
+      "updated": "2026-04-03T02:20:11Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 11000000,
+      "technique_summary": "INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-02_JEPA_EMA_MLP3x_10L/README.md",
+        "records/track_non_record_16mb/2026-04-02_JEPA_EMA_MLP3x_10L/submission.json",
+        "records/track_non_record_16mb/2026-04-02_JEPA_EMA_MLP3x_10L/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1276,
+      "title": "Record: MuonEq-R + Context-Only SLOT + XSA-all + QK-Gain 5.0",
+      "author": "BiggerDABOSS",
+      "state": "OPEN",
+      "created": "2026-04-03T01:43:28Z",
+      "updated": "2026-04-03T01:44:27Z",
+      "bpb": 1.1194,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA + N-gram + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_MuonEqR_SLOT_XSA11_QKGain5/README.md",
+        "records/track_10min_16mb/2026-04-02_MuonEqR_SLOT_XSA11_QKGain5/run.sh",
+        "records/track_10min_16mb/2026-04-02_MuonEqR_SLOT_XSA11_QKGain5/submission.json",
+        "records/track_10min_16mb/2026-04-02_MuonEqR_SLOT_XSA11_QKGain5/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1275,
+      "title": "Non-record: Asymmetric 1/10 Split — 1.1492 pre-quant BPB on 8xH100 (one-line change)",
+      "author": "ranausmanai",
+      "state": "OPEN",
+      "created": "2026-04-03T00:53:59Z",
+      "updated": "2026-04-03T00:53:59Z",
+      "bpb": 1.1492,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-03_AsymmetricSplit_1to10_EncoderDecoder/README.md",
+        "records/track_non_record_16mb/2026-04-03_AsymmetricSplit_1to10_EncoderDecoder/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1274,
       "title": "Record: Scylla + Parallel Residuals + Depth Recurrence + Legal TTT — val_bpb 1.0876 (3-seed mean)",
@@ -1654,13 +1802,14 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-01T15:13:14Z",
-      "updated": "2026-04-02T17:56:21Z",
+      "updated": "2026-04-03T00:55:54Z",
       "bpb": 0.079,
       "seeds": null,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + GPTQ + INT6 + EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/README.md",
+        "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/eval_sp4608_sliding_ttt.py",
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/eval_sp4608_ttt.py",
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/sweep_naive_ttt.py",
         "records/track_non_record_16mb/2026-04-01_TTT_E2E_FOMAML/sweep_v2.py",
@@ -6587,15 +6736,15 @@
     },
     {
       "number": 1073,
-      "title": "Non-record: Deep Supervision on M4 MacBook",
+      "title": "Non-record: 27 Systematic Experiments on M4 MacBook (Deep Supervision, LR Tuning, Batch Scaling, Architecture)",
       "author": "ranausmanai",
       "state": "OPEN",
       "created": "2026-03-29T11:50:49Z",
-      "updated": "2026-03-30T11:45:55Z",
+      "updated": "2026-04-03T01:04:13Z",
       "bpb": 2.168,
       "seeds": null,
-      "artifact_bytes": 16000000,
-      "technique_summary": "INT8 + EMA",
+      "artifact_bytes": null,
+      "technique_summary": "EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-03-29_DeepSupervision_BatchScaling_M4MacBook/README.md",
         "records/track_non_record_16mb/2026-03-29_DeepSupervision_BatchScaling_M4MacBook/submission.json",
@@ -6607,7 +6756,8 @@
       "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown"
+        "seeds-unknown",
+        "artifact-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -19785,7 +19935,7 @@
       "author": "ChideraIbe123",
       "state": "OPEN",
       "created": "2026-03-25T03:58:35Z",
-      "updated": "2026-03-28T03:51:49Z",
+      "updated": "2026-04-03T02:26:29Z",
       "bpb": 1.2302,
       "seeds": null,
       "artifact_bytes": 13400000,
@@ -19801,13 +19951,13 @@
       "compliance_keywords": [
         "leaky_relu"
       ],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural"
+      "confidence": "HIGH"
     },
     {
       "number": 674,
