@@ -1,7 +1,98 @@
 {
-  "last_fetch": "2026-04-03T09:29:29.719711+00:00",
-  "api_calls_used": 97,
+  "last_fetch": "2026-04-03T10:10:45.847753+00:00",
+  "api_calls_used": 98,
   "prs": [
+    {
+      "number": 1294,
+      "title": "Submission/random linear maps lora",
+      "author": "austinluk",
+      "state": "CLOSED",
+      "created": "2026-04-03T10:01:32Z",
+      "updated": "2026-04-03T10:08:30Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "LoRA",
+      "file_paths": [
+        "README.md",
+        "records/track_10min_16mb/2026-04-03_RandomLinearMaps_LoRA_Adapters/README.md",
+        "records/track_10min_16mb/2026-04-03_RandomLinearMaps_LoRA_Adapters/submission.json",
+        "records/track_10min_16mb/2026-04-03_RandomLinearMaps_LoRA_Adapters/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1293,
+      "title": "Non-record: Universal Transformer with Adaptive Computation Time",
+      "author": "5en5e1",
+      "state": "OPEN",
+      "created": "2026-04-03T09:33:05Z",
+      "updated": "2026-04-03T09:33:05Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15800000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-03_UniversalTransformer_ACT/README.md",
+        "records/track_non_record_16mb/2026-04-03_UniversalTransformer_ACT/submission.json",
+        "records/track_non_record_16mb/2026-04-03_UniversalTransformer_ACT/train.log",
+        "records/track_non_record_16mb/2026-04-03_UniversalTransformer_ACT/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1289,
+      "title": "Record: PROTEUS v1.6 — Scylla + Parallel Residuals + Depth Recurrence + Legal TTT — val_bpb 1.0819 (3-seed mean)",
+      "author": "MatoTeziTanka",
+      "state": "OPEN",
+      "created": "2026-04-03T07:37:15Z",
+      "updated": "2026-04-03T10:04:54Z",
+      "bpb": 1.0819,
+      "seeds": 3,
+      "artifact_bytes": 112437059,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA + N-gram + Two-pass",
+      "file_paths": [
+        ".github/workflows/update-site.yml",
+        "README.md",
+        "records/track_10min_16mb/2026-04-02_PROTEUS_v16_Scylla/README.md",
+        "records/track_10min_16mb/2026-04-02_PROTEUS_v16_Scylla/submission.json",
+        "records/track_10min_16mb/2026-04-02_PROTEUS_v16_Scylla/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1284,
       "title": "Vocab 8192 Entropy Optimized: 1.1207 BPB (3-seed mean)",
