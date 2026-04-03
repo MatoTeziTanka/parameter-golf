@@ -1,5 +1,5 @@
 {
-  "last_fetch": "2026-04-03T10:10:45.847753+00:00",
+  "last_fetch": "2026-04-03T11:11:25.557447+00:00",
   "api_calls_used": 98,
   "prs": [
     {
@@ -1752,11 +1752,12 @@
       ],
       "track": "non-record",
       "technique_type": "hybrid",
-      "status": "INCOMPLETE",
+      "status": "AT_RISK",
       "flags": [
-        "seeds-unknown"
+        "body:ngram-body",
+        "compliance-override:ngram-disabled"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1231,
@@ -2608,7 +2609,8 @@
       "status": "AT_RISK",
       "flags": [
         "keyword:ngram",
-        "keyword:two_pass"
+        "keyword:two_pass",
+        "compliance-override:score-first-ttt"
       ],
       "confidence": "LOW"
     },
@@ -3350,6 +3352,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM"
@@ -4566,7 +4569,8 @@
       "technique_type": "cache",
       "status": "AT_RISK",
       "flags": [
-        "keyword:ngram"
+        "keyword:ngram",
+        "body:ngram-body"
       ],
       "confidence": "LOW"
     },
@@ -4637,6 +4641,7 @@
         "keyword:ngram",
         "keyword:two_pass",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM"
@@ -5231,7 +5236,8 @@
       "technique_type": "hybrid",
       "status": "AT_RISK",
       "flags": [
-        "keyword:ngram"
+        "keyword:ngram",
+        "compliance-override:score-first-ttt"
       ],
       "confidence": "LOW"
     },
@@ -5715,6 +5721,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM"
@@ -6035,6 +6042,7 @@
         "keyword:ngram",
         "keyword:two_pass",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM"
@@ -6311,6 +6319,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM"
@@ -7694,6 +7703,7 @@
         "keyword:ngram",
         "keyword:two_pass",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -8419,6 +8429,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -8544,6 +8555,7 @@
         "keyword:ngram",
         "keyword:two_pass",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -9050,7 +9062,9 @@
       ],
       "status": "AT_RISK",
       "flags": [
-        "keyword:ngram"
+        "keyword:ngram",
+        "body:ngram-body",
+        "compliance-override:score-first-ttt"
       ],
       "confidence": "LOW",
       "track": "record",
@@ -10051,6 +10065,8 @@
         "keyword:ngram",
         "keyword:two_pass",
         "keyword:ngram_path",
+        "body:ngram-body",
+        "body:two-pass-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM"
@@ -10881,6 +10897,7 @@
         "keyword:ngram",
         "keyword:two_pass",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM",
@@ -11573,10 +11590,12 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
-        "path:backoff-path"
+        "path:backoff-path",
+        "compliance-override:score-first-ttt"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "track": "record",
       "technique_type": "hybrid"
     },
@@ -12088,9 +12107,11 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
-        "path:ngram-path"
+        "body:ngram-body",
+        "path:ngram-path",
+        "compliance-override:score-first-ttt"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "track": "record",
       "technique_type": "hybrid"
     },
@@ -12155,6 +12176,8 @@
         "keyword:ngram",
         "keyword:two_pass",
         "keyword:ngram_path",
+        "body:ngram-body",
+        "body:two-pass-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM",
@@ -12299,6 +12322,8 @@
         "keyword:ngram",
         "keyword:two_pass",
         "keyword:ngram_path",
+        "body:ngram-body",
+        "body:two-pass-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM",
@@ -12366,6 +12391,8 @@
         "keyword:ngram",
         "keyword:two_pass",
         "keyword:ngram_path",
+        "body:ngram-body",
+        "body:two-pass-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM",
@@ -12401,6 +12428,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -13263,6 +13291,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -13451,6 +13480,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM",
@@ -13515,9 +13545,11 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
-        "path:ngram-path"
+        "body:ngram-body",
+        "path:ngram-path",
+        "compliance-override:score-first-ttt"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "track": "record",
       "technique_type": "hybrid"
     },
@@ -13798,6 +13830,8 @@
         "keyword:ngram",
         "keyword:two_pass",
         "keyword:ngram_path",
+        "body:ngram-body",
+        "body:two-pass-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -13956,6 +13990,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -14148,6 +14183,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -14186,6 +14222,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -14334,6 +14371,8 @@
         "keyword:ngram",
         "keyword:two_pass",
         "keyword:ngram_path",
+        "body:ngram-body",
+        "body:two-pass-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM",
@@ -15055,6 +15094,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM",
@@ -15285,6 +15325,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM",
@@ -15962,6 +16003,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -16123,6 +16165,7 @@
       "status": "AT_RISK",
       "flags": [
         "keyword:ngram",
+        "body:ngram-body",
         "path:backoff-path"
       ],
       "confidence": "MEDIUM",
@@ -16165,6 +16208,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -16374,6 +16418,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM",
@@ -16738,7 +16783,8 @@
       ],
       "status": "AT_RISK",
       "flags": [
-        "keyword:ngram"
+        "keyword:ngram",
+        "body:ngram-body"
       ],
       "confidence": "LOW",
       "track": "record",
@@ -17055,6 +17101,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -17308,6 +17355,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path"
       ],
       "confidence": "MEDIUM",
@@ -17664,10 +17712,12 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
-        "path:backoff-path"
+        "path:backoff-path",
+        "compliance-override:score-first-ttt"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "track": "record",
       "technique_type": "hybrid"
     },
@@ -19458,6 +19508,7 @@
       "flags": [
         "keyword:ngram",
         "keyword:ngram_path",
+        "body:ngram-body",
         "path:ngram-path",
         "path:backoff-path"
       ],
@@ -22023,7 +22074,8 @@
       ],
       "status": "AT_RISK",
       "flags": [
-        "keyword:ngram"
+        "keyword:ngram",
+        "body:ngram-body"
       ],
       "confidence": "LOW",
       "track": "record",
@@ -33887,7 +33939,8 @@
       ],
       "status": "AT_RISK",
       "flags": [
-        "keyword:two_pass"
+        "keyword:two_pass",
+        "body:two-pass-body"
       ],
       "confidence": "LOW",
       "track": "non-record",
