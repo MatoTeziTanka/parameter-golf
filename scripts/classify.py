@@ -110,6 +110,7 @@ ACCEPTANCE_PATTERNS: list[str] = [
 ]
 
 # Keywords in PR body that indicate AT_RISK (banned technique signals)
+# Source: issue #677 rulings by @valerio-oai (March 25-27, 2026)
 AT_RISK_BODY_PATTERNS: list[tuple[str, str]] = [
     # (regex_pattern, human_label)
     (r"\bngram\b|\bn.gram\b|\bhashed.n.gram", "ngram-body"),
@@ -117,6 +118,16 @@ AT_RISK_BODY_PATTERNS: list[tuple[str, str]] = [
     (r"\bNGRAM_TWO_PASS\b", "NGRAM_TWO_PASS-body"),
     (r"\bprefill\b.*\btrain\b|\btrain\b.*\bprefill\b", "prefill+train-body"),
     (r"\bgptq\b.*\bcalibrat\b.*\beval\b|\bgptq\b.*\beval\b.*\bcalibrat\b", "gptq-calibrate-eval-body"),
+    (r"\bmulti.epoch\b.*\bttt\b|\bttt\b.*\bmulti.epoch\b", "multi-epoch-ttt-body"),
+    (r"\bmin\s*\(\s*(?:nll|loss)\b|\boracle\b.*\bselect", "oracle-min-nll-body"),
+]
+
+# Body patterns that indicate explicit #677 compliance (reduce false-positive AT_RISK)
+COMPLIANCE_BODY_PATTERNS: list[tuple[str, str]] = [
+    (r"score.first.*ttt|ttt.*score.first", "score-first-ttt"),
+    (r"NGRAM_ENABLED.*=.*0|ngram.*disabled|no.n.gram", "ngram-disabled"),
+    (r"no.two.pass|two.pass.*rescoring.*no", "no-two-pass"),
+    (r"per.*#677|per.*issue.*677|compliance.*677", "cites-677"),
 ]
 
 # File path patterns that indicate AT_RISK
@@ -272,16 +283,33 @@ def _is_at_risk(pr: dict[str, Any]) -> tuple[bool, list[str], str]:
         if kw in high_risk_keywords:
             flags.append(f"keyword:{kw}")
 
+    # Check body for AT_RISK patterns (per #677 rulings)
+    for pattern, label in AT_RISK_BODY_PATTERNS:
+        if re.search(pattern, body, re.IGNORECASE):
+            flags.append(f"body:{label}")
+
     # Check file paths for AT_RISK patterns
     path_str = " ".join(file_paths).lower()
     for pattern, label in AT_RISK_PATH_PATTERNS:
         if re.search(pattern, path_str, re.IGNORECASE):
             flags.append(f"path:{label}")
 
-    # Confidence based on where signal was found
     if not flags:
         return False, flags, "NONE"
 
+    # Check for explicit compliance signals that override AT_RISK false positives
+    # e.g. PR says "No two-pass rescoring" — don't flag "two-pass" as a risk
+    compliance_signals: list[str] = []
+    for pattern, label in COMPLIANCE_BODY_PATTERNS:
+        if re.search(pattern, body, re.IGNORECASE):
+            compliance_signals.append(label)
+
+    if compliance_signals:
+        # Reduce confidence — PR explicitly addresses the flagged techniques
+        flags.append(f"compliance-override:{','.join(compliance_signals)}")
+        return True, flags, "LOW"
+
+    # Confidence based on where signal was found
     path_flags = [f for f in flags if f.startswith("path:")]
     if path_flags:
         return True, flags, "MEDIUM"
