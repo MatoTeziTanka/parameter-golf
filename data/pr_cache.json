@@ -1,7 +1,86 @@
 {
-  "last_fetch": "2026-04-03T13:43:17.056000+00:00",
-  "api_calls_used": 99,
+  "last_fetch": "2026-04-03T14:47:47.375921+00:00",
+  "api_calls_used": 100,
   "prs": [
+    {
+      "number": 1303,
+      "title": "Record: SLOT + QK-Gain 4.0 + XSA-11 — val_bpb 0.9462 (3-seed mean)",
+      "author": "anthony-maio",
+      "state": "OPEN",
+      "created": "2026-04-03T14:38:28Z",
+      "updated": "2026-04-03T14:43:25Z",
+      "bpb": 0.9462,
+      "seeds": 3,
+      "artifact_bytes": 15800000,
+      "technique_summary": "LeakyReLU² + GPTQ + N-gram + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_SLOT_QKGain4_XSA11_TTT/README.md",
+        "records/track_10min_16mb/2026-04-02_SLOT_QKGain4_XSA11_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-02_SLOT_QKGain4_XSA11_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-02_SLOT_QKGain4_XSA11_TTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-02_SLOT_QKGain4_XSA11_TTT/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-02_SLOT_QKGain4_XSA11_TTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:two_pass"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1302,
+      "title": "Record: Split-LR + N-gram Agreement + Full GPTQ — val_bpb 1.1079 (3-seed mean)",
+      "author": "vlivashkin",
+      "state": "OPEN",
+      "created": "2026-04-03T13:32:32Z",
+      "updated": "2026-04-03T13:46:57Z",
+      "bpb": 0.0028,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/README.md",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/eval_ngram_on_checkpoint.py",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/online_best_agree_eval.py",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/online_ngram_state.c",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/requirements.txt",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/submission.json",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/submission_ngram_seed1337.log",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/submission_ngram_seed2025.log",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/submission_ngram_seed42.log",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/train_gpt.py",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-03_SplitLR_NgramAgreement_FullGPTQ/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram",
+        "keyword:ngram_path",
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1297,
       "title": "Record: Polar Express NS + SLOT + MuonEq-R + XSA-all — 1.1043 BPB (3-seed mean)",
@@ -75,15 +154,15 @@
     },
     {
       "number": 1296,
-      "title": "Record: SP4096 + Depth Recurrence + MuonEq-R + Full GPTQ — val_bpb 1.0940 (3-seed mean)",
+      "title": "Record: SP4096 + Depth Recurrence + Parallel Residuals + MuonEq-R + Full GPTQ — val_bpb 1.0904 (3-seed mean)",
       "author": "aryanbhosale",
       "state": "OPEN",
       "created": "2026-04-03T11:26:19Z",
-      "updated": "2026-04-03T11:26:19Z",
-      "bpb": 1.094,
+      "updated": "2026-04-03T14:16:48Z",
+      "bpb": 1.0904,
       "seeds": 3,
-      "artifact_bytes": 15960000,
-      "technique_summary": "TTT + GPTQ + INT6 + N-gram",
+      "artifact_bytes": 15980000,
+      "technique_summary": "LeakyReLU² + TTT + Muon + GPTQ + INT6 + N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-04-03_SP4096_DepthRecurrence_MuonEqR_GPTQ/README.md",
         "records/track_10min_16mb/2026-04-03_SP4096_DepthRecurrence_MuonEqR_GPTQ/submission.json",
@@ -97,7 +176,8 @@
         "ttt",
         "ngram",
         "gptq_eval",
-        "cache_eval"
+        "cache_eval",
+        "leaky_relu"
       ],
       "track": "record",
       "technique_type": "hybrid",
@@ -106,6 +186,35 @@
         "keyword:ngram"
       ],
       "confidence": "LOW"
+    },
+    {
+      "number": 1295,
+      "title": "[Submission] Random LinearMaps + LoRA Adapters",
+      "author": "austinluk",
+      "state": "OPEN",
+      "created": "2026-04-03T10:11:14Z",
+      "updated": "2026-04-03T14:28:03Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "LoRA",
+      "file_paths": [
+        "README.md",
+        "records/track_10min_16mb/2026-04-03_RandomLinearMaps_LoRA_Adapters/README.md",
+        "records/track_10min_16mb/2026-04-03_RandomLinearMaps_LoRA_Adapters/submission.json",
+        "records/track_10min_16mb/2026-04-03_RandomLinearMaps_LoRA_Adapters/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1294,
@@ -11309,7 +11418,7 @@
       "author": "Bharath-970",
       "state": "OPEN",
       "created": "2026-03-27T12:39:35Z",
-      "updated": "2026-04-02T18:40:02Z",
+      "updated": "2026-04-03T14:26:31Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 1300000,
@@ -11338,6 +11447,8 @@
         "records/track_10min_16mb/2026-03-25_14L_XSA6_GPTQ_EMA_PartialRoPE_TTT/train_gpt.py",
         "records/track_10min_16mb/2026-03-25_16L_XSAall_GPTQ_EMA_PartialRoPE_TTT/submission.json",
         "records/track_10min_16mb/2026-03-25_16L_XSAall_GPTQ_EMA_PartialRoPE_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-03_11L_XSAall_SelfGenGPTQ_ScoreFirstTTT/submission.json",
+        "records/track_10min_16mb/2026-04-03_11L_XSAall_SelfGenGPTQ_ScoreFirstTTT/train_gpt.py",
         "run_modal.py"
       ],
       "maintainer_comments": [],
