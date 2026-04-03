@@ -299,14 +299,37 @@ def _render_timeline_section(svg: str, prs: list[dict[str, Any]]) -> str:
         for pr in prs
         if pr.get("bpb") not in (None, 0, 0.0) and pr.get("status") in {"ALIVE", "AT_RISK", "DEAD"}
     )
+    toggle_js = (
+        '<script>'
+        'function toggleSeries(id,btn){'
+        'var g=document.getElementById(id);'
+        'if(!g)return;'
+        'var vis=g.style.display!=="none";'
+        'g.style.display=vis?"none":"";'
+        'btn.style.opacity=vis?"0.4":"1";'
+        '}'
+        '</script>'
+    )
+    toggle_buttons = (
+        '<div style="display:flex;gap:0.75rem;margin-bottom:0.75rem;">'
+        '<button onclick="toggleSeries(\'series-neural\',this)" '
+        'style="background:var(--surface);border:1px solid #3fb950;color:#3fb950;padding:0.3rem 0.8rem;'
+        'border-radius:6px;cursor:pointer;font-size:0.85rem;">Neural-only</button>'
+        '<button onclick="toggleSeries(\'series-all\',this)" '
+        'style="background:var(--surface);border:1px solid #bc8cff;color:#bc8cff;padding:0.3rem 0.8rem;'
+        'border-radius:6px;cursor:pointer;font-size:0.85rem;">All-techniques</button>'
+        '</div>'
+    )
     return (
         '<p style="color:var(--text-dim);margin-bottom:1rem;">'
         f'Cumulative SOTA curve built from {tracked} classified PRs with a positive BPB and final status '
         'ALIVE, AT-RISK, or DEAD. Neural-only strips cache-heavy rulings so the March 27 cliff stays visible.'
         '</p>'
+        f'{toggle_buttons}'
         '<div class="card chart-card">'
         f'{svg}'
         '</div>'
+        f'{toggle_js}'
     )
 
 

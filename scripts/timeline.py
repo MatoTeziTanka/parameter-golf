@@ -157,8 +157,9 @@ def generate_svg(prs: list[dict[str, Any]]) -> str:
     neural_series = _improvement_series(points, neural_only=True)
     point_start = datetime.combine(points[0]["created"].date(), datetime.min.time())
     point_end = datetime.combine(points[-1]["created"].date(), datetime.max.time())
+    today_end = datetime.combine(date.today(), datetime.max.time())
     start = min(point_start, datetime.combine(EVENTS[0][0], datetime.min.time()))
-    end = max(point_end, datetime.combine(EVENTS[-1][0], datetime.max.time()))
+    end = max(point_end, datetime.combine(EVENTS[-1][0], datetime.max.time()), today_end)
 
     values = [point["bpb"] for point in all_series] + [point["bpb"] for point in neural_series]
     log_min = math.log10(min(values)) - 0.12
@@ -175,12 +176,14 @@ def generate_svg(prs: list[dict[str, Any]]) -> str:
     x_ticks: list[datetime] = []
     current_day = start.date()
     final_day = end.date()
+    day_span = (final_day - current_day).days
+    tick_interval = 2 if day_span <= 14 else (3 if day_span <= 30 else 7)
     while current_day <= final_day:
-        if (current_day - start.date()).days % 2 == 0:
+        if (current_day - start.date()).days % tick_interval == 0:
             x_ticks.append(datetime.combine(current_day, datetime.min.time()))
         current_day += timedelta(days=1)
     x_ticks.append(datetime.combine(final_day, datetime.min.time()))
-    seen = set()
+    seen: set[datetime] = set()
     x_ticks = [tick for tick in x_ticks if not (tick in seen or seen.add(tick))]
 
     lines: list[str] = [
@@ -198,31 +201,32 @@ def generate_svg(prs: list[dict[str, Any]]) -> str:
     for tick in x_ticks:
         x = _x_scale(tick, start, end, plot_left, plot_width)
         lines.append(f'<line x1="{x:.2f}" x2="{x:.2f}" y1="{plot_top}" y2="{plot_bottom}" stroke="{BORDER}" stroke-width="1" opacity="0.55"/>')
-        lines.append(f'<text x="{x:.2f}" y="{plot_bottom + 24:.2f}" fill="{TEXT_DIM}" font-size="12" text-anchor="middle">{tick.strftime("Mar %-d")}</text>')
+        lines.append(f'<text x="{x:.2f}" y="{plot_bottom + 24:.2f}" fill="{TEXT_DIM}" font-size="12" text-anchor="middle">{tick.strftime("%b %-d")}</text>')
 
     for event_day, label, color in EVENTS:
         event_x = _x_scale(datetime.combine(event_day, datetime.min.time()), start, end, plot_left, plot_width)
         lines.append(f'<line x1="{event_x:.2f}" x2="{event_x:.2f}" y1="{plot_top}" y2="{plot_bottom}" stroke="{color}" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/>')
         lines.append(f'<text x="{event_x + 6:.2f}" y="{plot_top + 14:.2f}" fill="{color}" font-size="12">{label}</text>')
 
-    lines.extend(
-        [
-            f'<rect x="{plot_left}" y="{plot_top}" width="{plot_width}" height="{plot_height}" fill="none" stroke="{BORDER}"/>',
-            f'<path d="{_step_path(all_series, start, end, log_min, log_max)}" fill="none" stroke="{ACCENT}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>',
-            f'<path d="{_step_path(neural_series, start, end, log_min, log_max)}" fill="none" stroke="{GREEN}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>',
-        ]
-    )
+    lines.append(f'<rect x="{plot_left}" y="{plot_top}" width="{plot_width}" height="{plot_height}" fill="none" stroke="{BORDER}"/>')
 
-    for color, series, label in ((ACCENT, all_series, "All-techniques"), (GREEN, neural_series, "Neural-only")):
+    for group_id, color, series, label in (
+        ("series-all", ACCENT, all_series, "All-techniques"),
+        ("series-neural", GREEN, neural_series, "Neural-only"),
+    ):
+        lines.append(f'<g id="{group_id}">')
+        lines.append(f'<path d="{_step_path(series, start, end, log_min, log_max)}" fill="none" stroke="{color}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>')
         for point in series:
             x = _x_scale(point["created"], start, end, plot_left, plot_width)
             y = _y_scale(point["bpb"], log_min, log_max, plot_top, plot_height)
             lines.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="4.5" fill="{color}" stroke="{BG}" stroke-width="1.5"/>')
-        final_point = series[-1]
-        final_x = _x_scale(final_point["created"], start, end, plot_left, plot_width)
-        final_y = _y_scale(final_point["bpb"], log_min, log_max, plot_top, plot_height)
-        label_x = min(plot_right - 6, final_x + 10)
-        lines.append(f'<text x="{label_x:.2f}" y="{final_y - 10:.2f}" fill="{color}" font-size="12">{label}: {_format_bpb(final_point["bpb"])} BPB</text>')
+        if series:
+            final_point = series[-1]
+            final_x = _x_scale(final_point["created"], start, end, plot_left, plot_width)
+            final_y = _y_scale(final_point["bpb"], log_min, log_max, plot_top, plot_height)
+            label_x = min(plot_right - 6, final_x + 10)
+            lines.append(f'<text x="{label_x:.2f}" y="{final_y - 10:.2f}" fill="{color}" font-size="12">{label}: {_format_bpb(final_point["bpb"])} BPB</text>')
+        lines.append('</g>')
 
     legend_y = PLOT_HEIGHT - 24
     mid_y = plot_top + (plot_height / 2)
