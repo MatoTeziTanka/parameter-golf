@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.6.0",
+    "date": "2026-04-03",
+    "title": "#677 Compliance + NoesisGenesis Framework",
+    "changes": [
+      "Classifier now #677-aware: scans PR bodies for multi-epoch TTT, oracle min(NLL), eval-time GPTQ patterns",
+      "Added COMPLIANCE_BODY_PATTERNS: detects explicit compliance signals (score-first TTT, ngram-disabled, cites-677)",
+      "Compliance override: PRs mentioning banned terms in compliance context get LOW confidence, not false-positive AT_RISK",
+      "NOTABLE status gate: PRs accepted as Notable Non-Record by organizers override AT_RISK classification",
+      "NOTABLE badge added to status renderer",
+      "NoesisGenesis 4-condition framework (issue #677 comment) adopted as compliance standard: causal dependence, full normalization, pre-update scoring, single left-to-right pass",
+      "Valerio-oai endorsement of framework linked in Agora rules section"
+    ]
+  },
+  {
     "version": "0.5.9",
     "date": "2026-03-30",
     "title": "Funding Tracker Update + Proof Levels",
