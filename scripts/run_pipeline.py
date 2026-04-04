@@ -598,11 +598,11 @@ def _render_changelog(changelog: list[dict[str, Any]]) -> str:
         title = escape(entry["title"])
         items = "".join(f"  <li>{escape(c)}</li>\n" for c in entry.get("changes", []))
         cards.append(
-            f'<div class="card">\n'
-            f'<h3 style="margin-top:0;color:var(--green);">v{version} &mdash; {date} ({title})</h3>\n'
-            f'<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">\n'
+            f'<details class="card">\n'
+            f'<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v{version} &mdash; {date} ({title})</summary>\n'
+            f'<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">\n'
             f'{items}</ul>\n'
-            f'</div>'
+            f'</details>'
         )
     # Roadmap
     roadmap_lis = "".join(
@@ -610,11 +610,11 @@ def _render_changelog(changelog: list[dict[str, Any]]) -> str:
         for v, desc in roadmap_items
     )
     cards.append(
-        '<div class="card" style="border-color:var(--border);opacity:0.7;">\n'
-        '<h3 style="margin-top:0;color:var(--text-dim);">Roadmap</h3>\n'
-        '<ul style="font-size:0.85rem;color:var(--text-dim);list-style:none;padding-left:0;">\n'
+        '<details class="card" style="border-color:var(--border);opacity:0.7;">\n'
+        '<summary style="cursor:pointer;color:var(--text-dim);font-size:1.1rem;font-weight:700;">Roadmap</summary>\n'
+        '<ul style="font-size:0.85rem;color:var(--text-dim);list-style:none;padding-left:0;margin-top:0.5rem;">\n'
         f'{roadmap_lis}</ul>\n'
-        '</div>'
+        '</details>'
     )
     return "\n".join(cards)
 
