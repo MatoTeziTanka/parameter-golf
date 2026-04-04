@@ -1,7 +1,166 @@
 {
-  "last_fetch": "2026-04-04T22:33:51.914222+00:00",
-  "api_calls_used": 101,
+  "last_fetch": "2026-04-04T23:35:39.280019+00:00",
+  "api_calls_used": 102,
   "prs": [
+    {
+      "number": 1364,
+      "title": "Record: Pre-quant AdamW TTT + QK-Gain 4.0 — val_bpb 1.1025 (3-seed mean)",
+      "author": "stukenov",
+      "state": "OPEN",
+      "created": "2026-04-04T23:13:00Z",
+      "updated": "2026-04-04T23:13:01Z",
+      "bpb": 1.1025,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_QKGain4_1.1025/README.md",
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_QKGain4_1.1025/submission.json",
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_QKGain4_1.1025/train_gpt.py",
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_QKGain4_1.1025/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_QKGain4_1.1025/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_QKGain4_1.1025/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1363,
+      "title": "Add shared compile-cache sweep helper and exploratory byte260 evidence",
+      "author": "divyaprakash0426",
+      "state": "OPEN",
+      "created": "2026-04-04T23:12:15Z",
+      "updated": "2026-04-04T23:31:37Z",
+      "bpb": 5.9911,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "data/README.md",
+        "data/tokenizer_specs.byte260_only.json",
+        "logs/runpod_lossy_byte260_h100.txt",
+        "nca_sweep_cluster.py",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1350,
+      "title": "Record: L-BFGS Causal SLOT — val_bpb 1.0046 (3-seed mean)",
+      "author": "resouer",
+      "state": "OPEN",
+      "created": "2026-04-04T15:40:21Z",
+      "updated": "2026-04-04T23:15:34Z",
+      "bpb": 1.0046,
+      "seeds": 3,
+      "artifact_bytes": 15800000,
+      "technique_summary": "TTT + GPTQ + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-04_LBFGS-CausalSLOT_1.0046/README.md",
+        "records/track_10min_16mb/2026-04-04_LBFGS-CausalSLOT_1.0046/requirements.txt",
+        "records/track_10min_16mb/2026-04-04_LBFGS-CausalSLOT_1.0046/submission.json",
+        "records/track_10min_16mb/2026-04-04_LBFGS-CausalSLOT_1.0046/train_gpt.py",
+        "records/track_10min_16mb/2026-04-04_LBFGS-CausalSLOT_1.0046/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-04_LBFGS-CausalSLOT_1.0046/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-04_LBFGS-CausalSLOT_1.0046/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1318,
+      "title": "Record: TTT-AdamW + SLOT L-BFGS25 LogitDelta + GPTQ DAMP=0.005 — val_bpb 1.00955",
+      "author": "renqianluo",
+      "state": "OPEN",
+      "created": "2026-04-03T23:52:29Z",
+      "updated": "2026-04-04T23:15:17Z",
+      "bpb": 1.00955,
+      "seeds": 3,
+      "artifact_bytes": 15710000,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-03_FA3_TTT_LBFGS25_LogitDelta_GPTQ_DAMP005_DeltaClip5_History20_WarmStart_Focal128_Freeze10/README.md",
+        "records/track_10min_16mb/2026-04-03_FA3_TTT_LBFGS25_LogitDelta_GPTQ_DAMP005_DeltaClip5_History20_WarmStart_Focal128_Freeze10/requirements.txt",
+        "records/track_10min_16mb/2026-04-03_FA3_TTT_LBFGS25_LogitDelta_GPTQ_DAMP005_DeltaClip5_History20_WarmStart_Focal128_Freeze10/submission.json",
+        "records/track_10min_16mb/2026-04-03_FA3_TTT_LBFGS25_LogitDelta_GPTQ_DAMP005_DeltaClip5_History20_WarmStart_Focal128_Freeze10/train_gpt.py",
+        "records/track_10min_16mb/2026-04-03_FA3_TTT_LBFGS25_LogitDelta_GPTQ_DAMP005_DeltaClip5_History20_WarmStart_Focal128_Freeze10/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-03_FA3_TTT_LBFGS25_LogitDelta_GPTQ_DAMP005_DeltaClip5_History20_WarmStart_Focal128_Freeze10/train_seed314.log",
+        "records/track_10min_16mb/2026-04-03_FA3_TTT_LBFGS25_LogitDelta_GPTQ_DAMP005_DeltaClip5_History20_WarmStart_Focal128_Freeze10/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1306,
+      "title": "Record: Causal SLOT + Pre-quant TTT — val_bpb 1.0846 (3-seed mean)",
+      "author": "resouer",
+      "state": "OPEN",
+      "created": "2026-04-03T16:29:29Z",
+      "updated": "2026-04-04T23:15:27Z",
+      "bpb": 1.0846,
+      "seeds": 3,
+      "artifact_bytes": 15950000,
+      "technique_summary": "TTT + GPTQ + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-03_CausalSLOT-PreQuantTTT-CoprimeLoader_1.0846/README.md",
+        "records/track_10min_16mb/2026-04-03_CausalSLOT-PreQuantTTT-CoprimeLoader_1.0846/requirements.txt",
+        "records/track_10min_16mb/2026-04-03_CausalSLOT-PreQuantTTT-CoprimeLoader_1.0846/submission.json",
+        "records/track_10min_16mb/2026-04-03_CausalSLOT-PreQuantTTT-CoprimeLoader_1.0846/train_gpt.py",
+        "records/track_10min_16mb/2026-04-03_CausalSLOT-PreQuantTTT-CoprimeLoader_1.0846/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-03_CausalSLOT-PreQuantTTT-CoprimeLoader_1.0846/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-03_CausalSLOT-PreQuantTTT-CoprimeLoader_1.0846/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1303,
       "title": "Record: SLOT + QK-Gain 4.0 + XSA-11 — val_bpb 0.9462 (3-seed mean)",
@@ -12576,9 +12735,9 @@
       "number": 916,
       "title": "10L + PPM Full-Rescore Order-12 N-gram (0.3461 BPB)",
       "author": "Bortlesboat",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-27T01:25:40Z",
-      "updated": "2026-03-27T01:25:40Z",
+      "updated": "2026-04-04T23:26:13Z",
       "bpb": 0.3461,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -12601,18 +12760,13 @@
         "ngram_path",
         "cache_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "keyword:ngram",
-        "keyword:two_pass",
-        "keyword:ngram_path",
-        "body:ngram-body",
-        "body:two-pass-body",
-        "path:ngram-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
-      "technique_type": "cache"
+      "technique_type": "cache",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 915,
@@ -14004,9 +14158,9 @@
       "number": 876,
       "title": "10L + Two-Pass Order-11 N-gram Backoff (0.5863 BPB)",
       "author": "Bortlesboat",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-26T17:47:45Z",
-      "updated": "2026-03-26T17:47:45Z",
+      "updated": "2026-04-04T23:26:09Z",
       "bpb": 0.5863,
       "seeds": 3,
       "artifact_bytes": 15600000,
@@ -14040,19 +14194,13 @@
         "ngram_path",
         "cache_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "keyword:ngram",
-        "keyword:two_pass",
-        "keyword:ngram_path",
-        "body:ngram-body",
-        "body:two-pass-body",
-        "path:ngram-path",
-        "path:backoff-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
-      "technique_type": "hybrid"
+      "technique_type": "hybrid",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 875,
@@ -16391,9 +16539,9 @@
       "number": 802,
       "title": "10L + Multi-Order N-gram Backoff (0.9123 BPB)",
       "author": "Bortlesboat",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-26T03:25:40Z",
-      "updated": "2026-03-27T00:27:31Z",
+      "updated": "2026-04-04T23:26:04Z",
       "bpb": 0.9123,
       "seeds": 3,
       "artifact_bytes": null,
@@ -16419,17 +16567,13 @@
         "ngram_path",
         "cache_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "keyword:ngram",
-        "keyword:ngram_path",
-        "body:ngram-body",
-        "path:ngram-path",
-        "path:backoff-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
-      "technique_type": "hybrid"
+      "technique_type": "hybrid",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 801,
