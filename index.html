@@ -1965,9 +1965,9 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <section id="changelog">
 <h2>Changelog &amp; Roadmap</h2>
 <!-- AGORA:CHANGELOG_START -->
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.7.0 &mdash; 2026-04-03 (Full Automation — Zero Hardcoded Content)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.7.0 &mdash; 2026-04-03 (Full Automation — Zero Hardcoded Content)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Phase 1: Checklist, technique legality, rule history, bug alerts, compute guide all driven from JSON data files</li>
   <li>Phase 2: BPB timeline auto-scales axes from data range, date axis extends to today, fixed hardcoded &#x27;Mar&#x27; label bug</li>
   <li>Phase 2: Neural-only vs all-techniques toggle buttons on BPB timeline chart</li>
@@ -1976,10 +1976,10 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <li>Pipeline gracefully degrades if any data JSON file is missing</li>
   <li>Adaptive tick spacing on timeline X-axis (2d/3d/7d based on span)</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.6.0 &mdash; 2026-04-03 (#677 Compliance + NoesisGenesis Framework)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.6.0 &mdash; 2026-04-03 (#677 Compliance + NoesisGenesis Framework)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Classifier now #677-aware: scans PR bodies for multi-epoch TTT, oracle min(NLL), eval-time GPTQ patterns</li>
   <li>Added COMPLIANCE_BODY_PATTERNS: detects explicit compliance signals (score-first TTT, ngram-disabled, cites-677)</li>
   <li>Compliance override: PRs mentioning banned terms in compliance context get LOW confidence, not false-positive AT_RISK</li>
@@ -1988,19 +1988,19 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <li>NoesisGenesis 4-condition framework (issue #677 comment) adopted as compliance standard: causal dependence, full normalization, pre-update scoring, single left-to-right pass</li>
   <li>Valerio-oai endorsement of framework linked in Agora rules section</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.5.9 &mdash; 2026-03-30 (Funding Tracker Update + Proof Levels)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.5.9 &mdash; 2026-03-30 (Funding Tracker Update + Proof Levels)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Added @EthanYangTW: ~$1,557 self-funded on RunPod (VERIFIED via billing screenshot)</li>
   <li>Proof level badges: VERIFIED (billing screenshot or full audit) vs PENDING (self-reported)</li>
   <li>Updated totals: 8 participants tracked, $5,252+ self-funded</li>
   <li>Second VERIFIED entry in the tracker</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.5.8 &mdash; 2026-03-29 (Tooltips + Compute Guide Clarity)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.5.8 &mdash; 2026-03-29 (Tooltips + Compute Guide Clarity)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Tooltips on all badges: status, type, track — hover for explanation</li>
   <li>Tooltips on all leaderboard column headers</li>
   <li>Tooltips on checklist items (what each requirement means)</li>
@@ -2009,10 +2009,10 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <li>Compute Survival Guide: clarified serverless is for iteration, final PR submissions need 8xH100 SXM pods with verifiable timing</li>
   <li>Added cursor:help styling for all tooltipped elements</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.5.7 &mdash; 2026-03-29 (Content Alignment Overhaul)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.5.7 &mdash; 2026-03-29 (Content Alignment Overhaul)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Responsive layout — 4 breakpoints from mobile (640px) to ultrawide (1800px+), no more wasted screen space</li>
   <li>Center-aligned everything: section headers, table headers, table cells, cards, filter bars, stat boxes</li>
   <li>Checklists and technique lists: centered block with left-aligned text inside</li>
@@ -2027,10 +2027,10 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <li>Compute guide tables: left-aligned cells (descriptive text, not short values)</li>
   <li>Guide-compare panels: left-aligned text inside pods/serverless comparison</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.5.5 &mdash; 2026-03-29 (Funding Transparency — Verified)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.5.5 &mdash; 2026-03-29 (Funding Transparency — Verified)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Full compute audit: $1,035.82 param golf across 3 platforms, $867.70 self-funded</li>
   <li>RunPod: $643.39 — 35 Stripe transactions, dashboard verified, daily breakdown</li>
   <li>Modal: $342.48 param golf across 2 workspaces (56 apps total, 46 PYTHIA apps code-audited and separated)</li>
@@ -2039,35 +2039,35 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <li>First VERIFIED proof level in the funding tracker — full audit JSON with methodology published</li>
   <li>Automated changelog: single source of truth in data/changelog.json</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.5.4 &mdash; 2026-03-29 (Filterable Leaderboards)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.5.4 &mdash; 2026-03-29 (Filterable Leaderboards)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Unified column order: Status | # | PR | Author | BPB | Seeds | Artifact | Type | Track</li>
   <li>Clickable filter buttons above both tables (Status, Type, Track)</li>
   <li>Type badges: Neural / Cache / TTT / Hybrid (from classifier)</li>
   <li>Track badges: Record / Non-Record (from PR title and file paths)</li>
   <li>Pipeline generates all badges and data attributes automatically</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.5.3 &mdash; 2026-03-29 (Classification Overhaul)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.5.3 &mdash; 2026-03-29 (Classification Overhaul)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Neural leaderboard requires 3/3 seeds AND known artifact size</li>
   <li>Classifier adds track (record/non-record) and technique_type (neural/cache/ttt/hybrid)</li>
   <li>Tighter ALIVE requirements in pipeline</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.5.2 &mdash; 2026-03-29 (Community Bug Alerts)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.5.2 &mdash; 2026-03-29 (Community Bug Alerts)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Added bug alerts: BPB underestimation (#897) and INT6 scale clamp (#775)</li>
   <li>Enabled Issues and Discussions on fork</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.5.1 &mdash; 2026-03-29 (UX Overhaul)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.5.1 &mdash; 2026-03-29 (UX Overhaul)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Changelog moved to bottom of page</li>
   <li>Navigation updated — all sections linked in correct order</li>
   <li>Scrollable leaderboard tables with sticky headers</li>
@@ -2076,42 +2076,42 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <li>Technique card text centering fixed</li>
   <li>BPB floor gate added to classifier</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.5.0 &mdash; 2026-03-28 (All Phases Shipped)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.5.0 &mdash; 2026-03-28 (All Phases Shipped)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>GitHub Actions cron — auto-updates every 30 minutes</li>
   <li>6 issue templates for community input</li>
   <li>Community issue ingestion pipeline (fetch_community.py)</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.4.0 &mdash; 2026-03-28 (Community Input)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.4.0 &mdash; 2026-03-28 (Community Input)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Issue templates: funding, corrections, techniques, blocked, resources, feedback</li>
   <li>fetch_community.py — auto-processes GitHub Issues</li>
   <li>Pipeline integration — community input runs before classification</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.3.0 &mdash; 2026-03-28 (Analytics)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.3.0 &mdash; 2026-03-28 (Analytics)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Technique map — 24 techniques tracked, grouped by PRs</li>
   <li>BPB timeline — inline SVG chart, March 27 cliff marked</li>
   <li>Collaboration finder — who&#x27;s working on what, untried combinations</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.2.0 &mdash; 2026-03-28 (Live API)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.2.0 &mdash; 2026-03-28 (Live API)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Live leaderboard — 996 PRs fetched via GitHub GraphQL API</li>
   <li>Compliance engine — auto-classifies ALIVE / DEAD / AT-RISK / INCOMPLETE</li>
   <li>Cached + incremental fetching</li>
 </ul>
-</div>
-<div class="card">
-<h3 style="margin-top:0;color:var(--green);">v0.1.0 &mdash; 2026-03-28 (Static Foundation)</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.1.0 &mdash; 2026-03-28 (Static Foundation)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
   <li>Submission checklist (legal / banned / grey area)</li>
   <li>Rule change history (March 22, 24, 27 rulings)</li>
   <li>Dual leaderboard (seeded data)</li>
@@ -2120,16 +2120,16 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <li>Compute survival guide (serverless &gt; pods)</li>
   <li>Visitor counter (Redis-backed via OLYMPUS API)</li>
 </ul>
-</div>
-<div class="card" style="border-color:var(--border);opacity:0.7;">
-<h3 style="margin-top:0;color:var(--text-dim);">Roadmap</h3>
-<ul style="font-size:0.85rem;color:var(--text-dim);list-style:none;padding-left:0;">
+</details>
+<details class="card" style="border-color:var(--border);opacity:0.7;">
+<summary style="cursor:pointer;color:var(--text-dim);font-size:1.1rem;font-weight:700;">Roadmap</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:none;padding-left:0;margin-top:0.5rem;">
   <li>&#9744; <strong>v0.8.0</strong> &mdash; Cited research tracker (papers &rarr; PRs &rarr; BPB)</li>
   <li>&#9744; <strong>v0.9.0</strong> &mdash; Cost efficiency ranking (dollars per BPB point)</li>
   <li>&#9744; <strong>v0.10.0</strong> &mdash; Review queue metrics (PR wait times, peer reviewer recognition)</li>
   <li>&#9744; <strong>v1.0.0</strong> &mdash; Community governance (threshold-based classification disputes)</li>
 </ul>
-</div>
+</details>
 <!-- AGORA:CHANGELOG_END -->
 </section>
 
