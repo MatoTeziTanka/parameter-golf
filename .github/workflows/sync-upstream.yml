@@ -1,0 +1,45 @@
+name: Sync upstream main
+
+on:
+  schedule:
+    - cron: '15 3 * * *'  # daily at 3:15 AM UTC
+  workflow_dispatch:       # manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add upstream remote
+        run: git remote add upstream https://github.com/openai/parameter-golf.git || true
+
+      - name: Fetch upstream main
+        run: git fetch upstream main
+
+      - name: Merge upstream (take theirs on README conflicts)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git merge upstream/main --no-edit; then
+            echo "MERGED=clean" >> $GITHUB_ENV
+          else
+            # Only README.md conflicts expected — take upstream's version
+            git checkout --theirs README.md
+            git add README.md
+            git commit --no-edit
+            echo "MERGED=conflict-resolved" >> $GITHUB_ENV
+          fi
+
+      - name: Push if changed
+        run: |
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/gh-pages)" ]; then
+            git push origin gh-pages
+            echo "Pushed. Merge type: $MERGED"
+          else
+            echo "Already up to date."
+          fi
