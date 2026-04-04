@@ -188,7 +188,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </nav>
 
 <div style="background:var(--surface);border-bottom:1px solid var(--border);padding:0.6rem 1rem;text-align:center;font-size:0.8rem;color:var(--text-dim);">
-  <strong style="color:var(--accent);">v0.6.0</strong> &middot; Last updated: April 4, 2026 &middot; #677 Compliance + NoesisGenesis Framework &middot; <a href="#changelog">Changelog</a> &middot; <a href="https://github.com/MatoTeziTanka/parameter-golf/tree/gh-pages">Source</a>
+  <strong style="color:var(--accent);">v0.7.0</strong> &middot; Last updated: April 4, 2026 &middot; Full Automation — Zero Hardcoded Content &middot; <a href="#changelog">Changelog</a> &middot; <a href="https://github.com/MatoTeziTanka/parameter-golf/tree/gh-pages">Source</a>
 
   <span style="margin-left:1rem;">&#128065; <span id="counter-total">-</span> visitors &middot; <span style="color:var(--green);">&#9679;</span> <span id="counter-active">-</span> here now</span>
 </div>
@@ -214,10 +214,83 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <section id="checklist">
 <h2>Submission Checklist</h2>
 <!-- AGORA:CHECKLIST_START -->
+<p style="color:var(--text-dim);margin-bottom:1rem;">Updated March 28, 2026. Check ALL boxes before submitting.</p>
+<div class="card">
+<h3>Before You Submit</h3>
+<ul class="checklist">
+  <li title="Total size of your training script + compressed model weights, measured in bytes">Artifact ≤ 16,000,000 bytes (code + compressed model)</li>
+  <li title="Wall-clock time from first step to last step, measured on 8x NVIDIA H100 SXM GPUs">Training completed in ≤ 600 seconds on 8×H100 SXM</li>
+  <li title="Separate 600-second budget for evaluation — not shared with training time">Evaluation completed in ≤ 600 seconds (separate budget)</li>
+  <li title="All 3 random seeds must produce valid results — prevents cherry-picking">3 seeds: 42, 1337, 2024</li>
+  <li title="Your 3-seed mean BPB must beat the current best by at least 0.005 to be a new record">BPB beats current SOTA by ≥ 0.005 nats (for record track)</li>
+  <li title="JSON file with your val_bpb scores, seed results, and artifact sizes">submission.json included with val_bpb, seeds, artifact sizes</li>
+  <li title="stdout/stderr logs from all 3 training runs for reproducibility verification">Training logs included for all 3 seeds</li>
+  <li title="No downloading models, data, or making API calls during train or eval time">No network calls during training or eval</li>
+</ul>
+</div>
+<div class="card">
+<h3>Techniques &mdash; What's Legal RIGHT NOW</h3>
+<ul class="technique-list">
+  <li class="legal" title="All neural architectures are allowed">Any neural architecture (transformers, SSMs, hybrids, MoE)</li>
+  <li class="legal" title="No restrictions on activation functions">Any activation function (LeakyReLU², GeGLU, SwiGLU, etc.)</li>
+  <li class="legal" title="All optimizers are allowed">Any optimizer (AdamW, Muon, SGD, etc.)</li>
+  <li class="legal" title="Learning rate scheduling strategies are unrestricted">LR schedules, warmup, cosine decay</li>
+  <li class="legal" title="Exponential moving average and stochastic weight averaging are legal">EMA, SWA, weight averaging</li>
+  <li class="legal" title="Standard sliding window approach for evaluation">Sliding window evaluation</li>
+  <li class="legal" title="Quantization allowed if calibration happens within the 600s training budget">Quantization (INT6, INT8, GPTQ) — calibration within training budget</li>
+  <li class="legal" title="Performance optimizations are allowed">Flash Attention, torch.compile</li>
+  <li class="legal" title="Test-time training is legal if scoring is single-pass and probabilities are properly normalized">Score-first single-pass TTT (properly normalized probabilities)</li>
+</ul>
+<ul class="technique-list" style="margin-top:1rem;">
+  <li class="banned" title="Banned March 27 — n-gram caches don&#x27;t properly normalize probability distributions over the full vocabulary">Hashed n-gram caches (improper normalization over vocab)</li>
+  <li class="banned" title="Banned March 27 — information from first eval pass leaks into second pass">Two-pass rescoring (eval tokens leaked between passes)</li>
+  <li class="banned" title="Banned March 22 — calibration on evaluation data is not allowed; must happen during training">GPTQ calibration on eval tokens (must fit in training 600s)</li>
+  <li class="banned" title="Banned March 27 — loading training-derived caches during evaluation is not permitted">Pre-filling cache from training data at eval time</li>
+  <li class="banned" title="Banned — test-time training must not score the same tokens in multiple passes">Multi-epoch TTT scoring same tokens twice</li>
+  <li class="banned" title="Banned — using results from one scoring pass to select strategy for another is not allowed">Oracle/hindsight selection between scoring passes</li>
+</ul>
+<ul class="technique-list" style="margin-top:1rem;">
+  <li class="grey" title="May be legal if probability normalization is correct — under review">Properly normalized eval-time caches (CTW, Dirichlet)</li>
+  <li class="grey" title="Legality depends on whether the mixing preserves proper probability normalization">Score-first TTT with complex mixing (depends on normalization)</li>
+</ul>
+</div>
 <!-- AGORA:CHECKLIST_END -->
 <!-- AGORA:RULINGS_START -->
+<div class="card">
+<h3>Rule Change History</h3>
+<div class="timeline-entry">
+  <div class="timeline-date">March 27, 2026</div>
+  <p>@valerio-oai closed 30+ PRs. Hashed n-gram caches banned (improper normalization). Two-pass rescoring banned (eval token leakage). GPTQ on eval tokens banned.</p>
+  <p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.25rem;">Affected: #769, #779, #809, #814, #824, #825, #828, #843, #846, #850, #851, #859, #868, #869, #870, #880, #881, #888, #893, #907, #913, #921, #925, #944, #945, #982</p>
+  <p style="color:var(--text-dim);font-size:0.85rem;">Source: <a href="https://github.com/openai/parameter-golf/issues/677">Issue #677</a></p>
+</div>
+<div class="timeline-entry legal-change">
+  <div class="timeline-date">March 24, 2026</div>
+  <p>Score-first TTT clarified as legal. Multi-epoch on already-scored tokens: legal IF properly normalized.</p>
+  <p style="color:var(--text-dim);font-size:0.85rem;">Source: <a href="https://github.com/openai/parameter-golf/issues/402">Issue #402 (ruling by @0hq)</a></p>
+</div>
+<div class="timeline-entry">
+  <div class="timeline-date">March 22, 2026</div>
+  <p>Eval-time GPTQ calibration on val tokens banned. PRs #593, #576 closed.</p>
+  <p style="color:var(--text-dim);font-size:0.85rem;">Source: PRs #593, #576, #569</p>
+</div>
+</div>
 <!-- AGORA:RULINGS_END -->
 <!-- AGORA:ALERTS_START -->
+<div class="card" style="border-color:var(--yellow);border-width:2px;">
+<h3 style="margin-top:0;color:var(--yellow);">&#9888; Community Bug Alerts</h3>
+<p style="font-size:0.9rem;margin-bottom:0.75rem;">Known issues that may affect your BPB score. Check before submitting.</p>
+<div style="margin-bottom:1rem;">
+<strong style="color:var(--red);">BPB Underestimation Bug</strong> <span class="badge badge-banned">~20% error</span>
+<p style="font-size:0.85rem;color:var(--text-dim);margin-top:0.25rem;">If your tokenizer does NOT contain U+2581 (▁) as a standalone token, <code>build_sentencepiece_luts</code> overcounts byte boundaries by 2 bytes per word — inflating <code>val_byte_count</code> and making BPB appear ~20% lower than reality. Tokenizers with 1024 vocab (the competition default) DO have this token and are NOT affected. Custom tokenizers: check with <code>sp.id_to_piece()</code>.</p>
+<p style="font-size:0.8rem;color:var(--text-dim);">Source: <a href="https://github.com/openai/parameter-golf/issues/897">Issue #897</a></p>
+</div>
+<div>
+<strong style="color:var(--yellow);">INT6 Scale Clamp Wastes Quantization Levels</strong> <span class="badge badge-grey">affects ~93% of rows</span>
+<p style="font-size:0.85rem;color:var(--text-dim);margin-top:0.25rem;">The <code>clamp_min(1.0 / 31.0)</code> in <code>quantize_int6_per_row</code> forces a minimum scale of 0.032 even when weight rows have much smaller magnitudes. At WD=0.02, 93% of rows trigger this clamp — wasting INT6 resolution and widening the quantization gap. Higher weight decay (0.04+) makes it worse. Fix: lower or remove the clamp, then retrain with matching QAT.</p>
+<p style="font-size:0.8rem;color:var(--text-dim);">Source: <a href="https://github.com/openai/parameter-golf/issues/775">Issue #775</a></p>
+</div>
+</div>
 <!-- AGORA:ALERTS_END -->
 </section>
 
@@ -1694,6 +1767,74 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <section id="compute">
 <h2>Compute Survival Guide</h2>
 <!-- AGORA:COMPUTE_START -->
+<div class="card" style="border-color:var(--red);">
+<h3 style="color:var(--red);">The Golden Rule: Serverless for Iteration, Pods Only for Final Submission</h3>
+<p>Use serverless for development, testing, and architecture validation. It&#x27;s cheaper, faster, and auto-stops. But <strong style="color:var(--yellow);">official PR submissions must run on 8×H100 SXM with verifiable timing</strong> &mdash;— serverless providers may use different hardware or add overhead that affects your reported step times. Use serverless to iterate, then do your final 3-seed submission run on a known 8×H100 SXM pod.</p>
+<div class="guide-compare">
+  <div class="bad">
+    <h4>Pods (anti-pattern)</h4>
+    <ul>
+      <li>Billing starts at CREATION</li>
+      <li>Setup time = burning money idle</li>
+      <li>Forget to stop = bleeding money</li>
+      <li>Crash at second 5 = still paying</li>
+      <li>Pod terminates = lose everything</li>
+    </ul>
+  </div>
+  <div class="good">
+    <h4>Serverless (correct)</h4>
+    <ul>
+      <li>Billing starts when CODE runs</li>
+      <li>Pre-baked Docker = instant start</li>
+      <li>Auto-stops when done</li>
+      <li>Crash at second 5 = paid for 5s</li>
+      <li>Results returned before teardown</li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="card">
+<h3>RunPod Serverless (Recommended)</h3>
+<p>Docker image: <code>matotezitanka/proteus-pytorch:2.11.0-cuda12.8</code></p>
+<p>Submit job → it runs → results come back → billing stops. No SSH, no pod management.</p>
+<p style="color:var(--text-dim);font-size:0.85rem;">H100 SXM. ~$0.45 per 10-min training run (calculated, not yet verified via receipt).</p>
+</div>
+<div class="card">
+<h3>Modal ($30/month free)</h3>
+<p>Serverless by default. <code>modal run train.py</code> — that's it. $30 free every month = multiple runs.</p>
+</div>
+<div class="card">
+<h3>Google Colab (Free / Pro $9.99/mo / Pro+ $49.99/mo)</h3>
+<p>GPUs available: T4 (free), A100 40/80GB, H100, RTX PRO 6000 Blackwell ~96GB (varies by tier and availability). Student Pro access available through educational institutions.</p>
+<p>Batch size fix for single GPU: <code>TRAIN_BATCH_TOKENS=65536</code>. Save checkpoints to Drive. Resume on disconnect. ~6-7 hours for 20K steps on single H100.</p>
+<p style="color:var(--text-dim);font-size:0.85rem;">Whether Colab's H100 is SXM or PCIe variant is unverified. Validate architecture on Colab, verify final submission timing on known SXM hardware.</p>
+</div>
+<div class="card">
+<h3>CPU Smoke Tests (FREE &mdash; do these FIRST)</h3>
+<p>We've run 5+ smoke tests during competition development. Each catches different failure modes:</p>
+<table style="margin:0.5rem 0;">
+<thead><tr><th>Test</th><th>What it catches</th><th>Command</th></tr></thead>
+<tbody>
+<tr><td>Quick forward pass</td><td>Import errors, shape mismatches, config bugs</td><td><code>ITERATIONS=10 TRAIN_BATCH_TOKENS=4096 TRAIN_SEQ_LEN=256 python train_gpt.py</code></td></tr>
+<tr><td>Artifact size check</td><td>Model too big for 16MB cap</td><td><code>python cpu_test.py</code> (validates INT6 roundtrip + size)</td></tr>
+<tr><td>Quantization roundtrip</td><td>Quantization breaks model quality</td><td><code>python cpu_test.py --matrix</code></td></tr>
+<tr><td>Eval pipeline</td><td>Sliding window + BPB computation errors</td><td><code>ITERATIONS=10 VAL_LOSS_EVERY=5 python train_gpt.py</code></td></tr>
+<tr><td>Full mini-run</td><td>Everything end-to-end on CPU</td><td><code>ITERATIONS=50 TRAIN_BATCH_TOKENS=4096 TRAIN_SEQ_LEN=256 VAL_LOSS_EVERY=25 python train_gpt.py</code></td></tr>
+</tbody>
+</table>
+<p style="color:var(--text-dim);font-size:0.85rem;">If it doesn't work on CPU, it won't work on GPU. Save your money. Our <code>cpu_test.py</code> is in the <a href="https://github.com/MatoTeziTanka/parameter-golf-private">community toolkit</a>.</p>
+</div>
+<div class="card">
+<h3>H100 SXM vs PCIe</h3>
+<table>
+<thead><tr><th>GPU</th><th>NVLink</th><th>DDP Speed</th><th>Where</th></tr></thead>
+<tbody>
+<tr><td>H100 SXM</td><td>Yes (900 GB/s)</td><td>Full speed</td><td>RunPod, Vast.ai</td></tr>
+<tr><td>H100 PCIe</td><td>No</td><td>~30% slower DDP</td><td>Some cloud providers</td></tr>
+</tbody>
+</table>
+<p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.5rem;">Competition requires 8×H100 SXM for official timing. Colab H100 variant unverified — always confirm step timing matches expected SXM performance before submitting.</p>
+</div>
 <!-- AGORA:COMPUTE_END -->
 </section>
 
@@ -1701,7 +1842,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <section id="timeline">
 <h2>BPB Timeline</h2>
 <!-- AGORA:TIMELINE_START -->
-<p style="color:var(--text-dim);margin-bottom:1rem;">Cumulative SOTA curve built from 494 classified PRs with a positive BPB and final status ALIVE, AT-RISK, or DEAD. Neural-only strips cache-heavy rulings so the March 27 cliff stays visible.</p><div class="card chart-card"><svg viewBox="0 0 1200 520" width="100%" role="img" aria-label="BPB timeline" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="520" rx="16" fill="#161b22" stroke="#30363d"/><text x="92" y="26" fill="#e6edf3" font-size="22" font-weight="700">Cumulative SOTA BPB by PR creation date</text><text x="92" y="44" fill="#8b949e" font-size="13">Log scale. Neural-only strips cache-heavy rulings; all-techniques keeps every classified result with a final status.</text><line x1="92" x2="1172" y1="432.18" y2="432.18" stroke="#30363d" stroke-width="1"/><text x="80" y="436.18" fill="#8b949e" font-size="12" text-anchor="end">1.000</text><line x1="92" x2="1172" y1="401.32" y2="401.32" stroke="#30363d" stroke-width="1"/><text x="80" y="405.32" fill="#8b949e" font-size="12" text-anchor="end">0.300</text><line x1="92" x2="1172" y1="373.15" y2="373.15" stroke="#30363d" stroke-width="1"/><text x="80" y="377.15" fill="#8b949e" font-size="12" text-anchor="end">0.100</text><line x1="92" x2="1172" y1="342.29" y2="342.29" stroke="#30363d" stroke-width="1"/><text x="80" y="346.29" fill="#8b949e" font-size="12" text-anchor="end">0.0300</text><line x1="92" x2="1172" y1="314.12" y2="314.12" stroke="#30363d" stroke-width="1"/><text x="80" y="318.12" fill="#8b949e" font-size="12" text-anchor="end">0.0100</text><line x1="92" x2="1172" y1="283.26" y2="283.26" stroke="#30363d" stroke-width="1"/><text x="80" y="287.26" fill="#8b949e" font-size="12" text-anchor="end">0.0030</text><line x1="92" x2="1172" y1="255.09" y2="255.09" stroke="#30363d" stroke-width="1"/><text x="80" y="259.09" fill="#8b949e" font-size="12" text-anchor="end">0.0010</text><line x1="92" x2="1172" y1="224.22" y2="224.22" stroke="#30363d" stroke-width="1"/><text x="80" y="228.22" fill="#8b949e" font-size="12" text-anchor="end">3.00e-04</text><line x1="92" x2="1172" y1="196.06" y2="196.06" stroke="#30363d" stroke-width="1"/><text x="80" y="200.06" fill="#8b949e" font-size="12" text-anchor="end">1.00e-04</text><line x1="92" x2="1172" y1="165.19" y2="165.19" stroke="#30363d" stroke-width="1"/><text x="80" y="169.19" fill="#8b949e" font-size="12" text-anchor="end">3.00e-05</text><line x1="92" x2="1172" y1="137.03" y2="137.03" stroke="#30363d" stroke-width="1"/><text x="80" y="141.03" fill="#8b949e" font-size="12" text-anchor="end">1.00e-05</text><line x1="92" x2="1172" y1="106.16" y2="106.16" stroke="#30363d" stroke-width="1"/><text x="80" y="110.16" fill="#8b949e" font-size="12" text-anchor="end">3.00e-06</text><line x1="92" x2="1172" y1="78.00" y2="78.00" stroke="#30363d" stroke-width="1"/><text x="80" y="82.00" fill="#8b949e" font-size="12" text-anchor="end">1.00e-06</text><line x1="92" x2="1172" y1="47.13" y2="47.13" stroke="#30363d" stroke-width="1"/><text x="80" y="51.13" fill="#8b949e" font-size="12" text-anchor="end">3.00e-07</text><line x1="92.00" x2="92.00" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="92.00" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 18</text><line x1="219.06" x2="219.06" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="219.06" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 20</text><line x1="346.12" x2="346.12" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="346.12" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 22</text><line x1="473.18" x2="473.18" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="473.18" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 24</text><line x1="600.24" x2="600.24" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="600.24" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 26</text><line x1="727.29" x2="727.29" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="727.29" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 28</text><line x1="854.35" x2="854.35" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="854.35" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 30</text><line x1="981.41" x2="981.41" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="981.41" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 1</text><line x1="1108.47" x2="1108.47" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="1108.47" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 3</text><line x1="346.12" x2="346.12" y1="44" y2="448" stroke="#f85149" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="352.12" y="58.00" fill="#f85149" font-size="12">GPTQ ruling</text><line x1="473.18" x2="473.18" y1="44" y2="448" stroke="#3fb950" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="479.18" y="58.00" fill="#3fb950" font-size="12">TTT ruling</text><line x1="663.76" x2="663.76" y1="44" y2="448" stroke="#f85149" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="669.76" y="58.00" fill="#f85149" font-size="12">N-gram massacre</text><rect x="92" y="44" width="1080" height="404" fill="none" stroke="#30363d"/><path d="M 92.00 437.37 H 140.56 H 148.64 V 344.34 H 156.00 V 274.95 H 158.80 V 237.32 H 701.85 V 51.08 H 1172.00" fill="none" stroke="#bc8cff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M 92.00 437.37 H 140.56 H 148.64 V 344.34 H 156.00 V 274.95 H 158.80 V 237.32 H 1172.00" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="140.56" cy="437.37" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="148.64" cy="344.34" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="156.00" cy="274.95" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="158.80" cy="237.32" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="701.85" cy="51.08" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><text x="711.85" y="41.08" fill="#bc8cff" font-size="12">All-techniques: 3.50e-07 BPB</text><circle cx="140.56" cy="437.37" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="148.64" cy="344.34" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="156.00" cy="274.95" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="158.80" cy="237.32" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><text x="168.80" y="227.32" fill="#3fb950" font-size="12">Neural-only: 5.00e-04 BPB</text><line x1="92" x2="118" y1="496.00" y2="496.00" stroke="#3fb950" stroke-width="3"/><text x="126" y="500.00" fill="#e6edf3" font-size="13">Neural-only</text><line x1="242" x2="268" y1="496.00" y2="496.00" stroke="#bc8cff" stroke-width="3"/><text x="276" y="500.00" fill="#e6edf3" font-size="13">All-techniques</text><text x="22" y="246.00" fill="#8b949e" font-size="13" transform="rotate(-90 22 246.00)">BPB (log scale)</text><text x="632.00" y="512.00" fill="#8b949e" font-size="13" text-anchor="middle">Date created</text></svg></div>
+<p style="color:var(--text-dim);margin-bottom:1rem;">Cumulative SOTA curve built from 494 classified PRs with a positive BPB and final status ALIVE, AT-RISK, or DEAD. Neural-only strips cache-heavy rulings so the March 27 cliff stays visible.</p><div style="display:flex;gap:0.75rem;margin-bottom:0.75rem;"><button onclick="toggleSeries('series-neural',this)" style="background:var(--surface);border:1px solid #3fb950;color:#3fb950;padding:0.3rem 0.8rem;border-radius:6px;cursor:pointer;font-size:0.85rem;">Neural-only</button><button onclick="toggleSeries('series-all',this)" style="background:var(--surface);border:1px solid #bc8cff;color:#bc8cff;padding:0.3rem 0.8rem;border-radius:6px;cursor:pointer;font-size:0.85rem;">All-techniques</button></div><div class="card chart-card"><svg viewBox="0 0 1200 520" width="100%" role="img" aria-label="BPB timeline" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="520" rx="16" fill="#161b22" stroke="#30363d"/><text x="92" y="26" fill="#e6edf3" font-size="22" font-weight="700">Cumulative SOTA BPB by PR creation date</text><text x="92" y="44" fill="#8b949e" font-size="13">Log scale. Neural-only strips cache-heavy rulings; all-techniques keeps every classified result with a final status.</text><line x1="92" x2="1172" y1="432.18" y2="432.18" stroke="#30363d" stroke-width="1"/><text x="80" y="436.18" fill="#8b949e" font-size="12" text-anchor="end">1.000</text><line x1="92" x2="1172" y1="401.32" y2="401.32" stroke="#30363d" stroke-width="1"/><text x="80" y="405.32" fill="#8b949e" font-size="12" text-anchor="end">0.300</text><line x1="92" x2="1172" y1="373.15" y2="373.15" stroke="#30363d" stroke-width="1"/><text x="80" y="377.15" fill="#8b949e" font-size="12" text-anchor="end">0.100</text><line x1="92" x2="1172" y1="342.29" y2="342.29" stroke="#30363d" stroke-width="1"/><text x="80" y="346.29" fill="#8b949e" font-size="12" text-anchor="end">0.0300</text><line x1="92" x2="1172" y1="314.12" y2="314.12" stroke="#30363d" stroke-width="1"/><text x="80" y="318.12" fill="#8b949e" font-size="12" text-anchor="end">0.0100</text><line x1="92" x2="1172" y1="283.26" y2="283.26" stroke="#30363d" stroke-width="1"/><text x="80" y="287.26" fill="#8b949e" font-size="12" text-anchor="end">0.0030</text><line x1="92" x2="1172" y1="255.09" y2="255.09" stroke="#30363d" stroke-width="1"/><text x="80" y="259.09" fill="#8b949e" font-size="12" text-anchor="end">0.0010</text><line x1="92" x2="1172" y1="224.22" y2="224.22" stroke="#30363d" stroke-width="1"/><text x="80" y="228.22" fill="#8b949e" font-size="12" text-anchor="end">3.00e-04</text><line x1="92" x2="1172" y1="196.06" y2="196.06" stroke="#30363d" stroke-width="1"/><text x="80" y="200.06" fill="#8b949e" font-size="12" text-anchor="end">1.00e-04</text><line x1="92" x2="1172" y1="165.19" y2="165.19" stroke="#30363d" stroke-width="1"/><text x="80" y="169.19" fill="#8b949e" font-size="12" text-anchor="end">3.00e-05</text><line x1="92" x2="1172" y1="137.03" y2="137.03" stroke="#30363d" stroke-width="1"/><text x="80" y="141.03" fill="#8b949e" font-size="12" text-anchor="end">1.00e-05</text><line x1="92" x2="1172" y1="106.16" y2="106.16" stroke="#30363d" stroke-width="1"/><text x="80" y="110.16" fill="#8b949e" font-size="12" text-anchor="end">3.00e-06</text><line x1="92" x2="1172" y1="78.00" y2="78.00" stroke="#30363d" stroke-width="1"/><text x="80" y="82.00" fill="#8b949e" font-size="12" text-anchor="end">1.00e-06</text><line x1="92" x2="1172" y1="47.13" y2="47.13" stroke="#30363d" stroke-width="1"/><text x="80" y="51.13" fill="#8b949e" font-size="12" text-anchor="end">3.00e-07</text><line x1="92.00" x2="92.00" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="92.00" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 18</text><line x1="282.59" x2="282.59" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="282.59" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 21</text><line x1="473.18" x2="473.18" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="473.18" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 24</text><line x1="663.76" x2="663.76" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="663.76" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 27</text><line x1="854.35" x2="854.35" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="854.35" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 30</text><line x1="1044.94" x2="1044.94" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="1044.94" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Apr 2</text><line x1="1108.47" x2="1108.47" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="1108.47" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Apr 3</text><line x1="346.12" x2="346.12" y1="44" y2="448" stroke="#f85149" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="352.12" y="58.00" fill="#f85149" font-size="12">GPTQ ruling</text><line x1="473.18" x2="473.18" y1="44" y2="448" stroke="#3fb950" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="479.18" y="58.00" fill="#3fb950" font-size="12">TTT ruling</text><line x1="663.76" x2="663.76" y1="44" y2="448" stroke="#f85149" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="669.76" y="58.00" fill="#f85149" font-size="12">N-gram massacre</text><rect x="92" y="44" width="1080" height="404" fill="none" stroke="#30363d"/><g id="series-all"><path d="M 92.00 437.37 H 140.56 H 148.64 V 344.34 H 156.00 V 274.95 H 158.80 V 237.32 H 701.85 V 51.08 H 1172.00" fill="none" stroke="#bc8cff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="140.56" cy="437.37" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="148.64" cy="344.34" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="156.00" cy="274.95" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="158.80" cy="237.32" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="701.85" cy="51.08" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><text x="711.85" y="41.08" fill="#bc8cff" font-size="12">All-techniques: 3.50e-07 BPB</text></g><g id="series-neural"><path d="M 92.00 437.37 H 140.56 H 148.64 V 344.34 H 156.00 V 274.95 H 158.80 V 237.32 H 1172.00" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="140.56" cy="437.37" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="148.64" cy="344.34" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="156.00" cy="274.95" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="158.80" cy="237.32" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><text x="168.80" y="227.32" fill="#3fb950" font-size="12">Neural-only: 5.00e-04 BPB</text></g><line x1="92" x2="118" y1="496.00" y2="496.00" stroke="#3fb950" stroke-width="3"/><text x="126" y="500.00" fill="#e6edf3" font-size="13">Neural-only</text><line x1="242" x2="268" y1="496.00" y2="496.00" stroke="#bc8cff" stroke-width="3"/><text x="276" y="500.00" fill="#e6edf3" font-size="13">All-techniques</text><text x="22" y="246.00" fill="#8b949e" font-size="13" transform="rotate(-90 22 246.00)">BPB (log scale)</text><text x="632.00" y="512.00" fill="#8b949e" font-size="13" text-anchor="middle">Date created</text></svg></div><script>function toggleSeries(id,btn){var g=document.getElementById(id);if(!g)return;var vis=g.style.display!=="none";g.style.display=vis?"none":"";btn.style.opacity=vis?"0.4":"1";}</script>
 <!-- AGORA:TIMELINE_END -->
 </section>
 
@@ -1749,10 +1890,13 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <section id="analytics">
 <h2>Analytics</h2>
 <!-- AGORA:CHART_ARTIFACT_START -->
+<div class="card chart-card"><svg viewBox="0 0 800 360" width="100%" role="img" aria-label="Artifact size histogram" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="360" rx="12" fill="#161b22" stroke="#30363d"/><text x="64" y="24" fill="#e6edf3" font-size="16" font-weight="700">Artifact Size Distribution</text><text x="64" y="38" fill="#8b949e" font-size="11">923 PRs with known artifact size. 16 MB cap shown as red line.</text><line x1="64" x2="780" y1="304.0" y2="304.0" stroke="#30363d" stroke-width="1"/><text x="56" y="308.0" fill="#8b949e" font-size="11" text-anchor="end">0</text><line x1="64" x2="780" y1="240.5" y2="240.5" stroke="#30363d" stroke-width="1"/><text x="56" y="244.5" fill="#8b949e" font-size="11" text-anchor="end">100</text><line x1="64" x2="780" y1="177.1" y2="177.1" stroke="#30363d" stroke-width="1"/><text x="56" y="181.1" fill="#8b949e" font-size="11" text-anchor="end">200</text><line x1="64" x2="780" y1="113.6" y2="113.6" stroke="#30363d" stroke-width="1"/><text x="56" y="117.6" fill="#8b949e" font-size="11" text-anchor="end">300</text><line x1="64" x2="780" y1="50.2" y2="50.2" stroke="#30363d" stroke-width="1"/><text x="56" y="54.2" fill="#8b949e" font-size="11" text-anchor="end">400</text><rect x="66.0" y="293.2" width="75.6" height="10.8" fill="#bc8cff" rx="3" opacity="0.85"/><text x="103.8" y="289.2" fill="#e6edf3" font-size="10" text-anchor="middle">17</text><text x="103.8" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">0-2</text><rect x="145.6" y="294.5" width="75.6" height="9.5" fill="#bc8cff" rx="3" opacity="0.85"/><text x="183.3" y="290.5" fill="#e6edf3" font-size="10" text-anchor="middle">15</text><text x="183.3" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">2-4</text><rect x="225.1" y="298.3" width="75.6" height="5.7" fill="#bc8cff" rx="3" opacity="0.85"/><text x="262.9" y="294.3" fill="#e6edf3" font-size="10" text-anchor="middle">9</text><text x="262.9" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">4-6</text><rect x="304.7" y="298.9" width="75.6" height="5.1" fill="#bc8cff" rx="3" opacity="0.85"/><text x="342.4" y="294.9" fill="#e6edf3" font-size="10" text-anchor="middle">8</text><text x="342.4" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">6-8</text><rect x="384.2" y="296.4" width="75.6" height="7.6" fill="#bc8cff" rx="3" opacity="0.85"/><text x="422.0" y="292.4" fill="#e6edf3" font-size="10" text-anchor="middle">12</text><text x="422.0" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">8-10</text><rect x="463.8" y="286.9" width="75.6" height="17.1" fill="#bc8cff" rx="3" opacity="0.85"/><text x="501.6" y="282.9" fill="#e6edf3" font-size="10" text-anchor="middle">27</text><text x="501.6" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">10-12</text><rect x="543.3" y="270.4" width="75.6" height="33.6" fill="#bc8cff" rx="3" opacity="0.85"/><text x="581.1" y="266.4" fill="#e6edf3" font-size="10" text-anchor="middle">53</text><text x="581.1" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">12-14</text><rect x="622.9" y="40.0" width="75.6" height="264.0" fill="#bc8cff" rx="3" opacity="0.85"/><text x="660.7" y="36.0" fill="#e6edf3" font-size="10" text-anchor="middle">416</text><text x="660.7" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">14-16</text><rect x="702.4" y="71.7" width="75.6" height="232.3" fill="#f85149" rx="3" opacity="0.85"/><text x="740.2" y="67.7" fill="#e6edf3" font-size="10" text-anchor="middle">366</text><text x="740.2" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">16+</text><line x1="700.4" x2="700.4" y1="40" y2="304" stroke="#f85149" stroke-width="2" stroke-dasharray="6 4" opacity="0.7"/><text x="704.4" y="54" fill="#f85149" font-size="10">16 MB cap</text><text x="422.0" y="354.0" fill="#8b949e" font-size="11" text-anchor="middle">Artifact size (MB)</text></svg></div>
 <!-- AGORA:CHART_ARTIFACT_END -->
 <!-- AGORA:CHART_TECHNIQUE_POP_START -->
+<div class="card chart-card"><svg viewBox="0 0 800 360" width="100%" role="img" aria-label="Technique popularity" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="360" rx="12" fill="#161b22" stroke="#30363d"/><text x="64" y="24" fill="#e6edf3" font-size="16" font-weight="700">Technique Popularity Over Time</text><text x="64" y="38" fill="#8b949e" font-size="11">Cumulative PR count by technique type. 1234 total PRs.</text><polygon points="64.0,303.8 96.5,303.8 129.1,303.8 161.6,303.8 194.2,303.8 226.7,303.8 259.3,297.6 291.8,277.5 324.4,247.1 356.9,227.8 389.5,207.3 422.0,183.3 454.5,169.2 487.1,143.8 519.6,118.7 552.2,102.3 584.7,90.7 617.3,78.5 649.8,67.6 682.4,58.4 714.9,50.7 747.5,43.9 780.0,40.0 780.0,71.0 747.5,73.6 714.9,79.8 682.4,86.2 649.8,93.7 617.3,103.3 584.7,114.0 552.2,124.1 519.6,137.1 487.1,154.2 454.5,173.9 422.0,187.2 389.5,209.7 356.9,229.8 324.4,248.2 291.8,277.7 259.3,297.6 226.7,303.8 194.2,303.8 161.6,303.8 129.1,303.8 96.5,303.8 64.0,303.8" fill="#58a6ff" opacity="0.6"/><polygon points="64.0,303.8 96.5,303.8 129.1,303.8 161.6,303.8 194.2,303.8 226.7,303.8 259.3,297.6 291.8,277.7 324.4,248.2 356.9,229.8 389.5,209.7 422.0,187.2 454.5,173.9 487.1,154.2 519.6,137.1 552.2,124.1 584.7,114.0 617.3,103.3 649.8,93.7 682.4,86.2 714.9,79.8 747.5,73.6 780.0,71.0 780.0,92.4 747.5,94.8 714.9,100.8 682.4,106.1 649.8,112.7 617.3,119.6 584.7,128.8 552.2,137.6 519.6,147.6 487.1,159.8 454.5,177.3 422.0,190.2 389.5,212.0 356.9,231.5 324.4,249.7 291.8,278.3 259.3,298.0 226.7,303.8 194.2,303.8 161.6,303.8 129.1,303.8 96.5,303.8 64.0,303.8" fill="#d29922" opacity="0.6"/><polygon points="64.0,303.8 96.5,303.8 129.1,303.8 161.6,303.8 194.2,303.8 226.7,303.8 259.3,298.0 291.8,278.3 324.4,249.7 356.9,231.5 389.5,212.0 422.0,190.2 454.5,177.3 487.1,159.8 519.6,147.6 552.2,137.6 584.7,128.8 617.3,119.6 649.8,112.7 682.4,106.1 714.9,100.8 747.5,94.8 780.0,92.4 780.0,166.0 747.5,167.5 714.9,170.3 682.4,172.9 649.8,177.3 617.3,181.6 584.7,186.1 552.2,190.6 519.6,198.1 487.1,206.0 454.5,215.9 422.0,222.1 389.5,233.0 356.9,245.8 324.4,257.4 291.8,279.6 259.3,298.4 226.7,303.8 194.2,303.8 161.6,303.8 129.1,303.8 96.5,303.8 64.0,303.8" fill="#bc8cff" opacity="0.6"/><polygon points="64.0,303.8 96.5,303.8 129.1,303.8 161.6,303.8 194.2,303.8 226.7,303.8 259.3,298.4 291.8,279.6 324.4,257.4 356.9,245.8 389.5,233.0 422.0,222.1 454.5,215.9 487.1,206.0 519.6,198.1 552.2,190.6 584.7,186.1 617.3,181.6 649.8,177.3 682.4,172.9 714.9,170.3 747.5,167.5 780.0,166.0 780.0,304.0 747.5,304.0 714.9,304.0 682.4,304.0 649.8,304.0 617.3,304.0 584.7,304.0 552.2,304.0 519.6,304.0 487.1,304.0 454.5,304.0 422.0,304.0 389.5,304.0 356.9,304.0 324.4,304.0 291.8,304.0 259.3,304.0 226.7,304.0 194.2,304.0 161.6,304.0 129.1,304.0 96.5,304.0 64.0,304.0" fill="#3fb950" opacity="0.6"/><text x="64.0" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 12</text><text x="161.6" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 15</text><text x="259.3" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 18</text><text x="356.9" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 21</text><text x="454.5" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 24</text><text x="552.2" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 27</text><text x="649.8" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 30</text><text x="747.5" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Apr 2</text><line x1="64" x2="780" y1="304.0" y2="304.0" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="308.0" fill="#8b949e" font-size="11" text-anchor="end">0</text><line x1="64" x2="780" y1="197.0" y2="197.0" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="201.0" fill="#8b949e" font-size="11" text-anchor="end">500</text><line x1="64" x2="780" y1="90.1" y2="90.1" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="94.1" fill="#8b949e" font-size="11" text-anchor="end">1000</text><rect x="64" y="340" width="12" height="12" fill="#3fb950" rx="2" opacity="0.8"/><text x="80" y="350" fill="#e6edf3" font-size="11">Neural</text><rect x="144" y="340" width="12" height="12" fill="#bc8cff" rx="2" opacity="0.8"/><text x="160" y="350" fill="#e6edf3" font-size="11">TTT</text><rect x="200" y="340" width="12" height="12" fill="#d29922" rx="2" opacity="0.8"/><text x="216" y="350" fill="#e6edf3" font-size="11">CACHE</text><rect x="272" y="340" width="12" height="12" fill="#58a6ff" rx="2" opacity="0.8"/><text x="288" y="350" fill="#e6edf3" font-size="11">HYBRID</text></svg></div>
 <!-- AGORA:CHART_TECHNIQUE_POP_END -->
 <!-- AGORA:CHART_COMPLIANCE_START -->
+<div class="card chart-card"><svg viewBox="0 0 800 360" width="100%" role="img" aria-label="Compliance rate" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="360" rx="12" fill="#161b22" stroke="#30363d"/><text x="64" y="24" fill="#e6edf3" font-size="16" font-weight="700">Compliance Rate Over Time</text><text x="64" y="38" fill="#8b949e" font-size="11">629 classified PRs. Currently 25% ALIVE.</text><polygon points="64.0,303.6 96.5,303.6 129.1,303.6 161.6,303.6 194.2,303.6 226.7,303.6 259.3,291.4 291.8,272.5 324.4,249.0 356.9,236.4 389.5,220.1 422.0,194.9 454.5,179.3 487.1,147.4 519.6,114.3 552.2,95.4 584.7,85.3 617.3,74.0 649.8,63.5 682.4,54.7 714.9,46.7 747.5,43.8 780.0,40.0 780.0,186.5 747.5,189.8 714.9,191.5 682.4,198.2 649.8,203.3 617.3,210.0 584.7,215.9 552.2,221.3 519.6,230.6 487.1,246.9 454.5,258.3 422.0,262.4 389.5,269.2 356.9,275.9 324.4,282.2 291.8,292.2 259.3,301.9 226.7,303.6 194.2,303.6 161.6,303.6 129.1,303.6 96.5,303.6 64.0,303.6" fill="#f85149" opacity="0.6"/><polygon points="64.0,303.6 96.5,303.6 129.1,303.6 161.6,303.6 194.2,303.6 226.7,303.6 259.3,301.9 291.8,292.2 324.4,282.2 356.9,275.9 389.5,269.2 422.0,262.4 454.5,258.3 487.1,246.9 519.6,230.6 552.2,221.3 584.7,215.9 617.3,210.0 649.8,203.3 682.4,198.2 714.9,191.5 747.5,189.8 780.0,186.5 780.0,238.5 747.5,239.4 714.9,239.8 682.4,242.7 649.8,244.8 617.3,247.3 584.7,249.9 552.2,252.4 519.6,255.7 487.1,259.5 454.5,265.0 422.0,268.7 389.5,274.2 356.9,279.2 324.4,284.7 291.8,293.5 259.3,301.9 226.7,303.6 194.2,303.6 161.6,303.6 129.1,303.6 96.5,303.6 64.0,303.6" fill="#d29922" opacity="0.6"/><polygon points="64.0,303.6 96.5,303.6 129.1,303.6 161.6,303.6 194.2,303.6 226.7,303.6 259.3,301.9 291.8,293.5 324.4,284.7 356.9,279.2 389.5,274.2 422.0,268.7 454.5,265.0 487.1,259.5 519.6,255.7 552.2,252.4 584.7,249.9 617.3,247.3 649.8,244.8 682.4,242.7 714.9,239.8 747.5,239.4 780.0,238.5 780.0,304.0 747.5,304.0 714.9,304.0 682.4,304.0 649.8,304.0 617.3,304.0 584.7,304.0 552.2,304.0 519.6,304.0 487.1,304.0 454.5,304.0 422.0,304.0 389.5,304.0 356.9,304.0 324.4,304.0 291.8,304.0 259.3,304.0 226.7,304.0 194.2,304.0 161.6,304.0 129.1,304.0 96.5,304.0 64.0,304.0" fill="#3fb950" opacity="0.6"/><text x="64.0" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 12</text><text x="161.6" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 15</text><text x="259.3" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 18</text><text x="356.9" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 21</text><text x="454.5" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 24</text><text x="552.2" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 27</text><text x="649.8" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 30</text><text x="747.5" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Apr 2</text><line x1="64" x2="780" y1="304.0" y2="304.0" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="308.0" fill="#8b949e" font-size="11" text-anchor="end">0</text><line x1="64" x2="780" y1="220.1" y2="220.1" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="224.1" fill="#8b949e" font-size="11" text-anchor="end">200</text><line x1="64" x2="780" y1="136.1" y2="136.1" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="140.1" fill="#8b949e" font-size="11" text-anchor="end">400</text><line x1="64" x2="780" y1="52.2" y2="52.2" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="56.2" fill="#8b949e" font-size="11" text-anchor="end">600</text><rect x="64" y="340" width="12" height="12" fill="#3fb950" rx="2" opacity="0.8"/><text x="80" y="350" fill="#e6edf3" font-size="11">ALIVE</text><rect x="136" y="340" width="12" height="12" fill="#d29922" rx="2" opacity="0.8"/><text x="152" y="350" fill="#e6edf3" font-size="11">AT-RISK</text><rect x="224" y="340" width="12" height="12" fill="#f85149" rx="2" opacity="0.8"/><text x="240" y="350" fill="#e6edf3" font-size="11">DEAD</text></svg></div>
 <!-- AGORA:CHART_COMPLIANCE_END -->
 </section>
 
@@ -1821,6 +1965,18 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <section id="changelog">
 <h2>Changelog &amp; Roadmap</h2>
 <!-- AGORA:CHANGELOG_START -->
+<div class="card">
+<h3 style="margin-top:0;color:var(--green);">v0.7.0 &mdash; 2026-04-03 (Full Automation — Zero Hardcoded Content)</h3>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
+  <li>Phase 1: Checklist, technique legality, rule history, bug alerts, compute guide all driven from JSON data files</li>
+  <li>Phase 2: BPB timeline auto-scales axes from data range, date axis extends to today, fixed hardcoded &#x27;Mar&#x27; label bug</li>
+  <li>Phase 2: Neural-only vs all-techniques toggle buttons on BPB timeline chart</li>
+  <li>Phase 3: All tooltips flow through _render_with_tooltip / _tooltip_attr helpers — no manual title attributes</li>
+  <li>Phase 4: Artifact size histogram, technique popularity stacked area chart, compliance rate area chart</li>
+  <li>Pipeline gracefully degrades if any data JSON file is missing</li>
+  <li>Adaptive tick spacing on timeline X-axis (2d/3d/7d based on span)</li>
+</ul>
+</div>
 <div class="card">
 <h3 style="margin-top:0;color:var(--green);">v0.6.0 &mdash; 2026-04-03 (#677 Compliance + NoesisGenesis Framework)</h3>
 <ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;">
@@ -1968,9 +2124,9 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <div class="card" style="border-color:var(--border);opacity:0.7;">
 <h3 style="margin-top:0;color:var(--text-dim);">Roadmap</h3>
 <ul style="font-size:0.85rem;color:var(--text-dim);list-style:none;padding-left:0;">
-  <li>&#9744; <strong>v0.6.0</strong> &mdash; Cited research tracker (papers &rarr; PRs &rarr; BPB)</li>
-  <li>&#9744; <strong>v0.7.0</strong> &mdash; Cost efficiency ranking (dollars per BPB point)</li>
-  <li>&#9744; <strong>v0.8.0</strong> &mdash; Review queue metrics (PR wait times, peer reviewer recognition)</li>
+  <li>&#9744; <strong>v0.8.0</strong> &mdash; Cited research tracker (papers &rarr; PRs &rarr; BPB)</li>
+  <li>&#9744; <strong>v0.9.0</strong> &mdash; Cost efficiency ranking (dollars per BPB point)</li>
+  <li>&#9744; <strong>v0.10.0</strong> &mdash; Review queue metrics (PR wait times, peer reviewer recognition)</li>
   <li>&#9744; <strong>v1.0.0</strong> &mdash; Community governance (threshold-based classification disputes)</li>
 </ul>
 </div>
