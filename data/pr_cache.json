@@ -1,7 +1,68 @@
 {
-  "last_fetch": "2026-04-05T07:56:06.623885+00:00",
-  "api_calls_used": 105,
+  "last_fetch": "2026-04-05T08:53:23.919307+00:00",
+  "api_calls_used": 106,
   "prs": [
+    {
+      "number": 1375,
+      "title": "Submit V18.2: 608-dim Reversible V8 Engine",
+      "author": "mini-sarami",
+      "state": "OPEN",
+      "created": "2026-04-05T08:23:17Z",
+      "updated": "2026-04-05T08:23:17Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1374,
+      "title": "16L Kreïn-Space Geometric Attention — One-Sided Raw Sigmoid",
+      "author": "r2smith141",
+      "state": "OPEN",
+      "created": "2026-04-05T07:56:53Z",
+      "updated": "2026-04-05T08:05:46Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 9300000,
+      "technique_summary": "Muon + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-05_16L_KreinGeoAttn_OneSided_RawSigmoid/README.md",
+        "records/track_10min_16mb/2026-04-05_16L_KreinGeoAttn_OneSided_RawSigmoid/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1373,
       "title": "Submit Int6 Native + SmearGate + BigramHash config",
@@ -294,6 +355,37 @@
       "technique_tags": [
         "neural"
       ]
+    },
+    {
+      "number": 1356,
+      "title": "Multi-Cube Face Letter Assignment (Non-Record Submission)",
+      "author": "teslaeco",
+      "state": "OPEN",
+      "created": "2026-04-04T19:31:49Z",
+      "updated": "2026-04-05T08:36:50Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "README.md",
+        "records/non-record/multi-cube-face-letter-assignment/README.md",
+        "records/non-record/multi-cube-face-letter-assignment/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1354,
