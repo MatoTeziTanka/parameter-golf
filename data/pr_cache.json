@@ -1,14 +1,44 @@
 {
-  "last_fetch": "2026-04-05T14:06:48.400880+00:00",
-  "api_calls_used": 111,
+  "last_fetch": "2026-04-05T15:02:12.226242+00:00",
+  "api_calls_used": 112,
   "prs": [
+    {
+      "number": 1384,
+      "title": "Progressive Depth + Hedge Mixer — val_bpb 1.1441 (3-seed mean)",
+      "author": "iverbovoy",
+      "state": "OPEN",
+      "created": "2026-04-05T14:47:34Z",
+      "updated": "2026-04-05T14:48:36Z",
+      "bpb": 1.1441,
+      "seeds": 3,
+      "artifact_bytes": 15880000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-05_ProgressiveDepth_HedgeMixer/README.md",
+        "records/track_10min_16mb/2026-04-05_ProgressiveDepth_HedgeMixer/submission.json",
+        "records/track_10min_16mb/2026-04-05_ProgressiveDepth_HedgeMixer/train_gpt.py",
+        "records/track_10min_16mb/2026-04-05_ProgressiveDepth_HedgeMixer/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-05_ProgressiveDepth_HedgeMixer/train_seed42.log",
+        "records/track_10min_16mb/2026-04-05_ProgressiveDepth_HedgeMixer/train_seed7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1383,
       "title": "Non-record: Neuromodulatory Depth-Recurrent Transformer with FiLM-only TTT (WIP, val_bpb=1.3151)",
       "author": "nirmathur",
       "state": "OPEN",
       "created": "2026-04-05T14:04:14Z",
-      "updated": "2026-04-05T14:04:14Z",
+      "updated": "2026-04-05T14:08:07Z",
       "bpb": 1.3151,
       "seeds": null,
       "artifact_bytes": 12870000,
@@ -112,7 +142,7 @@
       "author": "ranausmanai",
       "state": "OPEN",
       "created": "2026-04-05T12:37:07Z",
-      "updated": "2026-04-05T12:44:38Z",
+      "updated": "2026-04-05T15:02:04Z",
       "bpb": 1.1194,
       "seeds": null,
       "artifact_bytes": null,
@@ -7653,7 +7683,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-03-30T00:03:19Z",
-      "updated": "2026-04-02T21:36:45Z",
+      "updated": "2026-04-05T14:08:22Z",
       "bpb": 0.0025,
       "seeds": 3,
       "artifact_bytes": 302000000,
@@ -7688,15 +7718,15 @@
       ],
       "track": "record",
       "technique_type": "cache",
+      "technique_tags": [
+        "cache"
+      ],
       "status": "AT_RISK",
       "flags": [
         "body:ngram-body",
         "path:ngram-path"
       ],
-      "confidence": "MEDIUM",
-      "technique_tags": [
-        "cache"
-      ]
+      "confidence": "MEDIUM"
     },
     {
       "number": 1104,
@@ -15280,9 +15310,9 @@
       "number": 895,
       "title": "Non-record: 4-Hour Progressive Depth — val_bpb 1.0889",
       "author": "iverbovoy",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-26T20:25:58Z",
-      "updated": "2026-03-26T20:25:59Z",
+      "updated": "2026-04-05T14:49:55Z",
       "bpb": 0.06,
       "seeds": null,
       "artifact_bytes": 15820000,
@@ -15313,16 +15343,16 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
-      ]
+      ],
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 894,
@@ -16874,9 +16904,9 @@
       "number": 856,
       "title": "Progressive Depth + Hedge Mixer — val_bpb 1.1454",
       "author": "iverbovoy",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-26T14:51:46Z",
-      "updated": "2026-03-26T14:51:46Z",
+      "updated": "2026-04-05T14:49:52Z",
       "bpb": 0.051,
       "seeds": null,
       "artifact_bytes": 15880000,
@@ -16905,16 +16935,16 @@
       "compliance_keywords": [
         "ngram"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "cache",
       "technique_tags": [
         "cache"
-      ]
+      ],
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 855,
@@ -17570,9 +17600,9 @@
       "number": 835,
       "title": "Progressive Depth Training — val_bpb 1.1980",
       "author": "iverbovoy",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-26T08:26:21Z",
-      "updated": "2026-03-26T08:26:21Z",
+      "updated": "2026-04-05T14:49:50Z",
       "bpb": 1.319,
       "seeds": null,
       "artifact_bytes": 15880000,
@@ -17597,16 +17627,16 @@
       "compliance_keywords": [
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
-      ]
+      ],
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 834,
@@ -17798,15 +17828,34 @@
       "author": "Programmerryoki",
       "state": "OPEN",
       "created": "2026-03-26T07:17:54Z",
-      "updated": "2026-03-28T02:36:57Z",
+      "updated": "2026-04-05T14:40:37Z",
       "bpb": 1.3999,
       "seeds": 1337,
       "artifact_bytes": 13500000,
       "technique_summary": "TTT + GPTQ + INT6 + EMA",
       "file_paths": [
+        ".gitignore",
         "h100-runs.sh",
         "ngram_eval.py",
-        "train_gpt.py"
+        "scripts/h100-next-pod-setup.sh",
+        "scripts/h100-sp4096-ablations.sh",
+        "train_gpt.py",
+        "train_gpt_full_stack.py",
+        "train_gpt_mlx.py",
+        "train_gpt_phase0_defaults.py",
+        "train_gpt_phase0_misc.py",
+        "train_gpt_phase0_muoneqr.py",
+        "train_gpt_phase1_sp4096.py",
+        "train_gpt_phase2_depthrecur.py",
+        "train_gpt_phase2_parallel_twolane.py",
+        "train_gpt_phase3_discriminative_ttt.py",
+        "train_gpt_phase3_prequant_ttt.py",
+        "train_gpt_phase4_polar_ns.py",
+        "train_gpt_phase4_quickwins.py",
+        "train_gpt_phase4_swa.py",
+        "train_gpt_phase4_ve128.py",
+        "train_gpt_phase5_full_gptq.py",
+        "train_gpt_phase6_causal_slot.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -17815,17 +17864,17 @@
         "leaky_relu",
         "ngram_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "path:ngram-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
         "ttt",
         "cache"
-      ]
+      ],
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
     },
     {
       "number": 826,
@@ -19374,9 +19423,9 @@
       "number": 784,
       "title": "Non-record: Depth Recurrence + XSA + LeakyReLU² (val_bpb 1.2065)",
       "author": "iverbovoy",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-25T23:42:26Z",
-      "updated": "2026-03-25T23:48:01Z",
+      "updated": "2026-04-05T14:49:48Z",
       "bpb": 0.013,
       "seeds": null,
       "artifact_bytes": 15870000,
@@ -19398,16 +19447,16 @@
         "gptq_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
-      ]
+      ],
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 783,
@@ -41105,9 +41154,9 @@
       "number": 148,
       "title": "Depth Recurrence + Cross-Repeat Skip + Sliding Window Eval",
       "author": "iverbovoy",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-20T01:41:57Z",
-      "updated": "2026-03-25T23:41:57Z",
+      "updated": "2026-04-05T14:49:44Z",
       "bpb": 1.2196,
       "seeds": null,
       "artifact_bytes": 12830000,
@@ -41123,16 +41172,16 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
-      ]
+      ],
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 147,
