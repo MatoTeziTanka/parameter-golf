@@ -685,10 +685,12 @@ def _build_row(rank: int, pr: dict[str, Any], include_reason: bool = False) -> s
     status = pr.get("status", "UNKNOWN")
     status_badge = _status_badge(status, pr.get("seeds"))
     ttype = pr.get("technique_type", "unknown")
+    technique_tags: list[str] = pr.get("technique_tags", [ttype])
     track = pr.get("track", "unknown")
 
     attrs = f'data-status="{status.lower()}" data-type="{ttype}" data-track="{track}"'
 
+    type_badges = " ".join(_type_badge(tag) for tag in technique_tags)
     cells = (
         f"<td>{status_badge}</td>"
         f"<td>{rank}</td>"
@@ -697,7 +699,7 @@ def _build_row(rank: int, pr: dict[str, Any], include_reason: bool = False) -> s
         f"<td>{bpb}</td>"
         f"<td>{seeds}</td>"
         f"<td>{artifact}</td>"
-        f"<td>{_type_badge(ttype)}</td>"
+        f"<td>{type_badges}</td>"
         f"<td>{_track_badge(track)}</td>"
     )
     if include_reason:

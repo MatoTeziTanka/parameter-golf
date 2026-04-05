@@ -204,6 +204,27 @@ def _classify_technique_type(pr: dict[str, Any]) -> str:
     return "neural"
 
 
+def _classify_technique_tags(pr: dict[str, Any]) -> list[str]:
+    """Return all technique tags detected for a PR (for multi-badge display).
+
+    Always includes at least ["neural"]. Adds "cache" and/or "ttt" if signals found.
+    """
+    title: str = (pr.get("title") or "").lower()
+    body: str = (pr.get("body") or "").lower()
+    compliance_keywords: list[str] = [k.lower() for k in pr.get("compliance_keywords", [])]
+    file_paths: list[str] = pr.get("file_paths", [])
+    path_str = " ".join(file_paths).lower()
+
+    combined = f"{title} {body} {' '.join(compliance_keywords)} {path_str}"
+
+    tags: list[str] = ["neural"]
+    if any(sig in combined for sig in _TTT_SIGNALS):
+        tags.append("ttt")
+    if any(sig in combined for sig in _CACHE_SIGNALS):
+        tags.append("cache")
+    return tags
+
+
 # ---------------------------------------------------------------------------
 # Classification logic
 # ---------------------------------------------------------------------------
@@ -274,14 +295,11 @@ def _is_at_risk(pr: dict[str, Any]) -> tuple[bool, list[str], str]:
     # and technique_summary as proxies. However classify.py should also check the
     # compliance_keywords extracted during fetch.
 
-    compliance_keywords: list[str] = pr.get("compliance_keywords", [])
     file_paths: list[str] = pr.get("file_paths", [])
-
-    # Check compliance keywords extracted during fetch (HIGH confidence signals)
-    high_risk_keywords = {"ngram", "ngram_path", "two_pass"}
-    for kw in compliance_keywords:
-        if kw in high_risk_keywords:
-            flags.append(f"keyword:{kw}")
+    # NOTE: compliance_keywords from fetch_prs.py are raw mentions, not proof
+    # of usage. They cause false positives (e.g., PR mentions "n-gram" in context
+    # of "we don't use n-gram caches"). The body pattern check below does proper
+    # contextual matching. Do NOT use compliance_keywords as risk signals.
 
     # Check body for AT_RISK patterns (per #677 rulings)
     for pattern, label in AT_RISK_BODY_PATTERNS:
@@ -363,6 +381,7 @@ def classify_pr(pr: dict[str, Any]) -> dict[str, Any]:
     # Classify track and technique type for all PRs (independent of status)
     result["track"] = _classify_track(pr)
     result["technique_type"] = _classify_technique_type(pr)
+    result["technique_tags"] = _classify_technique_tags(pr)
 
     # Gate 1: DEAD check (highest priority)
     dead, dead_flags, dead_confidence = _is_dead(pr)

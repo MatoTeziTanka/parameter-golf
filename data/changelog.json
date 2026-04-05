@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.7.2",
+    "date": "2026-04-05",
+    "title": "Classifier False-Positive Fix + Multi-Type Badges",
+    "changes": [
+      "Fixed classifier false-positive: compliance_keywords (raw mentions) no longer used as AT_RISK signals — only contextual body pattern matching is used",
+      "43 PRs reclassified from false AT_RISK to correct status (ALIVE/INCOMPLETE)",
+      "Multi-type technique badges: PRs with TTT+Cache now show all applicable badges instead of single 'Hybrid' label",
+      "New technique_tags field in pr_cache.json for per-PR technique decomposition"
+    ]
+  },
+  {
     "version": "0.7.1",
     "date": "2026-04-04",
     "title": "UX Polish + Upstream Sync",
