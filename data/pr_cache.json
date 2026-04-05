@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-05T06:43:12.334057+00:00",
-  "api_calls_used": 104,
+  "last_fetch": "2026-04-05T07:56:06.623885+00:00",
+  "api_calls_used": 105,
   "prs": [
     {
       "number": 1373,
@@ -407,10 +407,10 @@
       "author": "AR6420",
       "state": "OPEN",
       "created": "2026-04-03T22:38:29Z",
-      "updated": "2026-04-05T06:41:50Z",
-      "bpb": 1.9266,
-      "seeds": 3,
-      "artifact_bytes": 15900000,
+      "updated": "2026-04-05T06:49:12Z",
+      "bpb": 1.131,
+      "seeds": 1,
+      "artifact_bytes": 15600000,
       "technique_summary": "LeakyReLU² + Muon + GPTQ + EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-03_MegakernelFusion_TileEngine/README.md",
@@ -430,8 +430,10 @@
       "technique_tags": [
         "cache"
       ],
-      "status": "ALIVE",
-      "flags": [],
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-1"
+      ],
       "confidence": "HIGH"
     },
     {
