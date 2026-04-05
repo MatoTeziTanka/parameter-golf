@@ -1,14 +1,45 @@
 {
-  "last_fetch": "2026-04-05T05:15:40.553660+00:00",
-  "api_calls_used": 103,
+  "last_fetch": "2026-04-05T06:43:12.334057+00:00",
+  "api_calls_used": 104,
   "prs": [
+    {
+      "number": 1373,
+      "title": "Submit Int6 Native + SmearGate + BigramHash config",
+      "author": "metadore",
+      "state": "OPEN",
+      "created": "2026-04-05T05:39:17Z",
+      "updated": "2026-04-05T05:39:17Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "INT6",
+      "file_paths": [
+        "records/int6_smeargate_bigramhash/README.md",
+        "records/int6_smeargate_bigramhash/submission.json",
+        "records/int6_smeargate_bigramhash/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1369,
       "title": "Non-record: Negative results from gated multi-order hash n-grams",
       "author": "xiayicheng3-code",
       "state": "OPEN",
       "created": "2026-04-05T02:15:54Z",
-      "updated": "2026-04-05T02:15:54Z",
+      "updated": "2026-04-05T05:45:20Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -29,15 +60,15 @@
       ],
       "track": "non-record",
       "technique_type": "cache",
+      "technique_tags": [
+        "cache"
+      ],
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "technique_tags": [
-        "cache"
-      ]
+      "confidence": "HIGH"
     },
     {
       "number": 1368,
@@ -369,6 +400,39 @@
       "technique_tags": [
         "ttt"
       ]
+    },
+    {
+      "number": 1316,
+      "title": "Full-Depth MLP Megakernel + Fused Attention Preprocessing (non-record)",
+      "author": "AR6420",
+      "state": "OPEN",
+      "created": "2026-04-03T22:38:29Z",
+      "updated": "2026-04-05T06:41:50Z",
+      "bpb": 1.9266,
+      "seeds": 3,
+      "artifact_bytes": 15900000,
+      "technique_summary": "LeakyReLU² + Muon + GPTQ + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-03_MegakernelFusion_TileEngine/README.md",
+        "records/track_non_record_16mb/2026-04-03_MegakernelFusion_TileEngine/requirements.txt",
+        "records/track_non_record_16mb/2026-04-03_MegakernelFusion_TileEngine/submission.json",
+        "records/track_non_record_16mb/2026-04-03_MegakernelFusion_TileEngine/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-03_MegakernelFusion_TileEngine/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "cache"
+      ],
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 1306,
