@@ -1,7 +1,151 @@
 {
-  "last_fetch": "2026-04-04T23:35:39.280019+00:00",
-  "api_calls_used": 102,
+  "last_fetch": "2026-04-05T02:48:25.376486+00:00",
+  "api_calls_used": 103,
   "prs": [
+    {
+      "number": 1369,
+      "title": "Non-record: Negative results from gated multi-order hash n-grams",
+      "author": "xiayicheng3-code",
+      "state": "OPEN",
+      "created": "2026-04-05T02:15:54Z",
+      "updated": "2026-04-05T02:15:54Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-04_NegativeResults_GatedMultiOrderHash/README.md",
+        "records/track_non_record_16mb/2026-04-04_NegativeResults_GatedMultiOrderHash/requirements.txt",
+        "records/track_non_record_16mb/2026-04-04_NegativeResults_GatedMultiOrderHash/results.tsv",
+        "records/track_non_record_16mb/2026-04-04_NegativeResults_GatedMultiOrderHash/run_overcap_multi_hash.log",
+        "records/track_non_record_16mb/2026-04-04_NegativeResults_GatedMultiOrderHash/run_submit_multi_hash_tail64.log",
+        "records/track_non_record_16mb/2026-04-04_NegativeResults_GatedMultiOrderHash/run_submit_single_hash.log",
+        "records/track_non_record_16mb/2026-04-04_NegativeResults_GatedMultiOrderHash/submission.json",
+        "records/track_non_record_16mb/2026-04-04_NegativeResults_GatedMultiOrderHash/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "status": "AT_RISK",
+      "flags": [
+        "keyword:ngram"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1368,
+      "title": "Non-record submission: mean-delta warm start + depth recurrence for SLOT (0.8503 BPB)",
+      "author": "JKSNS",
+      "state": "OPEN",
+      "created": "2026-04-05T02:13:30Z",
+      "updated": "2026-04-05T02:17:28Z",
+      "bpb": 0.8503,
+      "seeds": null,
+      "artifact_bytes": 13300000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-04_MeanDelta_SLOT_WarmStart_DepthRecurrence/README.md",
+        "records/track_10min_16mb/2026-04-04_MeanDelta_SLOT_WarmStart_DepthRecurrence/image.png",
+        "records/track_10min_16mb/2026-04-04_MeanDelta_SLOT_WarmStart_DepthRecurrence/submission.json",
+        "records/track_10min_16mb/2026-04-04_MeanDelta_SLOT_WarmStart_DepthRecurrence/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1367,
+      "title": "Non-Record: 10L Spatio-Temporal SNN (BPB: 1.3319)",
+      "author": "ieuko",
+      "state": "OPEN",
+      "created": "2026-04-05T01:11:26Z",
+      "updated": "2026-04-05T01:11:26Z",
+      "bpb": 1.3319,
+      "seeds": null,
+      "artifact_bytes": 15794883,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-05_10L_SpatioTemporal_SNN/README.md",
+        "records/track_non_record_16mb/2026-04-05_10L_SpatioTemporal_SNN/log.txt",
+        "records/track_non_record_16mb/2026-04-05_10L_SpatioTemporal_SNN/submission.json",
+        "records/track_non_record_16mb/2026-04-05_10L_SpatioTemporal_SNN/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1366,
+      "title": "Non-record: EMA+SWA Tight Averaging with Fused TTT LoRA + Sliding Window (1.1371 BPB)",
+      "author": "yunoshev",
+      "state": "OPEN",
+      "created": "2026-04-05T00:21:52Z",
+      "updated": "2026-04-05T00:21:52Z",
+      "bpb": 1.1371,
+      "seeds": null,
+      "artifact_bytes": 15880000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-05_EMA_SWA_TTT_LoRA_Fused_Sliding/README.md",
+        "records/track_non_record_16mb/2026-04-05_EMA_SWA_TTT_LoRA_Fused_Sliding/submission.json",
+        "records/track_non_record_16mb/2026-04-05_EMA_SWA_TTT_LoRA_Fused_Sliding/train.log",
+        "records/track_non_record_16mb/2026-04-05_EMA_SWA_TTT_LoRA_Fused_Sliding/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1365,
+      "title": "Non-record: HybridMamba-11 — First SSM with Parallel Associative Scan",
+      "author": "PersusUS",
+      "state": "OPEN",
+      "created": "2026-04-04T23:53:51Z",
+      "updated": "2026-04-04T23:58:01Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 13600000,
+      "technique_summary": "SSM + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-05_HybridMamba11_SSM_ParallelAssociativeScan/README.md",
+        "records/track_non_record_16mb/2026-04-05_HybridMamba11_SSM_ParallelAssociativeScan/submission.json",
+        "records/track_non_record_16mb/2026-04-05_HybridMamba11_SSM_ParallelAssociativeScan/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1364,
       "title": "Record: Pre-quant AdamW TTT + QK-Gain 4.0 — val_bpb 1.1025 (3-seed mean)",
@@ -65,6 +209,69 @@
         "seeds-unknown",
         "artifact-unknown",
         "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1360,
+      "title": "Non-record: Gaussian per-token loss reweighting — what goes wrong and why (+0.014 bpb)",
+      "author": "JulianTang2027",
+      "state": "OPEN",
+      "created": "2026-04-04T21:14:33Z",
+      "updated": "2026-04-05T01:15:51Z",
+      "bpb": 0.014,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-04_GaussianTokenWeighting_NegativeResult/README.md",
+        "records/track_non_record_16mb/2026-04-04_GaussianTokenWeighting_NegativeResult/submission.json",
+        "records/track_non_record_16mb/2026-04-04_GaussianTokenWeighting_NegativeResult/train_baseline_seed1337.log",
+        "records/track_non_record_16mb/2026-04-04_GaussianTokenWeighting_NegativeResult/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-04_GaussianTokenWeighting_NegativeResult/train_sigma2_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1354,
+      "title": "Record: varlen+fused mlp+ttt (bpb=1.1093)",
+      "author": "samacqua",
+      "state": "OPEN",
+      "created": "2026-04-04T19:01:24Z",
+      "updated": "2026-04-05T00:43:40Z",
+      "bpb": 1.1093,
+      "seeds": 0,
+      "artifact_bytes": 15900000,
+      "technique_summary": "TTT + LoRA + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-04_VarLenAttn_FusedMLP_TTT/README.md",
+        "records/track_10min_16mb/2026-04-04_VarLenAttn_FusedMLP_TTT/calc_p.py",
+        "records/track_10min_16mb/2026-04-04_VarLenAttn_FusedMLP_TTT/requirements.txt",
+        "records/track_10min_16mb/2026-04-04_VarLenAttn_FusedMLP_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-04_VarLenAttn_FusedMLP_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-04_VarLenAttn_FusedMLP_TTT/train_seed0.txt",
+        "records/track_10min_16mb/2026-04-04_VarLenAttn_FusedMLP_TTT/train_seed1.txt",
+        "records/track_10min_16mb/2026-04-04_VarLenAttn_FusedMLP_TTT/train_seed2.txt",
+        "records/track_10min_16mb/2026-04-04_VarLenAttn_FusedMLP_TTT/ttt-gain.png"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-0"
       ],
       "confidence": "HIGH"
     },
@@ -157,6 +364,34 @@
       ],
       "track": "record",
       "technique_type": "ttt",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1305,
+      "title": "[Non-record] Scaled Byte-level H-Net matches 4-hour subword-level baseline (H-Net val_bpb = 1.2070)",
+      "author": "DariusFeher",
+      "state": "OPEN",
+      "created": "2026-04-03T16:10:44Z",
+      "updated": "2026-04-05T01:08:15Z",
+      "bpb": 1.207,
+      "seeds": 1337,
+      "artifact_bytes": 15800000,
+      "technique_summary": "GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-01_Scaled_HNet_Byte260_and_Sp1024/README.md",
+        "records/track_non_record_16mb/2026-04-01_Scaled_HNet_Byte260_and_Sp1024/logs/byte260_4hrs.log",
+        "records/track_non_record_16mb/2026-04-01_Scaled_HNet_Byte260_and_Sp1024/logs/sp1024_chunked_divisor_2_4hrs.log",
+        "records/track_non_record_16mb/2026-04-01_Scaled_HNet_Byte260_and_Sp1024/submission.json",
+        "records/track_non_record_16mb/2026-04-01_Scaled_HNet_Byte260_and_Sp1024/train_gpt_byte_hnet.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
       "status": "ALIVE",
       "flags": [],
       "confidence": "HIGH"
@@ -5255,11 +5490,11 @@
     },
     {
       "number": 1138,
-      "title": "Non-record: Whole-Model GTA Megakernel Draft + Manual CUDA Reverse Pass",
+      "title": "Non-record: Real optional megakernel path with ownership-clean reverse bring-up",
       "author": "greqone",
       "state": "OPEN",
       "created": "2026-03-30T16:44:28Z",
-      "updated": "2026-03-31T02:06:48Z",
+      "updated": "2026-04-05T02:22:55Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -5271,9 +5506,11 @@
         "records/track_non_record_16mb/2026-03-28_WholeModelMegakernel_GTA9x512/train_gpt.py"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
+      "compliance_keywords": [
+        "cache_eval"
+      ],
       "track": "non-record",
-      "technique_type": "neural",
+      "technique_type": "cache",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
