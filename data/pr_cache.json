@@ -1,7 +1,44 @@
 {
-  "last_fetch": "2026-04-05T22:35:25.056898+00:00",
-  "api_calls_used": 115,
+  "last_fetch": "2026-04-05T23:37:45.657587+00:00",
+  "api_calls_used": 116,
   "prs": [
+    {
+      "number": 1395,
+      "title": "Record: SP4096 + Linear LR + Depth Recurrence -- val_bpb=1.0924 (3-seed mean)",
+      "author": "dttdrv",
+      "state": "OPEN",
+      "created": "2026-04-05T22:55:21Z",
+      "updated": "2026-04-05T23:11:45Z",
+      "bpb": 1.0924,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_SP4096_LinearLR_DepthRecurrence_1.0924/README.md",
+        "records/track_10min_16mb/2026-04-06_SP4096_LinearLR_DepthRecurrence_1.0924/submission.json",
+        "records/track_10min_16mb/2026-04-06_SP4096_LinearLR_DepthRecurrence_1.0924/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_SP4096_LinearLR_DepthRecurrence_1.0924/train_seed314.log",
+        "records/track_10min_16mb/2026-04-06_SP4096_LinearLR_DepthRecurrence_1.0924/train_seed42.log",
+        "records/track_10min_16mb/2026-04-06_SP4096_LinearLR_DepthRecurrence_1.0924/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "cache"
+      ],
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1387,
       "title": "Non-record submission: Depth-Recurrent U-Net Transformer",
