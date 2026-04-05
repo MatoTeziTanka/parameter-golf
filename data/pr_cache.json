@@ -1,7 +1,71 @@
 {
-  "last_fetch": "2026-04-05T17:35:23.864437+00:00",
-  "api_calls_used": 113,
+  "last_fetch": "2026-04-05T18:51:39.023927+00:00",
+  "api_calls_used": 114,
   "prs": [
+    {
+      "number": 1387,
+      "title": "Non-record submission: Depth-Recurrent U-Net Transformer",
+      "author": "Muhammad-Ahmed-Rayyan",
+      "state": "OPEN",
+      "created": "2026-04-05T18:08:05Z",
+      "updated": "2026-04-05T18:25:30Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_DepthRecurrent_UNetTransformer/.ipynb_checkpoints/README-checkpoint.md",
+        "records/track_non_record_16mb/2026-03-30_DepthRecurrent_UNetTransformer/.ipynb_checkpoints/submission-checkpoint.json",
+        "records/track_non_record_16mb/2026-03-30_DepthRecurrent_UNetTransformer/README.md",
+        "records/track_non_record_16mb/2026-03-30_DepthRecurrent_UNetTransformer/submission.json",
+        "records/track_non_record_16mb/2026-03-30_DepthRecurrent_UNetTransformer/train.log",
+        "records/track_non_record_16mb/2026-03-30_DepthRecurrent_UNetTransformer/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1386,
+      "title": "Non-record submission: 11L XSA4 + EMA + BigramHash3072 + LZMA (1.1452 BPB)",
+      "author": "Buld1n",
+      "state": "OPEN",
+      "created": "2026-04-05T17:45:32Z",
+      "updated": "2026-04-05T17:45:32Z",
+      "bpb": 1.14523122,
+      "seeds": null,
+      "artifact_bytes": 15616435,
+      "technique_summary": "INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-05_11L_XSA4_EMA_LZMA_Bigram3072_1.1452/README.md",
+        "records/track_10min_16mb/2026-04-05_11L_XSA4_EMA_LZMA_Bigram3072_1.1452/requirements.txt",
+        "records/track_10min_16mb/2026-04-05_11L_XSA4_EMA_LZMA_Bigram3072_1.1452/submission.json",
+        "records/track_10min_16mb/2026-04-05_11L_XSA4_EMA_LZMA_Bigram3072_1.1452/train.log",
+        "records/track_10min_16mb/2026-04-05_11L_XSA4_EMA_LZMA_Bigram3072_1.1452/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1384,
       "title": "Progressive Depth + Hedge Mixer — val_bpb 1.1441 (3-seed mean)",
@@ -138,31 +202,30 @@
     },
     {
       "number": 1380,
-      "title": "Non-record: Focal Loss for LM Pretraining — 1.1567 int8 BPB on RTX 4000 Ada (3-line change)",
+      "title": "Non-record: Cosine LR Schedule — -0.070 BPB improvement + Focal Loss Investigation (corrected)",
       "author": "ranausmanai",
       "state": "OPEN",
       "created": "2026-04-05T12:37:07Z",
-      "updated": "2026-04-05T15:02:56Z",
-      "bpb": 1.1194,
-      "seeds": null,
+      "updated": "2026-04-05T18:03:02Z",
+      "bpb": 0.07,
+      "seeds": 2,
       "artifact_bytes": null,
-      "technique_summary": "TTT + Muon + INT6 + INT8 + EMA",
+      "technique_summary": "EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-05_FocalLoss_CosineLR_LanguageModeling/README.md",
-        "records/track_non_record_16mb/2026-04-05_FocalLoss_CosineLR_LanguageModeling/submission.json"
+        "records/track_non_record_16mb/2026-04-05_FocalLoss_CosineLR_LanguageModeling/submission.json",
+        "records/track_non_record_16mb/2026-04-05_FocalLoss_CosineLR_LanguageModeling/train_gpt.py"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [
-        "ttt"
-      ],
+      "compliance_keywords": [],
       "track": "non-record",
-      "technique_type": "ttt",
+      "technique_type": "neural",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
+        "seeds-only-2",
         "artifact-unknown"
       ],
       "confidence": "HIGH"
