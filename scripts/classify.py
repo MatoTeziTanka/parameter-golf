@@ -217,11 +217,17 @@ def _classify_technique_tags(pr: dict[str, Any]) -> list[str]:
 
     combined = f"{title} {body} {' '.join(compliance_keywords)} {path_str}"
 
-    tags: list[str] = ["neural"]
-    if any(sig in combined for sig in _TTT_SIGNALS):
-        tags.append("ttt")
-    if any(sig in combined for sig in _CACHE_SIGNALS):
-        tags.append("cache")
+    has_ttt = any(sig in combined for sig in _TTT_SIGNALS)
+    has_cache = any(sig in combined for sig in _CACHE_SIGNALS)
+
+    tags: list[str] = []
+    if not has_ttt and not has_cache:
+        tags.append("neural")
+    else:
+        if has_ttt:
+            tags.append("ttt")
+        if has_cache:
+            tags.append("cache")
     return tags
 
 
