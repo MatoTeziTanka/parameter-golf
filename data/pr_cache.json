@@ -1,7 +1,111 @@
 {
-  "last_fetch": "2026-04-05T13:05:18.293257+00:00",
-  "api_calls_used": 110,
+  "last_fetch": "2026-04-05T14:06:48.400880+00:00",
+  "api_calls_used": 111,
   "prs": [
+    {
+      "number": 1383,
+      "title": "Non-record: Neuromodulatory Depth-Recurrent Transformer with FiLM-only TTT (WIP, val_bpb=1.3151)",
+      "author": "nirmathur",
+      "state": "OPEN",
+      "created": "2026-04-05T14:04:14Z",
+      "updated": "2026-04-05T14:04:14Z",
+      "bpb": 1.3151,
+      "seeds": null,
+      "artifact_bytes": 12870000,
+      "technique_summary": "TTT + Muon + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence/README.md",
+        "records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence/submission.json",
+        "records/track_non_record_16mb/2026-04-04_NeuromodulatoryRecurrence/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1382,
+      "title": " WIP: Mamba-Attention Hybrid — 18L (15 SSM + 3 GQA), First SSM Entry",
+      "author": "johnlennyt5",
+      "state": "OPEN",
+      "created": "2026-04-05T13:19:28Z",
+      "updated": "2026-04-05T13:19:28Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 7300000,
+      "technique_summary": "Muon + SSM + GPTQ + INT6",
+      "file_paths": [
+        "CLAUDE.md",
+        "requirements.txt",
+        "run_mamba_hybrid.sh",
+        "run_smoke_1gpu.sh",
+        "specs/MASTERPLAN.md",
+        "specs/arch1_mamba_hybrid.md",
+        "tests/test_e2e_cpu_smoke.py",
+        "tests/test_hybrid_gpt.py",
+        "tests/test_local_prelaunch.py",
+        "tests/test_mamba_block.py",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1381,
+      "title": "Cautious Muon + SP4096 + Depth Recurrence — val_bpb 1.1604 (non-record)",
+      "author": "X-Abhishek-X",
+      "state": "OPEN",
+      "created": "2026-04-05T13:12:14Z",
+      "updated": "2026-04-05T13:36:16Z",
+      "bpb": 1.1604,
+      "seeds": 3,
+      "artifact_bytes": 15179504,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-05_CautiousMuon_SP4096_DepthRecur/README.md",
+        "records/track_10min_16mb/2026-04-05_CautiousMuon_SP4096_DepthRecur/submission.json",
+        "records/track_10min_16mb/2026-04-05_CautiousMuon_SP4096_DepthRecur/train_gpt.py",
+        "records/track_10min_16mb/2026-04-05_CautiousMuon_SP4096_DepthRecur/train_seed314.log",
+        "records/track_10min_16mb/2026-04-05_CautiousMuon_SP4096_DepthRecur/train_seed42.log",
+        "records/track_10min_16mb/2026-04-05_CautiousMuon_SP4096_DepthRecur/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1380,
       "title": "Non-record: Focal Loss for LM Pretraining — 1.1567 int8 BPB on RTX 4000 Ada (3-line change)",
@@ -2454,7 +2558,7 @@
       "author": "deborahnelson8788726",
       "state": "OPEN",
       "created": "2026-04-02T02:44:32Z",
-      "updated": "2026-04-04T17:11:14Z",
+      "updated": "2026-04-05T13:27:58Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 14200000,
@@ -2469,15 +2573,15 @@
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "technique_tags": [
-        "neural"
-      ]
+      "confidence": "HIGH"
     },
     {
       "number": 1245,
