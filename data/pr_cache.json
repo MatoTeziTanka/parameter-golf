@@ -1,7 +1,79 @@
 {
-  "last_fetch": "2026-04-05T11:33:36.113215+00:00",
-  "api_calls_used": 109,
+  "last_fetch": "2026-04-05T13:05:18.293257+00:00",
+  "api_calls_used": 110,
   "prs": [
+    {
+      "number": 1380,
+      "title": "Non-record: Focal Loss for LM Pretraining — 1.1567 int8 BPB on RTX 4000 Ada (3-line change)",
+      "author": "ranausmanai",
+      "state": "OPEN",
+      "created": "2026-04-05T12:37:07Z",
+      "updated": "2026-04-05T12:44:38Z",
+      "bpb": 1.1194,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-05_FocalLoss_CosineLR_LanguageModeling/README.md",
+        "records/track_non_record_16mb/2026-04-05_FocalLoss_CosineLR_LanguageModeling/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1379,
+      "title": "Record: 0.4162 BPB mixed quant ngram (post-fix reruns)",
+      "author": "LucasErcolano",
+      "state": "OPEN",
+      "created": "2026-04-05T12:30:12Z",
+      "updated": "2026-04-05T12:51:34Z",
+      "bpb": 0.4162,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-04_LucasErcolano_MixedQuantNgram/README.md",
+        "records/track_10min_16mb/2026-04-04_LucasErcolano_MixedQuantNgram/eval/eval.sh",
+        "records/track_10min_16mb/2026-04-04_LucasErcolano_MixedQuantNgram/logs/cloud_seed1337_mlp30_train.txt",
+        "records/track_10min_16mb/2026-04-04_LucasErcolano_MixedQuantNgram/logs/cloud_seed42_mlp30_train.txt",
+        "records/track_10min_16mb/2026-04-04_LucasErcolano_MixedQuantNgram/logs/cloud_seed7_rerun_train.txt",
+        "records/track_10min_16mb/2026-04-04_LucasErcolano_MixedQuantNgram/submission.json",
+        "records/track_10min_16mb/2026-04-04_LucasErcolano_MixedQuantNgram/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval",
+        "leaky_relu",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "cache"
+      ],
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1378,
       "title": "Non Record: GPTQ int7 XSA BigramHash — val_bpb 1.1711",
@@ -196,6 +268,50 @@
         "seeds-unknown",
         "artifact-unknown"
       ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1370,
+      "title": "Non-record: 10L Gated DeltaNet (PureGDN) — val_bpb 1.003028 (3-seed mean, legal TTT)",
+      "author": "Christopher-Lee-McClendon",
+      "state": "OPEN",
+      "created": "2026-04-05T02:58:02Z",
+      "updated": "2026-04-05T12:57:29Z",
+      "bpb": 1.003028,
+      "seeds": 3,
+      "artifact_bytes": 15170000,
+      "technique_summary": "TTT + SwiGLU + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/README.md",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/architectures.py",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/configs.py",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/eval_ttt.py",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/final_model.int6.ptz",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/requirements.txt",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/submission.json",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/supplementary/eval_seed1337_legal_ttt.log",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/supplementary/eval_seed2025_legal_ttt.log",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/supplementary/eval_seed42_legal_ttt.log",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/supplementary/seed_runs/train_s1337.log",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/supplementary/seed_runs/train_s2025.log",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/supplementary/seed_runs/train_s42.log",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/supplementary/slurm_eval_legal_ttt.sh",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/supplementary/slurm_train_2xA100.sh",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/train.log",
+        "records/track_non_record_16mb/2026-04-04_10L_GDN_PureGDN_7k_LegalTTT/train_gdn_7k.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -989,7 +1105,7 @@
       "author": "MatoTeziTanka",
       "state": "OPEN",
       "created": "2026-04-03T07:37:15Z",
-      "updated": "2026-04-03T10:04:54Z",
+      "updated": "2026-04-05T12:37:51Z",
       "bpb": 1.0819,
       "seeds": 3,
       "artifact_bytes": 112437059,
@@ -1012,13 +1128,13 @@
       ],
       "track": "record",
       "technique_type": "hybrid",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "technique_tags": [
         "ttt",
         "cache"
-      ]
+      ],
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 1284,
@@ -26594,12 +26710,12 @@
       "number": 571,
       "title": "Non-record: trigram phrase-memory ablation on 1×H100: negative result (1.2791 BPB best)",
       "author": "maxwellcipher",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-23T20:07:34Z",
-      "updated": "2026-03-23T20:07:34Z",
+      "updated": "2026-04-05T12:53:38Z",
       "bpb": 1.2791,
       "seeds": null,
-      "artifact_bytes": 16000000,
+      "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
         "records/track_non_record_16mb/2026-03-23_PhraseMemory1xH100GrantAttempt/README.md",
@@ -26612,16 +26728,16 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
-      ]
+      ],
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 570,
