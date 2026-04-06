@@ -262,10 +262,9 @@ def _detect_techniques_from_code(code: str) -> dict[str, bool]:
             result["ttt"] = True
 
     # Two-pass / rescoring
-    if re.search(r'TWO_PASS_ENABLED["\'],\s*["\'](\w+)', code):
-        val_match = re.search(r'TWO_PASS_ENABLED["\'],\s*["\'](\w+)', code)
-        if val_match and val_match.group(1) not in ("0", "False", "false"):
-            result["cache"] = True
+    two_pass_match = re.search(r'TWO_PASS_ENABLED["\'],\s*["\'](\w+)', code)
+    if two_pass_match and two_pass_match.group(1) not in ("0", "False", "false"):
+        result["cache"] = True
 
     # GPTQ
     if re.search(r'\bgptq\b.*\bcalibrat', code, re.IGNORECASE):

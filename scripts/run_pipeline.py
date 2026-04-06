@@ -163,7 +163,7 @@ def _type_badge(technique_type: str) -> str:
         "cache": ("badge-cache", "Cache", "Uses n-gram or eval-time caching — check compliance"),
         "ttt": ("badge-ttt", "TTT", "Test-time training — adapts model weights during evaluation"),
         "hybrid": ("badge-hybrid", "Hybrid", "Combines neural + cache or TTT techniques"),
-        "gptq": ("badge-neural", "GPTQ", "Uses GPTQ post-training quantization with calibration"),
+        "gptq": ("badge-gptq", "GPTQ", "Uses GPTQ post-training quantization with calibration"),
     }
     cls, label, tip = badges.get(technique_type, ("badge-incomplete", technique_type or "?", "Type unknown"))
     return f'<span class="badge {cls}"{_tooltip_attr(tip)}>{label}</span>'
