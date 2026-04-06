@@ -1,7 +1,85 @@
 {
-  "last_fetch": "2026-04-06T17:50:59.899669+00:00",
-  "api_calls_used": 123,
+  "last_fetch": "2026-04-06T19:06:37.358744+00:00",
+  "api_calls_used": 124,
   "prs": [
+    {
+      "number": 1424,
+      "title": "Non-record: Extended Compute Scaling Analysis (50K steps, 1.0858 BPB, 3 seeds (each run ~12 hours on 4xA100MIG))",
+      "author": "OnlyJundong",
+      "state": "OPEN",
+      "created": "2026-04-06T19:03:31Z",
+      "updated": "2026-04-06T19:03:31Z",
+      "bpb": 1.0858,
+      "seeds": 3,
+      "artifact_bytes": 15050000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/README.md",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/run_scaling_20k.sh",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/submission.json",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/train_step20k_seed1337.txt",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/train_step20k_seed2024.txt",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/train_step20k_seed42.txt",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_50K_12hours_4xA100MIG_ScalingAnalysis/README.md",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_50K_12hours_4xA100MIG_ScalingAnalysis/run_scaling_50k.sh",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_50K_12hours_4xA100MIG_ScalingAnalysis/submission.json",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_50K_12hours_4xA100MIG_ScalingAnalysis/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_50K_12hours_4xA100MIG_ScalingAnalysis/train_step50k_seed1337.txt",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_50K_12hours_4xA100MIG_ScalingAnalysis/train_step50k_seed2024.txt",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_50K_12hours_4xA100MIG_ScalingAnalysis/train_step50k_seed42.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1423,
+      "title": "Record: SP8192 + Pre-Quant TTT + QK-Gain 5.0 + Depth Recurrence + MuonEq-R — val_bpb 1.0791 (3-seed mean)",
+      "author": "aryanbhosale",
+      "state": "OPEN",
+      "created": "2026-04-06T17:51:39Z",
+      "updated": "2026-04-06T17:51:39Z",
+      "bpb": 1.0791,
+      "seeds": 3,
+      "artifact_bytes": 15120000,
+      "technique_summary": "TTT + GPTQ + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_SP8192_PreQuantTTT_QKGain5/README.md",
+        "records/track_10min_16mb/2026-04-06_SP8192_PreQuantTTT_QKGain5/submission.json",
+        "records/track_10min_16mb/2026-04-06_SP8192_PreQuantTTT_QKGain5/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_SP8192_PreQuantTTT_QKGain5/train_seed314.log",
+        "records/track_10min_16mb/2026-04-06_SP8192_PreQuantTTT_QKGain5/train_seed42.log",
+        "records/track_10min_16mb/2026-04-06_SP8192_PreQuantTTT_QKGain5/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1421,
       "title": "[Record] 11L Depth Recurrence + EMA Tuning (0.9965) — val_bpb 1.0925",
@@ -42,11 +120,11 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-06T16:14:47Z",
-      "updated": "2026-04-06T16:54:07Z",
+      "updated": "2026-04-06T18:54:52Z",
       "bpb": 1.08014,
       "seeds": 5,
-      "artifact_bytes": 64137,
-      "technique_summary": "Muon + SwiGLU + GPTQ + INT8 + EMA + N-gram",
+      "artifact_bytes": 19811,
+      "technique_summary": "TTT + Muon + SwiGLU + GPTQ + INT8 + EMA + N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/README.md",
         "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/cutlass_evt_fusion/csrc/gemm_act_grad.cu",
@@ -67,6 +145,7 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
+        "ttt",
         "ngram",
         "two_pass",
         "gptq_eval",
@@ -75,7 +154,7 @@
         "ngram_path"
       ],
       "track": "record",
-      "technique_type": "cache",
+      "technique_type": "hybrid",
       "technique_tags": [
         "gptq"
       ],
@@ -430,23 +509,26 @@
       "author": "greqone",
       "state": "OPEN",
       "created": "2026-04-06T03:33:53Z",
-      "updated": "2026-04-06T15:15:00Z",
+      "updated": "2026-04-06T18:38:56Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
-      "technique_summary": "SSM",
+      "technique_summary": "TTT + SSM",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/README.md",
         "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/ablation_scoreboard.tsv",
         "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/best_run_summary.json",
         "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/submission.json",
         "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/train.log",
-        "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/train_gpt.py"
+        "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/variance_summary.json"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
       "track": "non-record",
-      "technique_type": "neural",
+      "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
@@ -722,6 +804,43 @@
       "technique_source": "code"
     },
     {
+      "number": 1394,
+      "title": "Record: SP8192 + GPTQ Embeddings + Depth Recurrence + MuonEq-R + SDClip  — val_bpb 1.08563 (5 seed mean)",
+      "author": "clarkkev",
+      "state": "OPEN",
+      "created": "2026-04-05T21:06:33Z",
+      "updated": "2026-04-06T18:46:34Z",
+      "bpb": 1.08996,
+      "seeds": 5,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-05_SP8192_GPTQ-Embeddings_SDClip_Loop45x2/README.md",
+        "records/track_10min_16mb/2026-04-05_SP8192_GPTQ-Embeddings_SDClip_Loop45x2/quantization_example.png",
+        "records/track_10min_16mb/2026-04-05_SP8192_GPTQ-Embeddings_SDClip_Loop45x2/submission.json",
+        "records/track_10min_16mb/2026-04-05_SP8192_GPTQ-Embeddings_SDClip_Loop45x2/train_gpt.py",
+        "records/track_10min_16mb/2026-04-05_SP8192_GPTQ-Embeddings_SDClip_Loop45x2/train_gpt_human.py",
+        "records/track_10min_16mb/2026-04-05_SP8192_GPTQ-Embeddings_SDClip_Loop45x2/train_seed1.log",
+        "records/track_10min_16mb/2026-04-05_SP8192_GPTQ-Embeddings_SDClip_Loop45x2/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-05_SP8192_GPTQ-Embeddings_SDClip_Loop45x2/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-05_SP8192_GPTQ-Embeddings_SDClip_Loop45x2/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-05_SP8192_GPTQ-Embeddings_SDClip_Loop45x2/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
       "number": 1387,
       "title": "Non-record submission: Depth-Recurrent U-Net Transformer",
       "author": "Muhammad-Ahmed-Rayyan",
@@ -856,7 +975,7 @@
       "author": "johnlennyt5",
       "state": "OPEN",
       "created": "2026-04-05T13:19:28Z",
-      "updated": "2026-04-06T16:31:19Z",
+      "updated": "2026-04-06T18:25:41Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 7300000,
@@ -864,14 +983,8 @@
       "file_paths": [
         "CLAUDE.md",
         "requirements.txt",
-        "run_mamba_hybrid.sh",
-        "run_smoke_1gpu.sh",
         "specs/MASTERPLAN.md",
         "specs/arch1_mamba_hybrid.md",
-        "tests/test_e2e_cpu_smoke.py",
-        "tests/test_hybrid_gpt.py",
-        "tests/test_local_prelaunch.py",
-        "tests/test_mamba_block.py",
         "train_gpt.py"
       ],
       "maintainer_comments": [],
@@ -1204,9 +1317,9 @@
       "number": 1370,
       "title": "Non-record: 10L Gated DeltaNet (PureGDN) — val_bpb 1.003028 (3-seed mean, legal TTT)",
       "author": "Christopher-Lee-McClendon",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-05T02:58:02Z",
-      "updated": "2026-04-05T22:29:19Z",
+      "updated": "2026-04-06T18:03:58Z",
       "bpb": 1.003028,
       "seeds": 3,
       "artifact_bytes": 15170000,
@@ -1253,10 +1366,12 @@
       "technique_tags": [
         "ttt"
       ],
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1369,
@@ -5441,10 +5556,10 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-31T20:41:06Z",
-      "updated": "2026-04-01T02:46:21Z",
-      "bpb": null,
+      "updated": "2026-04-06T18:58:22Z",
+      "bpb": 3.3168,
       "seeds": null,
-      "artifact_bytes": null,
+      "artifact_bytes": 16000000,
       "technique_summary": "SSM",
       "file_paths": [
         "APPROACH.md",
@@ -5456,17 +5571,15 @@
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1196,
@@ -5474,8 +5587,8 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-31T20:41:04Z",
-      "updated": "2026-04-01T02:46:20Z",
-      "bpb": null,
+      "updated": "2026-04-06T18:57:55Z",
+      "bpb": 2.202,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "",
@@ -5489,17 +5602,16 @@
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1195,
@@ -5507,11 +5619,11 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-31T20:41:01Z",
-      "updated": "2026-04-01T02:46:18Z",
-      "bpb": null,
+      "updated": "2026-04-06T18:57:30Z",
+      "bpb": 2.2017,
       "seeds": null,
-      "artifact_bytes": null,
-      "technique_summary": "",
+      "artifact_bytes": 15000000,
+      "technique_summary": "LoRA",
       "file_paths": [
         "APPROACH.md",
         "records/track_non_record_16mb/2026-03-31_RandomLinearMapAdapters/README.md",
@@ -5522,17 +5634,15 @@
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1194,
@@ -5540,8 +5650,8 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-31T20:40:59Z",
-      "updated": "2026-04-01T02:46:17Z",
-      "bpb": null,
+      "updated": "2026-04-06T18:57:02Z",
+      "bpb": 3.3801,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "",
@@ -5555,17 +5665,16 @@
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1193,
@@ -5573,11 +5682,11 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-31T20:40:56Z",
-      "updated": "2026-04-01T02:46:15Z",
-      "bpb": null,
+      "updated": "2026-04-06T18:54:56Z",
+      "bpb": 1.439,
       "seeds": null,
       "artifact_bytes": 2870000,
-      "technique_summary": "",
+      "technique_summary": "TTT + INT6",
       "file_paths": [
         "APPROACH.md",
         "records/track_non_record_16mb/2026-03-31_UniversalTransformer_AdaptiveDensity/README.md",
@@ -5585,19 +5694,20 @@
         "records/track_non_record_16mb/2026-03-31_UniversalTransformer_AdaptiveDensity/train_gpt.py"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
-      "track": "non-record",
-      "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown"
+      "compliance_keywords": [
+        "ttt"
       ],
-      "confidence": "HIGH",
+      "track": "non-record",
+      "technique_type": "ttt",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1192,
@@ -5605,11 +5715,11 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-31T20:40:00Z",
-      "updated": "2026-04-01T02:46:14Z",
+      "updated": "2026-04-06T18:59:16Z",
       "bpb": 1.356,
       "seeds": null,
       "artifact_bytes": null,
-      "technique_summary": "",
+      "technique_summary": "LeakyReLU²",
       "file_paths": [
         "APPROACH.md",
         "records/track_non_record_16mb/2026-03-31_Megakernels_FusedTriton/README.md",
@@ -5622,16 +5732,16 @@
       ],
       "track": "non-record",
       "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 1191,
@@ -5639,11 +5749,11 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-31T20:39:26Z",
-      "updated": "2026-04-01T02:46:12Z",
+      "updated": "2026-04-06T18:58:48Z",
       "bpb": 1.3587,
       "seeds": null,
-      "artifact_bytes": 16000000,
-      "technique_summary": "TTT + INT8",
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
       "file_paths": [
         "APPROACH.md",
         "records/track_non_record_16mb/2026-03-31_HNet_DynamicChunking_LearnedTokenization/README.md",
@@ -5656,15 +5766,16 @@
       ],
       "track": "non-record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1190,
@@ -17327,7 +17438,7 @@
       "author": "clthuang",
       "state": "OPEN",
       "created": "2026-03-26T18:00:01Z",
-      "updated": "2026-04-05T21:48:29Z",
+      "updated": "2026-04-06T18:19:50Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -17391,12 +17502,12 @@
       "technique_tags": [
         "neural"
       ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb"
       ],
-      "confidence": "HIGH",
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 876,
@@ -24667,15 +24778,15 @@
     },
     {
       "number": 675,
-      "title": "Record: Hypergradient SLOT-24 — val_bpb 0.7625 (3-seed mean)",
+      "title": "Record: L-BFGS SLOT — val_bpb 0.5793 (3-seed mean)",
       "author": "ChideraIbe123",
       "state": "OPEN",
       "created": "2026-03-25T03:58:35Z",
-      "updated": "2026-04-06T16:30:52Z",
-      "bpb": 0.7625,
+      "updated": "2026-04-06T18:55:16Z",
+      "bpb": 0.5793,
       "seeds": 3,
-      "artifact_bytes": 15750000,
-      "technique_summary": "N-gram + Two-pass",
+      "artifact_bytes": 15740000,
+      "technique_summary": "N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/README.md",
         "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/logs/seed1337.log",
@@ -24683,6 +24794,12 @@
         "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/logs/seed42.log",
         "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/submission.json",
         "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/README.md",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/logs/seed1337.log",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/logs/seed2025.log",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/logs/seed42.log",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/submission.json",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/train_gpt.py",
         "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/README.md",
         "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/submission.json",
         "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/train.log",
@@ -24692,7 +24809,6 @@
       "maintainer_comments": [],
       "compliance_keywords": [
         "ngram",
-        "two_pass",
         "cache_eval"
       ],
       "track": "non-record",
