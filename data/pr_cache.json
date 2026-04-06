@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-06T08:53:29.433078+00:00",
-  "api_calls_used": 119,
+  "last_fetch": "2026-04-06T10:12:43.791007+00:00",
+  "api_calls_used": 120,
   "prs": [
     {
       "number": 1408,
@@ -312,9 +312,9 @@
       "number": 1400,
       "title": "Record: Hadamard-Rotated GPTQ + dTTT + Recur2 (1.1035 BPB)",
       "author": "tmancino",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-06T01:52:00Z",
-      "updated": "2026-04-06T01:52:00Z",
+      "updated": "2026-04-06T09:53:17Z",
       "bpb": 1.1035,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -343,9 +343,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1399,
