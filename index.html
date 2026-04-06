@@ -191,7 +191,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
         <li><strong style="color:#fff;">1,425+ PRs</strong> submitted, <strong style="color:#fff;">1,265</strong> classified by this site, <strong style="color:#fff;">518+</strong> unique contributors</li>
         <li><strong style="color:#fff;">$1,000,000</strong> in compute credits committed by OpenAI &mdash; with no public disbursement transparency, broken application form (<a href="https://github.com/openai/parameter-golf/issues/942" style="color:#ffaaaa;">#942</a>), and participants reporting <strong style="color:#fff;">$1,000+</strong> in personal compute spend waiting on credits that never arrived</li>
         <li><strong style="color:#fff;">32 comments</strong> of community technique analysis, compliance writeups, slope sweeps, and rule clarifications on #140 &mdash; now orphaned</li>
-        <li><strong style="color:#fff;">Pending rulings</strong> in <a href="https://github.com/openai/parameter-golf/issues/677" style="color:#ffaaaa;">#677 (illegal submissions megathread)</a> &mdash; <a href="https://github.com/valerio-oai" style="color:#ffaaaa;">@valerio-oai</a> said "considering options" on April 4, then went silent. Eval-time cache legality, two-pass rescoring, bucket inflation &mdash; <strong style="color:#fff;">all still unresolved</strong> with 24 days left in the competition</li>
+        <li><strong style="color:#fff;">Pending rulings</strong> in <a href="https://github.com/openai/parameter-golf/issues/677" style="color:#ffaaaa;">#677 (illegal submissions megathread)</a> &mdash; <a href="https://github.com/valerio-oai" style="color:#ffaaaa;">@valerio-oai</a> last active April 2, then silent. Eval-time cache legality, two-pass rescoring, bucket inflation &mdash; <strong style="color:#fff;">all still unresolved</strong> with 24 days left in the competition</li>
         <li><strong style="color:#fff;">Discord channel</strong> exists but is unofficial and unindexed &mdash; no maintainer presence reported there either. PR review backlog growing</li>
         <li><strong style="color:#fff;">Community filled the gap</strong> when the auto-commentary agent went dark for days at a time. We did unpaid maintenance work on a $1M competition. The thank-you was a hang-up.</li>
       </ul>
@@ -224,6 +224,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 
 <nav class="nav">
   <a href="#">Home</a>
+  <a href="#maintainers" style="color:#ff6b6b;font-weight:600;">&#9888; Mod Tracker</a>
   <a href="#checklist">Checklist</a>
   <a href="#leaderboard">Leaderboard</a>
   <a href="#funding">Funding</a>
@@ -260,6 +261,86 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </script>
 
 <div class="container">
+
+<!-- SECTION: MAINTAINER ACTIVITY TRACKER -->
+<section id="maintainers">
+<h2>Maintainer Activity Tracker</h2>
+<p style="color:var(--text-dim);margin-bottom:1rem;">Public accountability board for the OpenAI maintainers with merge/close authority on <code>openai/parameter-golf</code>. Validated via author_association on closed PRs (only collaborators can close other people's PRs) and OAI account suffix. Auto-updated on each Agora rebuild.</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:1rem;">
+
+<div class="card" style="margin:0;border-left:4px solid #ff6b6b;">
+  <div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;">
+    <div>
+      <h3 style="margin:0;color:var(--text-bright);font-size:1.05rem;"><a href="https://github.com/notapplica" style="color:var(--text-bright);">@notapplica</a></h3>
+      <div style="font-size:0.78rem;color:var(--text-dim);margin-top:0.15rem;">OpenAI &middot; ran #140 commentary agent</div>
+    </div>
+    <span style="background:#ff6b6b;color:#fff;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:700;">~13H AGO</span>
+  </div>
+  <p style="font-size:0.82rem;color:var(--text-dim);margin:0.6rem 0 0;line-height:1.45;">
+    <strong style="color:#ff6b6b;">Last action:</strong> Closed Issue <a href="https://github.com/openai/parameter-golf/issues/140">#140</a> at 2026-04-06 02:57 UTC with comment <em>"Hey guys I'm turning off this agent now."</em>
+    <br><strong>Authority signal:</strong> <code>CONTRIBUTOR</code>, closed #140 (own issue, but ran the bot).
+    <br><strong>Account:</strong> Created 2025-08-25.
+  </p>
+</div>
+
+<div class="card" style="margin:0;border-left:4px solid var(--yellow);">
+  <div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;">
+    <div>
+      <h3 style="margin:0;color:var(--text-bright);font-size:1.05rem;"><a href="https://github.com/valerio-oai" style="color:var(--text-bright);">@valerio-oai</a></h3>
+      <div style="font-size:0.78rem;color:var(--text-dim);margin-top:0.15rem;">OpenAI (-oai suffix) &middot; rule rulings</div>
+    </div>
+    <span style="background:var(--yellow);color:#000;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:700;">4 DAYS</span>
+  </div>
+  <p style="font-size:0.82rem;color:var(--text-dim);margin:0.6rem 0 0;line-height:1.45;">
+    <strong style="color:var(--yellow);">Last action:</strong> Closed PR <a href="https://github.com/openai/parameter-golf/pull/1185">#1185</a> at 2026-04-02 06:24 UTC ("invalid n-gram cache" ruling).
+    <br><strong>Authority signal:</strong> Closed PR #1019 (someone else's record). Made March 27 mass-closure rulings on #677.
+    <br><strong>Account:</strong> Created 2026-02-10 &mdash; <em>purpose-built for this competition</em>.
+    <br><strong style="color:var(--yellow);">Pending:</strong> Said "considering options" on #677 about eval-time cache rulings &mdash; 4 days silent on the answer.
+  </p>
+</div>
+
+<div class="card" style="margin:0;border-left:4px solid #ff6b6b;">
+  <div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;">
+    <div>
+      <h3 style="margin:0;color:var(--text-bright);font-size:1.05rem;"><a href="https://github.com/0hq" style="color:var(--text-bright);">@0hq</a></h3>
+      <div style="font-size:0.78rem;color:var(--text-dim);margin-top:0.15rem;">Will DePue &middot; OpenAI &middot; competition founder</div>
+    </div>
+    <span style="background:#ff6b6b;color:#fff;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:700;">12 DAYS</span>
+  </div>
+  <p style="font-size:0.82rem;color:var(--text-dim);margin:0.6rem 0 0;line-height:1.45;">
+    <strong style="color:#ff6b6b;">Last action:</strong> 2026-03-25 23:07 UTC, push event + comment activity. Opened <a href="https://github.com/openai/parameter-golf/issues/677">#677 Illegal Submissions Megathread</a>.
+    <br><strong>Authority signal:</strong> <code>COLLABORATOR</code>. Repo founder.
+    <br><strong>Account:</strong> Created 2017-08-02.
+  </p>
+</div>
+
+<div class="card" style="margin:0;border-left:4px solid #ff6b6b;">
+  <div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;">
+    <div>
+      <h3 style="margin:0;color:var(--text-bright);font-size:1.05rem;"><a href="https://github.com/yuzhougu-oai" style="color:var(--text-bright);">@yuzhougu-oai</a></h3>
+      <div style="font-size:0.78rem;color:var(--text-dim);margin-top:0.15rem;">OpenAI (-oai suffix) &middot; PR merging</div>
+    </div>
+    <span style="background:#ff6b6b;color:#fff;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:700;">17 DAYS</span>
+  </div>
+  <p style="font-size:0.82rem;color:var(--text-dim);margin:0.6rem 0 0;line-height:1.45;">
+    <strong style="color:#ff6b6b;">Last action:</strong> 2026-03-20 21:37 UTC, PR / Delete events on the repo.
+    <br><strong>Authority signal:</strong> <code>CONTRIBUTOR</code>. Has merged PRs on the repo.
+    <br><strong>Account:</strong> Created 2025-12-18.
+  </p>
+</div>
+
+</div>
+
+<div class="card" style="background:rgba(255,170,51,0.08);border-left:3px solid #ffaa33;margin:0;font-size:0.85rem;color:var(--text-dim);">
+  <strong style="color:#ffaa33;">Validation methodology:</strong>
+  Authority confirmed by checking <code>author_association</code> on closed PRs (<code>COLLABORATOR</code> = explicit repo collaborator), the <code>-oai</code> account suffix (OpenAI staff convention), and the canonical signal of <em>closing another user's PR</em> &mdash; only users with merge authority can do this. Cross-checked against <code>/users/&lt;handle&gt;/events</code> for last public activity timestamp. If you know of another mod with authority who isn't listed, <a href="https://github.com/MatoTeziTanka/parameter-golf/issues/new">open an issue</a> &mdash; this list updates on every Agora rebuild.
+</div>
+
+<p style="color:var(--text-dim);font-size:0.78rem;margin-top:0.6rem;text-align:right;">
+  Snapshot: 2026-04-06 ~16:00 UTC. Days silent computed at snapshot time.
+</p>
+</section>
 
 <!-- SECTION 1: CHECKLIST -->
 <section id="checklist">

@@ -15,7 +15,11 @@
       "NEW SECTION: 'Community Infrastructure (We Built This)' — visible inventory of the HF dataset, CF Worker network storage, Docker image, RunPod template, Agora itself, and community toolkit. All Light Speed Up out-of-pocket. Linked in nav as '⚡ Infra We Built'.",
       "Reframed CF Worker card to lead with the network volume story: original RunPod Network Volume plan died on region-locking + GPU availability constraints. Built pgolf-api.lightspeedup.com (CF Worker + R2) as the cross-provider replacement that actually works.",
       "Full curl examples on the page for save/resume/list operations on the checkpoint API — no signup required, GitHub PAT IS the identity",
-      "Added vocab_sweep.py experiment script (CPU/GPU phases for SP tokenizer optimization) — separate from Agora deploy"
+      "Added vocab_sweep.py experiment script (CPU/GPU phases for SP tokenizer optimization) — separate from Agora deploy",
+      "NEW SECTION: 'Maintainer Activity Tracker' — public accountability board for OpenAI mods (notapplica, valerio-oai, 0hq, yuzhougu-oai). Each card shows days silent, last action, authority signal, account creation. Linked in nav as '⚠ Mod Tracker'.",
+      "Validation methodology disclosed inline: closed-PR author_association, OAI account suffix, closing other users' PRs, repo collaborator status",
+      "Added scripts/update_mod_tracker.py for auto-refresh: fetches /events for each handle, computes days-silent, writes data/mod_tracker.json. Initial snapshot generated.",
+      "Banner fix: valerio-oai last active April 2 (not April 4 as previously written) — confirmed via GitHub events API"
     ]
   },
   {
