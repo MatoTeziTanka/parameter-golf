@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.7.3",
+    "date": "2026-04-05",
+    "title": "Code-Based Technique Detection",
+    "changes": [
+      "Technique classification now analyzes actual train_gpt.py code, not just PR body text",
+      "Detects enabled vs disabled features: NGRAM_ENABLED=0 means neural, not cache",
+      "Handles ungated TTT (no enable flag = always active), gated TTT (TTT_ENABLED=0 = off)",
+      "GPTQ calibration detection from code patterns",
+      "Persistent cache in data/code_techniques_cache.json — first run fetches, subsequent runs are instant",
+      "Falls back to text-based detection for PRs without train_gpt.py",
+      "Verified/Inferred source badges: green checkmark = classified from code, grey ? = inferred from PR text"
+    ]
+  },
+  {
     "version": "0.7.2",
     "date": "2026-04-05",
     "title": "Classifier False-Positive Fix + Multi-Type Badges",

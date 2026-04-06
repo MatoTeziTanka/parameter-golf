@@ -163,6 +163,7 @@ def _type_badge(technique_type: str) -> str:
         "cache": ("badge-cache", "Cache", "Uses n-gram or eval-time caching — check compliance"),
         "ttt": ("badge-ttt", "TTT", "Test-time training — adapts model weights during evaluation"),
         "hybrid": ("badge-hybrid", "Hybrid", "Combines neural + cache or TTT techniques"),
+        "gptq": ("badge-neural", "GPTQ", "Uses GPTQ post-training quantization with calibration"),
     }
     cls, label, tip = badges.get(technique_type, ("badge-incomplete", technique_type or "?", "Type unknown"))
     return f'<span class="badge {cls}"{_tooltip_attr(tip)}>{label}</span>'
@@ -686,11 +687,16 @@ def _build_row(rank: int, pr: dict[str, Any], include_reason: bool = False) -> s
     status_badge = _status_badge(status, pr.get("seeds"))
     ttype = pr.get("technique_type", "unknown")
     technique_tags: list[str] = pr.get("technique_tags", [ttype])
+    technique_source = pr.get("technique_source", "text")
     track = pr.get("track", "unknown")
 
     attrs = f'data-status="{status.lower()}" data-type="{ttype}" data-track="{track}"'
 
     type_badges = " ".join(_type_badge(tag) for tag in technique_tags)
+    if technique_source == "code":
+        type_badges += f' <span class="badge badge-verified"{_tooltip_attr("Verified from train_gpt.py source code")}>&#x2713;</span>'
+    else:
+        type_badges += f' <span class="badge badge-inferred"{_tooltip_attr("Inferred from PR text — no train_gpt.py found or file named differently")}>?</span>'
     cells = (
         f"<td>{status_badge}</td>"
         f"<td>{rank}</td>"

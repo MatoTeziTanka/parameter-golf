@@ -37,10 +37,13 @@ Output: data/pr_cache.json  (status/flags/confidence/track/technique_type added 
 """
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
 from typing import Any
+
+import requests
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -141,6 +144,141 @@ AT_RISK_PATH_PATTERNS: list[tuple[str, str]] = [
 
 
 # ---------------------------------------------------------------------------
+# Code-based technique detection (ground truth from train_gpt.py)
+# ---------------------------------------------------------------------------
+
+# Persistent cache for code technique analysis results
+# Stores {pr_number_str: {techniques_dict}} to avoid re-fetching train_gpt.py
+CODE_TECHNIQUES_CACHE_PATH = Path(__file__).parent.parent / "data" / "code_techniques_cache.json"
+
+_CODE_TECHNIQUES: dict[str, dict[str, bool]] | None = None
+
+
+def _load_code_cache() -> dict[str, dict[str, bool]]:
+    global _CODE_TECHNIQUES
+    if _CODE_TECHNIQUES is not None:
+        return _CODE_TECHNIQUES
+    if CODE_TECHNIQUES_CACHE_PATH.exists():
+        try:
+            with CODE_TECHNIQUES_CACHE_PATH.open("r") as f:
+                _CODE_TECHNIQUES = json.load(f)
+                return _CODE_TECHNIQUES
+        except (json.JSONDecodeError, OSError):
+            pass
+    _CODE_TECHNIQUES = {}
+    return _CODE_TECHNIQUES
+
+
+def _save_code_cache() -> None:
+    if _CODE_TECHNIQUES is None:
+        return
+    tmp = CODE_TECHNIQUES_CACHE_PATH.with_suffix(".json.tmp")
+    with tmp.open("w") as f:
+        json.dump(_CODE_TECHNIQUES, f, indent=2)
+    tmp.replace(CODE_TECHNIQUES_CACHE_PATH)
+
+
+def _fetch_and_analyze_code(pr: dict[str, Any]) -> dict[str, bool] | None:
+    """Fetch train_gpt.py from a PR and analyze technique usage.
+
+    Returns detected techniques dict, or None if no train_gpt.py.
+    Results are persistently cached in data/code_techniques_cache.json.
+    """
+    cache = _load_code_cache()
+    key = str(pr.get("number"))
+    if key in cache:
+        return cache[key]
+
+    file_paths = pr.get("file_paths", [])
+    train_path = next((p for p in file_paths if p.endswith("train_gpt.py")), None)
+    if not train_path:
+        cache[key] = {"_no_code": True}
+        return None
+
+    token = os.environ.get("GITHUB_TOKEN")
+    try:
+        headers = {"Authorization": f"Bearer {token}"} if token else {}
+        pr_resp = requests.get(
+            f"https://api.github.com/repos/openai/parameter-golf/pulls/{pr['number']}",
+            headers=headers,
+            timeout=15,
+        )
+        if pr_resp.status_code == 403:
+            # Rate limited — save what we have and stop fetching
+            _save_code_cache()
+            return None
+        if pr_resp.status_code == 200:
+            head_sha = pr_resp.json().get("head", {}).get("sha")
+            if head_sha:
+                url = f"https://raw.githubusercontent.com/openai/parameter-golf/{head_sha}/{train_path}"
+                resp = requests.get(url, timeout=30)
+                if resp.status_code == 200:
+                    result = _detect_techniques_from_code(resp.text)
+                    cache[key] = result
+                    return result
+        # Non-200 but not rate limit — mark as no code so we don't retry
+        cache[key] = {"_no_code": True}
+    except Exception:
+        pass
+
+    return None
+
+
+def _detect_techniques_from_code(code: str) -> dict[str, bool]:
+    """Analyze train_gpt.py source code to detect which techniques are ENABLED.
+
+    Returns dict of technique -> enabled (True if the code uses it actively,
+    not just defines it as dead code with ENABLED=0).
+    """
+    result: dict[str, bool] = {
+        "ngram": False,
+        "ttt": False,
+        "cache": False,
+        "gptq": False,
+        "quantization": False,
+    }
+
+    # N-gram: look for enabled flag. If NGRAM_ENABLED defaults to "0" or "False", it's off.
+    ngram_default = re.search(r'NGRAM_ENABLED["\'],\s*["\'](\w+)', code)
+    if ngram_default:
+        val = ngram_default.group(1)
+        result["ngram"] = val not in ("0", "False", "false", "no")
+    elif re.search(r'\bNgramCache\b.*\bngram_enabled\b', code, re.DOTALL):
+        # Has ngram infrastructure but check if it's gated
+        if not re.search(r'ngram_enabled\s*=\s*(?:False|0)', code):
+            result["ngram"] = True
+
+    # TTT: check if gated by TTT_ENABLED env var
+    ttt_default = re.search(r'TTT_ENABLED["\'],\s*["\'](\w+)', code)
+    if ttt_default:
+        val = ttt_default.group(1)
+        result["ttt"] = val not in ("0", "False", "false", "no")
+    else:
+        # No TTT_ENABLED gate — check if TTT functions exist and are called
+        has_ttt_func = bool(re.search(r'def eval_val.*ttt|class.*TTT|class.*Ttt', code, re.IGNORECASE))
+        ttt_called = bool(re.search(r'eval_val.*ttt.*\(|ttt_lora|BatchedTTT', code))
+        if has_ttt_func and ttt_called:
+            # TTT code exists and is invoked without an enable gate — it's active
+            result["ttt"] = True
+
+    # Two-pass / rescoring
+    if re.search(r'TWO_PASS_ENABLED["\'],\s*["\'](\w+)', code):
+        val_match = re.search(r'TWO_PASS_ENABLED["\'],\s*["\'](\w+)', code)
+        if val_match and val_match.group(1) not in ("0", "False", "false"):
+            result["cache"] = True
+
+    # GPTQ
+    if re.search(r'\bgptq\b.*\bcalibrat', code, re.IGNORECASE):
+        result["gptq"] = True
+
+    # Quantization (INT6/INT5/INT8)
+    if re.search(r'quantize_int[4568]|int6_qat|int5.*quant', code, re.IGNORECASE):
+        result["quantization"] = True
+
+    return result
+
+
+# ---------------------------------------------------------------------------
 # Track and technique classification helpers
 # ---------------------------------------------------------------------------
 
@@ -204,18 +342,34 @@ def _classify_technique_type(pr: dict[str, Any]) -> str:
     return "neural"
 
 
-def _classify_technique_tags(pr: dict[str, Any]) -> list[str]:
+def _classify_technique_tags(pr: dict[str, Any], use_code: bool = False) -> tuple[list[str], str]:
     """Return all technique tags detected for a PR (for multi-badge display).
 
-    Always includes at least ["neural"]. Adds "cache" and/or "ttt" if signals found.
+    If use_code=True and a train_gpt.py is available, uses code analysis as
+    ground truth (what's actually enabled, not what the PR text says).
+    Falls back to text-based detection otherwise.
+
+    Returns (tags, source) where source is "code" or "text".
     """
+    # Try code-based detection first (ground truth)
+    if use_code:
+        techniques = _fetch_and_analyze_code(pr)
+        if techniques and not techniques.get("_no_code"):
+            tags: list[str] = []
+            if techniques.get("ttt"):
+                tags.append("ttt")
+            if techniques.get("ngram") or techniques.get("cache"):
+                tags.append("cache")
+            if techniques.get("gptq"):
+                tags.append("gptq")
+            if not tags:
+                tags.append("neural")
+            return tags, "code"
+
+    # Fallback: text-based detection from title + body
     title: str = (pr.get("title") or "").lower()
     body: str = (pr.get("body") or "").lower()
-    compliance_keywords: list[str] = [k.lower() for k in pr.get("compliance_keywords", [])]
-    file_paths: list[str] = pr.get("file_paths", [])
-    path_str = " ".join(file_paths).lower()
-
-    combined = f"{title} {body} {' '.join(compliance_keywords)} {path_str}"
+    combined = f"{title} {body}"
 
     has_ttt = any(sig in combined for sig in _TTT_SIGNALS)
     has_cache = any(sig in combined for sig in _CACHE_SIGNALS)
@@ -228,7 +382,7 @@ def _classify_technique_tags(pr: dict[str, Any]) -> list[str]:
             tags.append("ttt")
         if has_cache:
             tags.append("cache")
-    return tags
+    return tags, "text"
 
 
 # ---------------------------------------------------------------------------
@@ -387,7 +541,9 @@ def classify_pr(pr: dict[str, Any]) -> dict[str, Any]:
     # Classify track and technique type for all PRs (independent of status)
     result["track"] = _classify_track(pr)
     result["technique_type"] = _classify_technique_type(pr)
-    result["technique_tags"] = _classify_technique_tags(pr)
+    tags, tag_source = _classify_technique_tags(pr, use_code=True)
+    result["technique_tags"] = tags
+    result["technique_source"] = tag_source
 
     # Gate 1: DEAD check (highest priority)
     dead, dead_flags, dead_confidence = _is_dead(pr)
@@ -498,6 +654,9 @@ def main() -> None:
             classified.append(pr)
 
     cache["prs"] = classified
+
+    # Persist code technique analysis cache
+    _save_code_cache()
 
     # Write back
     tmp_path = CACHE_PATH.with_suffix(".json.tmp")
