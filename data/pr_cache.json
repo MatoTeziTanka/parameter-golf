@@ -1,7 +1,73 @@
 {
-  "last_fetch": "2026-04-06T14:52:37.433179+00:00",
-  "api_calls_used": 121,
+  "last_fetch": "2026-04-06T15:52:19.393552+00:00",
+  "api_calls_used": 122,
   "prs": [
+    {
+      "number": 1417,
+      "title": "Mixed INT5/INT6 QAT from step 1 (1.3039 bpb)",
+      "author": "BruhTheMomentum",
+      "state": "OPEN",
+      "created": "2026-04-06T15:41:06Z",
+      "updated": "2026-04-06T15:41:06Z",
+      "bpb": 1.3039,
+      "seeds": null,
+      "artifact_bytes": 15400000,
+      "technique_summary": "INT6 + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-06_MixedINT5INT6_QAT_From_Step1/README.md",
+        "records/track_non_record_16mb/2026-04-06_MixedINT5INT6_QAT_From_Step1/requirements.txt",
+        "records/track_non_record_16mb/2026-04-06_MixedINT5INT6_QAT_From_Step1/submission.json",
+        "records/track_non_record_16mb/2026-04-06_MixedINT5INT6_QAT_From_Step1/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1416,
+      "title": "Record: SP8192 + Pre-Quant TTT — val_bpb 1.07948 (3-seed mean)",
+      "author": "erichroepke",
+      "state": "OPEN",
+      "created": "2026-04-06T14:46:25Z",
+      "updated": "2026-04-06T15:12:15Z",
+      "bpb": 1.07948,
+      "seeds": 3,
+      "artifact_bytes": 15120000,
+      "technique_summary": "TTT + GPTQ + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_SP8192_PreQuantTTT_SDClip_SkipGates/README.md",
+        "records/track_10min_16mb/2026-04-06_SP8192_PreQuantTTT_SDClip_SkipGates/submission.json",
+        "records/track_10min_16mb/2026-04-06_SP8192_PreQuantTTT_SDClip_SkipGates/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-06_SP8192_PreQuantTTT_SDClip_SkipGates/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-06_SP8192_PreQuantTTT_SDClip_SkipGates/train_seed42.log",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1415,
       "title": "Record: SP4096 + 3-Layer Recurrence + GPTQ Embeddings + SDClip + ETLB — val_bpb 1.0913 (3-seed mean)",
@@ -199,11 +265,11 @@
     },
     {
       "number": 1404,
-      "title": "Non-record: compile-friendly state-space hybrid with attention anchors\n",
+      "title": "Non-record: state-space hybrid with attention anchors",
       "author": "greqone",
       "state": "OPEN",
       "created": "2026-04-06T03:33:53Z",
-      "updated": "2026-04-06T03:34:04Z",
+      "updated": "2026-04-06T15:15:00Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -6988,7 +7054,7 @@
       "author": "AnirudhRahul",
       "state": "OPEN",
       "created": "2026-03-30T18:58:12Z",
-      "updated": "2026-03-31T19:00:04Z",
+      "updated": "2026-04-06T15:06:21Z",
       "bpb": 1.11085863,
       "seeds": 4,
       "artifact_bytes": null,
@@ -7015,16 +7081,16 @@
       ],
       "track": "record",
       "technique_type": "cache",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
       "status": "AT_RISK",
       "flags": [
         "body:ngram-body",
         "path:ngram-path"
       ],
-      "confidence": "MEDIUM",
-      "technique_tags": [
-        "gptq"
-      ],
-      "technique_source": "code"
+      "confidence": "MEDIUM"
     },
     {
       "number": 1144,
@@ -11164,7 +11230,7 @@
       "author": "Jeneesh1014",
       "state": "OPEN",
       "created": "2026-03-28T18:43:36Z",
-      "updated": "2026-03-28T18:43:36Z",
+      "updated": "2026-04-06T15:41:10Z",
       "bpb": 1.7195,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -11178,17 +11244,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1033,
