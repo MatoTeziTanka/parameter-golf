@@ -1,7 +1,168 @@
 {
-  "last_fetch": "2026-04-06T15:52:19.393552+00:00",
-  "api_calls_used": 122,
+  "last_fetch": "2026-04-06T16:54:15.065410+00:00",
+  "api_calls_used": 123,
   "prs": [
+    {
+      "number": 1421,
+      "title": "[Record] 11L Depth Recurrence + EMA Tuning (0.9965) — val_bpb 1.0925",
+      "author": "X-Abhishek-X",
+      "state": "OPEN",
+      "created": "2026-04-06T16:26:38Z",
+      "updated": "2026-04-06T16:35:22Z",
+      "bpb": 1.0925,
+      "seeds": 3,
+      "artifact_bytes": 15950000,
+      "technique_summary": "Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_11L_DepthRecurrence_EMA0.9965_1.0925/README.md",
+        "records/track_10min_16mb/2026-04-06_11L_DepthRecurrence_EMA0.9965_1.0925/submission.json",
+        "records/track_10min_16mb/2026-04-06_11L_DepthRecurrence_EMA0.9965_1.0925/train.log",
+        "records/track_10min_16mb/2026-04-06_11L_DepthRecurrence_EMA0.9965_1.0925/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_11L_DepthRecurrence_EMA0.9965_1.0925/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-06_11L_DepthRecurrence_EMA0.9965_1.0925/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-06_11L_DepthRecurrence_EMA0.9965_1.0925/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1420,
+      "title": "Record: Triple Loop + Fused Kernels + Parallel Residuals + N-gram Tilt; val_bpb 1.08014 (5-seed mean)",
+      "author": "abaybektursun",
+      "state": "OPEN",
+      "created": "2026-04-06T16:14:47Z",
+      "updated": "2026-04-06T16:54:07Z",
+      "bpb": 1.08014,
+      "seeds": 5,
+      "artifact_bytes": 64137,
+      "technique_summary": "Muon + SwiGLU + GPTQ + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/README.md",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/cutlass_evt_fusion/csrc/gemm_act_grad.cu",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/cutlass_evt_fusion/csrc/torch_binding.cpp",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/cutlass_evt_fusion/setup.py",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/ngram/eval_ngram.py",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/ngram/fused_expert_blend.cpp",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/ngram/ngram_blend.cpp",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/submission.json",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/submission.py",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/train_gpt.py.lzma",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/train_seed1.log",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-06_TripleLoop_FusedKernels_Ngram/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 1419,
+      "title": "Runpod ar selfgen nextsteps",
+      "author": "windy-schmieder",
+      "state": "CLOSED",
+      "created": "2026-04-06T16:14:35Z",
+      "updated": "2026-04-06T16:14:52Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-24_AttnRes_LeakyReLU_LegalTTT_ParallelMuon/README.md",
+        "records/track_10min_16mb/2026-03-24_AttnRes_LeakyReLU_LegalTTT_ParallelMuon/submission.json",
+        "records/track_10min_16mb/2026-03-24_AttnRes_LeakyReLU_LegalTTT_ParallelMuon/train_gpt.py",
+        "records/track_10min_16mb/2026-03-24_AttnRes_LeakyReLU_LegalTTT_ParallelMuon/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-24_AttnRes_LeakyReLU_LegalTTT_ParallelMuon/train_seed2025.log",
+        "records/track_10min_16mb/2026-03-24_AttnRes_LeakyReLU_LegalTTT_ParallelMuon/train_seed42.log",
+        "records/track_10min_16mb/2026-03-25_AttnRes_GatedAttn_VR_MTP_AdamTTT/README.md",
+        "records/track_10min_16mb/2026-03-25_AttnRes_GatedAttn_VR_MTP_AdamTTT/submission.json",
+        "records/track_10min_16mb/2026-03-25_AttnRes_GatedAttn_VR_MTP_AdamTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_ARSelfGen_GPTQ_XSA_BigramHash3072_NextSteps/README.md",
+        "records/track_10min_16mb/2026-04-06_ARSelfGen_GPTQ_XSA_BigramHash3072_NextSteps/requirements.txt",
+        "records/track_10min_16mb/2026-04-06_ARSelfGen_GPTQ_XSA_BigramHash3072_NextSteps/run_next_step_experiments.sh",
+        "records/track_10min_16mb/2026-04-06_ARSelfGen_GPTQ_XSA_BigramHash3072_NextSteps/submission.json",
+        "records/track_10min_16mb/2026-04-06_ARSelfGen_GPTQ_XSA_BigramHash3072_NextSteps/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_ARSelfGen_GPTQ_XSA_BigramHash3072_NextSteps/train_seed314.log",
+        "records/track_10min_16mb/2026-04-06_ARSelfGen_GPTQ_XSA_BigramHash3072_NextSteps/train_seed42.log",
+        "records/track_10min_16mb/2026-04-06_ARSelfGen_GPTQ_XSA_BigramHash3072_NextSteps/train_seed999.log",
+        "train_gpt_mlx.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1418,
+      "title": "Non-record: Autoresearch-Guided Optimization — 100+ Experiments + Negative Results",
+      "author": "Park-Tae-Hwan",
+      "state": "OPEN",
+      "created": "2026-04-06T16:04:47Z",
+      "updated": "2026-04-06T16:04:47Z",
+      "bpb": 1.4192,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "Muon + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_MuonEqR_SLOT_QKGain3/README.md",
+        "records/track_10min_16mb/2026-04-06_MuonEqR_SLOT_QKGain3/submission.json",
+        "records/track_10min_16mb/2026-04-06_MuonEqR_SLOT_QKGain3/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1417,
       "title": "Mixed INT5/INT6 QAT from step 1 (1.3039 bpb)",
@@ -230,7 +391,7 @@
       "author": "anthony-maio",
       "state": "OPEN",
       "created": "2026-04-06T03:51:44Z",
-      "updated": "2026-04-06T03:55:55Z",
+      "updated": "2026-04-06T16:28:14Z",
       "bpb": 1.0856,
       "seeds": 3,
       "artifact_bytes": 15800000,
@@ -695,7 +856,7 @@
       "author": "johnlennyt5",
       "state": "OPEN",
       "created": "2026-04-05T13:19:28Z",
-      "updated": "2026-04-05T13:19:28Z",
+      "updated": "2026-04-06T16:31:19Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 7300000,
@@ -722,13 +883,13 @@
       "technique_tags": [
         "gptq"
       ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "no-submission-json"
       ],
-      "confidence": "HIGH",
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 1381,
@@ -24506,16 +24667,22 @@
     },
     {
       "number": 675,
-      "title": "Non-record: LeakyReLU² + LAWA + Ramping WD + Val Training (val_bpb=1.2302, 1xH100)",
+      "title": "Record: Hypergradient SLOT-24 — val_bpb 0.7625 (3-seed mean)",
       "author": "ChideraIbe123",
       "state": "OPEN",
       "created": "2026-03-25T03:58:35Z",
-      "updated": "2026-04-03T02:26:29Z",
-      "bpb": 1.2302,
-      "seeds": null,
-      "artifact_bytes": 13400000,
-      "technique_summary": "LoRA + INT8",
+      "updated": "2026-04-06T16:30:52Z",
+      "bpb": 0.7625,
+      "seeds": 3,
+      "artifact_bytes": 15750000,
+      "technique_summary": "N-gram + Two-pass",
       "file_paths": [
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/README.md",
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/logs/seed1337.log",
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/logs/seed2025.log",
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/logs/seed42.log",
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/submission.json",
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/train_gpt.py",
         "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/README.md",
         "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/submission.json",
         "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/train.log",
@@ -24524,19 +24691,19 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
-        "leaky_relu"
+        "ngram",
+        "two_pass",
+        "cache_eval"
       ],
       "track": "non-record",
-      "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
+      "technique_type": "cache",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 674,
