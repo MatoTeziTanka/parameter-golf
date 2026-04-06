@@ -1,7 +1,43 @@
 {
-  "last_fetch": "2026-04-06T05:28:23.670976+00:00",
-  "api_calls_used": 118,
+  "last_fetch": "2026-04-06T07:10:00.474610+00:00",
+  "api_calls_used": 119,
   "prs": [
+    {
+      "number": 1408,
+      "title": "Record: dTTT + BigramHash 3072×112 — val_bpb 1.0800 (3-seed mean)",
+      "author": "aamodbhatt",
+      "state": "OPEN",
+      "created": "2026-04-06T06:32:10Z",
+      "updated": "2026-04-06T06:32:10Z",
+      "bpb": 1.08017,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_dTTT_BH3072_11L_8xH100/README.md",
+        "records/track_10min_16mb/2026-04-06_dTTT_BH3072_11L_8xH100/submission.json",
+        "records/track_10min_16mb/2026-04-06_dTTT_BH3072_11L_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_dTTT_BH3072_11L_8xH100/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-06_dTTT_BH3072_11L_8xH100/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-06_dTTT_BH3072_11L_8xH100/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1407,
       "title": "Non-record: Extended Compute Scaling Analysis (20K steps, 1.0960 BPB, 3 seeds (each run ~6 hours on 4xA100MIG))",
@@ -840,11 +876,11 @@
     },
     {
       "number": 1374,
-      "title": "16L Kreïn-Space Geometric Attention — One-Sided Raw Sigmoid",
+      "title": "Non Record: 16L Kreïn-Space Geometric Attention",
       "author": "r2smith141",
       "state": "OPEN",
       "created": "2026-04-05T07:56:53Z",
-      "updated": "2026-04-05T08:05:46Z",
+      "updated": "2026-04-06T05:34:20Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 9300000,
@@ -855,19 +891,19 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "track": "record",
+      "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "no-submission-json"
       ],
-      "confidence": "HIGH",
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 1373,
@@ -1337,6 +1373,43 @@
         "gptq"
       ],
       "technique_source": "code"
+    },
+    {
+      "number": 1329,
+      "title": "Record: Per-Sample SLOT + TTT + LR=0.024 + Stride=96 — val_bpb 0.63614 (3-seed mean)",
+      "author": "renqianluo",
+      "state": "OPEN",
+      "created": "2026-04-04T07:35:11Z",
+      "updated": "2026-04-06T05:38:49Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 15991012,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-04_PerSample_SLOT_TTT_AdamW24step_LR024_Stride96/README.md",
+        "records/track_10min_16mb/2026-04-04_PerSample_SLOT_TTT_AdamW24step_LR024_Stride96/requirements.txt",
+        "records/track_10min_16mb/2026-04-04_PerSample_SLOT_TTT_AdamW24step_LR024_Stride96/submission.json",
+        "records/track_10min_16mb/2026-04-04_PerSample_SLOT_TTT_AdamW24step_LR024_Stride96/train_gpt.py",
+        "records/track_10min_16mb/2026-04-04_PerSample_SLOT_TTT_AdamW24step_LR024_Stride96/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-04_PerSample_SLOT_TTT_AdamW24step_LR024_Stride96/train_seed314.log",
+        "records/track_10min_16mb/2026-04-04_PerSample_SLOT_TTT_AdamW24step_LR024_Stride96/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1318,
@@ -2440,15 +2513,15 @@
     },
     {
       "number": 1269,
-      "title": "[Submission] Jtss-ux - 1.1301 BPB (10min_16mb)",
+      "title": "30-Layer Recursive GPT (10 Physical x 3 Recursive) + VRL + Parallel Muon",
       "author": "Jtss-ux",
       "state": "OPEN",
       "created": "2026-04-02T22:21:57Z",
-      "updated": "2026-04-02T22:50:56Z",
-      "bpb": 1.1301,
+      "updated": "2026-04-06T07:02:07Z",
+      "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
-      "technique_summary": "TTT + Muon",
+      "technique_summary": "Muon",
       "file_paths": [
         "audit_baseline.py",
         "audit_challenger.py",
@@ -2458,32 +2531,35 @@
         "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_seed314.log",
         "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_seed42.log",
         "records/track_10min_16mb/2026-03-25_ValCalib_GPTQ_XSA_BigramHash3072/train_seed999.log",
-        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/README.md",
-        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/submission.json",
-        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/train_gpt.py",
-        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/train_seed1337.log",
-        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/train_seed2025.log",
-        "records/track_10min_16mb/Jtss-ux_Submission_1.1301/train_seed42.log",
+        "records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/README.md",
+        "records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/requirements.txt",
+        "records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/submission.json",
+        "records/track_10min_16mb/2026-04-06_Jtss-ux_ImprovedBaseline/train_gpt.py",
+        "records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/README.md",
+        "records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/submission.json",
+        "records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/train_8xH100_ternary_v2.log",
+        "records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/train_gpt.py",
+        "records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/train_seed1337.log",
+        "records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/train_seed2025.log",
+        "records/track_10min_16mb/Jtss-ux_Recursive_30_Layer/train_seed42.log",
         "run_local_ternary.ps1",
         "train_challenger.py",
         "train_gpt.py"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [
-        "ttt",
-        "leaky_relu"
-      ],
+      "compliance_keywords": [],
       "track": "record",
-      "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
+      "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1268,
