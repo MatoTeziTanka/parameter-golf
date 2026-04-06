@@ -1,7 +1,166 @@
 {
-  "last_fetch": "2026-04-06T02:49:43.667415+00:00",
-  "api_calls_used": 117,
+  "last_fetch": "2026-04-06T05:28:23.670976+00:00",
+  "api_calls_used": 118,
   "prs": [
+    {
+      "number": 1407,
+      "title": "Non-record: Extended Compute Scaling Analysis (20K steps, 1.0960 BPB, 3 seeds (each run ~6 hours on 4xA100MIG))",
+      "author": "OnlyJundong",
+      "state": "OPEN",
+      "created": "2026-04-06T05:06:45Z",
+      "updated": "2026-04-06T05:19:30Z",
+      "bpb": 1.096,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/README.md",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/run_scaling_20k.sh",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/submission.json",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/train_step20k_seed1337.txt",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/train_step20k_seed2024.txt",
+        "records/track_non_record_16mb/2026-04-06_ExtendedCompute_20K_6hours_4xA100MIG_ScalingAnalysis/train_step20k_seed42.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1406,
+      "title": "Record: 11L Depth Recurrence + Discriminative Pre-Quant TTT (8xH100) — val_bpb 1.0887 (3-seed mean)",
+      "author": "aamodbhatt",
+      "state": "OPEN",
+      "created": "2026-04-06T04:56:30Z",
+      "updated": "2026-04-06T04:56:30Z",
+      "bpb": null,
+      "seeds": 2,
+      "artifact_bytes": 15926365,
+      "technique_summary": "TTT + GPTQ + N-gram + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/README.md",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/submission.json",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_seed2025.log",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_seed42.log",
+        "records/track_10min_16mb/2026-04-03_ARSelfGenGPTQ_XSA11_Bigram3072_8xH100/README.md",
+        "records/track_10min_16mb/2026-04-03_ARSelfGenGPTQ_XSA11_Bigram3072_8xH100/runs_confirm_G.csv",
+        "records/track_10min_16mb/2026-04-03_ARSelfGenGPTQ_XSA11_Bigram3072_8xH100/submission.json",
+        "records/track_10min_16mb/2026-04-03_ARSelfGenGPTQ_XSA11_Bigram3072_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-04-03_ARSelfGenGPTQ_XSA11_Bigram3072_8xH100/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-03_ARSelfGenGPTQ_XSA11_Bigram3072_8xH100/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-03_ARSelfGenGPTQ_XSA11_Bigram3072_8xH100/train_seed42.log",
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_PreQuantTTT_11L_8xH100/README.md",
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_PreQuantTTT_11L_8xH100/submission.json",
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_PreQuantTTT_11L_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_PreQuantTTT_11L_8xH100/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_PreQuantTTT_11L_8xH100/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_PreQuantTTT_11L_8xH100/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1405,
+      "title": "Record: Scylla + GPTQ + BH3072 — val_bpb 1.0856 (3-seed mean)",
+      "author": "anthony-maio",
+      "state": "OPEN",
+      "created": "2026-04-06T03:51:44Z",
+      "updated": "2026-04-06T03:55:55Z",
+      "bpb": 1.0856,
+      "seeds": 3,
+      "artifact_bytes": 15800000,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_Scylla_GPTQ_BH3072/README.md",
+        "records/track_10min_16mb/2026-04-06_Scylla_GPTQ_BH3072/candidate.meta.npz",
+        "records/track_10min_16mb/2026-04-06_Scylla_GPTQ_BH3072/candidate.vocab",
+        "records/track_10min_16mb/2026-04-06_Scylla_GPTQ_BH3072/submission.json",
+        "records/track_10min_16mb/2026-04-06_Scylla_GPTQ_BH3072/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_Scylla_GPTQ_BH3072/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-06_Scylla_GPTQ_BH3072/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-06_Scylla_GPTQ_BH3072/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1404,
+      "title": "Non-record: compile-friendly state-space hybrid with attention anchors\n",
+      "author": "greqone",
+      "state": "OPEN",
+      "created": "2026-04-06T03:33:53Z",
+      "updated": "2026-04-06T03:34:04Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "SSM",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/README.md",
+        "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/ablation_scoreboard.tsv",
+        "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/best_run_summary.json",
+        "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/submission.json",
+        "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/train.log",
+        "records/track_non_record_16mb/2026-04-06_StateSpaceHybrid_AttentionAnchors/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1403,
       "title": "Non-record: MDLM Masked Diffusion (1.3485 BPB)",
@@ -151,6 +310,80 @@
       "status": "ALIVE",
       "flags": [],
       "confidence": "HIGH"
+    },
+    {
+      "number": 1399,
+      "title": "Record: Pre-Quant TTT + ETLB: Eval-Time Logit Bias for Neural Language Model Compression 1.0898 BPB on PR #1285 base",
+      "author": "AnubhavBharadwaaj",
+      "state": "OPEN",
+      "created": "2026-04-06T01:16:00Z",
+      "updated": "2026-04-06T03:02:49Z",
+      "bpb": 1.0898,
+      "seeds": 3,
+      "artifact_bytes": 16084685,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_ETLB_MuonEqR_DepthRecurrence_AllInt6/README.md",
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_ETLB_MuonEqR_DepthRecurrence_AllInt6/etlb_seed1337.log",
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_ETLB_MuonEqR_DepthRecurrence_AllInt6/etlb_seed2025.log",
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_ETLB_MuonEqR_DepthRecurrence_AllInt6/etlb_seed42.log",
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_ETLB_MuonEqR_DepthRecurrence_AllInt6/submission.json",
+        "records/track_10min_16mb/2026-04-05_PreQuantTTT_ETLB_MuonEqR_DepthRecurrence_AllInt6/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1396,
+      "title": "Record: Combined 3-Layer Recurrence + Parallel Residuals + Polar Express + Brotli — val_bpb 1.1067 (3-seed mean)",
+      "author": "erichroepke",
+      "state": "CLOSED",
+      "created": "2026-04-06T00:03:23Z",
+      "updated": "2026-04-06T04:17:20Z",
+      "bpb": 1.1067,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_Combined_SP4096_3LayerRecur_ParallelResid_Brotli/README.md",
+        "records/track_10min_16mb/2026-04-06_Combined_SP4096_3LayerRecur_ParallelResid_Brotli/submission.json",
+        "records/track_10min_16mb/2026-04-06_Combined_SP4096_3LayerRecur_ParallelResid_Brotli/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_Combined_SP4096_3LayerRecur_ParallelResid_Brotli/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-06_Combined_SP4096_3LayerRecur_ParallelResid_Brotli/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-06_Combined_SP4096_3LayerRecur_ParallelResid_Brotli/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1395,
@@ -11854,9 +12087,9 @@
       "number": 1005,
       "title": "Non-Record: Extended Compute Scaling Analysis: 1.0853 BPB at 50K steps (11.5 hours) on 4×A100MIG",
       "author": "OnlyJundong",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-28T05:40:07Z",
-      "updated": "2026-04-02T00:53:22Z",
+      "updated": "2026-04-06T04:10:56Z",
       "bpb": 1.0853,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -11876,15 +12109,15 @@
       ],
       "track": "non-record",
       "technique_type": "ttt",
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-only-2"
-      ],
-      "confidence": "HIGH",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1004,
