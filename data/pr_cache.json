@@ -1,7 +1,157 @@
 {
-  "last_fetch": "2026-04-06T01:40:24.068984+00:00",
-  "api_calls_used": 116,
+  "last_fetch": "2026-04-06T02:49:43.667415+00:00",
+  "api_calls_used": 117,
   "prs": [
+    {
+      "number": 1403,
+      "title": "Non-record: MDLM Masked Diffusion (1.3485 BPB)",
+      "author": "Rhoahndur",
+      "state": "OPEN",
+      "created": "2026-04-06T02:46:44Z",
+      "updated": "2026-04-06T02:46:44Z",
+      "bpb": 1.3485,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-06_MDLM_MaskedDiffusion/README.md",
+        "records/track_non_record_16mb/2026-04-06_MDLM_MaskedDiffusion/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1402,
+      "title": "Verifily Data Quality: Three-Tier Token Weighting + DCLS Salience",
+      "author": "arsenis-cmd",
+      "state": "OPEN",
+      "created": "2026-04-06T02:17:17Z",
+      "updated": "2026-04-06T02:23:37Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "Muon + GPTQ + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-05_Verifily_DataQuality_ThreeTier_DCLS/README.md",
+        "records/track_10min_16mb/2026-04-05_Verifily_DataQuality_ThreeTier_DCLS/requirements.txt",
+        "records/track_10min_16mb/2026-04-05_Verifily_DataQuality_ThreeTier_DCLS/submission.json",
+        "records/track_10min_16mb/2026-04-05_Verifily_DataQuality_ThreeTier_DCLS/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1401,
+      "title": "Submission/epsilon flashonly 2026 04 06",
+      "author": "teerthsharma",
+      "state": "OPEN",
+      "created": "2026-04-06T02:10:52Z",
+      "updated": "2026-04-06T02:14:13Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        ".gitignore",
+        "README.md",
+        "records/track_10min_16mb/2026-03-22_AETHER_SparseSDP_Governor/README.md",
+        "records/track_10min_16mb/2026-03-22_AETHER_SparseSDP_Governor/docs/FORMULATION.md",
+        "records/track_10min_16mb/2026-03-22_AETHER_SparseSDP_Governor/docs/README.md",
+        "records/track_10min_16mb/2026-03-22_AETHER_SparseSDP_Governor/docs/TECHNICAL_SPECIFICATION.md",
+        "records/track_10min_16mb/2026-03-22_AETHER_SparseSDP_Governor/docs/aether_integration_demo.py",
+        "records/track_10min_16mb/2026-03-22_AETHER_SparseSDP_Governor/docs/proofs/ChebyshevGC.lean",
+        "records/track_10min_16mb/2026-03-22_AETHER_SparseSDP_Governor/docs/proofs/Governor.lean",
+        "records/track_10min_16mb/2026-03-22_AETHER_SparseSDP_Governor/docs/proofs/PruneSafety.lean",
+        "records/track_10min_16mb/2026-03-22_AETHER_SparseSDP_Governor/submission.json",
+        "records/track_10min_16mb/2026-03-22_AETHER_SparseSDP_Governor/train_gpt.py",
+        "records/track_10min_16mb/2026-03-25_Epsilon_FlashOnly/README.md",
+        "records/track_10min_16mb/2026-03-25_Epsilon_FlashOnly/sim_checks.py",
+        "records/track_10min_16mb/2026-03-25_Epsilon_FlashOnly/submission.json",
+        "records/track_10min_16mb/2026-03-25_Epsilon_FlashOnly/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1400,
+      "title": "Record: Hadamard-Rotated GPTQ + dTTT + Recur2 (1.1035 BPB)",
+      "author": "tmancino",
+      "state": "OPEN",
+      "created": "2026-04-06T01:52:00Z",
+      "updated": "2026-04-06T01:52:00Z",
+      "bpb": 1.1035,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-05_Hadamard_dTTT_Recur2/README.md",
+        "records/track_10min_16mb/2026-04-05_Hadamard_dTTT_Recur2/submission.json",
+        "records/track_10min_16mb/2026-04-05_Hadamard_dTTT_Recur2/train_gpt.py",
+        "records/track_10min_16mb/2026-04-05_Hadamard_dTTT_Recur2/train_seed271.log",
+        "records/track_10min_16mb/2026-04-05_Hadamard_dTTT_Recur2/train_seed503.log",
+        "records/track_10min_16mb/2026-04-05_Hadamard_dTTT_Recur2/train_seed999.log",
+        "records/track_non_record_16mb/2026-04-01_WhirlpoolV5b_LorentzianTransformer/README.md",
+        "records/track_non_record_16mb/2026-04-01_WhirlpoolV5b_LorentzianTransformer/submission.json",
+        "records/track_non_record_16mb/2026-04-01_WhirlpoolV5b_LorentzianTransformer/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-01_WhirlpoolV5b_LorentzianTransformer/train_seed314.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1395,
       "title": "Record: SP4096 + Linear LR + Depth Recurrence -- val_bpb=1.0924 (3-seed mean)",
@@ -14286,7 +14436,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 937,
@@ -14328,9 +14478,9 @@
       ],
       "confidence": "HIGH",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 936,
@@ -14361,7 +14511,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 935,
@@ -14401,7 +14551,7 @@
       "author": "tuanaqeelbohoran",
       "state": "OPEN",
       "created": "2026-03-27T05:12:06Z",
-      "updated": "2026-03-27T05:12:06Z",
+      "updated": "2026-04-06T02:32:02Z",
       "bpb": 0.003,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -14410,24 +14560,28 @@
         "records/track_10min_16mb/2026-03-26_MDL-T_Stack_EMA_GPTQ-lite_LateQAT/README.md",
         "records/track_10min_16mb/2026-03-26_MDL-T_Stack_EMA_GPTQ-lite_LateQAT/requirements.txt",
         "records/track_10min_16mb/2026-03-26_MDL-T_Stack_EMA_GPTQ-lite_LateQAT/submission.json",
-        "records/track_10min_16mb/2026-03-26_MDL-T_Stack_EMA_GPTQ-lite_LateQAT/train_gpt.py"
+        "records/track_10min_16mb/2026-03-26_MDL-T_Stack_EMA_GPTQ-lite_LateQAT/train_gpt.py",
+        "run_baseline.sh",
+        "run_runpod.sh",
+        "train_gpt_stack.py",
+        "train_gpt_stack_v2.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
         "gptq_eval",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 933,
@@ -15591,9 +15745,9 @@
       ],
       "confidence": "HIGH",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 903,
@@ -15664,7 +15818,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 901,
@@ -15696,7 +15850,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 900,
@@ -15845,14 +15999,14 @@
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
       "status": "DEAD",
       "flags": [
         "closed-no-maintainer-comment"
       ],
       "confidence": "LOW",
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 894,
@@ -15903,7 +16057,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 893,
@@ -15943,9 +16097,9 @@
       ],
       "confidence": "HIGH",
       "technique_tags": [
-        "cache"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 892,
@@ -16057,7 +16211,7 @@
         "cache"
       ],
       "flag_reason": "Suspiciously low BPB — likely non-neural",
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 889,
@@ -16096,9 +16250,9 @@
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 888,
@@ -16136,9 +16290,10 @@
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
-        "cache"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 887,
@@ -16297,7 +16452,7 @@
       "technique_tags": [
         "cache"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 884,
@@ -16329,7 +16484,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 883,
@@ -16367,10 +16522,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "ttt",
-        "cache"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 882,
@@ -16405,7 +16559,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 881,
@@ -16446,7 +16600,7 @@
       "technique_tags": [
         "cache"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 880,
@@ -16487,9 +16641,10 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "cache"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 879,
@@ -16521,7 +16676,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 878,
@@ -16552,7 +16707,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 877,
@@ -16629,7 +16784,7 @@
         "no-bpb"
       ],
       "confidence": "HIGH",
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 876,
@@ -16679,9 +16834,9 @@
       ],
       "confidence": "LOW",
       "technique_tags": [
-        "cache"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 875,
@@ -16715,7 +16870,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 874,
@@ -16745,9 +16900,9 @@
       "flags": [],
       "confidence": "HIGH",
       "technique_tags": [
-        "neural"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 873,
@@ -16778,9 +16933,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 872,
@@ -16818,9 +16973,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "ttt"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 871,
@@ -16856,9 +17011,9 @@
       "track": "non-record",
       "technique_type": "cache",
       "technique_tags": [
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 870,
@@ -16899,7 +17054,7 @@
       "technique_tags": [
         "cache"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 869,
@@ -16941,9 +17096,10 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "cache"
+        "cache",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 868,
@@ -16983,9 +17139,10 @@
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
-        "cache"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 866,
@@ -17026,9 +17183,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 865,
@@ -18375,7 +18532,7 @@
       "author": "Programmerryoki",
       "state": "OPEN",
       "created": "2026-03-26T07:17:54Z",
-      "updated": "2026-04-05T14:40:37Z",
+      "updated": "2026-04-06T02:03:05Z",
       "bpb": 1.3999,
       "seeds": 1337,
       "artifact_bytes": 13500000,
@@ -18384,6 +18541,7 @@
         ".gitignore",
         "h100-runs.sh",
         "ngram_eval.py",
+        "scripts/h100-8x-final-submission.sh",
         "scripts/h100-next-pod-setup.sh",
         "scripts/h100-sp4096-ablations.sh",
         "train_gpt.py",
@@ -18416,12 +18574,12 @@
       "technique_tags": [
         "neural"
       ],
+      "technique_source": "text",
       "status": "AT_RISK",
       "flags": [
         "path:ngram-path"
       ],
-      "confidence": "MEDIUM",
-      "technique_source": "text"
+      "confidence": "MEDIUM"
     },
     {
       "number": 826,
@@ -18500,9 +18658,9 @@
       ],
       "confidence": "MEDIUM",
       "technique_tags": [
-        "cache"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 824,
@@ -18538,9 +18696,10 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 823,
@@ -18574,7 +18733,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 822,
@@ -18609,7 +18768,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 820,
@@ -18674,7 +18833,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 818,
@@ -18705,9 +18864,9 @@
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 816,
@@ -18743,7 +18902,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 815,
@@ -18856,9 +19015,9 @@
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
-        "neural"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 813,
@@ -18893,9 +19052,9 @@
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
-        "cache"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 812,
@@ -18931,7 +19090,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 811,
@@ -18964,9 +19123,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 810,
@@ -19002,9 +19161,9 @@
       ],
       "confidence": "LOW",
       "technique_tags": [
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 809,
@@ -19047,9 +19206,9 @@
       "technique_type": "hybrid",
       "technique_tags": [
         "ttt",
-        "cache"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 808,
@@ -19093,9 +19252,9 @@
       ],
       "confidence": "MEDIUM",
       "technique_tags": [
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 807,
@@ -19127,9 +19286,9 @@
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 806,
@@ -19166,9 +19325,9 @@
       ],
       "confidence": "LOW",
       "technique_tags": [
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 805,
@@ -19201,7 +19360,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 804,
@@ -19237,7 +19396,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 803,
@@ -19275,9 +19434,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 802,
@@ -19319,9 +19478,9 @@
       ],
       "confidence": "LOW",
       "technique_tags": [
-        "cache"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 801,
@@ -19433,9 +19592,10 @@
       ],
       "confidence": "LOW",
       "technique_tags": [
-        "cache"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 799,
@@ -19467,7 +19627,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 798,
@@ -19504,9 +19664,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "cache"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 797,
@@ -19546,7 +19706,7 @@
       "technique_tags": [
         "cache"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 796,
@@ -19585,7 +19745,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 795,
@@ -19618,9 +19778,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 794,
@@ -19669,7 +19829,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 793,
@@ -19747,9 +19907,9 @@
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
-        "cache"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 791,
@@ -19780,7 +19940,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 790,
@@ -19812,9 +19972,10 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 789,
@@ -19882,9 +20043,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "cache"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 787,
@@ -19947,9 +20108,9 @@
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 785,
@@ -19992,7 +20153,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 784,
@@ -20025,14 +20186,14 @@
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
       "status": "DEAD",
       "flags": [
         "closed-no-maintainer-comment"
       ],
       "confidence": "LOW",
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 783,
@@ -20065,9 +20226,9 @@
       "track": "non-record",
       "technique_type": "cache",
       "technique_tags": [
-        "cache"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 782,
@@ -20100,9 +20261,9 @@
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
-        "neural"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 781,
@@ -20146,7 +20307,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 780,
@@ -20206,7 +20367,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 779,
@@ -20251,10 +20412,9 @@
       ],
       "confidence": "HIGH",
       "technique_tags": [
-        "ttt",
-        "cache"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 778,
@@ -20293,9 +20453,9 @@
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
-        "cache"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 777,
@@ -20333,9 +20493,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "cache"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 776,
@@ -20370,9 +20530,10 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 774,
@@ -20403,9 +20564,10 @@
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
-        "neural"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 773,
@@ -20443,7 +20605,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 772,
@@ -20536,7 +20698,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 770,
@@ -20574,9 +20736,9 @@
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 769,
@@ -20621,9 +20783,9 @@
       ],
       "confidence": "HIGH",
       "technique_tags": [
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 768,
@@ -20701,7 +20863,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 767,
@@ -20732,9 +20894,9 @@
       "track": "non-record",
       "technique_type": "cache",
       "technique_tags": [
-        "cache"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 766,
@@ -20768,7 +20930,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 765,
@@ -20835,9 +20997,10 @@
       ],
       "confidence": "MEDIUM",
       "technique_tags": [
-        "cache"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 763,
@@ -20874,9 +21037,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "cache"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 762,
@@ -21000,7 +21163,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 759,
@@ -21032,7 +21195,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 758,
@@ -21066,9 +21229,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "cache"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 757,
@@ -21101,9 +21264,9 @@
       ],
       "confidence": "LOW",
       "technique_tags": [
-        "neural"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 756,
@@ -21175,7 +21338,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 754,
@@ -21212,7 +21375,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 753,
@@ -21269,9 +21432,10 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "neural"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 752,
@@ -21303,9 +21467,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 751,
@@ -21338,7 +21502,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 749,
@@ -21369,7 +21533,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 748,
@@ -21404,7 +21568,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 746,
@@ -21436,7 +21600,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 745,
@@ -21475,7 +21639,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 744,
@@ -21552,7 +21716,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 742,
@@ -21631,7 +21795,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 741,
@@ -21668,10 +21832,9 @@
       ],
       "confidence": "LOW",
       "technique_tags": [
-        "ttt",
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 740,
@@ -25637,9 +25800,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 625,
@@ -26202,9 +26365,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 609,
@@ -26241,9 +26404,9 @@
       "track": "non-record",
       "technique_type": "cache",
       "technique_tags": [
-        "neural"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 608,
@@ -26300,7 +26463,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 606,
@@ -26336,9 +26499,10 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 605,
@@ -27676,7 +27840,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 569,
@@ -27715,9 +27879,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 568,
@@ -27756,7 +27920,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 567,
@@ -27784,9 +27948,9 @@
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 566,
@@ -27816,7 +27980,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 565,
@@ -27879,7 +28043,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 563,
@@ -27913,7 +28077,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 562,
@@ -27956,9 +28120,9 @@
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 561,
@@ -28020,7 +28184,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 559,
@@ -28093,7 +28257,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 557,
@@ -28123,9 +28287,9 @@
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 556,
@@ -28158,7 +28322,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 555,
@@ -28195,7 +28359,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 554,
@@ -28253,9 +28417,9 @@
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 553,
@@ -28291,7 +28455,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 552,
@@ -28323,7 +28487,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 551,
@@ -28391,9 +28555,9 @@
       ],
       "confidence": "HIGH",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 549,
@@ -28431,9 +28595,9 @@
       ],
       "confidence": "HIGH",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 548,
@@ -28467,9 +28631,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 547,
@@ -28502,7 +28666,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 546,
@@ -28539,7 +28703,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 545,
@@ -28579,9 +28743,10 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 544,
@@ -28613,9 +28778,10 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 543,
@@ -28649,7 +28815,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 542,
@@ -28683,7 +28849,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 541,
@@ -28747,7 +28913,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 539,
@@ -28778,7 +28944,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 538,
@@ -28811,9 +28977,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 537,
@@ -28845,7 +29011,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 536,
@@ -28877,7 +29043,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 535,
@@ -28913,9 +29079,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 534,
@@ -29075,7 +29241,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 532,
@@ -29121,9 +29287,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 531,
@@ -29158,7 +29324,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 530,
@@ -29221,9 +29387,10 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 528,
@@ -29252,9 +29419,10 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "ttt",
+        "gptq"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 527,
@@ -29285,7 +29453,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 526,
@@ -29322,7 +29490,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 525,
@@ -29357,9 +29525,9 @@
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 524,
@@ -29390,9 +29558,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 523,
@@ -29424,7 +29592,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 522,
@@ -29453,10 +29621,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "ttt",
-        "cache"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 521,
@@ -29488,7 +29655,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 518,
@@ -29530,9 +29697,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 517,
@@ -29565,7 +29732,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 516,
@@ -29599,9 +29766,9 @@
       "track": "record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 515,
@@ -29654,7 +29821,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 514,
@@ -29687,9 +29854,9 @@
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 513,
@@ -29757,7 +29924,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 511,
@@ -29791,9 +29958,9 @@
       "track": "non-record",
       "technique_type": "hybrid",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 510,
@@ -29825,7 +29992,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 509,
@@ -29858,7 +30025,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 508,
@@ -29938,7 +30105,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 507,
@@ -32449,7 +32616,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 433,
@@ -32480,7 +32647,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 432,
@@ -32515,7 +32682,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 431,
@@ -32556,7 +32723,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 430,
@@ -35333,7 +35500,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 355,
@@ -35364,7 +35531,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 354,
@@ -35394,7 +35561,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 353,
@@ -35458,7 +35625,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 351,
@@ -35514,7 +35681,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 350,
@@ -35573,7 +35740,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 348,
@@ -35601,9 +35768,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 347,
@@ -35640,7 +35807,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 346,
@@ -35674,7 +35841,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 345,
@@ -35705,7 +35872,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 344,
@@ -35737,9 +35904,9 @@
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 343,
@@ -35771,7 +35938,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 342,
@@ -35839,7 +36006,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 340,
@@ -35870,9 +36037,9 @@
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 339,
@@ -35905,7 +36072,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 338,
@@ -35956,9 +36123,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 337,
@@ -35986,7 +36153,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 336,
@@ -36086,9 +36253,9 @@
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
-        "ttt"
+        "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 333,
@@ -36120,7 +36287,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 332,
@@ -36154,7 +36321,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 331,
@@ -36186,7 +36353,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 330,
@@ -36216,9 +36383,9 @@
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 329,
@@ -36254,7 +36421,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 328,
@@ -36292,7 +36459,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 327,
@@ -36328,7 +36495,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 326,
@@ -36361,7 +36528,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 325,
@@ -36392,7 +36559,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 324,
@@ -36425,7 +36592,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 323,
@@ -38945,7 +39112,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 246,
@@ -38975,7 +39142,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 245,
@@ -39106,7 +39273,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 243,
@@ -39136,7 +39303,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 242,
@@ -39166,9 +39333,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 241,
@@ -41643,7 +41810,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 168,
@@ -41682,7 +41849,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 167,
@@ -41720,7 +41887,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 166,
@@ -41750,7 +41917,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 165,
@@ -41816,7 +41983,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 163,
@@ -41849,7 +42016,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 162,
@@ -41882,7 +42049,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 161,
@@ -41915,7 +42082,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 160,
@@ -41947,7 +42114,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 159,
@@ -41980,7 +42147,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 157,
@@ -42011,7 +42178,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 156,
@@ -42042,7 +42209,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 155,
@@ -42077,7 +42244,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 154,
@@ -42113,7 +42280,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 153,
@@ -42147,9 +42314,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 152,
@@ -42187,7 +42354,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 151,
@@ -42219,7 +42386,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 150,
@@ -42267,7 +42434,7 @@
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 149,
@@ -42297,9 +42464,9 @@
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 148,
@@ -42326,14 +42493,14 @@
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
       "status": "DEAD",
       "flags": [
         "closed-no-maintainer-comment"
       ],
       "confidence": "LOW",
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 147,
@@ -42368,9 +42535,9 @@
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 146,
@@ -42401,7 +42568,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 145,
@@ -42433,7 +42600,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 144,
@@ -42474,7 +42641,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 143,
@@ -42506,7 +42673,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 142,
@@ -42585,7 +42752,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 141,
@@ -42614,7 +42781,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 139,
@@ -42647,7 +42814,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 137,
@@ -42678,7 +42845,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 136,
@@ -42709,9 +42876,9 @@
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
-        "neural"
+        "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 135,
@@ -42742,7 +42909,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 134,
@@ -42808,7 +42975,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 132,
@@ -42871,7 +43038,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 130,
@@ -42903,7 +43070,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 128,
@@ -43481,7 +43648,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 110,
@@ -43515,7 +43682,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 109,
@@ -43545,7 +43712,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 108,
@@ -43606,7 +43773,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 107,
@@ -43652,7 +43819,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 106,
@@ -43685,7 +43852,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 105,
@@ -43744,7 +43911,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 103,
@@ -43775,7 +43942,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 102,
@@ -43809,7 +43976,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 100,
@@ -43870,7 +44037,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 98,
@@ -43916,7 +44083,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 97,
@@ -43977,7 +44144,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 95,
@@ -44016,7 +44183,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 94,
@@ -44048,7 +44215,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 93,
@@ -44080,7 +44247,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 92,
@@ -44111,7 +44278,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 91,
@@ -44225,7 +44392,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 89,
@@ -44256,7 +44423,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 88,
@@ -44287,7 +44454,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 86,
@@ -44318,7 +44485,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 85,
@@ -44349,7 +44516,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 84,
@@ -44381,7 +44548,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 81,
@@ -45758,7 +45925,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 41,
@@ -45789,7 +45956,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 40,
@@ -45821,7 +45988,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 39,
@@ -45858,7 +46025,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 38,
@@ -45894,7 +46061,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 37,
@@ -45924,7 +46091,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 36,
@@ -46014,7 +46181,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 33,
@@ -46086,7 +46253,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 32,
@@ -46146,7 +46313,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 30,
@@ -46178,7 +46345,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 29,
@@ -46209,7 +46376,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 24,
@@ -46239,7 +46406,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 23,
@@ -46365,7 +46532,7 @@
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "code"
     },
     {
       "number": 20,

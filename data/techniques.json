@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-06T01:45:42Z",
+  "generated_at": "2026-04-06T02:54:09Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1265,
-    "matched_pr_count": 918,
+    "pr_count": 1269,
+    "matched_pr_count": 921,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 184,
+      "ALIVE": 185,
       "AT_RISK": 79,
       "DEAD": 360,
-      "INCOMPLETE": 634,
+      "INCOMPLETE": 637,
       "UNKNOWN": 0
     }
   },
@@ -20,9 +20,9 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 462,
+      "count": 463,
       "author_count": 233,
-      "alive_count": 84,
+      "alive_count": 85,
       "dead_count": 162,
       "at_risk_count": 44,
       "incomplete_count": 172,
@@ -2330,6 +2330,27 @@
           ]
         },
         {
+          "author": "tmancino",
+          "pr_count": 2,
+          "best_bpb": 1.1035,
+          "prs": [
+            {
+              "number": 1239,
+              "author": "tmancino",
+              "status": "ALIVE",
+              "bpb": 1.5918,
+              "created": "2026-04-01T23:55:33Z"
+            },
+            {
+              "number": 1400,
+              "author": "tmancino",
+              "status": "ALIVE",
+              "bpb": 1.1035,
+              "created": "2026-04-06T01:52:00Z"
+            }
+          ]
+        },
+        {
           "author": "NewyorkDev",
           "pr_count": 2,
           "best_bpb": 1.1085,
@@ -4391,20 +4412,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.5382,
               "created": "2026-03-20T20:03:55Z"
-            }
-          ]
-        },
-        {
-          "author": "tmancino",
-          "pr_count": 1,
-          "best_bpb": 1.5918,
-          "prs": [
-            {
-              "number": 1239,
-              "author": "tmancino",
-              "status": "ALIVE",
-              "bpb": 1.5918,
-              "created": "2026-04-01T23:55:33Z"
             }
           ]
         },
@@ -8133,18 +8140,25 @@
           "status": "ALIVE",
           "bpb": 1.0924,
           "created": "2026-04-05T22:55:21Z"
+        },
+        {
+          "number": 1400,
+          "author": "tmancino",
+          "status": "ALIVE",
+          "bpb": 1.1035,
+          "created": "2026-04-06T01:52:00Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 366,
-      "author_count": 247,
+      "count": 368,
+      "author_count": 248,
       "alive_count": 76,
       "dead_count": 85,
       "at_risk_count": 33,
-      "incomplete_count": 171,
+      "incomplete_count": 173,
       "unknown_count": 0,
       "best_alive": {
         "number": 909,
@@ -9836,6 +9850,27 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-19T10:34:19Z"
+            }
+          ]
+        },
+        {
+          "author": "teerthsharma",
+          "pr_count": 2,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 439,
+              "author": "teerthsharma",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-22T16:54:29Z"
+            },
+            {
+              "number": 1401,
+              "author": "teerthsharma",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:10:52Z"
             }
           ]
         },
@@ -11898,6 +11933,20 @@
           ]
         },
         {
+          "author": "arsenis-cmd",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1402,
+              "author": "arsenis-cmd",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:17:17Z"
+            }
+          ]
+        },
+        {
           "author": "Bharath-970",
           "pr_count": 1,
           "best_bpb": null,
@@ -12300,20 +12349,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-28T04:58:33Z"
-            }
-          ]
-        },
-        {
-          "author": "teerthsharma",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 439,
-              "author": "teerthsharma",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-03-22T16:54:29Z"
             }
           ]
         },
@@ -15006,18 +15041,32 @@
           "status": "INCOMPLETE",
           "bpb": 1.3151,
           "created": "2026-04-05T14:04:14Z"
+        },
+        {
+          "number": 1401,
+          "author": "teerthsharma",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:10:52Z"
+        },
+        {
+          "number": 1402,
+          "author": "arsenis-cmd",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:17:17Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 354,
-      "author_count": 203,
+      "count": 356,
+      "author_count": 205,
       "alive_count": 74,
       "dead_count": 104,
       "at_risk_count": 36,
-      "incomplete_count": 135,
+      "incomplete_count": 137,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -18575,6 +18624,20 @@
           ]
         },
         {
+          "author": "arsenis-cmd",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1402,
+              "author": "arsenis-cmd",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:17:17Z"
+            }
+          ]
+        },
+        {
           "author": "Bharath-970",
           "pr_count": 1,
           "best_bpb": null,
@@ -18851,6 +18914,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-28T04:58:33Z"
+            }
+          ]
+        },
+        {
+          "author": "teerthsharma",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1401,
+              "author": "teerthsharma",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:10:52Z"
             }
           ]
         },
@@ -21403,18 +21480,32 @@
           "status": "INCOMPLETE",
           "bpb": 1.14523122,
           "created": "2026-04-05T17:45:32Z"
+        },
+        {
+          "number": 1401,
+          "author": "teerthsharma",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:10:52Z"
+        },
+        {
+          "number": 1402,
+          "author": "arsenis-cmd",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:17:17Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 275,
-      "author_count": 128,
-      "alive_count": 65,
+      "count": 278,
+      "author_count": 131,
+      "alive_count": 66,
       "dead_count": 88,
       "at_risk_count": 35,
-      "incomplete_count": 82,
+      "incomplete_count": 84,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -23404,6 +23495,20 @@
           ]
         },
         {
+          "author": "tmancino",
+          "pr_count": 1,
+          "best_bpb": 1.1035,
+          "prs": [
+            {
+              "number": 1400,
+              "author": "tmancino",
+              "status": "ALIVE",
+              "bpb": 1.1035,
+              "created": "2026-04-06T01:52:00Z"
+            }
+          ]
+        },
+        {
           "author": "clarkkev",
           "pr_count": 1,
           "best_bpb": 1.10411,
@@ -24034,6 +24139,20 @@
           ]
         },
         {
+          "author": "arsenis-cmd",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1402,
+              "author": "arsenis-cmd",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:17:17Z"
+            }
+          ]
+        },
+        {
           "author": "Bharath-970",
           "pr_count": 1,
           "best_bpb": null,
@@ -24198,6 +24317,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-01T09:58:54Z"
+            }
+          ]
+        },
+        {
+          "author": "teerthsharma",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1401,
+              "author": "teerthsharma",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:10:52Z"
             }
           ]
         },
@@ -26169,6 +26302,27 @@
           "status": "ALIVE",
           "bpb": 1.0924,
           "created": "2026-04-05T22:55:21Z"
+        },
+        {
+          "number": 1400,
+          "author": "tmancino",
+          "status": "ALIVE",
+          "bpb": 1.1035,
+          "created": "2026-04-06T01:52:00Z"
+        },
+        {
+          "number": 1401,
+          "author": "teerthsharma",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:10:52Z"
+        },
+        {
+          "number": 1402,
+          "author": "arsenis-cmd",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:17:17Z"
         }
       ]
     },
@@ -42001,12 +42155,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 366,
-      "author_count": 247,
+      "count": 368,
+      "author_count": 248,
       "alive_count": 76,
       "dead_count": 85,
       "at_risk_count": 33,
-      "incomplete_count": 171,
+      "incomplete_count": 173,
       "unknown_count": 0,
       "best_alive": {
         "number": 909,
@@ -43698,6 +43852,27 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-19T10:34:19Z"
+            }
+          ]
+        },
+        {
+          "author": "teerthsharma",
+          "pr_count": 2,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 439,
+              "author": "teerthsharma",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-22T16:54:29Z"
+            },
+            {
+              "number": 1401,
+              "author": "teerthsharma",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:10:52Z"
             }
           ]
         },
@@ -45760,6 +45935,20 @@
           ]
         },
         {
+          "author": "arsenis-cmd",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1402,
+              "author": "arsenis-cmd",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:17:17Z"
+            }
+          ]
+        },
+        {
           "author": "Bharath-970",
           "pr_count": 1,
           "best_bpb": null,
@@ -46162,20 +46351,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-28T04:58:33Z"
-            }
-          ]
-        },
-        {
-          "author": "teerthsharma",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 439,
-              "author": "teerthsharma",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-03-22T16:54:29Z"
             }
           ]
         },
@@ -48868,15 +49043,29 @@
           "status": "INCOMPLETE",
           "bpb": 1.3151,
           "created": "2026-04-05T14:04:14Z"
+        },
+        {
+          "number": 1401,
+          "author": "teerthsharma",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:10:52Z"
+        },
+        {
+          "number": 1402,
+          "author": "arsenis-cmd",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:17:17Z"
         }
       ]
     },
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 462,
+      "count": 463,
       "author_count": 233,
-      "alive_count": 84,
+      "alive_count": 85,
       "dead_count": 162,
       "at_risk_count": 44,
       "incomplete_count": 172,
@@ -51184,6 +51373,27 @@
           ]
         },
         {
+          "author": "tmancino",
+          "pr_count": 2,
+          "best_bpb": 1.1035,
+          "prs": [
+            {
+              "number": 1239,
+              "author": "tmancino",
+              "status": "ALIVE",
+              "bpb": 1.5918,
+              "created": "2026-04-01T23:55:33Z"
+            },
+            {
+              "number": 1400,
+              "author": "tmancino",
+              "status": "ALIVE",
+              "bpb": 1.1035,
+              "created": "2026-04-06T01:52:00Z"
+            }
+          ]
+        },
+        {
           "author": "NewyorkDev",
           "pr_count": 2,
           "best_bpb": 1.1085,
@@ -53245,20 +53455,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.5382,
               "created": "2026-03-20T20:03:55Z"
-            }
-          ]
-        },
-        {
-          "author": "tmancino",
-          "pr_count": 1,
-          "best_bpb": 1.5918,
-          "prs": [
-            {
-              "number": 1239,
-              "author": "tmancino",
-              "status": "ALIVE",
-              "bpb": 1.5918,
-              "created": "2026-04-01T23:55:33Z"
             }
           ]
         },
@@ -56987,18 +57183,25 @@
           "status": "ALIVE",
           "bpb": 1.0924,
           "created": "2026-04-05T22:55:21Z"
+        },
+        {
+          "number": 1400,
+          "author": "tmancino",
+          "status": "ALIVE",
+          "bpb": 1.1035,
+          "created": "2026-04-06T01:52:00Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 354,
-      "author_count": 203,
+      "count": 356,
+      "author_count": 205,
       "alive_count": 74,
       "dead_count": 104,
       "at_risk_count": 36,
-      "incomplete_count": 135,
+      "incomplete_count": 137,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -60556,6 +60759,20 @@
           ]
         },
         {
+          "author": "arsenis-cmd",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1402,
+              "author": "arsenis-cmd",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:17:17Z"
+            }
+          ]
+        },
+        {
           "author": "Bharath-970",
           "pr_count": 1,
           "best_bpb": null,
@@ -60832,6 +61049,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-28T04:58:33Z"
+            }
+          ]
+        },
+        {
+          "author": "teerthsharma",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1401,
+              "author": "teerthsharma",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:10:52Z"
             }
           ]
         },
@@ -63384,18 +63615,32 @@
           "status": "INCOMPLETE",
           "bpb": 1.14523122,
           "created": "2026-04-05T17:45:32Z"
+        },
+        {
+          "number": 1401,
+          "author": "teerthsharma",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:10:52Z"
+        },
+        {
+          "number": 1402,
+          "author": "arsenis-cmd",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:17:17Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 275,
-      "author_count": 128,
-      "alive_count": 65,
+      "count": 278,
+      "author_count": 131,
+      "alive_count": 66,
       "dead_count": 88,
       "at_risk_count": 35,
-      "incomplete_count": 82,
+      "incomplete_count": 84,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -65385,6 +65630,20 @@
           ]
         },
         {
+          "author": "tmancino",
+          "pr_count": 1,
+          "best_bpb": 1.1035,
+          "prs": [
+            {
+              "number": 1400,
+              "author": "tmancino",
+              "status": "ALIVE",
+              "bpb": 1.1035,
+              "created": "2026-04-06T01:52:00Z"
+            }
+          ]
+        },
+        {
           "author": "clarkkev",
           "pr_count": 1,
           "best_bpb": 1.10411,
@@ -66015,6 +66274,20 @@
           ]
         },
         {
+          "author": "arsenis-cmd",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1402,
+              "author": "arsenis-cmd",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:17:17Z"
+            }
+          ]
+        },
+        {
           "author": "Bharath-970",
           "pr_count": 1,
           "best_bpb": null,
@@ -66179,6 +66452,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-01T09:58:54Z"
+            }
+          ]
+        },
+        {
+          "author": "teerthsharma",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1401,
+              "author": "teerthsharma",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-06T02:10:52Z"
             }
           ]
         },
@@ -68150,6 +68437,27 @@
           "status": "ALIVE",
           "bpb": 1.0924,
           "created": "2026-04-05T22:55:21Z"
+        },
+        {
+          "number": 1400,
+          "author": "tmancino",
+          "status": "ALIVE",
+          "bpb": 1.1035,
+          "created": "2026-04-06T01:52:00Z"
+        },
+        {
+          "number": 1401,
+          "author": "teerthsharma",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:10:52Z"
+        },
+        {
+          "number": 1402,
+          "author": "arsenis-cmd",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-06T02:17:17Z"
         }
       ]
     },
@@ -84171,11 +84479,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 462,
+      "left_count": 463,
       "right_count": 2,
       "left_people": 233,
       "right_people": 2,
-      "score": 924
+      "score": 926
     },
     {
       "left": "SwiGLU",
@@ -84198,29 +84506,29 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 366,
+      "left_count": 368,
       "right_count": 2,
-      "left_people": 247,
+      "left_people": 248,
       "right_people": 2,
-      "score": 732
+      "score": 736
     },
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 354,
+      "left_count": 356,
       "right_count": 2,
-      "left_people": 203,
+      "left_people": 205,
       "right_people": 2,
-      "score": 708
+      "score": 712
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 354,
+      "left_count": 356,
       "right_count": 2,
-      "left_people": 203,
+      "left_people": 205,
       "right_people": 2,
-      "score": 708
+      "score": 712
     },
     {
       "left": "QAT",
@@ -84279,20 +84587,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 275,
+      "left_count": 278,
       "right_count": 2,
-      "left_people": 128,
+      "left_people": 131,
       "right_people": 2,
-      "score": 550
+      "score": 556
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 275,
+      "left_count": 278,
       "right_count": 2,
-      "left_people": 128,
+      "left_people": 131,
       "right_people": 2,
-      "score": 550
+      "score": 556
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -84315,11 +84623,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 462,
+      "left_count": 463,
       "right_count": 1,
       "left_people": 233,
       "right_people": 1,
-      "score": 462
+      "score": 463
     },
     {
       "left": "BigramHash",
@@ -84396,11 +84704,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 354,
+      "left_count": 356,
       "right_count": 1,
-      "left_people": 203,
+      "left_people": 205,
       "right_people": 1,
-      "score": 354
+      "score": 356
     },
     {
       "left": "Parallel Muon",
@@ -84441,11 +84749,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 275,
+      "left_count": 278,
       "right_count": 1,
-      "left_people": 128,
+      "left_people": 131,
       "right_people": 1,
-      "score": 275
+      "score": 278
     },
     {
       "left": "Ternary Weights",
