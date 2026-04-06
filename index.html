@@ -229,6 +229,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <a href="#funding">Funding</a>
   <a href="#blocked">Blocked</a>
   <a href="#compute">Compute Guide</a>
+  <a href="#infrastructure" style="color:var(--accent);font-weight:600;">&#9889; Infra We Built</a>
   <a href="#timeline">Timeline</a>
   <a href="#techniques">Techniques</a>
   <a href="#analytics">Analytics</a>
@@ -265,8 +266,9 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <h2>Submission Checklist</h2>
 <!-- AGORA:CHECKLIST_START -->
 <p style="color:var(--text-dim);margin-bottom:1rem;">Updated March 28, 2026. Check ALL boxes before submitting.</p>
-<div class="card">
-<h3>Before You Submit</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:1rem;align-items:start;">
+<div class="card" style="margin:0;">
+<h3 style="margin-top:0;">Before You Submit</h3>
 <ul class="checklist">
   <li title="Total size of your training script + compressed model weights, measured in bytes">Artifact ≤ 16,000,000 bytes (code + compressed model)</li>
   <li title="Wall-clock time from first step to last step, measured on 8x NVIDIA H100 SXM GPUs">Training completed in ≤ 600 seconds on 8×H100 SXM</li>
@@ -278,8 +280,8 @@ tr:hover { background: rgba(88,166,255,0.04); }
   <li title="No downloading models, data, or making API calls during train or eval time">No network calls during training or eval</li>
 </ul>
 </div>
-<div class="card">
-<h3>Techniques &mdash; What's Legal RIGHT NOW</h3>
+<div class="card" style="margin:0;">
+<h3 style="margin-top:0;">Techniques &mdash; What's Legal RIGHT NOW</h3>
 <ul class="technique-list">
   <li class="legal" title="All neural architectures are allowed">Any neural architecture (transformers, SSMs, hybrids, MoE)</li>
   <li class="legal" title="No restrictions on activation functions">Any activation function (LeakyReLU², GeGLU, SwiGLU, etc.)</li>
@@ -306,8 +308,8 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </div>
 <!-- AGORA:CHECKLIST_END -->
 <!-- AGORA:RULINGS_START -->
-<div class="card">
-<h3>Rule Change History</h3>
+<div class="card" style="margin:0;">
+<h3 style="margin-top:0;">Rule Change History</h3>
 <div class="timeline-entry">
   <div class="timeline-date">March 27, 2026</div>
   <p>@valerio-oai closed 30+ PRs. Hashed n-gram caches banned (improper normalization). Two-pass rescoring banned (eval token leakage). GPTQ on eval tokens banned.</p>
@@ -327,7 +329,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </div>
 <!-- AGORA:RULINGS_END -->
 <!-- AGORA:ALERTS_START -->
-<div class="card" style="border-color:var(--yellow);border-width:2px;">
+<div class="card" style="border-color:var(--yellow);border-width:2px;margin:0;">
 <h3 style="margin-top:0;color:var(--yellow);">&#9888; Community Bug Alerts</h3>
 <p style="font-size:0.9rem;margin-bottom:0.75rem;">Known issues that may affect your BPB score. Check before submitting.</p>
 <div style="margin-bottom:1rem;">
@@ -342,6 +344,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </div>
 </div>
 <!-- AGORA:ALERTS_END -->
+</div>
 </section>
 
 <!-- SECTION 2: LEADERBOARD (placeholder for Phase 2 API) -->
@@ -1982,6 +1985,92 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.5rem;">Competition requires 8×H100 SXM for official timing. Colab H100 variant unverified — always confirm step timing matches expected SXM performance before submitting.</p>
 </div>
 <!-- AGORA:COMPUTE_END -->
+</section>
+
+<!-- SECTION: COMMUNITY INFRASTRUCTURE (the gap we filled) -->
+<section id="infrastructure">
+<h2>Community Infrastructure (We Built This)</h2>
+<div class="card" style="border-left:4px solid var(--accent);">
+<p style="color:var(--text-dim);margin-top:0;">When the credit pipeline broke, when the data downloads ate $3+/run on every pod launch, when participants needed checkpoint persistence across pod preemptions &mdash; the community had to build it. <strong style="color:var(--text-bright);">All of this is funded out of pocket by Light Speed Up. Free for every participant. No login. No paywall. No data collection.</strong></p>
+<p style="color:var(--text-dim);font-size:0.85rem;margin-bottom:0;">It's not about the cost &mdash; it's about who actually has to step up when the maintainers go silent. The point is that <em>none of this should have been our job.</em></p>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem;margin-top:1rem;">
+
+<div class="card">
+<h3 style="margin-top:0;color:var(--accent);">&#128190; Pre-Tokenized Dataset on HuggingFace</h3>
+<p><strong>What it solves:</strong> Every pod launch was wasting 10-30 minutes downloading 16+ GB of FineWeb data &mdash; ~$3.50 of billable GPU time burned on data transfer alone, every single run.</p>
+<p><strong>What we shipped:</strong> <a href="https://huggingface.co/datasets/LightSpeedUp/parameter-golf-data">LightSpeedUp/parameter-golf-data</a> &mdash; SP1024 (~15 GB) and Scylla (~11 GB) pre-tokenized FineWeb shards with SHA256 verification, tokenizer models included. No login required. Works from any cloud (RunPod, Modal, Colab, Vast.ai, GCP, local).</p>
+<pre style="background:#0d1117;padding:0.6rem;border-radius:4px;font-size:0.78rem;overflow-x:auto;">huggingface-cli download LightSpeedUp/parameter-golf-data \
+  --include "fineweb_sp1024/*" --local-dir /workspace/data</pre>
+<p style="color:var(--text-dim);font-size:0.8rem;margin-bottom:0;"><strong>Cost to you:</strong> $0. <strong>Cost to us:</strong> covered through April 30.</p>
+</div>
+
+<div class="card" style="border:2px solid var(--accent);">
+<h3 style="margin-top:0;color:var(--accent);">&#9889; Cross-Provider Network Storage (the network volume that actually works)</h3>
+<p><strong>The original plan</strong> was a RunPod Network Volume with the FineWeb dataset pre-loaded &mdash; community shared, free, mountable. <strong>It died on contact with reality:</strong> RunPod volumes are datacenter-locked (create in US-TX-3, can't mount in EU-RO-1), and the datacenters with 8&times;H100 SXM availability rarely have network volume capacity. RunPod's own docs warn it "may limit GPU availability and reduce failover options." Dead end.</p>
+<p><strong>So we built a better one.</strong> <code style="color:var(--accent);font-size:0.95rem;">pgolf-api.lightspeedup.com</code> &mdash; a Cloudflare Worker + R2 storage backend. Works from <em>any</em> provider in <em>any</em> region. RunPod, Modal, Colab, Vast.ai, GCP, your laptop &mdash; all of them can save and pull checkpoints from one place.</p>
+
+<p style="margin-top:0.85rem;"><strong style="color:var(--text-bright);">How to use it (no signup, no API key, no Vault):</strong></p>
+<pre style="background:#0d1117;padding:0.7rem;border-radius:4px;font-size:0.78rem;overflow-x:auto;line-height:1.5;"># Save a checkpoint mid-training
+curl -X PUT \
+  -H "Authorization: Bearer ghp_yourgithubtoken" \
+  --data-binary @checkpoint.pt \
+  https://pgolf-api.lightspeedup.com/put/yourgithubuser/run-id/checkpoint.pt
+
+# Resume on a different pod (different provider, different region — works)
+curl -o checkpoint.pt \
+  -H "Authorization: Bearer ghp_yourgithubtoken" \
+  "https://pgolf-api.lightspeedup.com/download?run_id=run-id&filename=checkpoint.pt"
+
+# List your checkpoints
+curl -H "Authorization: Bearer ghp_yourgithubtoken" \
+  "https://pgolf-api.lightspeedup.com/list?run_id=run-id"</pre>
+
+<p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.6rem;"><strong>Auth:</strong> Your GitHub Personal Access Token IS your identity &mdash; the API validates it against GitHub's <code>/user</code> endpoint over HTTPS, gets your username, and that's it. Token is never stored, never logged, never sold. The validation happens on every request.</p>
+<p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.3rem;"><strong>Limits:</strong> 10 checkpoints per user, 2 GB each, 7-day auto-delete (cron). <strong>Cost to you:</strong> $0. <strong>Cost to us:</strong> ~$1/month, covered indefinitely.</p>
+<p style="color:var(--text-dim);font-size:0.8rem;margin-top:0.4rem;margin-bottom:0;"><strong>Source:</strong> Worker code is on the open-source roadmap (<a href="https://github.com/MatoTeziTanka/parameter-golf/issues">file an issue</a> if you want it sooner).</p>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0;color:var(--accent);">&#128011; Pre-Built Docker Image</h3>
+<p><strong>What it solves:</strong> Setting up CUDA, PyTorch, flash-attn, brotli, tokenmonster, sentencepiece, and the data pipeline takes an hour. Every. Single. Pod.</p>
+<p><strong>What we shipped:</strong> <a href="https://hub.docker.com/r/matotezitanka/proteus-pytorch"><code>matotezitanka/proteus-pytorch:community</code></a> &mdash; everything pre-installed, auto-downloads data on boot via env vars, SSH keepalive configured for long training sessions. Set <code>PGOLF_DATA=sp1024</code> and you're training in under 60 seconds.</p>
+<p style="color:var(--text-dim);font-size:0.8rem;margin-bottom:0;"><strong>Status:</strong> Live on Docker Hub. <strong>Cost to you:</strong> $0.</p>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0;color:var(--accent);">&#128640; RunPod Template (Pre-Configured)</h3>
+<p><strong>What it solves:</strong> RunPod template configuration is fiddly. Wrong env vars = burned credits.</p>
+<p><strong>What we shipped:</strong> "Parameter Golf Light Speed Up Community" template &mdash; pre-baked with the Docker image, sane defaults, env vars wired up. One click → training.</p>
+<p style="color:var(--text-dim);font-size:0.8rem;margin-bottom:0;"><strong>Cost to you:</strong> $0 to use the template (you still pay RunPod for compute, of course).</p>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0;color:var(--accent);">&#128202; This Site (The Agora)</h3>
+<p><strong>What it solves:</strong> 1,425+ PRs across 518+ contributors with no auto-classified leaderboard, no compliance tracker, no technique map, no funding transparency. Issue #140 was the closest thing &mdash; <a href="https://github.com/openai/parameter-golf/issues/140" style="text-decoration:line-through;">until OpenAI walked away from it</a>.</p>
+<p><strong>What we shipped:</strong> Auto-updating leaderboard, compliance engine, code-based technique detection (1,265 PRs analyzed), funding tracker, blocked-on-compute board, BPB timeline, and now &mdash; with this update &mdash; the public accountability banner above.</p>
+<p style="color:var(--text-dim);font-size:0.8rem;margin-bottom:0;"><strong>Cost to you:</strong> $0. <strong>Cost to us:</strong> server time, Cloudflare bandwidth, my own hours.</p>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0;color:var(--accent);">&#128737; Community Toolkit</h3>
+<p><strong>What it solves:</strong> Retokenization scripts, CPU smoke tests, classifier code, sweep harnesses &mdash; all the boring tooling nobody wants to write but everybody needs.</p>
+<p><strong>What we shipped:</strong> <code>retokenize_scylla.py</code>, <code>cpu_test.py</code>, <code>classify.py</code>, <code>vocab_sweep.py</code> (new today), and the Agora pipeline itself &mdash; all open source, all forkable.</p>
+<p style="color:var(--text-dim);font-size:0.8rem;margin-bottom:0;"><strong>Source:</strong> <a href="https://github.com/MatoTeziTanka/parameter-golf">MatoTeziTanka/parameter-golf</a></p>
+</div>
+
+</div>
+
+<div class="card" style="border-top:3px solid var(--yellow);margin-top:1rem;">
+<p style="margin:0;color:var(--text-dim);font-size:0.9rem;">
+  <strong style="color:var(--yellow);">Why we're saying this out loud:</strong>
+  Because the maintainers walked away with a one-liner, and the only people who showed up for the community in the last 10 days are the community itself.
+  If anyone wants to mirror, fork, or take over any piece of this &mdash; <strong>please do</strong>.
+  We don't want to be the hub. We just don't want there to <em>be no hub</em>.
+</p>
+</div>
+
 </section>
 
 <!-- SECTION 6: TIMELINE (placeholder for Phase 3) -->
