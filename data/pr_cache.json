@@ -1,7 +1,48 @@
 {
-  "last_fetch": "2026-04-06T19:06:37.358744+00:00",
-  "api_calls_used": 124,
+  "last_fetch": "2026-04-06T20:05:31.799606+00:00",
+  "api_calls_used": 125,
   "prs": [
+    {
+      "number": 1425,
+      "title": "Non-record: PROTEUS Feature Ablation - Parallel Residuals + Mixed INT5/INT6 + TTT on DGX Spark GB10",
+      "author": "dentity007",
+      "state": "OPEN",
+      "created": "2026-04-06T19:17:05Z",
+      "updated": "2026-04-06T19:17:05Z",
+      "bpb": 1.4479,
+      "seeds": 42,
+      "artifact_bytes": 900000,
+      "technique_summary": "TTT + INT6 + EMA",
+      "file_paths": [
+        "APPROACH.md",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/README.md",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/final_model.int6.ptz",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/submission.json",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/train_gpt.py",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/train_seed42.log",
+        "records/track_non_record_16mb/2026-03-31_MambaSSMHybrid/README.md",
+        "records/track_non_record_16mb/2026-03-31_MambaSSMHybrid/submission.json",
+        "records/track_non_record_16mb/2026-03-31_MambaSSMHybrid/train_gpt.py",
+        "run_spark_comparison.sh",
+        "test_cpu.py",
+        "train_gpt_1218_slot.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1424,
       "title": "Non-record: Extended Compute Scaling Analysis (50K steps, 1.0858 BPB, 3 seeds (each run ~12 hours on 4xA100MIG))",
@@ -120,7 +161,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-06T16:14:47Z",
-      "updated": "2026-04-06T18:54:52Z",
+      "updated": "2026-04-06T19:38:54Z",
       "bpb": 1.08014,
       "seeds": 5,
       "artifact_bytes": 19811,
@@ -279,7 +320,7 @@
       "author": "erichroepke",
       "state": "OPEN",
       "created": "2026-04-06T14:46:25Z",
-      "updated": "2026-04-06T15:12:15Z",
+      "updated": "2026-04-06T19:27:16Z",
       "bpb": 1.07948,
       "seeds": 3,
       "artifact_bytes": 15120000,
@@ -975,7 +1016,7 @@
       "author": "johnlennyt5",
       "state": "OPEN",
       "created": "2026-04-05T13:19:28Z",
-      "updated": "2026-04-06T18:25:41Z",
+      "updated": "2026-04-06T19:50:22Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 7300000,
@@ -2256,6 +2297,47 @@
         "neural"
       ],
       "technique_source": "code"
+    },
+    {
+      "number": 1291,
+      "title": "Record: Vocab4096 + MLP4.0x + SLOT - val_bpb 1.0925 (3-seed mean)",
+      "author": "dentity007",
+      "state": "OPEN",
+      "created": "2026-04-03T07:54:53Z",
+      "updated": "2026-04-06T19:10:55Z",
+      "bpb": 1.0925,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "APPROACH.md",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/README.md",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/final_model.int6.ptz",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/submission.json",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/train_gpt.py",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-03_Vocab4096_MLPMult4_SLOT_1.0925/train_seed42.log",
+        "records/track_non_record_16mb/2026-03-31_MambaSSMHybrid/README.md",
+        "records/track_non_record_16mb/2026-03-31_MambaSSMHybrid/submission.json",
+        "records/track_non_record_16mb/2026-03-31_MambaSSMHybrid/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 1289,
@@ -17438,7 +17520,7 @@
       "author": "clthuang",
       "state": "OPEN",
       "created": "2026-03-26T18:00:01Z",
-      "updated": "2026-04-06T18:19:50Z",
+      "updated": "2026-04-06T19:39:38Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -24782,7 +24864,7 @@
       "author": "ChideraIbe123",
       "state": "OPEN",
       "created": "2026-03-25T03:58:35Z",
-      "updated": "2026-04-06T18:55:16Z",
+      "updated": "2026-04-06T19:41:48Z",
       "bpb": 0.5793,
       "seeds": 3,
       "artifact_bytes": 15740000,
