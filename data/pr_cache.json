@@ -1,7 +1,41 @@
 {
-  "last_fetch": "2026-04-06T12:07:38.872478+00:00",
-  "api_calls_used": 120,
+  "last_fetch": "2026-04-06T13:52:26.330553+00:00",
+  "api_calls_used": 121,
   "prs": [
+    {
+      "number": 1415,
+      "title": "Record: SP4096 + 3-Layer Recurrence + GPTQ Embeddings + SDClip + ETLB — val_bpb 1.0913 (3-seed mean)",
+      "author": "bigbag",
+      "state": "OPEN",
+      "created": "2026-04-06T12:32:13Z",
+      "updated": "2026-04-06T12:32:13Z",
+      "bpb": 1.0913,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/README.md",
+        "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/submission.json",
+        "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/train_seed314.log",
+        "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/train_seed42.log",
+        "records/track_10min_16mb/2026-04-06_SP4096_3LayerRecur_GPTQ-Embed_SDClip_ETLB/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1408,
       "title": "Record: dTTT + BigramHash 3072×112 — val_bpb 1.0800 (3-seed mean)",
@@ -1273,14 +1307,14 @@
       "author": "teslaeco",
       "state": "OPEN",
       "created": "2026-04-04T19:31:49Z",
-      "updated": "2026-04-05T15:47:54Z",
+      "updated": "2026-04-06T13:06:16Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
         "README.md",
-        "final_model.int8 (1).ptz",
+        "final_model.int8.ptz",
         "records/non-record/multi-cube-face-letter-assignment/README.md",
         "records/non-record/multi-cube-face-letter-assignment/submission.json"
       ],
@@ -1291,14 +1325,14 @@
       "technique_tags": [
         "neural"
       ],
+      "technique_source": "text",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "technique_source": "text"
+      "confidence": "HIGH"
     },
     {
       "number": 1354,
@@ -1484,6 +1518,44 @@
       ],
       "confidence": "HIGH",
       "technique_source": "code"
+    },
+    {
+      "number": 1314,
+      "title": "Scylla: Corrected Byte-Exact Tokenizer Path",
+      "author": "simon-marcus",
+      "state": "OPEN",
+      "created": "2026-04-03T20:26:21Z",
+      "updated": "2026-04-06T12:26:56Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "data/audit_tokenmonster_bundle.py",
+        "data/tokenmonster_utils.py",
+        "records/track_non_record_16mb/2026-04-03_Scylla_ByteExactTokenizer/BUILD_NOTES.md",
+        "records/track_non_record_16mb/2026-04-03_Scylla_ByteExactTokenizer/FULL_VAL_AUDIT.json",
+        "records/track_non_record_16mb/2026-04-03_Scylla_ByteExactTokenizer/README.md",
+        "records/track_non_record_16mb/2026-04-03_Scylla_ByteExactTokenizer/manifest.json",
+        "records/track_non_record_16mb/2026-04-03_Scylla_ByteExactTokenizer/scylla.meta.npz",
+        "records/track_non_record_16mb/2026-04-03_Scylla_ByteExactTokenizer/scylla.yaml"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1306,
@@ -1849,7 +1921,7 @@
       "author": "MatoTeziTanka",
       "state": "OPEN",
       "created": "2026-04-03T07:37:15Z",
-      "updated": "2026-04-05T12:37:51Z",
+      "updated": "2026-04-06T12:31:43Z",
       "bpb": 1.0819,
       "seeds": 3,
       "artifact_bytes": 112437059,
@@ -1875,10 +1947,10 @@
       "technique_tags": [
         "neural"
       ],
+      "technique_source": "code",
       "status": "ALIVE",
       "flags": [],
-      "confidence": "HIGH",
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 1284,
@@ -3236,7 +3308,7 @@
       "author": "deborahnelson8788726",
       "state": "OPEN",
       "created": "2026-04-02T02:44:32Z",
-      "updated": "2026-04-05T21:56:53Z",
+      "updated": "2026-04-06T13:16:47Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 14200000,
@@ -3245,7 +3317,9 @@
         "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
         "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/requirements.txt",
         "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/submission.json",
-        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_gpt.py"
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_gpt.py",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_seed314_slot_v2.log",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_seeds_42_999_slot_v2.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -3255,13 +3329,13 @@
         "ttt",
         "gptq"
       ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 1245,
@@ -5806,7 +5880,7 @@
       "author": "dexhunter",
       "state": "OPEN",
       "created": "2026-03-31T10:06:09Z",
-      "updated": "2026-03-31T16:48:58Z",
+      "updated": "2026-04-06T13:10:21Z",
       "bpb": 1.10979,
       "seeds": 3,
       "artifact_bytes": null,
@@ -5819,16 +5893,16 @@
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
       "status": "INCOMPLETE",
       "flags": [
         "artifact-unknown",
         "no-submission-json"
       ],
-      "confidence": "HIGH",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "text"
+      "confidence": "HIGH"
     },
     {
       "number": 1176,
@@ -6991,7 +7065,7 @@
       "author": "simon-marcus",
       "state": "CLOSED",
       "created": "2026-03-30T18:53:55Z",
-      "updated": "2026-03-31T14:44:56Z",
+      "updated": "2026-04-06T12:08:26Z",
       "bpb": 1.08056553,
       "seeds": 2,
       "artifact_bytes": null,
@@ -7022,15 +7096,15 @@
       ],
       "track": "record",
       "technique_type": "ttt",
+      "technique_tags": [
+        "cache"
+      ],
+      "technique_source": "code",
       "status": "DEAD",
       "flags": [
         "closed-no-maintainer-comment"
       ],
-      "confidence": "LOW",
-      "technique_tags": [
-        "cache"
-      ],
-      "technique_source": "code"
+      "confidence": "LOW"
     },
     {
       "number": 1142,
