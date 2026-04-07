@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-07T20:06:55.463340+00:00",
-  "api_calls_used": 136,
+  "last_fetch": "2026-04-07T21:12:14.689844+00:00",
+  "api_calls_used": 137,
   "prs": [
     {
       "number": 1449,
@@ -8,7 +8,7 @@
       "author": "codeprakhar25",
       "state": "OPEN",
       "created": "2026-04-07T20:06:50Z",
-      "updated": "2026-04-07T20:06:50Z",
+      "updated": "2026-04-07T20:09:42Z",
       "bpb": 1.368,
       "seeds": null,
       "artifact_bytes": 10000000,
@@ -450,6 +450,42 @@
         "path:ngram-path"
       ],
       "confidence": "MEDIUM"
+    },
+    {
+      "number": 1435,
+      "title": "Record: 11L Depth Recurrence + BigramHash + EMA 0.9965 — val_bpb 1.0980 (3-seed mean)",
+      "author": "AbhayAnandUCSD",
+      "state": "OPEN",
+      "created": "2026-04-07T07:10:38Z",
+      "updated": "2026-04-07T20:40:51Z",
+      "bpb": 0.0167,
+      "seeds": 3,
+      "artifact_bytes": 14600000,
+      "technique_summary": "GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_BigramHash_EMA0.9965/README.md",
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_BigramHash_EMA0.9965/submission.json",
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_BigramHash_EMA0.9965/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_BigramHash_EMA0.9965/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_BigramHash_EMA0.9965/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-06_DepthRecurrence_BigramHash_EMA0.9965/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
     },
     {
       "number": 1433,
@@ -2356,6 +2392,40 @@
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1355,
+      "title": "Non-record: Mamba-3 Hybrid + GPTQ + Late QAT + MuonEq-R — val_bpb 1.1526 (best SSM)",
+      "author": "mradassaad",
+      "state": "OPEN",
+      "created": "2026-04-04T19:04:09Z",
+      "updated": "2026-04-07T20:47:13Z",
+      "bpb": 1.1526,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "SSM + GPTQ + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/README.md",
+        "records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/requirements.txt",
+        "records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/submission.json",
+        "records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/train_mamba3_hybrid.py",
+        "records/track_non_record_16mb/2026-04-04_Mamba3Hybrid_GPTQ_LateQAT_LinearWarmdown/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -25539,7 +25609,7 @@
       "author": "ChideraIbe123",
       "state": "OPEN",
       "created": "2026-03-25T03:58:35Z",
-      "updated": "2026-04-07T19:48:15Z",
+      "updated": "2026-04-07T20:55:23Z",
       "bpb": 0.5793,
       "seeds": 3,
       "artifact_bytes": 15740000,
