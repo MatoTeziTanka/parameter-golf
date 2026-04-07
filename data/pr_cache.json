@@ -1,7 +1,58 @@
 {
-  "last_fetch": "2026-04-07T10:59:57.705222+00:00",
-  "api_calls_used": 129,
+  "last_fetch": "2026-04-07T11:59:05.643444+00:00",
+  "api_calls_used": 130,
   "prs": [
+    {
+      "number": 1440,
+      "title": "[Submission] EngramLite + Mousse + Progressive Depth Recurrence + TTT — val_bpb 1.1026 | 15.95MB | 8×H100",
+      "author": "Mertyandimata",
+      "state": "OPEN",
+      "created": "2026-04-07T11:32:28Z",
+      "updated": "2026-04-07T11:32:28Z",
+      "bpb": 1.1026,
+      "seeds": 1337,
+      "artifact_bytes": 15948298,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "compare_all.sh",
+        "fix_v11.py",
+        "patch_v10.py",
+        "patch_v11.py",
+        "patch_v12.py",
+        "patch_v13.py",
+        "patch_v5.py",
+        "patch_v6.py",
+        "patch_v7.py",
+        "patch_v8.py",
+        "patch_v9.py",
+        "records/raki_training/README.md",
+        "records/raki_training/patch_raki.py",
+        "records/track_10min_16mb/2026-04-07_Raki_v6_EngramLite_Mousse_TTT/README.md",
+        "records/track_10min_16mb/2026-04-07_Raki_v6_EngramLite_Mousse_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-07_Raki_v6_EngramLite_Mousse_TTT/train.log",
+        "records/track_10min_16mb/2026-04-07_Raki_v6_EngramLite_Mousse_TTT/train_gpt.py",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "leaky_relu",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1439,
       "title": "Add LoRA exploration non-record archive",
@@ -402,7 +453,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-06T16:14:47Z",
-      "updated": "2026-04-07T03:05:03Z",
+      "updated": "2026-04-07T11:17:04Z",
       "bpb": 1.08014,
       "seeds": 5,
       "artifact_bytes": 19811,
