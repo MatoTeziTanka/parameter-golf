@@ -1,7 +1,113 @@
 {
-  "last_fetch": "2026-04-07T05:26:25.924988+00:00",
-  "api_calls_used": 127,
+  "last_fetch": "2026-04-07T06:53:34.753986+00:00",
+  "api_calls_used": 128,
   "prs": [
+    {
+      "number": 1433,
+      "title": "[Non-record] Codebooks! - val_bpb 1.2067 (3-seed mean)",
+      "author": "mtybadger",
+      "state": "OPEN",
+      "created": "2026-04-07T06:34:12Z",
+      "updated": "2026-04-07T06:34:12Z",
+      "bpb": 0.002,
+      "seeds": 3,
+      "artifact_bytes": 2000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-07_Codebooks/README.md",
+        "records/track_non_record_16mb/2026-04-07_Codebooks/submission.json",
+        "records/track_non_record_16mb/2026-04-07_Codebooks/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-07_Codebooks/vq_codebook_13_1024.log",
+        "records/track_non_record_16mb/2026-04-07_Codebooks/vq_codebook_13_1337.log",
+        "records/track_non_record_16mb/2026-04-07_Codebooks/vq_codebook_13_42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
+    {
+      "number": 1432,
+      "title": "Submission: 10L-512dim-scaled (val_bpb 2.0630, 15.7MB)",
+      "author": "vikrant-akavaram",
+      "state": "OPEN",
+      "created": "2026-04-07T06:26:50Z",
+      "updated": "2026-04-07T06:26:50Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15700000,
+      "technique_summary": "INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-07_10L-512dim-scaled/README.md",
+        "records/track_10min_16mb/2026-04-07_10L-512dim-scaled/submission.json",
+        "records/track_10min_16mb/2026-04-07_10L-512dim-scaled/train_gpt.py",
+        "records/track_10min_16mb/2026-04-07_10L-512dim-scaled/training_log.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1431,
+      "title": "sp4096 + 10L 3.5x MLP + GPTQ + TTT (1.1266 BPB)",
+      "author": "Idan3011",
+      "state": "OPEN",
+      "created": "2026-04-07T06:03:06Z",
+      "updated": "2026-04-07T06:04:55Z",
+      "bpb": 0.0012,
+      "seeds": null,
+      "artifact_bytes": 15989376,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-07_idan3011_sp4096_10L_TTT/README.md",
+        "records/track_10min_16mb/2026-04-07_idan3011_sp4096_10L_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-07_idan3011_sp4096_10L_TTT/train.log",
+        "requirements.txt",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1430,
       "title": "Record: Per-Sample SLOT + N-gram Order-22 + TTT + LR=0.432 — val_bpb 0.39642 (3-seed mean)",
@@ -1058,7 +1164,7 @@
       "author": "johnlennyt5",
       "state": "OPEN",
       "created": "2026-04-05T13:19:28Z",
-      "updated": "2026-04-07T05:05:43Z",
+      "updated": "2026-04-07T06:24:26Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 7300000,
