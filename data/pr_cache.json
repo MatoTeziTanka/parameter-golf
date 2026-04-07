@@ -1,7 +1,227 @@
 {
-  "last_fetch": "2026-04-07T21:12:14.689844+00:00",
-  "api_calls_used": 137,
+  "last_fetch": "2026-04-07T22:05:03.318544+00:00",
+  "api_calls_used": 138,
   "prs": [
+    {
+      "number": 1454,
+      "title": "Non-record: TurboQuant + N-gram Hybrid Eval + TTT (1xH100 NVL)",
+      "author": "bsisduck",
+      "state": "OPEN",
+      "created": "2026-04-07T21:56:40Z",
+      "updated": "2026-04-07T21:56:40Z",
+      "bpb": 0.3509,
+      "seeds": null,
+      "artifact_bytes": 14920000,
+      "technique_summary": "TTT + LoRA + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-07_TurboQuant_Ngram_TTT_1xH100/README.md",
+        "records/track_non_record_16mb/2026-04-07_TurboQuant_Ngram_TTT_1xH100/submission.json",
+        "records/track_non_record_16mb/2026-04-07_TurboQuant_Ngram_TTT_1xH100/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-07_TurboQuant_Ngram_TTT_1xH100/train_log.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval",
+        "ngram_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "cache",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 1453,
+      "title": "Non-record: Depth Recurrence + Int7 Mixed Quant — val_bpb 1.1324 (3-seed mean)",
+      "author": "iverbovoy",
+      "state": "OPEN",
+      "created": "2026-04-07T21:55:25Z",
+      "updated": "2026-04-07T21:55:25Z",
+      "bpb": 1.1324,
+      "seeds": 3,
+      "artifact_bytes": 15400000,
+      "technique_summary": "GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-08_DepthRecurrence_Int7MixedQuant_HedgeMixer/README.md",
+        "records/track_non_record_16mb/2026-04-08_DepthRecurrence_Int7MixedQuant_HedgeMixer/submission.json",
+        "records/track_non_record_16mb/2026-04-08_DepthRecurrence_Int7MixedQuant_HedgeMixer/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-08_DepthRecurrence_Int7MixedQuant_HedgeMixer/train_seed1337.log",
+        "records/track_non_record_16mb/2026-04-08_DepthRecurrence_Int7MixedQuant_HedgeMixer/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-08_DepthRecurrence_Int7MixedQuant_HedgeMixer/train_seed7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1452,
+      "title": "Non-record: TurboQuant + N-gram Hybrid Eval + TTT (1xH100 NVL)",
+      "author": "bsisduck",
+      "state": "CLOSED",
+      "created": "2026-04-07T21:53:50Z",
+      "updated": "2026-04-07T21:55:10Z",
+      "bpb": 0.3509,
+      "seeds": null,
+      "artifact_bytes": 14920000,
+      "technique_summary": "TTT + LoRA + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-07_TurboQuant_Ngram_TTT_1xH100/README.md",
+        "records/track_non_record_16mb/2026-04-07_TurboQuant_Ngram_TTT_1xH100/submission.json",
+        "records/track_non_record_16mb/2026-04-07_TurboQuant_Ngram_TTT_1xH100/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-07_TurboQuant_Ngram_TTT_1xH100/train_log.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval",
+        "ngram_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "cache",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1451,
+      "title": "[10min/16mb] David Ghazaryan — MoE + BigramHash4096 (mean BPB: 1.11799)",
+      "author": "davie2009kh",
+      "state": "OPEN",
+      "created": "2026-04-07T21:46:21Z",
+      "updated": "2026-04-07T21:46:21Z",
+      "bpb": null,
+      "seeds": 2,
+      "artifact_bytes": null,
+      "technique_summary": "MoE",
+      "file_paths": [
+        ".gitignore",
+        "README.md",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/README.md",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/ablations.png",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/submission.json",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/train_v0.txt",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/train_v1.txt",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/train_v2.txt",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/train_v3.txt",
+        "records/track_10min_16mb/2026-03-18_FP16Embed_WD3600/README.md",
+        "records/track_10min_16mb/2026-03-18_FP16Embed_WD3600/submission.json",
+        "records/track_10min_16mb/2026-03-18_FP16Embed_WD3600/train.log",
+        "records/track_10min_16mb/2026-03-18_FP16Embed_WD3600/train_gpt.py",
+        "records/track_10min_16mb/2026-03-18_FP16Embed_WD3600/train_seed42.log",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/README.md",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/submission.json",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/train.log",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/train_gpt.py",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/train_seed1338.log",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/train_seed1339.log",
+        "records/track_10min_16mb/2026-03-18_LowerLR/README.md",
+        "records/track_10min_16mb/2026-03-18_LowerLR/submission.json",
+        "records/track_10min_16mb/2026-03-18_LowerLR/train.log",
+        "records/track_10min_16mb/2026-03-18_LowerLR/train_gpt.py",
+        "records/track_10min_16mb/2026-03-19_10L_MixedPrecision/README.md",
+        "records/track_10min_16mb/2026-03-19_10L_MixedPrecision/submission.json",
+        "records/track_10min_16mb/2026-03-19_10L_MixedPrecision/train.log",
+        "records/track_10min_16mb/2026-03-19_10L_MixedPrecision/train_gpt.py",
+        "records/track_10min_16mb/2026-03-19_MLP3x_QAT_Int6_SlidingWindow/README.md",
+        "records/track_10min_16mb/2026-03-19_MLP3x_QAT_Int6_SlidingWindow/submission.json",
+        "records/track_10min_16mb/2026-03-19_MLP3x_QAT_Int6_SlidingWindow/train.log",
+        "records/track_10min_16mb/2026-03-19_MLP3x_QAT_Int6_SlidingWindow/train_gpt.py",
+        "records/track_10min_16mb/2026-03-19_MixedQuant_Int6Int8_SlidingWindow/README.md",
+        "records/track_10min_16mb/2026-03-19_MixedQuant_Int6Int8_SlidingWindow/submission.json",
+        "records/track_10min_16mb/2026-03-19_MixedQuant_Int6Int8_SlidingWindow/train.log",
+        "records/track_10min_16mb/2026-03-19_MixedQuant_Int6Int8_SlidingWindow/train_gpt.py",
+        "records/track_10min_16mb/2026-03-19_Seq2048_FP16Emb_TunedLR/README.md",
+        "records/track_10min_16mb/2026-03-19_Seq2048_FP16Emb_TunedLR/submission.json",
+        "records/track_10min_16mb/2026-03-19_Seq2048_FP16Emb_TunedLR/train_gpt.py",
+        "records/track_10min_16mb/2026-03-19_Seq2048_FP16Emb_TunedLR/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-19_Seq2048_FP16Emb_TunedLR/train_seed3.log",
+        "records/track_10min_16mb/2026-03-19_Seq2048_FP16Emb_TunedLR/train_seed42.log",
+        "records/track_10min_16mb/2026-03-19_SlidingWindowEval/README.md",
+        "records/track_10min_16mb/2026-03-19_SlidingWindowEval/submission.json",
+        "records/track_10min_16mb/2026-03-19_SlidingWindowEval/train.log",
+        "records/track_10min_16mb/2026-03-19_SlidingWindowEval/train_gpt.py",
+        "records/track_10min_16mb/2026-03-19_SlidingWindow_FP16Emb_10L_MuonWD_OvertoneInit/README.md",
+        "records/track_10min_16mb/2026-03-19_SlidingWindow_FP16Emb_10L_MuonWD_OvertoneInit/submission.json",
+        "records/track_10min_16mb/2026-03-19_SlidingWindow_FP16Emb_10L_MuonWD_OvertoneInit/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-only-2",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1450,
+      "title": "Record: TMA Megakernel + Triple Loop + Parallel Residuals — val_bpb 1.08480",
+      "author": "andrewbaggio1",
+      "state": "OPEN",
+      "created": "2026-04-07T21:16:27Z",
+      "updated": "2026-04-07T21:16:27Z",
+      "bpb": 1.0848,
+      "seeds": 5,
+      "artifact_bytes": 384000000,
+      "technique_summary": "TTT + GPTQ + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-07_TMA_MegaKernel_TripleLoop_ParallelResiduals/README.md",
+        "records/track_10min_16mb/2026-04-07_TMA_MegaKernel_TripleLoop_ParallelResiduals/submission.json",
+        "records/track_10min_16mb/2026-04-07_TMA_MegaKernel_TripleLoop_ParallelResiduals/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1449,
       "title": "Non-Record: Full-Model Depth Recurrence Ablation — 7 configs, torch.compile penalty = 0",
@@ -25609,7 +25829,7 @@
       "author": "ChideraIbe123",
       "state": "OPEN",
       "created": "2026-03-25T03:58:35Z",
-      "updated": "2026-04-07T20:55:23Z",
+      "updated": "2026-04-07T21:53:21Z",
       "bpb": 0.5793,
       "seeds": 3,
       "artifact_bytes": 15740000,
