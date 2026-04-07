@@ -1,7 +1,100 @@
 {
-  "last_fetch": "2026-04-07T09:44:37.624443+00:00",
-  "api_calls_used": 128,
+  "last_fetch": "2026-04-07T10:59:57.705222+00:00",
+  "api_calls_used": 129,
   "prs": [
+    {
+      "number": 1439,
+      "title": "Add LoRA exploration non-record archive",
+      "author": "reyhandl",
+      "state": "OPEN",
+      "created": "2026-04-07T10:41:26Z",
+      "updated": "2026-04-07T10:41:26Z",
+      "bpb": 1.2639,
+      "seeds": null,
+      "artifact_bytes": 14724469,
+      "technique_summary": "LoRA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/1H100_LA-ATTN4-6.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/1H100_LA-MLP.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/1H100_LA-MLP4-6.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/1H100_LA4-6.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/README.md",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/adalora.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/baseline.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/baseline_LA_128.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/baseline_LA_64.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/baseline_LA_64_11layers.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/learned_adapters_ga.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/randlora.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/rslora.txt",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/run_LA.sh",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/run_targeted_LA.sh",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/submission.json",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/train_gpt_LA.py",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/train_gpt_adalora.py",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/train_gpt_lora_ga.py",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/train_gpt_randlora.py",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/train_gpt_rslora.py",
+        "records/track_non_record_16mb/2026-04-07_LoRA_exploration/train_gpt_targeted_LA.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1437,
+      "title": "Record: SP8192 + Parallel Residuals + 3-Layer Recurrence + Legal N-gram Tilt — val_bpb 1.07800 (3-seed mean)",
+      "author": "dexhunter",
+      "state": "OPEN",
+      "created": "2026-04-07T08:54:26Z",
+      "updated": "2026-04-07T10:58:12Z",
+      "bpb": 1.07743,
+      "seeds": 3,
+      "artifact_bytes": 15993733,
+      "technique_summary": "TTT + GPTQ + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/README.md",
+        "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/fused_expert_kernel.cpp",
+        "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/ngram_tilt.py",
+        "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/submission.json",
+        "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/train_gpt.py",
+        "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/train_seed0.log",
+        "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1433,
       "title": "[Non-record] Codebooks! - val_bpb 1.2067 (3-seed mean)",

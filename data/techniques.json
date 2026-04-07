@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-07T09:44:49Z",
+  "generated_at": "2026-04-07T11:00:06Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1295,
-    "matched_pr_count": 944,
+    "pr_count": 1297,
+    "matched_pr_count": 945,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
       "ALIVE": 196,
-      "AT_RISK": 82,
+      "AT_RISK": 83,
       "DEAD": 366,
-      "INCOMPLETE": 643,
+      "INCOMPLETE": 644,
       "UNKNOWN": 0
     }
   },
@@ -20,11 +20,11 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 481,
+      "count": 482,
       "author_count": 236,
       "alive_count": 93,
       "dead_count": 166,
-      "at_risk_count": 47,
+      "at_risk_count": 48,
       "incomplete_count": 175,
       "unknown_count": 0,
       "best_alive": {
@@ -622,6 +622,76 @@
           ]
         },
         {
+          "author": "dexhunter",
+          "pr_count": 9,
+          "best_bpb": 1.0362,
+          "prs": [
+            {
+              "number": 953,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.0722,
+              "created": "2026-03-27T13:31:45Z"
+            },
+            {
+              "number": 967,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.045,
+              "created": "2026-03-27T17:23:46Z"
+            },
+            {
+              "number": 995,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.0362,
+              "created": "2026-03-28T00:31:21Z"
+            },
+            {
+              "number": 1060,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.1122,
+              "created": "2026-03-29T06:15:28Z"
+            },
+            {
+              "number": 1172,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.1015,
+              "created": "2026-03-31T06:22:04Z"
+            },
+            {
+              "number": 1179,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.111,
+              "created": "2026-03-31T11:16:23Z"
+            },
+            {
+              "number": 1260,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.0929,
+              "created": "2026-04-02T17:35:11Z"
+            },
+            {
+              "number": 1279,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.0924,
+              "created": "2026-04-03T02:38:38Z"
+            },
+            {
+              "number": 1437,
+              "author": "dexhunter",
+              "status": "AT_RISK",
+              "bpb": 1.07743,
+              "created": "2026-04-07T08:54:26Z"
+            }
+          ]
+        },
+        {
           "author": "andrewbaggio1",
           "pr_count": 8,
           "best_bpb": 0.045,
@@ -681,69 +751,6 @@
               "status": "AT_RISK",
               "bpb": null,
               "created": "2026-04-02T22:41:11Z"
-            }
-          ]
-        },
-        {
-          "author": "dexhunter",
-          "pr_count": 8,
-          "best_bpb": 1.0362,
-          "prs": [
-            {
-              "number": 953,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.0722,
-              "created": "2026-03-27T13:31:45Z"
-            },
-            {
-              "number": 967,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.045,
-              "created": "2026-03-27T17:23:46Z"
-            },
-            {
-              "number": 995,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.0362,
-              "created": "2026-03-28T00:31:21Z"
-            },
-            {
-              "number": 1060,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.1122,
-              "created": "2026-03-29T06:15:28Z"
-            },
-            {
-              "number": 1172,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.1015,
-              "created": "2026-03-31T06:22:04Z"
-            },
-            {
-              "number": 1179,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.111,
-              "created": "2026-03-31T11:16:23Z"
-            },
-            {
-              "number": 1260,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.0929,
-              "created": "2026-04-02T17:35:11Z"
-            },
-            {
-              "number": 1279,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.0924,
-              "created": "2026-04-03T02:38:38Z"
             }
           ]
         },
@@ -8420,6 +8427,13 @@
           "status": "AT_RISK",
           "bpb": 0.002,
           "created": "2026-04-07T06:34:12Z"
+        },
+        {
+          "number": 1437,
+          "author": "dexhunter",
+          "status": "AT_RISK",
+          "bpb": 1.07743,
+          "created": "2026-04-07T08:54:26Z"
         }
       ]
     },
@@ -21969,11 +21983,11 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 293,
+      "count": 294,
       "author_count": 133,
       "alive_count": 73,
       "dead_count": 91,
-      "at_risk_count": 38,
+      "at_risk_count": 39,
       "incomplete_count": 86,
       "unknown_count": 0,
       "best_alive": {
@@ -22635,7 +22649,7 @@
         },
         {
           "author": "dexhunter",
-          "pr_count": 6,
+          "pr_count": 7,
           "best_bpb": 1.0722,
           "prs": [
             {
@@ -22679,6 +22693,13 @@
               "status": "ALIVE",
               "bpb": 1.0924,
               "created": "2026-04-03T02:38:38Z"
+            },
+            {
+              "number": 1437,
+              "author": "dexhunter",
+              "status": "AT_RISK",
+              "bpb": 1.07743,
+              "created": "2026-04-07T08:54:26Z"
             }
           ]
         },
@@ -27016,6 +27037,13 @@
           "status": "AT_RISK",
           "bpb": 0.002,
           "created": "2026-04-07T06:34:12Z"
+        },
+        {
+          "number": 1437,
+          "author": "dexhunter",
+          "status": "AT_RISK",
+          "bpb": 1.07743,
+          "created": "2026-04-07T08:54:26Z"
         }
       ]
     },
@@ -38844,11 +38872,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 190,
+      "count": 191,
       "author_count": 84,
       "alive_count": 22,
       "dead_count": 79,
-      "at_risk_count": 60,
+      "at_risk_count": 61,
       "incomplete_count": 25,
       "unknown_count": 0,
       "best_alive": {
@@ -40090,6 +40118,27 @@
           ]
         },
         {
+          "author": "dexhunter",
+          "pr_count": 2,
+          "best_bpb": 1.0722,
+          "prs": [
+            {
+              "number": 953,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.0722,
+              "created": "2026-03-27T13:31:45Z"
+            },
+            {
+              "number": 1437,
+              "author": "dexhunter",
+              "status": "AT_RISK",
+              "bpb": 1.07743,
+              "created": "2026-04-07T08:54:26Z"
+            }
+          ]
+        },
+        {
           "author": "AnubhavBharadwaaj",
           "pr_count": 2,
           "best_bpb": 1.1154,
@@ -40422,20 +40471,6 @@
               "status": "AT_RISK",
               "bpb": 1.0244,
               "created": "2026-03-25T11:35:37Z"
-            }
-          ]
-        },
-        {
-          "author": "dexhunter",
-          "pr_count": 1,
-          "best_bpb": 1.0722,
-          "prs": [
-            {
-              "number": 953,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.0722,
-              "created": "2026-03-27T13:31:45Z"
             }
           ]
         },
@@ -42106,6 +42141,13 @@
           "status": "AT_RISK",
           "bpb": null,
           "created": "2026-04-07T02:53:34Z"
+        },
+        {
+          "number": 1437,
+          "author": "dexhunter",
+          "status": "AT_RISK",
+          "bpb": 1.07743,
+          "created": "2026-04-07T08:54:26Z"
         }
       ]
     },
@@ -50071,11 +50113,11 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 481,
+      "count": 482,
       "author_count": 236,
       "alive_count": 93,
       "dead_count": 166,
-      "at_risk_count": 47,
+      "at_risk_count": 48,
       "incomplete_count": 175,
       "unknown_count": 0,
       "best_alive": {
@@ -50673,6 +50715,76 @@
           ]
         },
         {
+          "author": "dexhunter",
+          "pr_count": 9,
+          "best_bpb": 1.0362,
+          "prs": [
+            {
+              "number": 953,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.0722,
+              "created": "2026-03-27T13:31:45Z"
+            },
+            {
+              "number": 967,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.045,
+              "created": "2026-03-27T17:23:46Z"
+            },
+            {
+              "number": 995,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.0362,
+              "created": "2026-03-28T00:31:21Z"
+            },
+            {
+              "number": 1060,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.1122,
+              "created": "2026-03-29T06:15:28Z"
+            },
+            {
+              "number": 1172,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.1015,
+              "created": "2026-03-31T06:22:04Z"
+            },
+            {
+              "number": 1179,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.111,
+              "created": "2026-03-31T11:16:23Z"
+            },
+            {
+              "number": 1260,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.0929,
+              "created": "2026-04-02T17:35:11Z"
+            },
+            {
+              "number": 1279,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.0924,
+              "created": "2026-04-03T02:38:38Z"
+            },
+            {
+              "number": 1437,
+              "author": "dexhunter",
+              "status": "AT_RISK",
+              "bpb": 1.07743,
+              "created": "2026-04-07T08:54:26Z"
+            }
+          ]
+        },
+        {
           "author": "andrewbaggio1",
           "pr_count": 8,
           "best_bpb": 0.045,
@@ -50732,69 +50844,6 @@
               "status": "AT_RISK",
               "bpb": null,
               "created": "2026-04-02T22:41:11Z"
-            }
-          ]
-        },
-        {
-          "author": "dexhunter",
-          "pr_count": 8,
-          "best_bpb": 1.0362,
-          "prs": [
-            {
-              "number": 953,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.0722,
-              "created": "2026-03-27T13:31:45Z"
-            },
-            {
-              "number": 967,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.045,
-              "created": "2026-03-27T17:23:46Z"
-            },
-            {
-              "number": 995,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.0362,
-              "created": "2026-03-28T00:31:21Z"
-            },
-            {
-              "number": 1060,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.1122,
-              "created": "2026-03-29T06:15:28Z"
-            },
-            {
-              "number": 1172,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.1015,
-              "created": "2026-03-31T06:22:04Z"
-            },
-            {
-              "number": 1179,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.111,
-              "created": "2026-03-31T11:16:23Z"
-            },
-            {
-              "number": 1260,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.0929,
-              "created": "2026-04-02T17:35:11Z"
-            },
-            {
-              "number": 1279,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.0924,
-              "created": "2026-04-03T02:38:38Z"
             }
           ]
         },
@@ -58471,6 +58520,13 @@
           "status": "AT_RISK",
           "bpb": 0.002,
           "created": "2026-04-07T06:34:12Z"
+        },
+        {
+          "number": 1437,
+          "author": "dexhunter",
+          "status": "AT_RISK",
+          "bpb": 1.07743,
+          "created": "2026-04-07T08:54:26Z"
         }
       ]
     },
@@ -65035,11 +65091,11 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 293,
+      "count": 294,
       "author_count": 133,
       "alive_count": 73,
       "dead_count": 91,
-      "at_risk_count": 38,
+      "at_risk_count": 39,
       "incomplete_count": 86,
       "unknown_count": 0,
       "best_alive": {
@@ -65701,7 +65757,7 @@
         },
         {
           "author": "dexhunter",
-          "pr_count": 6,
+          "pr_count": 7,
           "best_bpb": 1.0722,
           "prs": [
             {
@@ -65745,6 +65801,13 @@
               "status": "ALIVE",
               "bpb": 1.0924,
               "created": "2026-04-03T02:38:38Z"
+            },
+            {
+              "number": 1437,
+              "author": "dexhunter",
+              "status": "AT_RISK",
+              "bpb": 1.07743,
+              "created": "2026-04-07T08:54:26Z"
             }
           ]
         },
@@ -70082,17 +70145,24 @@
           "status": "AT_RISK",
           "bpb": 0.002,
           "created": "2026-04-07T06:34:12Z"
+        },
+        {
+          "number": 1437,
+          "author": "dexhunter",
+          "status": "AT_RISK",
+          "bpb": 1.07743,
+          "created": "2026-04-07T08:54:26Z"
         }
       ]
     },
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 190,
+      "count": 191,
       "author_count": 84,
       "alive_count": 22,
       "dead_count": 79,
-      "at_risk_count": 60,
+      "at_risk_count": 61,
       "incomplete_count": 25,
       "unknown_count": 0,
       "best_alive": {
@@ -71334,6 +71404,27 @@
           ]
         },
         {
+          "author": "dexhunter",
+          "pr_count": 2,
+          "best_bpb": 1.0722,
+          "prs": [
+            {
+              "number": 953,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.0722,
+              "created": "2026-03-27T13:31:45Z"
+            },
+            {
+              "number": 1437,
+              "author": "dexhunter",
+              "status": "AT_RISK",
+              "bpb": 1.07743,
+              "created": "2026-04-07T08:54:26Z"
+            }
+          ]
+        },
+        {
           "author": "AnubhavBharadwaaj",
           "pr_count": 2,
           "best_bpb": 1.1154,
@@ -71666,20 +71757,6 @@
               "status": "AT_RISK",
               "bpb": 1.0244,
               "created": "2026-03-25T11:35:37Z"
-            }
-          ]
-        },
-        {
-          "author": "dexhunter",
-          "pr_count": 1,
-          "best_bpb": 1.0722,
-          "prs": [
-            {
-              "number": 953,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.0722,
-              "created": "2026-03-27T13:31:45Z"
             }
           ]
         },
@@ -73350,6 +73427,13 @@
           "status": "AT_RISK",
           "bpb": null,
           "created": "2026-04-07T02:53:34Z"
+        },
+        {
+          "number": 1437,
+          "author": "dexhunter",
+          "status": "AT_RISK",
+          "bpb": 1.07743,
+          "created": "2026-04-07T08:54:26Z"
         }
       ]
     },
@@ -86341,11 +86425,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 481,
+      "left_count": 482,
       "right_count": 2,
       "left_people": 236,
       "right_people": 2,
-      "score": 962
+      "score": 964
     },
     {
       "left": "SwiGLU",
@@ -86431,20 +86515,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 293,
+      "left_count": 294,
       "right_count": 2,
       "left_people": 133,
       "right_people": 2,
-      "score": 586
+      "score": 588
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 293,
+      "left_count": 294,
       "right_count": 2,
       "left_people": 133,
       "right_people": 2,
-      "score": 586
+      "score": 588
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -86485,11 +86569,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 481,
+      "left_count": 482,
       "right_count": 1,
       "left_people": 236,
       "right_people": 1,
-      "score": 481
+      "score": 482
     },
     {
       "left": "BigramHash",
@@ -86591,6 +86675,15 @@
       "score": 364
     },
     {
+      "left": "GPTQ",
+      "right": "Flash Attention",
+      "left_count": 294,
+      "right_count": 1,
+      "left_people": 133,
+      "right_people": 1,
+      "score": 294
+    },
+    {
       "left": "SwiGLU",
       "right": "Weight Sharing",
       "left_count": 49,
@@ -86607,15 +86700,6 @@
       "left_people": 42,
       "right_people": 2,
       "score": 294
-    },
-    {
-      "left": "GPTQ",
-      "right": "Flash Attention",
-      "left_count": 293,
-      "right_count": 1,
-      "left_people": 133,
-      "right_people": 1,
-      "score": 293
     },
     {
       "left": "Ternary Weights",
