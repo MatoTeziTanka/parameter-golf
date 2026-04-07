@@ -1,7 +1,115 @@
 {
-  "last_fetch": "2026-04-07T11:59:05.643444+00:00",
-  "api_calls_used": 130,
+  "last_fetch": "2026-04-07T13:54:57.599090+00:00",
+  "api_calls_used": 131,
   "prs": [
+    {
+      "number": 1443,
+      "title": "Non-record: ByteJEPA — True Byte-Level JEPA (val_bpb 1.3496)",
+      "author": "hardik-bhadani-git",
+      "state": "OPEN",
+      "created": "2026-04-07T13:51:40Z",
+      "updated": "2026-04-07T13:51:55Z",
+      "bpb": 1.3496,
+      "seeds": null,
+      "artifact_bytes": 15132832,
+      "technique_summary": "INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_ByteJEPA/README.md",
+        "records/track_non_record_16mb/2026-03-30_ByteJEPA/logs/train_run_rtx5090.txt",
+        "records/track_non_record_16mb/2026-03-30_ByteJEPA/submission.json",
+        "records/track_non_record_16mb/2026-03-30_ByteJEPA/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-30_ByteJEPA/transpile_to_bytes.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1442,
+      "title": "Non-record: No-FA3 stack combination — val_bpb 1.1854 (1-seed, 8xH100)",
+      "author": "akaiHuang",
+      "state": "CLOSED",
+      "created": "2026-04-07T12:54:37Z",
+      "updated": "2026-04-07T12:59:28Z",
+      "bpb": 1.1854,
+      "seeds": 1,
+      "artifact_bytes": 13510000,
+      "technique_summary": "TTT + Muon + GPTQ",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-07_NoFA3_Compliant_StackCombo/README.md",
+        "records/track_non_record_16mb/2026-04-07_NoFA3_Compliant_StackCombo/eval.py",
+        "records/track_non_record_16mb/2026-04-07_NoFA3_Compliant_StackCombo/eval_seed42.log",
+        "records/track_non_record_16mb/2026-04-07_NoFA3_Compliant_StackCombo/pod_environment.txt",
+        "records/track_non_record_16mb/2026-04-07_NoFA3_Compliant_StackCombo/requirements.txt",
+        "records/track_non_record_16mb/2026-04-07_NoFA3_Compliant_StackCombo/submission.json",
+        "records/track_non_record_16mb/2026-04-07_NoFA3_Compliant_StackCombo/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-07_NoFA3_Compliant_StackCombo/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1441,
+      "title": "In-Develop Different System Optimizations",
+      "author": "nogakeren",
+      "state": "OPEN",
+      "created": "2026-04-07T12:28:07Z",
+      "updated": "2026-04-07T12:28:07Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "my_submission/README.md",
+        "my_submission/original_train_gpt.py",
+        "my_submission/submission.json",
+        "my_submission/test_train_gpt.py",
+        "my_submission/test_train_gpt_profiling.py",
+        "my_submission/train.log",
+        "my_submission/train_gpt.py",
+        "requirements.txt",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1440,
       "title": "[Submission] EngramLite + Mousse + Progressive Depth Recurrence + TTT — val_bpb 1.1026 | 15.95MB | 8×H100",
@@ -453,7 +561,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-06T16:14:47Z",
-      "updated": "2026-04-07T11:17:04Z",
+      "updated": "2026-04-07T13:49:01Z",
       "bpb": 1.08014,
       "seeds": 5,
       "artifact_bytes": 19811,
@@ -676,6 +784,41 @@
       "confidence": "HIGH"
     },
     {
+      "number": 1410,
+      "title": "Record: 11L LatentMask TTT + GPTQ + Product-Key Bigram + Brotli — val_bpb 1.1158 (3-seed mean)",
+      "author": "izlley",
+      "state": "OPEN",
+      "created": "2026-04-06T07:19:55Z",
+      "updated": "2026-04-07T12:46:15Z",
+      "bpb": 1.113,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-05_11L_LatentMaskTTT_GPTQ_ProductKey_Brotli/README.md",
+        "records/track_10min_16mb/2026-04-05_11L_LatentMaskTTT_GPTQ_ProductKey_Brotli/requirements.txt",
+        "records/track_10min_16mb/2026-04-05_11L_LatentMaskTTT_GPTQ_ProductKey_Brotli/submission.json",
+        "records/track_10min_16mb/2026-04-05_11L_LatentMaskTTT_GPTQ_ProductKey_Brotli/train_1337.log",
+        "records/track_10min_16mb/2026-04-05_11L_LatentMaskTTT_GPTQ_ProductKey_Brotli/train_777.log",
+        "records/track_10min_16mb/2026-04-05_11L_LatentMaskTTT_GPTQ_ProductKey_Brotli/train_999.log",
+        "records/track_10min_16mb/2026-04-05_11L_LatentMaskTTT_GPTQ_ProductKey_Brotli/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
       "number": 1408,
       "title": "Record: dTTT + BigramHash 3072×112 — val_bpb 1.0800 (3-seed mean)",
       "author": "aamodbhatt",
@@ -842,7 +985,7 @@
       "author": "greqone",
       "state": "OPEN",
       "created": "2026-04-06T03:33:53Z",
-      "updated": "2026-04-07T01:57:01Z",
+      "updated": "2026-04-07T13:33:34Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -34081,7 +34224,7 @@
       "author": "DeividasMat",
       "state": "OPEN",
       "created": "2026-03-22T13:50:52Z",
-      "updated": "2026-03-31T14:47:20Z",
+      "updated": "2026-04-07T13:37:05Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -34109,14 +34252,18 @@
         "scripts/rank_moonshots.py",
         "scripts/rebuild_tokenizer_export.sh",
         "scripts/remote_fetch_data.sh",
+        "scripts/run_all_buckets_360m.sh",
         "scripts/run_and_score.sh",
         "scripts/run_architecture_hunt_120m.sh",
         "scripts/run_autogate_budget.sh",
         "scripts/run_autogate_profiles.sh",
+        "scripts/run_best_bets_120m.sh",
+        "scripts/run_crazy_120m.sh",
         "scripts/run_moonshot5.sh",
         "scripts/run_moonshot5_smoke.sh",
         "scripts/run_remote_experiment.sh",
         "scripts/run_remote_profile.sh",
+        "scripts/run_same_surface_120m.sh",
         "scripts/run_smoke_profile.sh",
         "scripts/run_top10_patterns_80m.sh",
         "scripts/run_top5_chase_150m.sh",
@@ -34127,17 +34274,17 @@
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "text"
+      "confidence": "HIGH"
     },
     {
       "number": 424,
