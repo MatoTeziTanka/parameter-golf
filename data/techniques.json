@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-07T17:59:44Z",
+  "generated_at": "2026-04-07T19:18:54Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1305,
-    "matched_pr_count": 952,
+    "pr_count": 1307,
+    "matched_pr_count": 954,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -11,8 +11,8 @@
     "status_counts": {
       "ALIVE": 198,
       "AT_RISK": 85,
-      "DEAD": 367,
-      "INCOMPLETE": 647,
+      "DEAD": 370,
+      "INCOMPLETE": 646,
       "UNKNOWN": 0
     }
   },
@@ -8496,12 +8496,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 378,
-      "author_count": 253,
+      "count": 380,
+      "author_count": 254,
       "alive_count": 80,
-      "dead_count": 86,
+      "dead_count": 87,
       "at_risk_count": 36,
-      "incomplete_count": 175,
+      "incomplete_count": 176,
       "unknown_count": 0,
       "best_alive": {
         "number": 909,
@@ -10067,6 +10067,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.1804,
               "created": "2026-03-23T15:37:38Z"
+            }
+          ]
+        },
+        {
+          "author": "shram86",
+          "pr_count": 2,
+          "best_bpb": 1.18337608,
+          "prs": [
+            {
+              "number": 1447,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T18:55:14Z"
+            },
+            {
+              "number": 1448,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T19:06:31Z"
             }
           ]
         },
@@ -15573,16 +15594,30 @@
           "status": "ALIVE",
           "bpb": 1.09596,
           "created": "2026-04-07T17:36:10Z"
+        },
+        {
+          "number": 1447,
+          "author": "shram86",
+          "status": "DEAD",
+          "bpb": 1.18337608,
+          "created": "2026-04-07T18:55:14Z"
+        },
+        {
+          "number": 1448,
+          "author": "shram86",
+          "status": "INCOMPLETE",
+          "bpb": 1.18337608,
+          "created": "2026-04-07T19:06:31Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 368,
+      "count": 370,
       "author_count": 209,
       "alive_count": 81,
-      "dead_count": 106,
+      "dead_count": 108,
       "at_risk_count": 38,
       "incomplete_count": 138,
       "unknown_count": 0,
@@ -16884,6 +16919,34 @@
               "status": "ALIVE",
               "bpb": 1.1873,
               "created": "2026-03-27T00:24:57Z"
+            }
+          ]
+        },
+        {
+          "author": "shram86",
+          "pr_count": 3,
+          "best_bpb": 1.18337608,
+          "prs": [
+            {
+              "number": 1015,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.21149167,
+              "created": "2026-03-28T11:12:42Z"
+            },
+            {
+              "number": 1447,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T18:55:14Z"
+            },
+            {
+              "number": 1448,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T19:06:31Z"
             }
           ]
         },
@@ -18914,20 +18977,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.2073,
               "created": "2026-03-24T21:50:24Z"
-            }
-          ]
-        },
-        {
-          "author": "shram86",
-          "pr_count": 1,
-          "best_bpb": 1.21149167,
-          "prs": [
-            {
-              "number": 1015,
-              "author": "shram86",
-              "status": "INCOMPLETE",
-              "bpb": 1.21149167,
-              "created": "2026-03-28T11:12:42Z"
             }
           ]
         },
@@ -21449,7 +21498,7 @@
         {
           "number": 1015,
           "author": "shram86",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 1.21149167,
           "created": "2026-03-28T11:12:42Z"
         },
@@ -22208,6 +22257,20 @@
           "status": "ALIVE",
           "bpb": 1.09596,
           "created": "2026-04-07T17:36:10Z"
+        },
+        {
+          "number": 1447,
+          "author": "shram86",
+          "status": "DEAD",
+          "bpb": 1.18337608,
+          "created": "2026-04-07T18:55:14Z"
+        },
+        {
+          "number": 1448,
+          "author": "shram86",
+          "status": "INCOMPLETE",
+          "bpb": 1.18337608,
+          "created": "2026-04-07T19:06:31Z"
         }
       ]
     },
@@ -37999,9 +38062,9 @@
       "count": 17,
       "author_count": 14,
       "alive_count": 1,
-      "dead_count": 3,
+      "dead_count": 4,
       "at_risk_count": 2,
-      "incomplete_count": 10,
+      "incomplete_count": 9,
       "unknown_count": 0,
       "best_alive": {
         "number": 640,
@@ -38206,7 +38269,7 @@
             {
               "number": 730,
               "author": "janwww",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-03-25T15:10:00Z"
             }
@@ -38287,7 +38350,7 @@
         {
           "number": 730,
           "author": "janwww",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-03-25T15:10:00Z"
         },
@@ -43562,12 +43625,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 378,
-      "author_count": 253,
+      "count": 380,
+      "author_count": 254,
       "alive_count": 80,
-      "dead_count": 86,
+      "dead_count": 87,
       "at_risk_count": 36,
-      "incomplete_count": 175,
+      "incomplete_count": 176,
       "unknown_count": 0,
       "best_alive": {
         "number": 909,
@@ -45133,6 +45196,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.1804,
               "created": "2026-03-23T15:37:38Z"
+            }
+          ]
+        },
+        {
+          "author": "shram86",
+          "pr_count": 2,
+          "best_bpb": 1.18337608,
+          "prs": [
+            {
+              "number": 1447,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T18:55:14Z"
+            },
+            {
+              "number": 1448,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T19:06:31Z"
             }
           ]
         },
@@ -50639,6 +50723,20 @@
           "status": "ALIVE",
           "bpb": 1.09596,
           "created": "2026-04-07T17:36:10Z"
+        },
+        {
+          "number": 1447,
+          "author": "shram86",
+          "status": "DEAD",
+          "bpb": 1.18337608,
+          "created": "2026-04-07T18:55:14Z"
+        },
+        {
+          "number": 1448,
+          "author": "shram86",
+          "status": "INCOMPLETE",
+          "bpb": 1.18337608,
+          "created": "2026-04-07T19:06:31Z"
         }
       ]
     },
@@ -59121,10 +59219,10 @@
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 368,
+      "count": 370,
       "author_count": 209,
       "alive_count": 81,
-      "dead_count": 106,
+      "dead_count": 108,
       "at_risk_count": 38,
       "incomplete_count": 138,
       "unknown_count": 0,
@@ -60426,6 +60524,34 @@
               "status": "ALIVE",
               "bpb": 1.1873,
               "created": "2026-03-27T00:24:57Z"
+            }
+          ]
+        },
+        {
+          "author": "shram86",
+          "pr_count": 3,
+          "best_bpb": 1.18337608,
+          "prs": [
+            {
+              "number": 1015,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.21149167,
+              "created": "2026-03-28T11:12:42Z"
+            },
+            {
+              "number": 1447,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T18:55:14Z"
+            },
+            {
+              "number": 1448,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T19:06:31Z"
             }
           ]
         },
@@ -62456,20 +62582,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.2073,
               "created": "2026-03-24T21:50:24Z"
-            }
-          ]
-        },
-        {
-          "author": "shram86",
-          "pr_count": 1,
-          "best_bpb": 1.21149167,
-          "prs": [
-            {
-              "number": 1015,
-              "author": "shram86",
-              "status": "INCOMPLETE",
-              "bpb": 1.21149167,
-              "created": "2026-03-28T11:12:42Z"
             }
           ]
         },
@@ -64991,7 +65103,7 @@
         {
           "number": 1015,
           "author": "shram86",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 1.21149167,
           "created": "2026-03-28T11:12:42Z"
         },
@@ -65750,6 +65862,20 @@
           "status": "ALIVE",
           "bpb": 1.09596,
           "created": "2026-04-07T17:36:10Z"
+        },
+        {
+          "number": 1447,
+          "author": "shram86",
+          "status": "DEAD",
+          "bpb": 1.18337608,
+          "created": "2026-04-07T18:55:14Z"
+        },
+        {
+          "number": 1448,
+          "author": "shram86",
+          "status": "INCOMPLETE",
+          "bpb": 1.18337608,
+          "created": "2026-04-07T19:06:31Z"
         }
       ]
     },
@@ -85383,9 +85509,9 @@
       "count": 17,
       "author_count": 14,
       "alive_count": 1,
-      "dead_count": 3,
+      "dead_count": 4,
       "at_risk_count": 2,
-      "incomplete_count": 10,
+      "incomplete_count": 9,
       "unknown_count": 0,
       "best_alive": {
         "number": 640,
@@ -85590,7 +85716,7 @@
             {
               "number": 730,
               "author": "janwww",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-03-25T15:10:00Z"
             }
@@ -85671,7 +85797,7 @@
         {
           "number": 730,
           "author": "janwww",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-03-25T15:10:00Z"
         },
@@ -87320,29 +87446,29 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 378,
+      "left_count": 380,
       "right_count": 2,
-      "left_people": 253,
+      "left_people": 254,
       "right_people": 2,
-      "score": 756
+      "score": 760
     },
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 368,
+      "left_count": 370,
       "right_count": 2,
       "left_people": 209,
       "right_people": 2,
-      "score": 736
+      "score": 740
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 368,
+      "left_count": 370,
       "right_count": 2,
       "left_people": 209,
       "right_people": 2,
-      "score": 736
+      "score": 740
     },
     {
       "left": "QAT",
@@ -87527,11 +87653,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 368,
+      "left_count": 370,
       "right_count": 1,
       "left_people": 209,
       "right_people": 1,
-      "score": 368
+      "score": 370
     },
     {
       "left": "Parallel Muon",
