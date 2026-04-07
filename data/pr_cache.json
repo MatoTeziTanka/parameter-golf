@@ -1,14 +1,56 @@
 {
-  "last_fetch": "2026-04-07T01:22:41.829350+00:00",
-  "api_calls_used": 125,
+  "last_fetch": "2026-04-07T03:25:37.548518+00:00",
+  "api_calls_used": 126,
   "prs": [
+    {
+      "number": 1430,
+      "title": "Record: Per-Sample SLOT + N-gram Order-22 + TTT + LR=0.432 — val_bpb 0.39642 (3-seed mean)",
+      "author": "renqianluo",
+      "state": "OPEN",
+      "created": "2026-04-07T02:53:34Z",
+      "updated": "2026-04-07T02:54:54Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-07_PerSample_SLOT_NgramOrder22_AlphaCenter25_TTT_AdamW24step_2ndPass10_LR432_BSZ128/README.md",
+        "records/track_10min_16mb/2026-04-07_PerSample_SLOT_NgramOrder22_AlphaCenter25_TTT_AdamW24step_2ndPass10_LR432_BSZ128/requirements.txt",
+        "records/track_10min_16mb/2026-04-07_PerSample_SLOT_NgramOrder22_AlphaCenter25_TTT_AdamW24step_2ndPass10_LR432_BSZ128/submission.json",
+        "records/track_10min_16mb/2026-04-07_PerSample_SLOT_NgramOrder22_AlphaCenter25_TTT_AdamW24step_2ndPass10_LR432_BSZ128/train_gpt.py",
+        "records/track_10min_16mb/2026-04-07_PerSample_SLOT_NgramOrder22_AlphaCenter25_TTT_AdamW24step_2ndPass10_LR432_BSZ128/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-07_PerSample_SLOT_NgramOrder22_AlphaCenter25_TTT_AdamW24step_2ndPass10_LR432_BSZ128/train_seed314.log",
+        "records/track_10min_16mb/2026-04-07_PerSample_SLOT_NgramOrder22_AlphaCenter25_TTT_AdamW24step_2ndPass10_LR432_BSZ128/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "cache",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1425,
       "title": "Non-record: PROTEUS Feature Ablation - Parallel Residuals + Mixed INT5/INT6 + TTT on DGX Spark GB10",
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-04-06T19:17:05Z",
-      "updated": "2026-04-06T19:17:05Z",
+      "updated": "2026-04-07T02:37:51Z",
       "bpb": 1.4479,
       "seeds": 42,
       "artifact_bytes": 900000,
@@ -161,7 +203,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-06T16:14:47Z",
-      "updated": "2026-04-06T19:38:54Z",
+      "updated": "2026-04-07T03:05:03Z",
       "bpb": 1.08014,
       "seeds": 5,
       "artifact_bytes": 19811,
@@ -550,7 +592,7 @@
       "author": "greqone",
       "state": "OPEN",
       "created": "2026-04-06T03:33:53Z",
-      "updated": "2026-04-06T18:38:56Z",
+      "updated": "2026-04-07T01:57:01Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -1085,7 +1127,7 @@
       "author": "ranausmanai",
       "state": "OPEN",
       "created": "2026-04-05T12:37:07Z",
-      "updated": "2026-04-05T18:03:02Z",
+      "updated": "2026-04-07T02:37:57Z",
       "bpb": 0.07,
       "seeds": 2,
       "artifact_bytes": null,
@@ -1102,13 +1144,13 @@
       "technique_tags": [
         "neural"
       ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-only-2",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 1379,
@@ -1690,16 +1732,24 @@
       "author": "teslaeco",
       "state": "OPEN",
       "created": "2026-04-04T19:31:49Z",
-      "updated": "2026-04-06T13:06:16Z",
+      "updated": "2026-04-07T03:12:52Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
+        "EXPERIMENT_TRACKER.csv",
+        "NEXT_STEPS.md",
         "README.md",
+        "README.submission.md",
+        "README_START_HERE.md",
+        "REPO_LAYOUT.txt",
+        "audit_submission.py",
         "final_model.int8.ptz",
+        "pg_compliance_kit.zip",
         "records/non-record/multi-cube-face-letter-assignment/README.md",
-        "records/non-record/multi-cube-face-letter-assignment/submission.json"
+        "records/non-record/multi-cube-face-letter-assignment/submission.json",
+        "submission.template.json"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -1756,6 +1806,36 @@
         "gptq"
       ],
       "technique_source": "code"
+    },
+    {
+      "number": 1352,
+      "title": "Add non-record submission: Multi-model cross-attention with dimensional asymmetry",
+      "author": "alientony",
+      "state": "CLOSED",
+      "created": "2026-04-04T17:39:58Z",
+      "updated": "2026-04-07T02:27:48Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-04_MultiModelCrossDim/README.md",
+        "records/track_non_record_16mb/2026-04-04_MultiModelCrossDim/submission.json",
+        "records/track_non_record_16mb/2026-04-04_MultiModelCrossDim/train_gpt_multi_model_single_repr_no_fusion.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1350,
