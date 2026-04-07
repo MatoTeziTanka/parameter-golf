@@ -1,5 +1,20 @@
 [
   {
+    "version": "0.8.2",
+    "date": "2026-04-06",
+    "title": "Tile Layout Audit & Fix",
+    "changes": [
+      "FIX: Submission Checklist tiles were stair-stepping and overlapping. Root cause: global .card { max-width:900px; margin:auto; text-align:center } was fighting every grid layout it was placed in.",
+      "FIX: Community Infrastructure tiles overlapping. Same root cause.",
+      "FIX: Maintainer Activity Tracker cards had inconsistent spacing. Same root cause.",
+      "NEW CSS class: .tile-grid — wrapper that scopes overrides to descendant .card via descendant selector. Removes max-width, margin, centered text, normalizes padding, makes cards flex columns, normalizes border-width to 1px so they optically align",
+      "NEW CSS class: .checklist-grid — explicit grid-template-areas layout: Techniques tile spans the full left column (tall, dense), with Before You Submit / Rule History / Bug Alerts stacking on the right. Mobile collapses to single column.",
+      "NEW CSS class: .technique-tri — internal 3-column mini-grid inside the Techniques tile so legal/banned/grey read horizontally instead of as one tall ribbon (kills the stair-stepping)",
+      "Stripped redundant inline margin:0 / margin-top:0 styles from cards now handled by .tile-grid",
+      "Bug Alerts card border-width normalized from 2px to 1px (yellow color preserved on h3 instead) — restores optical alignment with adjacent cards"
+    ]
+  },
+  {
     "version": "0.8.1",
     "date": "2026-04-06",
     "title": "Maintainer Activity Tracker",

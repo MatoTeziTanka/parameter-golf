@@ -122,6 +122,44 @@ tr:hover { background: rgba(88,166,255,0.04); }
 .guide-compare .bad { background: rgba(248,81,73,0.08); padding: 1rem; text-align: left; }
 .guide-compare .good { background: rgba(63,185,80,0.08); padding: 1rem; text-align: left; }
 .guide-compare h4 { margin-bottom: 0.5rem; }
+
+/* Tile-grid: scoped overrides for cards inside grid layouts.
+   Defeats the global .card max-width:900px / margin:auto / text-align:center
+   that fights any grid placement. Apply this class to a wrapper div. */
+.tile-grid { display: grid; gap: 1rem; align-items: stretch; }
+.tile-grid > .card { max-width: none; margin: 0; text-align: left; padding: 1.1rem 1.25rem; display: flex; flex-direction: column; border-width: 1px; }
+.tile-grid > .card > h3 { text-align: left; margin: 0 0 0.85rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--border); font-size: 1rem; }
+.tile-grid > .card > h3:first-child { margin-top: 0; }
+.tile-grid > .card .checklist,
+.tile-grid > .card .technique-list,
+.tile-grid > .card .timeline-entry { max-width: none; margin: 0; }
+.tile-grid > .card .timeline-entry { margin-bottom: 0.85rem; }
+.tile-grid > .card .timeline-entry:last-child { margin-bottom: 0; }
+.tile-grid > .card > p:last-child { margin-bottom: 0; }
+
+/* Checklist-specific: 2-col asymmetric layout with Techniques tall on the left */
+.checklist-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); grid-template-areas: "techniques submit" "techniques rules" "techniques alerts"; }
+.checklist-grid > .card-techniques { grid-area: techniques; }
+.checklist-grid > .card-submit { grid-area: submit; }
+.checklist-grid > .card-rules { grid-area: rules; }
+.checklist-grid > .card-alerts { grid-area: alerts; }
+@media (max-width: 900px) {
+  .checklist-grid { grid-template-columns: 1fr; grid-template-areas: "submit" "techniques" "rules" "alerts"; }
+}
+
+/* Inner 3-col mini-grid inside the Techniques card so legal/banned/grey
+   read horizontally instead of one tall ribbon. */
+.technique-tri { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 0.25rem; }
+.technique-tri > div { background: rgba(13,17,23,0.45); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem 0.85rem; }
+.technique-tri h4 { margin: 0 0 0.5rem; font-size: 0.85rem; text-align: left; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
+.technique-tri h4.legal { color: var(--green); }
+.technique-tri h4.banned { color: var(--red); }
+.technique-tri h4.grey { color: var(--yellow); }
+.technique-tri ul { list-style: none; padding: 0; margin: 0; }
+.technique-tri li { padding: 0.25rem 0 0.25rem 1.2rem; position: relative; font-size: 0.78rem; line-height: 1.4; color: var(--text); }
+.technique-tri .legal-item::before { content: '\2713'; position: absolute; left: 0; color: var(--green); font-weight: bold; }
+.technique-tri .banned-item::before { content: '\2717'; position: absolute; left: 0; color: var(--red); font-weight: bold; }
+.technique-tri .grey-item::before { content: '?'; position: absolute; left: 0; color: var(--yellow); font-weight: bold; }
 .guide-compare .bad h4 { color: var(--red); }
 .guide-compare .good h4 { color: var(--green); }
 .guide-compare ul { list-style: disc; font-size: 0.85rem; padding-left: 1.2rem; display: block; }
@@ -240,7 +278,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </nav>
 
 <div style="background:var(--surface);border-bottom:1px solid var(--border);padding:0.6rem 1rem;text-align:center;font-size:0.8rem;color:var(--text-dim);">
-  <strong style="color:var(--accent);">v0.8.1</strong> &middot; Last updated: April 7, 2026 &middot; Maintainer Activity Tracker &middot; <a href="#changelog">Changelog</a> &middot; <a href="https://github.com/MatoTeziTanka/parameter-golf/tree/gh-pages">Source</a>
+  <strong style="color:var(--accent);">v0.8.2</strong> &middot; Last updated: April 6, 2026 &middot; Tile Layout Audit &amp; Fix &middot; <a href="#changelog">Changelog</a> &middot; <a href="https://github.com/MatoTeziTanka/parameter-golf/tree/gh-pages">Source</a>
 
   <span style="margin-left:1rem;">&#128065; <span id="counter-total">-</span> visitors &middot; <span style="color:var(--green);">&#9679;</span> <span id="counter-active">-</span> here now</span>
 </div>
@@ -267,9 +305,9 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <h2>Maintainer Activity Tracker</h2>
 <p style="color:var(--text-dim);margin-bottom:1rem;">Public accountability board for the OpenAI maintainers with merge/close authority on <code>openai/parameter-golf</code>. Validated via author_association on closed PRs (only collaborators can close other people's PRs) and OAI account suffix. Auto-updated on each Agora rebuild.</p>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:1rem;">
+<div class="tile-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-bottom:1rem;">
 
-<div class="card" style="margin:0;border-left:4px solid #ff6b6b;">
+<div class="card" style="border-left:4px solid #ff6b6b;">
   <div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;">
     <div>
       <h3 style="margin:0;color:var(--text-bright);font-size:1.05rem;"><a href="https://github.com/notapplica" style="color:var(--text-bright);">@notapplica</a></h3>
@@ -284,7 +322,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
   </p>
 </div>
 
-<div class="card" style="margin:0;border-left:4px solid var(--yellow);">
+<div class="card" style="border-left:4px solid var(--yellow);">
   <div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;">
     <div>
       <h3 style="margin:0;color:var(--text-bright);font-size:1.05rem;"><a href="https://github.com/valerio-oai" style="color:var(--text-bright);">@valerio-oai</a></h3>
@@ -300,7 +338,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
   </p>
 </div>
 
-<div class="card" style="margin:0;border-left:4px solid #ff6b6b;">
+<div class="card" style="border-left:4px solid #ff6b6b;">
   <div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;">
     <div>
       <h3 style="margin:0;color:var(--text-bright);font-size:1.05rem;"><a href="https://github.com/0hq" style="color:var(--text-bright);">@0hq</a></h3>
@@ -315,7 +353,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
   </p>
 </div>
 
-<div class="card" style="margin:0;border-left:4px solid #ff6b6b;">
+<div class="card" style="border-left:4px solid #ff6b6b;">
   <div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;">
     <div>
       <h3 style="margin:0;color:var(--text-bright);font-size:1.05rem;"><a href="https://github.com/yuzhougu-oai" style="color:var(--text-bright);">@yuzhougu-oai</a></h3>
@@ -332,7 +370,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 
 </div>
 
-<div class="card" style="background:rgba(255,170,51,0.08);border-left:3px solid #ffaa33;margin:0;font-size:0.85rem;color:var(--text-dim);">
+<div class="card" style="background:rgba(255,170,51,0.08);border-left:3px solid #ffaa33;font-size:0.85rem;color:var(--text-dim);">
   <strong style="color:#ffaa33;">Validation methodology:</strong>
   Authority confirmed by checking <code>author_association</code> on closed PRs (<code>COLLABORATOR</code> = explicit repo collaborator), the <code>-oai</code> account suffix (OpenAI staff convention), and the canonical signal of <em>closing another user's PR</em> &mdash; only users with merge authority can do this. Cross-checked against <code>/users/&lt;handle&gt;/events</code> for last public activity timestamp. If you know of another mod with authority who isn't listed, <a href="https://github.com/MatoTeziTanka/parameter-golf/issues/new">open an issue</a> &mdash; this list updates on every Agora rebuild.
 </div>
@@ -347,84 +385,94 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <h2>Submission Checklist</h2>
 <!-- AGORA:CHECKLIST_START -->
 <p style="color:var(--text-dim);margin-bottom:1rem;">Updated March 28, 2026. Check ALL boxes before submitting.</p>
-<div class="card">
+<div class="tile-grid checklist-grid">
+
+<div class="card card-techniques">
+<h3>Techniques &mdash; What's Legal RIGHT NOW</h3>
+<div class="technique-tri">
+  <div>
+    <h4 class="legal">&#10003; Legal</h4>
+    <ul>
+      <li class="legal-item" title="All neural architectures are allowed">Any neural architecture (transformers, SSMs, hybrids, MoE)</li>
+      <li class="legal-item" title="No restrictions on activation functions">Any activation function (LeakyReLU&sup2;, GeGLU, SwiGLU)</li>
+      <li class="legal-item" title="All optimizers are allowed">Any optimizer (AdamW, Muon, SGD)</li>
+      <li class="legal-item" title="Learning rate scheduling strategies are unrestricted">LR schedules, warmup, cosine decay</li>
+      <li class="legal-item" title="Exponential moving average and stochastic weight averaging are legal">EMA, SWA, weight averaging</li>
+      <li class="legal-item" title="Standard sliding window approach for evaluation">Sliding window eval</li>
+      <li class="legal-item" title="Quantization allowed if calibration happens within the 600s training budget">Quantization (INT6/8, GPTQ) within training budget</li>
+      <li class="legal-item" title="Performance optimizations are allowed">Flash Attention, torch.compile</li>
+      <li class="legal-item" title="Test-time training is legal if scoring is single-pass and probabilities are properly normalized">Score-first single-pass TTT (properly normalized)</li>
+    </ul>
+  </div>
+  <div>
+    <h4 class="banned">&#10007; Banned</h4>
+    <ul>
+      <li class="banned-item" title="Banned March 27 — n-gram caches don't properly normalize over vocab">Hashed n-gram caches (improper normalization)</li>
+      <li class="banned-item" title="Banned March 27 — information from first pass leaks into second">Two-pass rescoring (token leakage)</li>
+      <li class="banned-item" title="Banned March 22 — calibration on eval data is not allowed">GPTQ calibration on eval tokens</li>
+      <li class="banned-item" title="Banned March 27 — loading training-derived caches at eval">Pre-filling cache from training data</li>
+      <li class="banned-item" title="Banned — TTT must not score same tokens in multiple passes">Multi-epoch TTT (same tokens scored twice)</li>
+      <li class="banned-item" title="Banned — using one pass to select strategy for another">Oracle / hindsight selection</li>
+    </ul>
+  </div>
+  <div>
+    <h4 class="grey">? Grey Area</h4>
+    <ul>
+      <li class="grey-item" title="May be legal if probability normalization is correct — under review">Normalized eval-time caches (CTW, Dirichlet)</li>
+      <li class="grey-item" title="Legality depends on whether the mixing preserves proper normalization">Score-first TTT with complex mixing</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<div class="card card-submit">
 <h3>Before You Submit</h3>
 <ul class="checklist">
-  <li title="Total size of your training script + compressed model weights, measured in bytes">Artifact ≤ 16,000,000 bytes (code + compressed model)</li>
-  <li title="Wall-clock time from first step to last step, measured on 8x NVIDIA H100 SXM GPUs">Training completed in ≤ 600 seconds on 8×H100 SXM</li>
-  <li title="Separate 600-second budget for evaluation — not shared with training time">Evaluation completed in ≤ 600 seconds (separate budget)</li>
+  <li title="Total size of your training script + compressed model weights, measured in bytes">Artifact &le; 16,000,000 bytes</li>
+  <li title="Wall-clock time from first step to last step, measured on 8x NVIDIA H100 SXM GPUs">Training &le; 600 s on 8&times;H100 SXM</li>
+  <li title="Separate 600-second budget for evaluation — not shared with training time">Evaluation &le; 600 s (separate budget)</li>
   <li title="All 3 random seeds must produce valid results — prevents cherry-picking">3 seeds: 42, 1337, 2024</li>
-  <li title="Your 3-seed mean BPB must beat the current best by at least 0.005 to be a new record">BPB beats current SOTA by ≥ 0.005 nats (for record track)</li>
-  <li title="JSON file with your val_bpb scores, seed results, and artifact sizes">submission.json included with val_bpb, seeds, artifact sizes</li>
-  <li title="stdout/stderr logs from all 3 training runs for reproducibility verification">Training logs included for all 3 seeds</li>
-  <li title="No downloading models, data, or making API calls during train or eval time">No network calls during training or eval</li>
+  <li title="Your 3-seed mean BPB must beat the current best by at least 0.005 to be a new record">BPB beats SOTA by &ge; 0.005 nats (record)</li>
+  <li title="JSON file with your val_bpb scores, seed results, and artifact sizes"><code>submission.json</code> with bpb + sizes</li>
+  <li title="stdout/stderr logs from all 3 training runs for reproducibility verification">Training logs for all 3 seeds</li>
+  <li title="No downloading models, data, or making API calls during train or eval time">No network calls during train or eval</li>
 </ul>
 </div>
-<div class="card">
-<h3>Techniques &mdash; What's Legal RIGHT NOW</h3>
-<ul class="technique-list">
-  <li class="legal" title="All neural architectures are allowed">Any neural architecture (transformers, SSMs, hybrids, MoE)</li>
-  <li class="legal" title="No restrictions on activation functions">Any activation function (LeakyReLU², GeGLU, SwiGLU, etc.)</li>
-  <li class="legal" title="All optimizers are allowed">Any optimizer (AdamW, Muon, SGD, etc.)</li>
-  <li class="legal" title="Learning rate scheduling strategies are unrestricted">LR schedules, warmup, cosine decay</li>
-  <li class="legal" title="Exponential moving average and stochastic weight averaging are legal">EMA, SWA, weight averaging</li>
-  <li class="legal" title="Standard sliding window approach for evaluation">Sliding window evaluation</li>
-  <li class="legal" title="Quantization allowed if calibration happens within the 600s training budget">Quantization (INT6, INT8, GPTQ) — calibration within training budget</li>
-  <li class="legal" title="Performance optimizations are allowed">Flash Attention, torch.compile</li>
-  <li class="legal" title="Test-time training is legal if scoring is single-pass and probabilities are properly normalized">Score-first single-pass TTT (properly normalized probabilities)</li>
-</ul>
-<ul class="technique-list" style="margin-top:1rem;">
-  <li class="banned" title="Banned March 27 — n-gram caches don&#x27;t properly normalize probability distributions over the full vocabulary">Hashed n-gram caches (improper normalization over vocab)</li>
-  <li class="banned" title="Banned March 27 — information from first eval pass leaks into second pass">Two-pass rescoring (eval tokens leaked between passes)</li>
-  <li class="banned" title="Banned March 22 — calibration on evaluation data is not allowed; must happen during training">GPTQ calibration on eval tokens (must fit in training 600s)</li>
-  <li class="banned" title="Banned March 27 — loading training-derived caches during evaluation is not permitted">Pre-filling cache from training data at eval time</li>
-  <li class="banned" title="Banned — test-time training must not score the same tokens in multiple passes">Multi-epoch TTT scoring same tokens twice</li>
-  <li class="banned" title="Banned — using results from one scoring pass to select strategy for another is not allowed">Oracle/hindsight selection between scoring passes</li>
-</ul>
-<ul class="technique-list" style="margin-top:1rem;">
-  <li class="grey" title="May be legal if probability normalization is correct — under review">Properly normalized eval-time caches (CTW, Dirichlet)</li>
-  <li class="grey" title="Legality depends on whether the mixing preserves proper probability normalization">Score-first TTT with complex mixing (depends on normalization)</li>
-</ul>
-</div>
-<!-- AGORA:CHECKLIST_END -->
-<!-- AGORA:RULINGS_START -->
-<div class="card">
+
+<div class="card card-rules">
 <h3>Rule Change History</h3>
 <div class="timeline-entry">
   <div class="timeline-date">March 27, 2026</div>
-  <p>@valerio-oai closed 30+ PRs. Hashed n-gram caches banned (improper normalization). Two-pass rescoring banned (eval token leakage). GPTQ on eval tokens banned.</p>
-  <p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.25rem;">Affected: #769, #779, #809, #814, #824, #825, #828, #843, #846, #850, #851, #859, #868, #869, #870, #880, #881, #888, #893, #907, #913, #921, #925, #944, #945, #982</p>
-  <p style="color:var(--text-dim);font-size:0.85rem;">Source: <a href="https://github.com/openai/parameter-golf/issues/677">Issue #677</a></p>
+  <p style="margin:0.25rem 0;">@valerio-oai closed 30+ PRs. Hashed n-gram caches, two-pass rescoring, and GPTQ on eval tokens all banned.</p>
+  <p style="color:var(--text-dim);font-size:0.78rem;margin:0.25rem 0;">Source: <a href="https://github.com/openai/parameter-golf/issues/677">Issue #677</a></p>
 </div>
 <div class="timeline-entry legal-change">
   <div class="timeline-date">March 24, 2026</div>
-  <p>Score-first TTT clarified as legal. Multi-epoch on already-scored tokens: legal IF properly normalized.</p>
-  <p style="color:var(--text-dim);font-size:0.85rem;">Source: <a href="https://github.com/openai/parameter-golf/issues/402">Issue #402 (ruling by @0hq)</a></p>
+  <p style="margin:0.25rem 0;">Score-first TTT clarified as legal. Multi-epoch on already-scored tokens: legal IF properly normalized.</p>
+  <p style="color:var(--text-dim);font-size:0.78rem;margin:0.25rem 0;">Source: <a href="https://github.com/openai/parameter-golf/issues/402">Issue #402</a> &middot; ruling by @0hq</p>
 </div>
 <div class="timeline-entry">
   <div class="timeline-date">March 22, 2026</div>
-  <p>Eval-time GPTQ calibration on val tokens banned. PRs #593, #576 closed.</p>
-  <p style="color:var(--text-dim);font-size:0.85rem;">Source: PRs #593, #576, #569</p>
+  <p style="margin:0.25rem 0;">Eval-time GPTQ calibration on val tokens banned. PRs #593, #576 closed.</p>
 </div>
 </div>
-<!-- AGORA:RULINGS_END -->
-<!-- AGORA:ALERTS_START -->
-<div class="card" style="border-color:var(--yellow);border-width:2px;">
-<h3 style="margin-top:0;color:var(--yellow);">&#9888; Community Bug Alerts</h3>
-<p style="font-size:0.9rem;margin-bottom:0.75rem;">Known issues that may affect your BPB score. Check before submitting.</p>
-<div style="margin-bottom:1rem;">
-<strong style="color:var(--red);">BPB Underestimation Bug</strong> <span class="badge badge-banned">~20% error</span>
-<p style="font-size:0.85rem;color:var(--text-dim);margin-top:0.25rem;">If your tokenizer does NOT contain U+2581 (▁) as a standalone token, <code>build_sentencepiece_luts</code> overcounts byte boundaries by 2 bytes per word — inflating <code>val_byte_count</code> and making BPB appear ~20% lower than reality. Tokenizers with 1024 vocab (the competition default) DO have this token and are NOT affected. Custom tokenizers: check with <code>sp.id_to_piece()</code>.</p>
-<p style="font-size:0.8rem;color:var(--text-dim);">Source: <a href="https://github.com/openai/parameter-golf/issues/897">Issue #897</a></p>
+
+<div class="card card-alerts">
+<h3 style="color:var(--yellow);">&#9888; Community Bug Alerts</h3>
+<div style="margin-bottom:0.85rem;">
+  <div style="margin-bottom:0.3rem;"><strong style="color:var(--red);">BPB Underestimation Bug</strong> <span class="badge badge-banned">~20% error</span></div>
+  <p style="font-size:0.78rem;color:var(--text-dim);margin:0.15rem 0;line-height:1.4;">If tokenizer lacks U+2581 (&#9601;) as standalone token, <code>build_sentencepiece_luts</code> overcounts byte boundaries. SP1024 default is fine. Custom tokenizers: check with <code>sp.id_to_piece()</code>. <a href="https://github.com/openai/parameter-golf/issues/897">#897</a></p>
 </div>
 <div>
-<strong style="color:var(--yellow);">INT6 Scale Clamp Wastes Quantization Levels</strong> <span class="badge badge-grey">affects ~93% of rows</span>
-<p style="font-size:0.85rem;color:var(--text-dim);margin-top:0.25rem;">The <code>clamp_min(1.0 / 31.0)</code> in <code>quantize_int6_per_row</code> forces a minimum scale of 0.032 even when weight rows have much smaller magnitudes. At WD=0.02, 93% of rows trigger this clamp — wasting INT6 resolution and widening the quantization gap. Higher weight decay (0.04+) makes it worse. Fix: lower or remove the clamp, then retrain with matching QAT.</p>
-<p style="font-size:0.8rem;color:var(--text-dim);">Source: <a href="https://github.com/openai/parameter-golf/issues/775">Issue #775</a></p>
+  <div style="margin-bottom:0.3rem;"><strong style="color:var(--yellow);">INT6 Scale Clamp Waste</strong> <span class="badge badge-grey">~93% of rows</span></div>
+  <p style="font-size:0.78rem;color:var(--text-dim);margin:0.15rem 0;line-height:1.4;"><code>clamp_min(1.0/31.0)</code> in <code>quantize_int6_per_row</code> forces minimum scale 0.032 even when row magnitudes are smaller. Lower or remove the clamp + retrain with matching QAT. <a href="https://github.com/openai/parameter-golf/issues/775">#775</a></p>
 </div>
 </div>
+
+</div>
+<!-- AGORA:CHECKLIST_END -->
+<!-- AGORA:RULINGS_END -->
 <!-- AGORA:ALERTS_END -->
-</div>
 </section>
 
 <!-- SECTION 2: LEADERBOARD (placeholder for Phase 2 API) -->
@@ -2075,10 +2123,10 @@ tr:hover { background: rgba(88,166,255,0.04); }
 <p style="color:var(--text-dim);font-size:0.85rem;margin-bottom:0;">It's not about the cost &mdash; it's about who actually has to step up when the maintainers go silent. The point is that <em>none of this should have been our job.</em></p>
 </div>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem;margin-top:1rem;">
+<div class="tile-grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr));margin-top:1rem;">
 
 <div class="card">
-<h3 style="margin-top:0;color:var(--accent);">&#128190; Pre-Tokenized Dataset on HuggingFace</h3>
+<h3 style="color:var(--accent);">&#128190; Pre-Tokenized Dataset on HuggingFace</h3>
 <p><strong>What it solves:</strong> Every pod launch was wasting 10-30 minutes downloading 16+ GB of FineWeb data &mdash; ~$3.50 of billable GPU time burned on data transfer alone, every single run.</p>
 <p><strong>What we shipped:</strong> <a href="https://huggingface.co/datasets/LightSpeedUp/parameter-golf-data">LightSpeedUp/parameter-golf-data</a> &mdash; SP1024 (~15 GB) and Scylla (~11 GB) pre-tokenized FineWeb shards with SHA256 verification, tokenizer models included. No login required. Works from any cloud (RunPod, Modal, Colab, Vast.ai, GCP, local).</p>
 <pre style="background:#0d1117;padding:0.6rem;border-radius:4px;font-size:0.78rem;overflow-x:auto;">huggingface-cli download LightSpeedUp/parameter-golf-data \
@@ -2087,7 +2135,7 @@ tr:hover { background: rgba(88,166,255,0.04); }
 </div>
 
 <div class="card" style="border:2px solid var(--accent);">
-<h3 style="margin-top:0;color:var(--accent);">&#9889; Cross-Provider Network Storage (the network volume that actually works)</h3>
+<h3 style="color:var(--accent);">&#9889; Cross-Provider Network Storage (the network volume that actually works)</h3>
 <p><strong>The original plan</strong> was a RunPod Network Volume with the FineWeb dataset pre-loaded &mdash; community shared, free, mountable. <strong>It died on contact with reality:</strong> RunPod volumes are datacenter-locked (create in US-TX-3, can't mount in EU-RO-1), and the datacenters with 8&times;H100 SXM availability rarely have network volume capacity. RunPod's own docs warn it "may limit GPU availability and reduce failover options." Dead end.</p>
 <p><strong>So we built a better one.</strong> <code style="color:var(--accent);font-size:0.95rem;">pgolf-api.lightspeedup.com</code> &mdash; a Cloudflare Worker + R2 storage backend. Works from <em>any</em> provider in <em>any</em> region. RunPod, Modal, Colab, Vast.ai, GCP, your laptop &mdash; all of them can save and pull checkpoints from one place.</p>
 
@@ -2113,28 +2161,28 @@ curl -H "Authorization: Bearer ghp_yourgithubtoken" \
 </div>
 
 <div class="card">
-<h3 style="margin-top:0;color:var(--accent);">&#128011; Pre-Built Docker Image</h3>
+<h3 style="color:var(--accent);">&#128011; Pre-Built Docker Image</h3>
 <p><strong>What it solves:</strong> Setting up CUDA, PyTorch, flash-attn, brotli, tokenmonster, sentencepiece, and the data pipeline takes an hour. Every. Single. Pod.</p>
 <p><strong>What we shipped:</strong> <a href="https://hub.docker.com/r/matotezitanka/proteus-pytorch"><code>matotezitanka/proteus-pytorch:community</code></a> &mdash; everything pre-installed, auto-downloads data on boot via env vars, SSH keepalive configured for long training sessions. Set <code>PGOLF_DATA=sp1024</code> and you're training in under 60 seconds.</p>
 <p style="color:var(--text-dim);font-size:0.8rem;margin-bottom:0;"><strong>Status:</strong> Live on Docker Hub. <strong>Cost to you:</strong> $0.</p>
 </div>
 
 <div class="card">
-<h3 style="margin-top:0;color:var(--accent);">&#128640; RunPod Template (Pre-Configured)</h3>
+<h3 style="color:var(--accent);">&#128640; RunPod Template (Pre-Configured)</h3>
 <p><strong>What it solves:</strong> RunPod template configuration is fiddly. Wrong env vars = burned credits.</p>
 <p><strong>What we shipped:</strong> "Parameter Golf Light Speed Up Community" template &mdash; pre-baked with the Docker image, sane defaults, env vars wired up. One click → training.</p>
 <p style="color:var(--text-dim);font-size:0.8rem;margin-bottom:0;"><strong>Cost to you:</strong> $0 to use the template (you still pay RunPod for compute, of course).</p>
 </div>
 
 <div class="card">
-<h3 style="margin-top:0;color:var(--accent);">&#128202; This Site (The Agora)</h3>
+<h3 style="color:var(--accent);">&#128202; This Site (The Agora)</h3>
 <p><strong>What it solves:</strong> 1,425+ PRs across 518+ contributors with no auto-classified leaderboard, no compliance tracker, no technique map, no funding transparency. Issue #140 was the closest thing &mdash; <a href="https://github.com/openai/parameter-golf/issues/140" style="text-decoration:line-through;">until OpenAI walked away from it</a>.</p>
 <p><strong>What we shipped:</strong> Auto-updating leaderboard, compliance engine, code-based technique detection (1,265 PRs analyzed), funding tracker, blocked-on-compute board, BPB timeline, and now &mdash; with this update &mdash; the public accountability banner above.</p>
 <p style="color:var(--text-dim);font-size:0.8rem;margin-bottom:0;"><strong>Cost to you:</strong> $0. <strong>Cost to us:</strong> server time, Cloudflare bandwidth, my own hours.</p>
 </div>
 
 <div class="card">
-<h3 style="margin-top:0;color:var(--accent);">&#128737; Community Toolkit</h3>
+<h3 style="color:var(--accent);">&#128737; Community Toolkit</h3>
 <p><strong>What it solves:</strong> Retokenization scripts, CPU smoke tests, classifier code, sweep harnesses &mdash; all the boring tooling nobody wants to write but everybody needs.</p>
 <p><strong>What we shipped:</strong> <code>retokenize_scylla.py</code>, <code>cpu_test.py</code>, <code>classify.py</code>, <code>vocab_sweep.py</code> (new today), and the Agora pipeline itself &mdash; all open source, all forkable.</p>
 <p style="color:var(--text-dim);font-size:0.8rem;margin-bottom:0;"><strong>Source:</strong> <a href="https://github.com/MatoTeziTanka/parameter-golf">MatoTeziTanka/parameter-golf</a></p>
@@ -2157,7 +2205,7 @@ curl -H "Authorization: Bearer ghp_yourgithubtoken" \
 <section id="timeline">
 <h2>BPB Timeline</h2>
 <!-- AGORA:TIMELINE_START -->
-<p style="color:var(--text-dim);margin-bottom:1rem;">Cumulative SOTA curve built from 510 classified PRs with a positive BPB and final status ALIVE, AT-RISK, or DEAD. Neural-only strips cache-heavy rulings so the March 27 cliff stays visible.</p><div style="display:flex;gap:0.75rem;margin-bottom:0.75rem;"><button onclick="toggleSeries('series-neural',this)" style="background:var(--surface);border:1px solid #3fb950;color:#3fb950;padding:0.3rem 0.8rem;border-radius:6px;cursor:pointer;font-size:0.85rem;">Neural-only</button><button onclick="toggleSeries('series-all',this)" style="background:var(--surface);border:1px solid #bc8cff;color:#bc8cff;padding:0.3rem 0.8rem;border-radius:6px;cursor:pointer;font-size:0.85rem;">All-techniques</button></div><div class="card chart-card"><svg viewBox="0 0 1200 520" width="100%" role="img" aria-label="BPB timeline" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="520" rx="16" fill="#161b22" stroke="#30363d"/><text x="92" y="26" fill="#e6edf3" font-size="22" font-weight="700">Cumulative SOTA BPB by PR creation date</text><text x="92" y="44" fill="#8b949e" font-size="13">Log scale. Neural-only strips cache-heavy rulings; all-techniques keeps every classified result with a final status.</text><line x1="92" x2="1172" y1="432.18" y2="432.18" stroke="#30363d" stroke-width="1"/><text x="80" y="436.18" fill="#8b949e" font-size="12" text-anchor="end">1.000</text><line x1="92" x2="1172" y1="401.32" y2="401.32" stroke="#30363d" stroke-width="1"/><text x="80" y="405.32" fill="#8b949e" font-size="12" text-anchor="end">0.300</text><line x1="92" x2="1172" y1="373.15" y2="373.15" stroke="#30363d" stroke-width="1"/><text x="80" y="377.15" fill="#8b949e" font-size="12" text-anchor="end">0.100</text><line x1="92" x2="1172" y1="342.29" y2="342.29" stroke="#30363d" stroke-width="1"/><text x="80" y="346.29" fill="#8b949e" font-size="12" text-anchor="end">0.0300</text><line x1="92" x2="1172" y1="314.12" y2="314.12" stroke="#30363d" stroke-width="1"/><text x="80" y="318.12" fill="#8b949e" font-size="12" text-anchor="end">0.0100</text><line x1="92" x2="1172" y1="283.26" y2="283.26" stroke="#30363d" stroke-width="1"/><text x="80" y="287.26" fill="#8b949e" font-size="12" text-anchor="end">0.0030</text><line x1="92" x2="1172" y1="255.09" y2="255.09" stroke="#30363d" stroke-width="1"/><text x="80" y="259.09" fill="#8b949e" font-size="12" text-anchor="end">0.0010</text><line x1="92" x2="1172" y1="224.22" y2="224.22" stroke="#30363d" stroke-width="1"/><text x="80" y="228.22" fill="#8b949e" font-size="12" text-anchor="end">3.00e-04</text><line x1="92" x2="1172" y1="196.06" y2="196.06" stroke="#30363d" stroke-width="1"/><text x="80" y="200.06" fill="#8b949e" font-size="12" text-anchor="end">1.00e-04</text><line x1="92" x2="1172" y1="165.19" y2="165.19" stroke="#30363d" stroke-width="1"/><text x="80" y="169.19" fill="#8b949e" font-size="12" text-anchor="end">3.00e-05</text><line x1="92" x2="1172" y1="137.03" y2="137.03" stroke="#30363d" stroke-width="1"/><text x="80" y="141.03" fill="#8b949e" font-size="12" text-anchor="end">1.00e-05</text><line x1="92" x2="1172" y1="106.16" y2="106.16" stroke="#30363d" stroke-width="1"/><text x="80" y="110.16" fill="#8b949e" font-size="12" text-anchor="end">3.00e-06</text><line x1="92" x2="1172" y1="78.00" y2="78.00" stroke="#30363d" stroke-width="1"/><text x="80" y="82.00" fill="#8b949e" font-size="12" text-anchor="end">1.00e-06</text><line x1="92" x2="1172" y1="47.13" y2="47.13" stroke="#30363d" stroke-width="1"/><text x="80" y="51.13" fill="#8b949e" font-size="12" text-anchor="end">3.00e-07</text><line x1="92.00" x2="92.00" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="92.00" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 18</text><line x1="246.29" x2="246.29" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="246.29" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 21</text><line x1="400.57" x2="400.57" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="400.57" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 24</text><line x1="554.86" x2="554.86" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="554.86" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 27</text><line x1="709.14" x2="709.14" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="709.14" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 30</text><line x1="863.43" x2="863.43" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="863.43" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Apr 2</text><line x1="1017.71" x2="1017.71" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="1017.71" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Apr 5</text><line x1="1120.57" x2="1120.57" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="1120.57" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Apr 7</text><line x1="297.71" x2="297.71" y1="44" y2="448" stroke="#f85149" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="303.71" y="58.00" fill="#f85149" font-size="12">GPTQ ruling</text><line x1="400.57" x2="400.57" y1="44" y2="448" stroke="#3fb950" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="406.57" y="58.00" fill="#3fb950" font-size="12">TTT ruling</text><line x1="554.86" x2="554.86" y1="44" y2="448" stroke="#f85149" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="560.86" y="58.00" fill="#f85149" font-size="12">N-gram massacre</text><rect x="92" y="44" width="1080" height="404" fill="none" stroke="#30363d"/><g id="series-all"><path d="M 92.00 437.37 H 131.31 H 137.85 V 344.34 H 143.81 V 274.95 H 146.07 V 237.32 H 585.69 V 51.08 H 1172.00" fill="none" stroke="#bc8cff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="131.31" cy="437.37" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="137.85" cy="344.34" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="143.81" cy="274.95" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="146.07" cy="237.32" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="585.69" cy="51.08" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><text x="595.69" y="41.08" fill="#bc8cff" font-size="12">All-techniques: 3.50e-07 BPB</text></g><g id="series-neural"><path d="M 92.00 437.37 H 131.31 H 137.85 V 344.34 H 143.81 V 274.95 H 146.07 V 237.32 H 1172.00" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="131.31" cy="437.37" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="137.85" cy="344.34" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="143.81" cy="274.95" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="146.07" cy="237.32" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><text x="156.07" y="227.32" fill="#3fb950" font-size="12">Neural-only: 5.00e-04 BPB</text></g><line x1="92" x2="118" y1="496.00" y2="496.00" stroke="#3fb950" stroke-width="3"/><text x="126" y="500.00" fill="#e6edf3" font-size="13">Neural-only</text><line x1="242" x2="268" y1="496.00" y2="496.00" stroke="#bc8cff" stroke-width="3"/><text x="276" y="500.00" fill="#e6edf3" font-size="13">All-techniques</text><text x="22" y="246.00" fill="#8b949e" font-size="13" transform="rotate(-90 22 246.00)">BPB (log scale)</text><text x="632.00" y="512.00" fill="#8b949e" font-size="13" text-anchor="middle">Date created</text></svg></div><script>function toggleSeries(id,btn){var g=document.getElementById(id);if(!g)return;var vis=g.style.display!=="none";g.style.display=vis?"none":"";btn.style.opacity=vis?"0.4":"1";}</script>
+<p style="color:var(--text-dim);margin-bottom:1rem;">Cumulative SOTA curve built from 510 classified PRs with a positive BPB and final status ALIVE, AT-RISK, or DEAD. Neural-only strips cache-heavy rulings so the March 27 cliff stays visible.</p><div style="display:flex;gap:0.75rem;margin-bottom:0.75rem;"><button onclick="toggleSeries('series-neural',this)" style="background:var(--surface);border:1px solid #3fb950;color:#3fb950;padding:0.3rem 0.8rem;border-radius:6px;cursor:pointer;font-size:0.85rem;">Neural-only</button><button onclick="toggleSeries('series-all',this)" style="background:var(--surface);border:1px solid #bc8cff;color:#bc8cff;padding:0.3rem 0.8rem;border-radius:6px;cursor:pointer;font-size:0.85rem;">All-techniques</button></div><div class="card chart-card"><svg viewBox="0 0 1200 520" width="100%" role="img" aria-label="BPB timeline" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="520" rx="16" fill="#161b22" stroke="#30363d"/><text x="92" y="26" fill="#e6edf3" font-size="22" font-weight="700">Cumulative SOTA BPB by PR creation date</text><text x="92" y="44" fill="#8b949e" font-size="13">Log scale. Neural-only strips cache-heavy rulings; all-techniques keeps every classified result with a final status.</text><line x1="92" x2="1172" y1="432.18" y2="432.18" stroke="#30363d" stroke-width="1"/><text x="80" y="436.18" fill="#8b949e" font-size="12" text-anchor="end">1.000</text><line x1="92" x2="1172" y1="401.32" y2="401.32" stroke="#30363d" stroke-width="1"/><text x="80" y="405.32" fill="#8b949e" font-size="12" text-anchor="end">0.300</text><line x1="92" x2="1172" y1="373.15" y2="373.15" stroke="#30363d" stroke-width="1"/><text x="80" y="377.15" fill="#8b949e" font-size="12" text-anchor="end">0.100</text><line x1="92" x2="1172" y1="342.29" y2="342.29" stroke="#30363d" stroke-width="1"/><text x="80" y="346.29" fill="#8b949e" font-size="12" text-anchor="end">0.0300</text><line x1="92" x2="1172" y1="314.12" y2="314.12" stroke="#30363d" stroke-width="1"/><text x="80" y="318.12" fill="#8b949e" font-size="12" text-anchor="end">0.0100</text><line x1="92" x2="1172" y1="283.26" y2="283.26" stroke="#30363d" stroke-width="1"/><text x="80" y="287.26" fill="#8b949e" font-size="12" text-anchor="end">0.0030</text><line x1="92" x2="1172" y1="255.09" y2="255.09" stroke="#30363d" stroke-width="1"/><text x="80" y="259.09" fill="#8b949e" font-size="12" text-anchor="end">0.0010</text><line x1="92" x2="1172" y1="224.22" y2="224.22" stroke="#30363d" stroke-width="1"/><text x="80" y="228.22" fill="#8b949e" font-size="12" text-anchor="end">3.00e-04</text><line x1="92" x2="1172" y1="196.06" y2="196.06" stroke="#30363d" stroke-width="1"/><text x="80" y="200.06" fill="#8b949e" font-size="12" text-anchor="end">1.00e-04</text><line x1="92" x2="1172" y1="165.19" y2="165.19" stroke="#30363d" stroke-width="1"/><text x="80" y="169.19" fill="#8b949e" font-size="12" text-anchor="end">3.00e-05</text><line x1="92" x2="1172" y1="137.03" y2="137.03" stroke="#30363d" stroke-width="1"/><text x="80" y="141.03" fill="#8b949e" font-size="12" text-anchor="end">1.00e-05</text><line x1="92" x2="1172" y1="106.16" y2="106.16" stroke="#30363d" stroke-width="1"/><text x="80" y="110.16" fill="#8b949e" font-size="12" text-anchor="end">3.00e-06</text><line x1="92" x2="1172" y1="78.00" y2="78.00" stroke="#30363d" stroke-width="1"/><text x="80" y="82.00" fill="#8b949e" font-size="12" text-anchor="end">1.00e-06</text><line x1="92" x2="1172" y1="47.13" y2="47.13" stroke="#30363d" stroke-width="1"/><text x="80" y="51.13" fill="#8b949e" font-size="12" text-anchor="end">3.00e-07</text><line x1="92.00" x2="92.00" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="92.00" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 18</text><line x1="254.00" x2="254.00" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="254.00" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 21</text><line x1="416.00" x2="416.00" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="416.00" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 24</text><line x1="578.00" x2="578.00" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="578.00" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 27</text><line x1="740.00" x2="740.00" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="740.00" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Mar 30</text><line x1="902.00" x2="902.00" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="902.00" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Apr 2</text><line x1="1064.00" x2="1064.00" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="1064.00" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Apr 5</text><line x1="1118.00" x2="1118.00" y1="44" y2="448" stroke="#30363d" stroke-width="1" opacity="0.55"/><text x="1118.00" y="472.00" fill="#8b949e" font-size="12" text-anchor="middle">Apr 6</text><line x1="308.00" x2="308.00" y1="44" y2="448" stroke="#f85149" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="314.00" y="58.00" fill="#f85149" font-size="12">GPTQ ruling</text><line x1="416.00" x2="416.00" y1="44" y2="448" stroke="#3fb950" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="422.00" y="58.00" fill="#3fb950" font-size="12">TTT ruling</text><line x1="578.00" x2="578.00" y1="44" y2="448" stroke="#f85149" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"/><text x="584.00" y="58.00" fill="#f85149" font-size="12">N-gram massacre</text><rect x="92" y="44" width="1080" height="404" fill="none" stroke="#30363d"/><g id="series-all"><path d="M 92.00 437.37 H 133.28 H 140.15 V 344.34 H 146.40 V 274.95 H 148.78 V 237.32 H 610.38 V 51.08 H 1172.00" fill="none" stroke="#bc8cff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="133.28" cy="437.37" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="140.15" cy="344.34" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="146.40" cy="274.95" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="148.78" cy="237.32" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><circle cx="610.38" cy="51.08" r="4.5" fill="#bc8cff" stroke="#161b22" stroke-width="1.5"/><text x="620.38" y="41.08" fill="#bc8cff" font-size="12">All-techniques: 3.50e-07 BPB</text></g><g id="series-neural"><path d="M 92.00 437.37 H 133.28 H 140.15 V 344.34 H 146.40 V 274.95 H 148.78 V 237.32 H 1172.00" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="133.28" cy="437.37" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="140.15" cy="344.34" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="146.40" cy="274.95" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><circle cx="148.78" cy="237.32" r="4.5" fill="#3fb950" stroke="#161b22" stroke-width="1.5"/><text x="158.78" y="227.32" fill="#3fb950" font-size="12">Neural-only: 5.00e-04 BPB</text></g><line x1="92" x2="118" y1="496.00" y2="496.00" stroke="#3fb950" stroke-width="3"/><text x="126" y="500.00" fill="#e6edf3" font-size="13">Neural-only</text><line x1="242" x2="268" y1="496.00" y2="496.00" stroke="#bc8cff" stroke-width="3"/><text x="276" y="500.00" fill="#e6edf3" font-size="13">All-techniques</text><text x="22" y="246.00" fill="#8b949e" font-size="13" transform="rotate(-90 22 246.00)">BPB (log scale)</text><text x="632.00" y="512.00" fill="#8b949e" font-size="13" text-anchor="middle">Date created</text></svg></div><script>function toggleSeries(id,btn){var g=document.getElementById(id);if(!g)return;var vis=g.style.display!=="none";g.style.display=vis?"none":"";btn.style.opacity=vis?"0.4":"1";}</script>
 <!-- AGORA:TIMELINE_END -->
 </section>
 
@@ -2208,10 +2256,10 @@ curl -H "Authorization: Bearer ghp_yourgithubtoken" \
 <div class="card chart-card"><svg viewBox="0 0 800 360" width="100%" role="img" aria-label="Artifact size histogram" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="360" rx="12" fill="#161b22" stroke="#30363d"/><text x="64" y="24" fill="#e6edf3" font-size="16" font-weight="700">Artifact Size Distribution</text><text x="64" y="38" fill="#8b949e" font-size="11">970 PRs with known artifact size. 16 MB cap shown as red line.</text><line x1="64" x2="780" y1="304.0" y2="304.0" stroke="#30363d" stroke-width="1"/><text x="56" y="308.0" fill="#8b949e" font-size="11" text-anchor="end">0</text><line x1="64" x2="780" y1="243.9" y2="243.9" stroke="#30363d" stroke-width="1"/><text x="56" y="247.9" fill="#8b949e" font-size="11" text-anchor="end">100</text><line x1="64" x2="780" y1="183.7" y2="183.7" stroke="#30363d" stroke-width="1"/><text x="56" y="187.7" fill="#8b949e" font-size="11" text-anchor="end">200</text><line x1="64" x2="780" y1="123.6" y2="123.6" stroke="#30363d" stroke-width="1"/><text x="56" y="127.6" fill="#8b949e" font-size="11" text-anchor="end">300</text><line x1="64" x2="780" y1="63.5" y2="63.5" stroke="#30363d" stroke-width="1"/><text x="56" y="67.5" fill="#8b949e" font-size="11" text-anchor="end">400</text><rect x="66.0" y="292.6" width="75.6" height="11.4" fill="#bc8cff" rx="3" opacity="0.85"/><text x="103.8" y="288.6" fill="#e6edf3" font-size="10" text-anchor="middle">19</text><text x="103.8" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">0-2</text><rect x="145.6" y="295.0" width="75.6" height="9.0" fill="#bc8cff" rx="3" opacity="0.85"/><text x="183.3" y="291.0" fill="#e6edf3" font-size="10" text-anchor="middle">15</text><text x="183.3" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">2-4</text><rect x="225.1" y="298.6" width="75.6" height="5.4" fill="#bc8cff" rx="3" opacity="0.85"/><text x="262.9" y="294.6" fill="#e6edf3" font-size="10" text-anchor="middle">9</text><text x="262.9" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">4-6</text><rect x="304.7" y="298.6" width="75.6" height="5.4" fill="#bc8cff" rx="3" opacity="0.85"/><text x="342.4" y="294.6" fill="#e6edf3" font-size="10" text-anchor="middle">9</text><text x="342.4" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">6-8</text><rect x="384.2" y="296.2" width="75.6" height="7.8" fill="#bc8cff" rx="3" opacity="0.85"/><text x="422.0" y="292.2" fill="#e6edf3" font-size="10" text-anchor="middle">13</text><text x="422.0" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">8-10</text><rect x="463.8" y="287.8" width="75.6" height="16.2" fill="#bc8cff" rx="3" opacity="0.85"/><text x="501.6" y="283.8" fill="#e6edf3" font-size="10" text-anchor="middle">27</text><text x="501.6" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">10-12</text><rect x="543.3" y="270.9" width="75.6" height="33.1" fill="#bc8cff" rx="3" opacity="0.85"/><text x="581.1" y="266.9" fill="#e6edf3" font-size="10" text-anchor="middle">55</text><text x="581.1" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">12-14</text><rect x="622.9" y="40.0" width="75.6" height="264.0" fill="#bc8cff" rx="3" opacity="0.85"/><text x="660.7" y="36.0" fill="#e6edf3" font-size="10" text-anchor="middle">439</text><text x="660.7" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">14-16</text><rect x="702.4" y="73.1" width="75.6" height="230.9" fill="#f85149" rx="3" opacity="0.85"/><text x="740.2" y="69.1" fill="#e6edf3" font-size="10" text-anchor="middle">384</text><text x="740.2" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">16+</text><line x1="700.4" x2="700.4" y1="40" y2="304" stroke="#f85149" stroke-width="2" stroke-dasharray="6 4" opacity="0.7"/><text x="704.4" y="54" fill="#f85149" font-size="10">16 MB cap</text><text x="422.0" y="354.0" fill="#8b949e" font-size="11" text-anchor="middle">Artifact size (MB)</text></svg></div>
 <!-- AGORA:CHART_ARTIFACT_END -->
 <!-- AGORA:CHART_TECHNIQUE_POP_START -->
-<div class="card chart-card"><svg viewBox="0 0 800 360" width="100%" role="img" aria-label="Technique popularity" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="360" rx="12" fill="#161b22" stroke="#30363d"/><text x="64" y="24" fill="#e6edf3" font-size="16" font-weight="700">Technique Popularity Over Time</text><text x="64" y="38" fill="#8b949e" font-size="11">Cumulative PR count by technique type. 1290 total PRs.</text><polygon points="64.0,303.8 91.5,303.8 119.1,303.8 146.6,303.8 174.2,303.8 201.7,303.8 229.2,297.9 256.8,278.6 284.3,249.6 311.8,231.1 339.4,211.5 366.9,188.6 394.5,175.1 422.0,150.7 449.5,126.8 477.1,111.0 504.6,100.0 532.2,88.3 559.7,77.9 587.2,69.1 614.8,61.7 642.3,55.1 669.8,50.2 697.4,48.6 724.9,44.3 752.5,40.0 780.0,40.0 780.0,71.7 752.5,71.7 724.9,74.8 697.4,78.7 669.8,80.1 642.3,83.6 614.8,89.5 587.2,95.7 559.7,102.8 532.2,112.0 504.6,122.3 477.1,131.9 449.5,144.4 422.0,160.7 394.5,179.6 366.9,192.3 339.4,213.7 311.8,233.0 284.3,250.6 256.8,278.8 229.2,297.9 201.7,303.8 174.2,303.8 146.6,303.8 119.1,303.8 91.5,303.8 64.0,303.8" fill="#58a6ff" opacity="0.6"/><polygon points="64.0,303.8 91.5,303.8 119.1,303.8 146.6,303.8 174.2,303.8 201.7,303.8 229.2,297.9 256.8,278.8 284.3,250.6 311.8,233.0 339.4,213.7 366.9,192.3 394.5,179.6 422.0,160.7 449.5,144.4 477.1,131.9 504.6,122.3 532.2,112.0 559.7,102.8 587.2,95.7 614.8,89.5 642.3,83.6 669.8,80.1 697.4,78.7 724.9,74.8 752.5,71.7 780.0,71.7 780.0,93.4 752.5,93.4 724.9,96.5 697.4,100.0 669.8,101.2 642.3,104.3 614.8,110.0 587.2,115.1 559.7,121.5 532.2,127.8 504.6,136.6 477.1,145.0 449.5,154.6 422.0,166.3 394.5,182.8 366.9,195.1 339.4,216.0 311.8,234.6 284.3,252.0 256.8,279.4 229.2,298.3 201.7,303.8 174.2,303.8 146.6,303.8 119.1,303.8 91.5,303.8 64.0,303.8" fill="#d29922" opacity="0.6"/><polygon points="64.0,303.8 91.5,303.8 119.1,303.8 146.6,303.8 174.2,303.8 201.7,303.8 229.2,298.3 256.8,279.4 284.3,252.0 311.8,234.6 339.4,216.0 366.9,195.1 394.5,182.8 422.0,166.3 449.5,154.6 477.1,145.0 504.6,136.6 532.2,127.8 559.7,121.5 587.2,115.1 614.8,110.0 642.3,104.3 669.8,101.2 697.4,100.0 724.9,96.5 752.5,93.4 780.0,93.4 780.0,167.9 752.5,167.9 724.9,169.1 697.4,171.6 669.8,172.2 642.3,174.0 614.8,176.9 587.2,179.4 559.7,183.5 532.2,187.3 504.6,191.6 477.1,195.9 449.5,203.1 422.0,210.5 394.5,219.7 366.9,225.6 339.4,236.1 311.8,248.3 284.3,259.4 256.8,280.7 229.2,298.7 201.7,303.8 174.2,303.8 146.6,303.8 119.1,303.8 91.5,303.8 64.0,303.8" fill="#bc8cff" opacity="0.6"/><polygon points="64.0,303.8 91.5,303.8 119.1,303.8 146.6,303.8 174.2,303.8 201.7,303.8 229.2,298.7 256.8,280.7 284.3,259.4 311.8,248.3 339.4,236.1 366.9,225.6 394.5,219.7 422.0,210.5 449.5,203.1 477.1,195.9 504.6,191.6 532.2,187.3 559.7,183.5 587.2,179.4 614.8,176.9 642.3,174.0 669.8,172.2 697.4,171.6 724.9,169.1 752.5,167.9 780.0,167.9 780.0,304.0 752.5,304.0 724.9,304.0 697.4,304.0 669.8,304.0 642.3,304.0 614.8,304.0 587.2,304.0 559.7,304.0 532.2,304.0 504.6,304.0 477.1,304.0 449.5,304.0 422.0,304.0 394.5,304.0 366.9,304.0 339.4,304.0 311.8,304.0 284.3,304.0 256.8,304.0 229.2,304.0 201.7,304.0 174.2,304.0 146.6,304.0 119.1,304.0 91.5,304.0 64.0,304.0" fill="#3fb950" opacity="0.6"/><text x="64.0" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 12</text><text x="146.6" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 15</text><text x="229.2" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 18</text><text x="311.8" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 21</text><text x="394.5" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 24</text><text x="477.1" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 27</text><text x="559.7" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 30</text><text x="642.3" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Apr 2</text><text x="724.9" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Apr 5</text><line x1="64" x2="780" y1="304.0" y2="304.0" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="308.0" fill="#8b949e" font-size="11" text-anchor="end">0</text><line x1="64" x2="780" y1="201.7" y2="201.7" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="205.7" fill="#8b949e" font-size="11" text-anchor="end">500</text><line x1="64" x2="780" y1="99.3" y2="99.3" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="103.3" fill="#8b949e" font-size="11" text-anchor="end">1000</text><rect x="64" y="340" width="12" height="12" fill="#3fb950" rx="2" opacity="0.8"/><text x="80" y="350" fill="#e6edf3" font-size="11">Neural</text><rect x="144" y="340" width="12" height="12" fill="#bc8cff" rx="2" opacity="0.8"/><text x="160" y="350" fill="#e6edf3" font-size="11">TTT</text><rect x="200" y="340" width="12" height="12" fill="#d29922" rx="2" opacity="0.8"/><text x="216" y="350" fill="#e6edf3" font-size="11">CACHE</text><rect x="272" y="340" width="12" height="12" fill="#58a6ff" rx="2" opacity="0.8"/><text x="288" y="350" fill="#e6edf3" font-size="11">HYBRID</text></svg></div>
+<div class="card chart-card"><svg viewBox="0 0 800 360" width="100%" role="img" aria-label="Technique popularity" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="360" rx="12" fill="#161b22" stroke="#30363d"/><text x="64" y="24" fill="#e6edf3" font-size="16" font-weight="700">Technique Popularity Over Time</text><text x="64" y="38" fill="#8b949e" font-size="11">Cumulative PR count by technique type. 1290 total PRs.</text><polygon points="64.0,303.8 92.6,303.8 121.3,303.8 149.9,303.8 178.6,303.8 207.2,303.8 235.8,297.9 264.5,278.6 293.1,249.6 321.8,231.1 350.4,211.5 379.0,188.6 407.7,175.1 436.3,150.7 465.0,126.8 493.6,111.0 522.2,100.0 550.9,88.3 579.5,77.9 608.2,69.1 636.8,61.7 665.4,55.1 694.1,50.2 722.7,48.6 751.4,44.3 780.0,40.0 780.0,71.7 751.4,74.8 722.7,78.7 694.1,80.1 665.4,83.6 636.8,89.5 608.2,95.7 579.5,102.8 550.9,112.0 522.2,122.3 493.6,131.9 465.0,144.4 436.3,160.7 407.7,179.6 379.0,192.3 350.4,213.7 321.8,233.0 293.1,250.6 264.5,278.8 235.8,297.9 207.2,303.8 178.6,303.8 149.9,303.8 121.3,303.8 92.6,303.8 64.0,303.8" fill="#58a6ff" opacity="0.6"/><polygon points="64.0,303.8 92.6,303.8 121.3,303.8 149.9,303.8 178.6,303.8 207.2,303.8 235.8,297.9 264.5,278.8 293.1,250.6 321.8,233.0 350.4,213.7 379.0,192.3 407.7,179.6 436.3,160.7 465.0,144.4 493.6,131.9 522.2,122.3 550.9,112.0 579.5,102.8 608.2,95.7 636.8,89.5 665.4,83.6 694.1,80.1 722.7,78.7 751.4,74.8 780.0,71.7 780.0,93.4 751.4,96.5 722.7,100.0 694.1,101.2 665.4,104.3 636.8,110.0 608.2,115.1 579.5,121.5 550.9,127.8 522.2,136.6 493.6,145.0 465.0,154.6 436.3,166.3 407.7,182.8 379.0,195.1 350.4,216.0 321.8,234.6 293.1,252.0 264.5,279.4 235.8,298.3 207.2,303.8 178.6,303.8 149.9,303.8 121.3,303.8 92.6,303.8 64.0,303.8" fill="#d29922" opacity="0.6"/><polygon points="64.0,303.8 92.6,303.8 121.3,303.8 149.9,303.8 178.6,303.8 207.2,303.8 235.8,298.3 264.5,279.4 293.1,252.0 321.8,234.6 350.4,216.0 379.0,195.1 407.7,182.8 436.3,166.3 465.0,154.6 493.6,145.0 522.2,136.6 550.9,127.8 579.5,121.5 608.2,115.1 636.8,110.0 665.4,104.3 694.1,101.2 722.7,100.0 751.4,96.5 780.0,93.4 780.0,167.9 751.4,169.1 722.7,171.6 694.1,172.2 665.4,174.0 636.8,176.9 608.2,179.4 579.5,183.5 550.9,187.3 522.2,191.6 493.6,195.9 465.0,203.1 436.3,210.5 407.7,219.7 379.0,225.6 350.4,236.1 321.8,248.3 293.1,259.4 264.5,280.7 235.8,298.7 207.2,303.8 178.6,303.8 149.9,303.8 121.3,303.8 92.6,303.8 64.0,303.8" fill="#bc8cff" opacity="0.6"/><polygon points="64.0,303.8 92.6,303.8 121.3,303.8 149.9,303.8 178.6,303.8 207.2,303.8 235.8,298.7 264.5,280.7 293.1,259.4 321.8,248.3 350.4,236.1 379.0,225.6 407.7,219.7 436.3,210.5 465.0,203.1 493.6,195.9 522.2,191.6 550.9,187.3 579.5,183.5 608.2,179.4 636.8,176.9 665.4,174.0 694.1,172.2 722.7,171.6 751.4,169.1 780.0,167.9 780.0,304.0 751.4,304.0 722.7,304.0 694.1,304.0 665.4,304.0 636.8,304.0 608.2,304.0 579.5,304.0 550.9,304.0 522.2,304.0 493.6,304.0 465.0,304.0 436.3,304.0 407.7,304.0 379.0,304.0 350.4,304.0 321.8,304.0 293.1,304.0 264.5,304.0 235.8,304.0 207.2,304.0 178.6,304.0 149.9,304.0 121.3,304.0 92.6,304.0 64.0,304.0" fill="#3fb950" opacity="0.6"/><text x="64.0" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 12</text><text x="149.9" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 15</text><text x="235.8" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 18</text><text x="321.8" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 21</text><text x="407.7" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 24</text><text x="493.6" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 27</text><text x="579.5" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 30</text><text x="665.4" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Apr 2</text><text x="751.4" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Apr 5</text><line x1="64" x2="780" y1="304.0" y2="304.0" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="308.0" fill="#8b949e" font-size="11" text-anchor="end">0</text><line x1="64" x2="780" y1="201.7" y2="201.7" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="205.7" fill="#8b949e" font-size="11" text-anchor="end">500</text><line x1="64" x2="780" y1="99.3" y2="99.3" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="103.3" fill="#8b949e" font-size="11" text-anchor="end">1000</text><rect x="64" y="340" width="12" height="12" fill="#3fb950" rx="2" opacity="0.8"/><text x="80" y="350" fill="#e6edf3" font-size="11">Neural</text><rect x="144" y="340" width="12" height="12" fill="#bc8cff" rx="2" opacity="0.8"/><text x="160" y="350" fill="#e6edf3" font-size="11">TTT</text><rect x="200" y="340" width="12" height="12" fill="#d29922" rx="2" opacity="0.8"/><text x="216" y="350" fill="#e6edf3" font-size="11">CACHE</text><rect x="272" y="340" width="12" height="12" fill="#58a6ff" rx="2" opacity="0.8"/><text x="288" y="350" fill="#e6edf3" font-size="11">HYBRID</text></svg></div>
 <!-- AGORA:CHART_TECHNIQUE_POP_END -->
 <!-- AGORA:CHART_COMPLIANCE_START -->
-<div class="card chart-card"><svg viewBox="0 0 800 360" width="100%" role="img" aria-label="Compliance rate" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="360" rx="12" fill="#161b22" stroke="#30363d"/><text x="64" y="24" fill="#e6edf3" font-size="16" font-weight="700">Compliance Rate Over Time</text><text x="64" y="38" fill="#8b949e" font-size="11">641 classified PRs. Currently 31% ALIVE.</text><polygon points="64.0,303.6 91.5,303.6 119.1,303.6 146.6,303.6 174.2,303.6 201.7,303.6 229.2,291.6 256.8,273.5 284.3,249.6 311.8,237.3 339.4,221.6 366.9,197.3 394.5,181.7 422.0,150.4 449.5,117.4 477.1,99.7 504.6,90.7 532.2,80.4 559.7,70.9 587.2,63.1 614.8,56.9 642.3,54.0 669.8,49.5 697.4,48.6 724.9,45.8 752.5,40.0 780.0,40.0 780.0,190.3 752.5,190.3 724.9,194.9 697.4,197.3 669.8,198.2 642.3,202.3 614.8,203.9 587.2,208.9 559.7,213.0 532.2,218.7 504.6,223.7 477.1,227.8 449.5,235.6 422.0,250.0 394.5,260.8 366.9,264.9 339.4,270.6 311.8,276.8 284.3,283.0 256.8,292.9 229.2,301.9 201.7,303.6 174.2,303.6 146.6,303.6 119.1,303.6 91.5,303.6 64.0,303.6" fill="#f85149" opacity="0.6"/><polygon points="64.0,303.6 91.5,303.6 119.1,303.6 146.6,303.6 174.2,303.6 201.7,303.6 229.2,301.9 256.8,292.9 284.3,283.0 311.8,276.8 339.4,270.6 366.9,264.9 394.5,260.8 422.0,250.0 449.5,235.6 477.1,227.8 504.6,223.7 532.2,218.7 559.7,213.0 587.2,208.9 614.8,203.9 642.3,202.3 669.8,198.2 697.4,197.3 724.9,194.9 752.5,190.3 780.0,190.3 780.0,223.3 752.5,223.3 724.9,227.4 697.4,229.5 669.8,230.3 642.3,234.0 614.8,234.8 587.2,238.5 559.7,241.4 532.2,244.7 504.6,247.6 477.1,250.5 449.5,253.8 422.0,258.7 394.5,265.3 366.9,269.0 339.4,274.3 311.8,279.3 284.3,284.6 256.8,293.7 229.2,301.9 201.7,303.6 174.2,303.6 146.6,303.6 119.1,303.6 91.5,303.6 64.0,303.6" fill="#d29922" opacity="0.6"/><polygon points="64.0,303.6 91.5,303.6 119.1,303.6 146.6,303.6 174.2,303.6 201.7,303.6 229.2,301.9 256.8,293.7 284.3,284.6 311.8,279.3 339.4,274.3 366.9,269.0 394.5,265.3 422.0,258.7 449.5,253.8 477.1,250.5 504.6,247.6 532.2,244.7 559.7,241.4 587.2,238.5 614.8,234.8 642.3,234.0 669.8,230.3 697.4,229.5 724.9,227.4 752.5,223.3 780.0,223.3 780.0,304.0 752.5,304.0 724.9,304.0 697.4,304.0 669.8,304.0 642.3,304.0 614.8,304.0 587.2,304.0 559.7,304.0 532.2,304.0 504.6,304.0 477.1,304.0 449.5,304.0 422.0,304.0 394.5,304.0 366.9,304.0 339.4,304.0 311.8,304.0 284.3,304.0 256.8,304.0 229.2,304.0 201.7,304.0 174.2,304.0 146.6,304.0 119.1,304.0 91.5,304.0 64.0,304.0" fill="#3fb950" opacity="0.6"/><text x="64.0" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 12</text><text x="146.6" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 15</text><text x="229.2" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 18</text><text x="311.8" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 21</text><text x="394.5" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 24</text><text x="477.1" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 27</text><text x="559.7" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 30</text><text x="642.3" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Apr 2</text><text x="724.9" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Apr 5</text><line x1="64" x2="780" y1="304.0" y2="304.0" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="308.0" fill="#8b949e" font-size="11" text-anchor="end">0</text><line x1="64" x2="780" y1="221.6" y2="221.6" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="225.6" fill="#8b949e" font-size="11" text-anchor="end">200</text><line x1="64" x2="780" y1="139.3" y2="139.3" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="143.3" fill="#8b949e" font-size="11" text-anchor="end">400</text><line x1="64" x2="780" y1="56.9" y2="56.9" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="60.9" fill="#8b949e" font-size="11" text-anchor="end">600</text><rect x="64" y="340" width="12" height="12" fill="#3fb950" rx="2" opacity="0.8"/><text x="80" y="350" fill="#e6edf3" font-size="11">ALIVE</text><rect x="136" y="340" width="12" height="12" fill="#d29922" rx="2" opacity="0.8"/><text x="152" y="350" fill="#e6edf3" font-size="11">AT-RISK</text><rect x="224" y="340" width="12" height="12" fill="#f85149" rx="2" opacity="0.8"/><text x="240" y="350" fill="#e6edf3" font-size="11">DEAD</text></svg></div>
+<div class="card chart-card"><svg viewBox="0 0 800 360" width="100%" role="img" aria-label="Compliance rate" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="360" rx="12" fill="#161b22" stroke="#30363d"/><text x="64" y="24" fill="#e6edf3" font-size="16" font-weight="700">Compliance Rate Over Time</text><text x="64" y="38" fill="#8b949e" font-size="11">641 classified PRs. Currently 31% ALIVE.</text><polygon points="64.0,303.6 92.6,303.6 121.3,303.6 149.9,303.6 178.6,303.6 207.2,303.6 235.8,291.6 264.5,273.5 293.1,249.6 321.8,237.3 350.4,221.6 379.0,197.3 407.7,181.7 436.3,150.4 465.0,117.4 493.6,99.7 522.2,90.7 550.9,80.4 579.5,70.9 608.2,63.1 636.8,56.9 665.4,54.0 694.1,49.5 722.7,48.6 751.4,45.8 780.0,40.0 780.0,190.3 751.4,194.9 722.7,197.3 694.1,198.2 665.4,202.3 636.8,203.9 608.2,208.9 579.5,213.0 550.9,218.7 522.2,223.7 493.6,227.8 465.0,235.6 436.3,250.0 407.7,260.8 379.0,264.9 350.4,270.6 321.8,276.8 293.1,283.0 264.5,292.9 235.8,301.9 207.2,303.6 178.6,303.6 149.9,303.6 121.3,303.6 92.6,303.6 64.0,303.6" fill="#f85149" opacity="0.6"/><polygon points="64.0,303.6 92.6,303.6 121.3,303.6 149.9,303.6 178.6,303.6 207.2,303.6 235.8,301.9 264.5,292.9 293.1,283.0 321.8,276.8 350.4,270.6 379.0,264.9 407.7,260.8 436.3,250.0 465.0,235.6 493.6,227.8 522.2,223.7 550.9,218.7 579.5,213.0 608.2,208.9 636.8,203.9 665.4,202.3 694.1,198.2 722.7,197.3 751.4,194.9 780.0,190.3 780.0,223.3 751.4,227.4 722.7,229.5 694.1,230.3 665.4,234.0 636.8,234.8 608.2,238.5 579.5,241.4 550.9,244.7 522.2,247.6 493.6,250.5 465.0,253.8 436.3,258.7 407.7,265.3 379.0,269.0 350.4,274.3 321.8,279.3 293.1,284.6 264.5,293.7 235.8,301.9 207.2,303.6 178.6,303.6 149.9,303.6 121.3,303.6 92.6,303.6 64.0,303.6" fill="#d29922" opacity="0.6"/><polygon points="64.0,303.6 92.6,303.6 121.3,303.6 149.9,303.6 178.6,303.6 207.2,303.6 235.8,301.9 264.5,293.7 293.1,284.6 321.8,279.3 350.4,274.3 379.0,269.0 407.7,265.3 436.3,258.7 465.0,253.8 493.6,250.5 522.2,247.6 550.9,244.7 579.5,241.4 608.2,238.5 636.8,234.8 665.4,234.0 694.1,230.3 722.7,229.5 751.4,227.4 780.0,223.3 780.0,304.0 751.4,304.0 722.7,304.0 694.1,304.0 665.4,304.0 636.8,304.0 608.2,304.0 579.5,304.0 550.9,304.0 522.2,304.0 493.6,304.0 465.0,304.0 436.3,304.0 407.7,304.0 379.0,304.0 350.4,304.0 321.8,304.0 293.1,304.0 264.5,304.0 235.8,304.0 207.2,304.0 178.6,304.0 149.9,304.0 121.3,304.0 92.6,304.0 64.0,304.0" fill="#3fb950" opacity="0.6"/><text x="64.0" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 12</text><text x="149.9" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 15</text><text x="235.8" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 18</text><text x="321.8" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 21</text><text x="407.7" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 24</text><text x="493.6" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 27</text><text x="579.5" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Mar 30</text><text x="665.4" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Apr 2</text><text x="751.4" y="320.0" fill="#8b949e" font-size="10" text-anchor="middle">Apr 5</text><line x1="64" x2="780" y1="304.0" y2="304.0" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="308.0" fill="#8b949e" font-size="11" text-anchor="end">0</text><line x1="64" x2="780" y1="221.6" y2="221.6" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="225.6" fill="#8b949e" font-size="11" text-anchor="end">200</text><line x1="64" x2="780" y1="139.3" y2="139.3" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="143.3" fill="#8b949e" font-size="11" text-anchor="end">400</text><line x1="64" x2="780" y1="56.9" y2="56.9" stroke="#30363d" stroke-width="1" opacity="0.5"/><text x="56" y="60.9" fill="#8b949e" font-size="11" text-anchor="end">600</text><rect x="64" y="340" width="12" height="12" fill="#3fb950" rx="2" opacity="0.8"/><text x="80" y="350" fill="#e6edf3" font-size="11">ALIVE</text><rect x="136" y="340" width="12" height="12" fill="#d29922" rx="2" opacity="0.8"/><text x="152" y="350" fill="#e6edf3" font-size="11">AT-RISK</text><rect x="224" y="340" width="12" height="12" fill="#f85149" rx="2" opacity="0.8"/><text x="240" y="350" fill="#e6edf3" font-size="11">DEAD</text></svg></div>
 <!-- AGORA:CHART_COMPLIANCE_END -->
 </section>
 
@@ -2280,34 +2328,43 @@ curl -H "Authorization: Bearer ghp_yourgithubtoken" \
 <section id="changelog">
 <h2>Changelog &amp; Roadmap</h2>
 <!-- AGORA:CHANGELOG_START -->
-<details class="card">
-<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.8.1 &mdash; 2026-04-06 (Maintainer Activity Tracker)</summary>
+<details class="card" open>
+<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.8.2 &mdash; 2026-04-06 (Tile Layout Audit &amp; Fix)</summary>
 <ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
-  <li>NEW SECTION: &#x27;Maintainer Activity Tracker&#x27; — public accountability board for the 4 validated OpenAI maintainers with merge/close authority on openai/parameter-golf</li>
-  <li>Cards for @notapplica (~13h ago, closed #140), @valerio-oai (5 days, closed PR #1185), @0hq / Will DePue (12 days, founder), @yuzhougu-oai (17 days, last PR activity)</li>
-  <li>Each card shows: days-silent badge color-coded by severity (active/warning/alert/silent), last action summary with timestamp, authority validation signal, account creation date</li>
-  <li>Validation methodology disclosed inline: closed-PR author_association, OAI account suffix, closing other users&#x27; PRs, repo collaborator status</li>
-  <li>scripts/update_mod_tracker.py: standalone refresh tool — hits /users/&lt;handle&gt;/events for each handle, computes days-silent, writes data/mod_tracker.json. Initial snapshot generated.</li>
-  <li>Banner fix: valerio-oai last active April 2 (not April 4 as previously written) — confirmed via GitHub events API</li>
-  <li>Nav: added &#x27;⚠ Mod Tracker&#x27; link in red, sits between Home and Checklist</li>
+  <li><strong>FIX:</strong> Submission Checklist tiles were stair-stepping and overlapping. Root cause: global <code>.card { max-width:900px; margin:auto; text-align:center }</code> was fighting every grid layout it was placed in.</li>
+  <li><strong>FIX:</strong> Community Infrastructure tiles overlapping. Same root cause.</li>
+  <li><strong>FIX:</strong> Maintainer Activity Tracker cards had inconsistent spacing. Same root cause.</li>
+  <li>NEW CSS class <code>.tile-grid</code>: wrapper that scopes overrides to descendant <code>.card</code> via descendant selector. Removes max-width, margin, centered text, normalizes padding, makes cards flex columns, normalizes border-width to 1px so they optically align.</li>
+  <li>NEW CSS class <code>.checklist-grid</code>: explicit <code>grid-template-areas</code> layout &mdash; Techniques tile spans the full left column (tall, dense), with Before You Submit / Rule History / Bug Alerts stacking on the right. Mobile collapses to single column.</li>
+  <li>NEW CSS class <code>.technique-tri</code>: internal 3-column mini-grid inside the Techniques tile so legal/banned/grey read horizontally instead of one tall ribbon (kills the stair-stepping).</li>
+  <li>Stripped redundant inline <code>margin:0</code> / <code>margin-top:0</code> styles from cards now handled by <code>.tile-grid</code></li>
+  <li>Bug Alerts card border-width normalized from 2px to 1px (yellow color preserved on h3) &mdash; restores optical alignment with adjacent cards</li>
 </ul>
 </details>
 <details class="card">
-<summary style="cursor:pointer;color:var(--green);font-size:1.1rem;font-weight:700;">v0.8.0 &mdash; 2026-04-06 (OpenAI Abandonment Call-Out)</summary>
+<summary style="cursor:pointer;color:#ff6b6b;font-size:1.1rem;font-weight:700;">v0.8.1 &mdash; 2026-04-06 (Maintainer Activity Tracker)</summary>
 <ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
-  <li>Added prominent red banner: &#x27;OpenAI Has Abandoned the Community Hub&#x27; — triggered by closure of Issue #140 on 2026-04-05 22:57 EDT by @notapplica with no goodbye, no successor, no rationale</li>
-  <li>By-the-numbers callout box: 1,425+ PRs, 1,265 classified, 518+ contributors, $1M committed credits with broken pipeline, $1,000+ personal compute spend reported, 32 orphaned #140 comments, unresolved #677 rulings</li>
-  <li>&#x27;The joke going around&#x27; callout: hire-funnel + RunPod cashflow extraction theory of why maintenance dropped</li>
-  <li>&#x27;PROVE ME WRONG&#x27; public-correction invitation: linked issue template for receipts that contradict the numbers</li>
-  <li>Strikethrough + &#x27;CLOSED by OpenAI&#x27; tag on Resources link to #140 (kept as historical archive, not removed)</li>
+  <li>NEW SECTION: "Maintainer Activity Tracker" &mdash; public accountability board for the 4 validated OpenAI maintainers with merge/close authority on openai/parameter-golf</li>
+  <li>Cards for @notapplica (~13h ago, closed #140), @valerio-oai (5 days, closed PR #1185), @0hq / Will DePue (12 days, founder), @yuzhougu-oai (17 days)</li>
+  <li>Each card shows: days-silent badge color-coded by severity (active/warning/alert/silent), last action summary with timestamp, authority validation signal, account creation date</li>
+  <li>Validation methodology disclosed inline: closed-PR <code>author_association</code>, OAI account suffix, closing other users' PRs, repo collaborator status</li>
+  <li><code>scripts/update_mod_tracker.py</code>: standalone refresh tool &mdash; hits <code>/users/&lt;handle&gt;/events</code> for each handle, computes days-silent, writes <code>data/mod_tracker.json</code>. Initial snapshot generated.</li>
+  <li>Banner fix: valerio-oai last active April 2 (not April 4 as previously written) &mdash; confirmed via GitHub events API</li>
+  <li>Nav: added "&#9888; Mod Tracker" link in red, sits between Home and Checklist</li>
+</ul>
+</details>
+<details class="card">
+<summary style="cursor:pointer;color:#ff6b6b;font-size:1.1rem;font-weight:700;">v0.8.0 &mdash; 2026-04-06 (OpenAI Abandonment Call-Out)</summary>
+<ul style="font-size:0.85rem;color:var(--text-dim);list-style:disc;padding-left:1.5rem;margin-top:0.5rem;">
+  <li>Added prominent red banner: "OpenAI Has Abandoned the Community Hub" &mdash; triggered by closure of Issue #140 on 2026-04-05 22:57 EDT by @notapplica with no goodbye, no successor, no rationale</li>
+  <li>By-the-numbers callout box: 1,425+ PRs, 1,265 classified, 518+ contributors, $1M committed credits with broken pipeline, $1,000+ personal compute spend reported, 32 orphaned #140 comments, unresolved #677 rulings, valerio-oai silent since Apr 4</li>
+  <li>"The joke going around" callout: hire-funnel + RunPod cashflow extraction theory of why maintenance dropped</li>
+  <li>"PROVE ME WRONG" public-correction invitation: linked issue template for receipts that contradict the numbers</li>
+  <li>Strikethrough + "CLOSED by OpenAI" tag on Resources link to #140 (kept as historical archive, not removed)</li>
   <li>Footer note: #140 community commentary archived, no longer a live data source</li>
   <li>Stripped orphaned deep-link comment IDs from header disclosure</li>
-  <li>Public response posted on #140 (comment 4195522473) — invokes valerio-oai by name on pending #677 rulings</li>
-  <li>NEW SECTION: &#x27;Community Infrastructure (We Built This)&#x27; — visible inventory of the HF dataset, CF Worker network storage, Docker image, RunPod template, Agora itself, and community toolkit. All Light Speed Up out-of-pocket. Linked in nav as &#x27;⚡ Infra We Built&#x27;.</li>
-  <li>Reframed CF Worker card to lead with the network volume story: original RunPod Network Volume plan died on region-locking + GPU availability constraints. Built pgolf-api.lightspeedup.com (CF Worker + R2) as the cross-provider replacement that actually works.</li>
-  <li>Full curl examples on the page for save/resume/list operations on the checkpoint API — no signup required, GitHub PAT IS the identity</li>
-  <li>Checklist 2x2 grid: wrapped Before You Submit / Techniques / Rule Change History / Bug Alerts in auto-fit grid (minmax 420px) so they stop being a vertical scroll wall</li>
-  <li>Added vocab_sweep.py experiment script (CPU/GPU phases for SP tokenizer optimization) — separate from Agora deploy</li>
+  <li>Public response posted on #140 (<a href="https://github.com/openai/parameter-golf/issues/140#issuecomment-4195522473">comment 4195522473</a>) &mdash; invokes valerio-oai by name on pending #677 rulings</li>
+  <li>Added vocab_sweep.py experiment script (CPU/GPU phases for SP tokenizer optimization) &mdash; separate from Agora deploy</li>
 </ul>
 </details>
 <details class="card">
