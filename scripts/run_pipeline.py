@@ -359,50 +359,75 @@ def _tooltip_attr(tooltip: str | None) -> str:
 
 
 def _render_checklist(data: dict[str, Any]) -> str:
-    """Render the submission checklist + technique legality from data/checklist.json."""
+    """Render the submission checklist + technique legality (v0.8.2 tile-grid layout).
+
+    The tile-grid wrapper lives in static HTML OUTSIDE the markers so it survives
+    pipeline replaces. This function outputs two cards (Techniques first for
+    grid-area positioning, then Before You Submit). Techniques card uses an inner
+    3-column .technique-tri so legal/banned/grey read horizontally.
+    """
     updated = escape(data.get("last_updated", ""))
     items = data.get("items", [])
     techniques = data.get("techniques", {})
 
-    # Checklist card
+    # Techniques card with inner 3-column tri-grid (legal/banned/grey)
+    def tri_items(group: list, css_class: str) -> str:
+        return "\n".join(
+            f'      <li class="{css_class}-item"{_tooltip_attr(t.get("tooltip"))}>{t["text"]}</li>'
+            for t in group
+        )
+
+    legal_items = tri_items(techniques.get("legal", []), "legal")
+    banned_items = tri_items(techniques.get("banned", []), "banned")
+    grey_items = tri_items(techniques.get("grey_area", []), "grey")
+
+    techniques_html = (
+        '<div class="card card-techniques">\n'
+        '<h3>Techniques &mdash; What\'s Legal RIGHT NOW</h3>\n'
+        '<div class="technique-tri">\n'
+        '  <div>\n'
+        '    <h4 class="legal">&#10003; Legal</h4>\n'
+        f'    <ul>\n{legal_items}\n    </ul>\n'
+        '  </div>\n'
+        '  <div>\n'
+        '    <h4 class="banned">&#10007; Banned</h4>\n'
+        f'    <ul>\n{banned_items}\n    </ul>\n'
+        '  </div>\n'
+        '  <div>\n'
+        '    <h4 class="grey">? Grey Area</h4>\n'
+        f'    <ul>\n{grey_items}\n    </ul>\n'
+        '  </div>\n'
+        '</div>\n'
+        '</div>\n'
+    )
+
+    # Before You Submit card
     checklist_lis = "\n".join(
         f'  <li{_tooltip_attr(item.get("tooltip"))}>{item["text"]}</li>'
         for item in items
     )
-    html = (
-        f'<p style="color:var(--text-dim);margin-bottom:1rem;">Updated {updated}. Check ALL boxes before submitting.</p>\n'
-        '<div class="card">\n'
+    submit_html = (
+        '<div class="card card-submit">\n'
         '<h3>Before You Submit</h3>\n'
         f'<ul class="checklist">\n{checklist_lis}\n</ul>\n'
         '</div>\n'
     )
 
-    # Technique legality card
-    legal_lis = "\n".join(
-        f'  <li class="legal"{_tooltip_attr(t.get("tooltip"))}>{t["text"]}</li>'
-        for t in techniques.get("legal", [])
-    )
-    banned_lis = "\n".join(
-        f'  <li class="banned"{_tooltip_attr(t.get("tooltip"))}>{t["text"]}</li>'
-        for t in techniques.get("banned", [])
-    )
-    grey_lis = "\n".join(
-        f'  <li class="grey"{_tooltip_attr(t.get("tooltip"))}>{t["text"]}</li>'
-        for t in techniques.get("grey_area", [])
-    )
-    html += (
-        '<div class="card">\n'
-        '<h3>Techniques &mdash; What\'s Legal RIGHT NOW</h3>\n'
-        f'<ul class="technique-list">\n{legal_lis}\n</ul>\n'
-        f'<ul class="technique-list" style="margin-top:1rem;">\n{banned_lis}\n</ul>\n'
-        f'<ul class="technique-list" style="margin-top:1rem;">\n{grey_lis}\n</ul>\n'
-        '</div>'
-    )
-    return html
+    # Lead paragraph lives in static HTML OUTSIDE the tile-grid wrapper and
+    # outside the markers (the lead can't be a grid cell). last_updated from
+    # checklist.json is effectively static — update it in HTML directly if it
+    # ever changes.
+    _ = updated  # acknowledged, not used in the replaced region
+
+    return techniques_html + submit_html
 
 
 def _render_rulings(rulings: list[dict[str, Any]]) -> str:
-    """Render the rule change history from data/rulings.json."""
+    """Render the rule change history from data/rulings.json (v0.8.2 tile layout).
+
+    Outputs a single .card.card-rules for the tile-grid. Tighter margins and
+    smaller font on sub-lines to fit the narrower grid cell.
+    """
     entries: list[str] = []
     for ruling in rulings:
         date = escape(ruling.get("date", ""))
@@ -413,32 +438,33 @@ def _render_rulings(rulings: list[dict[str, Any]]) -> str:
         parts = [
             f'<div class="timeline-entry{modifier}">',
             f'  <div class="timeline-date">{date}</div>',
-            f'  <p>{desc}</p>',
+            f'  <p style="margin:0.25rem 0;">{desc}</p>',
         ]
 
         affected = ruling.get("affected_prs", [])
         if affected:
-            pr_list = ", ".join(f"#{n}" for n in affected)
+            pr_list = ", ".join(f"#{n}" for n in affected[:8])
+            suffix = f" &plus;{len(affected) - 8} more" if len(affected) > 8 else ""
             parts.append(
-                f'  <p style="color:var(--text-dim);font-size:0.85rem;margin-top:0.25rem;">Affected: {pr_list}</p>'
+                f'  <p style="color:var(--text-dim);font-size:0.75rem;margin:0.2rem 0;">Affected: {pr_list}{suffix}</p>'
             )
 
         source = ruling.get("source")
         source_label = ruling.get("source_label", "")
         if source:
             parts.append(
-                f'  <p style="color:var(--text-dim);font-size:0.85rem;">Source: <a href="{escape(source)}">{escape(source_label)}</a></p>'
+                f'  <p style="color:var(--text-dim);font-size:0.78rem;margin:0.25rem 0;">Source: <a href="{escape(source)}">{escape(source_label)}</a></p>'
             )
         elif source_label:
             parts.append(
-                f'  <p style="color:var(--text-dim);font-size:0.85rem;">Source: {escape(source_label)}</p>'
+                f'  <p style="color:var(--text-dim);font-size:0.78rem;margin:0.25rem 0;">Source: {escape(source_label)}</p>'
             )
 
         parts.append('</div>')
         entries.append("\n".join(parts))
 
     return (
-        '<div class="card">\n'
+        '<div class="card card-rules">\n'
         '<h3>Rule Change History</h3>\n'
         + "\n".join(entries) +
         '\n</div>'
@@ -446,9 +472,14 @@ def _render_rulings(rulings: list[dict[str, Any]]) -> str:
 
 
 def _render_alerts(alerts: list[dict[str, Any]]) -> str:
-    """Render community bug alerts from data/alerts.json."""
+    """Render community bug alerts from data/alerts.json (v0.8.2 tile layout).
+
+    Outputs a single .card.card-alerts for the tile-grid. Border normalized to
+    1px (yellow signal preserved on h3 color only) so it optically aligns with
+    adjacent tiles. Tighter margins and smaller fonts for grid cell.
+    """
     if not alerts:
-        return ""
+        return '<div class="card card-alerts"></div>'
 
     items: list[str] = []
     for i, alert in enumerate(alerts):
@@ -462,24 +493,22 @@ def _render_alerts(alerts: list[dict[str, Any]]) -> str:
         color = "var(--red)" if severity == "critical" else "var(--yellow)"
         badge_cls = "badge-banned" if severity == "critical" else "badge-grey"
 
-        margin = ' style="margin-bottom:1rem;"' if i < len(alerts) - 1 else ""
+        margin = ' style="margin-bottom:0.85rem;"' if i < len(alerts) - 1 else ""
         source_html = ""
         if source:
-            source_html = f'\n<p style="font-size:0.8rem;color:var(--text-dim);">Source: <a href="{escape(source)}">{source_label}</a></p>'
+            source_html = f' <a href="{escape(source)}" style="color:var(--text-dim);">{source_label}</a>'
 
         items.append(
             f'<div{margin}>\n'
-            f'<strong style="color:{color};">{escape(title)}</strong> '
-            f'<span class="badge {badge_cls}">{badge_text}</span>\n'
-            f'<p style="font-size:0.85rem;color:var(--text-dim);margin-top:0.25rem;">{desc}</p>'
-            f'{source_html}\n'
+            f'  <div style="margin-bottom:0.3rem;"><strong style="color:{color};">{escape(title)}</strong> '
+            f'<span class="badge {badge_cls}">{badge_text}</span></div>\n'
+            f'  <p style="font-size:0.78rem;color:var(--text-dim);margin:0.15rem 0;line-height:1.4;">{desc}{source_html}</p>\n'
             '</div>'
         )
 
     return (
-        '<div class="card" style="border-color:var(--yellow);border-width:2px;">\n'
-        '<h3 style="margin-top:0;color:var(--yellow);">&#9888; Community Bug Alerts</h3>\n'
-        '<p style="font-size:0.9rem;margin-bottom:0.75rem;">Known issues that may affect your BPB score. Check before submitting.</p>\n'
+        '<div class="card card-alerts">\n'
+        '<h3 style="color:var(--yellow);">&#9888; Community Bug Alerts</h3>\n'
         + "\n".join(items) +
         '\n</div>'
     )
