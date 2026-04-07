@@ -1,7 +1,38 @@
 {
-  "last_fetch": "2026-04-07T13:54:57.599090+00:00",
-  "api_calls_used": 131,
+  "last_fetch": "2026-04-07T15:13:11.980875+00:00",
+  "api_calls_used": 132,
   "prs": [
+    {
+      "number": 1444,
+      "title": "Add non-record v1 1xH100 LeakyReLU GPTQ-lite submission",
+      "author": "hypnoastic",
+      "state": "OPEN",
+      "created": "2026-04-07T14:37:34Z",
+      "updated": "2026-04-07T14:37:34Z",
+      "bpb": 1.30806928,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "GPTQ",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-07_11L_PartialRoPE_XSA4_EMA_GPTQlite_LeakyReLU_1xH100/README.md",
+        "records/track_non_record_16mb/2026-04-07_11L_PartialRoPE_XSA4_EMA_GPTQlite_LeakyReLU_1xH100/submission.json",
+        "records/track_non_record_16mb/2026-04-07_11L_PartialRoPE_XSA4_EMA_GPTQlite_LeakyReLU_1xH100/train.log",
+        "records/track_non_record_16mb/2026-04-07_11L_PartialRoPE_XSA4_EMA_GPTQlite_LeakyReLU_1xH100/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1443,
       "title": "Non-record: ByteJEPA — True Byte-Level JEPA (val_bpb 1.3496)",
@@ -329,7 +360,7 @@
       "author": "Idan3011",
       "state": "OPEN",
       "created": "2026-04-07T06:03:06Z",
-      "updated": "2026-04-07T06:04:55Z",
+      "updated": "2026-04-07T14:01:58Z",
       "bpb": 0.0012,
       "seeds": null,
       "artifact_bytes": 15989376,
@@ -561,7 +592,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-06T16:14:47Z",
-      "updated": "2026-04-07T13:49:01Z",
+      "updated": "2026-04-07T14:38:14Z",
       "bpb": 1.08014,
       "seeds": 5,
       "artifact_bytes": 19811,
@@ -785,12 +816,12 @@
     },
     {
       "number": 1410,
-      "title": "Record: 11L LatentMask TTT + GPTQ + Product-Key Bigram + Brotli — val_bpb 1.1158 (3-seed mean)",
+      "title": "Record: 11L LatentMask TTT + GPTQ + Product-Key Bigram + Brotli — val_bpb 1.1124 (3-seed mean)",
       "author": "izlley",
       "state": "OPEN",
       "created": "2026-04-06T07:19:55Z",
-      "updated": "2026-04-07T12:46:15Z",
-      "bpb": 1.113,
+      "updated": "2026-04-07T14:41:34Z",
+      "bpb": 0.002,
       "seeds": 3,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + Muon + GPTQ",
@@ -805,8 +836,7 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
-        "ttt",
-        "gptq_eval"
+        "ttt"
       ],
       "track": "record",
       "technique_type": "ttt",
@@ -814,9 +844,12 @@
         "ttt"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
     },
     {
       "number": 1408,
