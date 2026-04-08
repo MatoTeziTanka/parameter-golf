@@ -1,7 +1,78 @@
 {
-  "last_fetch": "2026-04-08T22:08:05.147992+00:00",
-  "api_calls_used": 153,
+  "last_fetch": "2026-04-08T23:09:04.340127+00:00",
+  "api_calls_used": 154,
   "prs": [
+    {
+      "number": 1482,
+      "title": "Record: SP8192 + Pre-Quant TTT (QK 5.25, 8ep, freeze-1) — val_bpb 1.0787 (3-seed mean)",
+      "author": "aamodbhatt",
+      "state": "OPEN",
+      "created": "2026-04-08T22:29:02Z",
+      "updated": "2026-04-08T22:29:02Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-09_SP8192_PreQuantTTT_QK525_TTT8_F1_8xH100/README.md",
+        "records/track_10min_16mb/2026-04-09_SP8192_PreQuantTTT_QK525_TTT8_F1_8xH100/runs.csv",
+        "records/track_10min_16mb/2026-04-09_SP8192_PreQuantTTT_QK525_TTT8_F1_8xH100/submission.json",
+        "records/track_10min_16mb/2026-04-09_SP8192_PreQuantTTT_QK525_TTT8_F1_8xH100/train_best_seed1337.log",
+        "records/track_10min_16mb/2026-04-09_SP8192_PreQuantTTT_QK525_TTT8_F1_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-04-09_SP8192_PreQuantTTT_QK525_TTT8_F1_8xH100/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-09_SP8192_PreQuantTTT_QK525_TTT8_F1_8xH100/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-09_SP8192_PreQuantTTT_QK525_TTT8_F1_8xH100/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1481,
+      "title": "Non-record: ALBERT-Style Low-Rank Embedding Factorisation (ablation study, 1×H100)",
+      "author": "Cayton-Tech",
+      "state": "OPEN",
+      "created": "2026-04-08T22:08:18Z",
+      "updated": "2026-04-08T22:08:18Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-29_LowRankEmbed_CaytonTech/README.md",
+        "records/track_10min_16mb/2026-03-29_LowRankEmbed_CaytonTech/submission.json",
+        "records/track_10min_16mb/2026-03-29_LowRankEmbed_CaytonTech/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1480,
       "title": "[Non-Record] JEPA Baseline — LLM-JEPA pretraining  — 1.2699 bpb",
@@ -1345,7 +1416,7 @@
       "author": "nogakeren",
       "state": "OPEN",
       "created": "2026-04-07T12:28:07Z",
-      "updated": "2026-04-07T12:28:07Z",
+      "updated": "2026-04-08T22:35:20Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -26680,7 +26751,7 @@
       "author": "ChideraIbe123",
       "state": "OPEN",
       "created": "2026-03-25T03:58:35Z",
-      "updated": "2026-04-08T21:59:41Z",
+      "updated": "2026-04-08T22:22:57Z",
       "bpb": 0.5793,
       "seeds": 3,
       "artifact_bytes": 15740000,
