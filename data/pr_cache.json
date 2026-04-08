@@ -1,7 +1,48 @@
 {
-  "last_fetch": "2026-04-08T19:22:01.536386+00:00",
-  "api_calls_used": 150,
+  "last_fetch": "2026-04-08T20:11:58.040465+00:00",
+  "api_calls_used": 151,
   "prs": [
+    {
+      "number": 1480,
+      "title": "[Non-Record] JEPA Baseline — LLM-JEPA pretraining  — 1.2699 bpb",
+      "author": "IshiPareek",
+      "state": "OPEN",
+      "created": "2026-04-08T19:33:30Z",
+      "updated": "2026-04-08T19:41:12Z",
+      "bpb": 1.2699,
+      "seeds": null,
+      "artifact_bytes": 135000000,
+      "technique_summary": "EMA",
+      "file_paths": [
+        "README.md",
+        "RESEARCH_LOG.md",
+        "__pycache__/train_gpt_jepa.cpython-312.pyc",
+        "records/track_non_record_16mb/2026-03-25_LeakyReLU_TrigramHash/README.md",
+        "records/track_non_record_16mb/2026-03-25_LeakyReLU_TrigramHash/submission.json",
+        "records/track_non_record_16mb/2026-03-25_LeakyReLU_TrigramHash/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-08_JEPA_baseline/README.md",
+        "records/track_non_record_16mb/2026-04-08_JEPA_baseline/train_gpt_jepa.py",
+        "train_gpt.py",
+        "train_gpt_jepa.py",
+        "train_gpt_leaderboard.py",
+        "train_gpt_mlx_jepa.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1479,
       "title": "Non-record: GDN Hybrid (E2E TTT / State-Space Model) — val_bpb 1.14502",
