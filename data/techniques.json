@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-08T11:31:57Z",
+  "generated_at": "2026-04-08T13:27:00Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1329,
-    "matched_pr_count": 973,
+    "pr_count": 1331,
+    "matched_pr_count": 975,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -11,8 +11,8 @@
     "status_counts": {
       "ALIVE": 204,
       "AT_RISK": 88,
-      "DEAD": 373,
-      "INCOMPLETE": 656,
+      "DEAD": 374,
+      "INCOMPLETE": 657,
       "UNKNOWN": 0
     }
   },
@@ -8629,12 +8629,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 385,
+      "count": 388,
       "author_count": 257,
       "alive_count": 81,
-      "dead_count": 87,
+      "dead_count": 88,
       "at_risk_count": 37,
-      "incomplete_count": 179,
+      "incomplete_count": 181,
       "unknown_count": 0,
       "best_alive": {
         "number": 909,
@@ -9539,6 +9539,34 @@
           ]
         },
         {
+          "author": "shram86",
+          "pr_count": 3,
+          "best_bpb": 1.14339483,
+          "prs": [
+            {
+              "number": 1447,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T18:55:14Z"
+            },
+            {
+              "number": 1448,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T19:06:31Z"
+            },
+            {
+              "number": 1474,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.14339483,
+              "created": "2026-04-08T12:07:49Z"
+            }
+          ]
+        },
+        {
           "author": "chris-buckley",
           "pr_count": 3,
           "best_bpb": 1.1442,
@@ -9619,6 +9647,34 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-21T19:41:00Z"
+            }
+          ]
+        },
+        {
+          "author": "AVINASH0052",
+          "pr_count": 3,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1466,
+              "author": "AVINASH0052",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
+            },
+            {
+              "number": 1470,
+              "author": "AVINASH0052",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-08T09:53:48Z"
+            },
+            {
+              "number": 1473,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T11:43:05Z"
             }
           ]
         },
@@ -10228,27 +10284,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1804,
               "created": "2026-03-23T15:37:38Z"
-            }
-          ]
-        },
-        {
-          "author": "shram86",
-          "pr_count": 2,
-          "best_bpb": 1.18337608,
-          "prs": [
-            {
-              "number": 1447,
-              "author": "shram86",
-              "status": "DEAD",
-              "bpb": 1.18337608,
-              "created": "2026-04-07T18:55:14Z"
-            },
-            {
-              "number": 1448,
-              "author": "shram86",
-              "status": "INCOMPLETE",
-              "bpb": 1.18337608,
-              "created": "2026-04-07T19:06:31Z"
             }
           ]
         },
@@ -12545,20 +12580,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-06T02:17:17Z"
-            }
-          ]
-        },
-        {
-          "author": "AVINASH0052",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1466,
-              "author": "AVINASH0052",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-04-08T08:22:55Z"
             }
           ]
         },
@@ -15820,6 +15841,13 @@
           "created": "2026-04-08T08:22:55Z"
         },
         {
+          "number": 1470,
+          "author": "AVINASH0052",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-04-08T09:53:48Z"
+        },
+        {
           "number": 1471,
           "author": "X-Abhishek-X",
           "status": "ALIVE",
@@ -15832,18 +15860,32 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-08T11:13:05Z"
+        },
+        {
+          "number": 1473,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T11:43:05Z"
+        },
+        {
+          "number": 1474,
+          "author": "shram86",
+          "status": "INCOMPLETE",
+          "bpb": 1.14339483,
+          "created": "2026-04-08T12:07:49Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 377,
+      "count": 380,
       "author_count": 214,
       "alive_count": 83,
-      "dead_count": 109,
+      "dead_count": 110,
       "at_risk_count": 40,
-      "incomplete_count": 140,
+      "incomplete_count": 142,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -16769,6 +16811,41 @@
           ]
         },
         {
+          "author": "shram86",
+          "pr_count": 4,
+          "best_bpb": 1.14339483,
+          "prs": [
+            {
+              "number": 1015,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.21149167,
+              "created": "2026-03-28T11:12:42Z"
+            },
+            {
+              "number": 1447,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T18:55:14Z"
+            },
+            {
+              "number": 1448,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T19:06:31Z"
+            },
+            {
+              "number": 1474,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.14339483,
+              "created": "2026-04-08T12:07:49Z"
+            }
+          ]
+        },
+        {
           "author": "SoHarshh",
           "pr_count": 3,
           "best_bpb": 0.002,
@@ -17161,30 +17238,30 @@
           ]
         },
         {
-          "author": "shram86",
+          "author": "AVINASH0052",
           "pr_count": 3,
-          "best_bpb": 1.18337608,
+          "best_bpb": null,
           "prs": [
             {
-              "number": 1015,
-              "author": "shram86",
+              "number": 1466,
+              "author": "AVINASH0052",
               "status": "DEAD",
-              "bpb": 1.21149167,
-              "created": "2026-03-28T11:12:42Z"
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
             },
             {
-              "number": 1447,
-              "author": "shram86",
+              "number": 1470,
+              "author": "AVINASH0052",
               "status": "DEAD",
-              "bpb": 1.18337608,
-              "created": "2026-04-07T18:55:14Z"
+              "bpb": null,
+              "created": "2026-04-08T09:53:48Z"
             },
             {
-              "number": 1448,
-              "author": "shram86",
+              "number": 1473,
+              "author": "AVINASH0052",
               "status": "INCOMPLETE",
-              "bpb": 1.18337608,
-              "created": "2026-04-07T19:06:31Z"
+              "bpb": null,
+              "created": "2026-04-08T11:43:05Z"
             }
           ]
         },
@@ -19593,20 +19670,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-06T02:17:17Z"
-            }
-          ]
-        },
-        {
-          "author": "AVINASH0052",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1466,
-              "author": "AVINASH0052",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-04-08T08:22:55Z"
             }
           ]
         },
@@ -22623,23 +22686,44 @@
           "created": "2026-04-08T09:23:54Z"
         },
         {
+          "number": 1470,
+          "author": "AVINASH0052",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-04-08T09:53:48Z"
+        },
+        {
           "number": 1471,
           "author": "X-Abhishek-X",
           "status": "ALIVE",
           "bpb": 1.0866,
           "created": "2026-04-08T10:20:31Z"
+        },
+        {
+          "number": 1473,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T11:43:05Z"
+        },
+        {
+          "number": 1474,
+          "author": "shram86",
+          "status": "INCOMPLETE",
+          "bpb": 1.14339483,
+          "created": "2026-04-08T12:07:49Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 308,
-      "author_count": 143,
+      "count": 310,
+      "author_count": 144,
       "alive_count": 80,
-      "dead_count": 91,
+      "dead_count": 92,
       "at_risk_count": 42,
-      "incomplete_count": 90,
+      "incomplete_count": 91,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -24471,6 +24555,27 @@
               "status": "ALIVE",
               "bpb": 1.2201,
               "created": "2026-03-29T05:19:41Z"
+            }
+          ]
+        },
+        {
+          "author": "AVINASH0052",
+          "pr_count": 2,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1470,
+              "author": "AVINASH0052",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-08T09:53:48Z"
+            },
+            {
+              "number": 1473,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T11:43:05Z"
             }
           ]
         },
@@ -27956,11 +28061,25 @@
           "created": "2026-04-08T08:45:39Z"
         },
         {
+          "number": 1470,
+          "author": "AVINASH0052",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-04-08T09:53:48Z"
+        },
+        {
           "number": 1471,
           "author": "X-Abhishek-X",
           "status": "ALIVE",
           "bpb": 1.0866,
           "created": "2026-04-08T10:20:31Z"
+        },
+        {
+          "number": 1473,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T11:43:05Z"
         }
       ]
     },
@@ -31948,10 +32067,10 @@
     {
       "name": "BigramHash",
       "kind": "legal",
-      "count": 79,
+      "count": 80,
       "author_count": 70,
       "alive_count": 15,
-      "dead_count": 14,
+      "dead_count": 15,
       "at_risk_count": 2,
       "incomplete_count": 48,
       "unknown_count": 0,
@@ -32119,6 +32238,27 @@
               "status": "ALIVE",
               "bpb": 1.1565,
               "created": "2026-03-21T10:39:47Z"
+            }
+          ]
+        },
+        {
+          "author": "AVINASH0052",
+          "pr_count": 2,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1470,
+              "author": "AVINASH0052",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-08T09:53:48Z"
+            },
+            {
+              "number": 1473,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T11:43:05Z"
             }
           ]
         },
@@ -32791,20 +32931,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.9011,
               "created": "2026-03-21T14:11:26Z"
-            }
-          ]
-        },
-        {
-          "author": "AVINASH0052",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1470,
-              "author": "AVINASH0052",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-08T09:53:48Z"
             }
           ]
         },
@@ -33555,9 +33681,16 @@
         {
           "number": 1470,
           "author": "AVINASH0052",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-04-08T09:53:48Z"
+        },
+        {
+          "number": 1473,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T11:43:05Z"
         }
       ]
     },
@@ -35068,10 +35201,10 @@
     {
       "name": "XSA",
       "kind": "legal",
-      "count": 70,
+      "count": 71,
       "author_count": 57,
       "alive_count": 18,
-      "dead_count": 20,
+      "dead_count": 21,
       "at_risk_count": 3,
       "incomplete_count": 29,
       "unknown_count": 0,
@@ -35302,6 +35435,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.1365,
               "created": "2026-03-22T20:32:55Z"
+            }
+          ]
+        },
+        {
+          "author": "AVINASH0052",
+          "pr_count": 2,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1470,
+              "author": "AVINASH0052",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-08T09:53:48Z"
+            },
+            {
+              "number": 1473,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T11:43:05Z"
             }
           ]
         },
@@ -35841,20 +35995,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-03T02:48:26Z"
-            }
-          ]
-        },
-        {
-          "author": "AVINASH0052",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1470,
-              "author": "AVINASH0052",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-08T09:53:48Z"
             }
           ]
         },
@@ -36458,9 +36598,16 @@
         {
           "number": 1470,
           "author": "AVINASH0052",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-04-08T09:53:48Z"
+        },
+        {
+          "number": 1473,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T11:43:05Z"
         }
       ]
     },
@@ -44437,12 +44584,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 385,
+      "count": 388,
       "author_count": 257,
       "alive_count": 81,
-      "dead_count": 87,
+      "dead_count": 88,
       "at_risk_count": 37,
-      "incomplete_count": 179,
+      "incomplete_count": 181,
       "unknown_count": 0,
       "best_alive": {
         "number": 909,
@@ -45347,6 +45494,34 @@
           ]
         },
         {
+          "author": "shram86",
+          "pr_count": 3,
+          "best_bpb": 1.14339483,
+          "prs": [
+            {
+              "number": 1447,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T18:55:14Z"
+            },
+            {
+              "number": 1448,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T19:06:31Z"
+            },
+            {
+              "number": 1474,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.14339483,
+              "created": "2026-04-08T12:07:49Z"
+            }
+          ]
+        },
+        {
           "author": "chris-buckley",
           "pr_count": 3,
           "best_bpb": 1.1442,
@@ -45427,6 +45602,34 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-21T19:41:00Z"
+            }
+          ]
+        },
+        {
+          "author": "AVINASH0052",
+          "pr_count": 3,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1466,
+              "author": "AVINASH0052",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
+            },
+            {
+              "number": 1470,
+              "author": "AVINASH0052",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-08T09:53:48Z"
+            },
+            {
+              "number": 1473,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T11:43:05Z"
             }
           ]
         },
@@ -46036,27 +46239,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1804,
               "created": "2026-03-23T15:37:38Z"
-            }
-          ]
-        },
-        {
-          "author": "shram86",
-          "pr_count": 2,
-          "best_bpb": 1.18337608,
-          "prs": [
-            {
-              "number": 1447,
-              "author": "shram86",
-              "status": "DEAD",
-              "bpb": 1.18337608,
-              "created": "2026-04-07T18:55:14Z"
-            },
-            {
-              "number": 1448,
-              "author": "shram86",
-              "status": "INCOMPLETE",
-              "bpb": 1.18337608,
-              "created": "2026-04-07T19:06:31Z"
             }
           ]
         },
@@ -48353,20 +48535,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-06T02:17:17Z"
-            }
-          ]
-        },
-        {
-          "author": "AVINASH0052",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1466,
-              "author": "AVINASH0052",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-04-08T08:22:55Z"
             }
           ]
         },
@@ -51628,6 +51796,13 @@
           "created": "2026-04-08T08:22:55Z"
         },
         {
+          "number": 1470,
+          "author": "AVINASH0052",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-04-08T09:53:48Z"
+        },
+        {
           "number": 1471,
           "author": "X-Abhishek-X",
           "status": "ALIVE",
@@ -51640,6 +51815,20 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-08T11:13:05Z"
+        },
+        {
+          "number": 1473,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T11:43:05Z"
+        },
+        {
+          "number": 1474,
+          "author": "shram86",
+          "status": "INCOMPLETE",
+          "bpb": 1.14339483,
+          "created": "2026-04-08T12:07:49Z"
         }
       ]
     },
@@ -60255,12 +60444,12 @@
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 377,
+      "count": 380,
       "author_count": 214,
       "alive_count": 83,
-      "dead_count": 109,
+      "dead_count": 110,
       "at_risk_count": 40,
-      "incomplete_count": 140,
+      "incomplete_count": 142,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -61186,6 +61375,41 @@
           ]
         },
         {
+          "author": "shram86",
+          "pr_count": 4,
+          "best_bpb": 1.14339483,
+          "prs": [
+            {
+              "number": 1015,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.21149167,
+              "created": "2026-03-28T11:12:42Z"
+            },
+            {
+              "number": 1447,
+              "author": "shram86",
+              "status": "DEAD",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T18:55:14Z"
+            },
+            {
+              "number": 1448,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.18337608,
+              "created": "2026-04-07T19:06:31Z"
+            },
+            {
+              "number": 1474,
+              "author": "shram86",
+              "status": "INCOMPLETE",
+              "bpb": 1.14339483,
+              "created": "2026-04-08T12:07:49Z"
+            }
+          ]
+        },
+        {
           "author": "SoHarshh",
           "pr_count": 3,
           "best_bpb": 0.002,
@@ -61578,30 +61802,30 @@
           ]
         },
         {
-          "author": "shram86",
+          "author": "AVINASH0052",
           "pr_count": 3,
-          "best_bpb": 1.18337608,
+          "best_bpb": null,
           "prs": [
             {
-              "number": 1015,
-              "author": "shram86",
+              "number": 1466,
+              "author": "AVINASH0052",
               "status": "DEAD",
-              "bpb": 1.21149167,
-              "created": "2026-03-28T11:12:42Z"
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
             },
             {
-              "number": 1447,
-              "author": "shram86",
+              "number": 1470,
+              "author": "AVINASH0052",
               "status": "DEAD",
-              "bpb": 1.18337608,
-              "created": "2026-04-07T18:55:14Z"
+              "bpb": null,
+              "created": "2026-04-08T09:53:48Z"
             },
             {
-              "number": 1448,
-              "author": "shram86",
+              "number": 1473,
+              "author": "AVINASH0052",
               "status": "INCOMPLETE",
-              "bpb": 1.18337608,
-              "created": "2026-04-07T19:06:31Z"
+              "bpb": null,
+              "created": "2026-04-08T11:43:05Z"
             }
           ]
         },
@@ -64010,20 +64234,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-06T02:17:17Z"
-            }
-          ]
-        },
-        {
-          "author": "AVINASH0052",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1466,
-              "author": "AVINASH0052",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-04-08T08:22:55Z"
             }
           ]
         },
@@ -67040,23 +67250,44 @@
           "created": "2026-04-08T09:23:54Z"
         },
         {
+          "number": 1470,
+          "author": "AVINASH0052",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-04-08T09:53:48Z"
+        },
+        {
           "number": 1471,
           "author": "X-Abhishek-X",
           "status": "ALIVE",
           "bpb": 1.0866,
           "created": "2026-04-08T10:20:31Z"
+        },
+        {
+          "number": 1473,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T11:43:05Z"
+        },
+        {
+          "number": 1474,
+          "author": "shram86",
+          "status": "INCOMPLETE",
+          "bpb": 1.14339483,
+          "created": "2026-04-08T12:07:49Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 308,
-      "author_count": 143,
+      "count": 310,
+      "author_count": 144,
       "alive_count": 80,
-      "dead_count": 91,
+      "dead_count": 92,
       "at_risk_count": 42,
-      "incomplete_count": 90,
+      "incomplete_count": 91,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -68888,6 +69119,27 @@
               "status": "ALIVE",
               "bpb": 1.2201,
               "created": "2026-03-29T05:19:41Z"
+            }
+          ]
+        },
+        {
+          "author": "AVINASH0052",
+          "pr_count": 2,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1470,
+              "author": "AVINASH0052",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-08T09:53:48Z"
+            },
+            {
+              "number": 1473,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T11:43:05Z"
             }
           ]
         },
@@ -72373,11 +72625,25 @@
           "created": "2026-04-08T08:45:39Z"
         },
         {
+          "number": 1470,
+          "author": "AVINASH0052",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-04-08T09:53:48Z"
+        },
+        {
           "number": 1471,
           "author": "X-Abhishek-X",
           "status": "ALIVE",
           "bpb": 1.0866,
           "created": "2026-04-08T10:20:31Z"
+        },
+        {
+          "number": 1473,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T11:43:05Z"
         }
       ]
     },
@@ -79745,10 +80011,10 @@
     {
       "name": "BigramHash",
       "kind": "legal",
-      "count": 79,
+      "count": 80,
       "author_count": 70,
       "alive_count": 15,
-      "dead_count": 14,
+      "dead_count": 15,
       "at_risk_count": 2,
       "incomplete_count": 48,
       "unknown_count": 0,
@@ -79916,6 +80182,27 @@
               "status": "ALIVE",
               "bpb": 1.1565,
               "created": "2026-03-21T10:39:47Z"
+            }
+          ]
+        },
+        {
+          "author": "AVINASH0052",
+          "pr_count": 2,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1470,
+              "author": "AVINASH0052",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-08T09:53:48Z"
+            },
+            {
+              "number": 1473,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T11:43:05Z"
             }
           ]
         },
@@ -80588,20 +80875,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.9011,
               "created": "2026-03-21T14:11:26Z"
-            }
-          ]
-        },
-        {
-          "author": "AVINASH0052",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1470,
-              "author": "AVINASH0052",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-08T09:53:48Z"
             }
           ]
         },
@@ -81352,9 +81625,16 @@
         {
           "number": 1470,
           "author": "AVINASH0052",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-04-08T09:53:48Z"
+        },
+        {
+          "number": 1473,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T11:43:05Z"
         }
       ]
     },
@@ -82865,10 +83145,10 @@
     {
       "name": "XSA",
       "kind": "legal",
-      "count": 70,
+      "count": 71,
       "author_count": 57,
       "alive_count": 18,
-      "dead_count": 20,
+      "dead_count": 21,
       "at_risk_count": 3,
       "incomplete_count": 29,
       "unknown_count": 0,
@@ -83099,6 +83379,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.1365,
               "created": "2026-03-22T20:32:55Z"
+            }
+          ]
+        },
+        {
+          "author": "AVINASH0052",
+          "pr_count": 2,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1470,
+              "author": "AVINASH0052",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-08T09:53:48Z"
+            },
+            {
+              "number": 1473,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T11:43:05Z"
             }
           ]
         },
@@ -83638,20 +83939,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-03T02:48:26Z"
-            }
-          ]
-        },
-        {
-          "author": "AVINASH0052",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1470,
-              "author": "AVINASH0052",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-08T09:53:48Z"
             }
           ]
         },
@@ -84255,9 +84542,16 @@
         {
           "number": 1470,
           "author": "AVINASH0052",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-04-08T09:53:48Z"
+        },
+        {
+          "number": 1473,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T11:43:05Z"
         }
       ]
     },
@@ -88881,11 +89175,11 @@
     {
       "left": "BigramHash",
       "right": "SSM/Mamba/S4D",
-      "left_count": 79,
+      "left_count": 80,
       "right_count": 26,
       "left_people": 70,
       "right_people": 17,
-      "score": 2054
+      "score": 2080
     },
     {
       "left": "SWA",
@@ -88899,11 +89193,11 @@
     {
       "left": "XSA",
       "right": "SSM/Mamba/S4D",
-      "left_count": 70,
+      "left_count": 71,
       "right_count": 26,
       "left_people": 57,
       "right_people": 17,
-      "score": 1820
+      "score": 1846
     },
     {
       "left": "QAT",
@@ -88962,20 +89256,20 @@
     {
       "left": "BigramHash",
       "right": "JEPA",
-      "left_count": 79,
+      "left_count": 80,
       "right_count": 17,
       "left_people": 70,
       "right_people": 16,
-      "score": 1343
+      "score": 1360
     },
     {
       "left": "BigramHash",
       "right": "Ternary Weights",
-      "left_count": 79,
+      "left_count": 80,
       "right_count": 17,
       "left_people": 70,
       "right_people": 14,
-      "score": 1343
+      "score": 1360
     },
     {
       "left": "SwiGLU",
@@ -89016,29 +89310,29 @@
     {
       "left": "XSA",
       "right": "JEPA",
-      "left_count": 70,
+      "left_count": 71,
       "right_count": 17,
       "left_people": 57,
       "right_people": 16,
-      "score": 1190
+      "score": 1207
     },
     {
       "left": "XSA",
       "right": "MoE",
-      "left_count": 70,
+      "left_count": 71,
       "right_count": 17,
       "left_people": 57,
       "right_people": 14,
-      "score": 1190
+      "score": 1207
     },
     {
       "left": "XSA",
       "right": "Ternary Weights",
-      "left_count": 70,
+      "left_count": 71,
       "right_count": 17,
       "left_people": 57,
       "right_people": 14,
-      "score": 1190
+      "score": 1207
     },
     {
       "left": "TTT",
@@ -89070,29 +89364,29 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 385,
+      "left_count": 388,
       "right_count": 2,
       "left_people": 257,
       "right_people": 2,
-      "score": 770
+      "score": 776
     },
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 377,
+      "left_count": 380,
       "right_count": 2,
       "left_people": 214,
       "right_people": 2,
-      "score": 754
+      "score": 760
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 377,
+      "left_count": 380,
       "right_count": 2,
       "left_people": 214,
       "right_people": 2,
-      "score": 754
+      "score": 760
     },
     {
       "left": "QAT",
@@ -89142,20 +89436,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 308,
+      "left_count": 310,
       "right_count": 2,
-      "left_people": 143,
+      "left_people": 144,
       "right_people": 2,
-      "score": 616
+      "score": 620
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 308,
+      "left_count": 310,
       "right_count": 2,
-      "left_people": 143,
+      "left_people": 144,
       "right_people": 2,
-      "score": 616
+      "score": 620
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -89178,11 +89472,11 @@
     {
       "left": "BigramHash",
       "right": "Progressive Depth",
-      "left_count": 79,
+      "left_count": 80,
       "right_count": 7,
       "left_people": 70,
       "right_people": 3,
-      "score": 553
+      "score": 560
     },
     {
       "left": "SWA",
@@ -89203,6 +89497,15 @@
       "score": 518
     },
     {
+      "left": "XSA",
+      "right": "Progressive Depth",
+      "left_count": 71,
+      "right_count": 7,
+      "left_people": 57,
+      "right_people": 3,
+      "score": 497
+    },
+    {
       "left": "TTT",
       "right": "Flash Attention",
       "left_count": 493,
@@ -89212,22 +89515,13 @@
       "score": 493
     },
     {
-      "left": "XSA",
-      "right": "Progressive Depth",
-      "left_count": 70,
-      "right_count": 7,
-      "left_people": 57,
-      "right_people": 3,
-      "score": 490
-    },
-    {
       "left": "BigramHash",
       "right": "Weight Sharing",
-      "left_count": 79,
+      "left_count": 80,
       "right_count": 6,
       "left_people": 70,
       "right_people": 4,
-      "score": 474
+      "score": 480
     },
     {
       "left": "SWA",
@@ -89250,11 +89544,11 @@
     {
       "left": "XSA",
       "right": "Weight Sharing",
-      "left_count": 70,
+      "left_count": 71,
       "right_count": 6,
       "left_people": 57,
       "right_people": 4,
-      "score": 420
+      "score": 426
     },
     {
       "left": "Parallel Muon",
@@ -89286,11 +89580,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 377,
+      "left_count": 380,
       "right_count": 1,
       "left_people": 214,
       "right_people": 1,
-      "score": 377
+      "score": 380
     },
     {
       "left": "SwiGLU",
@@ -89304,11 +89598,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 308,
+      "left_count": 310,
       "right_count": 1,
-      "left_people": 143,
+      "left_people": 144,
       "right_people": 1,
-      "score": 308
+      "score": 310
     },
     {
       "left": "SwiGLU",
@@ -89412,11 +89706,11 @@
     {
       "left": "BigramHash",
       "right": "Differential Attention",
-      "left_count": 79,
+      "left_count": 80,
       "right_count": 2,
       "left_people": 70,
       "right_people": 2,
-      "score": 158
+      "score": 160
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -89439,20 +89733,20 @@
     {
       "left": "XSA",
       "right": "Differential Attention",
-      "left_count": 70,
+      "left_count": 71,
       "right_count": 2,
       "left_people": 57,
       "right_people": 2,
-      "score": 140
+      "score": 142
     },
     {
       "left": "XSA",
       "right": "U-Net skips",
-      "left_count": 70,
+      "left_count": 71,
       "right_count": 2,
       "left_people": 57,
       "right_people": 2,
-      "score": 140
+      "score": 142
     },
     {
       "left": "Parallel Muon",
@@ -89574,11 +89868,11 @@
     {
       "left": "BigramHash",
       "right": "Flash Attention",
-      "left_count": 79,
+      "left_count": 80,
       "right_count": 1,
       "left_people": 70,
       "right_people": 1,
-      "score": 79
+      "score": 80
     },
     {
       "left": "SWA",
@@ -89592,11 +89886,11 @@
     {
       "left": "XSA",
       "right": "Flash Attention",
-      "left_count": 70,
+      "left_count": 71,
       "right_count": 1,
       "left_people": 57,
       "right_people": 1,
-      "score": 70
+      "score": 71
     },
     {
       "left": "SSM/Mamba/S4D",
