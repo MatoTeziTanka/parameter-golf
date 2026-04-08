@@ -1,7 +1,42 @@
 {
-  "last_fetch": "2026-04-07T23:07:42.349707+00:00",
-  "api_calls_used": 139,
+  "last_fetch": "2026-04-08T00:03:38.600012+00:00",
+  "api_calls_used": 140,
   "prs": [
+    {
+      "number": 1456,
+      "title": "Non-Record: HybridQuantGPT v6.1 H100 + Aggressive SLOT (steps=100, 3-seed 1.146523)",
+      "author": "sisegod",
+      "state": "OPEN",
+      "created": "2026-04-07T23:26:09Z",
+      "updated": "2026-04-07T23:26:09Z",
+      "bpb": 1.146523,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/README.md",
+        "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/eval_ttt.log",
+        "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/submission.json",
+        "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/train.log",
+        "records/track_non_record_16mb/2026-03-30_HybridQuantGPT_v61_rANS_SWA_10K/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-08_v61_h100_aggressive_slot_steps100/PR_BODY.md",
+        "records/track_non_record_16mb/2026-04-08_v61_h100_aggressive_slot_steps100/README.md",
+        "records/track_non_record_16mb/2026-04-08_v61_h100_aggressive_slot_steps100/run.sh",
+        "records/track_non_record_16mb/2026-04-08_v61_h100_aggressive_slot_steps100/submission.json",
+        "records/track_non_record_16mb/2026-04-08_v61_h100_aggressive_slot_steps100/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1454,
       "title": "Non-record: TurboQuant + N-gram Hybrid Eval + TTT (1xH100 NVL)",
@@ -629,15 +664,15 @@
     },
     {
       "number": 1437,
-      "title": "Diagnostic (causal-corrected): SP8192 + Parallel Residuals + 3-Layer Recurrence + Token-Only N-gram Tilt — val_bpb 1.08091 (5-seed mean)",
+      "title": "Record: SP8192 + Parallel Residuals + 3-Layer Recurrence + Token-Only N-gram Tilt — val_bpb 1.08091 (5-seed mean, causal-corrected)",
       "author": "dexhunter",
       "state": "OPEN",
       "created": "2026-04-07T08:54:26Z",
-      "updated": "2026-04-07T22:52:19Z",
-      "bpb": 1.07743,
-      "seeds": 3,
-      "artifact_bytes": 15993733,
-      "technique_summary": "TTT + GPTQ + N-gram",
+      "updated": "2026-04-07T23:24:35Z",
+      "bpb": 0.00043,
+      "seeds": 5,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/README.md",
         "records/track_10min_16mb/2026-04-07_SP8192_ParallelResid7_Loop35_NgramTilt/fused_expert_kernel.cpp",
@@ -654,8 +689,7 @@
       "compliance_keywords": [
         "ttt",
         "ngram",
-        "gptq_eval",
-        "cache_eval",
+        "two_pass",
         "ngram_path"
       ],
       "track": "record",
@@ -12262,36 +12296,31 @@
     },
     {
       "number": 1042,
-      "title": "Record: Adaptive Precision Embedding Quantization (4-seed mean val_bpb=1.1217)",
+      "title": "Record: Frequency-Weighted GPTQ Calibration + Adaptive Precision Embedding Quantization val_bpb: 1.0980 (3-seed mean) ",
       "author": "nothingLiva",
       "state": "OPEN",
       "created": "2026-03-28T23:06:05Z",
-      "updated": "2026-03-30T16:45:35Z",
-      "bpb": 1.1217,
+      "updated": "2026-04-08T00:00:14Z",
+      "bpb": 1.098,
       "seeds": 4,
       "artifact_bytes": 16000000,
-      "technique_summary": "INT6 + INT8",
+      "technique_summary": "GPTQ + INT6 + INT8",
       "file_paths": [
         "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/README.md",
         "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/submission.json",
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/top_tokens.py",
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/train_16MBQTo.py",
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/train_seed_log1.txt",
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/train_seed_log2.txt",
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/train_seed_log3.txt",
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/train_seed_log4.txt"
+        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/train_seed_log3.txt"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "neural",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 1041,
