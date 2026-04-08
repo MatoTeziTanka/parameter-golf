@@ -1,5 +1,18 @@
 [
   {
+    "version": "0.8.3",
+    "date": "2026-04-08",
+    "title": "Compression-vs-Training Ruling Pass",
+    "changes": [
+      "Refreshed PR cache (1,346 PRs) and reran classifier with code-level train_gpt.py analysis",
+      "Frontier verdicts: PR #672 (1.0781) DEAD — pre-eval TTT, already closed",
+      "PR #1482 (1.0787, 'SP8192 + Pre-Quant TTT') AT_RISK — code shows TTT + GPTQ both enabled pre-eval, exactly the data-touching compression scenario flagged in #402/#677/#1082",
+      "PR #1477 (1.0822, 'Score-First TTT') ALIVE — code-clean, current legal frontier",
+      "PR #1471 (1.0866) ALIVE — uses GPTQ but post-training, no leakage detected",
+      "Ruling line: data-free packaging (INT8 RTN, zlib, zstd) rides eval budget; data-touching compression (QAT, GPTQ/AWQ calibration, pre-eval TTT) eats the 10-min training cap, regardless of label"
+    ]
+  },
+  {
     "version": "0.8.2",
     "date": "2026-04-06",
     "title": "Tile Layout Audit & Fix",
