@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-08T13:26:49.791345+00:00",
-  "api_calls_used": 146,
+  "last_fetch": "2026-04-08T14:54:12.663364+00:00",
+  "api_calls_used": 147,
   "prs": [
     {
       "number": 1474,
@@ -1559,7 +1559,7 @@
       "author": "aryanbhosale",
       "state": "OPEN",
       "created": "2026-04-06T17:51:39Z",
-      "updated": "2026-04-06T17:51:39Z",
+      "updated": "2026-04-08T13:35:10Z",
       "bpb": 1.0791,
       "seeds": 3,
       "artifact_bytes": 15120000,
@@ -10465,7 +10465,7 @@
       "author": "mradassaad",
       "state": "OPEN",
       "created": "2026-03-30T00:55:11Z",
-      "updated": "2026-04-07T19:35:53Z",
+      "updated": "2026-04-08T14:37:28Z",
       "bpb": 1.5633,
       "seeds": null,
       "artifact_bytes": 10892315,
@@ -10476,7 +10476,9 @@
         "records/track_non_record_16mb/2026-03-29_Mamba3Hybrid_QAT/submission.json",
         "records/track_non_record_16mb/2026-03-29_Mamba3Hybrid_QAT/train_mamba3_hybrid.py",
         "records/track_non_record_16mb/2026-03-29_Mamba3Hybrid_QAT/train_seed1337.log",
-        "train_mamba3_hybrid.py"
+        "setup_mamba3.sh",
+        "train_mamba3_hybrid.py",
+        "train_mamba3_hybrid_backup_stateful_recur.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -35329,7 +35331,7 @@
       "author": "DeividasMat",
       "state": "OPEN",
       "created": "2026-03-22T13:50:52Z",
-      "updated": "2026-04-07T17:11:07Z",
+      "updated": "2026-04-08T14:20:59Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -35373,6 +35375,7 @@
         "scripts/run_smoke_profile.sh",
         "scripts/run_top10_patterns_80m.sh",
         "scripts/run_top5_chase_150m.sh",
+        "scripts/run_top5_surface_120m.sh",
         "scripts/run_wd04_120m.sh",
         "train_gpt.py"
       ],
