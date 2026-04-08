@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-08T07:26:45Z",
+  "generated_at": "2026-04-08T08:43:43Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1321,
-    "matched_pr_count": 966,
+    "pr_count": 1322,
+    "matched_pr_count": 967,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
       "ALIVE": 202,
-      "AT_RISK": 87,
+      "AT_RISK": 88,
       "DEAD": 372,
       "INCOMPLETE": 652,
       "UNKNOWN": 0
@@ -24,8 +24,8 @@
       "author_count": 240,
       "alive_count": 95,
       "dead_count": 168,
-      "at_risk_count": 51,
-      "incomplete_count": 177,
+      "at_risk_count": 52,
+      "incomplete_count": 176,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -2204,6 +2204,27 @@
           ]
         },
         {
+          "author": "sisegod",
+          "pr_count": 2,
+          "best_bpb": 0.011,
+          "prs": [
+            {
+              "number": 1123,
+              "author": "sisegod",
+              "status": "INCOMPLETE",
+              "bpb": 1.1986,
+              "created": "2026-03-30T06:21:24Z"
+            },
+            {
+              "number": 1465,
+              "author": "sisegod",
+              "status": "AT_RISK",
+              "bpb": 0.011,
+              "created": "2026-04-08T06:15:46Z"
+            }
+          ]
+        },
+        {
           "author": "charmquark1984",
           "pr_count": 2,
           "best_bpb": 0.028,
@@ -2851,27 +2872,6 @@
               "status": "DEAD",
               "bpb": 1.1854,
               "created": "2026-04-07T12:54:37Z"
-            }
-          ]
-        },
-        {
-          "author": "sisegod",
-          "pr_count": 2,
-          "best_bpb": 1.1986,
-          "prs": [
-            {
-              "number": 1123,
-              "author": "sisegod",
-              "status": "INCOMPLETE",
-              "bpb": 1.1986,
-              "created": "2026-03-30T06:21:24Z"
-            },
-            {
-              "number": 1465,
-              "author": "sisegod",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-08T06:15:46Z"
             }
           ]
         },
@@ -8585,8 +8585,8 @@
         {
           "number": 1465,
           "author": "sisegod",
-          "status": "INCOMPLETE",
-          "bpb": null,
+          "status": "AT_RISK",
+          "bpb": 0.011,
           "created": "2026-04-08T06:15:46Z"
         }
       ]
@@ -8594,11 +8594,11 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 382,
-      "author_count": 255,
+      "count": 383,
+      "author_count": 256,
       "alive_count": 80,
       "dead_count": 87,
-      "at_risk_count": 36,
+      "at_risk_count": 37,
       "incomplete_count": 178,
       "unknown_count": 0,
       "best_alive": {
@@ -9665,6 +9665,27 @@
           ]
         },
         {
+          "author": "sisegod",
+          "pr_count": 2,
+          "best_bpb": 0.011,
+          "prs": [
+            {
+              "number": 1123,
+              "author": "sisegod",
+              "status": "INCOMPLETE",
+              "bpb": 1.1986,
+              "created": "2026-03-30T06:21:24Z"
+            },
+            {
+              "number": 1465,
+              "author": "sisegod",
+              "status": "AT_RISK",
+              "bpb": 0.011,
+              "created": "2026-04-08T06:15:46Z"
+            }
+          ]
+        },
+        {
           "author": "minh-stakc",
           "pr_count": 2,
           "best_bpb": 0.0235,
@@ -10207,27 +10228,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.18774689,
               "created": "2026-03-19T22:49:06Z"
-            }
-          ]
-        },
-        {
-          "author": "sisegod",
-          "pr_count": 2,
-          "best_bpb": 1.1986,
-          "prs": [
-            {
-              "number": 1123,
-              "author": "sisegod",
-              "status": "INCOMPLETE",
-              "bpb": 1.1986,
-              "created": "2026-03-30T06:21:24Z"
-            },
-            {
-              "number": 1465,
-              "author": "sisegod",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-08T06:15:46Z"
             }
           ]
         },
@@ -12503,6 +12503,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-06T02:17:17Z"
+            }
+          ]
+        },
+        {
+          "author": "AVINASH0052",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1466,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
             }
           ]
         },
@@ -15738,20 +15752,27 @@
         {
           "number": 1465,
           "author": "sisegod",
+          "status": "AT_RISK",
+          "bpb": 0.011,
+          "created": "2026-04-08T06:15:46Z"
+        },
+        {
+          "number": 1466,
+          "author": "AVINASH0052",
           "status": "INCOMPLETE",
           "bpb": null,
-          "created": "2026-04-08T06:15:46Z"
+          "created": "2026-04-08T08:22:55Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 373,
-      "author_count": 211,
+      "count": 374,
+      "author_count": 212,
       "alive_count": 82,
       "dead_count": 108,
-      "at_risk_count": 39,
+      "at_risk_count": 40,
       "incomplete_count": 139,
       "unknown_count": 0,
       "best_alive": {
@@ -17945,6 +17966,20 @@
           ]
         },
         {
+          "author": "sisegod",
+          "pr_count": 1,
+          "best_bpb": 0.011,
+          "prs": [
+            {
+              "number": 1465,
+              "author": "sisegod",
+              "status": "AT_RISK",
+              "bpb": 0.011,
+              "created": "2026-04-08T06:15:46Z"
+            }
+          ]
+        },
+        {
           "author": "AbhayAnandUCSD",
           "pr_count": 1,
           "best_bpb": 0.0167,
@@ -19471,6 +19506,20 @@
           ]
         },
         {
+          "author": "AVINASH0052",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1466,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
+            }
+          ]
+        },
+        {
           "author": "Bharath-970",
           "pr_count": 1,
           "best_bpb": null,
@@ -19719,20 +19768,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-28T00:26:30Z"
-            }
-          ]
-        },
-        {
-          "author": "sisegod",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1465,
-              "author": "sisegod",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-08T06:15:46Z"
             }
           ]
         },
@@ -22457,20 +22492,27 @@
         {
           "number": 1465,
           "author": "sisegod",
+          "status": "AT_RISK",
+          "bpb": 0.011,
+          "created": "2026-04-08T06:15:46Z"
+        },
+        {
+          "number": 1466,
+          "author": "AVINASH0052",
           "status": "INCOMPLETE",
           "bpb": null,
-          "created": "2026-04-08T06:15:46Z"
+          "created": "2026-04-08T08:22:55Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 304,
-      "author_count": 141,
+      "count": 305,
+      "author_count": 142,
       "alive_count": 78,
       "dead_count": 92,
-      "at_risk_count": 41,
+      "at_risk_count": 42,
       "incomplete_count": 88,
       "unknown_count": 0,
       "best_alive": {
@@ -24415,6 +24457,20 @@
               "status": "AT_RISK",
               "bpb": 0.0052,
               "created": "2026-04-02T05:18:24Z"
+            }
+          ]
+        },
+        {
+          "author": "sisegod",
+          "pr_count": 1,
+          "best_bpb": 0.011,
+          "prs": [
+            {
+              "number": 1465,
+              "author": "sisegod",
+              "status": "AT_RISK",
+              "bpb": 0.011,
+              "created": "2026-04-08T06:15:46Z"
             }
           ]
         },
@@ -27723,18 +27779,25 @@
           "status": "ALIVE",
           "bpb": 1.1324,
           "created": "2026-04-07T21:55:25Z"
+        },
+        {
+          "number": 1465,
+          "author": "sisegod",
+          "status": "AT_RISK",
+          "bpb": 0.011,
+          "created": "2026-04-08T06:15:46Z"
         }
       ]
     },
     {
       "name": "QAT",
       "kind": "legal",
-      "count": 103,
-      "author_count": 83,
+      "count": 104,
+      "author_count": 84,
       "alive_count": 15,
       "dead_count": 24,
       "at_risk_count": 2,
-      "incomplete_count": 62,
+      "incomplete_count": 63,
       "unknown_count": 0,
       "best_alive": {
         "number": 578,
@@ -28779,6 +28842,20 @@
           ]
         },
         {
+          "author": "AVINASH0052",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1466,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
+            }
+          ]
+        },
+        {
           "author": "Bharath-970",
           "pr_count": 1,
           "best_bpb": null,
@@ -29766,18 +29843,25 @@
           "status": "INCOMPLETE",
           "bpb": 1.3039,
           "created": "2026-04-06T15:41:06Z"
+        },
+        {
+          "number": 1466,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T08:22:55Z"
         }
       ]
     },
     {
       "name": "LeakyReLU\u00b2",
       "kind": "legal",
-      "count": 96,
-      "author_count": 73,
+      "count": 97,
+      "author_count": 74,
       "alive_count": 21,
       "dead_count": 30,
       "at_risk_count": 8,
-      "incomplete_count": 37,
+      "incomplete_count": 38,
       "unknown_count": 0,
       "best_alive": {
         "number": 1263,
@@ -30857,6 +30941,20 @@
           ]
         },
         {
+          "author": "AVINASH0052",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1466,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
+            }
+          ]
+        },
+        {
           "author": "Hieuabssy",
           "pr_count": 1,
           "best_bpb": null,
@@ -31641,6 +31739,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.30806928,
           "created": "2026-04-07T14:37:34Z"
+        },
+        {
+          "number": 1466,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T08:22:55Z"
         }
       ]
     },
@@ -44059,11 +44164,11 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 382,
-      "author_count": 255,
+      "count": 383,
+      "author_count": 256,
       "alive_count": 80,
       "dead_count": 87,
-      "at_risk_count": 36,
+      "at_risk_count": 37,
       "incomplete_count": 178,
       "unknown_count": 0,
       "best_alive": {
@@ -45130,6 +45235,27 @@
           ]
         },
         {
+          "author": "sisegod",
+          "pr_count": 2,
+          "best_bpb": 0.011,
+          "prs": [
+            {
+              "number": 1123,
+              "author": "sisegod",
+              "status": "INCOMPLETE",
+              "bpb": 1.1986,
+              "created": "2026-03-30T06:21:24Z"
+            },
+            {
+              "number": 1465,
+              "author": "sisegod",
+              "status": "AT_RISK",
+              "bpb": 0.011,
+              "created": "2026-04-08T06:15:46Z"
+            }
+          ]
+        },
+        {
           "author": "minh-stakc",
           "pr_count": 2,
           "best_bpb": 0.0235,
@@ -45672,27 +45798,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.18774689,
               "created": "2026-03-19T22:49:06Z"
-            }
-          ]
-        },
-        {
-          "author": "sisegod",
-          "pr_count": 2,
-          "best_bpb": 1.1986,
-          "prs": [
-            {
-              "number": 1123,
-              "author": "sisegod",
-              "status": "INCOMPLETE",
-              "bpb": 1.1986,
-              "created": "2026-03-30T06:21:24Z"
-            },
-            {
-              "number": 1465,
-              "author": "sisegod",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-08T06:15:46Z"
             }
           ]
         },
@@ -47968,6 +48073,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-06T02:17:17Z"
+            }
+          ]
+        },
+        {
+          "author": "AVINASH0052",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1466,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
             }
           ]
         },
@@ -51203,9 +51322,16 @@
         {
           "number": 1465,
           "author": "sisegod",
+          "status": "AT_RISK",
+          "bpb": 0.011,
+          "created": "2026-04-08T06:15:46Z"
+        },
+        {
+          "number": 1466,
+          "author": "AVINASH0052",
           "status": "INCOMPLETE",
           "bpb": null,
-          "created": "2026-04-08T06:15:46Z"
+          "created": "2026-04-08T08:22:55Z"
         }
       ]
     },
@@ -51216,8 +51342,8 @@
       "author_count": 240,
       "alive_count": 95,
       "dead_count": 168,
-      "at_risk_count": 51,
-      "incomplete_count": 177,
+      "at_risk_count": 52,
+      "incomplete_count": 176,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -53396,6 +53522,27 @@
           ]
         },
         {
+          "author": "sisegod",
+          "pr_count": 2,
+          "best_bpb": 0.011,
+          "prs": [
+            {
+              "number": 1123,
+              "author": "sisegod",
+              "status": "INCOMPLETE",
+              "bpb": 1.1986,
+              "created": "2026-03-30T06:21:24Z"
+            },
+            {
+              "number": 1465,
+              "author": "sisegod",
+              "status": "AT_RISK",
+              "bpb": 0.011,
+              "created": "2026-04-08T06:15:46Z"
+            }
+          ]
+        },
+        {
           "author": "charmquark1984",
           "pr_count": 2,
           "best_bpb": 0.028,
@@ -54043,27 +54190,6 @@
               "status": "DEAD",
               "bpb": 1.1854,
               "created": "2026-04-07T12:54:37Z"
-            }
-          ]
-        },
-        {
-          "author": "sisegod",
-          "pr_count": 2,
-          "best_bpb": 1.1986,
-          "prs": [
-            {
-              "number": 1123,
-              "author": "sisegod",
-              "status": "INCOMPLETE",
-              "bpb": 1.1986,
-              "created": "2026-03-30T06:21:24Z"
-            },
-            {
-              "number": 1465,
-              "author": "sisegod",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-08T06:15:46Z"
             }
           ]
         },
@@ -59777,8 +59903,8 @@
         {
           "number": 1465,
           "author": "sisegod",
-          "status": "INCOMPLETE",
-          "bpb": null,
+          "status": "AT_RISK",
+          "bpb": 0.011,
           "created": "2026-04-08T06:15:46Z"
         }
       ]
@@ -59786,11 +59912,11 @@
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 373,
-      "author_count": 211,
+      "count": 374,
+      "author_count": 212,
       "alive_count": 82,
       "dead_count": 108,
-      "at_risk_count": 39,
+      "at_risk_count": 40,
       "incomplete_count": 139,
       "unknown_count": 0,
       "best_alive": {
@@ -61984,6 +62110,20 @@
           ]
         },
         {
+          "author": "sisegod",
+          "pr_count": 1,
+          "best_bpb": 0.011,
+          "prs": [
+            {
+              "number": 1465,
+              "author": "sisegod",
+              "status": "AT_RISK",
+              "bpb": 0.011,
+              "created": "2026-04-08T06:15:46Z"
+            }
+          ]
+        },
+        {
           "author": "AbhayAnandUCSD",
           "pr_count": 1,
           "best_bpb": 0.0167,
@@ -63510,6 +63650,20 @@
           ]
         },
         {
+          "author": "AVINASH0052",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1466,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
+            }
+          ]
+        },
+        {
           "author": "Bharath-970",
           "pr_count": 1,
           "best_bpb": null,
@@ -63758,20 +63912,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-28T00:26:30Z"
-            }
-          ]
-        },
-        {
-          "author": "sisegod",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1465,
-              "author": "sisegod",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-08T06:15:46Z"
             }
           ]
         },
@@ -66496,20 +66636,27 @@
         {
           "number": 1465,
           "author": "sisegod",
+          "status": "AT_RISK",
+          "bpb": 0.011,
+          "created": "2026-04-08T06:15:46Z"
+        },
+        {
+          "number": 1466,
+          "author": "AVINASH0052",
           "status": "INCOMPLETE",
           "bpb": null,
-          "created": "2026-04-08T06:15:46Z"
+          "created": "2026-04-08T08:22:55Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 304,
-      "author_count": 141,
+      "count": 305,
+      "author_count": 142,
       "alive_count": 78,
       "dead_count": 92,
-      "at_risk_count": 41,
+      "at_risk_count": 42,
       "incomplete_count": 88,
       "unknown_count": 0,
       "best_alive": {
@@ -68454,6 +68601,20 @@
               "status": "AT_RISK",
               "bpb": 0.0052,
               "created": "2026-04-02T05:18:24Z"
+            }
+          ]
+        },
+        {
+          "author": "sisegod",
+          "pr_count": 1,
+          "best_bpb": 0.011,
+          "prs": [
+            {
+              "number": 1465,
+              "author": "sisegod",
+              "status": "AT_RISK",
+              "bpb": 0.011,
+              "created": "2026-04-08T06:15:46Z"
             }
           ]
         },
@@ -71762,6 +71923,13 @@
           "status": "ALIVE",
           "bpb": 1.1324,
           "created": "2026-04-07T21:55:25Z"
+        },
+        {
+          "number": 1465,
+          "author": "sisegod",
+          "status": "AT_RISK",
+          "bpb": 0.011,
+          "created": "2026-04-08T06:15:46Z"
         }
       ]
     },
@@ -75134,12 +75302,12 @@
     {
       "name": "QAT",
       "kind": "legal",
-      "count": 103,
-      "author_count": 83,
+      "count": 104,
+      "author_count": 84,
       "alive_count": 15,
       "dead_count": 24,
       "at_risk_count": 2,
-      "incomplete_count": 62,
+      "incomplete_count": 63,
       "unknown_count": 0,
       "best_alive": {
         "number": 578,
@@ -76184,6 +76352,20 @@
           ]
         },
         {
+          "author": "AVINASH0052",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1466,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
+            }
+          ]
+        },
+        {
           "author": "Bharath-970",
           "pr_count": 1,
           "best_bpb": null,
@@ -77171,18 +77353,25 @@
           "status": "INCOMPLETE",
           "bpb": 1.3039,
           "created": "2026-04-06T15:41:06Z"
+        },
+        {
+          "number": 1466,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T08:22:55Z"
         }
       ]
     },
     {
       "name": "LeakyReLU\u00b2",
       "kind": "legal",
-      "count": 96,
-      "author_count": 73,
+      "count": 97,
+      "author_count": 74,
       "alive_count": 21,
       "dead_count": 30,
       "at_risk_count": 8,
-      "incomplete_count": 37,
+      "incomplete_count": 38,
       "unknown_count": 0,
       "best_alive": {
         "number": 1263,
@@ -78262,6 +78451,20 @@
           ]
         },
         {
+          "author": "AVINASH0052",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1466,
+              "author": "AVINASH0052",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T08:22:55Z"
+            }
+          ]
+        },
+        {
           "author": "Hieuabssy",
           "pr_count": 1,
           "best_bpb": null,
@@ -79046,6 +79249,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.30806928,
           "created": "2026-04-07T14:37:34Z"
+        },
+        {
+          "number": 1466,
+          "author": "AVINASH0052",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T08:22:55Z"
         }
       ]
     },
@@ -88098,29 +88308,29 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "SWA",
-      "left_count": 96,
+      "left_count": 97,
       "right_count": 74,
-      "left_people": 73,
+      "left_people": 74,
       "right_people": 64,
-      "score": 7104
+      "score": 7178
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "SSM/Mamba/S4D",
-      "left_count": 96,
+      "left_count": 97,
       "right_count": 26,
-      "left_people": 73,
+      "left_people": 74,
       "right_people": 17,
-      "score": 2496
+      "score": 2522
     },
     {
       "left": "QAT",
       "right": "Parallel Muon",
-      "left_count": 103,
+      "left_count": 104,
       "right_count": 23,
-      "left_people": 83,
+      "left_people": 84,
       "right_people": 13,
-      "score": 2369
+      "score": 2392
     },
     {
       "left": "BigramHash",
@@ -88141,6 +88351,24 @@
       "score": 1924
     },
     {
+      "left": "QAT",
+      "right": "JEPA",
+      "left_count": 104,
+      "right_count": 17,
+      "left_people": 84,
+      "right_people": 16,
+      "score": 1768
+    },
+    {
+      "left": "QAT",
+      "right": "MoE",
+      "left_count": 104,
+      "right_count": 17,
+      "left_people": 84,
+      "right_people": 14,
+      "score": 1768
+    },
+    {
       "left": "XSA",
       "right": "SSM/Mamba/S4D",
       "left_count": 68,
@@ -88148,24 +88376,6 @@
       "left_people": 55,
       "right_people": 17,
       "score": 1768
-    },
-    {
-      "left": "QAT",
-      "right": "JEPA",
-      "left_count": 103,
-      "right_count": 17,
-      "left_people": 83,
-      "right_people": 16,
-      "score": 1751
-    },
-    {
-      "left": "QAT",
-      "right": "MoE",
-      "left_count": 103,
-      "right_count": 17,
-      "left_people": 83,
-      "right_people": 14,
-      "score": 1751
     },
     {
       "left": "SWA",
@@ -88179,29 +88389,29 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "JEPA",
-      "left_count": 96,
+      "left_count": 97,
       "right_count": 17,
-      "left_people": 73,
+      "left_people": 74,
       "right_people": 16,
-      "score": 1632
+      "score": 1649
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "MoE",
-      "left_count": 96,
+      "left_count": 97,
       "right_count": 17,
-      "left_people": 73,
+      "left_people": 74,
       "right_people": 14,
-      "score": 1632
+      "score": 1649
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "Ternary Weights",
-      "left_count": 96,
+      "left_count": 97,
       "right_count": 17,
-      "left_people": 73,
+      "left_people": 74,
       "right_people": 14,
-      "score": 1632
+      "score": 1649
     },
     {
       "left": "BigramHash",
@@ -88314,92 +88524,92 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 382,
+      "left_count": 383,
       "right_count": 2,
-      "left_people": 255,
+      "left_people": 256,
       "right_people": 2,
-      "score": 764
+      "score": 766
     },
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 373,
+      "left_count": 374,
       "right_count": 2,
-      "left_people": 211,
+      "left_people": 212,
       "right_people": 2,
-      "score": 746
+      "score": 748
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 373,
+      "left_count": 374,
       "right_count": 2,
-      "left_people": 211,
+      "left_people": 212,
       "right_people": 2,
-      "score": 746
+      "score": 748
     },
     {
       "left": "QAT",
       "right": "Value Residual",
-      "left_count": 103,
+      "left_count": 104,
       "right_count": 7,
-      "left_people": 83,
+      "left_people": 84,
       "right_people": 6,
-      "score": 721
+      "score": 728
     },
     {
       "left": "QAT",
       "right": "Progressive Depth",
-      "left_count": 103,
+      "left_count": 104,
       "right_count": 7,
-      "left_people": 83,
+      "left_people": 84,
       "right_people": 3,
-      "score": 721
+      "score": 728
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "Value Residual",
-      "left_count": 96,
+      "left_count": 97,
       "right_count": 7,
-      "left_people": 73,
+      "left_people": 74,
       "right_people": 6,
-      "score": 672
+      "score": 679
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "Progressive Depth",
-      "left_count": 96,
+      "left_count": 97,
       "right_count": 7,
-      "left_people": 73,
+      "left_people": 74,
       "right_people": 3,
-      "score": 672
+      "score": 679
     },
     {
       "left": "QAT",
       "right": "Weight Sharing",
-      "left_count": 103,
+      "left_count": 104,
       "right_count": 6,
-      "left_people": 83,
+      "left_people": 84,
       "right_people": 4,
-      "score": 618
+      "score": 624
     },
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 304,
+      "left_count": 305,
       "right_count": 2,
-      "left_people": 141,
+      "left_people": 142,
       "right_people": 2,
-      "score": 608
+      "score": 610
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 304,
+      "left_count": 305,
       "right_count": 2,
-      "left_people": 141,
+      "left_people": 142,
       "right_people": 2,
-      "score": 608
+      "score": 610
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -88413,11 +88623,11 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "Weight Sharing",
-      "left_count": 96,
+      "left_count": 97,
       "right_count": 6,
-      "left_people": 73,
+      "left_people": 74,
       "right_people": 4,
-      "score": 576
+      "score": 582
     },
     {
       "left": "BigramHash",
@@ -88530,11 +88740,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 373,
+      "left_count": 374,
       "right_count": 1,
-      "left_people": 211,
+      "left_people": 212,
       "right_people": 1,
-      "score": 373
+      "score": 374
     },
     {
       "left": "SwiGLU",
@@ -88548,11 +88758,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 304,
+      "left_count": 305,
       "right_count": 1,
-      "left_people": 141,
+      "left_people": 142,
       "right_people": 1,
-      "score": 304
+      "score": 305
     },
     {
       "left": "SwiGLU",
@@ -88593,29 +88803,29 @@
     {
       "left": "QAT",
       "right": "Differential Attention",
-      "left_count": 103,
+      "left_count": 104,
       "right_count": 2,
-      "left_people": 83,
+      "left_people": 84,
       "right_people": 2,
-      "score": 206
+      "score": 208
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "Differential Attention",
-      "left_count": 96,
+      "left_count": 97,
       "right_count": 2,
-      "left_people": 73,
+      "left_people": 74,
       "right_people": 2,
-      "score": 192
+      "score": 194
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "U-Net skips",
-      "left_count": 96,
+      "left_count": 97,
       "right_count": 2,
-      "left_people": 73,
+      "left_people": 74,
       "right_people": 2,
-      "score": 192
+      "score": 194
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -88764,11 +88974,11 @@
     {
       "left": "QAT",
       "right": "Flash Attention",
-      "left_count": 103,
+      "left_count": 104,
       "right_count": 1,
-      "left_people": 83,
+      "left_people": 84,
       "right_people": 1,
-      "score": 103
+      "score": 104
     },
     {
       "left": "JEPA",
@@ -88809,11 +89019,11 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "Flash Attention",
-      "left_count": 96,
+      "left_count": 97,
       "right_count": 1,
-      "left_people": 73,
+      "left_people": 74,
       "right_people": 1,
-      "score": 96
+      "score": 97
     },
     {
       "left": "BigramHash",

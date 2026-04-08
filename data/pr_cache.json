@@ -1,18 +1,54 @@
 {
-  "last_fetch": "2026-04-08T07:26:32.888512+00:00",
-  "api_calls_used": 142,
+  "last_fetch": "2026-04-08T08:43:33.384425+00:00",
+  "api_calls_used": 143,
   "prs": [
+    {
+      "number": 1466,
+      "title": "Add 10L LeakyReLU2 MLP3x + EMA + Int6 QAT + LZMA9 submission",
+      "author": "AVINASH0052",
+      "state": "OPEN",
+      "created": "2026-04-08T08:22:55Z",
+      "updated": "2026-04-08T08:41:42Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "LeakyReLU² + Muon + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-08_10L_LeakyReLU2_MLP3x_EMA_Int6QAT/README.md",
+        "records/track_10min_16mb/2026-04-08_10L_LeakyReLU2_MLP3x_EMA_Int6QAT/run_leaderboard_8xh100.sh",
+        "records/track_10min_16mb/2026-04-08_10L_LeakyReLU2_MLP3x_EMA_Int6QAT/run_smoke_1gpu.sh",
+        "records/track_10min_16mb/2026-04-08_10L_LeakyReLU2_MLP3x_EMA_Int6QAT/submission.json",
+        "records/track_10min_16mb/2026-04-08_10L_LeakyReLU2_MLP3x_EMA_Int6QAT/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1465,
       "title": "Non-record: v6.2 Phase 5a SOTA-trivial stack (3-seed @76% = 1.136399, -0.010 vs prior; TTT 1.205 not competitive)",
       "author": "sisegod",
       "state": "OPEN",
       "created": "2026-04-08T06:15:46Z",
-      "updated": "2026-04-08T07:25:34Z",
-      "bpb": null,
+      "updated": "2026-04-08T08:00:18Z",
+      "bpb": 0.011,
       "seeds": 3,
-      "artifact_bytes": 15549535,
-      "technique_summary": "TTT + Muon + INT6 + INT8 + EMA",
+      "artifact_bytes": 15912601,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + INT8 + EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/PR_BODY.md",
         "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/README.md",
@@ -22,7 +58,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
-        "ttt"
+        "ttt",
+        "gptq_eval"
       ],
       "track": "non-record",
       "technique_type": "ttt",
@@ -30,11 +67,12 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "AT_RISK",
       "flags": [
-        "no-bpb"
+        "suspiciously-low-bpb"
       ],
-      "confidence": "HIGH"
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
     },
     {
       "number": 1464,
@@ -47438,7 +47476,7 @@
       "author": "AVINASH0052",
       "state": "OPEN",
       "created": "2026-03-19T06:33:37Z",
-      "updated": "2026-03-19T06:33:37Z",
+      "updated": "2026-04-08T07:43:24Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -47450,23 +47488,24 @@
         "records/track_non_record_16mb/2026-03-19_RecursoLM_v0/run_smoke_1gpu.sh",
         "records/track_non_record_16mb/2026-03-19_RecursoLM_v0/submission.json",
         "records/track_non_record_16mb/2026-03-19_RecursoLM_v0/sweep_ablations.sh",
-        "records/track_non_record_16mb/2026-03-19_RecursoLM_v0/train_gpt.py"
+        "records/track_non_record_16mb/2026-03-19_RecursoLM_v0/train_gpt.py",
+        "requirements.txt"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "text"
+      "confidence": "HIGH"
     },
     {
       "number": 54,
