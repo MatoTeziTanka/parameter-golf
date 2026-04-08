@@ -2,8 +2,12 @@
   {
     "version": "0.8.3",
     "date": "2026-04-08",
-    "title": "Compression-vs-Training Ruling Pass",
+    "title": "Mod Tracker Now Auto-Renders + Compression-vs-Training Ruling Pass",
     "changes": [
+      "FIX: Maintainer Activity Tracker cards were hardcoded HTML — banner claimed 'Auto-updated on each Agora rebuild' but values were static. Mato caught it.",
+      "scripts/run_pipeline.py: now calls update_mod_tracker.py at step 0 (live GitHub events fetch), then renders cards from data/mod_tracker.json into MOD_TRACKER sentinels in index.html",
+      "Severity colors driven by days_silent: <1d active, <3d warning, <7d alert, ≥7d silent",
+      "First refresh result: notapplica 3 DAYS (was '~13H'), valerio-oai 7 DAYS (was '4 DAYS'), 0hq 14 DAYS (was '12'), yuzhougu-oai 19 DAYS (was '17')",
       "Refreshed PR cache (1,346 PRs) and reran classifier with code-level train_gpt.py analysis",
       "Frontier verdicts: PR #672 (1.0781) DEAD — pre-eval TTT, already closed",
       "PR #1482 (1.0787, 'SP8192 + Pre-Quant TTT') AT_RISK — code shows TTT + GPTQ both enabled pre-eval, exactly the data-touching compression scenario flagged in #402/#677/#1082",

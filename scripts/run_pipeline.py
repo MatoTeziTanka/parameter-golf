@@ -76,6 +76,9 @@ CHART_TECHNIQUE_POP_START = "<!-- AGORA:CHART_TECHNIQUE_POP_START -->"
 CHART_TECHNIQUE_POP_END = "<!-- AGORA:CHART_TECHNIQUE_POP_END -->"
 CHART_COMPLIANCE_START = "<!-- AGORA:CHART_COMPLIANCE_START -->"
 CHART_COMPLIANCE_END = "<!-- AGORA:CHART_COMPLIANCE_END -->"
+MOD_TRACKER_START = "<!-- AGORA:MOD_TRACKER_START -->"
+MOD_TRACKER_END = "<!-- AGORA:MOD_TRACKER_END -->"
+MOD_TRACKER_PATH = REPO_ROOT / "data" / "mod_tracker.json"
 
 CHECKLIST_PATH = REPO_ROOT / "data" / "checklist.json"
 RULINGS_PATH = REPO_ROOT / "data" / "rulings.json"
@@ -649,6 +652,81 @@ def _render_changelog(changelog: list[dict[str, Any]]) -> str:
     return "\n".join(cards)
 
 
+_SEVERITY_STYLE = {
+    "active":  ("#4ade80", "#000"),
+    "warning": ("var(--yellow)", "#000"),
+    "alert":   ("#ffaa33", "#000"),
+    "silent":  ("#ff6b6b", "#fff"),
+}
+
+
+def _format_days_silent(days: float | None) -> str:
+    if days is None:
+        return "NO DATA"
+    if days < 1:
+        hours = max(1, int(round(days * 24)))
+        return f"~{hours}H AGO"
+    return f"{int(round(days))} DAY{'S' if round(days) != 1 else ''}"
+
+
+def _render_mod_tracker(snapshot: dict[str, Any]) -> str:
+    """Render the maintainer activity cards from data/mod_tracker.json."""
+    mods = snapshot.get("mods", [])
+    cards: list[str] = []
+    for m in mods:
+        handle = m.get("handle", "?")
+        role = m.get("role", "")
+        real_name = m.get("real_name")
+        sub = f"OpenAI &middot; {escape(role)}" if not real_name else f"{escape(real_name)} &middot; OpenAI &middot; {escape(role)}"
+        severity = m.get("severity", "silent")
+        bg, fg = _SEVERITY_STYLE.get(severity, _SEVERITY_STYLE["silent"])
+        border = bg
+        days_label = _format_days_silent(m.get("days_silent"))
+        last_at = m.get("last_action_at") or "—"
+        last_summary = escape(m.get("last_action_summary") or "No recent activity in repo")
+        authority = escape(m.get("authority", ""))
+        created = escape(m.get("account_created", "?"))
+        purpose = m.get("purpose_built")
+        pending = m.get("pending")
+
+        account_line = f"Created {created}"
+        if purpose:
+            account_line += " &mdash; <em>purpose-built for this competition</em>"
+
+        pending_html = ""
+        if pending:
+            pending_html = (
+                f'<br><strong style="color:{bg};">Pending:</strong> {escape(pending)} '
+                f'&mdash; {days_label.lower()} silent on the answer.'
+            )
+
+        cards.append(
+            f'<div class="card" style="border-left:4px solid {border};">'
+            f'<div style="display:flex;justify-content:space-between;align-items:start;gap:0.5rem;">'
+            f'<div>'
+            f'<h3 style="margin:0;color:var(--text-bright);font-size:1.05rem;">'
+            f'<a href="https://github.com/{escape(handle)}" style="color:var(--text-bright);">@{escape(handle)}</a></h3>'
+            f'<div style="font-size:0.78rem;color:var(--text-dim);margin-top:0.15rem;">{sub}</div>'
+            f'</div>'
+            f'<span style="background:{bg};color:{fg};padding:0.2rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:700;">{days_label}</span>'
+            f'</div>'
+            f'<p style="font-size:0.82rem;color:var(--text-dim);margin:0.6rem 0 0;line-height:1.45;">'
+            f'<strong style="color:{bg};">Last action:</strong> {last_summary} at {escape(last_at)}.'
+            f'<br><strong>Authority signal:</strong> {authority}'
+            f'<br><strong>Account:</strong> {account_line}.'
+            f'{pending_html}'
+            f'</p>'
+            f'</div>'
+        )
+    snapshot_at = snapshot.get("snapshot_at", "")
+    footer = (
+        f'<div style="grid-column:1/-1;font-size:0.7rem;color:var(--text-dim);text-align:right;margin-top:-0.5rem;">'
+        f'Snapshot: {escape(snapshot_at)}'
+        f'</div>'
+    )
+    return "\n".join(cards) + "\n" + footer
+
+
 def _update_version_bar_from_changelog(html: str, changelog: list[dict[str, Any]], now: datetime) -> str:
     """Sync the version bar with the latest changelog entry."""
     if not changelog:
@@ -934,6 +1012,11 @@ def _update_version_bar(html: str, now: datetime) -> str:
 
 def main() -> None:
     """Entry point."""
+    # --- Step 0: Refresh maintainer activity tracker ---
+    mod_ok = _run_script("update_mod_tracker.py")
+    if not mod_ok:
+        print("[PIPELINE] update_mod_tracker.py failed — using existing snapshot", flush=True)
+
     # --- Step 1: Fetch PRs ---
     fetch_ok = _run_script("fetch_prs.py")
     if not fetch_ok:
@@ -1049,6 +1132,14 @@ def main() -> None:
         html = _replace_between_sentinels(html, CHART_ARTIFACT_START, CHART_ARTIFACT_END, artifact_chart)
         html = _replace_between_sentinels(html, CHART_TECHNIQUE_POP_START, CHART_TECHNIQUE_POP_END, technique_pop_chart)
         html = _replace_between_sentinels(html, CHART_COMPLIANCE_START, CHART_COMPLIANCE_END, compliance_chart)
+
+        # Mod tracker (data-driven from data/mod_tracker.json)
+        if MOD_TRACKER_PATH.exists() and MOD_TRACKER_START in html and MOD_TRACKER_END in html:
+            with MOD_TRACKER_PATH.open("r", encoding="utf-8") as fmt:
+                mod_snapshot = json.load(fmt)
+            mod_html = _render_mod_tracker(mod_snapshot)
+            html = _replace_between_sentinels(html, MOD_TRACKER_START, MOD_TRACKER_END, mod_html)
+            print("[PIPELINE] Mod tracker rendered from data/mod_tracker.json", flush=True)
     except RuntimeError as exc:
         print(f"[FATAL] Table replacement failed: {exc}", flush=True)
         sys.exit(1)
