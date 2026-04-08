@@ -1,7 +1,41 @@
 {
-  "last_fetch": "2026-04-08T17:41:24.625950+00:00",
-  "api_calls_used": 149,
+  "last_fetch": "2026-04-08T19:22:01.536386+00:00",
+  "api_calls_used": 150,
   "prs": [
+    {
+      "number": 1479,
+      "title": "Non-record: GDN Hybrid (E2E TTT / State-Space Model) — val_bpb 1.14502",
+      "author": "andrewbaggio1",
+      "state": "OPEN",
+      "created": "2026-04-08T18:29:41Z",
+      "updated": "2026-04-08T18:29:41Z",
+      "bpb": 1.14502,
+      "seeds": null,
+      "artifact_bytes": 13830000,
+      "technique_summary": "TTT + SSM + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-08_GDN_Hybrid_E2E_TTT_StateSpace/README.md",
+        "records/track_non_record_16mb/2026-04-08_GDN_Hybrid_E2E_TTT_StateSpace/submission.json",
+        "records/track_non_record_16mb/2026-04-08_GDN_Hybrid_E2E_TTT_StateSpace/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1478,
       "title": "Shallow Blue: BOS-Reset Exact Memory Probe",
@@ -123,13 +157,13 @@
     },
     {
       "number": 1475,
-      "title": "Non-record: 8xH100->1xH100 Two-Stage GPTQ Baseline — val_bpb 1.13072, 15,651,808 bytes",
+      "title": "Non-record: Checkpointed 8xH100->1xH100 GPTQ Baseline — val_bpb 1.13072, 15,651,808 bytes",
       "author": "Jaksenc",
       "state": "OPEN",
       "created": "2026-04-08T15:17:39Z",
-      "updated": "2026-04-08T17:06:07Z",
+      "updated": "2026-04-08T19:03:06Z",
       "bpb": null,
-      "seeds": 314,
+      "seeds": null,
       "artifact_bytes": 16000000,
       "technique_summary": "GPTQ + EMA",
       "file_paths": [
@@ -155,7 +189,8 @@
       "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb"
+        "no-bpb",
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -26601,7 +26636,7 @@
       "author": "ChideraIbe123",
       "state": "OPEN",
       "created": "2026-03-25T03:58:35Z",
-      "updated": "2026-04-08T17:22:26Z",
+      "updated": "2026-04-08T19:14:37Z",
       "bpb": 0.5793,
       "seeds": 3,
       "artifact_bytes": 15740000,
