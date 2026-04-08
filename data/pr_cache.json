@@ -1,7 +1,80 @@
 {
-  "last_fetch": "2026-04-08T14:54:12.663364+00:00",
-  "api_calls_used": 147,
+  "last_fetch": "2026-04-08T16:17:30.222944+00:00",
+  "api_calls_used": 148,
   "prs": [
+    {
+      "number": 1476,
+      "title": "[Record Submission] SP8192 + QK5 + Legal TTT — val_bpb 1.0842 | 15.99MB",
+      "author": "aryan-cs",
+      "state": "OPEN",
+      "created": "2026-04-08T15:50:48Z",
+      "updated": "2026-04-08T15:50:48Z",
+      "bpb": 1.0842,
+      "seeds": null,
+      "artifact_bytes": 15990000,
+      "technique_summary": "TTT + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-08_PR1413_SP8192_QK5_LegalTTT_1.0842/README.md",
+        "records/track_10min_16mb/2026-04-08_PR1413_SP8192_QK5_LegalTTT_1.0842/final_model.int6.ptz",
+        "records/track_10min_16mb/2026-04-08_PR1413_SP8192_QK5_LegalTTT_1.0842/submission.json",
+        "records/track_10min_16mb/2026-04-08_PR1413_SP8192_QK5_LegalTTT_1.0842/train_and_exact_log.txt",
+        "records/track_10min_16mb/2026-04-08_PR1413_SP8192_QK5_LegalTTT_1.0842/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1475,
+      "title": "Non-record: 8xH100->1xH100 Two-Stage GPTQ Baseline — val_bpb 1.13072, 15,651,808 bytes",
+      "author": "Jaksenc",
+      "state": "OPEN",
+      "created": "2026-04-08T15:17:39Z",
+      "updated": "2026-04-08T15:33:22Z",
+      "bpb": null,
+      "seeds": 314,
+      "artifact_bytes": null,
+      "technique_summary": "GPTQ + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-08_8xH100_TwoStage_GPTQ_Baseline/README.md",
+        "records/track_non_record_16mb/2026-04-08_8xH100_TwoStage_GPTQ_Baseline/proxy_results.md",
+        "records/track_non_record_16mb/2026-04-08_8xH100_TwoStage_GPTQ_Baseline/requirements.txt",
+        "records/track_non_record_16mb/2026-04-08_8xH100_TwoStage_GPTQ_Baseline/run_gptq.py",
+        "records/track_non_record_16mb/2026-04-08_8xH100_TwoStage_GPTQ_Baseline/stage1_modal_seed314.log",
+        "records/track_non_record_16mb/2026-04-08_8xH100_TwoStage_GPTQ_Baseline/stage2_modal_seed314.log",
+        "records/track_non_record_16mb/2026-04-08_8xH100_TwoStage_GPTQ_Baseline/stock.env",
+        "records/track_non_record_16mb/2026-04-08_8xH100_TwoStage_GPTQ_Baseline/submission.json",
+        "records/track_non_record_16mb/2026-04-08_8xH100_TwoStage_GPTQ_Baseline/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1474,
       "title": "Add non-record 16MB submission: Vocabulary1792 FlashMuon LinearScaleInit XSA5LastGated RReLU2 Int6AWQ MixedBits",
@@ -45,7 +118,7 @@
       "author": "AVINASH0052",
       "state": "OPEN",
       "created": "2026-04-08T11:43:05Z",
-      "updated": "2026-04-08T11:52:00Z",
+      "updated": "2026-04-08T15:57:41Z",
       "bpb": null,
       "seeds": 1337,
       "artifact_bytes": 15832508,
@@ -556,7 +629,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-04-08T00:40:32Z",
-      "updated": "2026-04-08T04:29:44Z",
+      "updated": "2026-04-08T15:58:46Z",
       "bpb": 1.106,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -10465,7 +10538,7 @@
       "author": "mradassaad",
       "state": "OPEN",
       "created": "2026-03-30T00:55:11Z",
-      "updated": "2026-04-08T14:37:28Z",
+      "updated": "2026-04-08T15:30:15Z",
       "bpb": 1.5633,
       "seeds": null,
       "artifact_bytes": 10892315,
@@ -35331,7 +35404,7 @@
       "author": "DeividasMat",
       "state": "OPEN",
       "created": "2026-03-22T13:50:52Z",
-      "updated": "2026-04-08T14:20:59Z",
+      "updated": "2026-04-08T16:16:23Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
