@@ -1,14 +1,83 @@
 {
-  "last_fetch": "2026-04-08T10:10:59.448273+00:00",
-  "api_calls_used": 144,
+  "last_fetch": "2026-04-08T11:31:46.937709+00:00",
+  "api_calls_used": 145,
   "prs": [
+    {
+      "number": 1472,
+      "title": "Add 1.2066 record: 8L Depth Recurrence by trhgbao",
+      "author": "trhgbao",
+      "state": "OPEN",
+      "created": "2026-04-08T11:13:05Z",
+      "updated": "2026-04-08T11:13:05Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/trhgbao_1_2066/.ipynb_checkpoints/README-checkpoint.md",
+        "records/track_10min_16mb/trhgbao_1_2066/README.md",
+        "records/track_10min_16mb/trhgbao_1_2066/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1471,
+      "title": "[Record] SP8192 + SDClip + 3-Layer Depth Recurrence + EMA 0.9965 — val_bpb 1.0866",
+      "author": "X-Abhishek-X",
+      "state": "OPEN",
+      "created": "2026-04-08T10:20:31Z",
+      "updated": "2026-04-08T10:26:13Z",
+      "bpb": 1.0866,
+      "seeds": 3,
+      "artifact_bytes": 15980000,
+      "technique_summary": "Muon + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-08_SP8192_SDClip_3LayerRecur_EMA0.9965_1.0866/README.md",
+        "records/track_10min_16mb/2026-04-08_SP8192_SDClip_3LayerRecur_EMA0.9965_1.0866/submission.json",
+        "records/track_10min_16mb/2026-04-08_SP8192_SDClip_3LayerRecur_EMA0.9965_1.0866/train.log",
+        "records/track_10min_16mb/2026-04-08_SP8192_SDClip_3LayerRecur_EMA0.9965_1.0866/train_gpt.py",
+        "records/track_10min_16mb/2026-04-08_SP8192_SDClip_3LayerRecur_EMA0.9965_1.0866/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-08_SP8192_SDClip_3LayerRecur_EMA0.9965_1.0866/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-08_SP8192_SDClip_3LayerRecur_EMA0.9965_1.0866/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1470,
       "title": "Feat/11l fullgptq xsa bigramhash",
       "author": "AVINASH0052",
       "state": "OPEN",
       "created": "2026-04-08T09:53:48Z",
-      "updated": "2026-04-08T09:59:13Z",
+      "updated": "2026-04-08T11:27:38Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -18953,7 +19022,7 @@
       "author": "clthuang",
       "state": "OPEN",
       "created": "2026-03-26T18:00:01Z",
-      "updated": "2026-04-06T19:39:38Z",
+      "updated": "2026-04-08T11:14:55Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -18982,6 +19051,7 @@
         "records/track_10min_16mb/2026-04-06_CorruptedContext_R2-11/requirements.txt",
         "records/track_10min_16mb/2026-04-06_CorruptedContext_R2-11/submission.json",
         "records/track_10min_16mb/2026-04-06_CorruptedContext_R2-11/train_gpt.py",
+        "records/track_10min_16mb/2026-04-08_CorruptedContext_on_GPTQLite/train_gpt.py",
         "records/track_non_record_16mb/2026-03-27_CausalScreening_SinSq_AdaptiveK/README.md",
         "records/track_non_record_16mb/2026-03-27_CausalScreening_SinSq_AdaptiveK/submission.json",
         "records/track_non_record_16mb/2026-03-27_CausalScreening_SinSq_AdaptiveK/train_gpt.py",
@@ -19007,8 +19077,7 @@
         "results/h100_full_screen_20260405/r2_3_dml_orth.txt",
         "results/h100_full_screen_20260405/r2_4_fan_dml.txt",
         "results/h100_full_screen_20260405/r2_5_token_drop.txt",
-        "results/h100_full_screen_20260405/r2_8_grad_drop.txt",
-        "results/h100_full_screen_20260405/r3_sliding.txt"
+        "results/h100_full_screen_20260405/r2_8_grad_drop.txt"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
