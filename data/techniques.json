@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-08T03:40:22Z",
+  "generated_at": "2026-04-08T05:49:09Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1316,
-    "matched_pr_count": 962,
+    "pr_count": 1319,
+    "matched_pr_count": 965,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 200,
+      "ALIVE": 202,
       "AT_RISK": 87,
       "DEAD": 372,
-      "INCOMPLETE": 649,
+      "INCOMPLETE": 650,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 488,
-      "author_count": 239,
-      "alive_count": 94,
+      "count": 490,
+      "author_count": 240,
+      "alive_count": 95,
       "dead_count": 168,
       "at_risk_count": 51,
-      "incomplete_count": 175,
+      "incomplete_count": 176,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -35,7 +35,7 @@
       "people": [
         {
           "author": "newjordan",
-          "pr_count": 15,
+          "pr_count": 16,
           "best_bpb": 0.0006,
           "prs": [
             {
@@ -142,6 +142,13 @@
               "status": "AT_RISK",
               "bpb": 0.9625,
               "created": "2026-03-25T17:53:09Z"
+            },
+            {
+              "number": 1458,
+              "author": "newjordan",
+              "status": "ALIVE",
+              "bpb": 1.106,
+              "created": "2026-04-08T00:40:32Z"
             }
           ]
         },
@@ -5121,6 +5128,20 @@
               "created": "2026-03-25T04:12:57Z"
             }
           ]
+        },
+        {
+          "author": "Victory963",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1462,
+              "author": "Victory963",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T04:23:57Z"
+            }
+          ]
         }
       ],
       "prs": [
@@ -8539,18 +8560,32 @@
           "status": "AT_RISK",
           "bpb": 0.3509,
           "created": "2026-04-07T21:56:40Z"
+        },
+        {
+          "number": 1458,
+          "author": "newjordan",
+          "status": "ALIVE",
+          "bpb": 1.106,
+          "created": "2026-04-08T00:40:32Z"
+        },
+        {
+          "number": 1462,
+          "author": "Victory963",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T04:23:57Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 380,
-      "author_count": 254,
+      "count": 381,
+      "author_count": 255,
       "alive_count": 80,
       "dead_count": 87,
       "at_risk_count": 36,
-      "incomplete_count": 176,
+      "incomplete_count": 177,
       "unknown_count": 0,
       "best_alive": {
         "number": 909,
@@ -12955,6 +12990,20 @@
           ]
         },
         {
+          "author": "Victory963",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1462,
+              "author": "Victory963",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T04:23:57Z"
+            }
+          ]
+        },
+        {
           "author": "whitestone1121-web",
           "pr_count": 1,
           "best_bpb": null,
@@ -15657,6 +15706,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.18337608,
           "created": "2026-04-07T19:06:31Z"
+        },
+        {
+          "number": 1462,
+          "author": "Victory963",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T04:23:57Z"
         }
       ]
     },
@@ -31542,9 +31598,9 @@
     {
       "name": "BigramHash",
       "kind": "legal",
-      "count": 77,
-      "author_count": 68,
-      "alive_count": 14,
+      "count": 78,
+      "author_count": 69,
+      "alive_count": 15,
       "dead_count": 14,
       "at_risk_count": 2,
       "incomplete_count": 47,
@@ -32273,6 +32329,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.2767,
               "created": "2026-03-24T16:35:21Z"
+            }
+          ]
+        },
+        {
+          "author": "tsubasagit",
+          "pr_count": 1,
+          "best_bpb": 1.2774,
+          "prs": [
+            {
+              "number": 1463,
+              "author": "tsubasagit",
+              "status": "ALIVE",
+              "bpb": 1.2774,
+              "created": "2026-04-08T05:15:40Z"
             }
           ]
         },
@@ -33110,6 +33180,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-07T21:46:21Z"
+        },
+        {
+          "number": 1463,
+          "author": "tsubasagit",
+          "status": "ALIVE",
+          "bpb": 1.2774,
+          "created": "2026-04-08T05:15:40Z"
         }
       ]
     },
@@ -39593,9 +39670,9 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 195,
+      "count": 196,
       "author_count": 86,
-      "alive_count": 23,
+      "alive_count": 24,
       "dead_count": 80,
       "at_risk_count": 63,
       "incomplete_count": 25,
@@ -39608,7 +39685,7 @@
       "people": [
         {
           "author": "newjordan",
-          "pr_count": 11,
+          "pr_count": 12,
           "best_bpb": 0.033,
           "prs": [
             {
@@ -39687,6 +39764,13 @@
               "status": "INCOMPLETE",
               "bpb": 1.18672385,
               "created": "2026-03-30T17:18:30Z"
+            },
+            {
+              "number": 1458,
+              "author": "newjordan",
+              "status": "ALIVE",
+              "bpb": 1.106,
+              "created": "2026-04-08T00:40:32Z"
             }
           ]
         },
@@ -42939,6 +43023,13 @@
           "status": "AT_RISK",
           "bpb": 0.3509,
           "created": "2026-04-07T21:56:40Z"
+        },
+        {
+          "number": 1458,
+          "author": "newjordan",
+          "status": "ALIVE",
+          "bpb": 1.106,
+          "created": "2026-04-08T00:40:32Z"
         }
       ]
     },
@@ -43919,12 +44010,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 380,
-      "author_count": 254,
+      "count": 381,
+      "author_count": 255,
       "alive_count": 80,
       "dead_count": 87,
       "at_risk_count": 36,
-      "incomplete_count": 176,
+      "incomplete_count": 177,
       "unknown_count": 0,
       "best_alive": {
         "number": 909,
@@ -48329,6 +48420,20 @@
           ]
         },
         {
+          "author": "Victory963",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1462,
+              "author": "Victory963",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T04:23:57Z"
+            }
+          ]
+        },
+        {
           "author": "whitestone1121-web",
           "pr_count": 1,
           "best_bpb": null,
@@ -51031,18 +51136,25 @@
           "status": "INCOMPLETE",
           "bpb": 1.18337608,
           "created": "2026-04-07T19:06:31Z"
+        },
+        {
+          "number": 1462,
+          "author": "Victory963",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T04:23:57Z"
         }
       ]
     },
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 488,
-      "author_count": 239,
-      "alive_count": 94,
+      "count": 490,
+      "author_count": 240,
+      "alive_count": 95,
       "dead_count": 168,
       "at_risk_count": 51,
-      "incomplete_count": 175,
+      "incomplete_count": 176,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -51052,7 +51164,7 @@
       "people": [
         {
           "author": "newjordan",
-          "pr_count": 15,
+          "pr_count": 16,
           "best_bpb": 0.0006,
           "prs": [
             {
@@ -51159,6 +51271,13 @@
               "status": "AT_RISK",
               "bpb": 0.9625,
               "created": "2026-03-25T17:53:09Z"
+            },
+            {
+              "number": 1458,
+              "author": "newjordan",
+              "status": "ALIVE",
+              "bpb": 1.106,
+              "created": "2026-04-08T00:40:32Z"
             }
           ]
         },
@@ -56138,6 +56257,20 @@
               "created": "2026-03-25T04:12:57Z"
             }
           ]
+        },
+        {
+          "author": "Victory963",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1462,
+              "author": "Victory963",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-08T04:23:57Z"
+            }
+          ]
         }
       ],
       "prs": [
@@ -59556,6 +59689,20 @@
           "status": "AT_RISK",
           "bpb": 0.3509,
           "created": "2026-04-07T21:56:40Z"
+        },
+        {
+          "number": 1458,
+          "author": "newjordan",
+          "status": "ALIVE",
+          "bpb": 1.106,
+          "created": "2026-04-08T00:40:32Z"
+        },
+        {
+          "number": 1462,
+          "author": "Victory963",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-08T04:23:57Z"
         }
       ]
     },
@@ -71523,9 +71670,9 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 195,
+      "count": 196,
       "author_count": 86,
-      "alive_count": 23,
+      "alive_count": 24,
       "dead_count": 80,
       "at_risk_count": 63,
       "incomplete_count": 25,
@@ -71538,7 +71685,7 @@
       "people": [
         {
           "author": "newjordan",
-          "pr_count": 11,
+          "pr_count": 12,
           "best_bpb": 0.033,
           "prs": [
             {
@@ -71617,6 +71764,13 @@
               "status": "INCOMPLETE",
               "bpb": 1.18672385,
               "created": "2026-03-30T17:18:30Z"
+            },
+            {
+              "number": 1458,
+              "author": "newjordan",
+              "status": "ALIVE",
+              "bpb": 1.106,
+              "created": "2026-04-08T00:40:32Z"
             }
           ]
         },
@@ -74869,6 +75023,13 @@
           "status": "AT_RISK",
           "bpb": 0.3509,
           "created": "2026-04-07T21:56:40Z"
+        },
+        {
+          "number": 1458,
+          "author": "newjordan",
+          "status": "ALIVE",
+          "bpb": 1.106,
+          "created": "2026-04-08T00:40:32Z"
         }
       ]
     },
@@ -78793,9 +78954,9 @@
     {
       "name": "BigramHash",
       "kind": "legal",
-      "count": 77,
-      "author_count": 68,
-      "alive_count": 14,
+      "count": 78,
+      "author_count": 69,
+      "alive_count": 15,
       "dead_count": 14,
       "at_risk_count": 2,
       "incomplete_count": 47,
@@ -79524,6 +79685,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.2767,
               "created": "2026-03-24T16:35:21Z"
+            }
+          ]
+        },
+        {
+          "author": "tsubasagit",
+          "pr_count": 1,
+          "best_bpb": 1.2774,
+          "prs": [
+            {
+              "number": 1463,
+              "author": "tsubasagit",
+              "status": "ALIVE",
+              "bpb": 1.2774,
+              "created": "2026-04-08T05:15:40Z"
             }
           ]
         },
@@ -80361,6 +80536,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-07T21:46:21Z"
+        },
+        {
+          "number": 1463,
+          "author": "tsubasagit",
+          "status": "ALIVE",
+          "bpb": 1.2774,
+          "created": "2026-04-08T05:15:40Z"
         }
       ]
     },
@@ -87845,11 +88027,11 @@
     {
       "left": "BigramHash",
       "right": "SSM/Mamba/S4D",
-      "left_count": 77,
+      "left_count": 78,
       "right_count": 26,
-      "left_people": 68,
+      "left_people": 69,
       "right_people": 17,
-      "score": 2002
+      "score": 2028
     },
     {
       "left": "SWA",
@@ -87926,20 +88108,20 @@
     {
       "left": "BigramHash",
       "right": "JEPA",
-      "left_count": 77,
+      "left_count": 78,
       "right_count": 17,
-      "left_people": 68,
+      "left_people": 69,
       "right_people": 16,
-      "score": 1309
+      "score": 1326
     },
     {
       "left": "BigramHash",
       "right": "Ternary Weights",
-      "left_count": 77,
+      "left_count": 78,
       "right_count": 17,
-      "left_people": 68,
+      "left_people": 69,
       "right_people": 14,
-      "score": 1309
+      "score": 1326
     },
     {
       "left": "SwiGLU",
@@ -88007,11 +88189,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 488,
+      "left_count": 490,
       "right_count": 2,
-      "left_people": 239,
+      "left_people": 240,
       "right_people": 2,
-      "score": 976
+      "score": 980
     },
     {
       "left": "SwiGLU",
@@ -88034,11 +88216,11 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 380,
+      "left_count": 381,
       "right_count": 2,
-      "left_people": 254,
+      "left_people": 255,
       "right_people": 2,
-      "score": 760
+      "score": 762
     },
     {
       "left": "EMA",
@@ -88142,11 +88324,11 @@
     {
       "left": "BigramHash",
       "right": "Progressive Depth",
-      "left_count": 77,
+      "left_count": 78,
       "right_count": 7,
-      "left_people": 68,
+      "left_people": 69,
       "right_people": 3,
-      "score": 539
+      "score": 546
     },
     {
       "left": "SWA",
@@ -88169,11 +88351,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 488,
+      "left_count": 490,
       "right_count": 1,
-      "left_people": 239,
+      "left_people": 240,
       "right_people": 1,
-      "score": 488
+      "score": 490
     },
     {
       "left": "XSA",
@@ -88187,11 +88369,11 @@
     {
       "left": "BigramHash",
       "right": "Weight Sharing",
-      "left_count": 77,
+      "left_count": 78,
       "right_count": 6,
-      "left_people": 68,
+      "left_people": 69,
       "right_people": 4,
-      "score": 462
+      "score": 468
     },
     {
       "left": "SWA",
@@ -88374,6 +88556,15 @@
       "score": 161
     },
     {
+      "left": "BigramHash",
+      "right": "Differential Attention",
+      "left_count": 78,
+      "right_count": 2,
+      "left_people": 69,
+      "right_people": 2,
+      "score": 156
+    },
+    {
       "left": "SSM/Mamba/S4D",
       "right": "Weight Sharing",
       "left_count": 26,
@@ -88381,15 +88572,6 @@
       "left_people": 17,
       "right_people": 4,
       "score": 156
-    },
-    {
-      "left": "BigramHash",
-      "right": "Differential Attention",
-      "left_count": 77,
-      "right_count": 2,
-      "left_people": 68,
-      "right_people": 2,
-      "score": 154
     },
     {
       "left": "SWA",
@@ -88538,11 +88720,11 @@
     {
       "left": "BigramHash",
       "right": "Flash Attention",
-      "left_count": 77,
+      "left_count": 78,
       "right_count": 1,
-      "left_people": 68,
+      "left_people": 69,
       "right_people": 1,
-      "score": 77
+      "score": 78
     },
     {
       "left": "SWA",

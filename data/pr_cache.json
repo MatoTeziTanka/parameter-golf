@@ -1,7 +1,108 @@
 {
-  "last_fetch": "2026-04-08T03:40:10.524350+00:00",
-  "api_calls_used": 140,
+  "last_fetch": "2026-04-08T05:49:01.069436+00:00",
+  "api_calls_used": 141,
   "prs": [
+    {
+      "number": 1463,
+      "title": "Non-record: 1xH100 Budget Run — SmearGate + BigramHash + MLP3x (1.2774 BPB)",
+      "author": "tsubasagit",
+      "state": "OPEN",
+      "created": "2026-04-08T05:15:40Z",
+      "updated": "2026-04-08T05:32:47Z",
+      "bpb": 1.2774,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-08_1xH100_SmearGate_BigramHash_MLP3x/README.md",
+        "records/track_non_record_16mb/2026-04-08_1xH100_SmearGate_BigramHash_MLP3x/submission.json",
+        "records/track_non_record_16mb/2026-04-08_1xH100_SmearGate_BigramHash_MLP3x/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-08_1xH100_SmearGate_BigramHash_MLP3x/train_seed1337.log",
+        "records/track_non_record_16mb/2026-04-08_1xH100_SmearGate_BigramHash_MLP3x/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-08_1xH100_SmearGate_BigramHash_MLP3x/train_seed7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1462,
+      "title": "Fusion Scheme: PR Standard + ULTRA Techniques - BPB 1.0800~1.0850",
+      "author": "Victory963",
+      "state": "OPEN",
+      "created": "2026-04-08T04:23:57Z",
+      "updated": "2026-04-08T04:23:57Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon",
+      "file_paths": [
+        "FUSION_COMPLETE_IMPLEMENTATION_GUIDE.md",
+        "fusion_plus_implementation.py",
+        "parameter-golf",
+        "test_fusion_plus.py",
+        "train_fusion_production.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1458,
+      "title": "Midnight 12L — 1.10567949 val_bpb (seed 444)",
+      "author": "newjordan",
+      "state": "OPEN",
+      "created": "2026-04-08T00:40:32Z",
+      "updated": "2026-04-08T04:29:44Z",
+      "bpb": 1.106,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + INT6 + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-07_Midnight_12L_8xH100/README.md",
+        "records/track_10min_16mb/2026-04-07_Midnight_12L_8xH100/submission.json",
+        "records/track_10min_16mb/2026-04-07_Midnight_12L_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-04-07_Midnight_12L_8xH100/train_seed300.log",
+        "records/track_10min_16mb/2026-04-07_Midnight_12L_8xH100/train_seed42.log",
+        "records/track_10min_16mb/2026-04-07_Midnight_12L_8xH100/train_seed444.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1456,
       "title": "Non-Record: HybridQuantGPT v6.1 H100 + Aggressive SLOT (steps=100, 3-seed 1.146523)",
@@ -46820,7 +46921,7 @@
       "author": "TevBenji",
       "state": "OPEN",
       "created": "2026-03-19T08:52:18Z",
-      "updated": "2026-03-22T05:24:38Z",
+      "updated": "2026-04-08T04:54:17Z",
       "bpb": 1.1708,
       "seeds": null,
       "artifact_bytes": 14603588,
@@ -46843,17 +46944,17 @@
       "compliance_keywords": [
         "cache_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "path:eval-cache-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "AT_RISK",
+      "flags": [
+        "path:eval-cache-path"
+      ],
+      "confidence": "MEDIUM"
     },
     {
       "number": 68,
