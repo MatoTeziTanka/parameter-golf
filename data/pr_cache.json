@@ -1,7 +1,72 @@
 {
-  "last_fetch": "2026-04-08T05:49:01.069436+00:00",
-  "api_calls_used": 141,
+  "last_fetch": "2026-04-08T07:26:32.888512+00:00",
+  "api_calls_used": 142,
   "prs": [
+    {
+      "number": 1465,
+      "title": "Non-record: v6.2 Phase 5a SOTA-trivial stack (3-seed @76% = 1.136399, -0.010 vs prior; TTT 1.205 not competitive)",
+      "author": "sisegod",
+      "state": "OPEN",
+      "created": "2026-04-08T06:15:46Z",
+      "updated": "2026-04-08T07:25:34Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 15549535,
+      "technique_summary": "TTT + Muon + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/PR_BODY.md",
+        "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/README.md",
+        "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/run.sh",
+        "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/submission.json",
+        "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1464,
+      "title": "Update train_gpt.py",
+      "author": "ZxsTas",
+      "state": "OPEN",
+      "created": "2026-04-08T06:02:00Z",
+      "updated": "2026-04-08T06:36:04Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1463,
       "title": "Non-record: 1xH100 Budget Run — SmearGate + BigramHash + MLP3x (1.2774 BPB)",
@@ -496,7 +561,7 @@
       "author": "X-Abhishek-X",
       "state": "OPEN",
       "created": "2026-04-07T17:15:10Z",
-      "updated": "2026-04-07T19:53:51Z",
+      "updated": "2026-04-08T07:18:42Z",
       "bpb": 1.0889,
       "seeds": 3,
       "artifact_bytes": 15890000,
