@@ -1,7 +1,73 @@
 {
-  "last_fetch": "2026-04-09T05:28:17.312201+00:00",
-  "api_calls_used": 134,
+  "last_fetch": "2026-04-09T07:01:34.597507+00:00",
+  "api_calls_used": 135,
   "prs": [
+    {
+      "number": 1491,
+      "title": "Non-record: Faithful mHC-lite",
+      "author": "wisebreadloaf",
+      "state": "OPEN",
+      "created": "2026-04-09T06:37:12Z",
+      "updated": "2026-04-09T06:37:12Z",
+      "bpb": 1.69236985,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-09_FaithfulMHCLite/README.md",
+        "records/track_non_record_16mb/2026-04-09_FaithfulMHCLite/hyper_conn/__init__.py",
+        "records/track_non_record_16mb/2026-04-09_FaithfulMHCLite/hyper_conn/mhc_lite.py",
+        "records/track_non_record_16mb/2026-04-09_FaithfulMHCLite/screen_mhc_seed42.txt",
+        "records/track_non_record_16mb/2026-04-09_FaithfulMHCLite/submission.json",
+        "records/track_non_record_16mb/2026-04-09_FaithfulMHCLite/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1490,
+      "title": "Non-record: Faithful Conditional Memory",
+      "author": "wisebreadloaf",
+      "state": "OPEN",
+      "created": "2026-04-09T06:35:56Z",
+      "updated": "2026-04-09T06:35:56Z",
+      "bpb": 1.61095535,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-09_FaithfulConditionalMemory/README.md",
+        "records/track_non_record_16mb/2026-04-09_FaithfulConditionalMemory/screen_memory_seed42.txt",
+        "records/track_non_record_16mb/2026-04-09_FaithfulConditionalMemory/submission.json",
+        "records/track_non_record_16mb/2026-04-09_FaithfulConditionalMemory/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1488,
       "title": "Record: SP1024 + SLOT-24 + QK5.25 + Pre-Quant AdamW TTT — val_bpb 0.8265 (3-seed mean)",
