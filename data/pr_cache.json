@@ -1,7 +1,148 @@
 {
-  "last_fetch": "2026-04-09T15:25:05.825668+00:00",
-  "api_calls_used": 136,
+  "last_fetch": "2026-04-09T16:48:34.802150+00:00",
+  "api_calls_used": 137,
   "prs": [
+    {
+      "number": 1502,
+      "title": "[Non Record] Learn to Learn: Meta-Learning-TTT Redesign — Cross-Chunk FOMAML + Delta-Loss + MetaSGD",
+      "author": "SPThole",
+      "state": "OPEN",
+      "created": "2026-04-09T15:43:28Z",
+      "updated": "2026-04-09T16:34:48Z",
+      "bpb": 0.02299,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + SwiGLU + LoRA + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/README.md",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/logs_seed42.txt",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/pull_summary.md",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/submission.json",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/ERROR_SURFACE_ANALYSIS.md",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/Inference.ipynb",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/META_TTT_ANALYSIS.md",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/analysis_meta_ttt.json",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/analysis_meta_ttt.py",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/analysis_three_way.json",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/analysis_three_way.py",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/requant_mixed_precision.py",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/requant_mixed_v1.log",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/run.sh",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/save_model.py",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/ttt_eval.py",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/ttt_from_checkpoint.log",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/ttt_from_checkpoint.py",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/ttt_from_checkpoint_float_qatoff.log",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/supporting_files/ttt_int6_ep4_partial.log",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/train_gpt.py",
+        "records/track_non_record_16mb/2026_04_09_metattt_redesign/training_stdout_seed42.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1501,
+      "title": "[Non Record] Learn to Learn: Position-Conditional Bigram Hashing + Meta-Learning + TTT Ablation",
+      "author": "SPThole",
+      "state": "OPEN",
+      "created": "2026-04-09T15:37:11Z",
+      "updated": "2026-04-09T16:33:51Z",
+      "bpb": 0.02342,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + SwiGLU + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/README.md",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/logs_seed42.txt",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/submission.json",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/supporting_files/Inference.ipynb",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/supporting_files/META_TTT_ANALYSIS.md",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/supporting_files/analysis_meta_ttt.json",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/supporting_files/analysis_meta_ttt.py",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/supporting_files/run.sh",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/supporting_files/save_model.py",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/supporting_files/ttt.log",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/supporting_files/ttt_eval.py",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/train_gpt.py",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/ablation_exp105a/training_stdout_seed42.txt",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/pull_summary.md",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/record_exp101/README.md",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/record_exp101/logs_seed42.txt",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/record_exp101/submission.json",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/record_exp101/supporting_files/run.sh",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/record_exp101/supporting_files/ttt.log",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/record_exp101/supporting_files/ttt_eval.py",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/record_exp101/train_gpt.py",
+        "records/track_non_record_16mb/2026_04_09_poscond_bigram_and_ablation/record_exp101/training_stdout_seed42.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1499,
+      "title": "SP8192 + Depth Recurrence + Parallel Residuals (14.09MB)",
+      "author": "dippatel1994",
+      "state": "OPEN",
+      "created": "2026-04-09T12:28:07Z",
+      "updated": "2026-04-09T15:57:55Z",
+      "bpb": 1.6323,
+      "seeds": 42,
+      "artifact_bytes": 14090000,
+      "technique_summary": "LeakyReLU² + TTT + Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-09_SP8192_DepthRecur_ParResid/README.md",
+        "records/track_10min_16mb/2026-04-09_SP8192_DepthRecur_ParResid/submission.json",
+        "records/track_10min_16mb/2026-04-09_SP8192_DepthRecur_ParResid/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1495,
       "title": "Add non-record submission: 12L 24min Vocab1792 FlashMuon LinearScaleInit XSA5LastGated RReLU2 Int6AWQ MixedBits",
@@ -37399,59 +37540,33 @@
       "author": "Viswanath129",
       "state": "OPEN",
       "created": "2026-03-22T04:11:19Z",
-      "updated": "2026-03-22T04:15:30Z",
+      "updated": "2026-04-09T15:33:46Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
-        "records/viswanath129/00_START_HERE.md",
-        "records/viswanath129/AUTOMATED_TRAINING.md",
-        "records/viswanath129/CODE_REVIEW.md",
-        "records/viswanath129/CODE_WALKTHROUGH.md",
-        "records/viswanath129/FINAL_CHECKLIST.md",
-        "records/viswanath129/FINAL_COMPETITIVE_CHANGES.md",
-        "records/viswanath129/FINAL_SUMMARY.txt",
-        "records/viswanath129/FIXES_APPLIED.md",
-        "records/viswanath129/GITHUB_SETUP.md",
-        "records/viswanath129/LICENSE",
-        "records/viswanath129/OpenAI Model Craft_ Parameter Golf Challenge Terms and Conditions.pdf",
-        "records/viswanath129/QUICK_REFERENCE.md",
-        "records/viswanath129/README.md",
-        "records/viswanath129/READY_TO_TRAIN.md",
-        "records/viswanath129/SOLUTION_COMPLETE.md",
-        "records/viswanath129/SUBMISSION.md",
-        "records/viswanath129/SUMMARY.md",
-        "records/viswanath129/TESTING.md",
-        "records/viswanath129/THEORETICAL_VERIFICATION.md",
-        "records/viswanath129/TRAINING_GUIDE.md",
-        "records/viswanath129/VERIFICATION_COMPLETE.md",
-        "records/viswanath129/VERIFICATION_INDEX.txt",
-        "records/viswanath129/WRITEUP.md",
-        "records/viswanath129/requirements.txt",
-        "records/viswanath129/run.sh",
-        "records/viswanath129/run_final_competitive.sh",
-        "records/viswanath129/submission.json",
-        "records/viswanath129/train_automated.bat",
-        "records/viswanath129/train_automated.py",
-        "records/viswanath129/train_automated.sh",
-        "records/viswanath129/train_gpt.py"
+        "records/track_10min_16mb/viswanath129/README.md",
+        "records/track_10min_16mb/viswanath129/logs.txt",
+        "records/track_10min_16mb/viswanath129/requirements.txt",
+        "records/track_10min_16mb/viswanath129/submission.json",
+        "records/track_10min_16mb/viswanath129/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "neural",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "text"
+      "confidence": "HIGH"
     },
     {
       "number": 395,
