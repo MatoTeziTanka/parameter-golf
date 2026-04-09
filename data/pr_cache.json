@@ -1,7 +1,197 @@
 {
-  "last_fetch": "2026-04-09T07:01:34.597507+00:00",
-  "api_calls_used": 135,
+  "last_fetch": "2026-04-09T08:51:09.779305+00:00",
+  "api_calls_used": 136,
   "prs": [
+    {
+      "number": 1495,
+      "title": "Add non-record submission: 12L 24min Vocab1792 FlashMuon LinearScaleInit XSA5LastGated RReLU2 Int6AWQ MixedBits",
+      "author": "shram86",
+      "state": "OPEN",
+      "created": "2026-04-09T08:39:51Z",
+      "updated": "2026-04-09T08:39:51Z",
+      "bpb": 1.10768987,
+      "seeds": null,
+      "artifact_bytes": 18629446,
+      "technique_summary": "Muon + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-07_FlashMuon_LinearScaleInit_XSA5LastGated_RReLU2_Int6AWQ/README.md",
+        "records/track_non_record_16mb/2026-04-07_FlashMuon_LinearScaleInit_XSA5LastGated_RReLU2_Int6AWQ/log_ flash_attn_3.txt",
+        "records/track_non_record_16mb/2026-04-07_FlashMuon_LinearScaleInit_XSA5LastGated_RReLU2_Int6AWQ/log_ sdpa_fallback.txt",
+        "records/track_non_record_16mb/2026-04-07_FlashMuon_LinearScaleInit_XSA5LastGated_RReLU2_Int6AWQ/submission.json",
+        "records/track_non_record_16mb/2026-04-07_FlashMuon_LinearScaleInit_XSA5LastGated_RReLU2_Int6AWQ/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-09_12L_24min_Vocab1792_FlashMuon_LinearScaleInit_XSA5LastGated_RReLU2_Int6AWQMixedBits/README.md",
+        "records/track_non_record_16mb/2026-04-09_12L_24min_Vocab1792_FlashMuon_LinearScaleInit_XSA5LastGated_RReLU2_Int6AWQMixedBits/log.txt",
+        "records/track_non_record_16mb/2026-04-09_12L_24min_Vocab1792_FlashMuon_LinearScaleInit_XSA5LastGated_RReLU2_Int6AWQMixedBits/submission.json",
+        "records/track_non_record_16mb/2026-04-09_12L_24min_Vocab1792_FlashMuon_LinearScaleInit_XSA5LastGated_RReLU2_Int6AWQMixedBits/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1494,
+      "title": "Record: XSA-all + GPTQ + FA3 dtype fix (val_bpb: 1.1220)",
+      "author": "G3sparky",
+      "state": "OPEN",
+      "created": "2026-04-09T07:52:14Z",
+      "updated": "2026-04-09T07:57:29Z",
+      "bpb": 1.122,
+      "seeds": null,
+      "artifact_bytes": 15900000,
+      "technique_summary": "GPTQ + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-09_XSA_GPTQ_FA3_dtype_fix/README.md",
+        "records/track_10min_16mb/2026-04-09_XSA_GPTQ_FA3_dtype_fix/submission.json",
+        "records/track_10min_16mb/2026-04-09_XSA_GPTQ_FA3_dtype_fix/train.log",
+        "records/track_10min_16mb/2026-04-09_XSA_GPTQ_FA3_dtype_fix/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1493,
+      "title": "Record: SP8192 + 3-Layer Recurrence + Parallel Residuals + QK-Gain 5.25 + Legal TTT — val_bpb 1.0810 (3-seed mean)",
+      "author": "bigbag",
+      "state": "OPEN",
+      "created": "2026-04-09T07:18:35Z",
+      "updated": "2026-04-09T07:18:44Z",
+      "bpb": 1.081,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1492,
+      "title": "Record: SP8192 + 3-Layer Recurrence + Parallel Residuals + QK-Gain 5.25 + Legal TTT — val_bpb 1.0810 (3-seed mean)",
+      "author": "bigbag",
+      "state": "CLOSED",
+      "created": "2026-04-09T07:11:33Z",
+      "updated": "2026-04-09T07:18:48Z",
+      "bpb": 1.081,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        ".gitignore",
+        "CLAUDE.md",
+        "notebooks/step1.ipynb",
+        "notebooks/step1_5.ipynb",
+        "notebooks/step2.ipynb",
+        "notebooks/step3.ipynb",
+        "notebooks/step3_1.ipynb",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/train_seed999.log",
+        "results/step1/baseline/result.json",
+        "results/step1/baseline/train.log",
+        "results/step1/bigram_hash/result.json",
+        "results/step1/bigram_hash/train.log",
+        "results/step1/bitlinear_ternary/result.json",
+        "results/step1/bitlinear_ternary/train.log",
+        "results/step1/combined_best/result.json",
+        "results/step1/combined_best/train.log",
+        "results/step1/depth_10L/result.json",
+        "results/step1/depth_10L/train.log",
+        "results/step1/depth_recurrent/result.json",
+        "results/step1/depth_recurrent/train.log",
+        "results/step1/mlp_3x/result.json",
+        "results/step1/mlp_3x/train.log",
+        "results/step1/mlp_4x/result.json",
+        "results/step1/mlp_4x/train.log",
+        "results/step1/ortho_init/result.json",
+        "results/step1/ortho_init/train.log",
+        "results/step1/smeargate/result.json",
+        "results/step1/smeargate/train.log",
+        "results/step2/s2_bigram_on_best/result.json",
+        "results/step2/s2_bigram_on_best/train.log",
+        "results/step2/s2_ema/result.json",
+        "results/step2/s2_ema/train.log",
+        "results/step2/s2_foundation/result.json",
+        "results/step2/s2_foundation/train.log",
+        "results/step2/s2_full_stack/result.json",
+        "results/step2/s2_full_stack/train.log",
+        "results/step2/s2_head_temp/result.json",
+        "results/step2/s2_head_temp/train.log",
+        "results/step2/s2_ln_scale/result.json",
+        "results/step2/s2_ln_scale/train.log",
+        "results/step2/s2_ortho_on_best/result.json",
+        "results/step2/s2_ortho_on_best/train.log",
+        "results/step2/s2_partial_rope/result.json",
+        "results/step2/s2_partial_rope/train.log",
+        "results/step2/s2_refined/result.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1491,
       "title": "Non-record: Faithful mHC-lite",
