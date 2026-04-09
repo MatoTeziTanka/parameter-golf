@@ -1,7 +1,225 @@
 {
-  "last_fetch": "2026-04-09T00:00:09.739482+00:00",
-  "api_calls_used": 133,
+  "last_fetch": "2026-04-09T03:22:32.766735+00:00",
+  "api_calls_used": 134,
   "prs": [
+    {
+      "number": 1488,
+      "title": "Record: SP1024 + SLOT-24 + QK5.25 + Pre-Quant AdamW TTT — val_bpb 0.8265 (3-seed mean)",
+      "author": "ndokutovich",
+      "state": "OPEN",
+      "created": "2026-04-09T03:00:34Z",
+      "updated": "2026-04-09T03:00:34Z",
+      "bpb": 0.8265,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-09_SP1024_SLOT24_QK525_PreQuantTTT10/README.md",
+        "records/track_10min_16mb/2026-04-09_SP1024_SLOT24_QK525_PreQuantTTT10/submission.json",
+        "records/track_10min_16mb/2026-04-09_SP1024_SLOT24_QK525_PreQuantTTT10/train_gpt.py",
+        "records/track_10min_16mb/2026-04-09_SP1024_SLOT24_QK525_PreQuantTTT10/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-09_SP1024_SLOT24_QK525_PreQuantTTT10/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-09_SP1024_SLOT24_QK525_PreQuantTTT10/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1487,
+      "title": "Record: SP8192 + Recur345 + Par7 + EMA + QK5.25 + Pre-Quant TTT 10ep — val_bpb 1.0600 (3-seed mean)",
+      "author": "ndokutovich",
+      "state": "OPEN",
+      "created": "2026-04-09T01:45:11Z",
+      "updated": "2026-04-09T01:45:11Z",
+      "bpb": 1.06,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK525_PreQuantTTT10/README.md",
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK525_PreQuantTTT10/submission.json",
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK525_PreQuantTTT10/train_gpt.py",
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK525_PreQuantTTT10/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK525_PreQuantTTT10/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK525_PreQuantTTT10/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1486,
+      "title": "Non-Record: U-Net Transformer + Int8 QAT + LeakyReLU² + Muon — 1.6656 BPB (DGX Spark)",
+      "author": "AlirezaAlampour",
+      "state": "OPEN",
+      "created": "2026-04-09T00:24:55Z",
+      "updated": "2026-04-09T00:24:55Z",
+      "bpb": 1.6656,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/README.md",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/requirements.txt",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/submission.json",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/train_seed314.log",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1485,
+      "title": "Record: SP8192 + 3-Layer Depth Recurrence + Parallel Residuals + EMA + QK5 + Pre-Quant AdamW TTT — val_bpb 1.0679 (3-seed mean)",
+      "author": "ndokutovich",
+      "state": "OPEN",
+      "created": "2026-04-09T00:21:25Z",
+      "updated": "2026-04-09T00:21:25Z",
+      "bpb": 1.0679,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK5_PreQuantTTT/README.md",
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK5_PreQuantTTT/submission.json",
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK5_PreQuantTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK5_PreQuantTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK5_PreQuantTTT/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-09_SP8192_Recur345_Par7_EMA_QK5_PreQuantTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1484,
+      "title": "Non-Record: U-Net Transformer + Int8 QAT + LeakyReLU² + Muon — 1.6656 BPB (DGX Spark)",
+      "author": "AlirezaAlampour",
+      "state": "CLOSED",
+      "created": "2026-04-09T00:20:07Z",
+      "updated": "2026-04-09T00:21:37Z",
+      "bpb": 1.6656,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + INT8 + EMA",
+      "file_paths": [
+        ".gitignore",
+        "CONTEXT_FOR_HUMANS.md",
+        "CONTEXT_FOR_LLMs.md",
+        "Dockerfile",
+        "README.md",
+        "app.py",
+        "autoresearch.py",
+        "configs/default.yaml",
+        "docker-compose.yml",
+        "eval/__init__.py",
+        "eval/evaluate.py",
+        "eval/ngram_cache.py",
+        "eval/ttt.py",
+        "experiments/results/baseline_10layer_d512.csv",
+        "experiments/results/lr_finder_lr_finder_5x4_d512.csv",
+        "experiments/results/overnight_20260405_235113.csv",
+        "experiments/results/overnight_20260405_235207.csv",
+        "experiments/results/overnight_20260405_235945.csv",
+        "experiments/results/shared_10x2_d512.csv",
+        "experiments/results/shared_3x7_d512.csv",
+        "experiments/results/shared_4x5_d512.csv",
+        "experiments/results/shared_5x4_d384.csv",
+        "experiments/results/shared_5x4_d448.csv",
+        "experiments/results/shared_5x4_d512.csv",
+        "experiments/results/shared_5x4_d512_mlp2.0.csv",
+        "experiments/results/shared_5x4_d512_mlp2.5.csv",
+        "experiments/results/shared_5x4_d512_mlp3.5.csv",
+        "experiments/results/shared_5x4_d512_mlp4.0.csv",
+        "experiments/results/shared_5x4_d576.csv",
+        "experiments/results/shared_5x4_d640.csv",
+        "experiments/results/shared_6x3_d512.csv",
+        "experiments/results/shared_7x3_d512.csv",
+        "experiments/results/smoke_test.csv",
+        "experiments/results/smoke_test_tiny.csv",
+        "experiments_v2.sh",
+        "models/__init__.py",
+        "models/tiny_gpt.py",
+        "models/tiny_gpt_shared.py",
+        "models/tiny_mamba.py",
+        "overnight_batch.sh",
+        "program.md",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/README.md",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/requirements.txt",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/submission.json",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/train_seed314.log",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-07_UNet_Int8QAT_LeakyReLU2_Muon/train_seed999.log",
+        "requirements.txt",
+        "run_experiment.sh"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram_path",
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1483,
       "title": "Non-record: AIR-MM v2 Debug Prototype — experimental importance routing",
@@ -52,7 +270,7 @@
       "author": "aamodbhatt",
       "state": "OPEN",
       "created": "2026-04-08T22:29:02Z",
-      "updated": "2026-04-08T22:29:02Z",
+      "updated": "2026-04-09T01:20:17Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -542,7 +760,7 @@
       "author": "zantasimperator-blip",
       "state": "OPEN",
       "created": "2026-04-08T09:38:45Z",
-      "updated": "2026-04-08T09:40:36Z",
+      "updated": "2026-04-09T00:56:06Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -715,7 +933,7 @@
       "author": "sisegod",
       "state": "OPEN",
       "created": "2026-04-08T06:15:46Z",
-      "updated": "2026-04-08T09:20:59Z",
+      "updated": "2026-04-09T03:07:07Z",
       "bpb": 0.011,
       "seeds": 3,
       "artifact_bytes": 15912601,
@@ -741,9 +959,11 @@
         "records/track_10min_16mb/HANDOFF_2026-04-09_phase5a.md",
         "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/PR_BODY.md",
         "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/README.md",
+        "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/eval_trajectory.log",
         "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/run.sh",
         "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/submission.json",
-        "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/train_gpt.py"
+        "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-09_v62_p5a_hm5_phase5a/train_summary.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -10390,7 +10610,7 @@
       "author": "sisegod",
       "state": "OPEN",
       "created": "2026-03-30T06:21:24Z",
-      "updated": "2026-03-30T06:21:24Z",
+      "updated": "2026-04-09T02:47:42Z",
       "bpb": 1.1986,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -10408,15 +10628,15 @@
       ],
       "track": "non-record",
       "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 1122,
