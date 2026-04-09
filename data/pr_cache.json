@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-09T21:50:15.925280+00:00",
-  "api_calls_used": 140,
+  "last_fetch": "2026-04-09T22:44:42.676447+00:00",
+  "api_calls_used": 141,
   "prs": [
     {
       "number": 1513,
@@ -118,9 +118,9 @@
       "number": 1511,
       "title": "Update README leaderboard for April records",
       "author": "cocohearts",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-09T21:14:58Z",
-      "updated": "2026-04-09T21:31:22Z",
+      "updated": "2026-04-09T22:22:40Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -129,7 +129,8 @@
         "README.md"
       ],
       "maintainer_comments": [
-        "cocohearts: @Robby955 taking a look!"
+        "cocohearts: @Robby955 taking a look!",
+        "cocohearts: @Robby955 thank you for pointing this out!"
       ],
       "compliance_keywords": [
         "ttt",
@@ -141,11 +142,9 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "no-submission-json"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -3468,9 +3467,9 @@
       "number": 1412,
       "title": "Record: SP8192 + Parallel Residuals + Hessian-Aware SDClip — val_bpb 1.08354 (3-seed mean)",
       "author": "Robby955",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-06T08:18:29Z",
-      "updated": "2026-04-09T21:20:01Z",
+      "updated": "2026-04-09T22:20:00Z",
       "bpb": 1.08354,
       "seeds": 3,
       "artifact_bytes": null,
@@ -3498,9 +3497,9 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "artifact-unknown"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -12199,13 +12198,15 @@
       "author": "mradassaad",
       "state": "OPEN",
       "created": "2026-03-30T00:55:11Z",
-      "updated": "2026-04-09T19:14:04Z",
+      "updated": "2026-04-09T22:42:35Z",
       "bpb": 1.5633,
       "seeds": null,
       "artifact_bytes": 10892315,
       "technique_summary": "TTT + Muon + SSM + INT6",
       "file_paths": [
+        ".gitignore",
         "CLAUDE.md",
+        "profiling/per_position_loss.py",
         "profiling/profile_ddp.py",
         "profiling/profile_step.py",
         "records/track_non_record_16mb/2026-03-29_Mamba3Hybrid_QAT/README.md",
@@ -28190,7 +28191,7 @@
       "author": "ChideraIbe123",
       "state": "OPEN",
       "created": "2026-03-25T03:58:35Z",
-      "updated": "2026-04-09T21:11:44Z",
+      "updated": "2026-04-09T22:22:04Z",
       "bpb": 0.5793,
       "seeds": 3,
       "artifact_bytes": 15740000,
