@@ -1,7 +1,43 @@
 {
-  "last_fetch": "2026-04-10T13:55:22.557616+00:00",
-  "api_calls_used": 147,
+  "last_fetch": "2026-04-10T14:52:14.164344+00:00",
+  "api_calls_used": 148,
   "prs": [
+    {
+      "number": 1526,
+      "title": "Autoresearch quantization first plan",
+      "author": "aravindkrishna2008",
+      "state": "CLOSED",
+      "created": "2026-04-10T14:24:28Z",
+      "updated": "2026-04-10T14:24:40Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "README.md",
+        "autoresearch.py",
+        "fix_tokenizer.py",
+        "prepare.py",
+        "program.md",
+        "results.jsonl",
+        "train.py",
+        "train_gpt.py",
+        "train_gpt_2.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1525,
       "title": "Non-Record 16 MB Track : Hybrid XSA-SSM ",
@@ -4658,12 +4694,18 @@
       "author": "mini-sarami",
       "state": "OPEN",
       "created": "2026-04-05T08:23:17Z",
-      "updated": "2026-04-05T08:23:17Z",
+      "updated": "2026-04-10T14:24:25Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
       "technique_summary": "INT8",
       "file_paths": [
+        "records/Non-Record_V22_4090_Int6_Patchin/README.md",
+        "records/Non-Record_V22_4090_Int6_Patchin/submission.int6.ptz",
+        "records/Non-Record_V22_4090_Int6_Patchin/train_gpt.py",
+        "records/track_10min_16mb/Non-Record_V22_4090_Int6_Patchin/README.md",
+        "records/track_10min_16mb/Non-Record_V22_4090_Int6_Patchin/submission.int6.ptz",
+        "records/track_10min_16mb/Non-Record_V22_4090_Int6_Patchin/train_gpt.py",
         "train_gpt.py"
       ],
       "maintainer_comments": [],
@@ -4675,14 +4717,14 @@
       "technique_tags": [
         "neural"
       ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "no-submission-json"
       ],
-      "confidence": "HIGH",
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 1374,
