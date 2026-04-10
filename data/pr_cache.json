@@ -1,7 +1,41 @@
 {
-  "last_fetch": "2026-04-10T15:57:27.030993+00:00",
-  "api_calls_used": 149,
+  "last_fetch": "2026-04-10T16:58:58.795218+00:00",
+  "api_calls_used": 150,
   "prs": [
+    {
+      "number": 1527,
+      "title": "Record: 6L depth minimalism U-Net sliding window - val_bpb 1.2025",
+      "author": "alphastar1111",
+      "state": "OPEN",
+      "created": "2026-04-10T16:09:59Z",
+      "updated": "2026-04-10T16:09:59Z",
+      "bpb": 1.2026,
+      "seeds": null,
+      "artifact_bytes": 15841206,
+      "technique_summary": "LeakyReLU² + TTT + Muon + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-10_6L_DepthMinimalism_UNet_SlidingWindow/README.md",
+        "records/track_10min_16mb/2026-04-10_6L_DepthMinimalism_UNet_SlidingWindow/submission.json",
+        "records/track_10min_16mb/2026-04-10_6L_DepthMinimalism_UNet_SlidingWindow/train_26e6b4a.log",
+        "records/track_10min_16mb/2026-04-10_6L_DepthMinimalism_UNet_SlidingWindow/train_gpt_26e6b4a.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1526,
       "title": "Autoresearch quantization first plan",
