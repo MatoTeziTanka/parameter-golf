@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-10T12:07:31Z",
+  "generated_at": "2026-04-10T13:55:32Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1377,
-    "matched_pr_count": 1011,
+    "pr_count": 1379,
+    "matched_pr_count": 1013,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
       "ALIVE": 220,
-      "AT_RISK": 88,
-      "DEAD": 386,
-      "INCOMPLETE": 674,
+      "AT_RISK": 87,
+      "DEAD": 388,
+      "INCOMPLETE": 675,
       "UNKNOWN": 0
     }
   },
@@ -23,8 +23,8 @@
       "count": 517,
       "author_count": 249,
       "alive_count": 110,
-      "dead_count": 169,
-      "at_risk_count": 52,
+      "dead_count": 170,
+      "at_risk_count": 51,
       "incomplete_count": 186,
       "unknown_count": 0,
       "best_alive": {
@@ -3373,7 +3373,7 @@
             {
               "number": 1379,
               "author": "LucasErcolano",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 0.4162,
               "created": "2026-04-05T12:30:12Z"
             }
@@ -8641,7 +8641,7 @@
         {
           "number": 1379,
           "author": "LucasErcolano",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 0.4162,
           "created": "2026-04-05T12:30:12Z"
         },
@@ -16293,12 +16293,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 399,
-      "author_count": 261,
+      "count": 400,
+      "author_count": 262,
       "alive_count": 84,
-      "dead_count": 92,
-      "at_risk_count": 36,
-      "incomplete_count": 185,
+      "dead_count": 93,
+      "at_risk_count": 35,
+      "incomplete_count": 186,
       "unknown_count": 0,
       "best_alive": {
         "number": 1488,
@@ -18484,7 +18484,7 @@
             {
               "number": 1379,
               "author": "LucasErcolano",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 0.4162,
               "created": "2026-04-05T12:30:12Z"
             }
@@ -19943,6 +19943,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.232,
               "created": "2026-03-20T11:35:04Z"
+            }
+          ]
+        },
+        {
+          "author": "Jash-Vora",
+          "pr_count": 1,
+          "best_bpb": 1.255216,
+          "prs": [
+            {
+              "number": 1525,
+              "author": "Jash-Vora",
+              "status": "INCOMPLETE",
+              "bpb": 1.255216,
+              "created": "2026-04-10T13:06:38Z"
             }
           ]
         },
@@ -23472,7 +23486,7 @@
         {
           "number": 1379,
           "author": "LucasErcolano",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 0.4162,
           "created": "2026-04-05T12:30:12Z"
         },
@@ -23720,6 +23734,13 @@
           "status": "ALIVE",
           "bpb": 1.0778,
           "created": "2026-04-10T09:34:37Z"
+        },
+        {
+          "number": 1525,
+          "author": "Jash-Vora",
+          "status": "INCOMPLETE",
+          "bpb": 1.255216,
+          "created": "2026-04-10T13:06:38Z"
         }
       ]
     },
@@ -36832,12 +36853,12 @@
     {
       "name": "XSA",
       "kind": "legal",
-      "count": 73,
-      "author_count": 59,
+      "count": 75,
+      "author_count": 60,
       "alive_count": 18,
-      "dead_count": 21,
+      "dead_count": 22,
       "at_risk_count": 3,
-      "incomplete_count": 31,
+      "incomplete_count": 32,
       "unknown_count": 0,
       "best_alive": {
         "number": 1263,
@@ -37066,6 +37087,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.1365,
               "created": "2026-03-22T20:32:55Z"
+            }
+          ]
+        },
+        {
+          "author": "Jash-Vora",
+          "pr_count": 2,
+          "best_bpb": 1.255216,
+          "prs": [
+            {
+              "number": 1524,
+              "author": "Jash-Vora",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-10T13:03:31Z"
+            },
+            {
+              "number": 1525,
+              "author": "Jash-Vora",
+              "status": "INCOMPLETE",
+              "bpb": 1.255216,
+              "created": "2026-04-10T13:06:38Z"
             }
           ]
         },
@@ -38281,6 +38323,20 @@
           "status": "INCOMPLETE",
           "bpb": 1.122,
           "created": "2026-04-09T07:52:14Z"
+        },
+        {
+          "number": 1524,
+          "author": "Jash-Vora",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-04-10T13:03:31Z"
+        },
+        {
+          "number": 1525,
+          "author": "Jash-Vora",
+          "status": "INCOMPLETE",
+          "bpb": 1.255216,
+          "created": "2026-04-10T13:06:38Z"
         }
       ]
     },
@@ -39343,12 +39399,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 27,
-      "author_count": 18,
+      "count": 29,
+      "author_count": 19,
       "alive_count": 1,
-      "dead_count": 5,
+      "dead_count": 6,
       "at_risk_count": 2,
-      "incomplete_count": 17,
+      "incomplete_count": 18,
       "unknown_count": 0,
       "best_alive": {
         "number": 914,
@@ -39465,6 +39521,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.1526,
               "created": "2026-04-04T19:04:09Z"
+            }
+          ]
+        },
+        {
+          "author": "Jash-Vora",
+          "pr_count": 2,
+          "best_bpb": 1.255216,
+          "prs": [
+            {
+              "number": 1524,
+              "author": "Jash-Vora",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-10T13:03:31Z"
+            },
+            {
+              "number": 1525,
+              "author": "Jash-Vora",
+              "status": "INCOMPLETE",
+              "bpb": 1.255216,
+              "created": "2026-04-10T13:06:38Z"
             }
           ]
         },
@@ -39861,6 +39938,20 @@
           "status": "INCOMPLETE",
           "bpb": 1.14502,
           "created": "2026-04-08T18:29:41Z"
+        },
+        {
+          "number": 1524,
+          "author": "Jash-Vora",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-04-10T13:03:31Z"
+        },
+        {
+          "number": 1525,
+          "author": "Jash-Vora",
+          "status": "INCOMPLETE",
+          "bpb": 1.255216,
+          "created": "2026-04-10T13:06:38Z"
         }
       ]
     },
@@ -42004,8 +42095,8 @@
       "count": 214,
       "author_count": 90,
       "alive_count": 35,
-      "dead_count": 82,
-      "at_risk_count": 63,
+      "dead_count": 83,
+      "at_risk_count": 62,
       "incomplete_count": 30,
       "unknown_count": 0,
       "best_alive": {
@@ -43618,7 +43709,7 @@
             {
               "number": 1379,
               "author": "LucasErcolano",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 0.4162,
               "created": "2026-04-05T12:30:12Z"
             }
@@ -45421,7 +45512,7 @@
         {
           "number": 1379,
           "author": "LucasErcolano",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 0.4162,
           "created": "2026-04-05T12:30:12Z"
         },
@@ -46642,12 +46733,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 399,
-      "author_count": 261,
+      "count": 400,
+      "author_count": 262,
       "alive_count": 84,
-      "dead_count": 92,
-      "at_risk_count": 36,
-      "incomplete_count": 185,
+      "dead_count": 93,
+      "at_risk_count": 35,
+      "incomplete_count": 186,
       "unknown_count": 0,
       "best_alive": {
         "number": 1488,
@@ -48833,7 +48924,7 @@
             {
               "number": 1379,
               "author": "LucasErcolano",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 0.4162,
               "created": "2026-04-05T12:30:12Z"
             }
@@ -50292,6 +50383,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.232,
               "created": "2026-03-20T11:35:04Z"
+            }
+          ]
+        },
+        {
+          "author": "Jash-Vora",
+          "pr_count": 1,
+          "best_bpb": 1.255216,
+          "prs": [
+            {
+              "number": 1525,
+              "author": "Jash-Vora",
+              "status": "INCOMPLETE",
+              "bpb": 1.255216,
+              "created": "2026-04-10T13:06:38Z"
             }
           ]
         },
@@ -53821,7 +53926,7 @@
         {
           "number": 1379,
           "author": "LucasErcolano",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 0.4162,
           "created": "2026-04-05T12:30:12Z"
         },
@@ -54069,6 +54174,13 @@
           "status": "ALIVE",
           "bpb": 1.0778,
           "created": "2026-04-10T09:34:37Z"
+        },
+        {
+          "number": 1525,
+          "author": "Jash-Vora",
+          "status": "INCOMPLETE",
+          "bpb": 1.255216,
+          "created": "2026-04-10T13:06:38Z"
         }
       ]
     },
@@ -54078,8 +54190,8 @@
       "count": 517,
       "author_count": 249,
       "alive_count": 110,
-      "dead_count": 169,
-      "at_risk_count": 52,
+      "dead_count": 170,
+      "at_risk_count": 51,
       "incomplete_count": 186,
       "unknown_count": 0,
       "best_alive": {
@@ -57428,7 +57540,7 @@
             {
               "number": 1379,
               "author": "LucasErcolano",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 0.4162,
               "created": "2026-04-05T12:30:12Z"
             }
@@ -62696,7 +62808,7 @@
         {
           "number": 1379,
           "author": "LucasErcolano",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 0.4162,
           "created": "2026-04-05T12:30:12Z"
         },
@@ -76125,8 +76237,8 @@
       "count": 214,
       "author_count": 90,
       "alive_count": 35,
-      "dead_count": 82,
-      "at_risk_count": 63,
+      "dead_count": 83,
+      "at_risk_count": 62,
       "incomplete_count": 30,
       "unknown_count": 0,
       "best_alive": {
@@ -77739,7 +77851,7 @@
             {
               "number": 1379,
               "author": "LucasErcolano",
-              "status": "AT_RISK",
+              "status": "DEAD",
               "bpb": 0.4162,
               "created": "2026-04-05T12:30:12Z"
             }
@@ -79542,7 +79654,7 @@
         {
           "number": 1379,
           "author": "LucasErcolano",
-          "status": "AT_RISK",
+          "status": "DEAD",
           "bpb": 0.4162,
           "created": "2026-04-05T12:30:12Z"
         },
@@ -87100,12 +87212,12 @@
     {
       "name": "XSA",
       "kind": "legal",
-      "count": 73,
-      "author_count": 59,
+      "count": 75,
+      "author_count": 60,
       "alive_count": 18,
-      "dead_count": 21,
+      "dead_count": 22,
       "at_risk_count": 3,
-      "incomplete_count": 31,
+      "incomplete_count": 32,
       "unknown_count": 0,
       "best_alive": {
         "number": 1263,
@@ -87334,6 +87446,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.1365,
               "created": "2026-03-22T20:32:55Z"
+            }
+          ]
+        },
+        {
+          "author": "Jash-Vora",
+          "pr_count": 2,
+          "best_bpb": 1.255216,
+          "prs": [
+            {
+              "number": 1524,
+              "author": "Jash-Vora",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-10T13:03:31Z"
+            },
+            {
+              "number": 1525,
+              "author": "Jash-Vora",
+              "status": "INCOMPLETE",
+              "bpb": 1.255216,
+              "created": "2026-04-10T13:06:38Z"
             }
           ]
         },
@@ -88549,6 +88682,20 @@
           "status": "INCOMPLETE",
           "bpb": 1.122,
           "created": "2026-04-09T07:52:14Z"
+        },
+        {
+          "number": 1524,
+          "author": "Jash-Vora",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-04-10T13:03:31Z"
+        },
+        {
+          "number": 1525,
+          "author": "Jash-Vora",
+          "status": "INCOMPLETE",
+          "bpb": 1.255216,
+          "created": "2026-04-10T13:06:38Z"
         }
       ]
     },
@@ -90604,12 +90751,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 27,
-      "author_count": 18,
+      "count": 29,
+      "author_count": 19,
       "alive_count": 1,
-      "dead_count": 5,
+      "dead_count": 6,
       "at_risk_count": 2,
-      "incomplete_count": 17,
+      "incomplete_count": 18,
       "unknown_count": 0,
       "best_alive": {
         "number": 914,
@@ -90726,6 +90873,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.1526,
               "created": "2026-04-04T19:04:09Z"
+            }
+          ]
+        },
+        {
+          "author": "Jash-Vora",
+          "pr_count": 2,
+          "best_bpb": 1.255216,
+          "prs": [
+            {
+              "number": 1524,
+              "author": "Jash-Vora",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-10T13:03:31Z"
+            },
+            {
+              "number": 1525,
+              "author": "Jash-Vora",
+              "status": "INCOMPLETE",
+              "bpb": 1.255216,
+              "created": "2026-04-10T13:06:38Z"
             }
           ]
         },
@@ -91122,6 +91290,20 @@
           "status": "INCOMPLETE",
           "bpb": 1.14502,
           "created": "2026-04-08T18:29:41Z"
+        },
+        {
+          "number": 1524,
+          "author": "Jash-Vora",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-04-10T13:03:31Z"
+        },
+        {
+          "number": 1525,
+          "author": "Jash-Vora",
+          "status": "INCOMPLETE",
+          "bpb": 1.255216,
+          "created": "2026-04-10T13:06:38Z"
         }
       ]
     },
@@ -93274,10 +93456,10 @@
       "left": "LeakyReLU\u00b2",
       "right": "SSM/Mamba/S4D",
       "left_count": 102,
-      "right_count": 27,
+      "right_count": 29,
       "left_people": 78,
-      "right_people": 18,
-      "score": 2754
+      "right_people": 19,
+      "score": 2958
     },
     {
       "left": "QAT",
@@ -93292,10 +93474,19 @@
       "left": "BigramHash",
       "right": "SSM/Mamba/S4D",
       "left_count": 82,
-      "right_count": 27,
+      "right_count": 29,
       "left_people": 72,
-      "right_people": 18,
-      "score": 2214
+      "right_people": 19,
+      "score": 2378
+    },
+    {
+      "left": "SWA",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 75,
+      "right_count": 29,
+      "left_people": 65,
+      "right_people": 19,
+      "score": 2175
     },
     {
       "left": "QAT",
@@ -93305,24 +93496,6 @@
       "left_people": 87,
       "right_people": 18,
       "score": 2052
-    },
-    {
-      "left": "SWA",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 75,
-      "right_count": 27,
-      "left_people": 65,
-      "right_people": 18,
-      "score": 2025
-    },
-    {
-      "left": "XSA",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 73,
-      "right_count": 27,
-      "left_people": 59,
-      "right_people": 18,
-      "score": 1971
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -93379,6 +93552,15 @@
       "score": 1558
     },
     {
+      "left": "SwiGLU",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 52,
+      "right_count": 29,
+      "left_people": 44,
+      "right_people": 19,
+      "score": 1508
+    },
+    {
       "left": "SWA",
       "right": "JEPA",
       "left_count": 75,
@@ -93388,22 +93570,13 @@
       "score": 1425
     },
     {
-      "left": "SwiGLU",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 52,
-      "right_count": 27,
-      "left_people": 44,
-      "right_people": 18,
-      "score": 1404
-    },
-    {
       "left": "XSA",
       "right": "JEPA",
-      "left_count": 73,
+      "left_count": 75,
       "right_count": 19,
-      "left_people": 59,
+      "left_people": 60,
       "right_people": 18,
-      "score": 1387
+      "score": 1425
     },
     {
       "left": "BigramHash",
@@ -93426,11 +93599,11 @@
     {
       "left": "XSA",
       "right": "MoE",
-      "left_count": 73,
+      "left_count": 75,
       "right_count": 17,
-      "left_people": 59,
+      "left_people": 60,
       "right_people": 14,
-      "score": 1241
+      "score": 1275
     },
     {
       "left": "SWA",
@@ -93444,11 +93617,11 @@
     {
       "left": "XSA",
       "right": "Ternary Weights",
-      "left_count": 73,
+      "left_count": 75,
       "right_count": 16,
-      "left_people": 59,
+      "left_people": 60,
       "right_people": 13,
-      "score": 1168
+      "score": 1200
     },
     {
       "left": "TTT",
@@ -93498,11 +93671,11 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 399,
+      "left_count": 400,
       "right_count": 2,
-      "left_people": 261,
+      "left_people": 262,
       "right_people": 2,
-      "score": 798
+      "score": 800
     },
     {
       "left": "QAT",
@@ -93559,6 +93732,15 @@
       "score": 668
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Parallel Muon",
+      "left_count": 29,
+      "right_count": 23,
+      "left_people": 19,
+      "right_people": 13,
+      "score": 667
+    },
+    {
       "left": "QAT",
       "right": "Weight Sharing",
       "left_count": 108,
@@ -93566,15 +93748,6 @@
       "left_people": 87,
       "right_people": 4,
       "score": 648
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Parallel Muon",
-      "left_count": 27,
-      "right_count": 23,
-      "left_people": 18,
-      "right_people": 13,
-      "score": 621
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -93613,6 +93786,15 @@
       "score": 525
     },
     {
+      "left": "XSA",
+      "right": "Progressive Depth",
+      "left_count": 75,
+      "right_count": 7,
+      "left_people": 60,
+      "right_people": 3,
+      "score": 525
+    },
+    {
       "left": "TTT",
       "right": "Flash Attention",
       "left_count": 517,
@@ -93622,13 +93804,13 @@
       "score": 517
     },
     {
-      "left": "XSA",
-      "right": "Progressive Depth",
-      "left_count": 73,
-      "right_count": 7,
-      "left_people": 59,
-      "right_people": 3,
-      "score": 511
+      "left": "SSM/Mamba/S4D",
+      "right": "MoE",
+      "left_count": 29,
+      "right_count": 17,
+      "left_people": 19,
+      "right_people": 14,
+      "score": 493
     },
     {
       "left": "BigramHash",
@@ -93638,15 +93820,6 @@
       "left_people": 72,
       "right_people": 4,
       "score": 492
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "MoE",
-      "left_count": 27,
-      "right_count": 17,
-      "left_people": 18,
-      "right_people": 14,
-      "score": 459
     },
     {
       "left": "SWA",
@@ -93660,11 +93833,11 @@
     {
       "left": "XSA",
       "right": "Weight Sharing",
-      "left_count": 73,
+      "left_count": 75,
       "right_count": 6,
-      "left_people": 59,
+      "left_people": 60,
       "right_people": 4,
-      "score": 438
+      "score": 450
     },
     {
       "left": "Parallel Muon",
@@ -93786,20 +93959,29 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Value Residual",
-      "left_count": 27,
+      "left_count": 29,
       "right_count": 7,
-      "left_people": 18,
+      "left_people": 19,
       "right_people": 6,
-      "score": 189
+      "score": 203
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "Progressive Depth",
-      "left_count": 27,
+      "left_count": 29,
       "right_count": 7,
-      "left_people": 18,
+      "left_people": 19,
       "right_people": 3,
-      "score": 189
+      "score": 203
+    },
+    {
+      "left": "SSM/Mamba/S4D",
+      "right": "Weight Sharing",
+      "left_count": 29,
+      "right_count": 6,
+      "left_people": 19,
+      "right_people": 4,
+      "score": 174
     },
     {
       "left": "BigramHash",
@@ -93809,15 +93991,6 @@
       "left_people": 72,
       "right_people": 2,
       "score": 164
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Weight Sharing",
-      "left_count": 27,
-      "right_count": 6,
-      "left_people": 18,
-      "right_people": 4,
-      "score": 162
     },
     {
       "left": "Parallel Muon",
@@ -93849,20 +94022,20 @@
     {
       "left": "XSA",
       "right": "Differential Attention",
-      "left_count": 73,
+      "left_count": 75,
       "right_count": 2,
-      "left_people": 59,
+      "left_people": 60,
       "right_people": 2,
-      "score": 146
+      "score": 150
     },
     {
       "left": "XSA",
       "right": "U-Net skips",
-      "left_count": 73,
+      "left_count": 75,
       "right_count": 2,
-      "left_people": 59,
+      "left_people": 60,
       "right_people": 2,
-      "score": 146
+      "score": 150
     },
     {
       "left": "Parallel Muon",
@@ -94002,29 +94175,29 @@
     {
       "left": "XSA",
       "right": "Flash Attention",
-      "left_count": 73,
+      "left_count": 75,
       "right_count": 1,
-      "left_people": 59,
+      "left_people": 60,
       "right_people": 1,
-      "score": 73
+      "score": 75
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "Differential Attention",
-      "left_count": 27,
+      "left_count": 29,
       "right_count": 2,
-      "left_people": 18,
+      "left_people": 19,
       "right_people": 2,
-      "score": 54
+      "score": 58
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "U-Net skips",
-      "left_count": 27,
+      "left_count": 29,
       "right_count": 2,
-      "left_people": 18,
+      "left_people": 19,
       "right_people": 2,
-      "score": 54
+      "score": 58
     },
     {
       "left": "SwiGLU",
@@ -94137,11 +94310,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Flash Attention",
-      "left_count": 27,
+      "left_count": 29,
       "right_count": 1,
-      "left_people": 18,
+      "left_people": 19,
       "right_people": 1,
-      "score": 27
+      "score": 29
     },
     {
       "left": "Parallel Muon",

@@ -1,7 +1,69 @@
 {
-  "last_fetch": "2026-04-10T12:07:23.322713+00:00",
-  "api_calls_used": 146,
+  "last_fetch": "2026-04-10T13:55:22.557616+00:00",
+  "api_calls_used": 147,
   "prs": [
+    {
+      "number": 1525,
+      "title": "Non-Record 16 MB Track : Hybrid XSA-SSM ",
+      "author": "Jash-Vora",
+      "state": "OPEN",
+      "created": "2026-04-10T13:06:38Z",
+      "updated": "2026-04-10T13:06:38Z",
+      "bpb": 1.255216,
+      "seeds": null,
+      "artifact_bytes": 14915938,
+      "technique_summary": "Muon + SSM",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-10_Hybrid-SSM-XSA/README.md",
+        "records/track_non_record_16mb/2026-04-10_Hybrid-SSM-XSA/submission.json",
+        "records/track_non_record_16mb/2026-04-10_Hybrid-SSM-XSA/train.log",
+        "records/track_non_record_16mb/2026-04-10_Hybrid-SSM-XSA/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1524,
+      "title": "Non-Record : Hybrid XSA-SSM",
+      "author": "Jash-Vora",
+      "state": "CLOSED",
+      "created": "2026-04-10T13:03:31Z",
+      "updated": "2026-04-10T13:05:19Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "SSM",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-10_Hybrid-SSM-XSA/README.md",
+        "records/track_non_record_16mb/2026-04-10_Hybrid-SSM-XSA/submission.json",
+        "records/track_non_record_16mb/2026-04-10_Hybrid-SSM-XSA/train.log",
+        "records/track_non_record_16mb/2026-04-10_Hybrid-SSM-XSA/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1523,
       "title": "Record: SP8192 + Triple Recurrence + Banking + Fused MLP + Muon 0.97 — val_bpb 1.0778 (3-seed mean)",
@@ -74,7 +136,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-10T01:43:32Z",
-      "updated": "2026-04-10T06:24:36Z",
+      "updated": "2026-04-10T12:43:26Z",
       "bpb": 1.078086,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -93,9 +155,9 @@
         "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/human_readable/train_gpt.py",
         "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/submission.json",
         "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/train_gpt.py",
-        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/train_s1234.log",
-        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/train_s2025.log",
-        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/train_s42.log"
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/train_seed42.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -4446,9 +4508,9 @@
       "number": 1379,
       "title": "Record: 0.4162 BPB mixed quant ngram (post-fix reruns)",
       "author": "LucasErcolano",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-05T12:30:12Z",
-      "updated": "2026-04-05T12:51:34Z",
+      "updated": "2026-04-10T13:16:22Z",
       "bpb": 0.4162,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -4475,13 +4537,12 @@
       "technique_tags": [
         "ttt"
       ],
-      "status": "AT_RISK",
+      "technique_source": "code",
+      "status": "DEAD",
       "flags": [
-        "body:ngram-body",
-        "path:ngram-path"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "MEDIUM",
-      "technique_source": "code"
+      "confidence": "LOW"
     },
     {
       "number": 1378,
