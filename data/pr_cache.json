@@ -1,7 +1,86 @@
 {
-  "last_fetch": "2026-04-10T02:50:58.785732+00:00",
-  "api_calls_used": 141,
+  "last_fetch": "2026-04-10T05:28:41.185555+00:00",
+  "api_calls_used": 142,
   "prs": [
+    {
+      "number": 1519,
+      "title": "BPB-weighted training loss: align training objective with eval metric",
+      "author": "elliottdehn",
+      "state": "OPEN",
+      "created": "2026-04-10T02:34:36Z",
+      "updated": "2026-04-10T03:30:29Z",
+      "bpb": 0.0194,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "GPTQ + EMA",
+      "file_paths": [
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1518,
+      "title": "Record: Wider Loop + Per-Pass Embeddings + Tap-In V6 + Legal TTT (1.078825 3-seed mean)",
+      "author": "abaybektursun",
+      "state": "OPEN",
+      "created": "2026-04-10T01:43:32Z",
+      "updated": "2026-04-10T03:34:38Z",
+      "bpb": 1.078086,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/README.md",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/cutlass_evt_fusion/csrc/gemm_act_grad.cu",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/cutlass_evt_fusion/csrc/torch_binding.cpp",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/cutlass_evt_fusion/setup.py",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/eval_ttt_v6.py",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/eval_v6_s42.log",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/eval_v6_ttt_s1234.log",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/eval_v6_ttt_s2025.log",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/eval_v6_ttt_s42.log",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/measure_budget.py",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/submission.py",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/tapin_cpp.py",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/train_s1234.log",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/train_s2025.log",
+        "records/track_10min_16mb/2026-04-10_WiderEmb_TapInV6_TTT/train_s42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1513,
       "title": "Non-record JEPA-style regression transformer submission: VRS (Void Rescue System)",
@@ -216,9 +295,9 @@
       "number": 1508,
       "title": "Record: SP4096 + Compressibility Regularization — val_bpb 1.11349 (6-seed mean)",
       "author": "jpfeiffe",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-09T18:35:07Z",
-      "updated": "2026-04-09T18:35:07Z",
+      "updated": "2026-04-10T05:08:22Z",
       "bpb": null,
       "seeds": 6,
       "artifact_bytes": 16000000,
@@ -244,11 +323,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1507,
@@ -4041,6 +4120,49 @@
       "confidence": "HIGH"
     },
     {
+      "number": 1388,
+      "title": "[Notable Non-Record Submission] Everything Everywhere All in One Bit: XNOR-mally I'd use floats - 118M XNOR-Net - 1.539 BPB - 10-Min and Unconstrained Runs",
+      "author": "CiprianFlorin-Ifrim",
+      "state": "OPEN",
+      "created": "2026-04-05T18:47:17Z",
+      "updated": "2026-04-10T04:41:53Z",
+      "bpb": 1.539,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + SwiGLU + LoRA + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/README.md",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/log_100k_steps_per-pass-attention-residuals.txt",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/log_100k_steps_u-net-skips.txt",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/log_10mins_seed-1337.txt",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/log_10mins_seed-42.txt",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/log_10mins_seed-7.txt",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/log_eggroll_3-last-layers.txt",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/log_eggroll_all-layers-perturbed.txt",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/log_eggroll_last-layer-only.txt",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/log_eggroll_lora.txt",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/run_cuda_xnor.sh",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/run_cuda_xnor_eggroll.sh",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/train_gpt_cuda_xnor.py",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/train_gpt_cuda_xnor_eggroll_full.py",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/train_gpt_cuda_xnor_eggroll_lora.py",
+        "records/track_non_record_16mb/2026-04-05_118M_XNOR-Net_FP8_1024D_10L/train_gpt_cuda_xnor_eggroll_nlayers.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "NOTABLE",
+      "flags": [
+        "title-contains-notable"
+      ],
+      "confidence": "HIGH"
+    },
+    {
       "number": 1387,
       "title": "Non-record submission: Depth-Recurrent U-Net Transformer",
       "author": "Muhammad-Ahmed-Rayyan",
@@ -5614,9 +5736,9 @@
       "number": 1289,
       "title": "Record: PROTEUS v1.6 — Scylla + Parallel Residuals + Depth Recurrence + Legal TTT — val_bpb 1.0819 (3-seed mean)",
       "author": "MatoTeziTanka",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-03T07:37:15Z",
-      "updated": "2026-04-06T12:31:43Z",
+      "updated": "2026-04-10T03:16:43Z",
       "bpb": 1.0819,
       "seeds": 3,
       "artifact_bytes": 112437059,
@@ -5643,9 +5765,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1285,
