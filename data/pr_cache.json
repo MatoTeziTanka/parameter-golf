@@ -1,7 +1,42 @@
 {
-  "last_fetch": "2026-04-10T17:55:29.355451+00:00",
-  "api_calls_used": 151,
+  "last_fetch": "2026-04-10T19:00:36.072805+00:00",
+  "api_calls_used": 152,
   "prs": [
+    {
+      "number": 1528,
+      "title": "Non-record: 11L s2048 4h on 1xA100 — 1.1104 BPB",
+      "author": "xiehuanyi",
+      "state": "OPEN",
+      "created": "2026-04-10T18:42:21Z",
+      "updated": "2026-04-10T18:47:28Z",
+      "bpb": 1.11044406,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-10_s2048_4h_1xA100_1.1104/README.md",
+        "records/track_non_record_16mb/2026-04-10_s2048_4h_1xA100_1.1104/final_model.int6.ptz",
+        "records/track_non_record_16mb/2026-04-10_s2048_4h_1xA100_1.1104/requirements.txt",
+        "records/track_non_record_16mb/2026-04-10_s2048_4h_1xA100_1.1104/submission.json",
+        "records/track_non_record_16mb/2026-04-10_s2048_4h_1xA100_1.1104/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-10_s2048_4h_1xA100_1.1104/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1527,
       "title": "Record: 6L depth minimalism U-Net sliding window - val_bpb 1.2025",
@@ -12546,7 +12581,7 @@
       "author": "mradassaad",
       "state": "OPEN",
       "created": "2026-03-30T00:55:11Z",
-      "updated": "2026-04-09T22:42:35Z",
+      "updated": "2026-04-10T18:21:57Z",
       "bpb": 1.5633,
       "seeds": null,
       "artifact_bytes": 10892315,
@@ -12554,6 +12589,7 @@
       "file_paths": [
         ".gitignore",
         "CLAUDE.md",
+        "profiling/eval_stateful_overlap.py",
         "profiling/per_position_loss.py",
         "profiling/profile_ddp.py",
         "profiling/profile_step.py",
@@ -12565,6 +12601,7 @@
         "setup_mamba3.sh",
         "train_mamba3_hybrid.py",
         "train_mamba3_hybrid_backup_stateful_recur.py",
+        "train_mamba3_hybrid_tbptt.py",
         "triton_kernels/bench_mamba3_bwd.py",
         "triton_kernels/mamba3_siso_bwd.py",
         "triton_kernels/mamba3_siso_combined.py",
