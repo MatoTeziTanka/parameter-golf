@@ -1,14 +1,83 @@
 {
-  "last_fetch": "2026-04-11T17:35:07.693110+00:00",
-  "api_calls_used": 170,
+  "last_fetch": "2026-04-11T18:51:34.764728+00:00",
+  "api_calls_used": 171,
   "prs": [
+    {
+      "number": 1550,
+      "title": "Non-record: Pre-Quant AdamW TTT (Compiled) + SP8192 + Depth Recurrence — val_bpb 1.0587 (3-seed mean)",
+      "author": "translatingthename",
+      "state": "OPEN",
+      "created": "2026-04-11T18:14:33Z",
+      "updated": "2026-04-11T18:14:33Z",
+      "bpb": 1.0587,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-11_SP8192_PreQuantTTT_CompiledTTT/README.md",
+        "records/track_10min_16mb/2026-04-11_SP8192_PreQuantTTT_CompiledTTT/submission.json",
+        "records/track_10min_16mb/2026-04-11_SP8192_PreQuantTTT_CompiledTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-11_SP8192_PreQuantTTT_CompiledTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-11_SP8192_PreQuantTTT_CompiledTTT/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-11_SP8192_PreQuantTTT_CompiledTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1549,
+      "title": "Non-record: Frozen Random Backbone + Rank-304 LoRA Adapters (val_bpb 1.3220)",
+      "author": "dljr-github",
+      "state": "OPEN",
+      "created": "2026-04-11T17:45:25Z",
+      "updated": "2026-04-11T18:07:52Z",
+      "bpb": 1.322,
+      "seeds": 3,
+      "artifact_bytes": 13500000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-12_FrozenRandomBackbone_LoRA_DepthRecurrence/README.md",
+        "records/track_10min_16mb/2026-04-12_FrozenRandomBackbone_LoRA_DepthRecurrence/submission.json",
+        "records/track_10min_16mb/2026-04-12_FrozenRandomBackbone_LoRA_DepthRecurrence/train_1xh100_r304.txt",
+        "records/track_10min_16mb/2026-04-12_FrozenRandomBackbone_LoRA_DepthRecurrence/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1548,
       "title": "Frozen Random Backbone + LoRA Adapters (1.322 BPB)",
       "author": "dljr-github",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-11T17:23:16Z",
-      "updated": "2026-04-11T17:23:16Z",
+      "updated": "2026-04-11T17:49:00Z",
       "bpb": 1.322,
       "seeds": 3,
       "artifact_bytes": 13500000,
@@ -31,45 +100,90 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1547,
-      "title": "Single H100 10 min 1.24 BPB",
+      "title": "Non record: Single H100 10 min 1.24 BPB",
       "author": "adityasasidhar",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-11T17:19:36Z",
-      "updated": "2026-04-11T17:19:36Z",
+      "updated": "2026-04-11T18:05:47Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
         ".gitignore",
+        "LICENSE",
+        "README.md",
+        "THIRD_PARTY_NOTICES.md",
+        "data/README.md",
+        "data/cached_challenge_fineweb.py",
+        "data/download_hf_docs_and_tokenize.py",
+        "data/tokenizer_specs.json",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/README.md",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/ablations.png",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/submission.json",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/train_v0.txt",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/train_v1.txt",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/train_v2.txt",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/train_v3.txt",
+        "records/track_10min_16mb/2026-03-17_NaiveBaseline/README.md",
+        "records/track_10min_16mb/2026-03-17_NaiveBaseline/submission.json",
         "records/track_10min_16mb/2026-03-17_NaiveBaseline/train.log",
-        "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/README.md",
-        "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/requirements.txt",
-        "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/submission.json",
-        "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/train.log",
-        "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/train_gpt.py"
+        "records/track_10min_16mb/2026-03-17_NaiveBaseline/train_gpt.py",
+        "records/track_10min_16mb/2026-03-18_FP16Embed_WD3600/README.md",
+        "records/track_10min_16mb/2026-03-18_FP16Embed_WD3600/submission.json",
+        "records/track_10min_16mb/2026-03-18_FP16Embed_WD3600/train.log",
+        "records/track_10min_16mb/2026-03-18_FP16Embed_WD3600/train_gpt.py",
+        "records/track_10min_16mb/2026-03-18_FP16Embed_WD3600/train_seed42.log",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/README.md",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/submission.json",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/train.log",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/train_gpt.py",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/train_seed1338.log",
+        "records/track_10min_16mb/2026-03-18_LongContextSeq2048/train_seed1339.log",
+        "records/track_10min_16mb/2026-03-18_LowerLR/README.md",
+        "records/track_10min_16mb/2026-03-18_LowerLR/submission.json",
+        "records/track_10min_16mb/2026-03-18_LowerLR/train.log",
+        "records/track_10min_16mb/2026-03-18_LowerLR/train_gpt.py",
+        "records/track_10min_16mb/2026-03-19_10L_MixedPrecision/README.md",
+        "records/track_10min_16mb/2026-03-19_10L_MixedPrecision/submission.json",
+        "records/track_10min_16mb/2026-03-19_10L_MixedPrecision/train.log",
+        "records/track_10min_16mb/2026-03-19_10L_MixedPrecision/train_gpt.py",
+        "records/track_10min_16mb/2026-03-19_MLP3x_QAT_Int6_SlidingWindow/README.md",
+        "records/track_10min_16mb/2026-03-19_MLP3x_QAT_Int6_SlidingWindow/submission.json",
+        "records/track_10min_16mb/2026-03-19_MLP3x_QAT_Int6_SlidingWindow/train.log",
+        "records/track_10min_16mb/2026-03-19_MLP3x_QAT_Int6_SlidingWindow/train_gpt.py",
+        "records/track_10min_16mb/2026-03-19_MixedQuant_Int6Int8_SlidingWindow/README.md",
+        "records/track_10min_16mb/2026-03-19_MixedQuant_Int6Int8_SlidingWindow/submission.json",
+        "records/track_10min_16mb/2026-03-19_MixedQuant_Int6Int8_SlidingWindow/train.log",
+        "records/track_10min_16mb/2026-03-19_MixedQuant_Int6Int8_SlidingWindow/train_gpt.py",
+        "records/track_10min_16mb/2026-03-19_Seq2048_FP16Emb_TunedLR/README.md",
+        "records/track_10min_16mb/2026-03-19_Seq2048_FP16Emb_TunedLR/submission.json",
+        "records/track_10min_16mb/2026-03-19_Seq2048_FP16Emb_TunedLR/train_gpt.py"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
+      "compliance_keywords": [
+        "cache_path"
+      ],
       "track": "non-record",
-      "technique_type": "neural",
+      "technique_type": "hybrid",
       "technique_tags": [
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1546,
@@ -114,9 +228,9 @@
       "number": 1545,
       "title": "Record: GDN-Hybrid (Gated DeltaNet + SWA) — val_bpb 1.028308 (3-seed cold-cache mean)",
       "author": "Abhishek8108",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-11T16:20:56Z",
-      "updated": "2026-04-11T17:12:42Z",
+      "updated": "2026-04-11T18:04:45Z",
       "bpb": 1.028308,
       "seeds": 3,
       "artifact_bytes": 14700000,
@@ -145,9 +259,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1543,
@@ -265,7 +381,7 @@
       "author": "bigbag",
       "state": "OPEN",
       "created": "2026-04-11T12:49:04Z",
-      "updated": "2026-04-11T15:01:50Z",
+      "updated": "2026-04-11T18:16:19Z",
       "bpb": 1.07785,
       "seeds": 3,
       "artifact_bytes": 15990000,
@@ -303,7 +419,7 @@
       "author": "aryanbhosale",
       "state": "OPEN",
       "created": "2026-04-11T09:59:54Z",
-      "updated": "2026-04-11T17:06:56Z",
+      "updated": "2026-04-11T18:16:17Z",
       "bpb": 1.0777,
       "seeds": 3,
       "artifact_bytes": 15990000,
@@ -335,9 +451,9 @@
       "number": 1539,
       "title": "Record: SP8192 + Pre-Quant AdamW TTT + Compiled TTT — val_bpb 1.0587 (3-seed mean)",
       "author": "translatingthename",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-11T09:42:27Z",
-      "updated": "2026-04-11T16:59:06Z",
+      "updated": "2026-04-11T17:50:52Z",
       "bpb": 1.0587,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -364,9 +480,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1538,
@@ -605,7 +723,7 @@
       "author": "aryanbhosale",
       "state": "OPEN",
       "created": "2026-04-11T02:53:08Z",
-      "updated": "2026-04-11T02:53:08Z",
+      "updated": "2026-04-11T18:16:25Z",
       "bpb": 1.079,
       "seeds": 5,
       "artifact_bytes": 15990000,
@@ -708,15 +826,15 @@
     },
     {
       "number": 1530,
-      "title": "Record: Varlen attention + fused MLP + doc-independent TTT (1.07643)",
+      "title": "Record: Varlen attention + fused MLP + doc-independent TTT (1.07336)",
       "author": "samacqua",
       "state": "OPEN",
       "created": "2026-04-11T00:21:22Z",
-      "updated": "2026-04-11T11:43:43Z",
-      "bpb": 1.07643,
-      "seeds": 3,
+      "updated": "2026-04-11T18:31:51Z",
+      "bpb": 1.07336,
+      "seeds": 0,
       "artifact_bytes": 15990000,
-      "technique_summary": "TTT + Muon + LoRA",
+      "technique_summary": "TTT + LoRA",
       "file_paths": [
         "records/track_10min_16mb/2026-04-10_VarLenAttn/README.md",
         "records/track_10min_16mb/2026-04-10_VarLenAttn/logs/train0.txt",
@@ -738,8 +856,10 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-0"
+      ],
       "confidence": "HIGH"
     },
     {
@@ -748,10 +868,10 @@
       "author": "msisovic",
       "state": "OPEN",
       "created": "2026-04-11T00:04:56Z",
-      "updated": "2026-04-11T14:24:02Z",
+      "updated": "2026-04-11T18:16:22Z",
       "bpb": 1.07531639,
       "seeds": 3,
-      "artifact_bytes": 15960000,
+      "artifact_bytes": 8579,
       "technique_summary": "TTT + EMA",
       "file_paths": [
         "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/README.md",
@@ -955,7 +1075,7 @@
       "author": "EthanYangTW",
       "state": "OPEN",
       "created": "2026-04-10T09:34:37Z",
-      "updated": "2026-04-11T01:27:20Z",
+      "updated": "2026-04-11T18:16:20Z",
       "bpb": 1.0778,
       "seeds": 3,
       "artifact_bytes": 15990000,
@@ -1021,7 +1141,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-10T01:43:32Z",
-      "updated": "2026-04-11T13:53:59Z",
+      "updated": "2026-04-11T18:16:15Z",
       "bpb": 1.076965,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -1066,7 +1186,7 @@
       "author": "RulinShao",
       "state": "OPEN",
       "created": "2026-04-10T01:30:42Z",
-      "updated": "2026-04-11T16:59:07Z",
+      "updated": "2026-04-11T18:46:37Z",
       "bpb": 1.0632,
       "seeds": 3,
       "artifact_bytes": 15000000,
@@ -2015,9 +2135,9 @@
       "number": 1485,
       "title": "Record: SP8192 + 3-Layer Depth Recurrence + Parallel Residuals + EMA + QK5 + Pre-Quant AdamW TTT — val_bpb 1.0679 (3-seed mean)",
       "author": "ndokutovich",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-09T00:21:25Z",
-      "updated": "2026-04-09T00:21:25Z",
+      "updated": "2026-04-11T18:05:36Z",
       "bpb": 1.0679,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -2043,9 +2163,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1484,
@@ -10884,9 +11006,9 @@
       "number": 1180,
       "title": "Loss function comparison (CE vs P2 variants) under parameter-golf constraints",
       "author": "estesryan",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-31T11:32:19Z",
-      "updated": "2026-04-01T07:24:17Z",
+      "updated": "2026-04-11T18:16:28Z",
       "bpb": 1.0577016,
       "seeds": null,
       "artifact_bytes": 15058763,
@@ -10901,15 +11023,15 @@
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "neural",
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1179,
@@ -14389,9 +14511,9 @@
       "number": 1085,
       "title": "Non-record:11L GQA + MLP 3 + Partial RoPE + Int6 Attn/MLP + QAT40 ",
       "author": "adityasasidhar",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-29T17:17:36Z",
-      "updated": "2026-04-11T17:12:14Z",
+      "updated": "2026-04-11T18:08:42Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -14413,13 +14535,11 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1084,
@@ -28681,7 +28801,7 @@
       "author": "RoyiRa",
       "state": "OPEN",
       "created": "2026-03-25T10:48:55Z",
-      "updated": "2026-03-25T14:27:31Z",
+      "updated": "2026-04-11T18:16:26Z",
       "bpb": 1.0541,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -28701,15 +28821,15 @@
         "gptq_eval",
         "leaky_relu"
       ],
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 699,

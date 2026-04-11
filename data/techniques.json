@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-11T17:35:22Z",
+  "generated_at": "2026-04-11T18:51:43Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1406,
-    "matched_pr_count": 1035,
+    "pr_count": 1408,
+    "matched_pr_count": 1037,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 231,
+      "ALIVE": 228,
       "AT_RISK": 88,
-      "DEAD": 397,
-      "INCOMPLETE": 682,
+      "DEAD": 404,
+      "INCOMPLETE": 680,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 531,
-      "author_count": 254,
-      "alive_count": 117,
-      "dead_count": 173,
+      "count": 533,
+      "author_count": 255,
+      "alive_count": 115,
+      "dead_count": 176,
       "at_risk_count": 51,
-      "incomplete_count": 190,
+      "incomplete_count": 191,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -1294,7 +1294,7 @@
             {
               "number": 1485,
               "author": "ndokutovich",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0679,
               "created": "2026-04-09T00:21:25Z"
             },
@@ -1994,9 +1994,37 @@
           ]
         },
         {
+          "author": "translatingthename",
+          "pr_count": 3,
+          "best_bpb": 1.0587,
+          "prs": [
+            {
+              "number": 397,
+              "author": "translatingthename",
+              "status": "ALIVE",
+              "bpb": 1.1364,
+              "created": "2026-03-22T04:14:13Z"
+            },
+            {
+              "number": 1539,
+              "author": "translatingthename",
+              "status": "DEAD",
+              "bpb": 1.0587,
+              "created": "2026-04-11T09:42:27Z"
+            },
+            {
+              "number": 1550,
+              "author": "translatingthename",
+              "status": "ALIVE",
+              "bpb": 1.0587,
+              "created": "2026-04-11T18:14:33Z"
+            }
+          ]
+        },
+        {
           "author": "samacqua",
           "pr_count": 3,
-          "best_bpb": 1.07643,
+          "best_bpb": 1.07336,
           "prs": [
             {
               "number": 77,
@@ -2015,8 +2043,8 @@
             {
               "number": 1530,
               "author": "samacqua",
-              "status": "ALIVE",
-              "bpb": 1.07643,
+              "status": "INCOMPLETE",
+              "bpb": 1.07336,
               "created": "2026-04-11T00:21:22Z"
             }
           ]
@@ -2683,27 +2711,6 @@
               "status": "ALIVE",
               "bpb": 1.1147,
               "created": "2026-03-25T14:45:44Z"
-            }
-          ]
-        },
-        {
-          "author": "translatingthename",
-          "pr_count": 2,
-          "best_bpb": 1.0587,
-          "prs": [
-            {
-              "number": 397,
-              "author": "translatingthename",
-              "status": "ALIVE",
-              "bpb": 1.1364,
-              "created": "2026-03-22T04:14:13Z"
-            },
-            {
-              "number": 1539,
-              "author": "translatingthename",
-              "status": "ALIVE",
-              "bpb": 1.0587,
-              "created": "2026-04-11T09:42:27Z"
             }
           ]
         },
@@ -3618,7 +3625,7 @@
             {
               "number": 1545,
               "author": "Abhishek8108",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.028308,
               "created": "2026-04-11T16:20:56Z"
             }
@@ -4867,6 +4874,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.3151,
               "created": "2026-04-05T14:04:14Z"
+            }
+          ]
+        },
+        {
+          "author": "dljr-github",
+          "pr_count": 1,
+          "best_bpb": 1.322,
+          "prs": [
+            {
+              "number": 1549,
+              "author": "dljr-github",
+              "status": "ALIVE",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:45:25Z"
             }
           ]
         },
@@ -9061,7 +9082,7 @@
         {
           "number": 1485,
           "author": "ndokutovich",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0679,
           "created": "2026-04-09T00:21:25Z"
         },
@@ -9173,8 +9194,8 @@
         {
           "number": 1530,
           "author": "samacqua",
-          "status": "ALIVE",
-          "bpb": 1.07643,
+          "status": "INCOMPLETE",
+          "bpb": 1.07336,
           "created": "2026-04-11T00:21:22Z"
         },
         {
@@ -9215,7 +9236,7 @@
         {
           "number": 1539,
           "author": "translatingthename",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0587,
           "created": "2026-04-11T09:42:27Z"
         },
@@ -9236,7 +9257,7 @@
         {
           "number": 1545,
           "author": "Abhishek8108",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.028308,
           "created": "2026-04-11T16:20:56Z"
         },
@@ -9246,16 +9267,30 @@
           "status": "INCOMPLETE",
           "bpb": 1.0744,
           "created": "2026-04-11T16:39:04Z"
+        },
+        {
+          "number": 1549,
+          "author": "dljr-github",
+          "status": "ALIVE",
+          "bpb": 1.322,
+          "created": "2026-04-11T17:45:25Z"
+        },
+        {
+          "number": 1550,
+          "author": "translatingthename",
+          "status": "ALIVE",
+          "bpb": 1.0587,
+          "created": "2026-04-11T18:14:33Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 420,
+      "count": 422,
       "author_count": 233,
-      "alive_count": 101,
-      "dead_count": 117,
+      "alive_count": 99,
+      "dead_count": 121,
       "at_risk_count": 41,
       "incomplete_count": 156,
       "unknown_count": 0,
@@ -10274,7 +10309,7 @@
             {
               "number": 1485,
               "author": "ndokutovich",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0679,
               "created": "2026-04-09T00:21:25Z"
             },
@@ -10568,6 +10603,34 @@
           ]
         },
         {
+          "author": "translatingthename",
+          "pr_count": 3,
+          "best_bpb": 1.0587,
+          "prs": [
+            {
+              "number": 397,
+              "author": "translatingthename",
+              "status": "ALIVE",
+              "bpb": 1.1364,
+              "created": "2026-03-22T04:14:13Z"
+            },
+            {
+              "number": 1539,
+              "author": "translatingthename",
+              "status": "DEAD",
+              "bpb": 1.0587,
+              "created": "2026-04-11T09:42:27Z"
+            },
+            {
+              "number": 1550,
+              "author": "translatingthename",
+              "status": "ALIVE",
+              "bpb": 1.0587,
+              "created": "2026-04-11T18:14:33Z"
+            }
+          ]
+        },
+        {
           "author": "dexhunter",
           "pr_count": 3,
           "best_bpb": 1.0722,
@@ -10827,7 +10890,7 @@
             {
               "number": 1545,
               "author": "Abhishek8108",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.028308,
               "created": "2026-04-11T16:20:56Z"
             }
@@ -11061,27 +11124,6 @@
               "status": "DEAD",
               "bpb": 1.0046,
               "created": "2026-04-04T15:40:21Z"
-            }
-          ]
-        },
-        {
-          "author": "translatingthename",
-          "pr_count": 2,
-          "best_bpb": 1.0587,
-          "prs": [
-            {
-              "number": 397,
-              "author": "translatingthename",
-              "status": "ALIVE",
-              "bpb": 1.1364,
-              "created": "2026-03-22T04:14:13Z"
-            },
-            {
-              "number": 1539,
-              "author": "translatingthename",
-              "status": "ALIVE",
-              "bpb": 1.0587,
-              "created": "2026-04-11T09:42:27Z"
             }
           ]
         },
@@ -11544,6 +11586,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.2699,
               "created": "2026-04-08T19:33:30Z"
+            }
+          ]
+        },
+        {
+          "author": "dljr-github",
+          "pr_count": 2,
+          "best_bpb": 1.322,
+          "prs": [
+            {
+              "number": 1548,
+              "author": "dljr-github",
+              "status": "DEAD",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:23:16Z"
+            },
+            {
+              "number": 1549,
+              "author": "dljr-github",
+              "status": "ALIVE",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:45:25Z"
             }
           ]
         },
@@ -13189,20 +13252,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.3151,
               "created": "2026-04-05T14:04:14Z"
-            }
-          ]
-        },
-        {
-          "author": "dljr-github",
-          "pr_count": 1,
-          "best_bpb": 1.322,
-          "prs": [
-            {
-              "number": 1548,
-              "author": "dljr-github",
-              "status": "ALIVE",
-              "bpb": 1.322,
-              "created": "2026-04-11T17:23:16Z"
             }
           ]
         },
@@ -16592,7 +16641,7 @@
         {
           "number": 1485,
           "author": "ndokutovich",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0679,
           "created": "2026-04-09T00:21:25Z"
         },
@@ -16746,7 +16795,7 @@
         {
           "number": 1539,
           "author": "translatingthename",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0587,
           "created": "2026-04-11T09:42:27Z"
         },
@@ -16760,7 +16809,7 @@
         {
           "number": 1545,
           "author": "Abhishek8108",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.028308,
           "created": "2026-04-11T16:20:56Z"
         },
@@ -16774,9 +16823,23 @@
         {
           "number": 1548,
           "author": "dljr-github",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.322,
           "created": "2026-04-11T17:23:16Z"
+        },
+        {
+          "number": 1549,
+          "author": "dljr-github",
+          "status": "ALIVE",
+          "bpb": 1.322,
+          "created": "2026-04-11T17:45:25Z"
+        },
+        {
+          "number": 1550,
+          "author": "translatingthename",
+          "status": "ALIVE",
+          "bpb": 1.0587,
+          "created": "2026-04-11T18:14:33Z"
         }
       ]
     },
@@ -16786,9 +16849,9 @@
       "count": 410,
       "author_count": 266,
       "alive_count": 92,
-      "dead_count": 95,
+      "dead_count": 96,
       "at_risk_count": 35,
-      "incomplete_count": 186,
+      "incomplete_count": 185,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -19128,7 +19191,7 @@
             {
               "number": 1180,
               "author": "estesryan",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": 1.0577016,
               "created": "2026-03-31T11:32:19Z"
             }
@@ -19159,20 +19222,6 @@
               "status": "DEAD",
               "bpb": 1.0713,
               "created": "2026-04-02T08:33:33Z"
-            }
-          ]
-        },
-        {
-          "author": "samacqua",
-          "pr_count": 1,
-          "best_bpb": 1.07643,
-          "prs": [
-            {
-              "number": 1530,
-              "author": "samacqua",
-              "status": "ALIVE",
-              "bpb": 1.07643,
-              "created": "2026-04-11T00:21:22Z"
             }
           ]
         },
@@ -20601,6 +20650,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.3151,
               "created": "2026-04-05T14:04:14Z"
+            }
+          ]
+        },
+        {
+          "author": "dljr-github",
+          "pr_count": 1,
+          "best_bpb": 1.322,
+          "prs": [
+            {
+              "number": 1549,
+              "author": "dljr-github",
+              "status": "ALIVE",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:45:25Z"
             }
           ]
         },
@@ -23822,7 +23885,7 @@
         {
           "number": 1180,
           "author": "estesryan",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 1.0577016,
           "created": "2026-03-31T11:32:19Z"
         },
@@ -24359,13 +24422,6 @@
           "created": "2026-04-10T16:09:59Z"
         },
         {
-          "number": 1530,
-          "author": "samacqua",
-          "status": "ALIVE",
-          "bpb": 1.07643,
-          "created": "2026-04-11T00:21:22Z"
-        },
-        {
           "number": 1533,
           "author": "aryanbhosale",
           "status": "ALIVE",
@@ -24399,16 +24455,23 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-11T14:17:04Z"
+        },
+        {
+          "number": 1549,
+          "author": "dljr-github",
+          "status": "ALIVE",
+          "bpb": 1.322,
+          "created": "2026-04-11T17:45:25Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 346,
+      "count": 348,
       "author_count": 161,
-      "alive_count": 99,
-      "dead_count": 98,
+      "alive_count": 97,
+      "dead_count": 102,
       "at_risk_count": 42,
       "incomplete_count": 102,
       "unknown_count": 0,
@@ -25861,7 +25924,7 @@
             {
               "number": 1485,
               "author": "ndokutovich",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0679,
               "created": "2026-04-09T00:21:25Z"
             },
@@ -26260,6 +26323,27 @@
           ]
         },
         {
+          "author": "translatingthename",
+          "pr_count": 2,
+          "best_bpb": 1.0587,
+          "prs": [
+            {
+              "number": 1539,
+              "author": "translatingthename",
+              "status": "DEAD",
+              "bpb": 1.0587,
+              "created": "2026-04-11T09:42:27Z"
+            },
+            {
+              "number": 1550,
+              "author": "translatingthename",
+              "status": "ALIVE",
+              "bpb": 1.0587,
+              "created": "2026-04-11T18:14:33Z"
+            }
+          ]
+        },
+        {
           "author": "erichroepke",
           "pr_count": 2,
           "best_bpb": 1.07948,
@@ -26403,6 +26487,27 @@
               "status": "ALIVE",
               "bpb": 1.2201,
               "created": "2026-03-29T05:19:41Z"
+            }
+          ]
+        },
+        {
+          "author": "dljr-github",
+          "pr_count": 2,
+          "best_bpb": 1.322,
+          "prs": [
+            {
+              "number": 1548,
+              "author": "dljr-github",
+              "status": "DEAD",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:23:16Z"
+            },
+            {
+              "number": 1549,
+              "author": "dljr-github",
+              "status": "ALIVE",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:45:25Z"
             }
           ]
         },
@@ -26841,23 +26946,9 @@
             {
               "number": 1545,
               "author": "Abhishek8108",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.028308,
               "created": "2026-04-11T16:20:56Z"
-            }
-          ]
-        },
-        {
-          "author": "translatingthename",
-          "pr_count": 1,
-          "best_bpb": 1.0587,
-          "prs": [
-            {
-              "number": 1539,
-              "author": "translatingthename",
-              "status": "ALIVE",
-              "bpb": 1.0587,
-              "created": "2026-04-11T09:42:27Z"
             }
           ]
         },
@@ -27628,20 +27719,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.30806928,
               "created": "2026-04-07T14:37:34Z"
-            }
-          ]
-        },
-        {
-          "author": "dljr-github",
-          "pr_count": 1,
-          "best_bpb": 1.322,
-          "prs": [
-            {
-              "number": 1548,
-              "author": "dljr-github",
-              "status": "ALIVE",
-              "bpb": 1.322,
-              "created": "2026-04-11T17:23:16Z"
             }
           ]
         },
@@ -30219,7 +30296,7 @@
         {
           "number": 1485,
           "author": "ndokutovich",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0679,
           "created": "2026-04-09T00:21:25Z"
         },
@@ -30359,7 +30436,7 @@
         {
           "number": 1539,
           "author": "translatingthename",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0587,
           "created": "2026-04-11T09:42:27Z"
         },
@@ -30373,7 +30450,7 @@
         {
           "number": 1545,
           "author": "Abhishek8108",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.028308,
           "created": "2026-04-11T16:20:56Z"
         },
@@ -30387,9 +30464,23 @@
         {
           "number": 1548,
           "author": "dljr-github",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.322,
           "created": "2026-04-11T17:23:16Z"
+        },
+        {
+          "number": 1549,
+          "author": "dljr-github",
+          "status": "ALIVE",
+          "bpb": 1.322,
+          "created": "2026-04-11T17:45:25Z"
+        },
+        {
+          "number": 1550,
+          "author": "translatingthename",
+          "status": "ALIVE",
+          "bpb": 1.0587,
+          "created": "2026-04-11T18:14:33Z"
         }
       ]
     },
@@ -37793,15 +37884,15 @@
       "kind": "legal",
       "count": 76,
       "author_count": 66,
-      "alive_count": 20,
-      "dead_count": 20,
+      "alive_count": 19,
+      "dead_count": 21,
       "at_risk_count": 1,
       "incomplete_count": 35,
       "unknown_count": 0,
       "best_alive": {
-        "number": 1545,
-        "author": "Abhishek8108",
-        "bpb": 1.028308
+        "number": 1512,
+        "author": "Itssshikhar",
+        "bpb": 1.1117
       },
       "people": [
         {
@@ -37994,7 +38085,7 @@
             {
               "number": 1545,
               "author": "Abhishek8108",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.028308,
               "created": "2026-04-11T16:20:56Z"
             }
@@ -39328,7 +39419,7 @@
         {
           "number": 1545,
           "author": "Abhishek8108",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.028308,
           "created": "2026-04-11T16:20:56Z"
         }
@@ -43123,8 +43214,8 @@
       "kind": "banned",
       "count": 224,
       "author_count": 94,
-      "alive_count": 42,
-      "dead_count": 84,
+      "alive_count": 39,
+      "dead_count": 87,
       "at_risk_count": 63,
       "incomplete_count": 31,
       "unknown_count": 0,
@@ -44059,7 +44150,7 @@
             {
               "number": 1485,
               "author": "ndokutovich",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0679,
               "created": "2026-04-09T00:21:25Z"
             },
@@ -44948,7 +45039,7 @@
             {
               "number": 1545,
               "author": "Abhishek8108",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.028308,
               "created": "2026-04-11T16:20:56Z"
             }
@@ -44962,7 +45053,7 @@
             {
               "number": 1539,
               "author": "translatingthename",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0587,
               "created": "2026-04-11T09:42:27Z"
             }
@@ -46800,7 +46891,7 @@
         {
           "number": 1485,
           "author": "ndokutovich",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0679,
           "created": "2026-04-09T00:21:25Z"
         },
@@ -46905,7 +46996,7 @@
         {
           "number": 1539,
           "author": "translatingthename",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0587,
           "created": "2026-04-11T09:42:27Z"
         },
@@ -46926,7 +47017,7 @@
         {
           "number": 1545,
           "author": "Abhishek8108",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.028308,
           "created": "2026-04-11T16:20:56Z"
         }
@@ -47954,9 +48045,9 @@
       "count": 410,
       "author_count": 266,
       "alive_count": 92,
-      "dead_count": 95,
+      "dead_count": 96,
       "at_risk_count": 35,
-      "incomplete_count": 186,
+      "incomplete_count": 185,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -50296,7 +50387,7 @@
             {
               "number": 1180,
               "author": "estesryan",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": 1.0577016,
               "created": "2026-03-31T11:32:19Z"
             }
@@ -50327,20 +50418,6 @@
               "status": "DEAD",
               "bpb": 1.0713,
               "created": "2026-04-02T08:33:33Z"
-            }
-          ]
-        },
-        {
-          "author": "samacqua",
-          "pr_count": 1,
-          "best_bpb": 1.07643,
-          "prs": [
-            {
-              "number": 1530,
-              "author": "samacqua",
-              "status": "ALIVE",
-              "bpb": 1.07643,
-              "created": "2026-04-11T00:21:22Z"
             }
           ]
         },
@@ -51769,6 +51846,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.3151,
               "created": "2026-04-05T14:04:14Z"
+            }
+          ]
+        },
+        {
+          "author": "dljr-github",
+          "pr_count": 1,
+          "best_bpb": 1.322,
+          "prs": [
+            {
+              "number": 1549,
+              "author": "dljr-github",
+              "status": "ALIVE",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:45:25Z"
             }
           ]
         },
@@ -54990,7 +55081,7 @@
         {
           "number": 1180,
           "author": "estesryan",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 1.0577016,
           "created": "2026-03-31T11:32:19Z"
         },
@@ -55527,13 +55618,6 @@
           "created": "2026-04-10T16:09:59Z"
         },
         {
-          "number": 1530,
-          "author": "samacqua",
-          "status": "ALIVE",
-          "bpb": 1.07643,
-          "created": "2026-04-11T00:21:22Z"
-        },
-        {
           "number": 1533,
           "author": "aryanbhosale",
           "status": "ALIVE",
@@ -55567,18 +55651,25 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-11T14:17:04Z"
+        },
+        {
+          "number": 1549,
+          "author": "dljr-github",
+          "status": "ALIVE",
+          "bpb": 1.322,
+          "created": "2026-04-11T17:45:25Z"
         }
       ]
     },
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 531,
-      "author_count": 254,
-      "alive_count": 117,
-      "dead_count": 173,
+      "count": 533,
+      "author_count": 255,
+      "alive_count": 115,
+      "dead_count": 176,
       "at_risk_count": 51,
-      "incomplete_count": 190,
+      "incomplete_count": 191,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -56847,7 +56938,7 @@
             {
               "number": 1485,
               "author": "ndokutovich",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0679,
               "created": "2026-04-09T00:21:25Z"
             },
@@ -57547,9 +57638,37 @@
           ]
         },
         {
+          "author": "translatingthename",
+          "pr_count": 3,
+          "best_bpb": 1.0587,
+          "prs": [
+            {
+              "number": 397,
+              "author": "translatingthename",
+              "status": "ALIVE",
+              "bpb": 1.1364,
+              "created": "2026-03-22T04:14:13Z"
+            },
+            {
+              "number": 1539,
+              "author": "translatingthename",
+              "status": "DEAD",
+              "bpb": 1.0587,
+              "created": "2026-04-11T09:42:27Z"
+            },
+            {
+              "number": 1550,
+              "author": "translatingthename",
+              "status": "ALIVE",
+              "bpb": 1.0587,
+              "created": "2026-04-11T18:14:33Z"
+            }
+          ]
+        },
+        {
           "author": "samacqua",
           "pr_count": 3,
-          "best_bpb": 1.07643,
+          "best_bpb": 1.07336,
           "prs": [
             {
               "number": 77,
@@ -57568,8 +57687,8 @@
             {
               "number": 1530,
               "author": "samacqua",
-              "status": "ALIVE",
-              "bpb": 1.07643,
+              "status": "INCOMPLETE",
+              "bpb": 1.07336,
               "created": "2026-04-11T00:21:22Z"
             }
           ]
@@ -58236,27 +58355,6 @@
               "status": "ALIVE",
               "bpb": 1.1147,
               "created": "2026-03-25T14:45:44Z"
-            }
-          ]
-        },
-        {
-          "author": "translatingthename",
-          "pr_count": 2,
-          "best_bpb": 1.0587,
-          "prs": [
-            {
-              "number": 397,
-              "author": "translatingthename",
-              "status": "ALIVE",
-              "bpb": 1.1364,
-              "created": "2026-03-22T04:14:13Z"
-            },
-            {
-              "number": 1539,
-              "author": "translatingthename",
-              "status": "ALIVE",
-              "bpb": 1.0587,
-              "created": "2026-04-11T09:42:27Z"
             }
           ]
         },
@@ -59171,7 +59269,7 @@
             {
               "number": 1545,
               "author": "Abhishek8108",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.028308,
               "created": "2026-04-11T16:20:56Z"
             }
@@ -60420,6 +60518,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.3151,
               "created": "2026-04-05T14:04:14Z"
+            }
+          ]
+        },
+        {
+          "author": "dljr-github",
+          "pr_count": 1,
+          "best_bpb": 1.322,
+          "prs": [
+            {
+              "number": 1549,
+              "author": "dljr-github",
+              "status": "ALIVE",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:45:25Z"
             }
           ]
         },
@@ -64614,7 +64726,7 @@
         {
           "number": 1485,
           "author": "ndokutovich",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0679,
           "created": "2026-04-09T00:21:25Z"
         },
@@ -64726,8 +64838,8 @@
         {
           "number": 1530,
           "author": "samacqua",
-          "status": "ALIVE",
-          "bpb": 1.07643,
+          "status": "INCOMPLETE",
+          "bpb": 1.07336,
           "created": "2026-04-11T00:21:22Z"
         },
         {
@@ -64768,7 +64880,7 @@
         {
           "number": 1539,
           "author": "translatingthename",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0587,
           "created": "2026-04-11T09:42:27Z"
         },
@@ -64789,7 +64901,7 @@
         {
           "number": 1545,
           "author": "Abhishek8108",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.028308,
           "created": "2026-04-11T16:20:56Z"
         },
@@ -64799,16 +64911,30 @@
           "status": "INCOMPLETE",
           "bpb": 1.0744,
           "created": "2026-04-11T16:39:04Z"
+        },
+        {
+          "number": 1549,
+          "author": "dljr-github",
+          "status": "ALIVE",
+          "bpb": 1.322,
+          "created": "2026-04-11T17:45:25Z"
+        },
+        {
+          "number": 1550,
+          "author": "translatingthename",
+          "status": "ALIVE",
+          "bpb": 1.0587,
+          "created": "2026-04-11T18:14:33Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 420,
+      "count": 422,
       "author_count": 233,
-      "alive_count": 101,
-      "dead_count": 117,
+      "alive_count": 99,
+      "dead_count": 121,
       "at_risk_count": 41,
       "incomplete_count": 156,
       "unknown_count": 0,
@@ -65827,7 +65953,7 @@
             {
               "number": 1485,
               "author": "ndokutovich",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0679,
               "created": "2026-04-09T00:21:25Z"
             },
@@ -66121,6 +66247,34 @@
           ]
         },
         {
+          "author": "translatingthename",
+          "pr_count": 3,
+          "best_bpb": 1.0587,
+          "prs": [
+            {
+              "number": 397,
+              "author": "translatingthename",
+              "status": "ALIVE",
+              "bpb": 1.1364,
+              "created": "2026-03-22T04:14:13Z"
+            },
+            {
+              "number": 1539,
+              "author": "translatingthename",
+              "status": "DEAD",
+              "bpb": 1.0587,
+              "created": "2026-04-11T09:42:27Z"
+            },
+            {
+              "number": 1550,
+              "author": "translatingthename",
+              "status": "ALIVE",
+              "bpb": 1.0587,
+              "created": "2026-04-11T18:14:33Z"
+            }
+          ]
+        },
+        {
           "author": "dexhunter",
           "pr_count": 3,
           "best_bpb": 1.0722,
@@ -66380,7 +66534,7 @@
             {
               "number": 1545,
               "author": "Abhishek8108",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.028308,
               "created": "2026-04-11T16:20:56Z"
             }
@@ -66614,27 +66768,6 @@
               "status": "DEAD",
               "bpb": 1.0046,
               "created": "2026-04-04T15:40:21Z"
-            }
-          ]
-        },
-        {
-          "author": "translatingthename",
-          "pr_count": 2,
-          "best_bpb": 1.0587,
-          "prs": [
-            {
-              "number": 397,
-              "author": "translatingthename",
-              "status": "ALIVE",
-              "bpb": 1.1364,
-              "created": "2026-03-22T04:14:13Z"
-            },
-            {
-              "number": 1539,
-              "author": "translatingthename",
-              "status": "ALIVE",
-              "bpb": 1.0587,
-              "created": "2026-04-11T09:42:27Z"
             }
           ]
         },
@@ -67097,6 +67230,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.2699,
               "created": "2026-04-08T19:33:30Z"
+            }
+          ]
+        },
+        {
+          "author": "dljr-github",
+          "pr_count": 2,
+          "best_bpb": 1.322,
+          "prs": [
+            {
+              "number": 1548,
+              "author": "dljr-github",
+              "status": "DEAD",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:23:16Z"
+            },
+            {
+              "number": 1549,
+              "author": "dljr-github",
+              "status": "ALIVE",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:45:25Z"
             }
           ]
         },
@@ -68742,20 +68896,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.3151,
               "created": "2026-04-05T14:04:14Z"
-            }
-          ]
-        },
-        {
-          "author": "dljr-github",
-          "pr_count": 1,
-          "best_bpb": 1.322,
-          "prs": [
-            {
-              "number": 1548,
-              "author": "dljr-github",
-              "status": "ALIVE",
-              "bpb": 1.322,
-              "created": "2026-04-11T17:23:16Z"
             }
           ]
         },
@@ -72145,7 +72285,7 @@
         {
           "number": 1485,
           "author": "ndokutovich",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0679,
           "created": "2026-04-09T00:21:25Z"
         },
@@ -72299,7 +72439,7 @@
         {
           "number": 1539,
           "author": "translatingthename",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0587,
           "created": "2026-04-11T09:42:27Z"
         },
@@ -72313,7 +72453,7 @@
         {
           "number": 1545,
           "author": "Abhishek8108",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.028308,
           "created": "2026-04-11T16:20:56Z"
         },
@@ -72327,19 +72467,33 @@
         {
           "number": 1548,
           "author": "dljr-github",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.322,
           "created": "2026-04-11T17:23:16Z"
+        },
+        {
+          "number": 1549,
+          "author": "dljr-github",
+          "status": "ALIVE",
+          "bpb": 1.322,
+          "created": "2026-04-11T17:45:25Z"
+        },
+        {
+          "number": 1550,
+          "author": "translatingthename",
+          "status": "ALIVE",
+          "bpb": 1.0587,
+          "created": "2026-04-11T18:14:33Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 346,
+      "count": 348,
       "author_count": 161,
-      "alive_count": 99,
-      "dead_count": 98,
+      "alive_count": 97,
+      "dead_count": 102,
       "at_risk_count": 42,
       "incomplete_count": 102,
       "unknown_count": 0,
@@ -73792,7 +73946,7 @@
             {
               "number": 1485,
               "author": "ndokutovich",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0679,
               "created": "2026-04-09T00:21:25Z"
             },
@@ -74191,6 +74345,27 @@
           ]
         },
         {
+          "author": "translatingthename",
+          "pr_count": 2,
+          "best_bpb": 1.0587,
+          "prs": [
+            {
+              "number": 1539,
+              "author": "translatingthename",
+              "status": "DEAD",
+              "bpb": 1.0587,
+              "created": "2026-04-11T09:42:27Z"
+            },
+            {
+              "number": 1550,
+              "author": "translatingthename",
+              "status": "ALIVE",
+              "bpb": 1.0587,
+              "created": "2026-04-11T18:14:33Z"
+            }
+          ]
+        },
+        {
           "author": "erichroepke",
           "pr_count": 2,
           "best_bpb": 1.07948,
@@ -74334,6 +74509,27 @@
               "status": "ALIVE",
               "bpb": 1.2201,
               "created": "2026-03-29T05:19:41Z"
+            }
+          ]
+        },
+        {
+          "author": "dljr-github",
+          "pr_count": 2,
+          "best_bpb": 1.322,
+          "prs": [
+            {
+              "number": 1548,
+              "author": "dljr-github",
+              "status": "DEAD",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:23:16Z"
+            },
+            {
+              "number": 1549,
+              "author": "dljr-github",
+              "status": "ALIVE",
+              "bpb": 1.322,
+              "created": "2026-04-11T17:45:25Z"
             }
           ]
         },
@@ -74772,23 +74968,9 @@
             {
               "number": 1545,
               "author": "Abhishek8108",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.028308,
               "created": "2026-04-11T16:20:56Z"
-            }
-          ]
-        },
-        {
-          "author": "translatingthename",
-          "pr_count": 1,
-          "best_bpb": 1.0587,
-          "prs": [
-            {
-              "number": 1539,
-              "author": "translatingthename",
-              "status": "ALIVE",
-              "bpb": 1.0587,
-              "created": "2026-04-11T09:42:27Z"
             }
           ]
         },
@@ -75559,20 +75741,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.30806928,
               "created": "2026-04-07T14:37:34Z"
-            }
-          ]
-        },
-        {
-          "author": "dljr-github",
-          "pr_count": 1,
-          "best_bpb": 1.322,
-          "prs": [
-            {
-              "number": 1548,
-              "author": "dljr-github",
-              "status": "ALIVE",
-              "bpb": 1.322,
-              "created": "2026-04-11T17:23:16Z"
             }
           ]
         },
@@ -78150,7 +78318,7 @@
         {
           "number": 1485,
           "author": "ndokutovich",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0679,
           "created": "2026-04-09T00:21:25Z"
         },
@@ -78290,7 +78458,7 @@
         {
           "number": 1539,
           "author": "translatingthename",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0587,
           "created": "2026-04-11T09:42:27Z"
         },
@@ -78304,7 +78472,7 @@
         {
           "number": 1545,
           "author": "Abhishek8108",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.028308,
           "created": "2026-04-11T16:20:56Z"
         },
@@ -78318,9 +78486,23 @@
         {
           "number": 1548,
           "author": "dljr-github",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.322,
           "created": "2026-04-11T17:23:16Z"
+        },
+        {
+          "number": 1549,
+          "author": "dljr-github",
+          "status": "ALIVE",
+          "bpb": 1.322,
+          "created": "2026-04-11T17:45:25Z"
+        },
+        {
+          "number": 1550,
+          "author": "translatingthename",
+          "status": "ALIVE",
+          "bpb": 1.0587,
+          "created": "2026-04-11T18:14:33Z"
         }
       ]
     },
@@ -78329,8 +78511,8 @@
       "kind": "banned",
       "count": 224,
       "author_count": 94,
-      "alive_count": 42,
-      "dead_count": 84,
+      "alive_count": 39,
+      "dead_count": 87,
       "at_risk_count": 63,
       "incomplete_count": 31,
       "unknown_count": 0,
@@ -79265,7 +79447,7 @@
             {
               "number": 1485,
               "author": "ndokutovich",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0679,
               "created": "2026-04-09T00:21:25Z"
             },
@@ -80154,7 +80336,7 @@
             {
               "number": 1545,
               "author": "Abhishek8108",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.028308,
               "created": "2026-04-11T16:20:56Z"
             }
@@ -80168,7 +80350,7 @@
             {
               "number": 1539,
               "author": "translatingthename",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.0587,
               "created": "2026-04-11T09:42:27Z"
             }
@@ -82006,7 +82188,7 @@
         {
           "number": 1485,
           "author": "ndokutovich",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0679,
           "created": "2026-04-09T00:21:25Z"
         },
@@ -82111,7 +82293,7 @@
         {
           "number": 1539,
           "author": "translatingthename",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.0587,
           "created": "2026-04-11T09:42:27Z"
         },
@@ -82132,7 +82314,7 @@
         {
           "number": 1545,
           "author": "Abhishek8108",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.028308,
           "created": "2026-04-11T16:20:56Z"
         }
@@ -88006,15 +88188,15 @@
       "kind": "legal",
       "count": 76,
       "author_count": 66,
-      "alive_count": 20,
-      "dead_count": 20,
+      "alive_count": 19,
+      "dead_count": 21,
       "at_risk_count": 1,
       "incomplete_count": 35,
       "unknown_count": 0,
       "best_alive": {
-        "number": 1545,
-        "author": "Abhishek8108",
-        "bpb": 1.028308
+        "number": 1512,
+        "author": "Itssshikhar",
+        "bpb": 1.1117
       },
       "people": [
         {
@@ -88207,7 +88389,7 @@
             {
               "number": 1545,
               "author": "Abhishek8108",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.028308,
               "created": "2026-04-11T16:20:56Z"
             }
@@ -89541,7 +89723,7 @@
         {
           "number": 1545,
           "author": "Abhishek8108",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.028308,
           "created": "2026-04-11T16:20:56Z"
         }
@@ -96062,11 +96244,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 531,
+      "left_count": 533,
       "right_count": 2,
-      "left_people": 254,
+      "left_people": 255,
       "right_people": 2,
-      "score": 1062
+      "score": 1066
     },
     {
       "left": "SwiGLU",
@@ -96080,20 +96262,20 @@
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 420,
+      "left_count": 422,
       "right_count": 2,
       "left_people": 233,
       "right_people": 2,
-      "score": 840
+      "score": 844
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 420,
+      "left_count": 422,
       "right_count": 2,
       "left_people": 233,
       "right_people": 2,
-      "score": 840
+      "score": 844
     },
     {
       "left": "SwiGLU",
@@ -96152,20 +96334,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 346,
+      "left_count": 348,
       "right_count": 2,
       "left_people": 161,
       "right_people": 2,
-      "score": 692
+      "score": 696
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 346,
+      "left_count": 348,
       "right_count": 2,
       "left_people": 161,
       "right_people": 2,
-      "score": 692
+      "score": 696
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -96222,6 +96404,15 @@
       "score": 539
     },
     {
+      "left": "TTT",
+      "right": "Flash Attention",
+      "left_count": 533,
+      "right_count": 1,
+      "left_people": 255,
+      "right_people": 1,
+      "score": 533
+    },
+    {
       "left": "SWA",
       "right": "Value Residual",
       "left_count": 76,
@@ -96238,15 +96429,6 @@
       "left_people": 66,
       "right_people": 3,
       "score": 532
-    },
-    {
-      "left": "TTT",
-      "right": "Flash Attention",
-      "left_count": 531,
-      "right_count": 1,
-      "left_people": 254,
-      "right_people": 1,
-      "score": 531
     },
     {
       "left": "BigramHash",
@@ -96296,11 +96478,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 420,
+      "left_count": 422,
       "right_count": 1,
       "left_people": 233,
       "right_people": 1,
-      "score": 420
+      "score": 422
     },
     {
       "left": "Parallel Muon",
@@ -96332,11 +96514,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 346,
+      "left_count": 348,
       "right_count": 1,
       "left_people": 161,
       "right_people": 1,
-      "score": 346
+      "score": 348
     },
     {
       "left": "SwiGLU",
