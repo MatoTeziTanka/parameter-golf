@@ -1,7 +1,45 @@
 {
-  "last_fetch": "2026-04-11T03:25:16.165974+00:00",
-  "api_calls_used": 158,
+  "last_fetch": "2026-04-11T05:12:15.701888+00:00",
+  "api_calls_used": 159,
   "prs": [
+    {
+      "number": 1534,
+      "title": "SP4096 + Depth Recurrence + Parallel Residuals + Legal N-Gram",
+      "author": "someone114514",
+      "state": "OPEN",
+      "created": "2026-04-11T03:47:18Z",
+      "updated": "2026-04-11T03:49:36Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15967527,
+      "technique_summary": "INT6 + EMA + N-gram + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-06_SP4096_LegalNgram/README.md",
+        "records/track_10min_16mb/2026-04-06_SP4096_LegalNgram/online_best_agree_eval.py",
+        "records/track_10min_16mb/2026-04-06_SP4096_LegalNgram/online_ngram_state.c",
+        "records/track_10min_16mb/2026-04-06_SP4096_LegalNgram/submission.json",
+        "records/track_10min_16mb/2026-04-06_SP4096_LegalNgram/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_SP4096_LegalNgram/train_gpt_decompressed.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "two_pass",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1533,
       "title": "Record: SP8192 + Banking + Triple Recurrence + Parallel Residuals + Muon 0.97 + TTT — val_bpb 1.0790 (5-seed mean)",
@@ -2363,13 +2401,12 @@
       "author": "Victory963",
       "state": "OPEN",
       "created": "2026-04-08T04:23:57Z",
-      "updated": "2026-04-08T04:23:57Z",
+      "updated": "2026-04-11T03:44:36Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + Muon",
       "file_paths": [
-        "FUSION_COMPLETE_IMPLEMENTATION_GUIDE.md",
         "fusion_plus_implementation.py",
         "parameter-golf",
         "test_fusion_plus.py",
