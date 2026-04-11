@@ -1,7 +1,45 @@
 {
-  "last_fetch": "2026-04-11T11:33:42.259191+00:00",
-  "api_calls_used": 164,
+  "last_fetch": "2026-04-11T13:05:58.966212+00:00",
+  "api_calls_used": 165,
   "prs": [
+    {
+      "number": 1541,
+      "title": "Record: SP8192 + Improved Parallel Residuals + Muon 0.97 + LR 0.03 + Legal TTT — val_bpb 1.07785 (3-seed mean)",
+      "author": "bigbag",
+      "state": "OPEN",
+      "created": "2026-04-11T12:49:04Z",
+      "updated": "2026-04-11T12:50:13Z",
+      "bpb": 1.07785,
+      "seeds": 3,
+      "artifact_bytes": 15990000,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-11_SP8192_ImprovedParResid_Muon097_LR03_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-04-11_SP8192_ImprovedParResid_Muon097_LR03_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-04-11_SP8192_ImprovedParResid_Muon097_LR03_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-11_SP8192_ImprovedParResid_Muon097_LR03_LegalTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-11_SP8192_ImprovedParResid_Muon097_LR03_LegalTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-11_SP8192_ImprovedParResid_Muon097_LR03_LegalTTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1539,
       "title": "Record: SP8192 + Pre-Quant AdamW TTT + Compiled TTT — val_bpb 1.0587 (3-seed mean)",
@@ -382,7 +420,7 @@
       "author": "samacqua",
       "state": "OPEN",
       "created": "2026-04-11T00:21:22Z",
-      "updated": "2026-04-11T01:00:49Z",
+      "updated": "2026-04-11T11:43:43Z",
       "bpb": 1.07643,
       "seeds": 3,
       "artifact_bytes": 15990000,
@@ -39396,7 +39434,7 @@
       "author": "Sambhav242005",
       "state": "OPEN",
       "created": "2026-03-22T01:35:57Z",
-      "updated": "2026-04-11T11:12:22Z",
+      "updated": "2026-04-11T12:30:09Z",
       "bpb": 1.4061,
       "seeds": null,
       "artifact_bytes": 4390000,
