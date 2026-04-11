@@ -1,7 +1,46 @@
 {
-  "last_fetch": "2026-04-11T05:12:15.701888+00:00",
-  "api_calls_used": 159,
+  "last_fetch": "2026-04-11T06:37:59.050025+00:00",
+  "api_calls_used": 160,
   "prs": [
+    {
+      "number": 1535,
+      "title": "Recursive Transformer - Non-Record Submission — 1.07424983 val_bpb (4h depth-recurrent hybrid transformer run)",
+      "author": "newjordan",
+      "state": "OPEN",
+      "created": "2026-04-11T06:33:59Z",
+      "updated": "2026-04-11T06:35:40Z",
+      "bpb": 1.10831,
+      "seeds": 2,
+      "artifact_bytes": 15844157,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-10_Nightcrawler_Cubed_8xH100/README.md",
+        "records/track_10min_16mb/2026-04-10_Nightcrawler_Cubed_8xH100/submission.json",
+        "records/track_10min_16mb/2026-04-10_Nightcrawler_Cubed_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-04-10_Nightcrawler_Cubed_8xH100/train_seed300.log",
+        "records/track_10min_16mb/2026-04-10_Nightcrawler_Cubed_8xH100/train_seed4.log",
+        "records/track_10min_16mb/2026-04-10_Nightcrawler_Cubed_8xH100/train_seed444.log",
+        "records/track_10min_16mb/2026-04-10_Nightcrawler_Cubed_8xH100/train_seed4_4h.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1534,
       "title": "SP4096 + Depth Recurrence + Parallel Residuals + Legal N-Gram",
@@ -264,11 +303,11 @@
       "author": "alphastar1111",
       "state": "OPEN",
       "created": "2026-04-10T16:09:59Z",
-      "updated": "2026-04-10T16:09:59Z",
+      "updated": "2026-04-11T06:02:44Z",
       "bpb": 1.2026,
       "seeds": null,
       "artifact_bytes": 15841206,
-      "technique_summary": "LeakyReLU² + TTT + Muon + INT6 + INT8 + EMA",
+      "technique_summary": "LeakyReLU² + Muon + INT6 + INT8",
       "file_paths": [
         "records/track_10min_16mb/2026-04-10_6L_DepthMinimalism_UNet_SlidingWindow/README.md",
         "records/track_10min_16mb/2026-04-10_6L_DepthMinimalism_UNet_SlidingWindow/submission.json",
@@ -277,11 +316,10 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
-        "ttt",
         "leaky_relu"
       ],
       "track": "record",
-      "technique_type": "ttt",
+      "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
