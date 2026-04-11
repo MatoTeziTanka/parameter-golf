@@ -1,7 +1,190 @@
 {
-  "last_fetch": "2026-04-11T00:00:28.023471+00:00",
-  "api_calls_used": 157,
+  "last_fetch": "2026-04-11T03:25:16.165974+00:00",
+  "api_calls_used": 158,
   "prs": [
+    {
+      "number": 1533,
+      "title": "Record: SP8192 + Banking + Triple Recurrence + Parallel Residuals + Muon 0.97 + TTT — val_bpb 1.0790 (5-seed mean)",
+      "author": "aryanbhosale",
+      "state": "OPEN",
+      "created": "2026-04-11T02:53:08Z",
+      "updated": "2026-04-11T02:53:08Z",
+      "bpb": 1.079,
+      "seeds": 5,
+      "artifact_bytes": 15990000,
+      "technique_summary": "TTT + Muon + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-11_SP8192_Banking_ParResid_TripleRecur_Muon97_TTT/README.md",
+        "records/track_10min_16mb/2026-04-11_SP8192_Banking_ParResid_TripleRecur_Muon97_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-11_SP8192_Banking_ParResid_TripleRecur_Muon97_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-11_SP8192_Banking_ParResid_TripleRecur_Muon97_TTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-11_SP8192_Banking_ParResid_TripleRecur_Muon97_TTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-11_SP8192_Banking_ParResid_TripleRecur_Muon97_TTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-11_SP8192_Banking_ParResid_TripleRecur_Muon97_TTT/train_seed7.log",
+        "records/track_10min_16mb/2026-04-11_SP8192_Banking_ParResid_TripleRecur_Muon97_TTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1532,
+      "title": "Record: SP8192 + 3-Layer Recurrence + Parallel Residuals + QK-Gain 5.25 + Legal TTT + Asynchronous Data Loader - val_bpb 1.0803",
+      "author": "nogakeren",
+      "state": "OPEN",
+      "created": "2026-04-11T01:12:41Z",
+      "updated": "2026-04-11T01:15:28Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-10_async_loader_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-04-10_async_loader_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-04-10_async_loader_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-10_async_loader_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-10_async_loader_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/trarin_seed42.log",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1531,
+      "title": "Add V22 Int6 fast-converging 16MB model (~8min on RTX 4090)",
+      "author": "mini-sarami",
+      "state": "OPEN",
+      "created": "2026-04-11T00:50:23Z",
+      "updated": "2026-04-11T01:07:50Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT6",
+      "file_paths": [
+        "records/track_10min_16mb/Non-Record_V22_4090_Int6_Patchin/README.md",
+        "records/track_10min_16mb/Non-Record_V22_4090_Int6_Patchin/submission.int6.ptz",
+        "records/track_10min_16mb/Non-Record_V22_4090_Int6_Patchin/train_gpt.py",
+        "records/track_10min_16mb/V22_Int6_4090_8min/README.md",
+        "records/track_10min_16mb/V22_Int6_4090_8min/submission.int6.ptz",
+        "records/track_10min_16mb/V22_Int6_4090_8min/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1530,
+      "title": "Record: Varlen attention + fused MLP + doc-independent TTT (1.07643)",
+      "author": "samacqua",
+      "state": "OPEN",
+      "created": "2026-04-11T00:21:22Z",
+      "updated": "2026-04-11T01:00:49Z",
+      "bpb": 1.07643,
+      "seeds": 3,
+      "artifact_bytes": 15990000,
+      "technique_summary": "TTT + Muon + LoRA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-10_VarLenAttn/README.md",
+        "records/track_10min_16mb/2026-04-10_VarLenAttn/logs/train0.txt",
+        "records/track_10min_16mb/2026-04-10_VarLenAttn/logs/train1.txt",
+        "records/track_10min_16mb/2026-04-10_VarLenAttn/logs/train2.txt",
+        "records/track_10min_16mb/2026-04-10_VarLenAttn/requirements.txt",
+        "records/track_10min_16mb/2026-04-10_VarLenAttn/submission.json",
+        "records/track_10min_16mb/2026-04-10_VarLenAttn/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1529,
+      "title": "Record: ImprovedParallelResiduals, 1.0744 BPB / 2.7752 nats, -0.0034 BPB /   -0.0088 nats vs PR #1523",
+      "author": "msisovic",
+      "state": "OPEN",
+      "created": "2026-04-11T00:04:56Z",
+      "updated": "2026-04-11T01:48:09Z",
+      "bpb": 1.07438392,
+      "seeds": 3,
+      "artifact_bytes": 15960000,
+      "technique_summary": "TTT + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/README.md",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/cutlass_evt_fusion/__init__.py",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/cutlass_evt_fusion/csrc/gemm_act_grad.cu",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/cutlass_evt_fusion/csrc/torch_binding.cpp",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/cutlass_evt_fusion/cutlass_evt_fusion.cpython-312-x86_64-linux-gnu.so",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/cutlass_evt_fusion/setup.py",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/requirements.txt",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/submission.json",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/train_gpt.py",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/train_gpt_human.py",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1528,
       "title": "Non-record: 11L s2048 4h on 1xA100 — 1.1104 BPB",
@@ -175,7 +358,7 @@
       "author": "EthanYangTW",
       "state": "OPEN",
       "created": "2026-04-10T09:34:37Z",
-      "updated": "2026-04-10T21:22:03Z",
+      "updated": "2026-04-11T01:27:20Z",
       "bpb": 1.0778,
       "seeds": 3,
       "artifact_bytes": 15990000,
@@ -3535,7 +3718,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-06T16:14:47Z",
-      "updated": "2026-04-08T00:41:35Z",
+      "updated": "2026-04-11T03:13:14Z",
       "bpb": 1.08309,
       "seeds": 5,
       "artifact_bytes": 19811,
@@ -4801,7 +4984,7 @@
       "author": "mini-sarami",
       "state": "OPEN",
       "created": "2026-04-05T08:23:17Z",
-      "updated": "2026-04-10T22:38:43Z",
+      "updated": "2026-04-11T00:21:21Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -4809,7 +4992,10 @@
       "file_paths": [
         "records/track_10min_16mb/Non-Record_V22_4090_Int6_Patchin/README.md",
         "records/track_10min_16mb/Non-Record_V22_4090_Int6_Patchin/submission.int6.ptz",
-        "records/track_10min_16mb/Non-Record_V22_4090_Int6_Patchin/train_gpt.py"
+        "records/track_10min_16mb/Non-Record_V22_4090_Int6_Patchin/train_gpt.py",
+        "records/track_10min_16mb/V22_Int6_4090_8min/README.md",
+        "records/track_10min_16mb/V22_Int6_4090_8min/submission.int6.ptz",
+        "records/track_10min_16mb/V22_Int6_4090_8min/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -15083,22 +15269,22 @@
     },
     {
       "number": 1042,
-      "title": "Record: Frequency-Weighted GPTQ Calibration + Adaptive Precision Embedding Quantization val_bpb: 1.0980 (3-seed mean) ",
+      "title": "Record: Frequency-Weighted GPTQ Calibration + AdaptPrecision Embedding Quantization + L10-INT8 + LR1.4x + QK6.0 + WD0.60 on Depth Recurrence — val_bpb 1.0954 (3-seed mean)",
       "author": "nothingLiva",
       "state": "OPEN",
       "created": "2026-03-28T23:06:05Z",
-      "updated": "2026-04-08T00:17:21Z",
-      "bpb": 1.098,
+      "updated": "2026-04-11T02:26:57Z",
+      "bpb": 1.0954,
       "seeds": 3,
-      "artifact_bytes": 16000000,
-      "technique_summary": "GPTQ + INT6 + INT8",
+      "artifact_bytes": 15820000,
+      "technique_summary": "GPTQ + INT8",
       "file_paths": [
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/README.md",
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/freqgptq_seed_1337.log.txt",
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/freqgptq_seed_2024.log.txt",
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/freqgptq_seed_42.log.txt",
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/submission.json",
-        "records/track_10min_16mb/2026-03-28_AdaptivePrecisionEmbeddings_1.1217/trainFreqGPTQ_gpt.py"
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/README.md",
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/submission.json",
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_gpt.py",
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_seed1337_log.txt",
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_seed2024_log.txt",
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_seed42_log.txt"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -30152,9 +30338,9 @@
       "number": 633,
       "title": "PROTEUS v9 — 11L INT6 + single-epoch LoRA TTT (mean val_bpb=1.1526, 3 seeds)",
       "author": "MatoTeziTanka",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-24T17:12:33Z",
-      "updated": "2026-03-30T02:33:10Z",
+      "updated": "2026-04-11T02:12:27Z",
       "bpb": 1.1526,
       "seeds": 3,
       "artifact_bytes": 15400000,
@@ -30174,13 +30360,15 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 632,
@@ -39597,9 +39785,9 @@
       "number": 368,
       "title": "PROTEUS v4 — non-record submission (val_bpb: 1.2037)",
       "author": "MatoTeziTanka",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-21T20:30:56Z",
-      "updated": "2026-03-21T20:30:56Z",
+      "updated": "2026-04-11T02:12:25Z",
       "bpb": 1.2037,
       "seeds": null,
       "artifact_bytes": 12499612,
@@ -39612,17 +39800,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 367,
@@ -48735,9 +48923,9 @@
       "number": 95,
       "title": "PROTEUS EMA — val_bpb: 1.1836 (3-seed mean, Notable Non-Record)",
       "author": "MatoTeziTanka",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-19T15:46:22Z",
-      "updated": "2026-03-30T02:33:26Z",
+      "updated": "2026-04-11T02:12:24Z",
       "bpb": 1.1836,
       "seeds": 3,
       "artifact_bytes": 15880000,
@@ -48760,15 +48948,15 @@
       ],
       "track": "non-record",
       "technique_type": "neural",
-      "status": "NOTABLE",
-      "flags": [
-        "title-contains-notable"
-      ],
-      "confidence": "HIGH",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 94,
