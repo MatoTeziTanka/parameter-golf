@@ -1,7 +1,43 @@
 {
-  "last_fetch": "2026-04-11T06:37:59.050025+00:00",
-  "api_calls_used": 160,
+  "last_fetch": "2026-04-11T07:51:52.927973+00:00",
+  "api_calls_used": 161,
   "prs": [
+    {
+      "number": 1536,
+      "title": "Record: SP8192 + VarLen Attention + Doc-Independent LoRA TTT + Banking + Muon 0.97 — val_bpb 1.07747 (3-seed mean)",
+      "author": "dexhunter",
+      "state": "OPEN",
+      "created": "2026-04-11T06:50:46Z",
+      "updated": "2026-04-11T06:50:46Z",
+      "bpb": 1.07747,
+      "seeds": 3,
+      "artifact_bytes": 15990000,
+      "technique_summary": "TTT + Muon + LoRA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-11_VarLenDocTTT_PyTorchFallback/README.md",
+        "records/track_10min_16mb/2026-04-11_VarLenDocTTT_PyTorchFallback/submission.json",
+        "records/track_10min_16mb/2026-04-11_VarLenDocTTT_PyTorchFallback/train_gpt.py",
+        "records/track_10min_16mb/2026-04-11_VarLenDocTTT_PyTorchFallback/train_seed0.log",
+        "records/track_10min_16mb/2026-04-11_VarLenDocTTT_PyTorchFallback/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-11_VarLenDocTTT_PyTorchFallback/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1535,
       "title": "Recursive Transformer - Non-Record Submission — 1.07424983 val_bpb (4h depth-recurrent hybrid transformer run)",
@@ -299,11 +335,11 @@
     },
     {
       "number": 1527,
-      "title": "Record: 6L depth minimalism U-Net sliding window - val_bpb 1.2025",
+      "title": "6L Depth Minimalism + U-Net + Sliding Window — val_bpb 1.2026",
       "author": "alphastar1111",
       "state": "OPEN",
       "created": "2026-04-10T16:09:59Z",
-      "updated": "2026-04-11T06:02:44Z",
+      "updated": "2026-04-11T07:42:16Z",
       "bpb": 1.2026,
       "seeds": null,
       "artifact_bytes": 15841206,
@@ -545,7 +581,7 @@
       "author": "RulinShao",
       "state": "OPEN",
       "created": "2026-04-10T01:30:42Z",
-      "updated": "2026-04-10T17:47:58Z",
+      "updated": "2026-04-11T07:32:40Z",
       "bpb": 1.0632,
       "seeds": 3,
       "artifact_bytes": 15000000,
@@ -727,7 +763,7 @@
       "author": "OE-GOD",
       "state": "OPEN",
       "created": "2026-04-09T20:06:21Z",
-      "updated": "2026-04-10T21:21:00Z",
+      "updated": "2026-04-11T07:27:56Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 1600000,
@@ -738,7 +774,9 @@
         "records/track_non_record_16mb/2026-04-09_ANS_Compression/delta_compress.py",
         "records/track_non_record_16mb/2026-04-09_ANS_Compression/submission.json",
         "run_ans_experiment.sh",
-        "run_sweep.sh"
+        "run_sweep.sh",
+        "train_gpt_ans.py",
+        "train_gpt_pr1517.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
