@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-12T08:04:25.603459+00:00",
-  "api_calls_used": 176,
+  "last_fetch": "2026-04-12T09:24:57.893092+00:00",
+  "api_calls_used": 177,
   "prs": [
     {
       "number": 1565,
@@ -1186,7 +1186,7 @@
       "author": "samacqua",
       "state": "OPEN",
       "created": "2026-04-11T00:21:22Z",
-      "updated": "2026-04-11T18:31:51Z",
+      "updated": "2026-04-12T09:13:21Z",
       "bpb": 1.07336,
       "seeds": 0,
       "artifact_bytes": 15990000,
@@ -1497,7 +1497,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-10T01:43:32Z",
-      "updated": "2026-04-12T05:01:44Z",
+      "updated": "2026-04-12T08:22:08Z",
       "bpb": 1.074644,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -3927,7 +3927,7 @@
       "author": "codeprakhar25",
       "state": "OPEN",
       "created": "2026-04-07T20:06:50Z",
-      "updated": "2026-04-12T05:19:53Z",
+      "updated": "2026-04-12T09:11:42Z",
       "bpb": 1.368,
       "seeds": null,
       "artifact_bytes": 10000000,
@@ -11119,7 +11119,7 @@
       "author": "rithvik-duddupudi",
       "state": "OPEN",
       "created": "2026-03-31T20:07:30Z",
-      "updated": "2026-03-31T20:07:30Z",
+      "updated": "2026-04-12T08:13:47Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -11127,34 +11127,41 @@
       "file_paths": [
         "docs/PLAN-h100-novel-budget.md",
         "docs/PLAN-leaderboard-novel-improve.md",
+        "docs/PLAN-lower-val-bpb.md",
         "docs/PLAN-readme-records-workflow.md",
         "docs/PLAN-records-innovation-score.md",
+        "docs/PLAN-sp8192-novel-knob.md",
         "docs/WORKFLOW_DOCUMENTATION.md",
         "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/README.md",
         "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/requirements-record.txt",
         "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/submission.json",
         "records/track_10min_16mb/2026-03-21_OrchestratedStack_10LInt5/train_gpt.py",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/NOVEL_KNOB.md",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/mlp_activation_spec.py",
+        "records/track_10min_16mb/2026-04-09_SP8192_3LayerRecur_ParResid_QK525_LegalTTT/train_gpt_plain.py",
         "requirements-orchestrated-stack.txt",
+        "scripts/decompress_record_train_gpt.py",
         "scripts/run_orchestrated_full_ab.sh",
         "scripts/run_orchestrated_stack_8xh100.sh",
         "scripts/smoke_orchestrated_8xh100.sh",
         "tests/test_orchestrated_mlp_activation.py",
-        "tests/test_orchestrated_smoke_hyperparams.py"
+        "tests/test_orchestrated_smoke_hyperparams.py",
+        "tests/test_sp8192_p0_mlp_activation_spec.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
       "track": "record",
-      "technique_type": "neural",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 1187,
@@ -16539,7 +16546,7 @@
       "author": "nothingLiva",
       "state": "OPEN",
       "created": "2026-03-28T23:06:05Z",
-      "updated": "2026-04-11T08:02:55Z",
+      "updated": "2026-04-12T08:11:12Z",
       "bpb": 1.0954,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -40397,7 +40404,7 @@
       "author": "Sambhav242005",
       "state": "OPEN",
       "created": "2026-03-22T01:35:57Z",
-      "updated": "2026-04-11T12:30:09Z",
+      "updated": "2026-04-12T08:28:59Z",
       "bpb": 1.4061,
       "seeds": null,
       "artifact_bytes": 4390000,
@@ -45759,9 +45766,9 @@
       "number": 231,
       "title": "Record: SEQ_LEN=4096 training",
       "author": "lenguyen1807",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-20T16:59:08Z",
-      "updated": "2026-03-20T16:59:08Z",
+      "updated": "2026-04-12T08:38:53Z",
       "bpb": 1.2036,
       "seeds": null,
       "artifact_bytes": null,
@@ -45773,19 +45780,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown",
-        "artifact-unknown",
-        "no-submission-json"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 230,
