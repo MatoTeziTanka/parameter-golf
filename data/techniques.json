@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-12T21:39:07Z",
+  "generated_at": "2026-04-12T22:38:48Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1423,
-    "matched_pr_count": 1051,
+    "pr_count": 1425,
+    "matched_pr_count": 1053,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -11,8 +11,8 @@
     "status_counts": {
       "ALIVE": 234,
       "AT_RISK": 89,
-      "DEAD": 409,
-      "INCOMPLETE": 683,
+      "DEAD": 410,
+      "INCOMPLETE": 684,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 541,
-      "author_count": 256,
-      "alive_count": 119,
-      "dead_count": 177,
+      "count": 542,
+      "author_count": 257,
+      "alive_count": 118,
+      "dead_count": 178,
       "at_risk_count": 51,
-      "incomplete_count": 194,
+      "incomplete_count": 195,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -2043,7 +2043,7 @@
             {
               "number": 1564,
               "author": "joshkmartinez",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.01710033,
               "created": "2026-04-12T07:05:39Z"
             }
@@ -5287,6 +5287,20 @@
               "status": "AT_RISK",
               "bpb": null,
               "created": "2026-03-20T17:55:38Z"
+            }
+          ]
+        },
+        {
+          "author": "KRGulaj",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1574,
+              "author": "KRGulaj",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-12T21:56:17Z"
             }
           ]
         },
@@ -9369,7 +9383,7 @@
         {
           "number": 1564,
           "author": "joshkmartinez",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.01710033,
           "created": "2026-04-12T07:05:39Z"
         },
@@ -9400,16 +9414,23 @@
           "status": "ALIVE",
           "bpb": 1.1464,
           "created": "2026-04-12T20:30:49Z"
+        },
+        {
+          "number": 1574,
+          "author": "KRGulaj",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-12T21:56:17Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 430,
+      "count": 431,
       "author_count": 236,
       "alive_count": 101,
-      "dead_count": 123,
+      "dead_count": 124,
       "at_risk_count": 43,
       "incomplete_count": 158,
       "unknown_count": 0,
@@ -10470,6 +10491,41 @@
           ]
         },
         {
+          "author": "joshkmartinez",
+          "pr_count": 4,
+          "best_bpb": 1.01671233,
+          "prs": [
+            {
+              "number": 1489,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.0736,
+              "created": "2026-04-09T05:04:57Z"
+            },
+            {
+              "number": 1563,
+              "author": "joshkmartinez",
+              "status": "DEAD",
+              "bpb": 1.02045733,
+              "created": "2026-04-12T07:00:00Z"
+            },
+            {
+              "number": 1564,
+              "author": "joshkmartinez",
+              "status": "DEAD",
+              "bpb": 1.01710033,
+              "created": "2026-04-12T07:05:39Z"
+            },
+            {
+              "number": 1575,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.01671233,
+              "created": "2026-04-12T22:30:10Z"
+            }
+          ]
+        },
+        {
           "author": "X-Abhishek-X",
           "pr_count": 4,
           "best_bpb": 1.0866,
@@ -10739,34 +10795,6 @@
               "status": "AT_RISK",
               "bpb": 0.9757,
               "created": "2026-03-25T22:17:49Z"
-            }
-          ]
-        },
-        {
-          "author": "joshkmartinez",
-          "pr_count": 3,
-          "best_bpb": 1.01710033,
-          "prs": [
-            {
-              "number": 1489,
-              "author": "joshkmartinez",
-              "status": "ALIVE",
-              "bpb": 1.0736,
-              "created": "2026-04-09T05:04:57Z"
-            },
-            {
-              "number": 1563,
-              "author": "joshkmartinez",
-              "status": "DEAD",
-              "bpb": 1.02045733,
-              "created": "2026-04-12T07:00:00Z"
-            },
-            {
-              "number": 1564,
-              "author": "joshkmartinez",
-              "status": "ALIVE",
-              "bpb": 1.01710033,
-              "created": "2026-04-12T07:05:39Z"
             }
           ]
         },
@@ -17054,7 +17082,7 @@
         {
           "number": 1564,
           "author": "joshkmartinez",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.01710033,
           "created": "2026-04-12T07:05:39Z"
         },
@@ -17092,6 +17120,13 @@
           "status": "ALIVE",
           "bpb": 1.1464,
           "created": "2026-04-12T20:30:49Z"
+        },
+        {
+          "number": 1575,
+          "author": "joshkmartinez",
+          "status": "ALIVE",
+          "bpb": 1.01671233,
+          "created": "2026-04-12T22:30:10Z"
         }
       ]
     },
@@ -24806,8 +24841,8 @@
       "kind": "legal",
       "count": 357,
       "author_count": 164,
-      "alive_count": 100,
-      "dead_count": 104,
+      "alive_count": 99,
+      "dead_count": 105,
       "at_risk_count": 42,
       "incomplete_count": 106,
       "unknown_count": 0,
@@ -26351,7 +26386,7 @@
             {
               "number": 1564,
               "author": "joshkmartinez",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.01710033,
               "created": "2026-04-12T07:05:39Z"
             }
@@ -30933,7 +30968,7 @@
         {
           "number": 1564,
           "author": "joshkmartinez",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.01710033,
           "created": "2026-04-12T07:05:39Z"
         },
@@ -40988,12 +41023,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 29,
-      "author_count": 19,
+      "count": 30,
+      "author_count": 20,
       "alive_count": 1,
       "dead_count": 6,
       "at_risk_count": 2,
-      "incomplete_count": 18,
+      "incomplete_count": 19,
       "unknown_count": 0,
       "best_alive": {
         "number": 914,
@@ -41310,6 +41345,20 @@
           ]
         },
         {
+          "author": "KRGulaj",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1574,
+              "author": "KRGulaj",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-12T21:56:17Z"
+            }
+          ]
+        },
+        {
           "author": "PersusUS",
           "pr_count": 1,
           "best_bpb": null,
@@ -41541,6 +41590,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.255216,
           "created": "2026-04-10T13:06:38Z"
+        },
+        {
+          "number": 1574,
+          "author": "KRGulaj",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-12T21:56:17Z"
         }
       ]
     },
@@ -56357,12 +56413,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 541,
-      "author_count": 256,
-      "alive_count": 119,
-      "dead_count": 177,
+      "count": 542,
+      "author_count": 257,
+      "alive_count": 118,
+      "dead_count": 178,
       "at_risk_count": 51,
-      "incomplete_count": 194,
+      "incomplete_count": 195,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -58380,7 +58436,7 @@
             {
               "number": 1564,
               "author": "joshkmartinez",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.01710033,
               "created": "2026-04-12T07:05:39Z"
             }
@@ -61624,6 +61680,20 @@
               "status": "AT_RISK",
               "bpb": null,
               "created": "2026-03-20T17:55:38Z"
+            }
+          ]
+        },
+        {
+          "author": "KRGulaj",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1574,
+              "author": "KRGulaj",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-12T21:56:17Z"
             }
           ]
         },
@@ -65706,7 +65776,7 @@
         {
           "number": 1564,
           "author": "joshkmartinez",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.01710033,
           "created": "2026-04-12T07:05:39Z"
         },
@@ -65737,16 +65807,23 @@
           "status": "ALIVE",
           "bpb": 1.1464,
           "created": "2026-04-12T20:30:49Z"
+        },
+        {
+          "number": 1574,
+          "author": "KRGulaj",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-12T21:56:17Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 430,
+      "count": 431,
       "author_count": 236,
       "alive_count": 101,
-      "dead_count": 123,
+      "dead_count": 124,
       "at_risk_count": 43,
       "incomplete_count": 158,
       "unknown_count": 0,
@@ -66807,6 +66884,41 @@
           ]
         },
         {
+          "author": "joshkmartinez",
+          "pr_count": 4,
+          "best_bpb": 1.01671233,
+          "prs": [
+            {
+              "number": 1489,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.0736,
+              "created": "2026-04-09T05:04:57Z"
+            },
+            {
+              "number": 1563,
+              "author": "joshkmartinez",
+              "status": "DEAD",
+              "bpb": 1.02045733,
+              "created": "2026-04-12T07:00:00Z"
+            },
+            {
+              "number": 1564,
+              "author": "joshkmartinez",
+              "status": "DEAD",
+              "bpb": 1.01710033,
+              "created": "2026-04-12T07:05:39Z"
+            },
+            {
+              "number": 1575,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.01671233,
+              "created": "2026-04-12T22:30:10Z"
+            }
+          ]
+        },
+        {
           "author": "X-Abhishek-X",
           "pr_count": 4,
           "best_bpb": 1.0866,
@@ -67076,34 +67188,6 @@
               "status": "AT_RISK",
               "bpb": 0.9757,
               "created": "2026-03-25T22:17:49Z"
-            }
-          ]
-        },
-        {
-          "author": "joshkmartinez",
-          "pr_count": 3,
-          "best_bpb": 1.01710033,
-          "prs": [
-            {
-              "number": 1489,
-              "author": "joshkmartinez",
-              "status": "ALIVE",
-              "bpb": 1.0736,
-              "created": "2026-04-09T05:04:57Z"
-            },
-            {
-              "number": 1563,
-              "author": "joshkmartinez",
-              "status": "DEAD",
-              "bpb": 1.02045733,
-              "created": "2026-04-12T07:00:00Z"
-            },
-            {
-              "number": 1564,
-              "author": "joshkmartinez",
-              "status": "ALIVE",
-              "bpb": 1.01710033,
-              "created": "2026-04-12T07:05:39Z"
             }
           ]
         },
@@ -73391,7 +73475,7 @@
         {
           "number": 1564,
           "author": "joshkmartinez",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.01710033,
           "created": "2026-04-12T07:05:39Z"
         },
@@ -73429,6 +73513,13 @@
           "status": "ALIVE",
           "bpb": 1.1464,
           "created": "2026-04-12T20:30:49Z"
+        },
+        {
+          "number": 1575,
+          "author": "joshkmartinez",
+          "status": "ALIVE",
+          "bpb": 1.01671233,
+          "created": "2026-04-12T22:30:10Z"
         }
       ]
     },
@@ -73437,8 +73528,8 @@
       "kind": "legal",
       "count": 357,
       "author_count": 164,
-      "alive_count": 100,
-      "dead_count": 104,
+      "alive_count": 99,
+      "dead_count": 105,
       "at_risk_count": 42,
       "incomplete_count": 106,
       "unknown_count": 0,
@@ -74982,7 +75073,7 @@
             {
               "number": 1564,
               "author": "joshkmartinez",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.01710033,
               "created": "2026-04-12T07:05:39Z"
             }
@@ -79564,7 +79655,7 @@
         {
           "number": 1564,
           "author": "joshkmartinez",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.01710033,
           "created": "2026-04-12T07:05:39Z"
         },
@@ -94531,12 +94622,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 29,
-      "author_count": 19,
+      "count": 30,
+      "author_count": 20,
       "alive_count": 1,
       "dead_count": 6,
       "at_risk_count": 2,
-      "incomplete_count": 18,
+      "incomplete_count": 19,
       "unknown_count": 0,
       "best_alive": {
         "number": 914,
@@ -94853,6 +94944,20 @@
           ]
         },
         {
+          "author": "KRGulaj",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1574,
+              "author": "KRGulaj",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-12T21:56:17Z"
+            }
+          ]
+        },
+        {
           "author": "PersusUS",
           "pr_count": 1,
           "best_bpb": null,
@@ -95084,6 +95189,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.255216,
           "created": "2026-04-10T13:06:38Z"
+        },
+        {
+          "number": 1574,
+          "author": "KRGulaj",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-12T21:56:17Z"
         }
       ]
     },
@@ -97292,10 +97404,19 @@
       "left": "LeakyReLU\u00b2",
       "right": "SSM/Mamba/S4D",
       "left_count": 104,
-      "right_count": 29,
+      "right_count": 30,
       "left_people": 80,
-      "right_people": 19,
-      "score": 3016
+      "right_people": 20,
+      "score": 3120
+    },
+    {
+      "left": "BigramHash",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 84,
+      "right_count": 30,
+      "left_people": 73,
+      "right_people": 20,
+      "score": 2520
     },
     {
       "left": "QAT",
@@ -97307,22 +97428,13 @@
       "score": 2484
     },
     {
-      "left": "BigramHash",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 84,
-      "right_count": 29,
-      "left_people": 73,
-      "right_people": 19,
-      "score": 2436
-    },
-    {
       "left": "SWA",
       "right": "SSM/Mamba/S4D",
       "left_count": 76,
-      "right_count": 29,
+      "right_count": 30,
       "left_people": 66,
-      "right_people": 19,
-      "score": 2204
+      "right_people": 20,
+      "score": 2280
     },
     {
       "left": "QAT",
@@ -97388,6 +97500,15 @@
       "score": 1664
     },
     {
+      "left": "SwiGLU",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 52,
+      "right_count": 30,
+      "left_people": 44,
+      "right_people": 20,
+      "score": 1560
+    },
+    {
       "left": "XSA",
       "right": "JEPA",
       "left_count": 77,
@@ -97404,15 +97525,6 @@
       "left_people": 66,
       "right_people": 19,
       "score": 1520
-    },
-    {
-      "left": "SwiGLU",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 52,
-      "right_count": 29,
-      "left_people": 44,
-      "right_people": 19,
-      "score": 1508
     },
     {
       "left": "XSA",
@@ -97462,11 +97574,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 541,
+      "left_count": 542,
       "right_count": 2,
-      "left_people": 256,
+      "left_people": 257,
       "right_people": 2,
-      "score": 1082
+      "score": 1084
     },
     {
       "left": "SwiGLU",
@@ -97480,20 +97592,20 @@
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 430,
+      "left_count": 431,
       "right_count": 2,
       "left_people": 236,
       "right_people": 2,
-      "score": 860
+      "score": 862
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 430,
+      "left_count": 431,
       "right_count": 2,
       "left_people": 236,
       "right_people": 2,
-      "score": 860
+      "score": 862
     },
     {
       "left": "SwiGLU",
@@ -97570,11 +97682,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Parallel Muon",
-      "left_count": 29,
+      "left_count": 30,
       "right_count": 23,
-      "left_people": 19,
+      "left_people": 20,
       "right_people": 13,
-      "score": 667
+      "score": 690
     },
     {
       "left": "QAT",
@@ -97606,20 +97718,20 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "MoE",
-      "left_count": 29,
+      "left_count": 30,
       "right_count": 19,
-      "left_people": 19,
+      "left_people": 20,
       "right_people": 15,
-      "score": 551
+      "score": 570
     },
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 541,
+      "left_count": 542,
       "right_count": 1,
-      "left_people": 256,
+      "left_people": 257,
       "right_people": 1,
-      "score": 541
+      "score": 542
     },
     {
       "left": "XSA",
@@ -97696,11 +97808,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 430,
+      "left_count": 431,
       "right_count": 1,
       "left_people": 236,
       "right_people": 1,
-      "score": 430
+      "score": 431
     },
     {
       "left": "JEPA",
@@ -97775,6 +97887,24 @@
       "score": 216
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Value Residual",
+      "left_count": 30,
+      "right_count": 7,
+      "left_people": 20,
+      "right_people": 6,
+      "score": 210
+    },
+    {
+      "left": "SSM/Mamba/S4D",
+      "right": "Progressive Depth",
+      "left_count": 30,
+      "right_count": 7,
+      "left_people": 20,
+      "right_people": 3,
+      "score": 210
+    },
+    {
       "left": "LeakyReLU\u00b2",
       "right": "Differential Attention",
       "left_count": 104,
@@ -97794,30 +97924,12 @@
     },
     {
       "left": "SSM/Mamba/S4D",
-      "right": "Value Residual",
-      "left_count": 29,
-      "right_count": 7,
-      "left_people": 19,
-      "right_people": 6,
-      "score": 203
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Progressive Depth",
-      "left_count": 29,
-      "right_count": 7,
-      "left_people": 19,
-      "right_people": 3,
-      "score": 203
-    },
-    {
-      "left": "SSM/Mamba/S4D",
       "right": "Weight Sharing",
-      "left_count": 29,
+      "left_count": 30,
       "right_count": 6,
-      "left_people": 19,
+      "left_people": 20,
       "right_people": 4,
-      "score": 174
+      "score": 180
     },
     {
       "left": "BigramHash",
@@ -98020,20 +98132,20 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Differential Attention",
-      "left_count": 29,
+      "left_count": 30,
       "right_count": 2,
-      "left_people": 19,
+      "left_people": 20,
       "right_people": 2,
-      "score": 58
+      "score": 60
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "U-Net skips",
-      "left_count": 29,
+      "left_count": 30,
       "right_count": 2,
-      "left_people": 19,
+      "left_people": 20,
       "right_people": 2,
-      "score": 58
+      "score": 60
     },
     {
       "left": "SwiGLU",
@@ -98146,11 +98258,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Flash Attention",
-      "left_count": 29,
+      "left_count": 30,
       "right_count": 1,
-      "left_people": 19,
+      "left_people": 20,
       "right_people": 1,
-      "score": 29
+      "score": 30
     },
     {
       "left": "Parallel Muon",

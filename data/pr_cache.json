@@ -1,7 +1,77 @@
 {
-  "last_fetch": "2026-04-12T21:38:59.836653+00:00",
-  "api_calls_used": 190,
+  "last_fetch": "2026-04-12T22:38:40.239520+00:00",
+  "api_calls_used": 191,
   "prs": [
+    {
+      "number": 1575,
+      "title": "Record: GDN-Hybrid + Sliding Window Attention + compressed-code warmdown1000 (cold-cache, 1.01671 BPB)",
+      "author": "joshkmartinez",
+      "state": "OPEN",
+      "created": "2026-04-12T22:30:10Z",
+      "updated": "2026-04-12T22:30:10Z",
+      "bpb": 1.01671233,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_CompressedCode_1.0167/README.md",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_CompressedCode_1.0167/architectures.py",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_CompressedCode_1.0167/configs.py",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_CompressedCode_1.0167/requirements.txt",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_CompressedCode_1.0167/submission.json",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_CompressedCode_1.0167/train_gpt.py",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_CompressedCode_1.0167/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_CompressedCode_1.0167/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_CompressedCode_1.0167/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1574,
+      "title": "[Non-Record] SSM8: Fat State Mamba SSM, BPB=1.3587",
+      "author": "KRGulaj",
+      "state": "OPEN",
+      "created": "2026-04-12T21:56:17Z",
+      "updated": "2026-04-12T21:56:17Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15930000,
+      "technique_summary": "TTT + SSM + LoRA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-12_SSM8_FatState_Mamba_LoRaTTT/README.md",
+        "records/track_10min_16mb/2026-04-12_SSM8_FatState_Mamba_LoRaTTT/SETUP.txt",
+        "records/track_10min_16mb/2026-04-12_SSM8_FatState_Mamba_LoRaTTT/logs.txt",
+        "records/track_10min_16mb/2026-04-12_SSM8_FatState_Mamba_LoRaTTT/requirements.txt",
+        "records/track_10min_16mb/2026-04-12_SSM8_FatState_Mamba_LoRaTTT/submission.json",
+        "records/track_10min_16mb/2026-04-12_SSM8_FatState_Mamba_LoRaTTT/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1573,
       "title": "Record: 12L RecycledCore Int5 — val_bpb 1.1464 (seed 1337)",
@@ -154,7 +224,7 @@
       "author": "abbudjoe",
       "state": "OPEN",
       "created": "2026-04-12T14:07:06Z",
-      "updated": "2026-04-12T18:56:29Z",
+      "updated": "2026-04-12T22:17:14Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -287,9 +357,9 @@
       "number": 1564,
       "title": "Record: GDN-Hybrid + Sliding Window Attention (cold-cache, 1.01710 BPB)",
       "author": "joshkmartinez",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-12T07:05:39Z",
-      "updated": "2026-04-12T07:05:39Z",
+      "updated": "2026-04-12T22:30:24Z",
       "bpb": 1.01710033,
       "seeds": 3,
       "artifact_bytes": 15980000,
@@ -339,9 +409,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1563,
@@ -10916,7 +10988,7 @@
       "author": "VirajDeshwal",
       "state": "OPEN",
       "created": "2026-03-31T21:53:17Z",
-      "updated": "2026-03-31T22:59:49Z",
+      "updated": "2026-04-12T22:12:40Z",
       "bpb": 1.1412,
       "seeds": 3,
       "artifact_bytes": 15970000,
@@ -10937,13 +11009,13 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 1201,
