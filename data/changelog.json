@@ -1,21 +1,34 @@
 [
   {
+    "version": "0.8.5",
+    "date": "2026-04-12",
+    "title": "Dataset republish: SP4096/8192/12288/16384 + byte260 + corrected Scylla v2",
+    "changes": [
+      "Data: LightSpeedUp/parameter-golf-data now publishes 7 variant directories.",
+      "Tokenizers: 4 new SentencePiece BPE models (4096/8192/12288/16384).",
+      "Scylla v2: corrected byte-exact TokenMonster vocab (1254 tokens) from PR #1314.",
+      "byte260: Mato Discord convention (bytes 0-255, specials 256-259).",
+      "Dataset card v2 with all variants documented.",
+      "659 PRs reviewed on openai/parameter-golf (578 auto + 81 sibling-session)."
+    ]
+  },
+  {
     "version": "0.8.4",
     "date": "2026-04-11",
     "title": "Top-20 Tier 1 Community Review Pass + N-gram Family-Bug Cluster + SLOT Cluster + CT2038 Gauntlet Provisioned",
     "changes": [
       "REVIEW PASS: All 20 highest-priority Tier 1 PRs from review_queue.json reviewed and posted as community-leader comments on openai/parameter-golf. Two cluster-level findings emerged.",
-      "N-GRAM FAMILY BUG CLUSTER (10 PRs CLOSED + 1 already ruled): Smoking-gun pattern is full_key = ((ctx_hash ^ (target * primes[k])) & mask) — target token hashed into the eval-cache lookup key, ruled illegal by @valerio-oai on PR #779 (comment 4145781641, 2026-03-27, mechanism in 4146407380). Verified verbatim in PRs #770, #798, #808, #825, #786, #797, #909, #940, #761, plus #764 follow-up. Upstream parent: lukacf (PRs #659, #702, #727 are credited as the n-gram cache concept by 3+ downstream PRs — audit queued as task #5).",
-      "STANDARD SLOT CLUSTER (4 HOLD pending #1336, 2 CLOSE): Per-window delta + logit_bias optimized N AdamW steps against (per_token_nll * mask).sum() / valid_count where mask covers the SCORED positions [s:wlen]. Optimizer literally minimizes the metric it's then graded on. PRs #1321, #1324, #1278, #1263 → HOLD pending Issue #1336. PRs #1319 (extra failures: single seed + 825s eval over budget) and #1376 (also has Pre-quant TTT = 6-epoch fine-tune on val_tokens) → CLOSE. Upstream cited PRs #1176/#1229/#1313 are also in the #1336 pending bucket — one ruling closes or clears the entire cluster.",
+      "N-GRAM FAMILY BUG CLUSTER (10 PRs CLOSED + 1 already ruled): Smoking-gun pattern is full_key = ((ctx_hash ^ (target * primes[k])) & mask) \u2014 target token hashed into the eval-cache lookup key, ruled illegal by @valerio-oai on PR #779 (comment 4145781641, 2026-03-27, mechanism in 4146407380). Verified verbatim in PRs #770, #798, #808, #825, #786, #797, #909, #940, #761, plus #764 follow-up. Upstream parent: lukacf (PRs #659, #702, #727 are credited as the n-gram cache concept by 3+ downstream PRs \u2014 audit queued as task #5).",
+      "STANDARD SLOT CLUSTER (4 HOLD pending #1336, 2 CLOSE): Per-window delta + logit_bias optimized N AdamW steps against (per_token_nll * mask).sum() / valid_count where mask covers the SCORED positions [s:wlen]. Optimizer literally minimizes the metric it's then graded on. PRs #1321, #1324, #1278, #1263 \u2192 HOLD pending Issue #1336. PRs #1319 (extra failures: single seed + 825s eval over budget) and #1376 (also has Pre-quant TTT = 6-epoch fine-tune on val_tokens) \u2192 CLOSE. Upstream cited PRs #1176/#1229/#1313 are also in the #1336 pending bucket \u2014 one ruling closes or clears the entire cluster.",
       "CLEAN MERGE-ELIGIBLE: PR #1420 (abaybektursun, token_hint-only n-gram post-fix verified by @dexhunter, 5-seed std 0.00044), PR #1450 (andrewbaggio1, TMA megakernel + triple loop on SP8192 base, no TTT/SLOT/cache, comprehensive credit lineage). Both stand on the static-code review and the gauntlet on CT2038.",
-      "EVAL-BUDGET POLICY GATE: PR #889 (record) and #915 (non-record) by anthony-maio share byte-identical n-gram code (clean, context-only key, score-first window granularity). Both gated on the 10-min eval wallclock interpretation: ~14.9 min n-gram stage on 8×H100 SXM. Author reads the budget as per-GPU; standard interpretation is total wallclock. One @0hq / @valerio-oai ruling on Issue #17 unblocks both PRs and ~30 other ngram-cache PRs in the queue.",
-      "INFRASTRUCTURE: Provisioned CT2038 (proteus-engine, 128 GB RAM, 32 cores) as the dedicated parameter-golf gauntlet host. Pushed cpu_test.py + flash_attn_stub.py via PVE pipe, installed Triton 3.6.0, validated end-to-end on the worst-case dependency stack (PR #1420: FA3 + Triton TMA + CUTLASS EVT + register_fake op + @torch.compile). Prior sessions had run cpu_test.py locally on VM213 — coverage gap identified and fixed mid-session. New rule captured at memory file feedback_cpu_gauntlet_runs_remote.md.",
-      "GAUNTLET RERUNS: Re-ran the 4 PRs originally skipped due to FA3/Triton blockers on the local workstation: #1420 (35.94M params, fwd 9.027, code 64,137 B exact README match — note: artifact step doesn't model GPTQ+SDClip+Brotli pipeline so reports raw fp32 weights, per-seed sizes from PR's own logs are 15.97-15.98 MB), #1321 (26.86M params, fwd 6.9682, artifact 4.64 MB int6+lzma 29.0% budget), #1324 (26.86M params, fwd 6.9609, artifact 4.63 MB), #797 (26.99M params, fwd 6.9366, artifact 4.63 MB). All 4 GitHub comments edited via gh api PATCH to add the rerun results and update the disclosure block. Coverage on the top-20 went from 9/20 fully gauntleted to 14/20 (the remaining 6 are: 3 thread follow-ups with no fresh code fetch + 2 family-bug PRs where the verdict comes from a single line of source + 1 timeout PR that wasn't rerun).",
+      "EVAL-BUDGET POLICY GATE: PR #889 (record) and #915 (non-record) by anthony-maio share byte-identical n-gram code (clean, context-only key, score-first window granularity). Both gated on the 10-min eval wallclock interpretation: ~14.9 min n-gram stage on 8\u00d7H100 SXM. Author reads the budget as per-GPU; standard interpretation is total wallclock. One @0hq / @valerio-oai ruling on Issue #17 unblocks both PRs and ~30 other ngram-cache PRs in the queue.",
+      "INFRASTRUCTURE: Provisioned CT2038 (proteus-engine, 128 GB RAM, 32 cores) as the dedicated parameter-golf gauntlet host. Pushed cpu_test.py + flash_attn_stub.py via PVE pipe, installed Triton 3.6.0, validated end-to-end on the worst-case dependency stack (PR #1420: FA3 + Triton TMA + CUTLASS EVT + register_fake op + @torch.compile). Prior sessions had run cpu_test.py locally on VM213 \u2014 coverage gap identified and fixed mid-session. New rule captured at memory file feedback_cpu_gauntlet_runs_remote.md.",
+      "GAUNTLET RERUNS: Re-ran the 4 PRs originally skipped due to FA3/Triton blockers on the local workstation: #1420 (35.94M params, fwd 9.027, code 64,137 B exact README match \u2014 note: artifact step doesn't model GPTQ+SDClip+Brotli pipeline so reports raw fp32 weights, per-seed sizes from PR's own logs are 15.97-15.98 MB), #1321 (26.86M params, fwd 6.9682, artifact 4.64 MB int6+lzma 29.0% budget), #1324 (26.86M params, fwd 6.9609, artifact 4.63 MB), #797 (26.99M params, fwd 6.9366, artifact 4.63 MB). All 4 GitHub comments edited via gh api PATCH to add the rerun results and update the disclosure block. Coverage on the top-20 went from 9/20 fully gauntleted to 14/20 (the remaining 6 are: 3 thread follow-ups with no fresh code fetch + 2 family-bug PRs where the verdict comes from a single line of source + 1 timeout PR that wasn't rerun).",
       "HARNESS FIX: cpu_test.py model-creation step now handles the GPT(h) positional-arg pattern (PRs #1420, #1450). Falls back to passing the Hyperparameters instance positionally if the kwargs path raises a missing-positional-arg TypeError. Fixed in parameter-golf-private/docker/cpu_test.py.",
-      "MEMORY UPDATES: New feedback rule feedback_cpu_gauntlet_runs_remote.md (CT2038, never VM213, with provisioning checklist). Updated parameter_golf_competition.md with the cluster mappings, the lineage findings, and the eval-budget gate. Updated infrastructure.md with the CT2038 (proteus-engine) section. Two corrections noted: patterns.md says CT211 has 8 GB RAM (actually 16 GB now per live pct list), infrastructure.md says CT210 has 96 GB / 48 cores (actually 16 GB / 12 cores per live pct list) — flagged for separate audit, not edited this session.",
-      "SIDE SESSION HANDOFF: Wrote SOW_HF_DATASET_REPUBLISH.md (~280 lines, self-contained) and handed off to a fresh Claude Code session to execute in parallel: Scylla 998→1254 token bug fix (PR #1314 corrected vocab, Issue #897), publishing SP4096/SP8192/SP12288/SP16384 to LightSpeedUp/parameter-golf-data on HF, mirroring through pgolf-api.lightspeedup.com Cloudflare R2/Worker, dataset card update, Discord reply for @dém. Side session is actively executing — Phase 0 discovery complete, surfaced 4 corrections to the SOW including the fact that willdepueoai/parameter-golf upstream only ships SP1024 (everything else has to be trained from scratch). Decisions taken by side session: A/A/C-deferred-to-A.",
-      "DISCORD CORRECTION: @dém asked where to access SP4096/SP8192 vectorized datasets. Canonical source is willdepueoai/parameter-golf on HF (NOT kevclark/parameter-golf as our PROTEUS plan claimed — that was an env-var override, not the script default). Corrected reply queued in the SOW Phase 5.",
-      "FOLLOW-UP TASKS QUEUED: lukacf upstream audit (PRs #659, #702, #727 — task #5), Issue #1336 meta-comment listing the SLOT cluster, Issue #17 meta-comment listing the eval-budget-gated PRs, Tier 2 PR review pass (93 PRs at BPB 1.10-1.15)."
+      "MEMORY UPDATES: New feedback rule feedback_cpu_gauntlet_runs_remote.md (CT2038, never VM213, with provisioning checklist). Updated parameter_golf_competition.md with the cluster mappings, the lineage findings, and the eval-budget gate. Updated infrastructure.md with the CT2038 (proteus-engine) section. Two corrections noted: patterns.md says CT211 has 8 GB RAM (actually 16 GB now per live pct list), infrastructure.md says CT210 has 96 GB / 48 cores (actually 16 GB / 12 cores per live pct list) \u2014 flagged for separate audit, not edited this session.",
+      "SIDE SESSION HANDOFF: Wrote SOW_HF_DATASET_REPUBLISH.md (~280 lines, self-contained) and handed off to a fresh Claude Code session to execute in parallel: Scylla 998\u21921254 token bug fix (PR #1314 corrected vocab, Issue #897), publishing SP4096/SP8192/SP12288/SP16384 to LightSpeedUp/parameter-golf-data on HF, mirroring through pgolf-api.lightspeedup.com Cloudflare R2/Worker, dataset card update, Discord reply for @d\u00e9m. Side session is actively executing \u2014 Phase 0 discovery complete, surfaced 4 corrections to the SOW including the fact that willdepueoai/parameter-golf upstream only ships SP1024 (everything else has to be trained from scratch). Decisions taken by side session: A/A/C-deferred-to-A.",
+      "DISCORD CORRECTION: @d\u00e9m asked where to access SP4096/SP8192 vectorized datasets. Canonical source is willdepueoai/parameter-golf on HF (NOT kevclark/parameter-golf as our PROTEUS plan claimed \u2014 that was an env-var override, not the script default). Corrected reply queued in the SOW Phase 5.",
+      "FOLLOW-UP TASKS QUEUED: lukacf upstream audit (PRs #659, #702, #727 \u2014 task #5), Issue #1336 meta-comment listing the SLOT cluster, Issue #17 meta-comment listing the eval-budget-gated PRs, Tier 2 PR review pass (93 PRs at BPB 1.10-1.15)."
     ]
   },
   {
@@ -23,15 +36,15 @@
     "date": "2026-04-08",
     "title": "Mod Tracker Now Auto-Renders + Compression-vs-Training Ruling Pass",
     "changes": [
-      "FIX: Maintainer Activity Tracker cards were hardcoded HTML — banner claimed 'Auto-updated on each Agora rebuild' but values were static. Mato caught it.",
+      "FIX: Maintainer Activity Tracker cards were hardcoded HTML \u2014 banner claimed 'Auto-updated on each Agora rebuild' but values were static. Mato caught it.",
       "scripts/run_pipeline.py: now calls update_mod_tracker.py at step 0 (live GitHub events fetch), then renders cards from data/mod_tracker.json into MOD_TRACKER sentinels in index.html",
-      "Severity colors driven by days_silent: <1d active, <3d warning, <7d alert, ≥7d silent",
+      "Severity colors driven by days_silent: <1d active, <3d warning, <7d alert, \u22657d silent",
       "First refresh result: notapplica 3 DAYS (was '~13H'), valerio-oai 7 DAYS (was '4 DAYS'), 0hq 14 DAYS (was '12'), yuzhougu-oai 19 DAYS (was '17')",
       "Refreshed PR cache (1,346 PRs) and reran classifier with code-level train_gpt.py analysis",
-      "Frontier verdicts: PR #672 (1.0781) DEAD — pre-eval TTT, already closed",
-      "PR #1482 (1.0787, 'SP8192 + Pre-Quant TTT') AT_RISK — code shows TTT + GPTQ both enabled pre-eval, exactly the data-touching compression scenario flagged in #402/#677/#1082",
-      "PR #1477 (1.0822, 'Score-First TTT') ALIVE — code-clean, current legal frontier",
-      "PR #1471 (1.0866) ALIVE — uses GPTQ but post-training, no leakage detected",
+      "Frontier verdicts: PR #672 (1.0781) DEAD \u2014 pre-eval TTT, already closed",
+      "PR #1482 (1.0787, 'SP8192 + Pre-Quant TTT') AT_RISK \u2014 code shows TTT + GPTQ both enabled pre-eval, exactly the data-touching compression scenario flagged in #402/#677/#1082",
+      "PR #1477 (1.0822, 'Score-First TTT') ALIVE \u2014 code-clean, current legal frontier",
+      "PR #1471 (1.0866) ALIVE \u2014 uses GPTQ but post-training, no leakage detected",
       "Ruling line: data-free packaging (INT8 RTN, zlib, zstd) rides eval budget; data-touching compression (QAT, GPTQ/AWQ calibration, pre-eval TTT) eats the 10-min training cap, regardless of label"
     ]
   },
@@ -43,11 +56,11 @@
       "FIX: Submission Checklist tiles were stair-stepping and overlapping. Root cause: global .card { max-width:900px; margin:auto; text-align:center } was fighting every grid layout it was placed in.",
       "FIX: Community Infrastructure tiles overlapping. Same root cause.",
       "FIX: Maintainer Activity Tracker cards had inconsistent spacing. Same root cause.",
-      "NEW CSS class: .tile-grid — wrapper that scopes overrides to descendant .card via descendant selector. Removes max-width, margin, centered text, normalizes padding, makes cards flex columns, normalizes border-width to 1px so they optically align",
-      "NEW CSS class: .checklist-grid — explicit grid-template-areas layout: Techniques tile spans the full left column (tall, dense), with Before You Submit / Rule History / Bug Alerts stacking on the right. Mobile collapses to single column.",
-      "NEW CSS class: .technique-tri — internal 3-column mini-grid inside the Techniques tile so legal/banned/grey read horizontally instead of as one tall ribbon (kills the stair-stepping)",
+      "NEW CSS class: .tile-grid \u2014 wrapper that scopes overrides to descendant .card via descendant selector. Removes max-width, margin, centered text, normalizes padding, makes cards flex columns, normalizes border-width to 1px so they optically align",
+      "NEW CSS class: .checklist-grid \u2014 explicit grid-template-areas layout: Techniques tile spans the full left column (tall, dense), with Before You Submit / Rule History / Bug Alerts stacking on the right. Mobile collapses to single column.",
+      "NEW CSS class: .technique-tri \u2014 internal 3-column mini-grid inside the Techniques tile so legal/banned/grey read horizontally instead of as one tall ribbon (kills the stair-stepping)",
       "Stripped redundant inline margin:0 / margin-top:0 styles from cards now handled by .tile-grid",
-      "Bug Alerts card border-width normalized from 2px to 1px (yellow color preserved on h3 instead) — restores optical alignment with adjacent cards"
+      "Bug Alerts card border-width normalized from 2px to 1px (yellow color preserved on h3 instead) \u2014 restores optical alignment with adjacent cards"
     ]
   },
   {
@@ -55,13 +68,13 @@
     "date": "2026-04-06",
     "title": "Maintainer Activity Tracker",
     "changes": [
-      "NEW SECTION: 'Maintainer Activity Tracker' — public accountability board for the 4 validated OpenAI maintainers with merge/close authority on openai/parameter-golf",
+      "NEW SECTION: 'Maintainer Activity Tracker' \u2014 public accountability board for the 4 validated OpenAI maintainers with merge/close authority on openai/parameter-golf",
       "Cards for @notapplica (~13h ago, closed #140), @valerio-oai (5 days, closed PR #1185), @0hq / Will DePue (12 days, founder), @yuzhougu-oai (17 days, last PR activity)",
       "Each card shows: days-silent badge color-coded by severity (active/warning/alert/silent), last action summary with timestamp, authority validation signal, account creation date",
       "Validation methodology disclosed inline: closed-PR author_association, OAI account suffix, closing other users' PRs, repo collaborator status",
-      "scripts/update_mod_tracker.py: standalone refresh tool — hits /users/<handle>/events for each handle, computes days-silent, writes data/mod_tracker.json. Initial snapshot generated.",
-      "Banner fix: valerio-oai last active April 2 (not April 4 as previously written) — confirmed via GitHub events API",
-      "Nav: added '⚠ Mod Tracker' link in red, sits between Home and Checklist"
+      "scripts/update_mod_tracker.py: standalone refresh tool \u2014 hits /users/<handle>/events for each handle, computes days-silent, writes data/mod_tracker.json. Initial snapshot generated.",
+      "Banner fix: valerio-oai last active April 2 (not April 4 as previously written) \u2014 confirmed via GitHub events API",
+      "Nav: added '\u26a0 Mod Tracker' link in red, sits between Home and Checklist"
     ]
   },
   {
@@ -69,19 +82,19 @@
     "date": "2026-04-06",
     "title": "OpenAI Abandonment Call-Out",
     "changes": [
-      "Added prominent red banner: 'OpenAI Has Abandoned the Community Hub' — triggered by closure of Issue #140 on 2026-04-05 22:57 EDT by @notapplica with no goodbye, no successor, no rationale",
+      "Added prominent red banner: 'OpenAI Has Abandoned the Community Hub' \u2014 triggered by closure of Issue #140 on 2026-04-05 22:57 EDT by @notapplica with no goodbye, no successor, no rationale",
       "By-the-numbers callout box: 1,425+ PRs, 1,265 classified, 518+ contributors, $1M committed credits with broken pipeline, $1,000+ personal compute spend reported, 32 orphaned #140 comments, unresolved #677 rulings",
       "'The joke going around' callout: hire-funnel + RunPod cashflow extraction theory of why maintenance dropped",
       "'PROVE ME WRONG' public-correction invitation: linked issue template for receipts that contradict the numbers",
       "Strikethrough + 'CLOSED by OpenAI' tag on Resources link to #140 (kept as historical archive, not removed)",
       "Footer note: #140 community commentary archived, no longer a live data source",
       "Stripped orphaned deep-link comment IDs from header disclosure",
-      "Public response posted on #140 (comment 4195522473) — invokes valerio-oai by name on pending #677 rulings",
-      "NEW SECTION: 'Community Infrastructure (We Built This)' — visible inventory of the HF dataset, CF Worker network storage, Docker image, RunPod template, Agora itself, and community toolkit. All Light Speed Up out-of-pocket. Linked in nav as '⚡ Infra We Built'.",
+      "Public response posted on #140 (comment 4195522473) \u2014 invokes valerio-oai by name on pending #677 rulings",
+      "NEW SECTION: 'Community Infrastructure (We Built This)' \u2014 visible inventory of the HF dataset, CF Worker network storage, Docker image, RunPod template, Agora itself, and community toolkit. All Light Speed Up out-of-pocket. Linked in nav as '\u26a1 Infra We Built'.",
       "Reframed CF Worker card to lead with the network volume story: original RunPod Network Volume plan died on region-locking + GPU availability constraints. Built pgolf-api.lightspeedup.com (CF Worker + R2) as the cross-provider replacement that actually works.",
-      "Full curl examples on the page for save/resume/list operations on the checkpoint API — no signup required, GitHub PAT IS the identity",
+      "Full curl examples on the page for save/resume/list operations on the checkpoint API \u2014 no signup required, GitHub PAT IS the identity",
       "Checklist 2x2 grid: wrapped Before You Submit / Techniques / Rule Change History / Bug Alerts in auto-fit grid (minmax 420px) so they stop being a vertical scroll wall",
-      "Added vocab_sweep.py experiment script (CPU/GPU phases for SP tokenizer optimization) — separate from Agora deploy"
+      "Added vocab_sweep.py experiment script (CPU/GPU phases for SP tokenizer optimization) \u2014 separate from Agora deploy"
     ]
   },
   {
@@ -93,7 +106,7 @@
       "Detects enabled vs disabled features: NGRAM_ENABLED=0 means neural, not cache",
       "Handles ungated TTT (no enable flag = always active), gated TTT (TTT_ENABLED=0 = off)",
       "GPTQ calibration detection from code patterns",
-      "Persistent cache in data/code_techniques_cache.json — first run fetches, subsequent runs are instant",
+      "Persistent cache in data/code_techniques_cache.json \u2014 first run fetches, subsequent runs are instant",
       "Falls back to text-based detection for PRs without train_gpt.py",
       "Verified/Inferred source badges: green checkmark = classified from code, grey ? = inferred from PR text"
     ]
@@ -103,7 +116,7 @@
     "date": "2026-04-05",
     "title": "Classifier False-Positive Fix + Multi-Type Badges",
     "changes": [
-      "Fixed classifier false-positive: compliance_keywords (raw mentions) no longer used as AT_RISK signals — only contextual body pattern matching is used",
+      "Fixed classifier false-positive: compliance_keywords (raw mentions) no longer used as AT_RISK signals \u2014 only contextual body pattern matching is used",
       "43 PRs reclassified from false AT_RISK to correct status (ALIVE/INCOMPLETE)",
       "Multi-type technique badges: PRs with TTT+Cache now show all applicable badges instead of single 'Hybrid' label",
       "New technique_tags field in pr_cache.json for per-PR technique decomposition"
@@ -115,18 +128,18 @@
     "title": "UX Polish + Upstream Sync",
     "changes": [
       "Changelog & Roadmap tiles are now collapsible (<details>) and default to closed",
-      "Daily upstream sync workflow — auto-merges openai/parameter-golf:main into gh-pages"
+      "Daily upstream sync workflow \u2014 auto-merges openai/parameter-golf:main into gh-pages"
     ]
   },
   {
     "version": "0.7.0",
     "date": "2026-04-03",
-    "title": "Full Automation — Zero Hardcoded Content",
+    "title": "Full Automation \u2014 Zero Hardcoded Content",
     "changes": [
       "Phase 1: Checklist, technique legality, rule history, bug alerts, compute guide all driven from JSON data files",
       "Phase 2: BPB timeline auto-scales axes from data range, date axis extends to today, fixed hardcoded 'Mar' label bug",
       "Phase 2: Neural-only vs all-techniques toggle buttons on BPB timeline chart",
-      "Phase 3: All tooltips flow through _render_with_tooltip / _tooltip_attr helpers — no manual title attributes",
+      "Phase 3: All tooltips flow through _render_with_tooltip / _tooltip_attr helpers \u2014 no manual title attributes",
       "Phase 4: Artifact size histogram, technique popularity stacked area chart, compliance rate area chart",
       "Pipeline gracefully degrades if any data JSON file is missing",
       "Adaptive tick spacing on timeline X-axis (2d/3d/7d based on span)"
