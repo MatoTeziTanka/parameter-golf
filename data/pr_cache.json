@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-12T11:07:36.649738+00:00",
-  "api_calls_used": 179,
+  "last_fetch": "2026-04-12T11:57:52.421961+00:00",
+  "api_calls_used": 180,
   "prs": [
     {
       "number": 1565,
@@ -3001,17 +3001,12 @@
       "author": "AVINASH0052",
       "state": "OPEN",
       "created": "2026-04-08T11:43:05Z",
-      "updated": "2026-04-08T15:57:41Z",
+      "updated": "2026-04-12T11:41:04Z",
       "bpb": null,
       "seeds": 1337,
       "artifact_bytes": 15832508,
       "technique_summary": "Muon + GPTQ + INT6 + EMA",
       "file_paths": [
-        "records/track_10min_16mb/2026-04-08_10L_LeakyReLU2_MLP3x_EMA_Int6QAT/README.md",
-        "records/track_10min_16mb/2026-04-08_10L_LeakyReLU2_MLP3x_EMA_Int6QAT/run_leaderboard_8xh100.sh",
-        "records/track_10min_16mb/2026-04-08_10L_LeakyReLU2_MLP3x_EMA_Int6QAT/run_smoke_1gpu.sh",
-        "records/track_10min_16mb/2026-04-08_10L_LeakyReLU2_MLP3x_EMA_Int6QAT/submission.json",
-        "records/track_10min_16mb/2026-04-08_10L_LeakyReLU2_MLP3x_EMA_Int6QAT/train_gpt.py",
         "records/track_10min_16mb/2026-04-08_11L_FullGPTQ_XSA11_BigramHash3072/README.md",
         "records/track_10min_16mb/2026-04-08_11L_FullGPTQ_XSA11_BigramHash3072/run_leaderboard_8xh100.sh",
         "records/track_10min_16mb/2026-04-08_11L_FullGPTQ_XSA11_BigramHash3072/run_smoke_1gpu.sh",
@@ -11432,32 +11427,35 @@
       "number": 1180,
       "title": "Loss function comparison (CE vs P2 variants) under parameter-golf constraints",
       "author": "estesryan",
-      "state": "CLOSED",
+      "state": "OPEN",
       "created": "2026-03-31T11:32:19Z",
-      "updated": "2026-04-11T18:16:28Z",
+      "updated": "2026-04-12T11:51:53Z",
       "bpb": 1.0577016,
       "seeds": null,
       "artifact_bytes": 15058763,
       "technique_summary": "Muon + INT6",
       "file_paths": [
-        "records/track_10min_16mb/2026-03-31_SR_CM_P2Loss/README.md",
-        "records/track_10min_16mb/2026-03-31_SR_CM_P2Loss/submission.json",
-        "records/track_10min_16mb/2026-03-31_SR_CM_P2Loss/train.log",
-        "records/track_10min_16mb/2026-03-31_SR_CM_P2Loss/train_gpt.py"
+        "records/track_non_record_16mb/2026-03-31_P2Loss_Ablation/README.md",
+        "records/track_non_record_16mb/2026-03-31_P2Loss_Ablation/submission.json",
+        "records/track_non_record_16mb/2026-03-31_P2Loss_Ablation/train.log",
+        "records/track_non_record_16mb/2026-03-31_P2Loss_Ablation/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-31_P2Loss_Ablation/train_p2_0_5.log",
+        "records/track_non_record_16mb/2026-03-31_P2Loss_Ablation/train_p2_1_0.log",
+        "records/track_non_record_16mb/2026-03-31_P2Loss_Ablation/train_p2_2_0.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "track": "record",
+      "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
       "technique_source": "code",
-      "status": "DEAD",
+      "status": "INCOMPLETE",
       "flags": [
-        "closed-no-maintainer-comment"
+        "seeds-unknown"
       ],
-      "confidence": "LOW"
+      "confidence": "HIGH"
     },
     {
       "number": 1179,
