@@ -1,30 +1,67 @@
 {
-  "last_fetch": "2026-04-12T14:09:19.251188+00:00",
-  "api_calls_used": 182,
+  "last_fetch": "2026-04-12T15:06:28.291734+00:00",
+  "api_calls_used": 184,
   "prs": [
     {
+      "number": 1570,
+      "title": "SP8192_LayerRecur_ParResid_QK525_paramOpt",
+      "author": "yufang67",
+      "state": "OPEN",
+      "created": "2026-04-12T14:54:18Z",
+      "updated": "2026-04-12T14:54:18Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        ".gitignore",
+        "records/track_10min_16mb/2026-04-12_ParamImproved_Baseline/README.md",
+        "records/track_10min_16mb/2026-04-12_ParamImproved_Baseline/log42.txt",
+        "records/track_10min_16mb/2026-04-12_ParamImproved_Baseline/log999.txt",
+        "records/track_10min_16mb/2026-04-12_ParamImproved_Baseline/submission.json",
+        "records/track_10min_16mb/2026-04-12_ParamImproved_Baseline/train_gpt.py",
+        "records/track_10min_16mb/2026-04-12_ParamImproved_Baseline/train_gpt_decoded.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
       "number": 1569,
-      "title": "[Non Record] P20 recurrent primitive hybrid - SP1024 1xH100",
+      "title": "[Non Record] Fractal recurrent primitive hybrid - SP1024 1xH100",
       "author": "abbudjoe",
       "state": "OPEN",
       "created": "2026-04-12T14:07:06Z",
-      "updated": "2026-04-12T14:07:06Z",
+      "updated": "2026-04-12T14:15:27Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
-      "technique_summary": "TTT + INT8",
+      "technique_summary": "TTT + INT6 + INT8 + EMA",
       "file_paths": [
-        "records/track_non_record_16mb/2026-04-12_P20_RecurrentPrimitive_SP1024_1xH100/README.md",
-        "records/track_non_record_16mb/2026-04-12_P20_RecurrentPrimitive_SP1024_1xH100/logs/baseline_quant_control_seed42.json",
-        "records/track_non_record_16mb/2026-04-12_P20_RecurrentPrimitive_SP1024_1xH100/logs/baseline_quant_control_seed42.log",
-        "records/track_non_record_16mb/2026-04-12_P20_RecurrentPrimitive_SP1024_1xH100/logs/quant_sweep_seed42.json",
-        "records/track_non_record_16mb/2026-04-12_P20_RecurrentPrimitive_SP1024_1xH100/logs/quant_sweep_seed42.log",
-        "records/track_non_record_16mb/2026-04-12_P20_RecurrentPrimitive_SP1024_1xH100/logs/source_summary_seed42.json",
-        "records/track_non_record_16mb/2026-04-12_P20_RecurrentPrimitive_SP1024_1xH100/p20_runtime.py",
-        "records/track_non_record_16mb/2026-04-12_P20_RecurrentPrimitive_SP1024_1xH100/p20_ttt.py",
-        "records/track_non_record_16mb/2026-04-12_P20_RecurrentPrimitive_SP1024_1xH100/submission.json",
-        "records/track_non_record_16mb/2026-04-12_P20_RecurrentPrimitive_SP1024_1xH100/supporting_files/requant_checkpoint_sweep.py",
-        "records/track_non_record_16mb/2026-04-12_P20_RecurrentPrimitive_SP1024_1xH100/train_gpt.py"
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/README.md",
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/logs/baseline_quant_control_seed42.json",
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/logs/baseline_quant_control_seed42.log",
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/logs/extended_60min_summary_seed42.json",
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/logs/quant_sweep_seed42.json",
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/logs/quant_sweep_seed42.log",
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/logs/source_summary_seed42.json",
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/p20_runtime.py",
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/p20_ttt.py",
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/submission.json",
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/supporting_files/requant_checkpoint_sweep.py",
+        "records/track_non_record_16mb/2026-04-12_Fractal_RecurrentPrimitive_SP1024_1xH100/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -1323,7 +1360,7 @@
       "author": "msisovic",
       "state": "OPEN",
       "created": "2026-04-11T00:04:56Z",
-      "updated": "2026-04-12T10:59:34Z",
+      "updated": "2026-04-12T14:50:59Z",
       "bpb": 1.07531639,
       "seeds": 3,
       "artifact_bytes": 8579,
@@ -2148,7 +2185,7 @@
       "author": "dippatel1994",
       "state": "OPEN",
       "created": "2026-04-09T12:28:07Z",
-      "updated": "2026-04-11T23:45:32Z",
+      "updated": "2026-04-12T14:53:32Z",
       "bpb": 1.6323,
       "seeds": 42,
       "artifact_bytes": 14090000,
@@ -2901,7 +2938,7 @@
       "author": "jxgod",
       "state": "OPEN",
       "created": "2026-04-08T17:14:46Z",
-      "updated": "2026-04-11T22:12:39Z",
+      "updated": "2026-04-12T14:50:54Z",
       "bpb": 1.22683039,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -2988,7 +3025,7 @@
       "author": "aryan-cs",
       "state": "OPEN",
       "created": "2026-04-08T15:50:48Z",
-      "updated": "2026-04-12T03:29:24Z",
+      "updated": "2026-04-12T14:53:44Z",
       "bpb": 1.0842,
       "seeds": null,
       "artifact_bytes": 15990000,
@@ -3988,7 +4025,7 @@
       "author": "andrewbaggio1",
       "state": "OPEN",
       "created": "2026-04-07T21:16:27Z",
-      "updated": "2026-04-11T13:09:08Z",
+      "updated": "2026-04-12T14:51:05Z",
       "bpb": 1.0848,
       "seeds": 5,
       "artifact_bytes": 384000000,
@@ -4121,7 +4158,7 @@
       "author": "LauraGomezjurado",
       "state": "OPEN",
       "created": "2026-04-07T17:36:10Z",
-      "updated": "2026-04-11T22:14:59Z",
+      "updated": "2026-04-12T14:53:54Z",
       "bpb": 1.09596,
       "seeds": 1337,
       "artifact_bytes": 15925099,
@@ -7144,7 +7181,7 @@
       "author": "KenMalloy",
       "state": "OPEN",
       "created": "2026-04-03T14:55:35Z",
-      "updated": "2026-04-12T03:51:15Z",
+      "updated": "2026-04-12T14:51:14Z",
       "bpb": 7.9221,
       "seeds": null,
       "artifact_bytes": 56221,
@@ -8693,7 +8730,7 @@
       "author": "akaiHuang",
       "state": "OPEN",
       "created": "2026-04-02T09:43:59Z",
-      "updated": "2026-04-12T02:00:03Z",
+      "updated": "2026-04-12T14:54:06Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -11429,7 +11466,7 @@
       "author": "akaiHuang",
       "state": "CLOSED",
       "created": "2026-03-31T15:58:32Z",
-      "updated": "2026-04-12T02:00:19Z",
+      "updated": "2026-04-12T14:50:34Z",
       "bpb": 1.508,
       "seeds": null,
       "artifact_bytes": 14800000,
@@ -14660,7 +14697,7 @@
       "author": "michaelwinczuk",
       "state": "OPEN",
       "created": "2026-03-29T19:53:40Z",
-      "updated": "2026-04-11T22:20:27Z",
+      "updated": "2026-04-12T14:50:42Z",
       "bpb": 0.3958,
       "seeds": 3,
       "artifact_bytes": 15940706,
@@ -15192,7 +15229,7 @@
       "author": "michaelwinczuk",
       "state": "OPEN",
       "created": "2026-03-29T15:11:37Z",
-      "updated": "2026-04-11T22:20:29Z",
+      "updated": "2026-04-12T14:50:48Z",
       "bpb": 1.122,
       "seeds": null,
       "artifact_bytes": 15955969,
@@ -27115,7 +27152,7 @@
       "author": "ndokutovich",
       "state": "OPEN",
       "created": "2026-03-25T20:26:04Z",
-      "updated": "2026-04-11T14:31:54Z",
+      "updated": "2026-04-12T14:50:23Z",
       "bpb": 0.9633,
       "seeds": 42,
       "artifact_bytes": 15560351,
@@ -27722,7 +27759,7 @@
       "author": "C0neF",
       "state": "OPEN",
       "created": "2026-03-25T17:11:32Z",
-      "updated": "2026-03-25T17:13:32Z",
+      "updated": "2026-04-12T14:31:22Z",
       "bpb": 1.35557361,
       "seeds": null,
       "artifact_bytes": 14840173,
@@ -27736,17 +27773,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 745,
@@ -28022,7 +28059,7 @@
       "author": "Jonas-T5",
       "state": "OPEN",
       "created": "2026-03-25T16:29:15Z",
-      "updated": "2026-03-25T17:17:54Z",
+      "updated": "2026-04-12T14:31:19Z",
       "bpb": 1.5,
       "seeds": null,
       "artifact_bytes": 13000000,
@@ -28034,17 +28071,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 738,
@@ -28129,7 +28166,7 @@
       "author": "Git-Aarya",
       "state": "OPEN",
       "created": "2026-03-25T15:50:53Z",
-      "updated": "2026-03-25T16:19:58Z",
+      "updated": "2026-04-12T14:31:17Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -28143,18 +28180,18 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 735,
@@ -28716,7 +28753,7 @@
       "author": "Jaksenc",
       "state": "OPEN",
       "created": "2026-03-25T13:27:29Z",
-      "updated": "2026-03-25T13:28:31Z",
+      "updated": "2026-04-12T14:31:14Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -28729,19 +28766,19 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "text"
+      "confidence": "HIGH"
     },
     {
       "number": 716,
@@ -28749,7 +28786,7 @@
       "author": "SHN2004",
       "state": "OPEN",
       "created": "2026-03-25T13:20:52Z",
-      "updated": "2026-03-25T13:20:52Z",
+      "updated": "2026-04-12T14:31:12Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -28763,19 +28800,19 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "text"
+      "confidence": "HIGH"
     },
     {
       "number": 715,
@@ -28861,7 +28898,7 @@
       "author": "hypery11",
       "state": "OPEN",
       "created": "2026-03-25T13:10:04Z",
-      "updated": "2026-03-29T01:46:35Z",
+      "updated": "2026-04-12T14:31:24Z",
       "bpb": 1.118,
       "seeds": 3,
       "artifact_bytes": 15750000,
@@ -28881,13 +28918,13 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 712,
@@ -28994,18 +29031,35 @@
       "author": "StolbaJ",
       "state": "OPEN",
       "created": "2026-03-25T13:00:26Z",
-      "updated": "2026-04-12T13:53:24Z",
+      "updated": "2026-04-12T14:20:36Z",
       "bpb": 1.14778,
       "seeds": 42,
       "artifact_bytes": null,
       "technique_summary": "INT6",
       "file_paths": [
+        ".idea/copilot.data.migration.ask2agent.xml",
+        ".idea/inspectionProfiles/Project_Default.xml",
+        ".idea/inspectionProfiles/profiles_settings.xml",
+        ".idea/parameter-golf.iml",
+        ".idea/vcs.xml",
+        ".idea/workspace.xml",
+        "experiments/improved_submission/README.md",
+        "experiments/improved_submission/generate_sp16384.sh",
+        "experiments/improved_submission/requirements.txt",
+        "experiments/improved_submission/run_deeper_recurrence.sh",
+        "experiments/improved_submission/run_final.sh",
+        "experiments/improved_submission/run_large_vocab.sh",
+        "experiments/improved_submission/run_lora_ttt.sh",
+        "experiments/improved_submission/run_swiglu.sh",
+        "experiments/improved_submission/sweep_hp.sh",
+        "experiments/improved_submission/train_gpt.py",
         "records/track_10min_16mb/2026-03-23_10L_LeakyReLU2_EMA_GPTQlite/README.md",
         "records/track_10min_16mb/2026-03-23_10L_LeakyReLU2_EMA_GPTQlite/submission.json",
         "records/track_10min_16mb/2026-03-23_10L_LeakyReLU2_EMA_GPTQlite/test_local.py",
         "records/track_10min_16mb/2026-03-23_10L_LeakyReLU2_EMA_GPTQlite/train_gpt.py",
         "records/track_10min_16mb/2026-03-23_11L_LeakyReLU2_TTT/README.md",
         "records/track_10min_16mb/2026-03-23_11L_LeakyReLU2_TTT/submission.json",
+        "records/track_10min_16mb/2026-03-23_11L_LeakyReLU2_TTT/test_ttt_fix.py",
         "records/track_10min_16mb/2026-03-23_11L_LeakyReLU2_TTT/train_gpt.py",
         "records/track_10min_16mb/2026-03-23_MixedQAT_Int5MLP_Int6Attn/README.md",
         "records/track_10min_16mb/2026-03-23_MixedQAT_Int5MLP_Int6Attn/submission.json",
@@ -29032,7 +29086,7 @@
       "author": "juvi21",
       "state": "OPEN",
       "created": "2026-03-25T12:49:17Z",
-      "updated": "2026-03-26T03:39:01Z",
+      "updated": "2026-04-12T14:31:10Z",
       "bpb": 2.125,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -29043,18 +29097,18 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown",
-        "no-submission-json"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 707,
@@ -29172,7 +29226,7 @@
       "author": "sauravtom",
       "state": "OPEN",
       "created": "2026-03-25T12:05:57Z",
-      "updated": "2026-03-25T12:05:57Z",
+      "updated": "2026-04-12T14:31:07Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -29188,18 +29242,18 @@
         "cache_eval",
         "cache_path"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
         "cache"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 703,
@@ -29320,7 +29374,7 @@
       "author": "RoyiRa",
       "state": "OPEN",
       "created": "2026-03-25T10:48:55Z",
-      "updated": "2026-04-11T18:16:26Z",
+      "updated": "2026-04-12T14:31:38Z",
       "bpb": 1.0541,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -29994,7 +30048,7 @@
       "author": "gthgomez",
       "state": "OPEN",
       "created": "2026-03-25T05:24:49Z",
-      "updated": "2026-03-25T05:48:55Z",
+      "updated": "2026-04-12T14:31:04Z",
       "bpb": 1.1233,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -30007,17 +30061,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 681,
@@ -30358,7 +30412,7 @@
       "author": "keshav55",
       "state": "OPEN",
       "created": "2026-03-25T02:41:12Z",
-      "updated": "2026-03-25T02:41:12Z",
+      "updated": "2026-04-12T14:31:02Z",
       "bpb": 1.18069496,
       "seeds": 42,
       "artifact_bytes": 14461499,
@@ -30371,15 +30425,15 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 670,
@@ -30590,7 +30644,7 @@
       "author": "tsbiosky",
       "state": "OPEN",
       "created": "2026-03-25T00:53:40Z",
-      "updated": "2026-03-25T00:55:24Z",
+      "updated": "2026-04-12T14:30:59Z",
       "bpb": 1.2982,
       "seeds": null,
       "artifact_bytes": 15780000,
@@ -30603,17 +30657,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 663,
@@ -30653,7 +30707,7 @@
       "author": "simon-marcus",
       "state": "OPEN",
       "created": "2026-03-25T00:23:33Z",
-      "updated": "2026-03-25T00:23:33Z",
+      "updated": "2026-04-12T14:30:54Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -30695,18 +30749,18 @@
         "ttt",
         "leaky_relu"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 661,
@@ -30819,7 +30873,7 @@
       "author": "hmlizama",
       "state": "OPEN",
       "created": "2026-03-24T23:40:57Z",
-      "updated": "2026-03-24T23:40:57Z",
+      "updated": "2026-04-12T14:30:52Z",
       "bpb": 1.1428,
       "seeds": null,
       "artifact_bytes": null,
@@ -30833,18 +30887,18 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 657,
@@ -31273,7 +31327,7 @@
       "author": "FlynnCruse",
       "state": "OPEN",
       "created": "2026-03-24T20:33:24Z",
-      "updated": "2026-03-24T20:42:34Z",
+      "updated": "2026-04-12T14:30:57Z",
       "bpb": 1.899,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -31289,15 +31343,15 @@
       "compliance_keywords": [
         "gptq_eval"
       ],
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 644,
@@ -31808,7 +31862,7 @@
       "author": "LapushBaby",
       "state": "OPEN",
       "created": "2026-03-24T16:04:03Z",
-      "updated": "2026-03-24T16:04:03Z",
+      "updated": "2026-04-12T14:27:16Z",
       "bpb": 1.36294332,
       "seeds": null,
       "artifact_bytes": null,
@@ -31821,18 +31875,18 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 629,
@@ -34349,7 +34403,7 @@
       "author": "Parswanadh",
       "state": "OPEN",
       "created": "2026-03-23T17:23:02Z",
-      "updated": "2026-04-12T14:06:50Z",
+      "updated": "2026-04-12T14:22:06Z",
       "bpb": 1.5348,
       "seeds": null,
       "artifact_bytes": 12372468,
@@ -34947,7 +35001,7 @@
       "author": "rarce",
       "state": "OPEN",
       "created": "2026-03-23T15:37:38Z",
-      "updated": "2026-03-23T15:40:57Z",
+      "updated": "2026-04-12T14:27:13Z",
       "bpb": 1.1804,
       "seeds": null,
       "artifact_bytes": 15949473,
@@ -34963,17 +35017,17 @@
       "compliance_keywords": [
         "gptq_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 542,
@@ -34981,7 +35035,7 @@
       "author": "ddavidgao",
       "state": "OPEN",
       "created": "2026-03-23T15:25:22Z",
-      "updated": "2026-04-12T00:05:57Z",
+      "updated": "2026-04-12T14:52:58Z",
       "bpb": 1.1898,
       "seeds": null,
       "artifact_bytes": 16638468,
@@ -35080,7 +35134,7 @@
       "author": "PavelPaha",
       "state": "OPEN",
       "created": "2026-03-23T15:07:59Z",
-      "updated": "2026-03-23T15:23:30Z",
+      "updated": "2026-04-12T14:27:11Z",
       "bpb": 1.9672,
       "seeds": null,
       "artifact_bytes": 10481651,
@@ -35093,17 +35147,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 538,
@@ -35111,7 +35165,7 @@
       "author": "cruz-andr",
       "state": "OPEN",
       "created": "2026-03-23T15:05:19Z",
-      "updated": "2026-03-23T17:06:36Z",
+      "updated": "2026-04-12T14:27:01Z",
       "bpb": 1.1511,
       "seeds": null,
       "artifact_bytes": null,
@@ -35127,18 +35181,18 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 537,
@@ -35178,7 +35232,7 @@
       "author": "Jaksenc",
       "state": "OPEN",
       "created": "2026-03-23T14:56:05Z",
-      "updated": "2026-03-23T14:56:05Z",
+      "updated": "2026-04-12T14:27:09Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -35191,18 +35245,18 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 535,
@@ -35657,7 +35711,7 @@
       "author": "hypery11",
       "state": "OPEN",
       "created": "2026-03-23T12:25:36Z",
-      "updated": "2026-03-23T16:20:45Z",
+      "updated": "2026-04-12T14:27:18Z",
       "bpb": 1.116,
       "seeds": 3,
       "artifact_bytes": 15750000,
@@ -35678,15 +35732,15 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 524,
@@ -35935,7 +35989,7 @@
       "author": "keshav55",
       "state": "OPEN",
       "created": "2026-03-23T08:48:13Z",
-      "updated": "2026-03-25T02:41:30Z",
+      "updated": "2026-04-12T14:27:06Z",
       "bpb": 1.1807,
       "seeds": 3,
       "artifact_bytes": 14600000,
@@ -35972,15 +36026,15 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 514,
@@ -36272,7 +36326,7 @@
       "author": "skarakulak",
       "state": "OPEN",
       "created": "2026-03-23T05:46:52Z",
-      "updated": "2026-03-23T05:46:52Z",
+      "updated": "2026-04-12T14:24:18Z",
       "bpb": 1.1558,
       "seeds": null,
       "artifact_bytes": 15192709,
@@ -36285,17 +36339,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 506,
@@ -36303,7 +36357,7 @@
       "author": "eshansinghal14",
       "state": "OPEN",
       "created": "2026-03-23T05:41:36Z",
-      "updated": "2026-03-23T05:43:26Z",
+      "updated": "2026-04-12T14:24:16Z",
       "bpb": 1.2294,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -36316,17 +36370,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 505,
@@ -36468,7 +36522,7 @@
       "author": "aamodbhatt",
       "state": "OPEN",
       "created": "2026-03-23T04:36:59Z",
-      "updated": "2026-04-12T13:51:12Z",
+      "updated": "2026-04-12T14:19:26Z",
       "bpb": 1.27705124,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -36499,7 +36553,7 @@
       "author": "ikermoel",
       "state": "OPEN",
       "created": "2026-03-23T04:25:10Z",
-      "updated": "2026-03-23T04:25:10Z",
+      "updated": "2026-04-12T14:24:08Z",
       "bpb": 1.1925,
       "seeds": 1337,
       "artifact_bytes": null,
@@ -36515,17 +36569,17 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 499,
@@ -36618,7 +36672,7 @@
       "author": "THUQiXuan",
       "state": "OPEN",
       "created": "2026-03-23T03:37:44Z",
-      "updated": "2026-03-23T03:37:44Z",
+      "updated": "2026-04-12T14:24:13Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -36632,19 +36686,19 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "neural",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "text"
+      "confidence": "HIGH"
     },
     {
       "number": 496,
@@ -36685,7 +36739,7 @@
       "author": "SergiuDeveloper",
       "state": "OPEN",
       "created": "2026-03-23T02:48:14Z",
-      "updated": "2026-03-23T02:49:01Z",
+      "updated": "2026-04-12T14:24:05Z",
       "bpb": 1.2092,
       "seeds": 2,
       "artifact_bytes": 15544590,
@@ -36708,17 +36762,17 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-only-2"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 494,
@@ -37550,7 +37604,7 @@
       "author": "leofeasby",
       "state": "OPEN",
       "created": "2026-03-22T22:33:49Z",
-      "updated": "2026-03-22T22:33:49Z",
+      "updated": "2026-04-12T14:24:02Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -37563,18 +37617,18 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 469,
@@ -37744,7 +37798,7 @@
       "author": "javaxhaskell",
       "state": "OPEN",
       "created": "2026-03-22T21:59:54Z",
-      "updated": "2026-04-12T01:54:01Z",
+      "updated": "2026-04-12T14:40:46Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -39093,7 +39147,7 @@
       "author": "DeividasMat",
       "state": "OPEN",
       "created": "2026-03-22T13:50:52Z",
-      "updated": "2026-04-10T09:23:26Z",
+      "updated": "2026-04-12T14:24:00Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -39227,7 +39281,7 @@
       "author": "albertorkive",
       "state": "OPEN",
       "created": "2026-03-22T13:28:06Z",
-      "updated": "2026-03-22T18:29:38Z",
+      "updated": "2026-04-12T14:20:51Z",
       "bpb": 1.1396,
       "seeds": null,
       "artifact_bytes": 15913419,
@@ -39240,17 +39294,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 421,
@@ -39289,7 +39343,7 @@
       "author": "leofeasby",
       "state": "OPEN",
       "created": "2026-03-22T12:34:37Z",
-      "updated": "2026-03-22T22:09:18Z",
+      "updated": "2026-04-12T14:21:00Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -39306,19 +39360,19 @@
       "compliance_keywords": [
         "ttt"
       ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "non-record",
-      "technique_type": "ttt",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "text"
+      "confidence": "HIGH"
     },
     {
       "number": 419,
@@ -39358,7 +39412,7 @@
       "author": "yashverms",
       "state": "OPEN",
       "created": "2026-03-22T11:57:48Z",
-      "updated": "2026-03-22T11:57:48Z",
+      "updated": "2026-04-12T14:20:57Z",
       "bpb": 1.1715,
       "seeds": null,
       "artifact_bytes": 15586651,
@@ -39373,17 +39427,17 @@
       "compliance_keywords": [
         "ngram"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "cache",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 417,
@@ -39539,7 +39593,7 @@
       "author": "anantdgoel",
       "state": "OPEN",
       "created": "2026-03-22T07:06:50Z",
-      "updated": "2026-03-22T07:06:50Z",
+      "updated": "2026-04-12T14:21:02Z",
       "bpb": 1.4525,
       "seeds": null,
       "artifact_bytes": 13200000,
@@ -39553,17 +39607,17 @@
       "compliance_keywords": [
         "cache_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "cache",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 412,
@@ -39696,7 +39750,7 @@
       "author": "markste-in",
       "state": "OPEN",
       "created": "2026-03-22T06:12:32Z",
-      "updated": "2026-03-22T06:12:32Z",
+      "updated": "2026-04-12T14:20:48Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -39708,18 +39762,18 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 407,
@@ -39759,7 +39813,7 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-22T05:58:23Z",
-      "updated": "2026-03-22T05:58:23Z",
+      "updated": "2026-04-12T14:22:09Z",
       "bpb": 1.1287,
       "seeds": 3,
       "artifact_bytes": 15700000,
@@ -39776,15 +39830,15 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 405,
@@ -39792,7 +39846,7 @@
       "author": "meett07",
       "state": "OPEN",
       "created": "2026-03-22T05:57:30Z",
-      "updated": "2026-03-22T05:57:30Z",
+      "updated": "2026-04-12T14:20:46Z",
       "bpb": 1.5516,
       "seeds": null,
       "artifact_bytes": 9283646,
@@ -39805,17 +39859,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 404,
@@ -39856,7 +39910,7 @@
       "author": "malc3om",
       "state": "OPEN",
       "created": "2026-03-22T05:25:03Z",
-      "updated": "2026-03-22T08:12:43Z",
+      "updated": "2026-04-12T14:20:54Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -39872,18 +39926,18 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 401,
@@ -40124,7 +40178,7 @@
       "author": "Viswanath129",
       "state": "OPEN",
       "created": "2026-03-22T04:11:19Z",
-      "updated": "2026-04-09T15:33:46Z",
+      "updated": "2026-04-12T14:18:38Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -40158,7 +40212,7 @@
       "author": "NishantDahal",
       "state": "OPEN",
       "created": "2026-03-22T03:51:23Z",
-      "updated": "2026-03-22T03:51:23Z",
+      "updated": "2026-04-12T14:18:35Z",
       "bpb": 1.2374,
       "seeds": null,
       "artifact_bytes": 13500000,
@@ -40171,17 +40225,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 394,
@@ -40251,7 +40305,7 @@
       "author": "pinnerwt",
       "state": "OPEN",
       "created": "2026-03-22T03:30:47Z",
-      "updated": "2026-03-23T11:45:44Z",
+      "updated": "2026-04-12T14:18:33Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -40266,17 +40320,17 @@
       "compliance_keywords": [
         "ngram_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "path:ngram-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
     },
     {
       "number": 391,
@@ -40497,7 +40551,7 @@
       "author": "Sambhav242005",
       "state": "OPEN",
       "created": "2026-03-22T01:35:57Z",
-      "updated": "2026-04-12T10:44:25Z",
+      "updated": "2026-04-12T14:18:31Z",
       "bpb": 1.4061,
       "seeds": null,
       "artifact_bytes": 4390000,
@@ -40527,7 +40581,7 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-22T01:34:45Z",
-      "updated": "2026-03-22T01:34:45Z",
+      "updated": "2026-04-12T14:18:53Z",
       "bpb": 1.1488,
       "seeds": 3,
       "artifact_bytes": 15200000,
@@ -40542,15 +40596,15 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 384,
@@ -40716,7 +40770,7 @@
       "author": "dannywillowliu-uchi",
       "state": "OPEN",
       "created": "2026-03-22T00:08:47Z",
-      "updated": "2026-03-22T05:11:12Z",
+      "updated": "2026-04-12T14:18:24Z",
       "bpb": 1.1257,
       "seeds": null,
       "artifact_bytes": null,
@@ -40731,18 +40785,18 @@
       "compliance_keywords": [
         "gptq_eval"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 378,
@@ -42085,7 +42139,7 @@
       "author": "adhyaay-karnwal",
       "state": "OPEN",
       "created": "2026-03-21T14:11:26Z",
-      "updated": "2026-03-21T16:35:08Z",
+      "updated": "2026-04-12T14:56:22Z",
       "bpb": 1.9011,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -42105,17 +42159,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 341,
@@ -43539,7 +43593,7 @@
       "author": "lookin-zz",
       "state": "OPEN",
       "created": "2026-03-21T02:52:19Z",
-      "updated": "2026-03-21T18:53:24Z",
+      "updated": "2026-04-12T14:17:37Z",
       "bpb": 1.1807,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -43554,17 +43608,17 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 300,
@@ -44943,7 +44997,7 @@
       "author": "riatzukiza",
       "state": "OPEN",
       "created": "2026-03-20T19:34:39Z",
-      "updated": "2026-04-12T14:00:39Z",
+      "updated": "2026-04-12T14:18:22Z",
       "bpb": 1.65718316,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -45009,7 +45063,7 @@
       "author": "IvGolovach",
       "state": "OPEN",
       "created": "2026-03-20T19:25:23Z",
-      "updated": "2026-04-12T14:00:37Z",
+      "updated": "2026-04-12T14:18:20Z",
       "bpb": 1.17469015,
       "seeds": null,
       "artifact_bytes": 15919719,
@@ -45232,7 +45286,7 @@
       "author": "riatzukiza",
       "state": "OPEN",
       "created": "2026-03-20T18:29:16Z",
-      "updated": "2026-04-12T13:56:30Z",
+      "updated": "2026-04-12T14:18:15Z",
       "bpb": 1.62312436,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -45263,7 +45317,7 @@
       "author": "riatzukiza",
       "state": "OPEN",
       "created": "2026-03-20T18:26:05Z",
-      "updated": "2026-04-12T13:56:28Z",
+      "updated": "2026-04-12T14:18:13Z",
       "bpb": 1.6114074,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -45551,7 +45605,7 @@
       "author": "riatzukiza",
       "state": "OPEN",
       "created": "2026-03-20T17:55:21Z",
-      "updated": "2026-04-12T13:56:25Z",
+      "updated": "2026-04-12T14:18:11Z",
       "bpb": 1.66595795,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -46350,7 +46404,7 @@
       "author": "kshitizz36",
       "state": "OPEN",
       "created": "2026-03-20T14:31:22Z",
-      "updated": "2026-04-12T13:56:23Z",
+      "updated": "2026-04-12T14:18:08Z",
       "bpb": 1.1753,
       "seeds": null,
       "artifact_bytes": 14672752,
@@ -46475,7 +46529,7 @@
       "author": "estesryan",
       "state": "CLOSED",
       "created": "2026-03-20T13:30:51Z",
-      "updated": "2026-04-12T13:51:08Z",
+      "updated": "2026-04-12T14:18:06Z",
       "bpb": 1.589,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -47014,7 +47068,7 @@
       "author": "sicauzxl",
       "state": "OPEN",
       "created": "2026-03-20T09:02:44Z",
-      "updated": "2026-04-12T13:51:07Z",
+      "updated": "2026-04-12T14:18:03Z",
       "bpb": 1.3825,
       "seeds": null,
       "artifact_bytes": 15818566,
@@ -47050,7 +47104,7 @@
       "author": "chasewebb",
       "state": "OPEN",
       "created": "2026-03-20T08:57:47Z",
-      "updated": "2026-04-12T13:51:05Z",
+      "updated": "2026-04-12T14:18:01Z",
       "bpb": 1.2355,
       "seeds": null,
       "artifact_bytes": 15870000,
@@ -47080,7 +47134,7 @@
       "author": "baudrillardsgh0st",
       "state": "OPEN",
       "created": "2026-03-20T08:49:26Z",
-      "updated": "2026-04-12T13:51:04Z",
+      "updated": "2026-04-12T14:17:59Z",
       "bpb": 1.148,
       "seeds": 1,
       "artifact_bytes": 19100000,
@@ -47113,7 +47167,7 @@
       "author": "KHUCHAN",
       "state": "OPEN",
       "created": "2026-03-20T08:04:33Z",
-      "updated": "2026-04-12T13:51:02Z",
+      "updated": "2026-04-12T14:17:57Z",
       "bpb": 1.2916789,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -47144,7 +47198,7 @@
       "author": "baudrillardsgh0st",
       "state": "OPEN",
       "created": "2026-03-20T07:59:19Z",
-      "updated": "2026-04-12T13:51:01Z",
+      "updated": "2026-04-12T14:17:55Z",
       "bpb": 1.1502,
       "seeds": null,
       "artifact_bytes": 15495792,
@@ -47244,7 +47298,7 @@
       "author": "shuofengzhang",
       "state": "OPEN",
       "created": "2026-03-20T07:36:51Z",
-      "updated": "2026-04-12T13:50:58Z",
+      "updated": "2026-04-12T14:17:50Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -47483,7 +47537,7 @@
       "author": "mihir-s-05",
       "state": "OPEN",
       "created": "2026-03-20T07:06:15Z",
-      "updated": "2026-03-27T06:51:13Z",
+      "updated": "2026-04-12T14:17:48Z",
       "bpb": 1.1844,
       "seeds": null,
       "artifact_bytes": 14500000,
@@ -47516,17 +47570,17 @@
         "ttt",
         "cache_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "path:eval-cache-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "non-record",
       "technique_type": "hybrid",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "AT_RISK",
+      "flags": [
+        "path:eval-cache-path"
+      ],
+      "confidence": "MEDIUM"
     },
     {
       "number": 181,
@@ -47700,7 +47754,7 @@
       "author": "magungh1",
       "state": "OPEN",
       "created": "2026-03-20T06:02:51Z",
-      "updated": "2026-04-12T13:50:55Z",
+      "updated": "2026-04-12T14:17:46Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -47928,7 +47982,7 @@
       "author": "baudrillardsgh0st",
       "state": "OPEN",
       "created": "2026-03-20T04:59:14Z",
-      "updated": "2026-04-12T13:50:54Z",
+      "updated": "2026-04-12T14:17:44Z",
       "bpb": 1.1669,
       "seeds": null,
       "artifact_bytes": 14770000,
@@ -48031,7 +48085,7 @@
       "author": "SkywardSyntax",
       "state": "OPEN",
       "created": "2026-03-20T04:15:43Z",
-      "updated": "2026-04-12T13:50:52Z",
+      "updated": "2026-04-12T14:17:42Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 5000000,
@@ -48165,7 +48219,7 @@
       "author": "Focus2321",
       "state": "OPEN",
       "created": "2026-03-20T03:46:32Z",
-      "updated": "2026-04-12T13:50:51Z",
+      "updated": "2026-04-12T14:17:39Z",
       "bpb": 1.2091,
       "seeds": 2,
       "artifact_bytes": 13200000,
@@ -48231,7 +48285,7 @@
       "author": "santosh5541",
       "state": "OPEN",
       "created": "2026-03-20T03:21:47Z",
-      "updated": "2026-03-20T07:46:27Z",
+      "updated": "2026-04-12T14:17:37Z",
       "bpb": 1.1957,
       "seeds": null,
       "artifact_bytes": 15880385,
@@ -48246,17 +48300,17 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 160,
@@ -48462,7 +48516,7 @@
       "author": "RogueTex",
       "state": "OPEN",
       "created": "2026-03-20T01:53:51Z",
-      "updated": "2026-04-12T13:50:48Z",
+      "updated": "2026-04-12T14:17:35Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -48616,7 +48670,7 @@
       "author": "pleasedontddosme",
       "state": "OPEN",
       "created": "2026-03-20T01:43:25Z",
-      "updated": "2026-04-12T13:50:47Z",
+      "updated": "2026-04-12T14:17:33Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -48682,7 +48736,7 @@
       "author": "ankitmaloo",
       "state": "OPEN",
       "created": "2026-03-20T01:21:58Z",
-      "updated": "2026-04-12T13:50:45Z",
+      "updated": "2026-04-12T14:17:30Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -48933,7 +48987,7 @@
       "author": "nglain",
       "state": "OPEN",
       "created": "2026-03-20T00:03:37Z",
-      "updated": "2026-04-12T13:50:44Z",
+      "updated": "2026-04-12T14:17:28Z",
       "bpb": 1.2075,
       "seeds": 1337,
       "artifact_bytes": 16000000,
@@ -48962,7 +49016,7 @@
       "author": "ksang123",
       "state": "OPEN",
       "created": "2026-03-19T23:09:26Z",
-      "updated": "2026-04-12T13:50:43Z",
+      "updated": "2026-04-12T14:17:26Z",
       "bpb": 1.2029,
       "seeds": null,
       "artifact_bytes": 15100000,
@@ -49026,7 +49080,7 @@
       "author": "ibarrajo",
       "state": "OPEN",
       "created": "2026-03-19T22:23:29Z",
-      "updated": "2026-04-12T13:50:41Z",
+      "updated": "2026-04-12T14:17:24Z",
       "bpb": 1.2101,
       "seeds": null,
       "artifact_bytes": 15869065,
@@ -49315,7 +49369,7 @@
       "author": "Athenox14",
       "state": "OPEN",
       "created": "2026-03-19T20:19:36Z",
-      "updated": "2026-04-12T13:50:38Z",
+      "updated": "2026-04-12T14:17:19Z",
       "bpb": 1.751,
       "seeds": null,
       "artifact_bytes": 3780000,
@@ -49346,7 +49400,7 @@
       "author": "akshai0296",
       "state": "OPEN",
       "created": "2026-03-19T19:43:16Z",
-      "updated": "2026-04-12T13:50:37Z",
+      "updated": "2026-04-12T14:17:17Z",
       "bpb": 1.37972416,
       "seeds": null,
       "artifact_bytes": 10242310,
@@ -49797,7 +49851,7 @@
       "author": "aamodbhatt",
       "state": "OPEN",
       "created": "2026-03-19T18:25:02Z",
-      "updated": "2026-03-19T18:25:02Z",
+      "updated": "2026-04-12T14:17:15Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -49810,18 +49864,18 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 110,
@@ -49954,7 +50008,7 @@
       "author": "m0at",
       "state": "OPEN",
       "created": "2026-03-19T17:43:02Z",
-      "updated": "2026-04-12T13:50:34Z",
+      "updated": "2026-04-12T14:17:12Z",
       "bpb": 1.1648,
       "seeds": null,
       "artifact_bytes": 15930000,
@@ -50092,7 +50146,7 @@
       "author": "MatthewHRockwell",
       "state": "OPEN",
       "created": "2026-03-19T17:04:37Z",
-      "updated": "2026-04-12T13:50:33Z",
+      "updated": "2026-04-12T14:17:10Z",
       "bpb": 0.035,
       "seeds": null,
       "artifact_bytes": 14900000,
@@ -50218,7 +50272,7 @@
       "author": "leloykun",
       "state": "OPEN",
       "created": "2026-03-19T16:29:19Z",
-      "updated": "2026-04-12T13:51:26Z",
+      "updated": "2026-04-12T14:17:07Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -50364,7 +50418,7 @@
       "author": "aamodbhatt",
       "state": "OPEN",
       "created": "2026-03-19T15:35:55Z",
-      "updated": "2026-04-12T13:51:25Z",
+      "updated": "2026-04-12T14:17:05Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -50396,7 +50450,7 @@
       "author": "aamodbhatt",
       "state": "OPEN",
       "created": "2026-03-19T15:35:35Z",
-      "updated": "2026-04-12T13:51:23Z",
+      "updated": "2026-04-12T14:17:03Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -50428,7 +50482,7 @@
       "author": "saikrishnarallabandi",
       "state": "OPEN",
       "created": "2026-03-19T15:33:09Z",
-      "updated": "2026-04-12T13:51:22Z",
+      "updated": "2026-04-12T14:17:01Z",
       "bpb": 0.031,
       "seeds": null,
       "artifact_bytes": 14715057,
@@ -50537,7 +50591,7 @@
       "author": "gwskier11-design",
       "state": "OPEN",
       "created": "2026-03-19T15:25:12Z",
-      "updated": "2026-04-12T13:51:20Z",
+      "updated": "2026-04-12T14:16:59Z",
       "bpb": 3.31983927,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -50844,7 +50898,7 @@
       "author": "mtybadger",
       "state": "OPEN",
       "created": "2026-03-19T12:14:57Z",
-      "updated": "2026-04-12T13:51:18Z",
+      "updated": "2026-04-12T14:16:54Z",
       "bpb": 1.22731147,
       "seeds": null,
       "artifact_bytes": 14743224,
@@ -50994,7 +51048,7 @@
       "author": "takhir-iota",
       "state": "OPEN",
       "created": "2026-03-19T09:41:19Z",
-      "updated": "2026-04-12T13:51:16Z",
+      "updated": "2026-04-12T14:16:52Z",
       "bpb": null,
       "seeds": 1338,
       "artifact_bytes": 16000000,
@@ -51058,7 +51112,7 @@
       "author": "sanky369",
       "state": "OPEN",
       "created": "2026-03-19T09:39:18Z",
-      "updated": "2026-04-12T13:51:15Z",
+      "updated": "2026-04-12T14:16:49Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -51628,7 +51682,7 @@
       "author": "AVINASH0052",
       "state": "OPEN",
       "created": "2026-03-19T06:33:37Z",
-      "updated": "2026-04-12T13:51:13Z",
+      "updated": "2026-04-12T14:16:47Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
