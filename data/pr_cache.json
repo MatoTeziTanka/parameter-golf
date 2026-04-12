@@ -1,7 +1,49 @@
 {
-  "last_fetch": "2026-04-12T18:02:02.543513+00:00",
-  "api_calls_used": 187,
+  "last_fetch": "2026-04-12T19:21:56.099664+00:00",
+  "api_calls_used": 188,
   "prs": [
+    {
+      "number": 1572,
+      "title": "Record: SP8192 + Depth Recurrence x2 + GPTQ + Score-First TTT + fused-softcap-ce -- val_bpb 1.07974 (3-seed mean)",
+      "author": "anthony-maio",
+      "state": "OPEN",
+      "created": "2026-04-12T18:48:34Z",
+      "updated": "2026-04-12T18:51:47Z",
+      "bpb": 1.07974,
+      "seeds": 3,
+      "artifact_bytes": 16793,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-12_SP8192_Frontier/requirements.txt",
+        "records/track_10min_16mb/2026-04-12_SP8192_Frontier/train_gpt.py",
+        "records/track_10min_16mb/2026-04-12_SP8192_Frontier/train_gpt_sota.py",
+        "records/track_10min_16mb/2026-04-12_SP8192_Frontier/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-12_SP8192_Frontier/train_seed1337_frontier.log",
+        "records/track_10min_16mb/2026-04-12_SP8192_Frontier/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-12_SP8192_Frontier/train_seed2024_frontier.log",
+        "records/track_10min_16mb/2026-04-12_SP8192_Frontier/train_seed42.log",
+        "records/track_10min_16mb/2026-04-12_SP8192_Frontier/train_seed42_frontier.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1571,
       "title": "[Non-Record] Geodesic Topological Tokenizer + BigramHash + BRN",
@@ -79,9 +121,9 @@
       "author": "abbudjoe",
       "state": "OPEN",
       "created": "2026-04-12T14:07:06Z",
-      "updated": "2026-04-12T14:15:27Z",
+      "updated": "2026-04-12T18:56:29Z",
       "bpb": null,
-      "seeds": null,
+      "seeds": 3,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + INT6 + INT8 + EMA",
       "file_paths": [
@@ -110,8 +152,7 @@
       "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "seeds-unknown"
+        "no-bpb"
       ],
       "confidence": "HIGH"
     },
@@ -1357,7 +1398,7 @@
       "author": "samacqua",
       "state": "OPEN",
       "created": "2026-04-11T00:21:22Z",
-      "updated": "2026-04-12T10:10:18Z",
+      "updated": "2026-04-12T18:26:50Z",
       "bpb": 1.07336,
       "seeds": 0,
       "artifact_bytes": 15990000,
@@ -1668,7 +1709,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-10T01:43:32Z",
-      "updated": "2026-04-12T15:54:01Z",
+      "updated": "2026-04-12T18:41:22Z",
       "bpb": 1.074644,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -2446,7 +2487,7 @@
       "author": "wisebreadloaf",
       "state": "OPEN",
       "created": "2026-04-09T06:37:12Z",
-      "updated": "2026-04-11T21:52:03Z",
+      "updated": "2026-04-12T18:53:58Z",
       "bpb": 1.69236985,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -18896,7 +18937,7 @@
       "author": "danielweidinger2299-debug",
       "state": "OPEN",
       "created": "2026-03-27T21:26:27Z",
-      "updated": "2026-03-27T21:26:27Z",
+      "updated": "2026-04-12T19:18:18Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -18904,23 +18945,27 @@
       "file_paths": [
         "records/track_10min_16mb/2026-03-27_6L_128c_Gating_Muon_SWA_Mixed56_1.3540/README.md",
         "records/track_10min_16mb/2026-03-27_6L_128c_Gating_Muon_SWA_Mixed56_1.3540/submission.json",
-        "records/track_10min_16mb/2026-03-27_6L_128c_Gating_Muon_SWA_Mixed56_1.3540/train_gpt.py"
+        "records/track_10min_16mb/2026-03-27_6L_128c_Gating_Muon_SWA_Mixed56_1.3540/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_8L_128c_Gating_Muon_SWA_Mixed56/README.md",
+        "records/track_10min_16mb/2026-04-06_8L_128c_Gating_Muon_SWA_Mixed56/submission.json",
+        "records/track_10min_16mb/2026-04-06_8L_128c_Gating_Muon_SWA_Mixed56/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_8L_128c_Gating_Muon_SWA_Mixed56/train_seed1337.log.txt"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
         "seeds-unknown",
         "artifact-unknown"
       ],
-      "confidence": "HIGH",
-      "track": "record",
-      "technique_type": "neural",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 984,
@@ -31497,7 +31542,7 @@
       "author": "CiprianFlorin-Ifrim",
       "state": "MERGED",
       "created": "2026-03-24T19:02:34Z",
-      "updated": "2026-03-25T07:50:34Z",
+      "updated": "2026-04-12T18:32:24Z",
       "bpb": 1.1239,
       "seeds": 42,
       "artifact_bytes": 15670651,
@@ -31521,17 +31566,17 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "ALIVE",
-      "flags": [
-        "merged-to-leaderboard"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "ALIVE",
+      "flags": [
+        "merged-to-leaderboard"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 640,
@@ -31539,7 +31584,7 @@
       "author": "CiprianFlorin-Ifrim",
       "state": "MERGED",
       "created": "2026-03-24T19:01:27Z",
-      "updated": "2026-03-25T16:25:25Z",
+      "updated": "2026-04-12T18:32:16Z",
       "bpb": 1.157,
       "seeds": 3,
       "artifact_bytes": 15993853,
@@ -31564,17 +31609,17 @@
       "compliance_keywords": [
         "ttt"
       ],
-      "status": "ALIVE",
-      "flags": [
-        "merged-to-leaderboard"
-      ],
-      "confidence": "HIGH",
       "track": "record",
       "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "ALIVE",
+      "flags": [
+        "merged-to-leaderboard"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 639,
@@ -42174,7 +42219,7 @@
       "author": "adhyaay-karnwal",
       "state": "OPEN",
       "created": "2026-03-21T14:11:26Z",
-      "updated": "2026-04-12T15:18:21Z",
+      "updated": "2026-04-12T18:03:43Z",
       "bpb": 1.9011,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -49051,7 +49096,7 @@
       "author": "ksang123",
       "state": "OPEN",
       "created": "2026-03-19T23:09:26Z",
-      "updated": "2026-04-12T14:17:26Z",
+      "updated": "2026-04-12T18:49:20Z",
       "bpb": 1.2029,
       "seeds": null,
       "artifact_bytes": 15100000,
