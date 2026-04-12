@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-12T06:54:37Z",
+  "generated_at": "2026-04-12T08:04:36Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1414,
-    "matched_pr_count": 1043,
+    "pr_count": 1417,
+    "matched_pr_count": 1046,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 230,
+      "ALIVE": 231,
       "AT_RISK": 90,
-      "DEAD": 405,
-      "INCOMPLETE": 681,
+      "DEAD": 406,
+      "INCOMPLETE": 682,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 535,
+      "count": 538,
       "author_count": 254,
-      "alive_count": 117,
-      "dead_count": 175,
+      "alive_count": 118,
+      "dead_count": 176,
       "at_risk_count": 52,
-      "incomplete_count": 191,
+      "incomplete_count": 192,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -1294,6 +1294,48 @@
           ]
         },
         {
+          "author": "Idan3011",
+          "pr_count": 5,
+          "best_bpb": 0.0012,
+          "prs": [
+            {
+              "number": 187,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.9393,
+              "created": "2026-03-20T07:23:51Z"
+            },
+            {
+              "number": 810,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-26T04:39:04Z"
+            },
+            {
+              "number": 972,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-27T18:35:45Z"
+            },
+            {
+              "number": 1431,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.0012,
+              "created": "2026-04-07T06:03:06Z"
+            },
+            {
+              "number": 1565,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.023,
+              "created": "2026-04-12T07:23:33Z"
+            }
+          ]
+        },
+        {
           "author": "stukenov",
           "pr_count": 5,
           "best_bpb": 0.7094,
@@ -1458,41 +1500,6 @@
               "status": "DEAD",
               "bpb": 1.13557402,
               "created": "2026-03-28T22:35:32Z"
-            }
-          ]
-        },
-        {
-          "author": "Idan3011",
-          "pr_count": 4,
-          "best_bpb": 0.0012,
-          "prs": [
-            {
-              "number": 187,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.9393,
-              "created": "2026-03-20T07:23:51Z"
-            },
-            {
-              "number": 810,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-26T04:39:04Z"
-            },
-            {
-              "number": 972,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-27T18:35:45Z"
-            },
-            {
-              "number": 1431,
-              "author": "Idan3011",
-              "status": "INCOMPLETE",
-              "bpb": 0.0012,
-              "created": "2026-04-07T06:03:06Z"
             }
           ]
         },
@@ -2011,6 +2018,34 @@
               "status": "AT_RISK",
               "bpb": null,
               "created": "2026-04-07T02:53:34Z"
+            }
+          ]
+        },
+        {
+          "author": "joshkmartinez",
+          "pr_count": 3,
+          "best_bpb": 1.01710033,
+          "prs": [
+            {
+              "number": 1489,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.0736,
+              "created": "2026-04-09T05:04:57Z"
+            },
+            {
+              "number": 1563,
+              "author": "joshkmartinez",
+              "status": "DEAD",
+              "bpb": 1.02045733,
+              "created": "2026-04-12T07:00:00Z"
+            },
+            {
+              "number": 1564,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.01710033,
+              "created": "2026-04-12T07:05:39Z"
             }
           ]
         },
@@ -3733,20 +3768,6 @@
               "status": "DEAD",
               "bpb": 1.0713,
               "created": "2026-04-02T08:33:33Z"
-            }
-          ]
-        },
-        {
-          "author": "joshkmartinez",
-          "pr_count": 1,
-          "best_bpb": 1.0736,
-          "prs": [
-            {
-              "number": 1489,
-              "author": "joshkmartinez",
-              "status": "ALIVE",
-              "bpb": 1.0736,
-              "created": "2026-04-09T05:04:57Z"
             }
           ]
         },
@@ -9302,18 +9323,39 @@
           "status": "ALIVE",
           "bpb": 1.07406,
           "created": "2026-04-12T03:43:04Z"
+        },
+        {
+          "number": 1563,
+          "author": "joshkmartinez",
+          "status": "DEAD",
+          "bpb": 1.02045733,
+          "created": "2026-04-12T07:00:00Z"
+        },
+        {
+          "number": 1564,
+          "author": "joshkmartinez",
+          "status": "ALIVE",
+          "bpb": 1.01710033,
+          "created": "2026-04-12T07:05:39Z"
+        },
+        {
+          "number": 1565,
+          "author": "Idan3011",
+          "status": "INCOMPLETE",
+          "bpb": 0.023,
+          "created": "2026-04-12T07:23:33Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 423,
+      "count": 426,
       "author_count": 233,
-      "alive_count": 99,
-      "dead_count": 122,
+      "alive_count": 100,
+      "dead_count": 123,
       "at_risk_count": 43,
-      "incomplete_count": 154,
+      "incomplete_count": 155,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -9749,6 +9791,55 @@
           ]
         },
         {
+          "author": "Idan3011",
+          "pr_count": 6,
+          "best_bpb": 0.0012,
+          "prs": [
+            {
+              "number": 187,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.9393,
+              "created": "2026-03-20T07:23:51Z"
+            },
+            {
+              "number": 810,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-26T04:39:04Z"
+            },
+            {
+              "number": 972,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-27T18:35:45Z"
+            },
+            {
+              "number": 996,
+              "author": "Idan3011",
+              "status": "ALIVE",
+              "bpb": 1.147,
+              "created": "2026-03-28T00:53:22Z"
+            },
+            {
+              "number": 1431,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.0012,
+              "created": "2026-04-07T06:03:06Z"
+            },
+            {
+              "number": 1565,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.023,
+              "created": "2026-04-12T07:23:33Z"
+            }
+          ]
+        },
+        {
           "author": "RoyiRa",
           "pr_count": 6,
           "best_bpb": 0.1003,
@@ -9941,48 +10032,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.14502,
               "created": "2026-04-08T18:29:41Z"
-            }
-          ]
-        },
-        {
-          "author": "Idan3011",
-          "pr_count": 5,
-          "best_bpb": 0.0012,
-          "prs": [
-            {
-              "number": 187,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.9393,
-              "created": "2026-03-20T07:23:51Z"
-            },
-            {
-              "number": 810,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-26T04:39:04Z"
-            },
-            {
-              "number": 972,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-27T18:35:45Z"
-            },
-            {
-              "number": 996,
-              "author": "Idan3011",
-              "status": "ALIVE",
-              "bpb": 1.147,
-              "created": "2026-03-28T00:53:22Z"
-            },
-            {
-              "number": 1431,
-              "author": "Idan3011",
-              "status": "INCOMPLETE",
-              "bpb": 0.0012,
-              "created": "2026-04-07T06:03:06Z"
             }
           ]
         },
@@ -10627,6 +10676,34 @@
               "status": "AT_RISK",
               "bpb": 0.9757,
               "created": "2026-03-25T22:17:49Z"
+            }
+          ]
+        },
+        {
+          "author": "joshkmartinez",
+          "pr_count": 3,
+          "best_bpb": 1.01710033,
+          "prs": [
+            {
+              "number": 1489,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.0736,
+              "created": "2026-04-09T05:04:57Z"
+            },
+            {
+              "number": 1563,
+              "author": "joshkmartinez",
+              "status": "DEAD",
+              "bpb": 1.02045733,
+              "created": "2026-04-12T07:00:00Z"
+            },
+            {
+              "number": 1564,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.01710033,
+              "created": "2026-04-12T07:05:39Z"
             }
           ]
         },
@@ -12146,20 +12223,6 @@
               "status": "DEAD",
               "bpb": 1.0713,
               "created": "2026-04-02T08:33:33Z"
-            }
-          ]
-        },
-        {
-          "author": "joshkmartinez",
-          "pr_count": 1,
-          "best_bpb": 1.0736,
-          "prs": [
-            {
-              "number": 1489,
-              "author": "joshkmartinez",
-              "status": "ALIVE",
-              "bpb": 1.0736,
-              "created": "2026-04-09T05:04:57Z"
             }
           ]
         },
@@ -16875,18 +16938,39 @@
           "status": "AT_RISK",
           "bpb": 1.0773,
           "created": "2026-04-12T02:37:16Z"
+        },
+        {
+          "number": 1563,
+          "author": "joshkmartinez",
+          "status": "DEAD",
+          "bpb": 1.02045733,
+          "created": "2026-04-12T07:00:00Z"
+        },
+        {
+          "number": 1564,
+          "author": "joshkmartinez",
+          "status": "ALIVE",
+          "bpb": 1.01710033,
+          "created": "2026-04-12T07:05:39Z"
+        },
+        {
+          "number": 1565,
+          "author": "Idan3011",
+          "status": "INCOMPLETE",
+          "bpb": 0.023,
+          "created": "2026-04-12T07:23:33Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 413,
+      "count": 414,
       "author_count": 267,
       "alive_count": 94,
       "dead_count": 95,
       "at_risk_count": 36,
-      "incomplete_count": 186,
+      "incomplete_count": 187,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -17224,6 +17308,55 @@
           ]
         },
         {
+          "author": "Idan3011",
+          "pr_count": 6,
+          "best_bpb": 0.0012,
+          "prs": [
+            {
+              "number": 184,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 1.1855,
+              "created": "2026-03-20T07:13:58Z"
+            },
+            {
+              "number": 187,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.9393,
+              "created": "2026-03-20T07:23:51Z"
+            },
+            {
+              "number": 810,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-26T04:39:04Z"
+            },
+            {
+              "number": 996,
+              "author": "Idan3011",
+              "status": "ALIVE",
+              "bpb": 1.147,
+              "created": "2026-03-28T00:53:22Z"
+            },
+            {
+              "number": 1431,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.0012,
+              "created": "2026-04-07T06:03:06Z"
+            },
+            {
+              "number": 1565,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.023,
+              "created": "2026-04-12T07:23:33Z"
+            }
+          ]
+        },
+        {
           "author": "Bortlesboat",
           "pr_count": 6,
           "best_bpb": 0.3461,
@@ -17269,48 +17402,6 @@
               "status": "ALIVE",
               "bpb": 1.1126,
               "created": "2026-03-31T03:38:33Z"
-            }
-          ]
-        },
-        {
-          "author": "Idan3011",
-          "pr_count": 5,
-          "best_bpb": 0.0012,
-          "prs": [
-            {
-              "number": 184,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 1.1855,
-              "created": "2026-03-20T07:13:58Z"
-            },
-            {
-              "number": 187,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.9393,
-              "created": "2026-03-20T07:23:51Z"
-            },
-            {
-              "number": 810,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-26T04:39:04Z"
-            },
-            {
-              "number": 996,
-              "author": "Idan3011",
-              "status": "ALIVE",
-              "bpb": 1.147,
-              "created": "2026-03-28T00:53:22Z"
-            },
-            {
-              "number": 1431,
-              "author": "Idan3011",
-              "status": "INCOMPLETE",
-              "bpb": 0.0012,
-              "created": "2026-04-07T06:03:06Z"
             }
           ]
         },
@@ -24546,18 +24637,25 @@
           "status": "ALIVE",
           "bpb": 1.07406,
           "created": "2026-04-12T03:43:04Z"
+        },
+        {
+          "number": 1565,
+          "author": "Idan3011",
+          "status": "INCOMPLETE",
+          "bpb": 0.023,
+          "created": "2026-04-12T07:23:33Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 351,
+      "count": 354,
       "author_count": 162,
-      "alive_count": 98,
-      "dead_count": 102,
+      "alive_count": 99,
+      "dead_count": 103,
       "at_risk_count": 43,
-      "incomplete_count": 103,
+      "incomplete_count": 104,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -25434,6 +25532,48 @@
           ]
         },
         {
+          "author": "Idan3011",
+          "pr_count": 5,
+          "best_bpb": 0.0012,
+          "prs": [
+            {
+              "number": 187,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.9393,
+              "created": "2026-03-20T07:23:51Z"
+            },
+            {
+              "number": 810,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-26T04:39:04Z"
+            },
+            {
+              "number": 996,
+              "author": "Idan3011",
+              "status": "ALIVE",
+              "bpb": 1.147,
+              "created": "2026-03-28T00:53:22Z"
+            },
+            {
+              "number": 1431,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.0012,
+              "created": "2026-04-07T06:03:06Z"
+            },
+            {
+              "number": 1565,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.023,
+              "created": "2026-04-12T07:23:33Z"
+            }
+          ]
+        },
+        {
           "author": "AnirudhRahul",
           "pr_count": 5,
           "best_bpb": 0.0214,
@@ -25682,41 +25822,6 @@
               "status": "ALIVE",
               "bpb": 1.0898,
               "created": "2026-04-06T01:16:00Z"
-            }
-          ]
-        },
-        {
-          "author": "Idan3011",
-          "pr_count": 4,
-          "best_bpb": 0.0012,
-          "prs": [
-            {
-              "number": 187,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.9393,
-              "created": "2026-03-20T07:23:51Z"
-            },
-            {
-              "number": 810,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-26T04:39:04Z"
-            },
-            {
-              "number": 996,
-              "author": "Idan3011",
-              "status": "ALIVE",
-              "bpb": 1.147,
-              "created": "2026-03-28T00:53:22Z"
-            },
-            {
-              "number": 1431,
-              "author": "Idan3011",
-              "status": "INCOMPLETE",
-              "bpb": 0.0012,
-              "created": "2026-04-07T06:03:06Z"
             }
           ]
         },
@@ -26060,6 +26165,34 @@
               "status": "AT_RISK",
               "bpb": 0.9757,
               "created": "2026-03-25T22:17:49Z"
+            }
+          ]
+        },
+        {
+          "author": "joshkmartinez",
+          "pr_count": 3,
+          "best_bpb": 1.01710033,
+          "prs": [
+            {
+              "number": 1489,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.0736,
+              "created": "2026-04-09T05:04:57Z"
+            },
+            {
+              "number": 1563,
+              "author": "joshkmartinez",
+              "status": "DEAD",
+              "bpb": 1.02045733,
+              "created": "2026-04-12T07:00:00Z"
+            },
+            {
+              "number": 1564,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.01710033,
+              "created": "2026-04-12T07:05:39Z"
             }
           ]
         },
@@ -27103,20 +27236,6 @@
               "status": "DEAD",
               "bpb": 1.0713,
               "created": "2026-04-02T08:33:33Z"
-            }
-          ]
-        },
-        {
-          "author": "joshkmartinez",
-          "pr_count": 1,
-          "best_bpb": 1.0736,
-          "prs": [
-            {
-              "number": 1489,
-              "author": "joshkmartinez",
-              "status": "ALIVE",
-              "bpb": 1.0736,
-              "created": "2026-04-09T05:04:57Z"
             }
           ]
         },
@@ -30614,6 +30733,27 @@
           "status": "ALIVE",
           "bpb": 1.07406,
           "created": "2026-04-12T03:43:04Z"
+        },
+        {
+          "number": 1563,
+          "author": "joshkmartinez",
+          "status": "DEAD",
+          "bpb": 1.02045733,
+          "created": "2026-04-12T07:00:00Z"
+        },
+        {
+          "number": 1564,
+          "author": "joshkmartinez",
+          "status": "ALIVE",
+          "bpb": 1.01710033,
+          "created": "2026-04-12T07:05:39Z"
+        },
+        {
+          "number": 1565,
+          "author": "Idan3011",
+          "status": "INCOMPLETE",
+          "bpb": 0.023,
+          "created": "2026-04-12T07:23:33Z"
         }
       ]
     },
@@ -48245,12 +48385,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 413,
+      "count": 414,
       "author_count": 267,
       "alive_count": 94,
       "dead_count": 95,
       "at_risk_count": 36,
-      "incomplete_count": 186,
+      "incomplete_count": 187,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -48588,6 +48728,55 @@
           ]
         },
         {
+          "author": "Idan3011",
+          "pr_count": 6,
+          "best_bpb": 0.0012,
+          "prs": [
+            {
+              "number": 184,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 1.1855,
+              "created": "2026-03-20T07:13:58Z"
+            },
+            {
+              "number": 187,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.9393,
+              "created": "2026-03-20T07:23:51Z"
+            },
+            {
+              "number": 810,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-26T04:39:04Z"
+            },
+            {
+              "number": 996,
+              "author": "Idan3011",
+              "status": "ALIVE",
+              "bpb": 1.147,
+              "created": "2026-03-28T00:53:22Z"
+            },
+            {
+              "number": 1431,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.0012,
+              "created": "2026-04-07T06:03:06Z"
+            },
+            {
+              "number": 1565,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.023,
+              "created": "2026-04-12T07:23:33Z"
+            }
+          ]
+        },
+        {
           "author": "Bortlesboat",
           "pr_count": 6,
           "best_bpb": 0.3461,
@@ -48633,48 +48822,6 @@
               "status": "ALIVE",
               "bpb": 1.1126,
               "created": "2026-03-31T03:38:33Z"
-            }
-          ]
-        },
-        {
-          "author": "Idan3011",
-          "pr_count": 5,
-          "best_bpb": 0.0012,
-          "prs": [
-            {
-              "number": 184,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 1.1855,
-              "created": "2026-03-20T07:13:58Z"
-            },
-            {
-              "number": 187,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.9393,
-              "created": "2026-03-20T07:23:51Z"
-            },
-            {
-              "number": 810,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-26T04:39:04Z"
-            },
-            {
-              "number": 996,
-              "author": "Idan3011",
-              "status": "ALIVE",
-              "bpb": 1.147,
-              "created": "2026-03-28T00:53:22Z"
-            },
-            {
-              "number": 1431,
-              "author": "Idan3011",
-              "status": "INCOMPLETE",
-              "bpb": 0.0012,
-              "created": "2026-04-07T06:03:06Z"
             }
           ]
         },
@@ -55910,18 +56057,25 @@
           "status": "ALIVE",
           "bpb": 1.07406,
           "created": "2026-04-12T03:43:04Z"
+        },
+        {
+          "number": 1565,
+          "author": "Idan3011",
+          "status": "INCOMPLETE",
+          "bpb": 0.023,
+          "created": "2026-04-12T07:23:33Z"
         }
       ]
     },
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 535,
+      "count": 538,
       "author_count": 254,
-      "alive_count": 117,
-      "dead_count": 175,
+      "alive_count": 118,
+      "dead_count": 176,
       "at_risk_count": 52,
-      "incomplete_count": 191,
+      "incomplete_count": 192,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -57190,6 +57344,48 @@
           ]
         },
         {
+          "author": "Idan3011",
+          "pr_count": 5,
+          "best_bpb": 0.0012,
+          "prs": [
+            {
+              "number": 187,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.9393,
+              "created": "2026-03-20T07:23:51Z"
+            },
+            {
+              "number": 810,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-26T04:39:04Z"
+            },
+            {
+              "number": 972,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-27T18:35:45Z"
+            },
+            {
+              "number": 1431,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.0012,
+              "created": "2026-04-07T06:03:06Z"
+            },
+            {
+              "number": 1565,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.023,
+              "created": "2026-04-12T07:23:33Z"
+            }
+          ]
+        },
+        {
           "author": "stukenov",
           "pr_count": 5,
           "best_bpb": 0.7094,
@@ -57354,41 +57550,6 @@
               "status": "DEAD",
               "bpb": 1.13557402,
               "created": "2026-03-28T22:35:32Z"
-            }
-          ]
-        },
-        {
-          "author": "Idan3011",
-          "pr_count": 4,
-          "best_bpb": 0.0012,
-          "prs": [
-            {
-              "number": 187,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.9393,
-              "created": "2026-03-20T07:23:51Z"
-            },
-            {
-              "number": 810,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-26T04:39:04Z"
-            },
-            {
-              "number": 972,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-27T18:35:45Z"
-            },
-            {
-              "number": 1431,
-              "author": "Idan3011",
-              "status": "INCOMPLETE",
-              "bpb": 0.0012,
-              "created": "2026-04-07T06:03:06Z"
             }
           ]
         },
@@ -57907,6 +58068,34 @@
               "status": "AT_RISK",
               "bpb": null,
               "created": "2026-04-07T02:53:34Z"
+            }
+          ]
+        },
+        {
+          "author": "joshkmartinez",
+          "pr_count": 3,
+          "best_bpb": 1.01710033,
+          "prs": [
+            {
+              "number": 1489,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.0736,
+              "created": "2026-04-09T05:04:57Z"
+            },
+            {
+              "number": 1563,
+              "author": "joshkmartinez",
+              "status": "DEAD",
+              "bpb": 1.02045733,
+              "created": "2026-04-12T07:00:00Z"
+            },
+            {
+              "number": 1564,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.01710033,
+              "created": "2026-04-12T07:05:39Z"
             }
           ]
         },
@@ -59629,20 +59818,6 @@
               "status": "DEAD",
               "bpb": 1.0713,
               "created": "2026-04-02T08:33:33Z"
-            }
-          ]
-        },
-        {
-          "author": "joshkmartinez",
-          "pr_count": 1,
-          "best_bpb": 1.0736,
-          "prs": [
-            {
-              "number": 1489,
-              "author": "joshkmartinez",
-              "status": "ALIVE",
-              "bpb": 1.0736,
-              "created": "2026-04-09T05:04:57Z"
             }
           ]
         },
@@ -65198,18 +65373,39 @@
           "status": "ALIVE",
           "bpb": 1.07406,
           "created": "2026-04-12T03:43:04Z"
+        },
+        {
+          "number": 1563,
+          "author": "joshkmartinez",
+          "status": "DEAD",
+          "bpb": 1.02045733,
+          "created": "2026-04-12T07:00:00Z"
+        },
+        {
+          "number": 1564,
+          "author": "joshkmartinez",
+          "status": "ALIVE",
+          "bpb": 1.01710033,
+          "created": "2026-04-12T07:05:39Z"
+        },
+        {
+          "number": 1565,
+          "author": "Idan3011",
+          "status": "INCOMPLETE",
+          "bpb": 0.023,
+          "created": "2026-04-12T07:23:33Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 423,
+      "count": 426,
       "author_count": 233,
-      "alive_count": 99,
-      "dead_count": 122,
+      "alive_count": 100,
+      "dead_count": 123,
       "at_risk_count": 43,
-      "incomplete_count": 154,
+      "incomplete_count": 155,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -65645,6 +65841,55 @@
           ]
         },
         {
+          "author": "Idan3011",
+          "pr_count": 6,
+          "best_bpb": 0.0012,
+          "prs": [
+            {
+              "number": 187,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.9393,
+              "created": "2026-03-20T07:23:51Z"
+            },
+            {
+              "number": 810,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-26T04:39:04Z"
+            },
+            {
+              "number": 972,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-27T18:35:45Z"
+            },
+            {
+              "number": 996,
+              "author": "Idan3011",
+              "status": "ALIVE",
+              "bpb": 1.147,
+              "created": "2026-03-28T00:53:22Z"
+            },
+            {
+              "number": 1431,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.0012,
+              "created": "2026-04-07T06:03:06Z"
+            },
+            {
+              "number": 1565,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.023,
+              "created": "2026-04-12T07:23:33Z"
+            }
+          ]
+        },
+        {
           "author": "RoyiRa",
           "pr_count": 6,
           "best_bpb": 0.1003,
@@ -65837,48 +66082,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.14502,
               "created": "2026-04-08T18:29:41Z"
-            }
-          ]
-        },
-        {
-          "author": "Idan3011",
-          "pr_count": 5,
-          "best_bpb": 0.0012,
-          "prs": [
-            {
-              "number": 187,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.9393,
-              "created": "2026-03-20T07:23:51Z"
-            },
-            {
-              "number": 810,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-26T04:39:04Z"
-            },
-            {
-              "number": 972,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-27T18:35:45Z"
-            },
-            {
-              "number": 996,
-              "author": "Idan3011",
-              "status": "ALIVE",
-              "bpb": 1.147,
-              "created": "2026-03-28T00:53:22Z"
-            },
-            {
-              "number": 1431,
-              "author": "Idan3011",
-              "status": "INCOMPLETE",
-              "bpb": 0.0012,
-              "created": "2026-04-07T06:03:06Z"
             }
           ]
         },
@@ -66523,6 +66726,34 @@
               "status": "AT_RISK",
               "bpb": 0.9757,
               "created": "2026-03-25T22:17:49Z"
+            }
+          ]
+        },
+        {
+          "author": "joshkmartinez",
+          "pr_count": 3,
+          "best_bpb": 1.01710033,
+          "prs": [
+            {
+              "number": 1489,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.0736,
+              "created": "2026-04-09T05:04:57Z"
+            },
+            {
+              "number": 1563,
+              "author": "joshkmartinez",
+              "status": "DEAD",
+              "bpb": 1.02045733,
+              "created": "2026-04-12T07:00:00Z"
+            },
+            {
+              "number": 1564,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.01710033,
+              "created": "2026-04-12T07:05:39Z"
             }
           ]
         },
@@ -68042,20 +68273,6 @@
               "status": "DEAD",
               "bpb": 1.0713,
               "created": "2026-04-02T08:33:33Z"
-            }
-          ]
-        },
-        {
-          "author": "joshkmartinez",
-          "pr_count": 1,
-          "best_bpb": 1.0736,
-          "prs": [
-            {
-              "number": 1489,
-              "author": "joshkmartinez",
-              "status": "ALIVE",
-              "bpb": 1.0736,
-              "created": "2026-04-09T05:04:57Z"
             }
           ]
         },
@@ -72771,18 +72988,39 @@
           "status": "AT_RISK",
           "bpb": 1.0773,
           "created": "2026-04-12T02:37:16Z"
+        },
+        {
+          "number": 1563,
+          "author": "joshkmartinez",
+          "status": "DEAD",
+          "bpb": 1.02045733,
+          "created": "2026-04-12T07:00:00Z"
+        },
+        {
+          "number": 1564,
+          "author": "joshkmartinez",
+          "status": "ALIVE",
+          "bpb": 1.01710033,
+          "created": "2026-04-12T07:05:39Z"
+        },
+        {
+          "number": 1565,
+          "author": "Idan3011",
+          "status": "INCOMPLETE",
+          "bpb": 0.023,
+          "created": "2026-04-12T07:23:33Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 351,
+      "count": 354,
       "author_count": 162,
-      "alive_count": 98,
-      "dead_count": 102,
+      "alive_count": 99,
+      "dead_count": 103,
       "at_risk_count": 43,
-      "incomplete_count": 103,
+      "incomplete_count": 104,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -73659,6 +73897,48 @@
           ]
         },
         {
+          "author": "Idan3011",
+          "pr_count": 5,
+          "best_bpb": 0.0012,
+          "prs": [
+            {
+              "number": 187,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.9393,
+              "created": "2026-03-20T07:23:51Z"
+            },
+            {
+              "number": 810,
+              "author": "Idan3011",
+              "status": "DEAD",
+              "bpb": 0.2722,
+              "created": "2026-03-26T04:39:04Z"
+            },
+            {
+              "number": 996,
+              "author": "Idan3011",
+              "status": "ALIVE",
+              "bpb": 1.147,
+              "created": "2026-03-28T00:53:22Z"
+            },
+            {
+              "number": 1431,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.0012,
+              "created": "2026-04-07T06:03:06Z"
+            },
+            {
+              "number": 1565,
+              "author": "Idan3011",
+              "status": "INCOMPLETE",
+              "bpb": 0.023,
+              "created": "2026-04-12T07:23:33Z"
+            }
+          ]
+        },
+        {
           "author": "AnirudhRahul",
           "pr_count": 5,
           "best_bpb": 0.0214,
@@ -73907,41 +74187,6 @@
               "status": "ALIVE",
               "bpb": 1.0898,
               "created": "2026-04-06T01:16:00Z"
-            }
-          ]
-        },
-        {
-          "author": "Idan3011",
-          "pr_count": 4,
-          "best_bpb": 0.0012,
-          "prs": [
-            {
-              "number": 187,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.9393,
-              "created": "2026-03-20T07:23:51Z"
-            },
-            {
-              "number": 810,
-              "author": "Idan3011",
-              "status": "DEAD",
-              "bpb": 0.2722,
-              "created": "2026-03-26T04:39:04Z"
-            },
-            {
-              "number": 996,
-              "author": "Idan3011",
-              "status": "ALIVE",
-              "bpb": 1.147,
-              "created": "2026-03-28T00:53:22Z"
-            },
-            {
-              "number": 1431,
-              "author": "Idan3011",
-              "status": "INCOMPLETE",
-              "bpb": 0.0012,
-              "created": "2026-04-07T06:03:06Z"
             }
           ]
         },
@@ -74285,6 +74530,34 @@
               "status": "AT_RISK",
               "bpb": 0.9757,
               "created": "2026-03-25T22:17:49Z"
+            }
+          ]
+        },
+        {
+          "author": "joshkmartinez",
+          "pr_count": 3,
+          "best_bpb": 1.01710033,
+          "prs": [
+            {
+              "number": 1489,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.0736,
+              "created": "2026-04-09T05:04:57Z"
+            },
+            {
+              "number": 1563,
+              "author": "joshkmartinez",
+              "status": "DEAD",
+              "bpb": 1.02045733,
+              "created": "2026-04-12T07:00:00Z"
+            },
+            {
+              "number": 1564,
+              "author": "joshkmartinez",
+              "status": "ALIVE",
+              "bpb": 1.01710033,
+              "created": "2026-04-12T07:05:39Z"
             }
           ]
         },
@@ -75328,20 +75601,6 @@
               "status": "DEAD",
               "bpb": 1.0713,
               "created": "2026-04-02T08:33:33Z"
-            }
-          ]
-        },
-        {
-          "author": "joshkmartinez",
-          "pr_count": 1,
-          "best_bpb": 1.0736,
-          "prs": [
-            {
-              "number": 1489,
-              "author": "joshkmartinez",
-              "status": "ALIVE",
-              "bpb": 1.0736,
-              "created": "2026-04-09T05:04:57Z"
             }
           ]
         },
@@ -78839,6 +79098,27 @@
           "status": "ALIVE",
           "bpb": 1.07406,
           "created": "2026-04-12T03:43:04Z"
+        },
+        {
+          "number": 1563,
+          "author": "joshkmartinez",
+          "status": "DEAD",
+          "bpb": 1.02045733,
+          "created": "2026-04-12T07:00:00Z"
+        },
+        {
+          "number": 1564,
+          "author": "joshkmartinez",
+          "status": "ALIVE",
+          "bpb": 1.01710033,
+          "created": "2026-04-12T07:05:39Z"
+        },
+        {
+          "number": 1565,
+          "author": "Idan3011",
+          "status": "INCOMPLETE",
+          "bpb": 0.023,
+          "created": "2026-04-12T07:23:33Z"
         }
       ]
     },
@@ -96650,11 +96930,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 535,
+      "left_count": 538,
       "right_count": 2,
       "left_people": 254,
       "right_people": 2,
-      "score": 1070
+      "score": 1076
     },
     {
       "left": "SwiGLU",
@@ -96668,20 +96948,20 @@
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 423,
+      "left_count": 426,
       "right_count": 2,
       "left_people": 233,
       "right_people": 2,
-      "score": 846
+      "score": 852
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 423,
+      "left_count": 426,
       "right_count": 2,
       "left_people": 233,
       "right_people": 2,
-      "score": 846
+      "score": 852
     },
     {
       "left": "SwiGLU",
@@ -96695,11 +96975,11 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 413,
+      "left_count": 414,
       "right_count": 2,
       "left_people": 267,
       "right_people": 2,
-      "score": 826
+      "score": 828
     },
     {
       "left": "QAT",
@@ -96740,20 +97020,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 351,
+      "left_count": 354,
       "right_count": 2,
       "left_people": 162,
       "right_people": 2,
-      "score": 702
+      "score": 708
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 351,
+      "left_count": 354,
       "right_count": 2,
       "left_people": 162,
       "right_people": 2,
-      "score": 702
+      "score": 708
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -96812,11 +97092,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 535,
+      "left_count": 538,
       "right_count": 1,
       "left_people": 254,
       "right_people": 1,
-      "score": 535
+      "score": 538
     },
     {
       "left": "SWA",
@@ -96884,11 +97164,11 @@
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 423,
+      "left_count": 426,
       "right_count": 1,
       "left_people": 233,
       "right_people": 1,
-      "score": 423
+      "score": 426
     },
     {
       "left": "JEPA",
@@ -96920,11 +97200,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 351,
+      "left_count": 354,
       "right_count": 1,
       "left_people": 162,
       "right_people": 1,
-      "score": 351
+      "score": 354
     },
     {
       "left": "JEPA",
