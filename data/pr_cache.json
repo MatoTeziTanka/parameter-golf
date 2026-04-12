@@ -1,7 +1,42 @@
 {
-  "last_fetch": "2026-04-12T15:06:28.291734+00:00",
-  "api_calls_used": 184,
+  "last_fetch": "2026-04-12T16:00:57.975088+00:00",
+  "api_calls_used": 185,
   "prs": [
+    {
+      "number": 1571,
+      "title": "[Non-Record] Geodesic Topological Tokenizer + BigramHash + BRN",
+      "author": "skar07",
+      "state": "OPEN",
+      "created": "2026-04-12T15:45:05Z",
+      "updated": "2026-04-12T15:45:05Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-26_GeodesicBigramBRN/README.md",
+        "records/track_non_record_16mb/2026-03-26_GeodesicBigramBRN/requirements.txt",
+        "records/track_non_record_16mb/2026-03-26_GeodesicBigramBRN/submission.json",
+        "records/track_non_record_16mb/2026-03-26_GeodesicBigramBRN/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1570,
       "title": "SP8192_LayerRecur_ParResid_QK525_paramOpt",
@@ -1633,7 +1668,7 @@
       "author": "abaybektursun",
       "state": "OPEN",
       "created": "2026-04-10T01:43:32Z",
-      "updated": "2026-04-12T09:34:04Z",
+      "updated": "2026-04-12T15:54:01Z",
       "bpb": 1.074644,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -2185,7 +2220,7 @@
       "author": "dippatel1994",
       "state": "OPEN",
       "created": "2026-04-09T12:28:07Z",
-      "updated": "2026-04-12T14:53:32Z",
+      "updated": "2026-04-12T15:18:18Z",
       "bpb": 1.6323,
       "seeds": 42,
       "artifact_bytes": 14090000,
@@ -3025,7 +3060,7 @@
       "author": "aryan-cs",
       "state": "OPEN",
       "created": "2026-04-08T15:50:48Z",
-      "updated": "2026-04-12T14:53:44Z",
+      "updated": "2026-04-12T15:18:13Z",
       "bpb": 1.0842,
       "seeds": null,
       "artifact_bytes": 15990000,
@@ -15833,7 +15868,7 @@
       "author": "rithunkp",
       "state": "OPEN",
       "created": "2026-03-29T09:34:52Z",
-      "updated": "2026-03-29T09:34:52Z",
+      "updated": "2026-04-12T15:51:53Z",
       "bpb": 1.1536,
       "seeds": 2,
       "artifact_bytes": 15740000,
@@ -15854,15 +15889,15 @@
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-only-2"
       ],
-      "confidence": "HIGH",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 1064,
@@ -27150,9 +27185,9 @@
       "number": 764,
       "title": "Record: Curriculum Learning + LeakyReLU(0.9)² + 7-gram Backoff (val_bpb=0.9633)",
       "author": "ndokutovich",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-25T20:26:04Z",
-      "updated": "2026-04-12T14:50:23Z",
+      "updated": "2026-04-12T15:39:25Z",
       "bpb": 0.9633,
       "seeds": 42,
       "artifact_bytes": 15560351,
@@ -27179,11 +27214,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "path:ngram-path"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "MEDIUM"
+      "confidence": "LOW"
     },
     {
       "number": 763,
@@ -29031,7 +29066,7 @@
       "author": "StolbaJ",
       "state": "OPEN",
       "created": "2026-03-25T13:00:26Z",
-      "updated": "2026-04-12T14:20:36Z",
+      "updated": "2026-04-12T15:15:20Z",
       "bpb": 1.14778,
       "seeds": 42,
       "artifact_bytes": null,
@@ -30873,7 +30908,7 @@
       "author": "hmlizama",
       "state": "OPEN",
       "created": "2026-03-24T23:40:57Z",
-      "updated": "2026-04-12T14:30:52Z",
+      "updated": "2026-04-12T15:55:20Z",
       "bpb": 1.1428,
       "seeds": null,
       "artifact_bytes": null,
@@ -34403,7 +34438,7 @@
       "author": "Parswanadh",
       "state": "OPEN",
       "created": "2026-03-23T17:23:02Z",
-      "updated": "2026-04-12T14:22:06Z",
+      "updated": "2026-04-12T15:08:13Z",
       "bpb": 1.5348,
       "seeds": null,
       "artifact_bytes": 12372468,
@@ -42139,7 +42174,7 @@
       "author": "adhyaay-karnwal",
       "state": "OPEN",
       "created": "2026-03-21T14:11:26Z",
-      "updated": "2026-04-12T14:56:22Z",
+      "updated": "2026-04-12T15:18:21Z",
       "bpb": 1.9011,
       "seeds": null,
       "artifact_bytes": 16000000,
