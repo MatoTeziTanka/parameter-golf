@@ -1,7 +1,394 @@
 {
-  "last_fetch": "2026-04-12T23:39:36.722319+00:00",
-  "api_calls_used": 192,
+  "last_fetch": "2026-04-13T03:19:13.895770+00:00",
+  "api_calls_used": 193,
   "prs": [
+    {
+      "number": 1585,
+      "title": "Record: Casefold Tokenizer + Parallel Residuals + Systems Optimization — val_bpb 1.0639 (3-seed mean)",
+      "author": "codemath3000",
+      "state": "OPEN",
+      "created": "2026-04-13T02:49:43Z",
+      "updated": "2026-04-13T02:49:43Z",
+      "bpb": 1.0639,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/CASEFOLD_TOKENIZER.md",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/README.md",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/VERIFY_BYTES.md",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/cutlass_evt_fusion/__init__.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/cutlass_evt_fusion/csrc/gemm_act_grad.cu",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/cutlass_evt_fusion/csrc/torch_binding.cpp",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/cutlass_evt_fusion/cutlass_evt_fusion.cpython-312-x86_64-linux-gnu.so",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/cutlass_evt_fusion/setup.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/fineweb_8192_bpe_casefold_refined_v2.model",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/requirements.txt",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/submission.json",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/tokenizer_pipeline/README.md",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/tokenizer_pipeline/analyze_byte_fallbacks.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/tokenizer_pipeline/build_clean_sp8192.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/tokenizer_pipeline/casefold_candidates.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/tokenizer_pipeline/hybrid_tokenizer.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/tokenizer_pipeline/retokenize.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/tokenizer_pipeline/swap_punct_tokens.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/tokenizer_pipeline/train_sp8192_casefold.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/train_gpt.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/train_gpt_human.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/train_seed42.log",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/verify_bytes.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/verify_docs.jsonl",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_CasefoldTokenizer/verify_results.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1584,
+      "title": "Record: Improved Parallel Residuals + Systems Optimization — val_bpb 1.0752 (3-seed mean)",
+      "author": "codemath3000",
+      "state": "OPEN",
+      "created": "2026-04-13T02:49:18Z",
+      "updated": "2026-04-13T03:10:01Z",
+      "bpb": 1.0752,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/README.md",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/cutlass_evt_fusion/__init__.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/cutlass_evt_fusion/csrc/gemm_act_grad.cu",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/cutlass_evt_fusion/csrc/torch_binding.cpp",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/cutlass_evt_fusion/cutlass_evt_fusion.cpython-312-x86_64-linux-gnu.so",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/cutlass_evt_fusion/setup.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/requirements.txt",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/submission.json",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/train_gpt.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/train_gpt_human.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_ImprovedParallelResiduals/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1583,
+      "title": "Record: SP8192 + Systems Optimization — val_bpb 1.0801 (3-seed mean)",
+      "author": "codemath3000",
+      "state": "OPEN",
+      "created": "2026-04-13T02:48:39Z",
+      "updated": "2026-04-13T03:10:45Z",
+      "bpb": 1.0801,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_SP8192_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_SP8192_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_SP8192_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_SP8192_LegalTTT/train_seed0.log",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_SP8192_LegalTTT/train_seed3141.log",
+        "records/track_10min_16mb/2026-04-13_SystemsOpt_SP8192_LegalTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1582,
+      "title": "Non-record: MDLM Masked Diffusion + Depth Recurrence — val_bpb 1.3428 (8×H100, seed=1337)",
+      "author": "He-Wenhao",
+      "state": "OPEN",
+      "created": "2026-04-13T01:52:08Z",
+      "updated": "2026-04-13T01:52:08Z",
+      "bpb": 1.3428,
+      "seeds": 1337,
+      "artifact_bytes": 14730000,
+      "technique_summary": "Muon + GPTQ + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-12_MDLM_DepthRecurrence/README.md",
+        "records/track_non_record_16mb/2026-04-12_MDLM_DepthRecurrence/submission.json",
+        "records/track_non_record_16mb/2026-04-12_MDLM_DepthRecurrence/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1581,
+      "title": "Non-record: JEPA v3 — span-masked I-JEPA + VICReg, val_bpb 1.2321",
+      "author": "aiejvn",
+      "state": "OPEN",
+      "created": "2026-04-13T01:44:59Z",
+      "updated": "2026-04-13T01:44:59Z",
+      "bpb": 1.2321,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "Muon",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-12_JEPA_v3_Fix_Representation_Collapse/README.md",
+        "records/track_non_record_16mb/2026-04-12_JEPA_v3_Fix_Representation_Collapse/run_train_jepa.sh",
+        "records/track_non_record_16mb/2026-04-12_JEPA_v3_Fix_Representation_Collapse/submission.json",
+        "records/track_non_record_16mb/2026-04-12_JEPA_v3_Fix_Representation_Collapse/train_jepa.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1580,
+      "title": "saliency-guided local 5090 non-record",
+      "author": "liveyourday",
+      "state": "OPEN",
+      "created": "2026-04-13T01:32:02Z",
+      "updated": "2026-04-13T01:40:41Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-13_SaliencyGuidedLocal5090/README.md",
+        "records/track_non_record_16mb/2026-04-13_SaliencyGuidedLocal5090/results.tsv",
+        "records/track_non_record_16mb/2026-04-13_SaliencyGuidedLocal5090/submission.json",
+        "records/track_non_record_16mb/2026-04-13_SaliencyGuidedLocal5090/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1579,
+      "title": "Crawler Transformer 3f+2cx2 + SP8192 + SDClip + Post-Quant TTT — val_bpb 1.1372",
+      "author": "Tonyy1977",
+      "state": "OPEN",
+      "created": "2026-04-13T01:24:31Z",
+      "updated": "2026-04-13T02:29:36Z",
+      "bpb": 1.1372,
+      "seeds": 3,
+      "artifact_bytes": 15030000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-26_RecursiveTransformer_4B7L_VE_QAT_TTT/README.md",
+        "records/track_10min_16mb/2026-03-26_RecursiveTransformer_4B7L_VE_QAT_TTT/cluster_full_output.log",
+        "records/track_10min_16mb/2026-03-26_RecursiveTransformer_4B7L_VE_QAT_TTT/seed1337.log",
+        "records/track_10min_16mb/2026-03-26_RecursiveTransformer_4B7L_VE_QAT_TTT/seed2024.log",
+        "records/track_10min_16mb/2026-03-26_RecursiveTransformer_4B7L_VE_QAT_TTT/seed42.log",
+        "records/track_10min_16mb/2026-03-26_RecursiveTransformer_4B7L_VE_QAT_TTT/submission.json",
+        "records/track_10min_16mb/2026-03-26_RecursiveTransformer_4B7L_VE_QAT_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/README.md",
+        "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/requirements.txt",
+        "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/train_seed42.log",
+        "requirements.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1578,
+      "title": "Record: Custom Casefold Tokenizer — 1.0668 BPB",
+      "author": "mikeapedia",
+      "state": "OPEN",
+      "created": "2026-04-13T00:49:16Z",
+      "updated": "2026-04-13T01:01:22Z",
+      "bpb": 1.06681663,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + Muon + GPTQ + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/CASEFOLD_TOKENIZER.md",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/README.md",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/VERIFY_BYTES.md",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/fineweb_8192_bpe_casefold_refined_v2.model",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/requirements.txt",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/submission.json",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/tokenizer_pipeline/README.md",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/tokenizer_pipeline/analyze_byte_fallbacks.py",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/tokenizer_pipeline/build_clean_sp8192.py",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/tokenizer_pipeline/casefold_candidates.py",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/tokenizer_pipeline/hybrid_tokenizer.py",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/tokenizer_pipeline/retokenize.py",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/tokenizer_pipeline/swap_punct_tokens.py",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/tokenizer_pipeline/train_sp8192_casefold.py",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/train_gpt.py",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/train_gpt_human.py",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/train_pr1529_seed1337.log",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/train_seed42.log",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/verify_bytes.py",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/verify_docs.jsonl",
+        "records/track_10min_16mb/2026-04-12_CustomCasefoldTokenizer/verify_results.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1577,
+      "title": "Submission: aria-redefine-qbit - Hybrid Recurrent U-Net (1.40 BPB",
+      "author": "redefine-qbit",
+      "state": "OPEN",
+      "created": "2026-04-13T00:36:43Z",
+      "updated": "2026-04-13T00:41:47Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16700000,
+      "technique_summary": "Muon + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-12_aria-redefine-qbit_hybrid_unet/README.md",
+        "records/track_non_record_16mb/2026-04-12_aria-redefine-qbit_hybrid_unet/submission.json",
+        "records/track_non_record_16mb/2026-04-12_aria-redefine-qbit_hybrid_unet/train.log",
+        "records/track_non_record_16mb/2026-04-12_aria-redefine-qbit_hybrid_unet/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1576,
+      "title": "Record: GDN-Hybrid + Sliding Window Attention + compressed-code warmdown1000 - val_bpb 1.01671 (3-seed mean)",
+      "author": "joshkmartinez",
+      "state": "OPEN",
+      "created": "2026-04-12T23:56:24Z",
+      "updated": "2026-04-12T23:56:25Z",
+      "bpb": 1.01671233,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_Compressed/README.md",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_Compressed/architectures.py",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_Compressed/configs.py",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_Compressed/requirements.txt",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_Compressed/submission.json",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_Compressed/train_gpt.py",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_Compressed/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_Compressed/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-12_GDN_Hybrid_DeltaRule_Warmdown1000_Compressed/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1575,
       "title": "Record: GDN-Hybrid + Sliding Window Attention + compressed-code warmdown1000 (cold-cache, 1.01671 BPB)",
@@ -11431,7 +11818,7 @@
       "author": "rithvik-duddupudi",
       "state": "OPEN",
       "created": "2026-03-31T20:07:30Z",
-      "updated": "2026-04-12T08:13:47Z",
+      "updated": "2026-04-13T02:08:56Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
