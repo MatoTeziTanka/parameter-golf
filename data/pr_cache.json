@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-13T06:18:34.196277+00:00",
-  "api_calls_used": 194,
+  "last_fetch": "2026-04-13T08:28:38.612145+00:00",
+  "api_calls_used": 195,
   "prs": [
     {
       "number": 1590,
@@ -411,7 +411,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-04-13T00:49:16Z",
-      "updated": "2026-04-13T01:01:22Z",
+      "updated": "2026-04-13T07:58:25Z",
       "bpb": 1.06681663,
       "seeds": 3,
       "artifact_bytes": null,
@@ -2566,17 +2566,19 @@
       "author": "OE-GOD",
       "state": "OPEN",
       "created": "2026-04-09T20:06:21Z",
-      "updated": "2026-04-11T09:00:11Z",
+      "updated": "2026-04-13T07:32:30Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 1600000,
       "technique_summary": "GPTQ + INT6",
       "file_paths": [
+        "k_sweep.py",
         "records/track_non_record_16mb/2026-04-09_ANS_Compression/README.md",
         "records/track_non_record_16mb/2026-04-09_ANS_Compression/ans_compress.py",
         "records/track_non_record_16mb/2026-04-09_ANS_Compression/delta_compress.py",
         "records/track_non_record_16mb/2026-04-09_ANS_Compression/submission.json",
         "run_ans_experiment.sh",
+        "run_quant_optimization.sh",
         "run_sweep.sh",
         "train_gpt_ans.py",
         "train_gpt_pr1517.py"
@@ -21447,9 +21449,9 @@
       "number": 934,
       "title": "WIP: 1.1xxx BPB - MDL-T Stack (LeakyReLU² + EMA + GPTQ-lite + LateQAT + warmdown3500 + int6+zstd-22)",
       "author": "tuanaqeelbohoran",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-27T05:12:06Z",
-      "updated": "2026-04-12T13:22:12Z",
+      "updated": "2026-04-13T07:05:42Z",
       "bpb": 0.003,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -21475,11 +21477,11 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 933,
@@ -26257,15 +26259,15 @@
     },
     {
       "number": 804,
-      "title": "[Non-record] CAGE5 Colab T4 smoke: strictly causal 5-gram mixer",
+      "title": "[Non-record] CAGE5 H100 proxy validation: legal TTT + strictly causal 5-gram mixer",
       "author": "Devchandrasen",
       "state": "OPEN",
       "created": "2026-03-26T03:39:35Z",
-      "updated": "2026-04-13T05:15:06Z",
-      "bpb": 2.69806373,
-      "seeds": null,
+      "updated": "2026-04-13T06:38:16Z",
+      "bpb": 2.41025369,
+      "seeds": 3,
       "artifact_bytes": 16000000,
-      "technique_summary": "",
+      "technique_summary": "TTT",
       "file_paths": [
         "real_ttt_ng0_nogradfix.log",
         "real_ttt_ng1_nogradfix.log",
@@ -26275,20 +26277,26 @@
         "records/track_non_record_16mb/2026-03-26_CAGE5_ColabT4_Smoke/submission.json",
         "records/track_non_record_16mb/2026-03-26_CAGE5_ColabT4_Smoke/train.log",
         "records/track_non_record_16mb/2026-03-26_CAGE5_ColabT4_Smoke/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-13_CAGE5_H100_Proxy/README.md",
+        "records/track_non_record_16mb/2026-04-13_CAGE5_H100_Proxy/flash_attn_interface.py",
+        "records/track_non_record_16mb/2026-04-13_CAGE5_H100_Proxy/requirements.txt",
+        "records/track_non_record_16mb/2026-04-13_CAGE5_H100_Proxy/submission.json",
+        "records/track_non_record_16mb/2026-04-13_CAGE5_H100_Proxy/train.log",
+        "records/track_non_record_16mb/2026-04-13_CAGE5_H100_Proxy/train_gpt.py",
         "train_gpt_colab_smoke_fresh.py"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
