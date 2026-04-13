@@ -1,7 +1,76 @@
 {
-  "last_fetch": "2026-04-13T12:01:18.542498+00:00",
-  "api_calls_used": 196,
+  "last_fetch": "2026-04-13T13:46:27.043993+00:00",
+  "api_calls_used": 197,
   "prs": [
+    {
+      "number": 1596,
+      "title": "[Non-Record] Masked Text Diffusion (SP1024) - Unlimited Compute Track",
+      "author": "Heron4gf",
+      "state": "OPEN",
+      "created": "2026-04-13T12:39:53Z",
+      "updated": "2026-04-13T12:39:53Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16671343,
+      "technique_summary": "GPTQ + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-10_TextDiffusion_MaskedDiffusion_SP1024/README.md",
+        "records/track_non_record_16mb/2026-04-10_TextDiffusion_MaskedDiffusion_SP1024/final_model.int6.ptz",
+        "records/track_non_record_16mb/2026-04-10_TextDiffusion_MaskedDiffusion_SP1024/submission.json",
+        "records/track_non_record_16mb/2026-04-10_TextDiffusion_MaskedDiffusion_SP1024/train.log",
+        "records/track_non_record_16mb/2026-04-10_TextDiffusion_MaskedDiffusion_SP1024/train_gpt.py",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1595,
+      "title": "Non-record: 3x MLP + Quantization-Aware Training (STE)",
+      "author": "seekerPrice",
+      "state": "OPEN",
+      "created": "2026-04-13T12:26:35Z",
+      "updated": "2026-04-13T12:26:35Z",
+      "bpb": 2.224,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "GPTQ + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-13_MLP3x_QAT_STE_Int6Aware/README.md",
+        "records/track_non_record_16mb/2026-04-13_MLP3x_QAT_STE_Int6Aware/requirements.txt",
+        "records/track_non_record_16mb/2026-04-13_MLP3x_QAT_STE_Int6Aware/submission.json",
+        "records/track_non_record_16mb/2026-04-13_MLP3x_QAT_STE_Int6Aware/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1590,
       "title": "Codex/diffusion model",
@@ -368,7 +437,7 @@
       "author": "Tonyy1977",
       "state": "OPEN",
       "created": "2026-04-13T01:24:31Z",
-      "updated": "2026-04-13T02:29:36Z",
+      "updated": "2026-04-13T12:51:34Z",
       "bpb": 1.1372,
       "seeds": 3,
       "artifact_bytes": 15030000,
@@ -411,7 +480,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-04-13T00:49:16Z",
-      "updated": "2026-04-13T07:58:25Z",
+      "updated": "2026-04-13T12:35:56Z",
       "bpb": 1.06681663,
       "seeds": 3,
       "artifact_bytes": null,
@@ -496,7 +565,7 @@
       "author": "joshkmartinez",
       "state": "OPEN",
       "created": "2026-04-12T23:56:24Z",
-      "updated": "2026-04-12T23:56:25Z",
+      "updated": "2026-04-13T12:36:06Z",
       "bpb": 1.01671233,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -747,9 +816,9 @@
       "number": 1569,
       "title": "[Non Record] Fractal recurrent primitive hybrid - SP1024 1xH100",
       "author": "abbudjoe",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-12T14:07:06Z",
-      "updated": "2026-04-12T22:44:29Z",
+      "updated": "2026-04-13T12:53:51Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -778,11 +847,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1568,
@@ -2062,22 +2131,17 @@
     },
     {
       "number": 1529,
-      "title": "Record: ImprovedParallelResiduals, 1.0753 BPB / 2.7777 nats, -0.0025 BPB /   -0.0064 nats vs PR #1523",
+      "title": "Record: ImprovedParallelResiduals, 1.0758 BPB /   2.7789 nats, -0.0020 BPB / -0.0052 nats vs PR   #1523",
       "author": "msisovic",
       "state": "OPEN",
       "created": "2026-04-11T00:04:56Z",
-      "updated": "2026-04-12T22:48:07Z",
-      "bpb": 1.07531639,
+      "updated": "2026-04-13T13:02:17Z",
+      "bpb": 1.07578747,
       "seeds": 3,
-      "artifact_bytes": 8579,
+      "artifact_bytes": 15980000,
       "technique_summary": "TTT + EMA",
       "file_paths": [
         "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/README.md",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/cutlass_evt_fusion/__init__.py",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/cutlass_evt_fusion/csrc/gemm_act_grad.cu",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/cutlass_evt_fusion/csrc/torch_binding.cpp",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/cutlass_evt_fusion/cutlass_evt_fusion.cpython-312-x86_64-linux-gnu.so",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/cutlass_evt_fusion/setup.py",
         "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/requirements.txt",
         "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/submission.json",
         "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/train_gpt.py",
@@ -9518,7 +9582,7 @@
       "author": "Elarwei001",
       "state": "OPEN",
       "created": "2026-04-02T09:26:24Z",
-      "updated": "2026-04-02T09:26:24Z",
+      "updated": "2026-04-13T12:55:58Z",
       "bpb": 1.107,
       "seeds": null,
       "artifact_bytes": 14400000,
@@ -9536,15 +9600,15 @@
       ],
       "track": "record",
       "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
         "seeds-unknown"
       ],
-      "confidence": "HIGH",
-      "technique_tags": [
-        "neural"
-      ],
-      "technique_source": "code"
+      "confidence": "HIGH"
     },
     {
       "number": 1253,

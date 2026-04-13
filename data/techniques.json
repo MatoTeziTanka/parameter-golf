@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-13T12:02:22Z",
+  "generated_at": "2026-04-13T13:47:15Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1438,
-    "matched_pr_count": 1064,
+    "pr_count": 1440,
+    "matched_pr_count": 1066,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -11,8 +11,8 @@
     "status_counts": {
       "ALIVE": 242,
       "AT_RISK": 89,
-      "DEAD": 411,
-      "INCOMPLETE": 688,
+      "DEAD": 412,
+      "INCOMPLETE": 689,
       "UNKNOWN": 0
     }
   },
@@ -23,9 +23,9 @@
       "count": 550,
       "author_count": 260,
       "alive_count": 125,
-      "dead_count": 178,
+      "dead_count": 179,
       "at_risk_count": 51,
-      "incomplete_count": 196,
+      "incomplete_count": 195,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -1946,7 +1946,7 @@
               "number": 1529,
               "author": "msisovic",
               "status": "ALIVE",
-              "bpb": 1.07531639,
+              "bpb": 1.07578747,
               "created": "2026-04-11T00:04:56Z"
             }
           ]
@@ -5179,7 +5179,7 @@
             {
               "number": 1569,
               "author": "abbudjoe",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-04-12T14:07:06Z"
             }
@@ -9342,7 +9342,7 @@
           "number": 1529,
           "author": "msisovic",
           "status": "ALIVE",
-          "bpb": 1.07531639,
+          "bpb": 1.07578747,
           "created": "2026-04-11T00:04:56Z"
         },
         {
@@ -9481,7 +9481,7 @@
         {
           "number": 1569,
           "author": "abbudjoe",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-04-12T14:07:06Z"
         },
@@ -9563,9 +9563,9 @@
       "count": 437,
       "author_count": 238,
       "alive_count": 106,
-      "dead_count": 125,
+      "dead_count": 126,
       "at_risk_count": 43,
-      "incomplete_count": 158,
+      "incomplete_count": 157,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -11536,7 +11536,7 @@
         {
           "author": "msisovic",
           "pr_count": 2,
-          "best_bpb": 1.07531639,
+          "best_bpb": 1.07578747,
           "prs": [
             {
               "number": 1204,
@@ -11549,7 +11549,7 @@
               "number": 1529,
               "author": "msisovic",
               "status": "ALIVE",
-              "bpb": 1.07531639,
+              "bpb": 1.07578747,
               "created": "2026-04-11T00:04:56Z"
             }
           ]
@@ -13900,7 +13900,7 @@
             {
               "number": 1569,
               "author": "abbudjoe",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-04-12T14:07:06Z"
             }
@@ -17174,7 +17174,7 @@
           "number": 1529,
           "author": "msisovic",
           "status": "ALIVE",
-          "bpb": 1.07531639,
+          "bpb": 1.07578747,
           "created": "2026-04-11T00:04:56Z"
         },
         {
@@ -17292,7 +17292,7 @@
         {
           "number": 1569,
           "author": "abbudjoe",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-04-12T14:07:06Z"
         },
@@ -25196,12 +25196,12 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 362,
-      "author_count": 166,
+      "count": 364,
+      "author_count": 168,
       "alive_count": 103,
       "dead_count": 106,
       "at_risk_count": 42,
-      "incomplete_count": 106,
+      "incomplete_count": 108,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -28626,6 +28626,20 @@
           ]
         },
         {
+          "author": "seekerPrice",
+          "pr_count": 1,
+          "best_bpb": 2.224,
+          "prs": [
+            {
+              "number": 1595,
+              "author": "seekerPrice",
+              "status": "INCOMPLETE",
+              "bpb": 2.224,
+              "created": "2026-04-13T12:26:35Z"
+            }
+          ]
+        },
+        {
           "author": "pragnyanramtha",
           "pr_count": 1,
           "best_bpb": 4.1048,
@@ -28678,6 +28692,20 @@
               "status": "ALIVE",
               "bpb": null,
               "created": "2026-04-09T21:14:58Z"
+            }
+          ]
+        },
+        {
+          "author": "Heron4gf",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1596,
+              "author": "Heron4gf",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-13T12:39:53Z"
             }
           ]
         },
@@ -31440,18 +31468,32 @@
           "status": "ALIVE",
           "bpb": 1.07493,
           "created": "2026-04-13T03:24:48Z"
+        },
+        {
+          "number": 1595,
+          "author": "seekerPrice",
+          "status": "INCOMPLETE",
+          "bpb": 2.224,
+          "created": "2026-04-13T12:26:35Z"
+        },
+        {
+          "number": 1596,
+          "author": "Heron4gf",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-13T12:39:53Z"
         }
       ]
     },
     {
       "name": "QAT",
       "kind": "legal",
-      "count": 108,
-      "author_count": 87,
+      "count": 109,
+      "author_count": 88,
       "alive_count": 17,
       "dead_count": 26,
       "at_risk_count": 2,
-      "incomplete_count": 63,
+      "incomplete_count": 64,
       "unknown_count": 0,
       "best_alive": {
         "number": 1512,
@@ -32471,6 +32513,20 @@
               "status": "DEAD",
               "bpb": 2.0799,
               "created": "2026-03-19T05:48:43Z"
+            }
+          ]
+        },
+        {
+          "author": "seekerPrice",
+          "pr_count": 1,
+          "best_bpb": 2.224,
+          "prs": [
+            {
+              "number": 1595,
+              "author": "seekerPrice",
+              "status": "INCOMPLETE",
+              "bpb": 2.224,
+              "created": "2026-04-13T12:26:35Z"
             }
           ]
         },
@@ -33581,6 +33637,13 @@
           "status": "ALIVE",
           "bpb": 1.1117,
           "created": "2026-04-09T21:37:43Z"
+        },
+        {
+          "number": 1595,
+          "author": "seekerPrice",
+          "status": "INCOMPLETE",
+          "bpb": 2.224,
+          "created": "2026-04-13T12:26:35Z"
         }
       ]
     },
@@ -57018,9 +57081,9 @@
       "count": 550,
       "author_count": 260,
       "alive_count": 125,
-      "dead_count": 178,
+      "dead_count": 179,
       "at_risk_count": 51,
-      "incomplete_count": 196,
+      "incomplete_count": 195,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -58941,7 +59004,7 @@
               "number": 1529,
               "author": "msisovic",
               "status": "ALIVE",
-              "bpb": 1.07531639,
+              "bpb": 1.07578747,
               "created": "2026-04-11T00:04:56Z"
             }
           ]
@@ -62174,7 +62237,7 @@
             {
               "number": 1569,
               "author": "abbudjoe",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-04-12T14:07:06Z"
             }
@@ -66337,7 +66400,7 @@
           "number": 1529,
           "author": "msisovic",
           "status": "ALIVE",
-          "bpb": 1.07531639,
+          "bpb": 1.07578747,
           "created": "2026-04-11T00:04:56Z"
         },
         {
@@ -66476,7 +66539,7 @@
         {
           "number": 1569,
           "author": "abbudjoe",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-04-12T14:07:06Z"
         },
@@ -66558,9 +66621,9 @@
       "count": 437,
       "author_count": 238,
       "alive_count": 106,
-      "dead_count": 125,
+      "dead_count": 126,
       "at_risk_count": 43,
-      "incomplete_count": 158,
+      "incomplete_count": 157,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -68531,7 +68594,7 @@
         {
           "author": "msisovic",
           "pr_count": 2,
-          "best_bpb": 1.07531639,
+          "best_bpb": 1.07578747,
           "prs": [
             {
               "number": 1204,
@@ -68544,7 +68607,7 @@
               "number": 1529,
               "author": "msisovic",
               "status": "ALIVE",
-              "bpb": 1.07531639,
+              "bpb": 1.07578747,
               "created": "2026-04-11T00:04:56Z"
             }
           ]
@@ -70895,7 +70958,7 @@
             {
               "number": 1569,
               "author": "abbudjoe",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": null,
               "created": "2026-04-12T14:07:06Z"
             }
@@ -74169,7 +74232,7 @@
           "number": 1529,
           "author": "msisovic",
           "status": "ALIVE",
-          "bpb": 1.07531639,
+          "bpb": 1.07578747,
           "created": "2026-04-11T00:04:56Z"
         },
         {
@@ -74287,7 +74350,7 @@
         {
           "number": 1569,
           "author": "abbudjoe",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": null,
           "created": "2026-04-12T14:07:06Z"
         },
@@ -74359,12 +74422,12 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 362,
-      "author_count": 166,
+      "count": 364,
+      "author_count": 168,
       "alive_count": 103,
       "dead_count": 106,
       "at_risk_count": 42,
-      "incomplete_count": 106,
+      "incomplete_count": 108,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -77789,6 +77852,20 @@
           ]
         },
         {
+          "author": "seekerPrice",
+          "pr_count": 1,
+          "best_bpb": 2.224,
+          "prs": [
+            {
+              "number": 1595,
+              "author": "seekerPrice",
+              "status": "INCOMPLETE",
+              "bpb": 2.224,
+              "created": "2026-04-13T12:26:35Z"
+            }
+          ]
+        },
+        {
           "author": "pragnyanramtha",
           "pr_count": 1,
           "best_bpb": 4.1048,
@@ -77841,6 +77918,20 @@
               "status": "ALIVE",
               "bpb": null,
               "created": "2026-04-09T21:14:58Z"
+            }
+          ]
+        },
+        {
+          "author": "Heron4gf",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1596,
+              "author": "Heron4gf",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-13T12:39:53Z"
             }
           ]
         },
@@ -80603,6 +80694,20 @@
           "status": "ALIVE",
           "bpb": 1.07493,
           "created": "2026-04-13T03:24:48Z"
+        },
+        {
+          "number": 1595,
+          "author": "seekerPrice",
+          "status": "INCOMPLETE",
+          "bpb": 2.224,
+          "created": "2026-04-13T12:26:35Z"
+        },
+        {
+          "number": 1596,
+          "author": "Heron4gf",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-13T12:39:53Z"
         }
       ]
     },
@@ -84521,12 +84626,12 @@
     {
       "name": "QAT",
       "kind": "legal",
-      "count": 108,
-      "author_count": 87,
+      "count": 109,
+      "author_count": 88,
       "alive_count": 17,
       "dead_count": 26,
       "at_risk_count": 2,
-      "incomplete_count": 63,
+      "incomplete_count": 64,
       "unknown_count": 0,
       "best_alive": {
         "number": 1512,
@@ -85546,6 +85651,20 @@
               "status": "DEAD",
               "bpb": 2.0799,
               "created": "2026-03-19T05:48:43Z"
+            }
+          ]
+        },
+        {
+          "author": "seekerPrice",
+          "pr_count": 1,
+          "best_bpb": 2.224,
+          "prs": [
+            {
+              "number": 1595,
+              "author": "seekerPrice",
+              "status": "INCOMPLETE",
+              "bpb": 2.224,
+              "created": "2026-04-13T12:26:35Z"
             }
           ]
         },
@@ -86656,6 +86775,13 @@
           "status": "ALIVE",
           "bpb": 1.1117,
           "created": "2026-04-09T21:37:43Z"
+        },
+        {
+          "number": 1595,
+          "author": "seekerPrice",
+          "status": "INCOMPLETE",
+          "bpb": 2.224,
+          "created": "2026-04-13T12:26:35Z"
         }
       ]
     },
@@ -98373,11 +98499,20 @@
     {
       "left": "QAT",
       "right": "Parallel Muon",
-      "left_count": 108,
+      "left_count": 109,
       "right_count": 23,
-      "left_people": 87,
+      "left_people": 88,
       "right_people": 13,
-      "score": 2484
+      "score": 2507
+    },
+    {
+      "left": "QAT",
+      "right": "JEPA",
+      "left_count": 109,
+      "right_count": 21,
+      "left_people": 88,
+      "right_people": 20,
+      "score": 2289
     },
     {
       "left": "SWA",
@@ -98387,15 +98522,6 @@
       "left_people": 66,
       "right_people": 20,
       "score": 2280
-    },
-    {
-      "left": "QAT",
-      "right": "JEPA",
-      "left_count": 108,
-      "right_count": 21,
-      "left_people": 87,
-      "right_people": 20,
-      "score": 2268
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -98409,11 +98535,11 @@
     {
       "left": "QAT",
       "right": "MoE",
-      "left_count": 108,
+      "left_count": 109,
       "right_count": 19,
-      "left_people": 87,
+      "left_people": 88,
       "right_people": 15,
-      "score": 2052
+      "score": 2071
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -98580,20 +98706,38 @@
     {
       "left": "QAT",
       "right": "Value Residual",
-      "left_count": 108,
+      "left_count": 109,
       "right_count": 7,
-      "left_people": 87,
+      "left_people": 88,
       "right_people": 6,
-      "score": 756
+      "score": 763
     },
     {
       "left": "QAT",
       "right": "Progressive Depth",
-      "left_count": 108,
+      "left_count": 109,
       "right_count": 7,
-      "left_people": 87,
+      "left_people": 88,
       "right_people": 3,
-      "score": 756
+      "score": 763
+    },
+    {
+      "left": "GPTQ",
+      "right": "Differential Attention",
+      "left_count": 364,
+      "right_count": 2,
+      "left_people": 168,
+      "right_people": 2,
+      "score": 728
+    },
+    {
+      "left": "GPTQ",
+      "right": "U-Net skips",
+      "left_count": 364,
+      "right_count": 2,
+      "left_people": 168,
+      "right_people": 2,
+      "score": 728
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -98614,24 +98758,6 @@
       "score": 728
     },
     {
-      "left": "GPTQ",
-      "right": "Differential Attention",
-      "left_count": 362,
-      "right_count": 2,
-      "left_people": 166,
-      "right_people": 2,
-      "score": 724
-    },
-    {
-      "left": "GPTQ",
-      "right": "U-Net skips",
-      "left_count": 362,
-      "right_count": 2,
-      "left_people": 166,
-      "right_people": 2,
-      "score": 724
-    },
-    {
       "left": "SSM/Mamba/S4D",
       "right": "Parallel Muon",
       "left_count": 30,
@@ -98643,11 +98769,11 @@
     {
       "left": "QAT",
       "right": "Weight Sharing",
-      "left_count": 108,
+      "left_count": 109,
       "right_count": 6,
-      "left_people": 87,
+      "left_people": 88,
       "right_people": 4,
-      "score": 648
+      "score": 654
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -98785,6 +98911,15 @@
       "score": 368
     },
     {
+      "left": "GPTQ",
+      "right": "Flash Attention",
+      "left_count": 364,
+      "right_count": 1,
+      "left_people": 168,
+      "right_people": 1,
+      "score": 364
+    },
+    {
       "left": "SwiGLU",
       "right": "Progressive Depth",
       "left_count": 52,
@@ -98792,15 +98927,6 @@
       "left_people": 44,
       "right_people": 3,
       "score": 364
-    },
-    {
-      "left": "GPTQ",
-      "right": "Flash Attention",
-      "left_count": 362,
-      "right_count": 1,
-      "left_people": 166,
-      "right_people": 1,
-      "score": 362
     },
     {
       "left": "JEPA",
@@ -98832,11 +98958,11 @@
     {
       "left": "QAT",
       "right": "Differential Attention",
-      "left_count": 108,
+      "left_count": 109,
       "right_count": 2,
-      "left_people": 87,
+      "left_people": 88,
       "right_people": 2,
-      "score": 216
+      "score": 218
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -99012,11 +99138,11 @@
     {
       "left": "QAT",
       "right": "Flash Attention",
-      "left_count": 108,
+      "left_count": 109,
       "right_count": 1,
-      "left_people": 87,
+      "left_people": 88,
       "right_people": 1,
-      "score": 108
+      "score": 109
     },
     {
       "left": "LeakyReLU\u00b2",
