@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-13T21:57:16.314398+00:00",
-  "api_calls_used": 197,
+  "last_fetch": "2026-04-13T22:54:23.621935+00:00",
+  "api_calls_used": 198,
   "prs": [
     {
       "number": 1605,
@@ -2639,12 +2639,15 @@
       "author": "OE-GOD",
       "state": "OPEN",
       "created": "2026-04-09T20:06:21Z",
-      "updated": "2026-04-13T07:32:30Z",
+      "updated": "2026-04-13T22:31:53Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 1600000,
       "technique_summary": "GPTQ + INT6",
       "file_paths": [
+        "casefold_fast.py",
+        "casefold_retokenize.py",
+        "casefold_stream.py",
         "k_sweep.py",
         "records/track_non_record_16mb/2026-04-09_ANS_Compression/README.md",
         "records/track_non_record_16mb/2026-04-09_ANS_Compression/ans_compress.py",
@@ -7894,7 +7897,7 @@
       "author": "adi-suresh01",
       "state": "OPEN",
       "created": "2026-04-03T19:30:41Z",
-      "updated": "2026-04-13T20:54:28Z",
+      "updated": "2026-04-13T22:19:11Z",
       "bpb": 1.3299,
       "seeds": 3,
       "artifact_bytes": 15300000,
@@ -14291,7 +14294,7 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-30T09:01:09Z",
-      "updated": "2026-03-30T09:01:09Z",
+      "updated": "2026-04-13T22:45:48Z",
       "bpb": 1.13112,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -14308,13 +14311,13 @@
       ],
       "track": "record",
       "technique_type": "ttt",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH",
       "technique_tags": [
         "ttt"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 1126,
@@ -20299,7 +20302,7 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-27T17:33:53Z",
-      "updated": "2026-03-27T17:44:22Z",
+      "updated": "2026-04-13T22:46:13Z",
       "bpb": 0.11545,
       "seeds": 3,
       "artifact_bytes": 15100000,
@@ -20325,17 +20328,17 @@
         "ngram_path",
         "cache_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "path:ngram-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
         "cache"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
     },
     {
       "number": 967,
@@ -21060,7 +21063,7 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-27T11:40:52Z",
-      "updated": "2026-03-27T17:44:34Z",
+      "updated": "2026-04-13T22:46:05Z",
       "bpb": 0.11556,
       "seeds": 3,
       "artifact_bytes": 15077877,
@@ -21082,17 +21085,17 @@
         "ngram_path",
         "cache_path"
       ],
-      "status": "AT_RISK",
-      "flags": [
-        "path:ngram-path"
-      ],
-      "confidence": "MEDIUM",
       "track": "record",
       "technique_type": "cache",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
     },
     {
       "number": 947,
@@ -40633,7 +40636,7 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-22T05:58:23Z",
-      "updated": "2026-04-12T14:22:09Z",
+      "updated": "2026-04-13T22:25:21Z",
       "bpb": 1.1287,
       "seeds": 3,
       "artifact_bytes": 15700000,
