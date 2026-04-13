@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.9.0",
+    "date": "2026-04-13",
+    "title": "Community Activity & Agora Review Impact Charts",
+    "changes": [
+      "NEW CHART: Community Activity vs. Agora Reviews — dual-axis timeline showing community comments/day (blue bars), Agora review volume (purple bars), and new PRs/day (yellow line) from competition launch through present.",
+      "NEW CHART: Agora Review Impact — before/during comparison cards showing 7-day pre-sweep averages vs. sweep-day averages for community comments (+38%), new PRs (-16%), and PR updates (+1941%).",
+      "DATA: community_activity.csv added to data/ with daily counts of Mato comments, other comments, PRs created, and PRs updated from 2026-03-18 through 2026-04-13.",
+      "CHARTS: generate_community_activity() and generate_review_impact() added to scripts/charts.py, wired into run_pipeline.py with AGORA:CHART_ACTIVITY and AGORA:CHART_IMPACT sentinels."
+    ]
+  },
+  {
     "version": "0.8.5",
     "date": "2026-04-12",
     "title": "Dataset republish: SP4096/8192/12288/16384 + byte260 + corrected Scylla v2",

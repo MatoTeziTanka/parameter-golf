@@ -36,7 +36,7 @@ import re
 import subprocess
 import sys
 from html import escape
-from charts import generate_artifact_histogram, generate_technique_popularity, generate_compliance_rate
+from charts import generate_artifact_histogram, generate_technique_popularity, generate_compliance_rate, generate_community_activity, generate_review_impact
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -76,6 +76,10 @@ CHART_TECHNIQUE_POP_START = "<!-- AGORA:CHART_TECHNIQUE_POP_START -->"
 CHART_TECHNIQUE_POP_END = "<!-- AGORA:CHART_TECHNIQUE_POP_END -->"
 CHART_COMPLIANCE_START = "<!-- AGORA:CHART_COMPLIANCE_START -->"
 CHART_COMPLIANCE_END = "<!-- AGORA:CHART_COMPLIANCE_END -->"
+CHART_ACTIVITY_START = "<!-- AGORA:CHART_ACTIVITY_START -->"
+CHART_ACTIVITY_END = "<!-- AGORA:CHART_ACTIVITY_END -->"
+CHART_IMPACT_START = "<!-- AGORA:CHART_IMPACT_START -->"
+CHART_IMPACT_END = "<!-- AGORA:CHART_IMPACT_END -->"
 MOD_TRACKER_START = "<!-- AGORA:MOD_TRACKER_START -->"
 MOD_TRACKER_END = "<!-- AGORA:MOD_TRACKER_END -->"
 MOD_TRACKER_PATH = REPO_ROOT / "data" / "mod_tracker.json"
@@ -1132,6 +1136,12 @@ def main() -> None:
         html = _replace_between_sentinels(html, CHART_ARTIFACT_START, CHART_ARTIFACT_END, artifact_chart)
         html = _replace_between_sentinels(html, CHART_TECHNIQUE_POP_START, CHART_TECHNIQUE_POP_END, technique_pop_chart)
         html = _replace_between_sentinels(html, CHART_COMPLIANCE_START, CHART_COMPLIANCE_END, compliance_chart)
+
+        # Community activity + impact charts
+        activity_chart = _render_chart_card("Community Activity", generate_community_activity())
+        impact_chart = _render_chart_card("Review Impact", generate_review_impact())
+        html = _replace_between_sentinels(html, CHART_ACTIVITY_START, CHART_ACTIVITY_END, activity_chart)
+        html = _replace_between_sentinels(html, CHART_IMPACT_START, CHART_IMPACT_END, impact_chart)
 
         # Mod tracker (data-driven from data/mod_tracker.json)
         if MOD_TRACKER_PATH.exists() and MOD_TRACKER_START in html and MOD_TRACKER_END in html:
