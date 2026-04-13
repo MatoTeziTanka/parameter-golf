@@ -360,6 +360,7 @@ def generate_community_activity(csv_path: str = "") -> str:
     mato = [int(r["mato_comments"]) for r in rows]
     other = [int(r["other_comments"]) for r in rows]
     prs_created = [int(r["prs_created"]) for r in rows]
+    prs_updated = [int(r["prs_updated"]) for r in rows]
 
     w, h = 800, 420
     ml, mr, mt, mb = 64, 64, 40, 56
@@ -368,9 +369,9 @@ def generate_community_activity(csv_path: str = "") -> str:
     n = len(dates)
     bar_w = max(pw / n - 2, 4)
 
-    # Left axis: comments, Right axis: PRs created
+    # Left axis: comments, Right axis: PRs (max of created and updated)
     max_comments = max(max(m + o for m, o in zip(mato, other)), 1)
-    max_prs = max(max(prs_created), 1)
+    max_prs = max(max(max(prs_created), max(prs_updated)), 1)
 
     def x_pos(i: int) -> float:
         return ml + (i + 0.5) * (pw / n)
@@ -392,7 +393,7 @@ def generate_community_activity(csv_path: str = "") -> str:
         f'<svg viewBox="0 0 {w} {h}" width="100%" role="img" aria-label="Community activity" xmlns="http://www.w3.org/2000/svg">',
         f'<rect width="{w}" height="{h}" rx="12" fill="{BG}" stroke="{BORDER}"/>',
         f'<text x="{ml}" y="24" fill="{TEXT}" font-size="16" font-weight="700">Community Activity vs. Agora Reviews</text>',
-        f'<text x="{ml}" y="38" fill="{TEXT_DIM}" font-size="11">Stacked bars = comments/day (left axis). Line = new PRs/day (right axis). Purple = Agora reviews.</text>',
+        f'<text x="{ml}" y="38" fill="{TEXT_DIM}" font-size="11">Stacked bars = comments/day (left axis). Lines = new PRs/day + PR updates/day (right axis). Purple = Agora reviews.</text>',
     ]
 
     # Y gridlines (left axis)
@@ -435,12 +436,19 @@ def generate_community_activity(csv_path: str = "") -> str:
             by = y_left(base + mato[i])
             lines.append(f'<rect x="{x:.1f}" y="{by:.1f}" width="{bar_w:.1f}" height="{bh:.1f}" fill="{ACCENT}" rx="2" opacity="0.85"/>')
 
-    # PRs created line (yellow)
+    # PR updates line (green)
+    points_upd = []
+    for i in range(n):
+        points_upd.append(f"{x_pos(i):.1f},{y_right(prs_updated[i]):.1f}")
+    lines.append(f'<polyline points="{" ".join(points_upd)}" fill="none" stroke="{GREEN}" stroke-width="2" opacity="0.7"/>')
+    for i in range(n):
+        lines.append(f'<circle cx="{x_pos(i):.1f}" cy="{y_right(prs_updated[i]):.1f}" r="2" fill="{GREEN}" opacity="0.7"/>')
+
+    # PRs created line (yellow, on top)
     points = []
     for i in range(n):
         points.append(f"{x_pos(i):.1f},{y_right(prs_created[i]):.1f}")
     lines.append(f'<polyline points="{" ".join(points)}" fill="none" stroke="{YELLOW}" stroke-width="2.5" opacity="0.9"/>')
-    # Dots on the line
     for i in range(n):
         lines.append(f'<circle cx="{x_pos(i):.1f}" cy="{y_right(prs_created[i]):.1f}" r="2.5" fill="{YELLOW}" opacity="0.9"/>')
 
@@ -468,7 +476,7 @@ def generate_community_activity(csv_path: str = "") -> str:
     # Legend
     ly = h - 12
     lx = ml
-    for label, color in [("Community comments", BLUE), ("Agora reviews", ACCENT), ("New PRs/day", YELLOW)]:
+    for label, color in [("Community comments", BLUE), ("Agora reviews", ACCENT), ("New PRs/day", YELLOW), ("PR updates/day", GREEN)]:
         lines.append(f'<rect x="{lx}" y="{ly - 8}" width="12" height="12" fill="{color}" rx="2" opacity="0.8"/>')
         lines.append(f'<text x="{lx + 16}" y="{ly + 2}" fill="{TEXT}" font-size="11">{label}</text>')
         lx += len(label) * 7 + 36
