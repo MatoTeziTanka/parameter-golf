@@ -588,34 +588,39 @@ def generate_review_impact(csv_path: str = "") -> str:
         ("PR Updates/day", avg_updates_pre, avg_updates_sweep),
     ]
 
+    card_h = 180
+    card_top = mt + 20
     card_w = (w - ml - mr - 40) / 3
+    # Content block is ~148px tall (label to % indicator). Center vertically in card.
+    content_h = 148
+    content_offset = (card_h - content_h) / 2
+
     for i, (label, before, after) in enumerate(metrics):
-        cx = ml + 20 + i * (card_w + 20) + card_w / 2
-        cy = mt + 50
+        card_x = ml + 20 + i * (card_w + 20)
+        cx = card_x + card_w / 2
+        cy = card_top + content_offset
 
         # Card background
-        card_x = ml + 20 + i * (card_w + 20)
-        lines.append(f'<rect x="{card_x:.0f}" y="{mt + 20}" width="{card_w:.0f}" height="180" rx="8" fill="{BORDER}" opacity="0.5"/>')
+        lines.append(f'<rect x="{card_x:.0f}" y="{card_top}" width="{card_w:.0f}" height="{card_h}" rx="8" fill="{BORDER}" opacity="0.5"/>')
 
         # Label
-        lines.append(f'<text x="{cx:.0f}" y="{cy + 10}" fill="{TEXT}" font-size="12" font-weight="600" text-anchor="middle">{label}</text>')
+        lines.append(f'<text x="{cx:.0f}" y="{cy + 14:.0f}" fill="{TEXT}" font-size="12" font-weight="600" text-anchor="middle">{label}</text>')
 
-        # Before value
-        lines.append(f'<text x="{cx:.0f}" y="{cy + 45}" fill="{TEXT_DIM}" font-size="11" text-anchor="middle">Before</text>')
-        lines.append(f'<text x="{cx:.0f}" y="{cy + 70}" fill="{BLUE}" font-size="28" font-weight="700" text-anchor="middle">{before:.0f}</text>')
+        # Before
+        lines.append(f'<text x="{cx:.0f}" y="{cy + 42:.0f}" fill="{TEXT_DIM}" font-size="11" text-anchor="middle">Before</text>')
+        lines.append(f'<text x="{cx:.0f}" y="{cy + 68:.0f}" fill="{BLUE}" font-size="28" font-weight="700" text-anchor="middle">{before:.0f}</text>')
 
-        # After value
-        lines.append(f'<text x="{cx:.0f}" y="{cy + 100}" fill="{TEXT_DIM}" font-size="11" text-anchor="middle">During</text>')
+        # During
+        lines.append(f'<text x="{cx:.0f}" y="{cy + 96:.0f}" fill="{TEXT_DIM}" font-size="11" text-anchor="middle">During</text>')
 
-        # Color the "during" number based on increase/decrease
         change = after - before
         change_pct = (change / before * 100) if before > 0 else 0
         after_color = GREEN if change > 0 else RED
-        lines.append(f'<text x="{cx:.0f}" y="{cy + 125}" fill="{after_color}" font-size="28" font-weight="700" text-anchor="middle">{after:.0f}</text>')
+        lines.append(f'<text x="{cx:.0f}" y="{cy + 122:.0f}" fill="{after_color}" font-size="28" font-weight="700" text-anchor="middle">{after:.0f}</text>')
 
-        # Change indicator
+        # Change %
         arrow = "+" if change >= 0 else ""
-        lines.append(f'<text x="{cx:.0f}" y="{cy + 148}" fill="{after_color}" font-size="13" font-weight="600" text-anchor="middle">{arrow}{change_pct:.0f}%</text>')
+        lines.append(f'<text x="{cx:.0f}" y="{cy + 144:.0f}" fill="{after_color}" font-size="13" font-weight="600" text-anchor="middle">{arrow}{change_pct:.0f}%</text>')
 
     lines.append('</svg>')
     return "".join(lines)
