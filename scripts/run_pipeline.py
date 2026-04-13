@@ -1037,6 +1037,14 @@ def main() -> None:
             flush=True,
         )
 
+    # --- Step 2b: Fetch community activity metrics ---
+    activity_ok = _run_script("fetch_community_activity.py")
+    if not activity_ok:
+        print(
+            "[PIPELINE] fetch_community_activity.py failed — using existing CSV",
+            flush=True,
+        )
+
     # --- Step 3: Classify PRs ---
     classify_ok = _run_script("classify.py")
     if not classify_ok:
