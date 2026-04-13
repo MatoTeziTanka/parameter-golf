@@ -436,21 +436,59 @@ def generate_community_activity(csv_path: str = "") -> str:
             by = y_left(base + mato[i])
             lines.append(f'<rect x="{x:.1f}" y="{by:.1f}" width="{bar_w:.1f}" height="{bh:.1f}" fill="{ACCENT}" rx="2" opacity="0.85"/>')
 
-    # PR updates line (green)
-    points_upd = []
-    for i in range(n):
-        points_upd.append(f"{x_pos(i):.1f},{y_right(prs_updated[i]):.1f}")
-    lines.append(f'<polyline points="{" ".join(points_upd)}" fill="none" stroke="{GREEN}" stroke-width="2" opacity="0.7"/>')
-    for i in range(n):
-        lines.append(f'<circle cx="{x_pos(i):.1f}" cy="{y_right(prs_updated[i]):.1f}" r="2" fill="{GREEN}" opacity="0.7"/>')
-
-    # PRs created line (yellow, on top)
+    # PRs created line (yellow, drawn first = behind)
     points = []
     for i in range(n):
         points.append(f"{x_pos(i):.1f},{y_right(prs_created[i]):.1f}")
-    lines.append(f'<polyline points="{" ".join(points)}" fill="none" stroke="{YELLOW}" stroke-width="2.5" opacity="0.9"/>')
+    lines.append(f'<polyline points="{" ".join(points)}" fill="none" stroke="{YELLOW}" stroke-width="2" opacity="0.8"/>')
     for i in range(n):
-        lines.append(f'<circle cx="{x_pos(i):.1f}" cy="{y_right(prs_created[i]):.1f}" r="2.5" fill="{YELLOW}" opacity="0.9"/>')
+        lines.append(f'<circle cx="{x_pos(i):.1f}" cy="{y_right(prs_created[i]):.1f}" r="2" fill="{YELLOW}" opacity="0.8"/>')
+
+    # PR updates line (green, drawn last = on top)
+    points_upd = []
+    for i in range(n):
+        points_upd.append(f"{x_pos(i):.1f},{y_right(prs_updated[i]):.1f}")
+    lines.append(f'<polyline points="{" ".join(points_upd)}" fill="none" stroke="{GREEN}" stroke-width="2.5" opacity="0.9"/>')
+    for i in range(n):
+        lines.append(f'<circle cx="{x_pos(i):.1f}" cy="{y_right(prs_updated[i]):.1f}" r="3" fill="{GREEN}" opacity="0.9"/>')
+
+    # Interactive tooltip hover columns for each day
+    def fmt_date(d: str) -> str:
+        mn = {"01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr", "05": "May", "06": "Jun"}
+        parts = d.split("-")
+        return f"{mn.get(parts[1], parts[1])} {int(parts[2])}"
+
+    # Vertical hover highlight + floating tooltip box (SVG-native)
+    col_w = pw / n
+    for i in range(n):
+        cx = ml + i * col_w
+        tip_lines = [
+            fmt_date(dates[i]),
+            f"Community: {other[i]}",
+            f"Agora reviews: {mato[i]}",
+            f"New PRs: {prs_created[i]}",
+            f"PR updates: {prs_updated[i]}",
+        ]
+        # Tooltip background + text group, hidden by default
+        tip_x = min(cx + col_w + 4, ml + pw - 140)
+        tip_y = mt + 10
+        gid = f"tip-{i}"
+        lines.append(f'<g id="{gid}" visibility="hidden" pointer-events="none">')
+        lines.append(f'<rect x="{tip_x:.0f}" y="{tip_y}" width="138" height="82" rx="6" fill="#1c2128" stroke="{BORDER}" opacity="0.95"/>')
+        for j, tl in enumerate(tip_lines):
+            ty = tip_y + 15 + j * 14
+            color = TEXT if j == 0 else [BLUE, ACCENT, YELLOW, GREEN][j - 1]
+            fw = "700" if j == 0 else "400"
+            lines.append(f'<text x="{tip_x + 8:.0f}" y="{ty}" fill="{color}" font-size="10" font-weight="{fw}">{tl}</text>')
+        lines.append('</g>')
+        # Hover highlight column
+        lines.append(
+            f'<rect x="{cx:.1f}" y="{mt}" width="{col_w:.1f}" height="{ph}" '
+            f'fill="white" opacity="0" cursor="crosshair" '
+            f'onmouseover="document.getElementById(\'{gid}\').setAttribute(\'visibility\',\'visible\');this.setAttribute(\'opacity\',\'0.04\')" '
+            f'onmouseout="document.getElementById(\'{gid}\').setAttribute(\'visibility\',\'hidden\');this.setAttribute(\'opacity\',\'0\')" '
+            f'onclick="var g=document.getElementById(\'{gid}\');g.setAttribute(\'visibility\',g.getAttribute(\'visibility\')===\'visible\'?\'hidden\':\'visible\')"/>'
+        )
 
     # X-axis date labels
     tick_interval = 3 if n <= 30 else 7
