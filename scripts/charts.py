@@ -372,7 +372,8 @@ def generate_community_activity(csv_path: str = "") -> str:
     # Left axis: comments (ceil to nearest 200, min 800), Right axis: PRs
     raw_max_comments = max(max(m + o for m, o in zip(mato, other)), 1)
     max_comments = max(((raw_max_comments + 199) // 200) * 200, 800)
-    max_prs = max(max(max(prs_created), max(prs_updated)), 1)
+    raw_max_prs = max(max(prs_created), max(prs_updated))
+    max_prs = max(((raw_max_prs + 99) // 100) * 100 + 100, 200)  # round up + 100 headroom
 
     def x_pos(i: int) -> float:
         return ml + (i + 0.5) * (pw / n)
