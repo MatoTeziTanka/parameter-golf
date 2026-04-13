@@ -1,7 +1,145 @@
 {
-  "last_fetch": "2026-04-13T03:19:13.895770+00:00",
-  "api_calls_used": 193,
+  "last_fetch": "2026-04-13T06:01:27.608158+00:00",
+  "api_calls_used": 194,
   "prs": [
+    {
+      "number": 1590,
+      "title": "Codex/diffusion model",
+      "author": "architb1703",
+      "state": "OPEN",
+      "created": "2026-04-13T04:46:51Z",
+      "updated": "2026-04-13T04:46:51Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "DIFFUSION_IMPLEMENTATION_PLAN.md",
+        "EXPERIMENT_LOG.md",
+        "PARAMETER_GOLF_README.md",
+        "README.md",
+        "WEEK3_EXPERIMENT_TRACKER.md",
+        "configs/diffusion_local.env",
+        "configs/diffusion_scale.env",
+        "configs/diffusion_scale_long.env",
+        "configs/diffusion_tiny.env",
+        "diffusion_config.py",
+        "diffusion_eval.py",
+        "diffusion_model.py",
+        "diffusion_objectives.py",
+        "scripts/experiments/run_week3_p2.sh",
+        "scripts/experiments/run_week3_p3.sh",
+        "scripts/experiments/run_week3_p4.sh",
+        "scripts/experiments/run_week3_p5.sh",
+        "scripts/experiments/run_week3_p6.sh",
+        "scripts/experiments/run_week3_p7.sh",
+        "scripts/experiments/run_week3_scale_long_full_eval.sh",
+        "scripts/experiments/run_week3_stage_a.sh",
+        "scripts/experiments/run_week3_stage_b.sh",
+        "tests/test_diffusion_validation.py",
+        "train_diffusion.py",
+        "validation_common.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1589,
+      "title": "Non-record: 30 experiments across 13 architectures (MLA, Pause Tokens, Eigenweight, 9 exotic ideas)",
+      "author": "nnm2602",
+      "state": "OPEN",
+      "created": "2026-04-13T04:18:28Z",
+      "updated": "2026-04-13T04:18:28Z",
+      "bpb": 1.3223,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/ARCHITECTURE_IDEAS.md",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/README.md",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/REPORT.md",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_attractor.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_basis_sharing.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_communicating_agents.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_depth_recurrence.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_eigenweight.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_eigenweight_v2.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_mla.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_neurogenesis.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_pause_tokens.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_seed_model.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_siren_weights.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_tensor_network.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_turing_tarpit.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/exp_universal_transformer.py",
+        "records/track_non_record_16mb/2026-04-13_30Experiments_MLA_PauseTokens_Eigenweight_9Ideas/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1586,
+      "title": "Record: Per-Layer Adaptive GPTQ Clip + int7 Embeddings + MLR 0.026 — val_bpb 1.07493 (3-seed mean)",
+      "author": "dexhunter",
+      "state": "OPEN",
+      "created": "2026-04-13T03:24:48Z",
+      "updated": "2026-04-13T03:24:48Z",
+      "bpb": 1.07493,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + GPTQ + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-13_AdaptiveClip_Emb7_MLR026/README.md",
+        "records/track_10min_16mb/2026-04-13_AdaptiveClip_Emb7_MLR026/submission.json",
+        "records/track_10min_16mb/2026-04-13_AdaptiveClip_Emb7_MLR026/train_gpt.py",
+        "records/track_10min_16mb/2026-04-13_AdaptiveClip_Emb7_MLR026/train_seed0.log",
+        "records/track_10min_16mb/2026-04-13_AdaptiveClip_Emb7_MLR026/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-13_AdaptiveClip_Emb7_MLR026/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1585,
       "title": "Record: Casefold Tokenizer + Parallel Residuals + Systems Optimization — val_bpb 1.0639 (3-seed mean)",
@@ -4140,7 +4278,7 @@
       "author": "Victory963",
       "state": "OPEN",
       "created": "2026-04-08T04:23:57Z",
-      "updated": "2026-04-12T07:36:13Z",
+      "updated": "2026-04-13T03:51:13Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -26123,7 +26261,7 @@
       "author": "Devchandrasen",
       "state": "OPEN",
       "created": "2026-03-26T03:39:35Z",
-      "updated": "2026-03-26T12:03:59Z",
+      "updated": "2026-04-13T05:15:06Z",
       "bpb": 2.69806373,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -26141,17 +26279,17 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "code"
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 803,

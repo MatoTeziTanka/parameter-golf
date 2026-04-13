@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-13T03:19:27Z",
+  "generated_at": "2026-04-13T06:01:35Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1435,
-    "matched_pr_count": 1062,
+    "pr_count": 1438,
+    "matched_pr_count": 1063,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 240,
+      "ALIVE": 241,
       "AT_RISK": 89,
       "DEAD": 410,
-      "INCOMPLETE": 688,
+      "INCOMPLETE": 690,
       "UNKNOWN": 0
     }
   },
@@ -20,9 +20,9 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 548,
+      "count": 549,
       "author_count": 259,
-      "alive_count": 123,
+      "alive_count": 124,
       "dead_count": 178,
       "at_risk_count": 51,
       "incomplete_count": 196,
@@ -392,7 +392,7 @@
         },
         {
           "author": "dexhunter",
-          "pr_count": 13,
+          "pr_count": 14,
           "best_bpb": 0.00043,
           "prs": [
             {
@@ -485,6 +485,13 @@
               "status": "ALIVE",
               "bpb": 1.07406,
               "created": "2026-04-12T03:43:04Z"
+            },
+            {
+              "number": 1586,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07493,
+              "created": "2026-04-13T03:24:48Z"
             }
           ]
         },
@@ -9519,6 +9526,13 @@
           "status": "ALIVE",
           "bpb": 1.0639,
           "created": "2026-04-13T02:49:43Z"
+        },
+        {
+          "number": 1586,
+          "author": "dexhunter",
+          "status": "ALIVE",
+          "bpb": 1.07493,
+          "created": "2026-04-13T03:24:48Z"
         }
       ]
     },
@@ -25161,9 +25175,9 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 361,
+      "count": 362,
       "author_count": 166,
-      "alive_count": 102,
+      "alive_count": 103,
       "dead_count": 105,
       "at_risk_count": 42,
       "incomplete_count": 107,
@@ -25595,6 +25609,83 @@
           ]
         },
         {
+          "author": "dexhunter",
+          "pr_count": 10,
+          "best_bpb": 1.0722,
+          "prs": [
+            {
+              "number": 953,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.0722,
+              "created": "2026-03-27T13:31:45Z"
+            },
+            {
+              "number": 1060,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.1122,
+              "created": "2026-03-29T06:15:28Z"
+            },
+            {
+              "number": 1172,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.1015,
+              "created": "2026-03-31T06:22:04Z"
+            },
+            {
+              "number": 1179,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.111,
+              "created": "2026-03-31T11:16:23Z"
+            },
+            {
+              "number": 1260,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.0929,
+              "created": "2026-04-02T17:35:11Z"
+            },
+            {
+              "number": 1279,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.0924,
+              "created": "2026-04-03T02:38:38Z"
+            },
+            {
+              "number": 1285,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.0912,
+              "created": "2026-04-03T05:33:56Z"
+            },
+            {
+              "number": 1413,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.08279,
+              "created": "2026-04-06T11:28:11Z"
+            },
+            {
+              "number": 1560,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07406,
+              "created": "2026-04-12T03:43:04Z"
+            },
+            {
+              "number": 1586,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07493,
+              "created": "2026-04-13T03:24:48Z"
+            }
+          ]
+        },
+        {
           "author": "ibarrajo",
           "pr_count": 10,
           "best_bpb": 1.1145,
@@ -25808,76 +25899,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.07974,
               "created": "2026-04-12T18:48:34Z"
-            }
-          ]
-        },
-        {
-          "author": "dexhunter",
-          "pr_count": 9,
-          "best_bpb": 1.0722,
-          "prs": [
-            {
-              "number": 953,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.0722,
-              "created": "2026-03-27T13:31:45Z"
-            },
-            {
-              "number": 1060,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.1122,
-              "created": "2026-03-29T06:15:28Z"
-            },
-            {
-              "number": 1172,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.1015,
-              "created": "2026-03-31T06:22:04Z"
-            },
-            {
-              "number": 1179,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.111,
-              "created": "2026-03-31T11:16:23Z"
-            },
-            {
-              "number": 1260,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.0929,
-              "created": "2026-04-02T17:35:11Z"
-            },
-            {
-              "number": 1279,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.0924,
-              "created": "2026-04-03T02:38:38Z"
-            },
-            {
-              "number": 1285,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.0912,
-              "created": "2026-04-03T05:33:56Z"
-            },
-            {
-              "number": 1413,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.08279,
-              "created": "2026-04-06T11:28:11Z"
-            },
-            {
-              "number": 1560,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.07406,
-              "created": "2026-04-12T03:43:04Z"
             }
           ]
         },
@@ -31391,6 +31412,13 @@
           "status": "ALIVE",
           "bpb": 1.3428,
           "created": "2026-04-13T01:52:08Z"
+        },
+        {
+          "number": 1586,
+          "author": "dexhunter",
+          "status": "ALIVE",
+          "bpb": 1.07493,
+          "created": "2026-04-13T03:24:48Z"
         }
       ]
     },
@@ -44206,9 +44234,9 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 229,
+      "count": 230,
       "author_count": 96,
-      "alive_count": 41,
+      "alive_count": 42,
       "dead_count": 87,
       "at_risk_count": 64,
       "incomplete_count": 33,
@@ -44661,6 +44689,55 @@
           ]
         },
         {
+          "author": "dexhunter",
+          "pr_count": 6,
+          "best_bpb": 0.00043,
+          "prs": [
+            {
+              "number": 953,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.0722,
+              "created": "2026-03-27T13:31:45Z"
+            },
+            {
+              "number": 1413,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.08279,
+              "created": "2026-04-06T11:28:11Z"
+            },
+            {
+              "number": 1437,
+              "author": "dexhunter",
+              "status": "AT_RISK",
+              "bpb": 0.00043,
+              "created": "2026-04-07T08:54:26Z"
+            },
+            {
+              "number": 1536,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07747,
+              "created": "2026-04-11T06:50:46Z"
+            },
+            {
+              "number": 1560,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07406,
+              "created": "2026-04-12T03:43:04Z"
+            },
+            {
+              "number": 1586,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07493,
+              "created": "2026-04-13T03:24:48Z"
+            }
+          ]
+        },
+        {
           "author": "AnirudhRahul",
           "pr_count": 6,
           "best_bpb": 0.0214,
@@ -44755,48 +44832,6 @@
               "status": "NOTABLE",
               "bpb": 1.3639,
               "created": "2026-03-31T03:32:38Z"
-            }
-          ]
-        },
-        {
-          "author": "dexhunter",
-          "pr_count": 5,
-          "best_bpb": 0.00043,
-          "prs": [
-            {
-              "number": 953,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.0722,
-              "created": "2026-03-27T13:31:45Z"
-            },
-            {
-              "number": 1413,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.08279,
-              "created": "2026-04-06T11:28:11Z"
-            },
-            {
-              "number": 1437,
-              "author": "dexhunter",
-              "status": "AT_RISK",
-              "bpb": 0.00043,
-              "created": "2026-04-07T08:54:26Z"
-            },
-            {
-              "number": 1536,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.07747,
-              "created": "2026-04-11T06:50:46Z"
-            },
-            {
-              "number": 1560,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.07406,
-              "created": "2026-04-12T03:43:04Z"
             }
           ]
         },
@@ -48098,6 +48133,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.07974,
           "created": "2026-04-12T18:48:34Z"
+        },
+        {
+          "number": 1586,
+          "author": "dexhunter",
+          "status": "ALIVE",
+          "bpb": 1.07493,
+          "created": "2026-04-13T03:24:48Z"
         }
       ]
     },
@@ -56952,9 +56994,9 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 548,
+      "count": 549,
       "author_count": 259,
-      "alive_count": 123,
+      "alive_count": 124,
       "dead_count": 178,
       "at_risk_count": 51,
       "incomplete_count": 196,
@@ -57324,7 +57366,7 @@
         },
         {
           "author": "dexhunter",
-          "pr_count": 13,
+          "pr_count": 14,
           "best_bpb": 0.00043,
           "prs": [
             {
@@ -57417,6 +57459,13 @@
               "status": "ALIVE",
               "bpb": 1.07406,
               "created": "2026-04-12T03:43:04Z"
+            },
+            {
+              "number": 1586,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07493,
+              "created": "2026-04-13T03:24:48Z"
             }
           ]
         },
@@ -66451,6 +66500,13 @@
           "status": "ALIVE",
           "bpb": 1.0639,
           "created": "2026-04-13T02:49:43Z"
+        },
+        {
+          "number": 1586,
+          "author": "dexhunter",
+          "status": "ALIVE",
+          "bpb": 1.07493,
+          "created": "2026-04-13T03:24:48Z"
         }
       ]
     },
@@ -74261,9 +74317,9 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 361,
+      "count": 362,
       "author_count": 166,
-      "alive_count": 102,
+      "alive_count": 103,
       "dead_count": 105,
       "at_risk_count": 42,
       "incomplete_count": 107,
@@ -74695,6 +74751,83 @@
           ]
         },
         {
+          "author": "dexhunter",
+          "pr_count": 10,
+          "best_bpb": 1.0722,
+          "prs": [
+            {
+              "number": 953,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.0722,
+              "created": "2026-03-27T13:31:45Z"
+            },
+            {
+              "number": 1060,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.1122,
+              "created": "2026-03-29T06:15:28Z"
+            },
+            {
+              "number": 1172,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.1015,
+              "created": "2026-03-31T06:22:04Z"
+            },
+            {
+              "number": 1179,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.111,
+              "created": "2026-03-31T11:16:23Z"
+            },
+            {
+              "number": 1260,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.0929,
+              "created": "2026-04-02T17:35:11Z"
+            },
+            {
+              "number": 1279,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.0924,
+              "created": "2026-04-03T02:38:38Z"
+            },
+            {
+              "number": 1285,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.0912,
+              "created": "2026-04-03T05:33:56Z"
+            },
+            {
+              "number": 1413,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.08279,
+              "created": "2026-04-06T11:28:11Z"
+            },
+            {
+              "number": 1560,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07406,
+              "created": "2026-04-12T03:43:04Z"
+            },
+            {
+              "number": 1586,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07493,
+              "created": "2026-04-13T03:24:48Z"
+            }
+          ]
+        },
+        {
           "author": "ibarrajo",
           "pr_count": 10,
           "best_bpb": 1.1145,
@@ -74908,76 +75041,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.07974,
               "created": "2026-04-12T18:48:34Z"
-            }
-          ]
-        },
-        {
-          "author": "dexhunter",
-          "pr_count": 9,
-          "best_bpb": 1.0722,
-          "prs": [
-            {
-              "number": 953,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.0722,
-              "created": "2026-03-27T13:31:45Z"
-            },
-            {
-              "number": 1060,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.1122,
-              "created": "2026-03-29T06:15:28Z"
-            },
-            {
-              "number": 1172,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.1015,
-              "created": "2026-03-31T06:22:04Z"
-            },
-            {
-              "number": 1179,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.111,
-              "created": "2026-03-31T11:16:23Z"
-            },
-            {
-              "number": 1260,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.0929,
-              "created": "2026-04-02T17:35:11Z"
-            },
-            {
-              "number": 1279,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.0924,
-              "created": "2026-04-03T02:38:38Z"
-            },
-            {
-              "number": 1285,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.0912,
-              "created": "2026-04-03T05:33:56Z"
-            },
-            {
-              "number": 1413,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.08279,
-              "created": "2026-04-06T11:28:11Z"
-            },
-            {
-              "number": 1560,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.07406,
-              "created": "2026-04-12T03:43:04Z"
             }
           ]
         },
@@ -80491,15 +80554,22 @@
           "status": "ALIVE",
           "bpb": 1.3428,
           "created": "2026-04-13T01:52:08Z"
+        },
+        {
+          "number": 1586,
+          "author": "dexhunter",
+          "status": "ALIVE",
+          "bpb": 1.07493,
+          "created": "2026-04-13T03:24:48Z"
         }
       ]
     },
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 229,
+      "count": 230,
       "author_count": 96,
-      "alive_count": 41,
+      "alive_count": 42,
       "dead_count": 87,
       "at_risk_count": 64,
       "incomplete_count": 33,
@@ -80952,6 +81022,55 @@
           ]
         },
         {
+          "author": "dexhunter",
+          "pr_count": 6,
+          "best_bpb": 0.00043,
+          "prs": [
+            {
+              "number": 953,
+              "author": "dexhunter",
+              "status": "DEAD",
+              "bpb": 1.0722,
+              "created": "2026-03-27T13:31:45Z"
+            },
+            {
+              "number": 1413,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.08279,
+              "created": "2026-04-06T11:28:11Z"
+            },
+            {
+              "number": 1437,
+              "author": "dexhunter",
+              "status": "AT_RISK",
+              "bpb": 0.00043,
+              "created": "2026-04-07T08:54:26Z"
+            },
+            {
+              "number": 1536,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07747,
+              "created": "2026-04-11T06:50:46Z"
+            },
+            {
+              "number": 1560,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07406,
+              "created": "2026-04-12T03:43:04Z"
+            },
+            {
+              "number": 1586,
+              "author": "dexhunter",
+              "status": "ALIVE",
+              "bpb": 1.07493,
+              "created": "2026-04-13T03:24:48Z"
+            }
+          ]
+        },
+        {
           "author": "AnirudhRahul",
           "pr_count": 6,
           "best_bpb": 0.0214,
@@ -81046,48 +81165,6 @@
               "status": "NOTABLE",
               "bpb": 1.3639,
               "created": "2026-03-31T03:32:38Z"
-            }
-          ]
-        },
-        {
-          "author": "dexhunter",
-          "pr_count": 5,
-          "best_bpb": 0.00043,
-          "prs": [
-            {
-              "number": 953,
-              "author": "dexhunter",
-              "status": "DEAD",
-              "bpb": 1.0722,
-              "created": "2026-03-27T13:31:45Z"
-            },
-            {
-              "number": 1413,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.08279,
-              "created": "2026-04-06T11:28:11Z"
-            },
-            {
-              "number": 1437,
-              "author": "dexhunter",
-              "status": "AT_RISK",
-              "bpb": 0.00043,
-              "created": "2026-04-07T08:54:26Z"
-            },
-            {
-              "number": 1536,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.07747,
-              "created": "2026-04-11T06:50:46Z"
-            },
-            {
-              "number": 1560,
-              "author": "dexhunter",
-              "status": "ALIVE",
-              "bpb": 1.07406,
-              "created": "2026-04-12T03:43:04Z"
             }
           ]
         },
@@ -84389,6 +84466,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.07974,
           "created": "2026-04-12T18:48:34Z"
+        },
+        {
+          "number": 1586,
+          "author": "dexhunter",
+          "status": "ALIVE",
+          "bpb": 1.07493,
+          "created": "2026-04-13T03:24:48Z"
         }
       ]
     },
@@ -98400,11 +98484,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 548,
+      "left_count": 549,
       "right_count": 2,
       "left_people": 259,
       "right_people": 2,
-      "score": 1096
+      "score": 1098
     },
     {
       "left": "SwiGLU",
@@ -98490,20 +98574,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 361,
+      "left_count": 362,
       "right_count": 2,
       "left_people": 166,
       "right_people": 2,
-      "score": 722
+      "score": 724
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 361,
+      "left_count": 362,
       "right_count": 2,
       "left_people": 166,
       "right_people": 2,
-      "score": 722
+      "score": 724
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -98553,11 +98637,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 548,
+      "left_count": 549,
       "right_count": 1,
       "left_people": 259,
       "right_people": 1,
-      "score": 548
+      "score": 549
     },
     {
       "left": "XSA",
@@ -98670,11 +98754,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 361,
+      "left_count": 362,
       "right_count": 1,
       "left_people": 166,
       "right_people": 1,
-      "score": 361
+      "score": 362
     },
     {
       "left": "JEPA",
