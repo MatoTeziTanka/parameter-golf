@@ -110,9 +110,10 @@ tr:hover { background: rgba(88,166,255,0.04); }
 .combo-chip strong { display: block; color: var(--text-bright); margin-bottom: 0.25rem; font-size: 0.9rem; text-align: center; }
 .combo-chip span { color: var(--text-dim); font-size: 0.82rem; display: block; text-align: center; }
 
-.chart-card { overflow: hidden; }
+.chart-card { overflow: hidden; max-width: none; margin: 0; padding: 0.5rem; }
 .chart-card svg { display: block; width: 100%; height: auto; }
-.chart-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+#analytics { max-width: none; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; padding: 0 2rem; box-sizing: border-box; }
+.chart-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: none; }
 @media (max-width: 900px) { .chart-grid { grid-template-columns: 1fr; } }
 
 .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
