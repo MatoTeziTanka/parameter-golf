@@ -1,7 +1,144 @@
 {
-  "last_fetch": "2026-04-13T16:43:00.630706+00:00",
-  "api_calls_used": 197,
+  "last_fetch": "2026-04-13T18:05:47.807436+00:00",
+  "api_calls_used": 198,
   "prs": [
+    {
+      "number": 1601,
+      "title": "[non-record] Sharpness-Aware Minimization (SAM) Inner Loop for Meta-TTT",
+      "author": "SPThole",
+      "state": "OPEN",
+      "created": "2026-04-13T17:56:02Z",
+      "updated": "2026-04-13T17:56:02Z",
+      "bpb": 0.02337,
+      "seeds": null,
+      "artifact_bytes": 15880000,
+      "technique_summary": "TTT + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-13_sam-inner-metattt_from_exp106/ANALYSIS.md",
+        "records/track_non_record_16mb/2026-04-13_sam-inner-metattt_from_exp106/README.md",
+        "records/track_non_record_16mb/2026-04-13_sam-inner-metattt_from_exp106/run.sh",
+        "records/track_non_record_16mb/2026-04-13_sam-inner-metattt_from_exp106/scripts/ttt_eval.py",
+        "records/track_non_record_16mb/2026-04-13_sam-inner-metattt_from_exp106/submission.json",
+        "records/track_non_record_16mb/2026-04-13_sam-inner-metattt_from_exp106/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1600,
+      "title": "Non-record submission: HELIX and HELIX MoR K7R2 U-Net (architecture report + finalized metadata)",
+      "author": "sayujshah",
+      "state": "OPEN",
+      "created": "2026-04-13T17:36:18Z",
+      "updated": "2026-04-13T17:36:18Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 9973239,
+      "technique_summary": "TTT + INT6 + EMA",
+      "file_paths": [
+        ".gitignore",
+        "GRAFT_WX_PROPOSAL.md",
+        "docs/superpowers/plans/2026-03-25-helix-plan.md",
+        "docs/superpowers/specs/2026-03-25-helix-design.md",
+        "records/track_non_record_16mb/2026-03-25_HELIX/README.md",
+        "records/track_non_record_16mb/2026-03-25_HELIX/final_model.int6.ptz",
+        "records/track_non_record_16mb/2026-03-25_HELIX/final_model.pt",
+        "records/track_non_record_16mb/2026-03-25_HELIX/logs/helix_8gpu.txt",
+        "records/track_non_record_16mb/2026-03-25_HELIX/submission.json",
+        "records/track_non_record_16mb/2026-03-25_HELIX/tests/test_dtpa.py",
+        "records/track_non_record_16mb/2026-03-25_HELIX/tests/test_helix_gpt.py",
+        "records/track_non_record_16mb/2026-03-25_HELIX/tests/test_helixblock.py",
+        "records/track_non_record_16mb/2026-03-25_HELIX/tests/test_hparams.py",
+        "records/track_non_record_16mb/2026-03-25_HELIX/tests/test_serialize.py",
+        "records/track_non_record_16mb/2026-03-25_HELIX/tests/test_smoke.py",
+        "records/track_non_record_16mb/2026-03-25_HELIX/tests/test_swiglu.py",
+        "records/track_non_record_16mb/2026-03-25_HELIX/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/README.md",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/run_3seeds.sh",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1337/final_model.int6.ptz",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1337/final_model.pt",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1337/logs/helix_mor_k7r2_unet_seed1337.txt",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1337/seed_1337_stdout.log",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1338/final_model.int6.ptz",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1338/final_model.pt",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1338/logs/helix_mor_k7r2_unet_seed1338.txt",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1338/seed_1338_stdout.log",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1339/final_model.int6.ptz",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1339/final_model.pt",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1339/logs/helix_mor_k7r2_unet_seed1339.txt",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/runs/seed_1339/seed_1339_stdout.log",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/submission.json",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/test_smoke.py",
+        "records/track_non_record_16mb/2026-03-31_HELIX_MoR_K7R2_UNet/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1599,
+      "title": "Kailean/submission v2",
+      "author": "kailean",
+      "state": "OPEN",
+      "created": "2026-04-13T16:54:52Z",
+      "updated": "2026-04-13T16:59:33Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        ".gitignore",
+        "CLAUDE.md",
+        "SUBMISSION.md",
+        "kl_innovations.py",
+        "run_ablation.sh",
+        "sweep_agent.py",
+        "train_gpt_kl.py",
+        "train_gpt_kl_v2.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1590,
       "title": "Codex/diffusion model",
@@ -411,7 +548,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-04-13T00:49:16Z",
-      "updated": "2026-04-13T16:25:33Z",
+      "updated": "2026-04-13T17:46:56Z",
       "bpb": 1.06681663,
       "seeds": 3,
       "artifact_bytes": null,
@@ -1199,6 +1336,38 @@
       "flags": [
         "no-bpb",
         "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1551,
+      "title": "[notable non record] Train-Time Overparameterization: Better Models Through Transient Expansion",
+      "author": "andrewmouldon",
+      "state": "OPEN",
+      "created": "2026-04-11T19:39:12Z",
+      "updated": "2026-04-13T17:21:06Z",
+      "bpb": 1.2262,
+      "seeds": 2,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-11_Train_Time_Overparameterization/README.md",
+        "records/track_non_record_16mb/2026-04-11_Train_Time_Overparameterization/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-11_Train_Time_Overparameterization/train_log_tto_1337.txt",
+        "records/track_non_record_16mb/2026-04-11_Train_Time_Overparameterization/train_log_tto_2025.txt",
+        "records/track_non_record_16mb/2026-04-11_Train_Time_Overparameterization/train_log_tto_42.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "NOTABLE",
+      "flags": [
+        "title-contains-notable"
       ],
       "confidence": "HIGH"
     },
@@ -5388,15 +5557,15 @@
     },
     {
       "number": 1432,
-      "title": "Submission: 10L-512dim-scaled (val_bpb 2.0630, 15.7MB)",
+      "title": "Non-record: SDPA-Compatible 11L on Blackwell GB10 (val_bpb 1.4362, 13.8MB)",
       "author": "vikrant-akavaram",
       "state": "OPEN",
       "created": "2026-04-07T06:26:50Z",
-      "updated": "2026-04-13T16:41:17Z",
-      "bpb": null,
+      "updated": "2026-04-13T17:00:03Z",
+      "bpb": 1.4362,
       "seeds": null,
-      "artifact_bytes": 15700000,
-      "technique_summary": "INT6 + INT8",
+      "artifact_bytes": 13800000,
+      "technique_summary": "Muon + MoE + SSM + GPTQ + INT6",
       "file_paths": [
         "records/track_10min_16mb/2026-04-07_10L-512dim-scaled/README.md",
         "records/track_10min_16mb/2026-04-07_10L-512dim-scaled/submission.json",
@@ -5407,8 +5576,10 @@
         "records/track_10min_16mb/2026-04-13_SDPA-Blackwell-11L/train_gpt.py"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
-      "track": "record",
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
@@ -5416,7 +5587,6 @@
       "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
         "seeds-unknown"
       ],
       "confidence": "HIGH"
@@ -28414,7 +28584,7 @@
       "author": "FyeJordy",
       "state": "OPEN",
       "created": "2026-03-25T17:27:43Z",
-      "updated": "2026-04-11T22:20:35Z",
+      "updated": "2026-04-13T17:44:32Z",
       "bpb": 1.36843871,
       "seeds": null,
       "artifact_bytes": 15149719,
