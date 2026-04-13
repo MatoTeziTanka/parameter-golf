@@ -1,7 +1,80 @@
 {
-  "last_fetch": "2026-04-13T20:12:39.216229+00:00",
-  "api_calls_used": 196,
+  "last_fetch": "2026-04-13T20:59:01.968788+00:00",
+  "api_calls_used": 197,
   "prs": [
+    {
+      "number": 1605,
+      "title": "Score-First TTT + Causal N-gram (order=82) — val_bpb 0.29882 (3-seed mean)",
+      "author": "renqianluo",
+      "state": "CLOSED",
+      "created": "2026-04-13T20:37:29Z",
+      "updated": "2026-04-13T20:49:13Z",
+      "bpb": 0.29882,
+      "seeds": 3,
+      "artifact_bytes": 15839505,
+      "technique_summary": "TTT + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-11_LegalTTT_NGram82_Center10_FullCFix_0.29882/README.md",
+        "records/track_10min_16mb/2026-04-11_LegalTTT_NGram82_Center10_FullCFix_0.29882/requirements.txt",
+        "records/track_10min_16mb/2026-04-11_LegalTTT_NGram82_Center10_FullCFix_0.29882/submission.json",
+        "records/track_10min_16mb/2026-04-11_LegalTTT_NGram82_Center10_FullCFix_0.29882/train_gpt.py",
+        "records/track_10min_16mb/2026-04-11_LegalTTT_NGram82_Center10_FullCFix_0.29882/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-11_LegalTTT_NGram82_Center10_FullCFix_0.29882/train_seed314.log",
+        "records/track_10min_16mb/2026-04-11_LegalTTT_NGram82_Center10_FullCFix_0.29882/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1595,
+      "title": "Non-record: 3x MLP + Quantization-Aware Training (STE)",
+      "author": "seekerPrice",
+      "state": "OPEN",
+      "created": "2026-04-13T12:26:35Z",
+      "updated": "2026-04-13T20:19:58Z",
+      "bpb": 2.224,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "GPTQ + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-13_MLP3x_QAT_STE_Int6Aware/README.md",
+        "records/track_non_record_16mb/2026-04-13_MLP3x_QAT_STE_Int6Aware/requirements.txt",
+        "records/track_non_record_16mb/2026-04-13_MLP3x_QAT_STE_Int6Aware/submission.json",
+        "records/track_non_record_16mb/2026-04-13_MLP3x_QAT_STE_Int6Aware/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1590,
       "title": "Codex/diffusion model",
@@ -7813,6 +7886,35 @@
         "artifact-unknown",
         "no-submission-json"
       ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1312,
+      "title": "Non-record: JEPA-LM Latent Predictive World Model (first JEPA submission)",
+      "author": "adi-suresh01",
+      "state": "OPEN",
+      "created": "2026-04-03T19:30:41Z",
+      "updated": "2026-04-13T20:54:28Z",
+      "bpb": 1.3299,
+      "seeds": 3,
+      "artifact_bytes": 15300000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-03_JEPA_LatentPredictiveWorldModel/README.md",
+        "records/track_non_record_16mb/2026-04-03_JEPA_LatentPredictiveWorldModel/submission.json",
+        "records/track_non_record_16mb/2026-04-03_JEPA_LatentPredictiveWorldModel/train_gpt.py",
+        "train_gpt_jepa.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
