@@ -369,8 +369,9 @@ def generate_community_activity(csv_path: str = "") -> str:
     n = len(dates)
     bar_w = max(pw / n - 2, 4)
 
-    # Left axis: comments, Right axis: PRs (max of created and updated)
-    max_comments = max(max(m + o for m, o in zip(mato, other)), 1)
+    # Left axis: comments (ceil to nearest 200, min 800), Right axis: PRs
+    raw_max_comments = max(max(m + o for m, o in zip(mato, other)), 1)
+    max_comments = max(((raw_max_comments + 199) // 200) * 200, 800)
     max_prs = max(max(max(prs_created), max(prs_updated)), 1)
 
     def x_pos(i: int) -> float:
