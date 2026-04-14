@@ -1,7 +1,124 @@
 {
-  "last_fetch": "2026-04-13T23:48:34.969191+00:00",
-  "api_calls_used": 198,
+  "last_fetch": "2026-04-14T02:51:29.383373+00:00",
+  "api_calls_used": 199,
   "prs": [
+    {
+      "number": 1608,
+      "title": "Non-record: 1x H100 SXM5 Explorations",
+      "author": "User123331",
+      "state": "OPEN",
+      "created": "2026-04-14T00:44:53Z",
+      "updated": "2026-04-14T00:47:38Z",
+      "bpb": 1.2219,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "1x H100 SXM5 Logs/10L_qk4_wd1500_20260401_094047.log",
+        "1x H100 SXM5 Logs/10L_qk4_wd2000_20260401_081938.log",
+        "1x H100 SXM5 Logs/11L_mlp35_20260401_074042.log",
+        "1x H100 SXM5 Logs/11L_qk4_20260401_070337.log",
+        "1x H100 SXM5 Logs/11L_qk4_20260401_070342.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1000_20260401_101532.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1000_tied005_20260401_154931.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1200_fa3_20260401_172016.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1200_fa3_20260401_183913.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1500_20260401_085426.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1500_fa3_20260401_171958.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1500_fa3_20260401_180210.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1500_fa3_20260401_180428.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1500_mlr025_20260401_105230.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1500_swa25_20260401_143529.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1500_tied005_20260401_124435.log",
+        "1x H100 SXM5 Logs/11L_qk4_wd1500_tied005_mlr025_20260401_151230.log",
+        "1x H100 SXM5 Logs/11L_qk6_wd1500_20260401_132133.log",
+        "1x H100 SXM5 Logs/11L_qk8_wd1500_20260401_135834.log",
+        "1x H100 SXM5 Logs/11L_wd3500_20260401_081928.log",
+        "1x H100 SXM5 Logs/11layers_20260331_233309.log",
+        "1x H100 SXM5 Logs/12L_qk4_wd1200_20260401_120458.log",
+        "1x H100 SXM5 Logs/baseline_10L_20260331_214036.log",
+        "1x H100 SXM5 Logs/baseline_786k_20260331_222116.log",
+        "1x H100 SXM5 Logs/depth_recurrence.log",
+        "1x H100 SXM5 Logs/free_wins.log",
+        "1x H100 SXM5 Logs/int6_qat.log",
+        "1x H100 SXM5 Logs/mega_xsa_ema_fa3_20260401_162629.log",
+        "1x H100 SXM5 Logs/mega_xsa_ema_fa3_20260401_164231.log",
+        "1x H100 SXM5 Logs/mega_xsa_ema_fa3_20260401_173311.log",
+        "1x H100 SXM5 Logs/mlp35_20260401_033845.log",
+        "1x H100 SXM5 Logs/naive_baseline_9L_mlp2_seq1024_20260401_113000.log",
+        "1x H100 SXM5 Logs/ngram_cache.log",
+        "1x H100 SXM5 Logs/parallel_residuals.log",
+        "1x H100 SXM5 Logs/qk_gain_20260401_001427.log",
+        "1x H100 SXM5 Logs/score_first_ttt.log",
+        "1x H100 SXM5 Logs/sp8192_full_stack.log",
+        "1x H100 SXM5 Logs/warmdown3500_20260401_062854.log",
+        "1x H100 SXM5 Logs/xsa_ema.log",
+        "Graphs/PLAN_beat_SOTA.md",
+        "Graphs/speed_optimizations.md",
+        "data/train_tokenizer.py",
+        "quickstart_hyperbolic.sh",
+        "records/track_non_record_16mb/2026-03-21_MoS_K2_R64_1xH100_10min/README.md",
+        "records/track_non_record_16mb/2026-03-21_MoS_K2_R64_1xH100_10min/submission.json",
+        "records/track_non_record_16mb/2026-03-21_MoS_K2_R64_1xH100_10min/train.log",
+        "records/track_non_record_16mb/2026-03-21_MoS_K2_R64_1xH100_10min/train_gpt.py",
+        "run_baseline_10min.sh",
+        "run_competitive.sh",
+        "run_competitive_custom_tok.sh"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu",
+        "ngram_path",
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 1607,
+      "title": "Non-record: Nemotron-H Mamba-3 Hybrid + First SSM Depth Recurrence (1.4765 BPB)",
+      "author": "inin-zou",
+      "state": "OPEN",
+      "created": "2026-04-14T00:21:52Z",
+      "updated": "2026-04-14T00:23:33Z",
+      "bpb": 1.4765,
+      "seeds": null,
+      "artifact_bytes": 8199999,
+      "technique_summary": "SSM + GPTQ + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-13_NemotronMamba3_HingeRecurrence/README.md",
+        "records/track_non_record_16mb/2026-04-13_NemotronMamba3_HingeRecurrence/requirements.txt",
+        "records/track_non_record_16mb/2026-04-13_NemotronMamba3_HingeRecurrence/submission.json",
+        "records/track_non_record_16mb/2026-04-13_NemotronMamba3_HingeRecurrence/train.log",
+        "records/track_non_record_16mb/2026-04-13_NemotronMamba3_HingeRecurrence/train_nemotron_hybrid.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1605,
       "title": "Score-First TTT + Causal N-gram (order=82) — val_bpb 0.29882 (3-seed mean)",
@@ -7897,7 +8014,7 @@
       "author": "adi-suresh01",
       "state": "OPEN",
       "created": "2026-04-03T19:30:41Z",
-      "updated": "2026-04-13T22:19:11Z",
+      "updated": "2026-04-14T02:33:29Z",
       "bpb": 1.3299,
       "seeds": 3,
       "artifact_bytes": 15300000,
@@ -21524,7 +21641,7 @@
       "author": "fumbl8",
       "state": "OPEN",
       "created": "2026-03-27T05:25:46Z",
-      "updated": "2026-03-27T05:25:46Z",
+      "updated": "2026-04-14T00:32:48Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -21537,18 +21654,18 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-bpb",
-        "seeds-unknown"
-      ],
-      "confidence": "HIGH",
       "track": "non-record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
       ],
-      "technique_source": "text"
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 934,
