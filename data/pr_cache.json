@@ -1,7 +1,101 @@
 {
-  "last_fetch": "2026-04-14T07:08:37.402399+00:00",
-  "api_calls_used": 200,
+  "last_fetch": "2026-04-14T09:03:47.694421+00:00",
+  "api_calls_used": 201,
   "prs": [
+    {
+      "number": 1613,
+      "title": "Add CustomGPT model implementation in train.py",
+      "author": "GITHUB-SUBASHk",
+      "state": "OPEN",
+      "created": "2026-04-14T08:51:26Z",
+      "updated": "2026-04-14T08:51:26Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/train.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1612,
+      "title": "Non-record: MLX tuned hyperparameters — 1.5096 BPB local (H100 pending)",
+      "author": "seekerPrice",
+      "state": "OPEN",
+      "created": "2026-04-14T08:33:41Z",
+      "updated": "2026-04-14T08:33:41Z",
+      "bpb": 1.5096,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "Muon",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-14_MLX_Tuned_Hparams_1.5096/README.md",
+        "records/track_non_record_16mb/2026-04-14_MLX_Tuned_Hparams_1.5096/exp042_train.log",
+        "records/track_non_record_16mb/2026-04-14_MLX_Tuned_Hparams_1.5096/exp048_train.log",
+        "records/track_non_record_16mb/2026-04-14_MLX_Tuned_Hparams_1.5096/run_experiment.sh",
+        "records/track_non_record_16mb/2026-04-14_MLX_Tuned_Hparams_1.5096/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1611,
+      "title": "Experiment 1",
+      "author": "hectar-glitches",
+      "state": "CLOSED",
+      "created": "2026-04-14T08:09:49Z",
+      "updated": "2026-04-14T08:09:58Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "estimate_artifact_size.py",
+        "experiments/train_gpt_int4qat_12L.py",
+        "experiments/train_gpt_int4qat_13L.py",
+        "experiments/train_gpt_v2.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1610,
       "title": "Add phased global SGD TTT prefix submission",
@@ -283,9 +377,9 @@
       "number": 1595,
       "title": "Non-record: 3x MLP + Quantization-Aware Training (STE)",
       "author": "seekerPrice",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-13T12:26:35Z",
-      "updated": "2026-04-13T20:19:58Z",
+      "updated": "2026-04-14T08:57:46Z",
       "bpb": 2.224,
       "seeds": 3,
       "artifact_bytes": null,
@@ -306,11 +400,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1590,
@@ -1340,7 +1434,7 @@
       "author": "adityasasidhar",
       "state": "OPEN",
       "created": "2026-04-12T03:16:28Z",
-      "updated": "2026-04-14T05:20:07Z",
+      "updated": "2026-04-14T08:03:51Z",
       "bpb": 1.2498,
       "seeds": null,
       "artifact_bytes": 15200000,
@@ -1349,7 +1443,8 @@
         "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/README.md",
         "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/submission.json",
         "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/train.log",
-        "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/train_gpt.py"
+        "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/train_gpt.py",
+        "strip.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -2878,7 +2973,7 @@
       "author": "OE-GOD",
       "state": "OPEN",
       "created": "2026-04-09T20:06:21Z",
-      "updated": "2026-04-13T22:31:53Z",
+      "updated": "2026-04-14T08:57:58Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 1600000,
@@ -2887,6 +2982,7 @@
         "casefold_fast.py",
         "casefold_retokenize.py",
         "casefold_stream.py",
+        "diagnose_failures.py",
         "k_sweep.py",
         "records/track_non_record_16mb/2026-04-09_ANS_Compression/README.md",
         "records/track_non_record_16mb/2026-04-09_ANS_Compression/ans_compress.py",
@@ -2895,25 +2991,27 @@
         "run_ans_experiment.sh",
         "run_quant_optimization.sh",
         "run_sweep.sh",
+        "test_per_matrix_quant.py",
         "train_gpt_ans.py",
+        "train_gpt_ngram.py",
         "train_gpt_pr1517.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
-        "gptq_eval"
+        "gptq_eval",
+        "ngram_path"
       ],
       "track": "non-record",
-      "technique_type": "neural",
+      "technique_type": "cache",
       "technique_tags": [
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "AT_RISK",
       "flags": [
-        "no-bpb",
-        "seeds-unknown"
+        "path:ngram-path"
       ],
-      "confidence": "HIGH"
+      "confidence": "MEDIUM"
     },
     {
       "number": 1509,
@@ -26607,7 +26705,7 @@
       "author": "Devchandrasen",
       "state": "OPEN",
       "created": "2026-03-26T03:39:35Z",
-      "updated": "2026-04-14T04:16:37Z",
+      "updated": "2026-04-14T07:45:21Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -26635,6 +26733,14 @@
         "records/track_non_record_16mb/2026-04-13_CAGE5_H100_Proxy/submission.json",
         "records/track_non_record_16mb/2026-04-13_CAGE5_H100_Proxy/train.log",
         "records/track_non_record_16mb/2026-04-13_CAGE5_H100_Proxy/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-14_CAGE5_TRUE_H100_3Seed/README.md",
+        "records/track_non_record_16mb/2026-04-14_CAGE5_TRUE_H100_3Seed/flash_attn_interface.py",
+        "records/track_non_record_16mb/2026-04-14_CAGE5_TRUE_H100_3Seed/requirements.txt",
+        "records/track_non_record_16mb/2026-04-14_CAGE5_TRUE_H100_3Seed/seed314.log",
+        "records/track_non_record_16mb/2026-04-14_CAGE5_TRUE_H100_3Seed/seed999.log",
+        "records/track_non_record_16mb/2026-04-14_CAGE5_TRUE_H100_3Seed/submission.json",
+        "records/track_non_record_16mb/2026-04-14_CAGE5_TRUE_H100_3Seed/train.log",
+        "records/track_non_record_16mb/2026-04-14_CAGE5_TRUE_H100_3Seed/train_gpt.py",
         "train_gpt_colab_smoke_fresh.py"
       ],
       "maintainer_comments": [],
