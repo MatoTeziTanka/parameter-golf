@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-14T02:52:05Z",
+  "generated_at": "2026-04-14T05:28:25Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1443,
-    "matched_pr_count": 1069,
+    "pr_count": 1445,
+    "matched_pr_count": 1071,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 243,
-      "AT_RISK": 90,
+      "ALIVE": 242,
+      "AT_RISK": 91,
       "DEAD": 412,
-      "INCOMPLETE": 690,
+      "INCOMPLETE": 692,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 552,
-      "author_count": 260,
-      "alive_count": 125,
+      "count": 554,
+      "author_count": 261,
+      "alive_count": 124,
       "dead_count": 179,
-      "at_risk_count": 52,
-      "incomplete_count": 196,
+      "at_risk_count": 53,
+      "incomplete_count": 198,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -2589,6 +2589,27 @@
           ]
         },
         {
+          "author": "Akhilesh-Gogikar",
+          "pr_count": 2,
+          "best_bpb": 0.013,
+          "prs": [
+            {
+              "number": 911,
+              "author": "Akhilesh-Gogikar",
+              "status": "AT_RISK",
+              "bpb": 0.013,
+              "created": "2026-03-26T23:29:05Z"
+            },
+            {
+              "number": 1609,
+              "author": "Akhilesh-Gogikar",
+              "status": "AT_RISK",
+              "bpb": null,
+              "created": "2026-04-14T03:09:34Z"
+            }
+          ]
+        },
+        {
           "author": "charmquark1984",
           "pr_count": 2,
           "best_bpb": 0.028,
@@ -3516,20 +3537,6 @@
               "status": "INCOMPLETE",
               "bpb": 0.012,
               "created": "2026-03-23T02:46:53Z"
-            }
-          ]
-        },
-        {
-          "author": "Akhilesh-Gogikar",
-          "pr_count": 1,
-          "best_bpb": 0.013,
-          "prs": [
-            {
-              "number": 911,
-              "author": "Akhilesh-Gogikar",
-              "status": "AT_RISK",
-              "bpb": 0.013,
-              "created": "2026-03-26T23:29:05Z"
             }
           ]
         },
@@ -5158,20 +5165,6 @@
           ]
         },
         {
-          "author": "Devchandrasen",
-          "pr_count": 1,
-          "best_bpb": 2.41025369,
-          "prs": [
-            {
-              "number": 804,
-              "author": "Devchandrasen",
-              "status": "ALIVE",
-              "bpb": 2.41025369,
-              "created": "2026-03-26T03:39:35Z"
-            }
-          ]
-        },
-        {
           "author": "pragnyanramtha",
           "pr_count": 1,
           "best_bpb": 4.1048,
@@ -5336,6 +5329,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-21T00:28:53Z"
+            }
+          ]
+        },
+        {
+          "author": "Devchandrasen",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 804,
+              "author": "Devchandrasen",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-26T03:39:35Z"
             }
           ]
         },
@@ -5546,6 +5553,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-21T07:15:27Z"
+            }
+          ]
+        },
+        {
+          "author": "romeerp",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1610,
+              "author": "romeerp",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-14T04:50:50Z"
             }
           ]
         },
@@ -7500,8 +7521,8 @@
         {
           "number": 804,
           "author": "Devchandrasen",
-          "status": "ALIVE",
-          "bpb": 2.41025369,
+          "status": "INCOMPLETE",
+          "bpb": null,
           "created": "2026-03-26T03:39:35Z"
         },
         {
@@ -9582,6 +9603,20 @@
           "status": "AT_RISK",
           "bpb": 1.2219,
           "created": "2026-04-14T00:44:53Z"
+        },
+        {
+          "number": 1609,
+          "author": "Akhilesh-Gogikar",
+          "status": "AT_RISK",
+          "bpb": null,
+          "created": "2026-04-14T03:09:34Z"
+        },
+        {
+          "number": 1610,
+          "author": "romeerp",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-14T04:50:50Z"
         }
       ]
     },
@@ -43518,11 +43553,11 @@
     {
       "name": "Ternary Weights",
       "kind": "legal",
-      "count": 16,
+      "count": 17,
       "author_count": 13,
       "alive_count": 1,
       "dead_count": 4,
-      "at_risk_count": 2,
+      "at_risk_count": 3,
       "incomplete_count": 8,
       "unknown_count": 0,
       "best_alive": {
@@ -43560,6 +43595,27 @@
           ]
         },
         {
+          "author": "Akhilesh-Gogikar",
+          "pr_count": 2,
+          "best_bpb": 0.013,
+          "prs": [
+            {
+              "number": 911,
+              "author": "Akhilesh-Gogikar",
+              "status": "AT_RISK",
+              "bpb": 0.013,
+              "created": "2026-03-26T23:29:05Z"
+            },
+            {
+              "number": 1609,
+              "author": "Akhilesh-Gogikar",
+              "status": "AT_RISK",
+              "bpb": null,
+              "created": "2026-04-14T03:09:34Z"
+            }
+          ]
+        },
+        {
           "author": "ksang123",
           "pr_count": 2,
           "best_bpb": 1.177,
@@ -43591,20 +43647,6 @@
               "status": "INCOMPLETE",
               "bpb": 0.0003,
               "created": "2026-03-25T01:12:44Z"
-            }
-          ]
-        },
-        {
-          "author": "Akhilesh-Gogikar",
-          "pr_count": 1,
-          "best_bpb": 0.013,
-          "prs": [
-            {
-              "number": 911,
-              "author": "Akhilesh-Gogikar",
-              "status": "AT_RISK",
-              "bpb": 0.013,
-              "created": "2026-03-26T23:29:05Z"
             }
           ]
         },
@@ -43847,6 +43889,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.2196,
           "created": "2026-04-02T22:45:33Z"
+        },
+        {
+          "number": 1609,
+          "author": "Akhilesh-Gogikar",
+          "status": "AT_RISK",
+          "bpb": null,
+          "created": "2026-04-14T03:09:34Z"
         }
       ]
     },
@@ -57246,12 +57295,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 552,
-      "author_count": 260,
-      "alive_count": 125,
+      "count": 554,
+      "author_count": 261,
+      "alive_count": 124,
       "dead_count": 179,
-      "at_risk_count": 52,
-      "incomplete_count": 196,
+      "at_risk_count": 53,
+      "incomplete_count": 198,
       "unknown_count": 0,
       "best_alive": {
         "number": 1376,
@@ -59815,6 +59864,27 @@
           ]
         },
         {
+          "author": "Akhilesh-Gogikar",
+          "pr_count": 2,
+          "best_bpb": 0.013,
+          "prs": [
+            {
+              "number": 911,
+              "author": "Akhilesh-Gogikar",
+              "status": "AT_RISK",
+              "bpb": 0.013,
+              "created": "2026-03-26T23:29:05Z"
+            },
+            {
+              "number": 1609,
+              "author": "Akhilesh-Gogikar",
+              "status": "AT_RISK",
+              "bpb": null,
+              "created": "2026-04-14T03:09:34Z"
+            }
+          ]
+        },
+        {
           "author": "charmquark1984",
           "pr_count": 2,
           "best_bpb": 0.028,
@@ -60742,20 +60812,6 @@
               "status": "INCOMPLETE",
               "bpb": 0.012,
               "created": "2026-03-23T02:46:53Z"
-            }
-          ]
-        },
-        {
-          "author": "Akhilesh-Gogikar",
-          "pr_count": 1,
-          "best_bpb": 0.013,
-          "prs": [
-            {
-              "number": 911,
-              "author": "Akhilesh-Gogikar",
-              "status": "AT_RISK",
-              "bpb": 0.013,
-              "created": "2026-03-26T23:29:05Z"
             }
           ]
         },
@@ -62384,20 +62440,6 @@
           ]
         },
         {
-          "author": "Devchandrasen",
-          "pr_count": 1,
-          "best_bpb": 2.41025369,
-          "prs": [
-            {
-              "number": 804,
-              "author": "Devchandrasen",
-              "status": "ALIVE",
-              "bpb": 2.41025369,
-              "created": "2026-03-26T03:39:35Z"
-            }
-          ]
-        },
-        {
           "author": "pragnyanramtha",
           "pr_count": 1,
           "best_bpb": 4.1048,
@@ -62562,6 +62604,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-21T00:28:53Z"
+            }
+          ]
+        },
+        {
+          "author": "Devchandrasen",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 804,
+              "author": "Devchandrasen",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-03-26T03:39:35Z"
             }
           ]
         },
@@ -62772,6 +62828,20 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-21T07:15:27Z"
+            }
+          ]
+        },
+        {
+          "author": "romeerp",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1610,
+              "author": "romeerp",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-14T04:50:50Z"
             }
           ]
         },
@@ -64726,8 +64796,8 @@
         {
           "number": 804,
           "author": "Devchandrasen",
-          "status": "ALIVE",
-          "bpb": 2.41025369,
+          "status": "INCOMPLETE",
+          "bpb": null,
           "created": "2026-03-26T03:39:35Z"
         },
         {
@@ -66808,6 +66878,20 @@
           "status": "AT_RISK",
           "bpb": 1.2219,
           "created": "2026-04-14T00:44:53Z"
+        },
+        {
+          "number": 1609,
+          "author": "Akhilesh-Gogikar",
+          "status": "AT_RISK",
+          "bpb": null,
+          "created": "2026-04-14T03:09:34Z"
+        },
+        {
+          "number": 1610,
+          "author": "romeerp",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-14T04:50:50Z"
         }
       ]
     },
@@ -97831,11 +97915,11 @@
     {
       "name": "Ternary Weights",
       "kind": "legal",
-      "count": 16,
+      "count": 17,
       "author_count": 13,
       "alive_count": 1,
       "dead_count": 4,
-      "at_risk_count": 2,
+      "at_risk_count": 3,
       "incomplete_count": 8,
       "unknown_count": 0,
       "best_alive": {
@@ -97873,6 +97957,27 @@
           ]
         },
         {
+          "author": "Akhilesh-Gogikar",
+          "pr_count": 2,
+          "best_bpb": 0.013,
+          "prs": [
+            {
+              "number": 911,
+              "author": "Akhilesh-Gogikar",
+              "status": "AT_RISK",
+              "bpb": 0.013,
+              "created": "2026-03-26T23:29:05Z"
+            },
+            {
+              "number": 1609,
+              "author": "Akhilesh-Gogikar",
+              "status": "AT_RISK",
+              "bpb": null,
+              "created": "2026-04-14T03:09:34Z"
+            }
+          ]
+        },
+        {
           "author": "ksang123",
           "pr_count": 2,
           "best_bpb": 1.177,
@@ -97904,20 +98009,6 @@
               "status": "INCOMPLETE",
               "bpb": 0.0003,
               "created": "2026-03-25T01:12:44Z"
-            }
-          ]
-        },
-        {
-          "author": "Akhilesh-Gogikar",
-          "pr_count": 1,
-          "best_bpb": 0.013,
-          "prs": [
-            {
-              "number": 911,
-              "author": "Akhilesh-Gogikar",
-              "status": "AT_RISK",
-              "bpb": 0.013,
-              "created": "2026-03-26T23:29:05Z"
             }
           ]
         },
@@ -98160,6 +98251,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.2196,
           "created": "2026-04-02T22:45:33Z"
+        },
+        {
+          "number": 1609,
+          "author": "Akhilesh-Gogikar",
+          "status": "AT_RISK",
+          "bpb": null,
+          "created": "2026-04-14T03:09:34Z"
         }
       ]
     },
@@ -98854,6 +98952,15 @@
       "score": 1848
     },
     {
+      "left": "LeakyReLU\u00b2",
+      "right": "Ternary Weights",
+      "left_count": 104,
+      "right_count": 17,
+      "left_people": 80,
+      "right_people": 13,
+      "score": 1768
+    },
+    {
       "left": "SWA",
       "right": "Parallel Muon",
       "left_count": 76,
@@ -98879,15 +98986,6 @@
       "left_people": 66,
       "right_people": 21,
       "score": 1672
-    },
-    {
-      "left": "LeakyReLU\u00b2",
-      "right": "Ternary Weights",
-      "left_count": 104,
-      "right_count": 16,
-      "left_people": 80,
-      "right_people": 13,
-      "score": 1664
     },
     {
       "left": "SwiGLU",
@@ -98920,28 +99018,28 @@
       "left": "BigramHash",
       "right": "Ternary Weights",
       "left_count": 84,
-      "right_count": 16,
+      "right_count": 17,
       "left_people": 73,
       "right_people": 13,
-      "score": 1344
+      "score": 1428
     },
     {
       "left": "XSA",
       "right": "Ternary Weights",
       "left_count": 77,
-      "right_count": 16,
+      "right_count": 17,
       "left_people": 62,
       "right_people": 13,
-      "score": 1232
+      "score": 1309
     },
     {
       "left": "SWA",
       "right": "Ternary Weights",
       "left_count": 76,
-      "right_count": 16,
+      "right_count": 17,
       "left_people": 66,
       "right_people": 13,
-      "score": 1216
+      "score": 1292
     },
     {
       "left": "SwiGLU",
@@ -98955,11 +99053,20 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 552,
+      "left_count": 554,
       "right_count": 2,
-      "left_people": 260,
+      "left_people": 261,
       "right_people": 2,
-      "score": 1104
+      "score": 1108
+    },
+    {
+      "left": "SwiGLU",
+      "right": "Ternary Weights",
+      "left_count": 52,
+      "right_count": 17,
+      "left_people": 44,
+      "right_people": 13,
+      "score": 884
     },
     {
       "left": "EMA",
@@ -98987,15 +99094,6 @@
       "left_people": 273,
       "right_people": 2,
       "score": 846
-    },
-    {
-      "left": "SwiGLU",
-      "right": "Ternary Weights",
-      "left_count": 52,
-      "right_count": 16,
-      "left_people": 44,
-      "right_people": 13,
-      "score": 832
     },
     {
       "left": "QAT",
@@ -99099,11 +99197,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 552,
+      "left_count": 554,
       "right_count": 1,
-      "left_people": 260,
+      "left_people": 261,
       "right_people": 1,
-      "score": 552
+      "score": 554
     },
     {
       "left": "XSA",
@@ -99199,10 +99297,19 @@
       "left": "Parallel Muon",
       "right": "Ternary Weights",
       "left_count": 23,
-      "right_count": 16,
+      "right_count": 17,
       "left_people": 13,
       "right_people": 13,
-      "score": 368
+      "score": 391
+    },
+    {
+      "left": "JEPA",
+      "right": "Ternary Weights",
+      "left_count": 22,
+      "right_count": 17,
+      "left_people": 21,
+      "right_people": 13,
+      "score": 374
     },
     {
       "left": "GPTQ",
@@ -99223,13 +99330,13 @@
       "score": 364
     },
     {
-      "left": "JEPA",
+      "left": "MoE",
       "right": "Ternary Weights",
-      "left_count": 22,
-      "right_count": 16,
-      "left_people": 21,
+      "left_count": 19,
+      "right_count": 17,
+      "left_people": 15,
       "right_people": 13,
-      "score": 352
+      "score": 323
     },
     {
       "left": "SwiGLU",
@@ -99239,15 +99346,6 @@
       "left_people": 44,
       "right_people": 4,
       "score": 312
-    },
-    {
-      "left": "MoE",
-      "right": "Ternary Weights",
-      "left_count": 19,
-      "right_count": 16,
-      "left_people": 15,
-      "right_people": 13,
-      "score": 304
     },
     {
       "left": "QAT",
@@ -99414,20 +99512,20 @@
     {
       "left": "Ternary Weights",
       "right": "Value Residual",
-      "left_count": 16,
+      "left_count": 17,
       "right_count": 7,
       "left_people": 13,
       "right_people": 6,
-      "score": 112
+      "score": 119
     },
     {
       "left": "Ternary Weights",
       "right": "Progressive Depth",
-      "left_count": 16,
+      "left_count": 17,
       "right_count": 7,
       "left_people": 13,
       "right_people": 3,
-      "score": 112
+      "score": 119
     },
     {
       "left": "QAT",
@@ -99468,11 +99566,11 @@
     {
       "left": "Ternary Weights",
       "right": "Weight Sharing",
-      "left_count": 16,
+      "left_count": 17,
       "right_count": 6,
       "left_people": 13,
       "right_people": 4,
-      "score": 96
+      "score": 102
     },
     {
       "left": "BigramHash",
@@ -99612,20 +99710,20 @@
     {
       "left": "Ternary Weights",
       "right": "Differential Attention",
-      "left_count": 16,
+      "left_count": 17,
       "right_count": 2,
       "left_people": 13,
       "right_people": 2,
-      "score": 32
+      "score": 34
     },
     {
       "left": "Ternary Weights",
       "right": "U-Net skips",
-      "left_count": 16,
+      "left_count": 17,
       "right_count": 2,
       "left_people": 13,
       "right_people": 2,
-      "score": 32
+      "score": 34
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -99666,11 +99764,11 @@
     {
       "left": "Ternary Weights",
       "right": "Flash Attention",
-      "left_count": 16,
+      "left_count": 17,
       "right_count": 1,
       "left_people": 13,
       "right_people": 1,
-      "score": 16
+      "score": 17
     },
     {
       "left": "Value Residual",
