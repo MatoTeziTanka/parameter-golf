@@ -1,7 +1,61 @@
 {
-  "last_fetch": "2026-04-14T10:46:55.990325+00:00",
-  "api_calls_used": 201,
+  "last_fetch": "2026-04-14T11:59:03.095790+00:00",
+  "api_calls_used": 202,
   "prs": [
+    {
+      "number": 1615,
+      "title": "Non-record: systems-fusion investigation + H-Net M1 pilot",
+      "author": "diaslmb",
+      "state": "OPEN",
+      "created": "2026-04-14T11:11:07Z",
+      "updated": "2026-04-14T11:27:52Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/README.md",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bench_scripts/phase0.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bench_scripts/phase0b.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bench_scripts/phase1a.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bench_scripts/phase1b.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bench_scripts/phase2a.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bench_scripts/phase2b.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bench_scripts/phase2c.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bench_scripts/phase2d.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bench_scripts/phase2e.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bench_scripts/phase3.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bench_scripts/phase3b.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/bootstrap.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/hnet_m1/hnet_m1.py",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/hnet_m1/make_byte_shards.py",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/hnet_m1/phase4.sh",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/hnet_m1/train_hnet_m1.py",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/hnet_scope.md",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/phase3_run.py",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/qkv_fuse.py",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/submission.json",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/unpack.py",
+        "records/track_non_record_16mb/2026-04-14_XSA_Fusion_Investigation_HNet_M1/xsa_triton.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1613,
       "title": "Add CustomGPT model implementation in train.py",
@@ -1434,13 +1488,14 @@
       "author": "adityasasidhar",
       "state": "OPEN",
       "created": "2026-04-12T03:16:28Z",
-      "updated": "2026-04-14T08:03:51Z",
+      "updated": "2026-04-14T10:53:10Z",
       "bpb": 1.2498,
       "seeds": null,
       "artifact_bytes": 15200000,
       "technique_summary": "Muon + INT6 + INT8",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/README.md",
+        "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/seed1337.log",
         "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/submission.json",
         "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/train.log",
         "records/track_non_record_16mb/2026-04-11_8L_GQA_PartialRoPE_Int8_AttnMLP3_QAT015/train_gpt.py",
