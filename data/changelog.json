@@ -1,5 +1,22 @@
 [
   {
+    "version": "0.9.1",
+    "date": "2026-04-14",
+    "title": "Community Impact Charts — interactive tooltips, layout polish, auto-fetch wired",
+    "changes": [
+      "INTERACTIVE: Hover (or click on mobile) any day column in the Community Activity chart to see a color-coded tooltip with all four metrics — community comments (blue), Agora reviews (purple), new PRs (yellow), PR updates (green). SVG-native, no JS framework.",
+      "NEW LINE: PR updates/day green line added to activity chart, drawn on top of bars and yellow line for visibility. Shows the +1941% spike in PR updates during the sweep more clearly than the impact cards alone.",
+      "AXIS: Both Y-axes ceil to 800 so dual-axis bar/line heights are directly comparable. Left axis (comments) ceils to nearest 200 above max with 800 minimum. Right axis (PRs) matches the same scale so a 548 bar visually exceeds a 479 line as expected.",
+      "WIDTH: Analytics section breaks out of the .container max-width using viewport-width CSS. Charts now fill the full screen width on wide monitors instead of being squeezed into a 900px tile.",
+      "LAYOUT: Artifact + Technique Popularity charts moved to a 2-column grid; Compliance, Community Activity, and Review Impact charts remain full-width. Responsive collapse to single column below 900px.",
+      "TILES: Review Impact card content vertically centered in each tile. Labels, before/during numbers, and percentages no longer hug the top of the card.",
+      "NAV: 'Community Impact' link added to top nav (purple) — anchors directly to #community-activity above the activity chart.",
+      "AUTO-FETCH: scripts/fetch_community_activity.py wired into run_pipeline.py as Step 2b, so the 30-min cron refreshes activity data automatically. (Production verification still pending — tracked as OT-20260414-004.)",
+      "DATA: Activity data extended through Apr 14 16:00 EST. Apr 13 (full day): 31 community comments, 17 PRs, 38 PR updates — community continued reacting to sweep comments 2-3 days later.",
+      "REORDER: Yellow PRs/created line drawn first (behind), green PR updates line drawn last (on top) so the larger green spike isn't obscured by the smaller yellow."
+    ]
+  },
+  {
     "version": "0.9.0",
     "date": "2026-04-13",
     "title": "Community Activity & Agora Review Impact Charts",
