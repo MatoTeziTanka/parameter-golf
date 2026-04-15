@@ -1,7 +1,47 @@
 {
-  "last_fetch": "2026-04-15T06:02:09.413119+00:00",
-  "api_calls_used": 18,
+  "last_fetch": "2026-04-15T08:13:23.524779+00:00",
+  "api_calls_used": 19,
   "prs": [
+    {
+      "number": 1638,
+      "title": "Add Adaptive TTT experiment results",
+      "author": "kunwar-vikrant",
+      "state": "CLOSED",
+      "created": "2026-04-15T07:57:08Z",
+      "updated": "2026-04-15T08:00:58Z",
+      "bpb": 1.0832,
+      "seeds": 42,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "experiments/deploy.sh",
+        "experiments/train_gpt_v1.py",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/deploy.sh",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/eval_only.py",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/exp_adaptive_eval_s42.txt",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/exp_adaptive_ttt_s42.txt",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/exp_reproduce_sota_s42.txt",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/results_adaptive_eval_s42.log",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/results_adaptive_ttt_s42.log",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/results_reproduce_sota_s42.log",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/train_gpt_v1.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "text",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1637,
       "title": "Request ",
@@ -240,7 +280,7 @@
       "author": "Hkoyuer",
       "state": "OPEN",
       "created": "2026-04-15T02:27:41Z",
-      "updated": "2026-04-15T02:27:41Z",
+      "updated": "2026-04-15T07:43:37Z",
       "bpb": 0.039,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -52151,9 +52191,9 @@
       "number": 214,
       "title": "Submission: GANGUS × NEXUS — Multi-Model AI Orchestrator (gangus-nexus)",
       "author": "wojciechkowalczyk11to-tech",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-20T14:09:59Z",
-      "updated": "2026-03-20T14:10:06Z",
+      "updated": "2026-04-15T07:32:12Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -52169,14 +52209,11 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown",
-        "no-submission-json"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 213,
