@@ -1,5 +1,18 @@
 [
   {
+    "version": "0.9.2",
+    "date": "2026-04-15",
+    "title": "Parameter-Golf Dead-End Map published — 14-technique community intelligence resource",
+    "changes": [
+      "NEW RESOURCE: docs/dead-end-map-2026-04-15.md — 14 techniques tested at the 16MB budget that didn't work, with deltas, rationale, and revisit conditions.",
+      "Covers: INT4/RVQ/INT5+GPTQ quantization dead-ends, SWA/XSA attention variants, LeakyReLU 0.9 × parallel residuals path-dependent failure, EngramLite (cross-confirmed by Ciprian-Florin Ifrim's 2026-04-14 Discord post), LoopFormer, Scylla/Gravity tokenizer byte-accounting bugs, GDN kernel swap decision, plus compliance-illegal patterns (n-gram family-bug cluster, SLOT under #1336).",
+      "Confidence markers per entry: [V] verified, [D] documented, [I] inferred, [A] assumed.",
+      "Community contribution: invites PRs with others' dead-end data — turns the map into a living resource.",
+      "Attribution: every technique credited to source (PROTEUS experimentation, 771-PR sweep findings, or external confirmation). AI-assisted compilation disclosed.",
+      "New Resources > Community Intelligence section added to Agora nav landing area."
+    ]
+  },
+  {
     "version": "0.9.1",
     "date": "2026-04-14",
     "title": "Community Impact Charts — interactive tooltips, layout polish, auto-fetch wired",
