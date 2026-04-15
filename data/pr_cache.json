@@ -1,7 +1,104 @@
 {
-  "last_fetch": "2026-04-15T20:05:00.677705+00:00",
-  "api_calls_used": 24,
+  "last_fetch": "2026-04-15T21:27:10.453921+00:00",
+  "api_calls_used": 25,
   "prs": [
+    {
+      "number": 1650,
+      "title": "Non-record: Fibonacci Manifold Network + Hybrid Attention + Sparse Braid",
+      "author": "Jaredcastorena",
+      "state": "OPEN",
+      "created": "2026-04-15T20:52:50Z",
+      "updated": "2026-04-15T21:01:06Z",
+      "bpb": 0.0001,
+      "seeds": null,
+      "artifact_bytes": 14785394,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-23_FibonacciManifoldNet_HybridAttn_SparseBraid/README.md",
+        "records/track_non_record_16mb/2026-03-23_FibonacciManifoldNet_HybridAttn_SparseBraid/raw_train.log",
+        "records/track_non_record_16mb/2026-03-23_FibonacciManifoldNet_HybridAttn_SparseBraid/submission.json",
+        "records/track_non_record_16mb/2026-03-23_FibonacciManifoldNet_HybridAttn_SparseBraid/train.log",
+        "records/track_non_record_16mb/2026-03-23_FibonacciManifoldNet_HybridAttn_SparseBraid/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1649,
+      "title": "Non-record: Custom serialization replacing torch.save + zstd-22",
+      "author": "joyceyan",
+      "state": "OPEN",
+      "created": "2026-04-15T20:21:58Z",
+      "updated": "2026-04-15T20:24:19Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-15_Custom_Serialization_Replace_Torch_Save_ZSTD/README.md",
+        "records/track_10min_16mb/2026-04-15_Custom_Serialization_Replace_Torch_Save_ZSTD/submission.json",
+        "records/track_10min_16mb/2026-04-15_Custom_Serialization_Replace_Torch_Save_ZSTD/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1648,
+      "title": "Non-record: xIELU Piecewise Quadratic Activation + Per-Layer QK Gain Convergence",
+      "author": "mikeapedia",
+      "state": "OPEN",
+      "created": "2026-04-15T20:13:14Z",
+      "updated": "2026-04-15T20:48:37Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + EMA",
+      "file_paths": [
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1647,
       "title": "SP8192 + SLOT-4 + TTT + 3-Layer Recurrence + Parallel Residuals (1.0616 BPB)",
@@ -620,7 +717,7 @@
       "author": "ChideraIbe123",
       "state": "OPEN",
       "created": "2026-04-14T22:18:26Z",
-      "updated": "2026-04-15T19:29:16Z",
+      "updated": "2026-04-15T20:36:11Z",
       "bpb": 1.1104,
       "seeds": null,
       "artifact_bytes": 13850000,
