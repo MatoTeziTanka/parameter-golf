@@ -1,7 +1,56 @@
 {
-  "last_fetch": "2026-04-15T08:13:23.524779+00:00",
-  "api_calls_used": 19,
+  "last_fetch": "2026-04-15T09:57:19.638951+00:00",
+  "api_calls_used": 20,
   "prs": [
+    {
+      "number": 1639,
+      "title": "Adaptive Test-Time Training (TTT) with continuous LR-scaling. ",
+      "author": "kunwar-vikrant",
+      "state": "OPEN",
+      "created": "2026-04-15T08:34:04Z",
+      "updated": "2026-04-15T08:37:07Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + GPTQ + INT6",
+      "file_paths": [
+        "experiments/deploy.sh",
+        "experiments/train_gpt_v1.py",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/README.md",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/adaptive_ttt_eval_1gpu.log",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/baseline_reproduce_s42.log",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/deploy.sh",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/eval_only.py",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/eval_ttt_only.py",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/exp_adaptive_eval_s42.txt",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/exp_adaptive_ttt_s42.txt",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/exp_reproduce_sota_s42.txt",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/results_adaptive_eval_s42.log",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/results_adaptive_ttt_s42.log",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/results_reproduce_sota_s42.log",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/submission.json",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-15_AdaptiveTTT/train_gpt_v1.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1638,
       "title": "Add Adaptive TTT experiment results",
@@ -738,7 +787,7 @@
       "author": "adityasasidhar",
       "state": "OPEN",
       "created": "2026-04-14T12:49:52Z",
-      "updated": "2026-04-14T14:45:57Z",
+      "updated": "2026-04-15T09:45:10Z",
       "bpb": 1.2192,
       "seeds": 3,
       "artifact_bytes": 15913674,
@@ -26128,7 +26177,7 @@
       "author": "aptsalt",
       "state": "OPEN",
       "created": "2026-03-27T08:32:30Z",
-      "updated": "2026-04-11T20:13:09Z",
+      "updated": "2026-04-15T08:47:11Z",
       "bpb": 1.362,
       "seeds": 3,
       "artifact_bytes": 16000000,
