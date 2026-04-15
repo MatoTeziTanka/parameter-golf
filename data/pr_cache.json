@@ -1,7 +1,58 @@
 {
-  "last_fetch": "2026-04-15T15:47:57.307752+00:00",
-  "api_calls_used": 22,
+  "last_fetch": "2026-04-15T17:08:58.985153+00:00",
+  "api_calls_used": 23,
   "prs": [
+    {
+      "number": 1642,
+      "title": "Non-record: Causal N-gram Logit Blend — Legal, Bug-Free, Null Result at Scale",
+      "author": "himanshudongre",
+      "state": "OPEN",
+      "created": "2026-04-15T16:27:12Z",
+      "updated": "2026-04-15T16:32:51Z",
+      "bpb": 0.0072,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "N-gram + Two-pass",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/README.md",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/code/causal_ngram.py",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/code/extended_analysis.py",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/code/kill_switch_analysis.py",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/code/legality_harness.py",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/code/localized_delta.py",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/code/ngram_eval.py",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/code/test_integration.py",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/code/tiny_train.py",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/results/results_localized.json",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/results/results_tiny_bigger.json",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/results/results_tiny_bigger_long.json",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/results/results_tiny_long.json",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/results/results_tiny_train.json",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/submission.json",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/training_logs/results_a40_sp8192_phase1a.log",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/training_logs/results_a40_sp8192_phase1b.log",
+        "records/track_non_record_16mb/2026-04-15_Causal_NGram_Null_Result/training_logs/results_extended_analysis.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "two_pass",
+        "cache_eval",
+        "ngram_path"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "cache"
+      ],
+      "technique_source": "text",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1639,
       "title": "Adaptive Test-Time Training (TTT) with continuous LR-scaling. ",
@@ -755,7 +806,7 @@
       "author": "Magumbian",
       "state": "OPEN",
       "created": "2026-04-14T13:08:34Z",
-      "updated": "2026-04-14T20:48:47Z",
+      "updated": "2026-04-15T16:30:52Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -19905,7 +19956,7 @@
       "author": "mradassaad",
       "state": "OPEN",
       "created": "2026-03-30T00:55:11Z",
-      "updated": "2026-04-14T20:28:29Z",
+      "updated": "2026-04-15T16:39:35Z",
       "bpb": 1.5633,
       "seeds": null,
       "artifact_bytes": 10892315,
@@ -19926,6 +19977,7 @@
         "train_mamba3_hybrid.py",
         "train_mamba3_hybrid_backup_stateful_recur.py",
         "train_mamba3_hybrid_tbptt.py",
+        "train_shared_ve.py",
         "triton_kernels/bench_mamba3_bwd.py",
         "triton_kernels/mamba3_siso_bwd.py",
         "triton_kernels/mamba3_siso_combined.py",

@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-15T15:48:44Z",
+  "generated_at": "2026-04-15T17:09:52Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1564,
-    "matched_pr_count": 1159,
+    "pr_count": 1565,
+    "matched_pr_count": 1160,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
       "ALIVE": 253,
-      "AT_RISK": 94,
+      "AT_RISK": 95,
       "DEAD": 460,
       "INCOMPLETE": 748,
       "UNKNOWN": 0
@@ -47727,11 +47727,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 256,
+      "count": 257,
       "author_count": 101,
       "alive_count": 49,
       "dead_count": 100,
-      "at_risk_count": 66,
+      "at_risk_count": 67,
       "incomplete_count": 37,
       "unknown_count": 0,
       "best_alive": {
@@ -48434,6 +48434,48 @@
           ]
         },
         {
+          "author": "himanshudongre",
+          "pr_count": 5,
+          "best_bpb": 0.0072,
+          "prs": [
+            {
+              "number": 826,
+              "author": "himanshudongre",
+              "status": "DEAD",
+              "bpb": 0.29509,
+              "created": "2026-03-26T07:13:38Z"
+            },
+            {
+              "number": 846,
+              "author": "himanshudongre",
+              "status": "DEAD",
+              "bpb": 0.1434,
+              "created": "2026-03-26T12:20:06Z"
+            },
+            {
+              "number": 1013,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": 1.1682,
+              "created": "2026-03-28T10:15:02Z"
+            },
+            {
+              "number": 1227,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T19:25:43Z"
+            },
+            {
+              "number": 1642,
+              "author": "himanshudongre",
+              "status": "AT_RISK",
+              "bpb": 0.0072,
+              "created": "2026-04-15T16:27:12Z"
+            }
+          ]
+        },
+        {
           "author": "Robby955",
           "pr_count": 5,
           "best_bpb": 0.009,
@@ -48738,41 +48780,6 @@
               "status": "DEAD",
               "bpb": 0.1315,
               "created": "2026-03-26T14:20:25Z"
-            }
-          ]
-        },
-        {
-          "author": "himanshudongre",
-          "pr_count": 4,
-          "best_bpb": 0.1434,
-          "prs": [
-            {
-              "number": 826,
-              "author": "himanshudongre",
-              "status": "DEAD",
-              "bpb": 0.29509,
-              "created": "2026-03-26T07:13:38Z"
-            },
-            {
-              "number": 846,
-              "author": "himanshudongre",
-              "status": "DEAD",
-              "bpb": 0.1434,
-              "created": "2026-03-26T12:20:06Z"
-            },
-            {
-              "number": 1013,
-              "author": "himanshudongre",
-              "status": "INCOMPLETE",
-              "bpb": 1.1682,
-              "created": "2026-03-28T10:15:02Z"
-            },
-            {
-              "number": 1227,
-              "author": "himanshudongre",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-01T19:25:43Z"
             }
           ]
         },
@@ -52032,17 +52039,24 @@
           "status": "INCOMPLETE",
           "bpb": 1.1104,
           "created": "2026-04-14T22:18:26Z"
+        },
+        {
+          "number": 1642,
+          "author": "himanshudongre",
+          "status": "AT_RISK",
+          "bpb": 0.0072,
+          "created": "2026-04-15T16:27:12Z"
         }
       ]
     },
     {
       "name": "Two-Pass",
       "kind": "banned",
-      "count": 56,
+      "count": 57,
       "author_count": 33,
       "alive_count": 8,
       "dead_count": 28,
-      "at_risk_count": 11,
+      "at_risk_count": 12,
       "incomplete_count": 9,
       "unknown_count": 0,
       "best_alive": {
@@ -52146,6 +52160,34 @@
               "status": "DEAD",
               "bpb": null,
               "created": "2026-03-29T13:33:02Z"
+            }
+          ]
+        },
+        {
+          "author": "himanshudongre",
+          "pr_count": 3,
+          "best_bpb": 0.0072,
+          "prs": [
+            {
+              "number": 846,
+              "author": "himanshudongre",
+              "status": "DEAD",
+              "bpb": 0.1434,
+              "created": "2026-03-26T12:20:06Z"
+            },
+            {
+              "number": 1013,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": 1.1682,
+              "created": "2026-03-28T10:15:02Z"
+            },
+            {
+              "number": 1642,
+              "author": "himanshudongre",
+              "status": "AT_RISK",
+              "bpb": 0.0072,
+              "created": "2026-04-15T16:27:12Z"
             }
           ]
         },
@@ -52293,27 +52335,6 @@
               "status": "DEAD",
               "bpb": 0.099,
               "created": "2026-03-26T18:23:01Z"
-            }
-          ]
-        },
-        {
-          "author": "himanshudongre",
-          "pr_count": 2,
-          "best_bpb": 0.1434,
-          "prs": [
-            {
-              "number": 846,
-              "author": "himanshudongre",
-              "status": "DEAD",
-              "bpb": 0.1434,
-              "created": "2026-03-26T12:20:06Z"
-            },
-            {
-              "number": 1013,
-              "author": "himanshudongre",
-              "status": "INCOMPLETE",
-              "bpb": 1.1682,
-              "created": "2026-03-28T10:15:02Z"
             }
           ]
         },
@@ -53067,6 +53088,13 @@
           "status": "DEAD",
           "bpb": 2.4264,
           "created": "2026-04-13T10:37:51Z"
+        },
+        {
+          "number": 1642,
+          "author": "himanshudongre",
+          "status": "AT_RISK",
+          "bpb": 0.0072,
+          "created": "2026-04-15T16:27:12Z"
         }
       ]
     }
@@ -87238,11 +87266,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 256,
+      "count": 257,
       "author_count": 101,
       "alive_count": 49,
       "dead_count": 100,
-      "at_risk_count": 66,
+      "at_risk_count": 67,
       "incomplete_count": 37,
       "unknown_count": 0,
       "best_alive": {
@@ -87945,6 +87973,48 @@
           ]
         },
         {
+          "author": "himanshudongre",
+          "pr_count": 5,
+          "best_bpb": 0.0072,
+          "prs": [
+            {
+              "number": 826,
+              "author": "himanshudongre",
+              "status": "DEAD",
+              "bpb": 0.29509,
+              "created": "2026-03-26T07:13:38Z"
+            },
+            {
+              "number": 846,
+              "author": "himanshudongre",
+              "status": "DEAD",
+              "bpb": 0.1434,
+              "created": "2026-03-26T12:20:06Z"
+            },
+            {
+              "number": 1013,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": 1.1682,
+              "created": "2026-03-28T10:15:02Z"
+            },
+            {
+              "number": 1227,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-01T19:25:43Z"
+            },
+            {
+              "number": 1642,
+              "author": "himanshudongre",
+              "status": "AT_RISK",
+              "bpb": 0.0072,
+              "created": "2026-04-15T16:27:12Z"
+            }
+          ]
+        },
+        {
           "author": "Robby955",
           "pr_count": 5,
           "best_bpb": 0.009,
@@ -88249,41 +88319,6 @@
               "status": "DEAD",
               "bpb": 0.1315,
               "created": "2026-03-26T14:20:25Z"
-            }
-          ]
-        },
-        {
-          "author": "himanshudongre",
-          "pr_count": 4,
-          "best_bpb": 0.1434,
-          "prs": [
-            {
-              "number": 826,
-              "author": "himanshudongre",
-              "status": "DEAD",
-              "bpb": 0.29509,
-              "created": "2026-03-26T07:13:38Z"
-            },
-            {
-              "number": 846,
-              "author": "himanshudongre",
-              "status": "DEAD",
-              "bpb": 0.1434,
-              "created": "2026-03-26T12:20:06Z"
-            },
-            {
-              "number": 1013,
-              "author": "himanshudongre",
-              "status": "INCOMPLETE",
-              "bpb": 1.1682,
-              "created": "2026-03-28T10:15:02Z"
-            },
-            {
-              "number": 1227,
-              "author": "himanshudongre",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-01T19:25:43Z"
             }
           ]
         },
@@ -91543,6 +91578,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.1104,
           "created": "2026-04-14T22:18:26Z"
+        },
+        {
+          "number": 1642,
+          "author": "himanshudongre",
+          "status": "AT_RISK",
+          "bpb": 0.0072,
+          "created": "2026-04-15T16:27:12Z"
         }
       ]
     },
@@ -102092,11 +102134,11 @@
     {
       "name": "Two-Pass",
       "kind": "banned",
-      "count": 56,
+      "count": 57,
       "author_count": 33,
       "alive_count": 8,
       "dead_count": 28,
-      "at_risk_count": 11,
+      "at_risk_count": 12,
       "incomplete_count": 9,
       "unknown_count": 0,
       "best_alive": {
@@ -102200,6 +102242,34 @@
               "status": "DEAD",
               "bpb": null,
               "created": "2026-03-29T13:33:02Z"
+            }
+          ]
+        },
+        {
+          "author": "himanshudongre",
+          "pr_count": 3,
+          "best_bpb": 0.0072,
+          "prs": [
+            {
+              "number": 846,
+              "author": "himanshudongre",
+              "status": "DEAD",
+              "bpb": 0.1434,
+              "created": "2026-03-26T12:20:06Z"
+            },
+            {
+              "number": 1013,
+              "author": "himanshudongre",
+              "status": "INCOMPLETE",
+              "bpb": 1.1682,
+              "created": "2026-03-28T10:15:02Z"
+            },
+            {
+              "number": 1642,
+              "author": "himanshudongre",
+              "status": "AT_RISK",
+              "bpb": 0.0072,
+              "created": "2026-04-15T16:27:12Z"
             }
           ]
         },
@@ -102347,27 +102417,6 @@
               "status": "DEAD",
               "bpb": 0.099,
               "created": "2026-03-26T18:23:01Z"
-            }
-          ]
-        },
-        {
-          "author": "himanshudongre",
-          "pr_count": 2,
-          "best_bpb": 0.1434,
-          "prs": [
-            {
-              "number": 846,
-              "author": "himanshudongre",
-              "status": "DEAD",
-              "bpb": 0.1434,
-              "created": "2026-03-26T12:20:06Z"
-            },
-            {
-              "number": 1013,
-              "author": "himanshudongre",
-              "status": "INCOMPLETE",
-              "bpb": 1.1682,
-              "created": "2026-03-28T10:15:02Z"
             }
           ]
         },
@@ -103121,6 +103170,13 @@
           "status": "DEAD",
           "bpb": 2.4264,
           "created": "2026-04-13T10:37:51Z"
+        },
+        {
+          "number": 1642,
+          "author": "himanshudongre",
+          "status": "AT_RISK",
+          "bpb": 0.0072,
+          "created": "2026-04-15T16:27:12Z"
         }
       ]
     },
