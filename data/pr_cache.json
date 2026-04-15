@@ -1,7 +1,77 @@
 {
-  "last_fetch": "2026-04-15T01:10:28.326827+00:00",
-  "api_calls_used": 16,
+  "last_fetch": "2026-04-15T03:48:40.453388+00:00",
+  "api_calls_used": 17,
   "prs": [
+    {
+      "number": 1632,
+      "title": "Record: GDN-Hybrid (Gated DeltaNet + SWA) — val_bpb 1.0274 (2-seed mean)",
+      "author": "Hkoyuer",
+      "state": "OPEN",
+      "created": "2026-04-15T02:27:41Z",
+      "updated": "2026-04-15T02:27:41Z",
+      "bpb": 0.039,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-15_GDN_Hybrid_DeltaRule_1.028/ECN_RESEARCH.md",
+        "records/track_10min_16mb/2026-04-15_GDN_Hybrid_DeltaRule_1.028/README.md",
+        "records/track_10min_16mb/2026-04-15_GDN_Hybrid_DeltaRule_1.028/architectures.py",
+        "records/track_10min_16mb/2026-04-15_GDN_Hybrid_DeltaRule_1.028/configs.py",
+        "records/track_10min_16mb/2026-04-15_GDN_Hybrid_DeltaRule_1.028/submission.json",
+        "records/track_10min_16mb/2026-04-15_GDN_Hybrid_DeltaRule_1.028/train_gpt.py",
+        "records/track_10min_16mb/2026-04-15_GDN_Hybrid_DeltaRule_1.028/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-15_GDN_Hybrid_DeltaRule_1.028/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1630,
+      "title": "12L XSA-all + Partial RoPE + Batch 786K (1.1412 BPB, 13.5 MB)",
+      "author": "KevinChunye",
+      "state": "OPEN",
+      "created": "2026-04-15T01:43:17Z",
+      "updated": "2026-04-15T01:43:17Z",
+      "bpb": 1.1412,
+      "seeds": 3,
+      "artifact_bytes": 13500000,
+      "technique_summary": "GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-15_12L_XSA12_PartialRoPE_BatchTune/README.md",
+        "records/track_10min_16mb/2026-04-15_12L_XSA12_PartialRoPE_BatchTune/submission.json",
+        "records/track_10min_16mb/2026-04-15_12L_XSA12_PartialRoPE_BatchTune/train_gpt.py",
+        "records/track_10min_16mb/2026-04-15_12L_XSA12_PartialRoPE_BatchTune/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1627,
       "title": "Evolutionary NAS on only a 5 year old MacBook; within 10% of baseline",
@@ -125,9 +195,9 @@
       "number": 1624,
       "title": "SAFE_SUBMISSION: run036-safe016 (1.05850 BPB)",
       "author": "joshkmartinez",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-14T22:16:03Z",
-      "updated": "2026-04-14T22:16:03Z",
+      "updated": "2026-04-15T02:35:28Z",
       "bpb": 1.0585,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -171,9 +241,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1623,
@@ -1705,7 +1777,7 @@
       "author": "Tonyy1977",
       "state": "OPEN",
       "created": "2026-04-13T01:24:31Z",
-      "updated": "2026-04-13T15:35:01Z",
+      "updated": "2026-04-15T02:54:45Z",
       "bpb": 1.1372,
       "seeds": 3,
       "artifact_bytes": 15030000,
@@ -1721,6 +1793,7 @@
         "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/README.md",
         "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/requirements.txt",
         "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/train_d832_seed1337.log",
         "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/train_gpt.py",
         "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/train_seed1337.log",
         "records/track_10min_16mb/2026-04-11_CrawlerTransformer_3f2cx2_SP8192_SDClip_TTT/train_seed2024.log",
@@ -2653,7 +2726,7 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-04-11T21:56:10Z",
-      "updated": "2026-04-12T05:13:55Z",
+      "updated": "2026-04-15T03:23:02Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -2794,7 +2867,7 @@
       "author": "translatingthename",
       "state": "OPEN",
       "created": "2026-04-11T18:14:33Z",
-      "updated": "2026-04-11T19:32:21Z",
+      "updated": "2026-04-15T02:30:01Z",
       "bpb": 1.0587,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -5180,9 +5253,9 @@
       "number": 1489,
       "title": "Record: SP1024 + Pre-quant TTT + Parallel Residuals - 1.0736 BPB (beats 1.1147 by 3.66%)",
       "author": "joshkmartinez",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-09T05:04:57Z",
-      "updated": "2026-04-12T06:14:52Z",
+      "updated": "2026-04-15T02:38:06Z",
       "bpb": 1.0736,
       "seeds": 3,
       "artifact_bytes": 13870000,
@@ -5223,9 +5296,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1488,
@@ -16247,7 +16322,7 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-31T20:41:06Z",
-      "updated": "2026-04-12T06:02:46Z",
+      "updated": "2026-04-15T03:24:20Z",
       "bpb": 3.3168,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -16278,7 +16353,7 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-31T20:41:04Z",
-      "updated": "2026-04-12T06:02:52Z",
+      "updated": "2026-04-15T03:24:07Z",
       "bpb": 2.202,
       "seeds": null,
       "artifact_bytes": null,
@@ -16341,7 +16416,7 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-31T20:40:59Z",
-      "updated": "2026-04-12T06:03:03Z",
+      "updated": "2026-04-15T03:23:44Z",
       "bpb": 3.3801,
       "seeds": null,
       "artifact_bytes": null,
@@ -16440,7 +16515,7 @@
       "author": "dentity007",
       "state": "OPEN",
       "created": "2026-03-31T20:39:26Z",
-      "updated": "2026-04-12T06:03:13Z",
+      "updated": "2026-04-15T03:23:13Z",
       "bpb": 1.3587,
       "seeds": null,
       "artifact_bytes": null,
@@ -30110,7 +30185,7 @@
       "author": "hypery11",
       "state": "OPEN",
       "created": "2026-03-26T07:07:51Z",
-      "updated": "2026-04-11T13:13:09Z",
+      "updated": "2026-04-15T01:20:26Z",
       "bpb": 0.544,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -43173,7 +43248,7 @@
       "author": "Diomandeee",
       "state": "OPEN",
       "created": "2026-03-22T21:49:49Z",
-      "updated": "2026-04-11T20:16:44Z",
+      "updated": "2026-04-15T03:42:53Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -43181,7 +43256,8 @@
       "file_paths": [
         "records/track_10min_16mb/anticipatory-transformer/README.md",
         "records/track_10min_16mb/anticipatory-transformer/submission.json",
-        "records/track_10min_16mb/anticipatory-transformer/train_gpt.py"
+        "records/track_10min_16mb/anticipatory-transformer/train_gpt.py",
+        "records/track_10min_16mb/anticipatory-transformer/train_gpt_source.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
