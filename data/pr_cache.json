@@ -1,7 +1,46 @@
 {
-  "last_fetch": "2026-04-16T11:12:19.218058+00:00",
-  "api_calls_used": 32,
+  "last_fetch": "2026-04-16T12:43:26.982319+00:00",
+  "api_calls_used": 33,
   "prs": [
+    {
+      "number": 1667,
+      "title": "RECORD:  SmearGate + Attention Output Gate + Legal TTT | val_bpb=1.07139",
+      "author": "MarioPaerle",
+      "state": "OPEN",
+      "created": "2026-04-16T12:32:56Z",
+      "updated": "2026-04-16T12:42:28Z",
+      "bpb": 1.07139,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026_04_16_SmearGate_Attention_Output_Gate_Score-First_TTT/README.md",
+        "records/track_10min_16mb/2026_04_16_SmearGate_Attention_Output_Gate_Score-First_TTT/submission.json",
+        "records/track_10min_16mb/2026_04_16_SmearGate_Attention_Output_Gate_Score-First_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026_04_16_SmearGate_Attention_Output_Gate_Score-First_TTT/train_seed0.log",
+        "records/track_10min_16mb/2026_04_16_SmearGate_Attention_Output_Gate_Score-First_TTT/train_seed1337.log",
+        "records/track_10min_16mb/2026_04_16_SmearGate_Attention_Output_Gate_Score-First_TTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "two_pass",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1666,
       "title": "Record: BESE 288-vocab Novel Tokenizer — 1.1531 BPB (3-seed mean)",
