@@ -1,14 +1,71 @@
 {
-  "last_fetch": "2026-04-16T19:45:26.431497+00:00",
-  "api_calls_used": 37,
+  "last_fetch": "2026-04-16T20:56:41.022005+00:00",
+  "api_calls_used": 38,
   "prs": [
+    {
+      "number": 1679,
+      "title": "[Non-record] Megakernel Saturation Study: 5 Triton fusion variants cannot beat torch.compile at 27M scale",
+      "author": "ChideraIbe123",
+      "state": "OPEN",
+      "created": "2026-04-16T20:16:25Z",
+      "updated": "2026-04-16T20:16:25Z",
+      "bpb": 0.0008,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/README.md",
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/logs/seed1337.log",
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/logs/seed2025.log",
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/logs/seed42.log",
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/submission.json",
+        "records/track_10min_16mb/2026-04-03_HypergradientSLOT_0.7625/train_gpt.py",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/README.md",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/logs/seed1337.log",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/logs/seed2025.log",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/logs/seed42.log",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/submission.json",
+        "records/track_10min_16mb/2026-04-06_LBFGS_SLOT_0.5793/train_gpt.py",
+        "records/track_10min_16mb/2026-04-14_E2E_TTT_MLP_Only_NonRecord/README.md",
+        "records/track_10min_16mb/2026-04-14_E2E_TTT_MLP_Only_NonRecord/submission.json",
+        "records/track_10min_16mb/2026-04-14_E2E_TTT_MLP_Only_NonRecord/train_gpt.py",
+        "records/track_10min_16mb/2026-04-14_E2E_TTT_MLP_Only_NonRecord/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-16_Megakernel_Saturation_Study_NonRecord/README.md",
+        "records/track_10min_16mb/2026-04-16_Megakernel_Saturation_Study_NonRecord/submission.json",
+        "records/track_10min_16mb/2026-04-16_Megakernel_Saturation_Study_NonRecord/train_gpt.py",
+        "records/track_10min_16mb/2026-04-16_Megakernel_Saturation_Study_NonRecord/train_seed1337.log",
+        "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/README.md",
+        "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/submission.json",
+        "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/train.log",
+        "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/train_gpt.py",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1678,
       "title": "SP8192 + 4-Layer Depth Recurrence (loop_end=6)",
       "author": "tashapais",
       "state": "OPEN",
       "created": "2026-04-16T19:14:23Z",
-      "updated": "2026-04-16T19:14:23Z",
+      "updated": "2026-04-16T20:05:12Z",
       "bpb": 1.081,
       "seeds": 42,
       "artifact_bytes": 16000000,
@@ -16,6 +73,7 @@
       "file_paths": [
         "records/track_10min_16mb/2026-04-16_SP8192_4LayerRecurrence/README.md",
         "records/track_10min_16mb/2026-04-16_SP8192_4LayerRecurrence/submission.json",
+        "records/track_10min_16mb/2026-04-16_SP8192_4LayerRecurrence/test_architecture.py",
         "records/track_10min_16mb/2026-04-16_SP8192_4LayerRecurrence/train_gpt.py",
         "records/track_10min_16mb/2026-04-16_SP8192_4LayerRecurrence/train_gpt_human.py"
       ],
@@ -255,7 +313,7 @@
       "author": "andrewbaggio1",
       "state": "OPEN",
       "created": "2026-04-16T17:39:10Z",
-      "updated": "2026-04-16T17:39:10Z",
+      "updated": "2026-04-16T20:44:34Z",
       "bpb": 1.01195,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -1168,11 +1226,11 @@
     },
     {
       "number": 1647,
-      "title": "SP8192 + SLOT-4 + TTT + 3-Layer Recurrence + Parallel Residuals (1.0616 BPB)",
+      "title": "Record: SP8192 + SLOT-4 + TTT + 3-Layer Recurrence + Parallel Residuals (1.0616 BPB)",
       "author": "powerpratik",
       "state": "OPEN",
       "created": "2026-04-15T19:46:32Z",
-      "updated": "2026-04-15T19:46:32Z",
+      "updated": "2026-04-16T20:38:46Z",
       "bpb": 1.0616,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -1647,7 +1705,7 @@
       "author": "Hkoyuer",
       "state": "OPEN",
       "created": "2026-04-15T02:27:41Z",
-      "updated": "2026-04-15T11:20:14Z",
+      "updated": "2026-04-16T20:41:39Z",
       "bpb": 0.039,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -1784,7 +1842,7 @@
       "author": "ChideraIbe123",
       "state": "OPEN",
       "created": "2026-04-14T22:18:26Z",
-      "updated": "2026-04-16T19:38:41Z",
+      "updated": "2026-04-16T20:14:59Z",
       "bpb": 1.1104,
       "seeds": null,
       "artifact_bytes": 13850000,
@@ -1806,6 +1864,10 @@
         "records/track_10min_16mb/2026-04-14_E2E_TTT_MLP_Only_NonRecord/submission.json",
         "records/track_10min_16mb/2026-04-14_E2E_TTT_MLP_Only_NonRecord/train_gpt.py",
         "records/track_10min_16mb/2026-04-14_E2E_TTT_MLP_Only_NonRecord/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-16_Megakernel_Saturation_Study_NonRecord/README.md",
+        "records/track_10min_16mb/2026-04-16_Megakernel_Saturation_Study_NonRecord/submission.json",
+        "records/track_10min_16mb/2026-04-16_Megakernel_Saturation_Study_NonRecord/train_gpt.py",
+        "records/track_10min_16mb/2026-04-16_Megakernel_Saturation_Study_NonRecord/train_seed1337.log",
         "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/README.md",
         "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/submission.json",
         "records/track_non_record_16mb/2026-03-24_LeakyReLU2_LAWA_RampingWD_ValTrain_1xH100/train.log",
@@ -9099,15 +9161,15 @@
     },
     {
       "number": 1432,
-      "title": "Non-record: SDPA + 1-sqrt Cooldown — 1.1445 BPB (8xH100, 15.68MB)",
+      "title": "Non-record: 1-sqrt Warmdown + LZMA Code Compression — 1.0813 BPP (8xH100, 15.99MB)",
       "author": "vikrant-akavaram",
       "state": "OPEN",
       "created": "2026-04-07T06:26:50Z",
-      "updated": "2026-04-16T14:40:24Z",
-      "bpb": 1.1445,
+      "updated": "2026-04-16T19:46:39Z",
+      "bpb": null,
       "seeds": null,
-      "artifact_bytes": 15680000,
-      "technique_summary": "TTT + Muon + MoE + SSM + GPTQ + INT6",
+      "artifact_bytes": 15987397,
+      "technique_summary": "TTT + MoE + SSM + GPTQ + INT6 + EMA",
       "file_paths": [
         "records/track_10min_16mb/2026-04-07_10L-512dim-scaled/README.md",
         "records/track_10min_16mb/2026-04-07_10L-512dim-scaled/submission.json",
@@ -9123,7 +9185,8 @@
       "maintainer_comments": [],
       "compliance_keywords": [
         "ttt",
-        "gptq_eval"
+        "gptq_eval",
+        "leaky_relu"
       ],
       "track": "non-record",
       "technique_type": "ttt",
@@ -9133,6 +9196,7 @@
       "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
+        "no-bpb",
         "seeds-unknown"
       ],
       "confidence": "HIGH"
