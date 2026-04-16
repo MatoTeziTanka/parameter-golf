@@ -1,7 +1,71 @@
 {
-  "last_fetch": "2026-04-15T23:11:38.425625+00:00",
-  "api_calls_used": 26,
+  "last_fetch": "2026-04-16T00:07:26.056386+00:00",
+  "api_calls_used": 27,
   "prs": [
+    {
+      "number": 1653,
+      "title": "Add record: TKEP v1.4.1 + QAT int6 + sliding window eval (val_bpb=2.2…",
+      "author": "caseyjholler-ai",
+      "state": "OPEN",
+      "created": "2026-04-15T23:36:59Z",
+      "updated": "2026-04-15T23:36:59Z",
+      "bpb": 2.2,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-15_TKEP_v141_QAT_int6_SlidingWindow64/README.md",
+        "records/track_10min_16mb/2026-04-15_TKEP_v141_QAT_int6_SlidingWindow64/submission.json",
+        "records/track_10min_16mb/2026-04-15_TKEP_v141_QAT_int6_SlidingWindow64/train.log",
+        "records/track_10min_16mb/2026-04-15_TKEP_v141_QAT_int6_SlidingWindow64/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1652,
+      "title": "mixed precision: int6 block weights + int8 embeddings",
+      "author": "bhagyapatel178",
+      "state": "OPEN",
+      "created": "2026-04-15T23:28:41Z",
+      "updated": "2026-04-15T23:28:41Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "INT6 + INT8",
+      "file_paths": [
+        "train_gpt.py",
+        "train_gpt_mlx.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1651,
       "title": "Draft: Per-group SDClip + other ideas",
@@ -8069,11 +8133,11 @@
       "author": "vikrant-akavaram",
       "state": "OPEN",
       "created": "2026-04-07T06:26:50Z",
-      "updated": "2026-04-13T17:00:03Z",
-      "bpb": 1.4362,
+      "updated": "2026-04-16T00:07:21Z",
+      "bpb": 0.019,
       "seeds": null,
-      "artifact_bytes": 13800000,
-      "technique_summary": "Muon + MoE + SSM + GPTQ + INT6",
+      "artifact_bytes": 15680000,
+      "technique_summary": "TTT + Muon + MoE + SSM + GPTQ + INT6",
       "file_paths": [
         "records/track_10min_16mb/2026-04-07_10L-512dim-scaled/README.md",
         "records/track_10min_16mb/2026-04-07_10L-512dim-scaled/submission.json",
@@ -8085,10 +8149,11 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
+        "ttt",
         "gptq_eval"
       ],
       "track": "non-record",
-      "technique_type": "neural",
+      "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
