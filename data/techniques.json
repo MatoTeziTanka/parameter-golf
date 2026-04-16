@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-16T08:15:07Z",
+  "generated_at": "2026-04-16T09:57:42Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1586,
-    "matched_pr_count": 1176,
+    "pr_count": 1587,
+    "matched_pr_count": 1177,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -11,7 +11,7 @@
     "status_counts": {
       "ALIVE": 256,
       "AT_RISK": 95,
-      "DEAD": 463,
+      "DEAD": 464,
       "INCOMPLETE": 763,
       "UNKNOWN": 0
     }
@@ -10682,8 +10682,8 @@
       "kind": "legal",
       "count": 475,
       "author_count": 256,
-      "alive_count": 106,
-      "dead_count": 144,
+      "alive_count": 105,
+      "dead_count": 145,
       "at_risk_count": 44,
       "incomplete_count": 176,
       "unknown_count": 0,
@@ -12318,7 +12318,7 @@
             {
               "number": 1663,
               "author": "pablinga19",
-              "status": "ALIVE",
+              "status": "INCOMPLETE",
               "bpb": 1.08438,
               "created": "2026-04-16T07:44:06Z"
             }
@@ -14698,7 +14698,7 @@
             {
               "number": 1621,
               "author": "mrbese",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": 1.1531,
               "created": "2026-04-14T20:28:24Z"
             }
@@ -19056,7 +19056,7 @@
         {
           "number": 1621,
           "author": "mrbese",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 1.1531,
           "created": "2026-04-14T20:28:24Z"
         },
@@ -19133,7 +19133,7 @@
         {
           "number": 1663,
           "author": "pablinga19",
-          "status": "ALIVE",
+          "status": "INCOMPLETE",
           "bpb": 1.08438,
           "created": "2026-04-16T07:44:06Z"
         }
@@ -27499,9 +27499,9 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 416,
+      "count": 415,
       "author_count": 194,
-      "alive_count": 112,
+      "alive_count": 111,
       "dead_count": 126,
       "at_risk_count": 44,
       "incomplete_count": 129,
@@ -29277,34 +29277,6 @@
           ]
         },
         {
-          "author": "pablinga19",
-          "pr_count": 3,
-          "best_bpb": 1.08438,
-          "prs": [
-            {
-              "number": 1660,
-              "author": "pablinga19",
-              "status": "DEAD",
-              "bpb": 1.0858,
-              "created": "2026-04-16T04:19:38Z"
-            },
-            {
-              "number": 1662,
-              "author": "pablinga19",
-              "status": "DEAD",
-              "bpb": 1.08438,
-              "created": "2026-04-16T07:27:56Z"
-            },
-            {
-              "number": 1663,
-              "author": "pablinga19",
-              "status": "ALIVE",
-              "bpb": 1.08438,
-              "created": "2026-04-16T07:44:06Z"
-            }
-          ]
-        },
-        {
           "author": "sahiee-dev",
           "pr_count": 3,
           "best_bpb": 1.08965,
@@ -29746,6 +29718,27 @@
           ]
         },
         {
+          "author": "pablinga19",
+          "pr_count": 2,
+          "best_bpb": 1.08438,
+          "prs": [
+            {
+              "number": 1660,
+              "author": "pablinga19",
+              "status": "DEAD",
+              "bpb": 1.0858,
+              "created": "2026-04-16T04:19:38Z"
+            },
+            {
+              "number": 1662,
+              "author": "pablinga19",
+              "status": "DEAD",
+              "bpb": 1.08438,
+              "created": "2026-04-16T07:27:56Z"
+            }
+          ]
+        },
+        {
           "author": "clarkkev",
           "pr_count": 2,
           "best_bpb": 1.08996,
@@ -30057,6 +30050,20 @@
               "status": "INCOMPLETE",
               "bpb": 0.012,
               "created": "2026-04-15T18:43:00Z"
+            }
+          ]
+        },
+        {
+          "author": "zoharb157",
+          "pr_count": 1,
+          "best_bpb": 0.012,
+          "prs": [
+            {
+              "number": 1664,
+              "author": "zoharb157",
+              "status": "INCOMPLETE",
+              "bpb": 0.012,
+              "created": "2026-04-16T07:51:22Z"
             }
           ]
         },
@@ -31765,20 +31772,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-01T19:08:04Z"
-            }
-          ]
-        },
-        {
-          "author": "zoharb157",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1664,
-              "author": "zoharb157",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-16T07:51:22Z"
             }
           ]
         }
@@ -34683,17 +34676,10 @@
           "created": "2026-04-16T07:27:56Z"
         },
         {
-          "number": 1663,
-          "author": "pablinga19",
-          "status": "ALIVE",
-          "bpb": 1.08438,
-          "created": "2026-04-16T07:44:06Z"
-        },
-        {
           "number": 1664,
           "author": "zoharb157",
           "status": "INCOMPLETE",
-          "bpb": null,
+          "bpb": 0.012,
           "created": "2026-04-16T07:51:22Z"
         }
       ]
@@ -48322,12 +48308,12 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 258,
+      "count": 259,
       "author_count": 101,
-      "alive_count": 50,
-      "dead_count": 100,
+      "alive_count": 51,
+      "dead_count": 101,
       "at_risk_count": 67,
-      "incomplete_count": 37,
+      "incomplete_count": 36,
       "unknown_count": 0,
       "best_alive": {
         "number": 1321,
@@ -49736,6 +49722,34 @@
           ]
         },
         {
+          "author": "mrbese",
+          "pr_count": 3,
+          "best_bpb": 1.1531,
+          "prs": [
+            {
+              "number": 1621,
+              "author": "mrbese",
+              "status": "DEAD",
+              "bpb": 1.1531,
+              "created": "2026-04-14T20:28:24Z"
+            },
+            {
+              "number": 1665,
+              "author": "mrbese",
+              "status": "ALIVE",
+              "bpb": 1.3571,
+              "created": "2026-04-16T07:57:05Z"
+            },
+            {
+              "number": 1666,
+              "author": "mrbese",
+              "status": "ALIVE",
+              "bpb": 1.1531,
+              "created": "2026-04-16T08:15:57Z"
+            }
+          ]
+        },
+        {
           "author": "Christopher-Lee-McClendon",
           "pr_count": 2,
           "best_bpb": 0.00321,
@@ -50110,27 +50124,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-26T19:26:32Z"
-            }
-          ]
-        },
-        {
-          "author": "mrbese",
-          "pr_count": 2,
-          "best_bpb": 1.1531,
-          "prs": [
-            {
-              "number": 1621,
-              "author": "mrbese",
-              "status": "INCOMPLETE",
-              "bpb": 1.1531,
-              "created": "2026-04-14T20:28:24Z"
-            },
-            {
-              "number": 1665,
-              "author": "mrbese",
-              "status": "ALIVE",
-              "bpb": 1.3571,
-              "created": "2026-04-16T07:57:05Z"
             }
           ]
         },
@@ -52631,7 +52624,7 @@
         {
           "number": 1621,
           "author": "mrbese",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 1.1531,
           "created": "2026-04-14T20:28:24Z"
         },
@@ -52655,6 +52648,13 @@
           "status": "ALIVE",
           "bpb": 1.3571,
           "created": "2026-04-16T07:57:05Z"
+        },
+        {
+          "number": 1666,
+          "author": "mrbese",
+          "status": "ALIVE",
+          "bpb": 1.1531,
+          "created": "2026-04-16T08:15:57Z"
         }
       ]
     },
@@ -72731,8 +72731,8 @@
       "kind": "legal",
       "count": 475,
       "author_count": 256,
-      "alive_count": 106,
-      "dead_count": 144,
+      "alive_count": 105,
+      "dead_count": 145,
       "at_risk_count": 44,
       "incomplete_count": 176,
       "unknown_count": 0,
@@ -74367,7 +74367,7 @@
             {
               "number": 1663,
               "author": "pablinga19",
-              "status": "ALIVE",
+              "status": "INCOMPLETE",
               "bpb": 1.08438,
               "created": "2026-04-16T07:44:06Z"
             }
@@ -76747,7 +76747,7 @@
             {
               "number": 1621,
               "author": "mrbese",
-              "status": "INCOMPLETE",
+              "status": "DEAD",
               "bpb": 1.1531,
               "created": "2026-04-14T20:28:24Z"
             }
@@ -81105,7 +81105,7 @@
         {
           "number": 1621,
           "author": "mrbese",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 1.1531,
           "created": "2026-04-14T20:28:24Z"
         },
@@ -81182,7 +81182,7 @@
         {
           "number": 1663,
           "author": "pablinga19",
-          "status": "ALIVE",
+          "status": "INCOMPLETE",
           "bpb": 1.08438,
           "created": "2026-04-16T07:44:06Z"
         }
@@ -81191,9 +81191,9 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 416,
+      "count": 415,
       "author_count": 194,
-      "alive_count": 112,
+      "alive_count": 111,
       "dead_count": 126,
       "at_risk_count": 44,
       "incomplete_count": 129,
@@ -82969,34 +82969,6 @@
           ]
         },
         {
-          "author": "pablinga19",
-          "pr_count": 3,
-          "best_bpb": 1.08438,
-          "prs": [
-            {
-              "number": 1660,
-              "author": "pablinga19",
-              "status": "DEAD",
-              "bpb": 1.0858,
-              "created": "2026-04-16T04:19:38Z"
-            },
-            {
-              "number": 1662,
-              "author": "pablinga19",
-              "status": "DEAD",
-              "bpb": 1.08438,
-              "created": "2026-04-16T07:27:56Z"
-            },
-            {
-              "number": 1663,
-              "author": "pablinga19",
-              "status": "ALIVE",
-              "bpb": 1.08438,
-              "created": "2026-04-16T07:44:06Z"
-            }
-          ]
-        },
-        {
           "author": "sahiee-dev",
           "pr_count": 3,
           "best_bpb": 1.08965,
@@ -83438,6 +83410,27 @@
           ]
         },
         {
+          "author": "pablinga19",
+          "pr_count": 2,
+          "best_bpb": 1.08438,
+          "prs": [
+            {
+              "number": 1660,
+              "author": "pablinga19",
+              "status": "DEAD",
+              "bpb": 1.0858,
+              "created": "2026-04-16T04:19:38Z"
+            },
+            {
+              "number": 1662,
+              "author": "pablinga19",
+              "status": "DEAD",
+              "bpb": 1.08438,
+              "created": "2026-04-16T07:27:56Z"
+            }
+          ]
+        },
+        {
           "author": "clarkkev",
           "pr_count": 2,
           "best_bpb": 1.08996,
@@ -83749,6 +83742,20 @@
               "status": "INCOMPLETE",
               "bpb": 0.012,
               "created": "2026-04-15T18:43:00Z"
+            }
+          ]
+        },
+        {
+          "author": "zoharb157",
+          "pr_count": 1,
+          "best_bpb": 0.012,
+          "prs": [
+            {
+              "number": 1664,
+              "author": "zoharb157",
+              "status": "INCOMPLETE",
+              "bpb": 0.012,
+              "created": "2026-04-16T07:51:22Z"
             }
           ]
         },
@@ -85457,20 +85464,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-01T19:08:04Z"
-            }
-          ]
-        },
-        {
-          "author": "zoharb157",
-          "pr_count": 1,
-          "best_bpb": null,
-          "prs": [
-            {
-              "number": 1664,
-              "author": "zoharb157",
-              "status": "INCOMPLETE",
-              "bpb": null,
-              "created": "2026-04-16T07:51:22Z"
             }
           ]
         }
@@ -88375,17 +88368,10 @@
           "created": "2026-04-16T07:27:56Z"
         },
         {
-          "number": 1663,
-          "author": "pablinga19",
-          "status": "ALIVE",
-          "bpb": 1.08438,
-          "created": "2026-04-16T07:44:06Z"
-        },
-        {
           "number": 1664,
           "author": "zoharb157",
           "status": "INCOMPLETE",
-          "bpb": null,
+          "bpb": 0.012,
           "created": "2026-04-16T07:51:22Z"
         }
       ]
@@ -88393,12 +88379,12 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 258,
+      "count": 259,
       "author_count": 101,
-      "alive_count": 50,
-      "dead_count": 100,
+      "alive_count": 51,
+      "dead_count": 101,
       "at_risk_count": 67,
-      "incomplete_count": 37,
+      "incomplete_count": 36,
       "unknown_count": 0,
       "best_alive": {
         "number": 1321,
@@ -89807,6 +89793,34 @@
           ]
         },
         {
+          "author": "mrbese",
+          "pr_count": 3,
+          "best_bpb": 1.1531,
+          "prs": [
+            {
+              "number": 1621,
+              "author": "mrbese",
+              "status": "DEAD",
+              "bpb": 1.1531,
+              "created": "2026-04-14T20:28:24Z"
+            },
+            {
+              "number": 1665,
+              "author": "mrbese",
+              "status": "ALIVE",
+              "bpb": 1.3571,
+              "created": "2026-04-16T07:57:05Z"
+            },
+            {
+              "number": 1666,
+              "author": "mrbese",
+              "status": "ALIVE",
+              "bpb": 1.1531,
+              "created": "2026-04-16T08:15:57Z"
+            }
+          ]
+        },
+        {
           "author": "Christopher-Lee-McClendon",
           "pr_count": 2,
           "best_bpb": 0.00321,
@@ -90181,27 +90195,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-03-26T19:26:32Z"
-            }
-          ]
-        },
-        {
-          "author": "mrbese",
-          "pr_count": 2,
-          "best_bpb": 1.1531,
-          "prs": [
-            {
-              "number": 1621,
-              "author": "mrbese",
-              "status": "INCOMPLETE",
-              "bpb": 1.1531,
-              "created": "2026-04-14T20:28:24Z"
-            },
-            {
-              "number": 1665,
-              "author": "mrbese",
-              "status": "ALIVE",
-              "bpb": 1.3571,
-              "created": "2026-04-16T07:57:05Z"
             }
           ]
         },
@@ -92702,7 +92695,7 @@
         {
           "number": 1621,
           "author": "mrbese",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 1.1531,
           "created": "2026-04-14T20:28:24Z"
         },
@@ -92726,6 +92719,13 @@
           "status": "ALIVE",
           "bpb": 1.3571,
           "created": "2026-04-16T07:57:05Z"
+        },
+        {
+          "number": 1666,
+          "author": "mrbese",
+          "status": "ALIVE",
+          "bpb": 1.1531,
+          "created": "2026-04-16T08:15:57Z"
         }
       ]
     },
@@ -107647,20 +107647,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 416,
+      "left_count": 415,
       "right_count": 2,
       "left_people": 194,
       "right_people": 2,
-      "score": 832
+      "score": 830
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 416,
+      "left_count": 415,
       "right_count": 2,
       "left_people": 194,
       "right_people": 2,
-      "score": 832
+      "score": 830
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -107836,11 +107836,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 416,
+      "left_count": 415,
       "right_count": 1,
       "left_people": 194,
       "right_people": 1,
-      "score": 416
+      "score": 415
     },
     {
       "left": "Parallel Muon",
