@@ -1,7 +1,266 @@
 {
-  "last_fetch": "2026-04-16T00:07:26.056386+00:00",
-  "api_calls_used": 27,
+  "last_fetch": "2026-04-16T03:54:58.836655+00:00",
+  "api_calls_used": 28,
   "prs": [
+    {
+      "number": 1659,
+      "title": "Add non-record in-place TTT document-reset submission",
+      "author": "wczubal1",
+      "state": "OPEN",
+      "created": "2026-04-16T03:49:32Z",
+      "updated": "2026-04-16T03:49:32Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-15_InPlaceTTT_DocReset/README.md",
+        "records/track_non_record_16mb/2026-04-15_InPlaceTTT_DocReset/submission.json",
+        "records/track_non_record_16mb/2026-04-15_InPlaceTTT_DocReset/train.log",
+        "records/track_non_record_16mb/2026-04-15_InPlaceTTT_DocReset/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1658,
+      "title": "Submission: SP8192 + DepthRecur + MuonEq-R + SGD-TTT + SDClip GPTQ + Brotli-11",
+      "author": "AVINASH0052",
+      "state": "OPEN",
+      "created": "2026-04-16T03:32:53Z",
+      "updated": "2026-04-16T03:54:54Z",
+      "bpb": 1.16,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-16_SP8192_CleanStack_SGD_TTT/README.md",
+        "records/track_10min_16mb/2026-04-16_SP8192_CleanStack_SGD_TTT/run_leaderboard_8xh100.sh",
+        "records/track_10min_16mb/2026-04-16_SP8192_CleanStack_SGD_TTT/run_smoke_1gpu.sh",
+        "records/track_10min_16mb/2026-04-16_SP8192_CleanStack_SGD_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-16_SP8192_CleanStack_SGD_TTT/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1657,
+      "title": "WIP: MoD + ACT adaptive halting submission",
+      "author": "ChipGlitch",
+      "state": "OPEN",
+      "created": "2026-04-16T02:28:29Z",
+      "updated": "2026-04-16T03:08:22Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "GPTQ",
+      "file_paths": [
+        ".python-version",
+        "records/track_10min_16mb/2026-04-15_MoD_ACT_AdaptiveHalting/README.md",
+        "records/track_10min_16mb/2026-04-15_MoD_ACT_AdaptiveHalting/train_gpt_mod_act.py",
+        "records/track_10min_16mb/2026-04-15_MoD_ACT_AdaptiveHalting/train_gpt_rrt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1656,
+      "title": "Add initial README for HCMUS Ninepls submission",
+      "author": "NGBao1608",
+      "state": "OPEN",
+      "created": "2026-04-16T01:26:02Z",
+      "updated": "2026-04-16T01:26:02Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/HCMUS_Ninepls/README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1655,
+      "title": "14L QEP GPTQ + Per-Window SGD TTT (1.1135 BPB, 3-seed)",
+      "author": "himanalot",
+      "state": "OPEN",
+      "created": "2026-04-16T01:05:21Z",
+      "updated": "2026-04-16T01:05:21Z",
+      "bpb": 1.1135,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6",
+      "file_paths": [
+        ".claude/CLAUDE.md",
+        "analysis/thread1/analysis.md",
+        "analysis/thread10/SCALING_ANALYSIS.md",
+        "analysis/thread10/raw_data.json",
+        "analysis/thread10/scaling_analysis_output.txt",
+        "analysis/thread11/KEY_FINDINGS.md",
+        "analysis/thread11/gpu_kernel_optimization.md",
+        "analysis/thread11/roofline_calculations.py",
+        "analysis/thread2/code_changes.py",
+        "analysis/thread2/speed_analysis.md",
+        "analysis/thread2/strategic_summary.md",
+        "analysis/thread3/tokenizer_optimization_analysis.md",
+        "analysis/thread4/SUMMARY.md",
+        "analysis/thread4/architecture_analysis.md",
+        "analysis/thread4/swiglu_implementation.py",
+        "analysis/thread7/competitive_analysis.md",
+        "analysis/thread8/quick_reference.md",
+        "analysis/thread8/sliding_window_impl.py",
+        "analysis/thread8/test_time_compute_analysis.md",
+        "checkpoints/CURRENT_STATE_113.md",
+        "checkpoints/CURRENT_STATE_145.md",
+        "checkpoints/CURRENT_STATE_152.md",
+        "checkpoints/CURRENT_STATE_153.md",
+        "checkpoints/CURRENT_STATE_182.md",
+        "checkpoints/CURRENT_STATE_187.md",
+        "checkpoints/CURRENT_STATE_188.md",
+        "checkpoints/CURRENT_STATE_199.md",
+        "checkpoints/CURRENT_STATE_203.md",
+        "checkpoints/CURRENT_STATE_205.md",
+        "checkpoints/CURRENT_STATE_208.md",
+        "checkpoints/clean_train_097.py",
+        "checkpoints/clean_train_097_noflat.py",
+        "checkpoints/clean_train_097_real.py",
+        "checkpoints/clean_train_103.py",
+        "checkpoints/clean_train_105.py",
+        "checkpoints/clean_train_106.py",
+        "checkpoints/clean_train_108.py",
+        "checkpoints/clean_train_110.py",
+        "checkpoints/clean_train_113.py",
+        "checkpoints/clean_train_145_gptqlite.py",
+        "checkpoints/clean_train_152_adamwd02.py",
+        "checkpoints/clean_train_153_muonwd04.py",
+        "checkpoints/clean_train_182.py",
+        "checkpoints/clean_train_187.py",
+        "checkpoints/clean_train_188.py",
+        "checkpoints/clean_train_199.py",
+        "checkpoints/clean_train_203.py",
+        "checkpoints/clean_train_205.py",
+        "checkpoints/clean_train_208.py",
+        "eight_parallel/EXPERIMENTS.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1654,
+      "title": "[Non-Record] Modified LLM-JEPA pretraining from scratch — 1.2699 bpbAdd int6 quantization lzma",
+      "author": "IshiPareek",
+      "state": "OPEN",
+      "created": "2026-04-16T00:29:01Z",
+      "updated": "2026-04-16T00:30:08Z",
+      "bpb": 1.2699,
+      "seeds": null,
+      "artifact_bytes": 73000000,
+      "technique_summary": "INT6 + INT8 + EMA",
+      "file_paths": [
+        "README.md",
+        "RESEARCH_LOG.md",
+        "__pycache__/train_gpt_jepa.cpython-312.pyc",
+        "records/track_non_record_16mb/2026-03-25_LeakyReLU_TrigramHash/README.md",
+        "records/track_non_record_16mb/2026-03-25_LeakyReLU_TrigramHash/submission.json",
+        "records/track_non_record_16mb/2026-03-25_LeakyReLU_TrigramHash/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-08_JEPA_baseline/README.md",
+        "records/track_non_record_16mb/2026-04-08_JEPA_baseline/train_gpt_jepa.py",
+        "train_gpt.py",
+        "train_gpt_jepa.py",
+        "train_gpt_leaderboard.py",
+        "train_gpt_mlx_jepa.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1653,
       "title": "Add record: TKEP v1.4.1 + QAT int6 + sliding window eval (val_bpb=2.2…",
@@ -1062,9 +1321,9 @@
       "number": 1619,
       "title": "Submission/sp8192 depthrecur adamwttt",
       "author": "AVINASH0052",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-14T14:45:52Z",
-      "updated": "2026-04-14T15:40:45Z",
+      "updated": "2026-04-16T03:28:17Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1087,13 +1346,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1618,
@@ -8129,12 +8386,12 @@
     },
     {
       "number": 1432,
-      "title": "Non-record: SDPA-Compatible 11L on Blackwell GB10 (val_bpb 1.4362, 13.8MB)",
+      "title": "Non-record: SDPA + 1-sqrt Cooldown — 1.1445 BPB (8xH100, 15.68MB)",
       "author": "vikrant-akavaram",
       "state": "OPEN",
       "created": "2026-04-07T06:26:50Z",
-      "updated": "2026-04-16T00:07:21Z",
-      "bpb": 0.019,
+      "updated": "2026-04-16T03:40:13Z",
+      "bpb": 1.1445,
       "seeds": null,
       "artifact_bytes": 15680000,
       "technique_summary": "TTT + Muon + MoE + SSM + GPTQ + INT6",
@@ -8145,7 +8402,9 @@
         "records/track_10min_16mb/2026-04-07_10L-512dim-scaled/training_log.txt",
         "records/track_10min_16mb/2026-04-13_SDPA-Blackwell-11L/README.md",
         "records/track_10min_16mb/2026-04-13_SDPA-Blackwell-11L/submission.json",
-        "records/track_10min_16mb/2026-04-13_SDPA-Blackwell-11L/train_gpt.py"
+        "records/track_10min_16mb/2026-04-13_SDPA-Blackwell-11L/train_gpt.py",
+        "run_h100.sh",
+        "train_gpt_v4_sqrt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -41125,7 +41384,7 @@
       "author": "ddavidgao",
       "state": "OPEN",
       "created": "2026-03-23T15:25:22Z",
-      "updated": "2026-04-12T14:52:58Z",
+      "updated": "2026-04-16T03:46:07Z",
       "bpb": 1.1898,
       "seeds": null,
       "artifact_bytes": 16638468,
@@ -41133,6 +41392,8 @@
       "file_paths": [
         ".gitignore",
         "measure_variance_ratio.py",
+        "paper/dg_attention.pdf",
+        "paper/dg_attention.tex",
         "records/track_non_record_16mb/2026-03-23_DGAttention_DavidGao/README.md",
         "records/track_non_record_16mb/2026-03-23_DGAttention_DavidGao/submission.json",
         "records/track_non_record_16mb/2026-03-23_DGAttention_DavidGao/train.log",
