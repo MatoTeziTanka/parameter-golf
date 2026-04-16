@@ -1,14 +1,199 @@
 {
-  "last_fetch": "2026-04-16T06:03:58.065798+00:00",
-  "api_calls_used": 29,
+  "last_fetch": "2026-04-16T08:14:07.637328+00:00",
+  "api_calls_used": 30,
   "prs": [
+    {
+      "number": 1665,
+      "title": "Non-record: BESE + Mamba-3 SSD Hybrid (1.3571 BPB, 7.6 MB artifact)",
+      "author": "mrbese",
+      "state": "OPEN",
+      "created": "2026-04-16T07:57:05Z",
+      "updated": "2026-04-16T07:57:05Z",
+      "bpb": 1.3571,
+      "seeds": 3,
+      "artifact_bytes": 7600000,
+      "technique_summary": "TTT + SSM + INT6 + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-16_BESE_Mamba3_Hybrid/README.md",
+        "records/track_non_record_16mb/2026-04-16_BESE_Mamba3_Hybrid/bese_constants.py",
+        "records/track_non_record_16mb/2026-04-16_BESE_Mamba3_Hybrid/bese_fast_bpe.py",
+        "records/track_non_record_16mb/2026-04-16_BESE_Mamba3_Hybrid/mamba3_ssd.py",
+        "records/track_non_record_16mb/2026-04-16_BESE_Mamba3_Hybrid/requirements.txt",
+        "records/track_non_record_16mb/2026-04-16_BESE_Mamba3_Hybrid/submission.json",
+        "records/track_non_record_16mb/2026-04-16_BESE_Mamba3_Hybrid/tokenizer.json",
+        "records/track_non_record_16mb/2026-04-16_BESE_Mamba3_Hybrid/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-16_BESE_Mamba3_Hybrid/train_log_run1.txt",
+        "records/track_non_record_16mb/2026-04-16_BESE_Mamba3_Hybrid/train_log_run2_d64.txt",
+        "records/track_non_record_16mb/2026-04-16_BESE_Mamba3_Hybrid/train_log_run3_dim576.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1664,
+      "title": "WIP: Sequential GPTQ with Groupwise Int6 — improved post-training quantization on SP4096 base",
+      "author": "zoharb157",
+      "state": "OPEN",
+      "created": "2026-04-16T07:51:22Z",
+      "updated": "2026-04-16T07:51:22Z",
+      "bpb": null,
+      "seeds": 2,
+      "artifact_bytes": null,
+      "technique_summary": "GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-16_SP4096_SequentialGPTQ_GroupwiseInt6/README.md",
+        "records/track_10min_16mb/2026-04-16_SP4096_SequentialGPTQ_GroupwiseInt6/requirements.txt",
+        "records/track_10min_16mb/2026-04-16_SP4096_SequentialGPTQ_GroupwiseInt6/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-only-2",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1663,
+      "title": "Record: SP8192 + 3-layer recurrence + hard onset — val_bpb 1.0862 (3-seed mean)",
+      "author": "pablinga19",
+      "state": "OPEN",
+      "created": "2026-04-16T07:44:06Z",
+      "updated": "2026-04-16T07:46:16Z",
+      "bpb": 1.08438,
+      "seeds": 3,
+      "artifact_bytes": 15940000,
+      "technique_summary": "GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/README.md",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/eval_seed1337.log",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/eval_seeds42_314.log",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/submission.json",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1662,
+      "title": "Record: SP8192 + 3-layer recurrence + hard onset — val_bpb 1.0862 (3-seed mean)",
+      "author": "pablinga19",
+      "state": "CLOSED",
+      "created": "2026-04-16T07:27:56Z",
+      "updated": "2026-04-16T07:43:26Z",
+      "bpb": 1.08438,
+      "seeds": 3,
+      "artifact_bytes": 15940000,
+      "technique_summary": "GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/README.md",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/eval_seed1337.log",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/eval_seeds42_314.log",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/submission.json",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-16_SP8192_3LayerRecur_HardOnset_NoTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1661,
+      "title": "Non-record: 11L DepthRec PolarNS SWA",
+      "author": "anderamondarainh-stack",
+      "state": "OPEN",
+      "created": "2026-04-16T06:52:37Z",
+      "updated": "2026-04-16T06:52:37Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15999891,
+      "technique_summary": "Muon + INT6 + EMA",
+      "file_paths": [
+        ".gitignore",
+        "records/track_10min_16mb/2026-04-15_11L_DepthRec_PolarNS_SWA/README.md",
+        "records/track_10min_16mb/2026-04-15_11L_DepthRec_PolarNS_SWA/final_model.int6.ptz",
+        "records/track_10min_16mb/2026-04-15_11L_DepthRec_PolarNS_SWA/requirements.txt",
+        "records/track_10min_16mb/2026-04-15_11L_DepthRec_PolarNS_SWA/submission.json",
+        "records/track_10min_16mb/2026-04-15_11L_DepthRec_PolarNS_SWA/train_gpt.py",
+        "records/track_10min_16mb/submission_v1/README.md",
+        "records/track_10min_16mb/submission_v1/submission.json",
+        "records/track_10min_16mb/submission_v1/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1660,
       "title": "Record: SP8192 + 3-Layer Recurrence + Hard Onset — val_bpb 1.0858",
       "author": "pablinga19",
       "state": "CLOSED",
       "created": "2026-04-16T04:19:38Z",
-      "updated": "2026-04-16T04:29:02Z",
+      "updated": "2026-04-16T06:49:10Z",
       "bpb": 1.0858,
       "seeds": null,
       "artifact_bytes": 15857563,
@@ -9999,12 +10184,13 @@
       "author": "NICOH-YAY",
       "state": "OPEN",
       "created": "2026-04-05T20:26:17Z",
-      "updated": "2026-04-05T21:01:34Z",
+      "updated": "2026-04-16T07:33:45Z",
       "bpb": 1.2634,
       "seeds": null,
       "artifact_bytes": 15770000,
       "technique_summary": "",
       "file_paths": [
+        "records/leaky_relu_sliding_window/README.md",
         "records/leaky_relu_sliding_window/train.log",
         "records/leaky_relu_sliding_window/train_gpt.py",
         "records/records/leaky_relu_nicoh/README.md",
