@@ -1,7 +1,40 @@
 {
-  "last_fetch": "2026-04-16T20:56:41.022005+00:00",
-  "api_calls_used": 38,
+  "last_fetch": "2026-04-16T21:52:18.528600+00:00",
+  "api_calls_used": 39,
   "prs": [
+    {
+      "number": 1680,
+      "title": "Ben",
+      "author": "benjaminW2025",
+      "state": "CLOSED",
+      "created": "2026-04-16T21:22:13Z",
+      "updated": "2026-04-16T21:22:27Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        ".vscode/settings.json",
+        "final_model.int8.ptz",
+        "final_model.pt",
+        "train_gpt.py",
+        "train_gpt_baseline.py",
+        "train_gpt_variants.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1679,
       "title": "[Non-record] Megakernel Saturation Study: 5 Triton fusion variants cannot beat torch.compile at 27M scale",
@@ -1703,9 +1736,9 @@
       "number": 1632,
       "title": "Record: GDN-Hybrid (Gated DeltaNet + SWA) — val_bpb 1.0274 (2-seed mean)",
       "author": "Hkoyuer",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-15T02:27:41Z",
-      "updated": "2026-04-16T20:41:39Z",
+      "updated": "2026-04-16T21:01:45Z",
       "bpb": 0.039,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -1732,11 +1765,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-only-2"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1630,
