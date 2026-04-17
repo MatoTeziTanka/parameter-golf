@@ -1,7 +1,81 @@
 {
-  "last_fetch": "2026-04-17T16:03:23.482012+00:00",
-  "api_calls_used": 49,
+  "last_fetch": "2026-04-17T17:25:16.054813+00:00",
+  "api_calls_used": 50,
   "prs": [
+    {
+      "number": 1699,
+      "title": "Non-record: 19.2M MDLM Text Diffusion:  fp8 e4m3 + EMA 0.999 + Muon LR 0.02",
+      "author": "lsb",
+      "state": "OPEN",
+      "created": "2026-04-17T17:09:01Z",
+      "updated": "2026-04-17T17:09:01Z",
+      "bpb": 0.181,
+      "seeds": 3,
+      "artifact_bytes": 15800000,
+      "technique_summary": "Muon + EMA",
+      "file_paths": [
+        "README.md",
+        "records/track_non_record_16mb/2026-04-15_MDLM_19M_e4m3_8L576d_EMA_LR02/README.md",
+        "records/track_non_record_16mb/2026-04-15_MDLM_19M_e4m3_8L576d_EMA_LR02/requirements.txt",
+        "records/track_non_record_16mb/2026-04-15_MDLM_19M_e4m3_8L576d_EMA_LR02/submission.json",
+        "records/track_non_record_16mb/2026-04-15_MDLM_19M_e4m3_8L576d_EMA_LR02/train_diffusion.py",
+        "records/track_non_record_16mb/2026-04-15_MDLM_19M_e4m3_8L576d_EMA_LR02/train_seed314.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
+    {
+      "number": 1698,
+      "title": "Record: GatedDeltaNet (FLA) + Legal Score-First TTT — val_bpb 1.00995 (3-seed mean)",
+      "author": "arsenis-cmd",
+      "state": "OPEN",
+      "created": "2026-04-17T16:17:23Z",
+      "updated": "2026-04-17T16:17:23Z",
+      "bpb": 1.00995,
+      "seeds": 3,
+      "artifact_bytes": 16600916,
+      "technique_summary": "TTT + Muon + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "README.md",
+        "records/track_10min_16mb/2026-04-18_GatedDeltaNet_FLA_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-04-18_GatedDeltaNet_FLA_LegalTTT/architectures.py",
+        "records/track_10min_16mb/2026-04-18_GatedDeltaNet_FLA_LegalTTT/configs.py",
+        "records/track_10min_16mb/2026-04-18_GatedDeltaNet_FLA_LegalTTT/requirements.txt",
+        "records/track_10min_16mb/2026-04-18_GatedDeltaNet_FLA_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-04-18_GatedDeltaNet_FLA_LegalTTT/train_gdn_7k.py",
+        "records/track_10min_16mb/2026-04-18_GatedDeltaNet_FLA_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_GatedDeltaNet_FLA_LegalTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-18_GatedDeltaNet_FLA_LegalTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-18_GatedDeltaNet_FLA_LegalTTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1697,
       "title": "Add non-record SP8192 pass-gated recurrence submission",
@@ -883,7 +957,7 @@
       "author": "mikeapedia",
       "state": "OPEN",
       "created": "2026-04-16T17:53:52Z",
-      "updated": "2026-04-16T18:16:47Z",
+      "updated": "2026-04-17T17:01:48Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1121,7 +1195,7 @@
       "author": "MarioPaerle",
       "state": "OPEN",
       "created": "2026-04-16T12:32:56Z",
-      "updated": "2026-04-17T08:01:05Z",
+      "updated": "2026-04-17T16:20:05Z",
       "bpb": 1.07139,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -2286,9 +2360,9 @@
       "number": 1633,
       "title": "SAFE_SUBMISSION: run036-safe016 (1.05850 BPB)",
       "author": "joshkmartinez",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-15T03:58:01Z",
-      "updated": "2026-04-15T03:58:01Z",
+      "updated": "2026-04-17T16:31:51Z",
       "bpb": 1.0585,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -2332,9 +2406,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1632,
