@@ -1,7 +1,42 @@
 {
-  "last_fetch": "2026-04-17T09:22:12.894186+00:00",
-  "api_calls_used": 44,
+  "last_fetch": "2026-04-17T10:40:33.486035+00:00",
+  "api_calls_used": 45,
   "prs": [
+    {
+      "number": 1693,
+      "title": "Record: Casefold V4 + AttnOutGate + Multi-Phase Global SGD TTT — val_bpb 1.05733 (3-seed mean)",
+      "author": "dexhunter",
+      "state": "OPEN",
+      "created": "2026-04-17T10:17:51Z",
+      "updated": "2026-04-17T10:17:51Z",
+      "bpb": 1.05733,
+      "seeds": 3,
+      "artifact_bytes": 15210000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-17_CasefoldV4_AttnOutGate_PhasedTTT/README.md",
+        "records/track_10min_16mb/2026-04-17_CasefoldV4_AttnOutGate_PhasedTTT/submission.json",
+        "records/track_10min_16mb/2026-04-17_CasefoldV4_AttnOutGate_PhasedTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-17_CasefoldV4_AttnOutGate_PhasedTTT/train_seed0.log",
+        "records/track_10min_16mb/2026-04-17_CasefoldV4_AttnOutGate_PhasedTTT/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-17_CasefoldV4_AttnOutGate_PhasedTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1692,
       "title": "Non-record: Initial small random mini-MoE",
@@ -170,7 +205,7 @@
       "author": "resouer",
       "state": "OPEN",
       "created": "2026-04-17T06:00:01Z",
-      "updated": "2026-04-17T06:00:01Z",
+      "updated": "2026-04-17T10:05:30Z",
       "bpb": 1.04089763,
       "seeds": 3,
       "artifact_bytes": 15991282,
@@ -16568,15 +16603,15 @@
     },
     {
       "number": 1246,
-      "title": "Record: Trinity v6 N-gram Order-22 + SLOT — val_bpb 0.37112 (NEW #1)",
+      "title": "Record: Trinity v7 — val_bpb 0.33574 (3-seed mean, NEW #1)",
       "author": "deborahnelson8788726",
       "state": "OPEN",
       "created": "2026-04-02T02:44:32Z",
-      "updated": "2026-04-12T04:15:38Z",
-      "bpb": null,
-      "seeds": null,
-      "artifact_bytes": 14200000,
-      "technique_summary": "EMA + N-gram",
+      "updated": "2026-04-17T10:04:26Z",
+      "bpb": 0.74526,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
         "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/requirements.txt",
@@ -16588,19 +16623,23 @@
         "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_v6_seed42.log"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval"
+      ],
       "track": "record",
-      "technique_type": "cache",
+      "technique_type": "hybrid",
       "technique_tags": [
         "ttt",
         "gptq"
       ],
       "technique_source": "code",
-      "status": "AT_RISK",
+      "status": "INCOMPLETE",
       "flags": [
-        "body:ngram-body"
+        "artifact-unknown"
       ],
-      "confidence": "LOW"
+      "confidence": "HIGH"
     },
     {
       "number": 1245,
