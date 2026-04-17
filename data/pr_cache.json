@@ -1,7 +1,39 @@
 {
-  "last_fetch": "2026-04-17T07:53:32.500251+00:00",
-  "api_calls_used": 43,
+  "last_fetch": "2026-04-17T09:22:12.894186+00:00",
+  "api_calls_used": 44,
   "prs": [
+    {
+      "number": 1692,
+      "title": "Non-record: Initial small random mini-MoE",
+      "author": "joshEng1",
+      "state": "OPEN",
+      "created": "2026-04-17T09:12:41Z",
+      "updated": "2026-04-17T09:12:41Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + MoE",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-04_RandomMLPUpAdapterAblation/README.md",
+        "records/track_non_record_16mb/2026-04-04_RandomMLPUpAdapterAblation/run.sh",
+        "records/track_non_record_16mb/2026-04-04_RandomMLPUpAdapterAblation/submission.json",
+        "records/track_non_record_16mb/2026-04-04_RandomMLPUpAdapterAblation/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1691,
       "title": "Submission/fastattn mtp dr",
@@ -908,7 +940,7 @@
       "author": "MarioPaerle",
       "state": "OPEN",
       "created": "2026-04-16T12:32:56Z",
-      "updated": "2026-04-16T12:42:28Z",
+      "updated": "2026-04-17T08:01:05Z",
       "bpb": 1.07139,
       "seeds": 2,
       "artifact_bytes": 16000000,
