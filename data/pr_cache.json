@@ -1,7 +1,74 @@
 {
-  "last_fetch": "2026-04-16T23:44:08.420153+00:00",
-  "api_calls_used": 40,
+  "last_fetch": "2026-04-17T02:52:01.398288+00:00",
+  "api_calls_used": 41,
   "prs": [
+    {
+      "number": 1685,
+      "title": "Non-record: JEPA Hybrid — first latent-prediction LM (1.7622 BPB, 7.5MB)",
+      "author": "butbutt42",
+      "state": "OPEN",
+      "created": "2026-04-17T01:53:27Z",
+      "updated": "2026-04-17T01:53:27Z",
+      "bpb": 1.7622,
+      "seeds": null,
+      "artifact_bytes": 7488519,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-17_JEPA_Hybrid_Latent_Prediction/README.md",
+        "records/track_non_record_16mb/2026-04-17_JEPA_Hybrid_Latent_Prediction/submission.json",
+        "records/track_non_record_16mb/2026-04-17_JEPA_Hybrid_Latent_Prediction/train.log",
+        "records/track_non_record_16mb/2026-04-17_JEPA_Hybrid_Latent_Prediction/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1684,
+      "title": "Non-record: wip Random-Basis MLPs + LoRA",
+      "author": "camden-git",
+      "state": "OPEN",
+      "created": "2026-04-17T00:21:58Z",
+      "updated": "2026-04-17T00:21:58Z",
+      "bpb": 1.25536,
+      "seeds": 0,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + LoRA + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-16_RandomBasisMLP_LoRA/README.md",
+        "records/track_10min_16mb/2026-04-16_RandomBasisMLP_LoRA/requirements.txt",
+        "records/track_10min_16mb/2026-04-16_RandomBasisMLP_LoRA/submission.json",
+        "records/track_10min_16mb/2026-04-16_RandomBasisMLP_LoRA/train_gpt.py",
+        "records/track_10min_16mb/2026-04-16_RandomBasisMLP_LoRA/train_seed42_partial.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-0"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1682,
       "title": "Non-record: GradPower for Muon prefers p<1 in matched H100 ablation",
@@ -363,7 +430,7 @@
       "author": "jayzuccarelli",
       "state": "OPEN",
       "created": "2026-04-16T17:57:08Z",
-      "updated": "2026-04-16T18:42:16Z",
+      "updated": "2026-04-17T00:52:32Z",
       "bpb": 1.1451,
       "seeds": null,
       "artifact_bytes": 15790000,
