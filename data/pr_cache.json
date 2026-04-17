@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-17T17:25:16.054813+00:00",
-  "api_calls_used": 50,
+  "last_fetch": "2026-04-17T18:12:27.788811+00:00",
+  "api_calls_used": 51,
   "prs": [
     {
       "number": 1699,
@@ -16822,15 +16822,15 @@
     },
     {
       "number": 1246,
-      "title": "Record: Trinity v7 — val_bpb 0.33574 (3-seed mean, NEW #1)",
+      "title": "Record: Trinity v7+skip — val_bpb 0.22311 (3-seed mean, NEW #1)",
       "author": "deborahnelson8788726",
       "state": "OPEN",
       "created": "2026-04-02T02:44:32Z",
-      "updated": "2026-04-17T15:39:25Z",
-      "bpb": 0.74526,
+      "updated": "2026-04-17T17:38:45Z",
+      "bpb": 0.22509,
       "seeds": 3,
       "artifact_bytes": null,
-      "technique_summary": "TTT + GPTQ + INT6 + INT8 + N-gram",
+      "technique_summary": "N-gram",
       "file_paths": [
         "modal/run_v7.py",
         "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
@@ -16844,12 +16844,10 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
-        "ttt",
-        "ngram",
-        "gptq_eval"
+        "ngram"
       ],
       "track": "record",
-      "technique_type": "hybrid",
+      "technique_type": "cache",
       "technique_tags": [
         "ttt",
         "gptq"
