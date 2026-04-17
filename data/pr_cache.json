@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-17T14:41:43.370218+00:00",
-  "api_calls_used": 48,
+  "last_fetch": "2026-04-17T16:03:23.482012+00:00",
+  "api_calls_used": 49,
   "prs": [
     {
       "number": 1697,
@@ -347,9 +347,9 @@
       "number": 1687,
       "title": "Record: K_KVShare_Wider full-recipe FLA — val_bpb 1.04090 (3-seed mean)",
       "author": "resouer",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-17T06:00:01Z",
-      "updated": "2026-04-17T10:05:30Z",
+      "updated": "2026-04-17T14:49:55Z",
       "bpb": 1.04089763,
       "seeds": 3,
       "artifact_bytes": 15991282,
@@ -377,9 +377,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1686,
@@ -16748,12 +16750,13 @@
       "author": "deborahnelson8788726",
       "state": "OPEN",
       "created": "2026-04-02T02:44:32Z",
-      "updated": "2026-04-17T10:04:26Z",
+      "updated": "2026-04-17T15:39:25Z",
       "bpb": 0.74526,
       "seeds": 3,
       "artifact_bytes": null,
       "technique_summary": "TTT + GPTQ + INT6 + INT8 + N-gram",
       "file_paths": [
+        "modal/run_v7.py",
         "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
         "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/requirements.txt",
         "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/submission.json",
