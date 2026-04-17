@@ -1,7 +1,46 @@
 {
-  "last_fetch": "2026-04-17T02:52:01.398288+00:00",
-  "api_calls_used": 41,
+  "last_fetch": "2026-04-17T05:31:04.279628+00:00",
+  "api_calls_used": 42,
   "prs": [
+    {
+      "number": 1686,
+      "title": "Record (pending): SP1024 Linear-Attention Hybrid + Late QAT + Hessian GPTQ",
+      "author": "AVINASH0052",
+      "state": "OPEN",
+      "created": "2026-04-17T04:37:18Z",
+      "updated": "2026-04-17T05:08:31Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + SwiGLU + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-16_SP8192_CleanStack_SGD_TTT/README.md",
+        "records/track_10min_16mb/2026-04-16_SP8192_CleanStack_SGD_TTT/run_leaderboard_8xh100.sh",
+        "records/track_10min_16mb/2026-04-16_SP8192_CleanStack_SGD_TTT/run_smoke_1gpu.sh",
+        "records/track_10min_16mb/2026-04-16_SP8192_CleanStack_SGD_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-16_SP8192_CleanStack_SGD_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-17_SP1024_LinearAttnHybrid/README.md",
+        "records/track_10min_16mb/2026-04-17_SP1024_LinearAttnHybrid/run_leaderboard_8xh100.sh",
+        "records/track_10min_16mb/2026-04-17_SP1024_LinearAttnHybrid/run_smoke_1gpu.sh",
+        "records/track_10min_16mb/2026-04-17_SP1024_LinearAttnHybrid/submission.json",
+        "records/track_10min_16mb/2026-04-17_SP1024_LinearAttnHybrid/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1685,
       "title": "Non-record: JEPA Hybrid — first latent-prediction LM (1.7622 BPB, 7.5MB)",
@@ -639,7 +678,7 @@
       "author": "Laalinibh",
       "state": "OPEN",
       "created": "2026-04-16T14:53:39Z",
-      "updated": "2026-04-16T14:53:39Z",
+      "updated": "2026-04-17T03:07:50Z",
       "bpb": 1.79678859,
       "seeds": null,
       "artifact_bytes": null,
@@ -1064,7 +1103,7 @@
       "author": "ChipGlitch",
       "state": "OPEN",
       "created": "2026-04-16T02:28:29Z",
-      "updated": "2026-04-16T15:31:57Z",
+      "updated": "2026-04-17T03:27:44Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1075,7 +1114,8 @@
         "records/track_10min_16mb/2026-04-15_MoD_ACT_AdaptiveHalting/train_gpt_mod_act.py",
         "records/track_10min_16mb/2026-04-15_MoD_ACT_AdaptiveHalting/train_gpt_rrt.py",
         "records/track_10min_16mb/2026-04-15_MoD_ACT_AdaptiveHalting/train_gpt_rrt_final.py",
-        "records/track_10min_16mb/2026-04-15_MoD_ACT_AdaptiveHalting/train_gpt_rrt_v3.py"
+        "records/track_10min_16mb/2026-04-15_MoD_ACT_AdaptiveHalting/train_gpt_rrt_v3.py",
+        "records/track_10min_16mb/2026-04-15_MoD_ACT_AdaptiveHalting/train_gpt_rrt_v4.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
