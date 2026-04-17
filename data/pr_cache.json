@@ -1,7 +1,92 @@
 {
-  "last_fetch": "2026-04-17T22:43:35.146865+00:00",
-  "api_calls_used": 55,
+  "last_fetch": "2026-04-17T23:42:22.194441+00:00",
+  "api_calls_used": 56,
   "prs": [
+    {
+      "number": 1706,
+      "title": "Non-record: SP8192 + QK5.4 + Legal Score-First TTT(4) — val_bpb 1.08149 (seed 1337)",
+      "author": "aamodbhatt",
+      "state": "OPEN",
+      "created": "2026-04-17T23:08:07Z",
+      "updated": "2026-04-17T23:08:48Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15994638,
+      "technique_summary": "TTT + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_SP8192_QK54_LegalTTT4_Safe570/README.md",
+        "records/track_10min_16mb/2026-04-18_SP8192_QK54_LegalTTT4_Safe570/submission.json",
+        "records/track_10min_16mb/2026-04-18_SP8192_QK54_LegalTTT4_Safe570/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_SP8192_QK54_LegalTTT4_Safe570/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1705,
+      "title": "Record: K_KVShare_Wider FLA — val_bpb 1.0339 (3-seed mean)",
+      "author": "genji0306",
+      "state": "OPEN",
+      "created": "2026-04-17T22:59:15Z",
+      "updated": "2026-04-17T23:31:50Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-16_KKVShareWider_FLA/README.md",
+        "records/track_10min_16mb/2026-04-16_KKVShareWider_FLA/architectures.py",
+        "records/track_10min_16mb/2026-04-16_KKVShareWider_FLA/configs.py",
+        "records/track_10min_16mb/2026-04-16_KKVShareWider_FLA/requirements.txt",
+        "records/track_10min_16mb/2026-04-16_KKVShareWider_FLA/submission.json",
+        "records/track_10min_16mb/2026-04-16_KKVShareWider_FLA/train_gdn_7k.py",
+        "records/track_10min_16mb/2026-04-16_KKVShareWider_FLA/train_gpt.py",
+        "records/track_10min_16mb/2026-04-16_KKVShareWider_FLA/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-16_KKVShareWider_FLA/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-16_KKVShareWider_FLA/train_seed42.log",
+        "records/track_10min_16mb/2026-04-17_KKVShareWider_FLA_Opensens/README.md",
+        "records/track_10min_16mb/2026-04-17_KKVShareWider_FLA_Opensens/architectures.py",
+        "records/track_10min_16mb/2026-04-17_KKVShareWider_FLA_Opensens/configs.py",
+        "records/track_10min_16mb/2026-04-17_KKVShareWider_FLA_Opensens/requirements.txt",
+        "records/track_10min_16mb/2026-04-17_KKVShareWider_FLA_Opensens/submission.json",
+        "records/track_10min_16mb/2026-04-17_KKVShareWider_FLA_Opensens/train_gdn_7k.py",
+        "records/track_10min_16mb/2026-04-17_KKVShareWider_FLA_Opensens/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1704,
       "title": "Add non-record SP8192 Parcae prefix TTT readout-only submission",
@@ -24644,7 +24729,7 @@
       "author": "nothingLiva",
       "state": "OPEN",
       "created": "2026-03-28T23:06:05Z",
-      "updated": "2026-04-12T08:11:12Z",
+      "updated": "2026-04-17T22:53:32Z",
       "bpb": 1.0954,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -24655,7 +24740,8 @@
         "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_gpt.py",
         "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_seed1337_log.txt",
         "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_seed2024_log.txt",
-        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_seed42_log.txt"
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_seed42_log.txt",
+        "records/track_10min_16mb/2026-04-17_LowercaseTokenization_107399BPB/README.md"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -29270,7 +29356,7 @@
       "author": "TheDryhtscipe",
       "state": "OPEN",
       "created": "2026-03-27T01:32:00Z",
-      "updated": "2026-04-11T20:03:15Z",
+      "updated": "2026-04-17T22:44:41Z",
       "bpb": 0.075,
       "seeds": null,
       "artifact_bytes": null,
