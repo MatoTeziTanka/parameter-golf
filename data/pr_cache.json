@@ -1,7 +1,44 @@
 {
-  "last_fetch": "2026-04-17T10:40:33.486035+00:00",
-  "api_calls_used": 45,
+  "last_fetch": "2026-04-17T11:54:06.319856+00:00",
+  "api_calls_used": 46,
   "prs": [
+    {
+      "number": 1694,
+      "title": "Non-record: 11L XSA-All + EMA + Legal GPTQ on 8xH100 (1.11355 BPB)",
+      "author": "Rtx09x",
+      "state": "OPEN",
+      "created": "2026-04-17T11:27:57Z",
+      "updated": "2026-04-17T11:27:57Z",
+      "bpb": 1.11355,
+      "seeds": null,
+      "artifact_bytes": 15353950,
+      "technique_summary": "GPTQ + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-17_11L_XSA11_EMA_GPTQ_8xH100_SafeFinal/PR_BODY.md",
+        "records/track_non_record_16mb/2026-04-17_11L_XSA11_EMA_GPTQ_8xH100_SafeFinal/README.md",
+        "records/track_non_record_16mb/2026-04-17_11L_XSA11_EMA_GPTQ_8xH100_SafeFinal/artifacts/.gitignore",
+        "records/track_non_record_16mb/2026-04-17_11L_XSA11_EMA_GPTQ_8xH100_SafeFinal/artifacts_manifest.local.json",
+        "records/track_non_record_16mb/2026-04-17_11L_XSA11_EMA_GPTQ_8xH100_SafeFinal/requirements.txt",
+        "records/track_non_record_16mb/2026-04-17_11L_XSA11_EMA_GPTQ_8xH100_SafeFinal/submission.json",
+        "records/track_non_record_16mb/2026-04-17_11L_XSA11_EMA_GPTQ_8xH100_SafeFinal/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-17_11L_XSA11_EMA_GPTQ_8xH100_SafeFinal/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1693,
       "title": "Record: Casefold V4 + AttnOutGate + Multi-Phase Global SGD TTT — val_bpb 1.05733 (3-seed mean)",
