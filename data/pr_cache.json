@@ -1,7 +1,116 @@
 {
-  "last_fetch": "2026-04-17T11:54:06.319856+00:00",
-  "api_calls_used": 46,
+  "last_fetch": "2026-04-17T13:26:08.561370+00:00",
+  "api_calls_used": 47,
   "prs": [
+    {
+      "number": 1697,
+      "title": "Add non-record SP8192 pass-gated recurrence submission",
+      "author": "Buld1n",
+      "state": "OPEN",
+      "created": "2026-04-17T12:33:52Z",
+      "updated": "2026-04-17T13:02:19Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 15983090,
+      "technique_summary": "TTT + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-17_SP8192_PassGate_EasyChunkTTT_Loop2600_ControlInt8/README.md",
+        "records/track_non_record_16mb/2026-04-17_SP8192_PassGate_EasyChunkTTT_Loop2600_ControlInt8/requirements.txt",
+        "records/track_non_record_16mb/2026-04-17_SP8192_PassGate_EasyChunkTTT_Loop2600_ControlInt8/submission.json",
+        "records/track_non_record_16mb/2026-04-17_SP8192_PassGate_EasyChunkTTT_Loop2600_ControlInt8/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-17_SP8192_PassGate_EasyChunkTTT_Loop2600_ControlInt8/train_seed314.log",
+        "records/track_non_record_16mb/2026-04-17_SP8192_PassGate_EasyChunkTTT_Loop2600_ControlInt8/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-17_SP8192_PassGate_EasyChunkTTT_Loop2600_ControlInt8/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1696,
+      "title": "[Record] Block Attention Residuals + Tuned Legal TTT — val_bpb 1.12242 (8xH100 primary)",
+      "author": "kings-crown",
+      "state": "OPEN",
+      "created": "2026-04-17T12:14:12Z",
+      "updated": "2026-04-17T12:15:48Z",
+      "bpb": 1.12242,
+      "seeds": 3,
+      "artifact_bytes": 15720000,
+      "technique_summary": "TTT + Muon + INT6 + N-gram",
+      "file_paths": [
+        ".gitignore",
+        "records/track_10min_16mb/2026-04-15_AttnRes_BlockDepthAttention_TunedTTT/README.md",
+        "records/track_10min_16mb/2026-04-15_AttnRes_BlockDepthAttention_TunedTTT/log/attnres_b2_x11_tttlr003_A600X2_s1337.txt",
+        "records/track_10min_16mb/2026-04-15_AttnRes_BlockDepthAttention_TunedTTT/log/attnres_b2_x11_tttlr003_A600X2_s314.txt",
+        "records/track_10min_16mb/2026-04-15_AttnRes_BlockDepthAttention_TunedTTT/log/attnres_b2_x11_tttlr003_A600X2_s42.txt",
+        "records/track_10min_16mb/2026-04-15_AttnRes_BlockDepthAttention_TunedTTT/log/attnres_b2_x11_tttlr003_seed1337_h100x8.txt",
+        "records/track_10min_16mb/2026-04-15_AttnRes_BlockDepthAttention_TunedTTT/submission.json",
+        "records/track_10min_16mb/2026-04-15_AttnRes_BlockDepthAttention_TunedTTT/train_gpt.py",
+        "requirements.txt",
+        "train_gpt_attn_res.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1695,
+      "title": "[Record] Stage 3 + SpinQuant V1 + MP-SGD-TTT — val_bpb 1.0759",
+      "author": "X-Abhishek-X",
+      "state": "OPEN",
+      "created": "2026-04-17T12:00:44Z",
+      "updated": "2026-04-17T12:23:44Z",
+      "bpb": 1.0759,
+      "seeds": 3,
+      "artifact_bytes": 15698706,
+      "technique_summary": "TTT + LoRA + GPTQ + INT6",
+      "file_paths": [
+        "submission.json",
+        "train_gpt.py",
+        "train_seed1337.log",
+        "train_seed2024.log",
+        "train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1694,
       "title": "Non-record: 11L XSA-All + EMA + Legal GPTQ on 8xH100 (1.11355 BPB)",
@@ -110,9 +219,9 @@
       "number": 1691,
       "title": "Submission/fastattn mtp dr",
       "author": "AVINASH0052",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-17T07:06:49Z",
-      "updated": "2026-04-17T07:38:12Z",
+      "updated": "2026-04-17T11:59:24Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -132,13 +241,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1690,
@@ -278,9 +385,9 @@
       "number": 1686,
       "title": "Record (pending): SP1024 Linear-Attention Hybrid + Late QAT + Hessian GPTQ",
       "author": "AVINASH0052",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-17T04:37:18Z",
-      "updated": "2026-04-17T06:34:14Z",
+      "updated": "2026-04-17T11:59:27Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -307,11 +414,11 @@
         "ttt"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1685,
@@ -1339,7 +1446,7 @@
       "author": "AVINASH0052",
       "state": "OPEN",
       "created": "2026-04-16T03:32:53Z",
-      "updated": "2026-04-16T15:36:40Z",
+      "updated": "2026-04-17T11:54:29Z",
       "bpb": 1.16,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -2851,9 +2958,9 @@
       "number": 1613,
       "title": "Add CustomGPT model implementation in train.py",
       "author": "GITHUB-SUBASHk",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-14T08:51:26Z",
-      "updated": "2026-04-14T08:51:26Z",
+      "updated": "2026-04-17T13:19:32Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -2869,14 +2976,11 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown",
-        "no-submission-json"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1612,
@@ -8140,11 +8244,11 @@
     },
     {
       "number": 1473,
-      "title": "Non-record: 11L FullGPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.11564 (1-seed)",
+      "title": "11L FullGPTQ + XSA-all + BigramHash 3072×112 — val_bpb 1.11564 (1-seed)",
       "author": "AVINASH0052",
       "state": "OPEN",
       "created": "2026-04-08T11:43:05Z",
-      "updated": "2026-04-12T11:41:04Z",
+      "updated": "2026-04-17T11:57:25Z",
       "bpb": null,
       "seeds": 1337,
       "artifact_bytes": 15832508,
@@ -8161,7 +8265,7 @@
         "gptq_eval",
         "leaky_relu"
       ],
-      "track": "non-record",
+      "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
@@ -47507,9 +47611,9 @@
       "number": 405,
       "title": "Non-record: 1x RTX 3090 baseline run (sp1024, 1 shard)",
       "author": "meett07",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-22T05:57:30Z",
-      "updated": "2026-04-12T14:20:46Z",
+      "updated": "2026-04-17T12:37:34Z",
       "bpb": 1.5516,
       "seeds": null,
       "artifact_bytes": 9283646,
@@ -47528,11 +47632,11 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 404,
