@@ -1,7 +1,39 @@
 {
-  "last_fetch": "2026-04-18T06:47:15.045807+00:00",
-  "api_calls_used": 59,
+  "last_fetch": "2026-04-18T08:00:52.864879+00:00",
+  "api_calls_used": 60,
   "prs": [
+    {
+      "number": 1714,
+      "title": "SP8192 + 3-Layer Recurrence + Parallel Residuals + QK-Gain 5.5 + SGD-TTT [LoRA-TTT Future Work]",
+      "author": "Anakintano",
+      "state": "OPEN",
+      "created": "2026-04-18T08:00:51Z",
+      "updated": "2026-04-18T08:00:51Z",
+      "bpb": 1.0914,
+      "seeds": 42,
+      "artifact_bytes": 15970000,
+      "technique_summary": "TTT + LoRA + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_SP8192_3LRecur_ParResid_QK55_SGD-TTT_LoRaTTT-FW/README.md",
+        "records/track_10min_16mb/2026-04-18_SP8192_3LRecur_ParResid_QK55_SGD-TTT_LoRaTTT-FW/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1713,
       "title": "Non-record submission: baseline_sp1024, val_bpb=1.3479(on single H100), AbhiShet108",
