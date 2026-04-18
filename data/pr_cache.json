@@ -1,7 +1,73 @@
 {
-  "last_fetch": "2026-04-18T19:23:47.035599+00:00",
-  "api_calls_used": 71,
+  "last_fetch": "2026-04-18T20:00:03.234508+00:00",
+  "api_calls_used": 72,
   "prs": [
+    {
+      "number": 1725,
+      "title": "Add near-SOTA SP8192 LegalTTT 3-seed reproduction",
+      "author": "teslaeco",
+      "state": "OPEN",
+      "created": "2026-04-18T19:39:43Z",
+      "updated": "2026-04-18T19:39:43Z",
+      "bpb": 1.08130499,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_SP8192_QK525_LegalTTT_Repro_3Seed_108130/README.md",
+        "records/track_10min_16mb/2026-04-18_SP8192_QK525_LegalTTT_Repro_3Seed_108130/submission.json",
+        "records/track_10min_16mb/2026-04-18_SP8192_QK525_LegalTTT_Repro_3Seed_108130/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_SP8192_QK525_LegalTTT_Repro_3Seed_108130/train_seed314.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_QK525_LegalTTT_Repro_3Seed_108130/train_seed42.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_QK525_LegalTTT_Repro_3Seed_108130/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1724,
+      "title": "SP8192 + 9-Layer + Breadcrumb Gating + EMA + Stochastic Depth - 1.1803 BPB (legal)",
+      "author": "Unwindology",
+      "state": "OPEN",
+      "created": "2026-04-18T19:33:13Z",
+      "updated": "2026-04-18T19:33:13Z",
+      "bpb": 1.1803,
+      "seeds": null,
+      "artifact_bytes": 15880130,
+      "technique_summary": "Muon + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-17_SP8192_9L_Breadcrumb_EMA_StochDepth_1.1803/README.md",
+        "records/track_10min_16mb/2026-04-17_SP8192_9L_Breadcrumb_EMA_StochDepth_1.1803/submission.json",
+        "records/track_10min_16mb/2026-04-17_SP8192_9L_Breadcrumb_EMA_StochDepth_1.1803/train_gpt.py",
+        "records/track_10min_16mb/2026-04-17_SP8192_9L_Breadcrumb_EMA_StochDepth_1.1803/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1723,
       "title": "Record: Nairi submission: 9L 512D vocab1024 - val_bpb 0.5384 (3-seed mean)",
