@@ -1,7 +1,40 @@
 {
-  "last_fetch": "2026-04-18T05:10:20.026333+00:00",
-  "api_calls_used": 58,
+  "last_fetch": "2026-04-18T06:47:15.045807+00:00",
+  "api_calls_used": 59,
   "prs": [
+    {
+      "number": 1713,
+      "title": "Non-record submission: baseline_sp1024, val_bpb=1.3479(on single H100), AbhiShet108",
+      "author": "AbhiShet108",
+      "state": "OPEN",
+      "created": "2026-04-18T05:23:25Z",
+      "updated": "2026-04-18T05:23:25Z",
+      "bpb": 1.3479,
+      "seeds": null,
+      "artifact_bytes": 14672726,
+      "technique_summary": "",
+      "file_paths": [
+        ".gitignore",
+        "records/track_non_record_16mb/2026-04-17_baseline_sp1024/README.md",
+        "records/track_non_record_16mb/2026-04-17_baseline_sp1024/submission.json",
+        "records/track_non_record_16mb/2026-04-17_baseline_sp1024/train.log",
+        "records/track_non_record_16mb/2026-04-17_baseline_sp1024/train_gpt.py",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1712,
       "title": "Record: GatedDeltaNet FLA + Brotli (No TTT) — val_bpb 1.01902 (3-seed mean)",
@@ -543,7 +576,7 @@
       "author": "arsenis-cmd",
       "state": "OPEN",
       "created": "2026-04-17T16:17:23Z",
-      "updated": "2026-04-18T01:00:38Z",
+      "updated": "2026-04-18T05:40:08Z",
       "bpb": 1.00995,
       "seeds": 3,
       "artifact_bytes": 16600916,
