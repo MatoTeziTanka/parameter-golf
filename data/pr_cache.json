@@ -1,7 +1,41 @@
 {
-  "last_fetch": "2026-04-18T10:08:14.496624+00:00",
-  "api_calls_used": 62,
+  "last_fetch": "2026-04-18T11:08:18.354068+00:00",
+  "api_calls_used": 63,
   "prs": [
+    {
+      "number": 1717,
+      "title": "[4090 Reproduction] Achieve 1.1249 val_bpb (Note: 18KB over limit)",
+      "author": "samchill666",
+      "state": "OPEN",
+      "created": "2026-04-18T10:40:50Z",
+      "updated": "2026-04-18T10:40:50Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-18_samking_4090/README.md",
+        "records/track_non_record_16mb/2026-04-18_samking_4090/requirements.txt",
+        "records/track_non_record_16mb/2026-04-18_samking_4090/submission.json",
+        "records/track_non_record_16mb/2026-04-18_samking_4090/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-18_samking_4090/training_log.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1716,
       "title": "Record: SP8192 + BigramHash d=32 + Path A v3 passthrough quantization — val_bpb 1.07882 (3-seed mean)",
@@ -43,11 +77,11 @@
     },
     {
       "number": 1715,
-      "title": "Record: QK-Gain 5.5 — val_bpb 1.0809 (3-seed mean)",
+      "title": "Record: QK-Gain 5.5 — val_bpb 1.0810 (3-seed mean)",
       "author": "G3sparky",
       "state": "OPEN",
       "created": "2026-04-18T09:28:39Z",
-      "updated": "2026-04-18T09:32:15Z",
+      "updated": "2026-04-18T11:00:54Z",
       "bpb": 1.0809,
       "seeds": 3,
       "artifact_bytes": 16000000,
