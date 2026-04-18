@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-18T14:10:07.955826+00:00",
-  "api_calls_used": 66,
+  "last_fetch": "2026-04-18T15:07:01.760289+00:00",
+  "api_calls_used": 67,
   "prs": [
     {
       "number": 1718,
@@ -158,13 +158,15 @@
       "author": "Anakintano",
       "state": "OPEN",
       "created": "2026-04-18T08:00:51Z",
-      "updated": "2026-04-18T08:34:42Z",
+      "updated": "2026-04-18T14:10:59Z",
       "bpb": 0.006,
       "seeds": 42,
       "artifact_bytes": 15970000,
       "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + INT8 + EMA",
       "file_paths": [
         "records/track_10min_16mb/2026-04-18_SP8192_3LRecur_ParResid_QK55_SGD-TTT_LoRaTTT-FW/README.md",
+        "records/track_10min_16mb/2026-04-18_SP8192_3LRecur_ParResid_QK55_SGD-TTT_LoRaTTT-FW/requirements.txt",
+        "records/track_10min_16mb/2026-04-18_SP8192_3LRecur_ParResid_QK55_SGD-TTT_LoRaTTT-FW/submission.json",
         "records/track_10min_16mb/2026-04-18_SP8192_3LRecur_ParResid_QK55_SGD-TTT_LoRaTTT-FW/train_gpt.py"
       ],
       "maintainer_comments": [],
@@ -179,11 +181,12 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "AT_RISK",
       "flags": [
-        "no-submission-json"
+        "suspiciously-low-bpb"
       ],
-      "confidence": "HIGH"
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
     },
     {
       "number": 1713,
@@ -52266,9 +52269,9 @@
       "number": 298,
       "title": "Ultimate recurrent: 21 techniques — depth recurrence, novel ops",
       "author": "MrINVISO",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-21T01:36:57Z",
-      "updated": "2026-04-12T14:04:58Z",
+      "updated": "2026-04-18T14:32:28Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -52288,13 +52291,11 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 297,
