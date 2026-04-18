@@ -1,7 +1,81 @@
 {
-  "last_fetch": "2026-04-17T23:42:22.194441+00:00",
-  "api_calls_used": 56,
+  "last_fetch": "2026-04-18T02:42:49.995826+00:00",
+  "api_calls_used": 57,
   "prs": [
+    {
+      "number": 1708,
+      "title": "Add FineWeb SP4096 tokenizer package",
+      "author": "newjordan",
+      "state": "OPEN",
+      "created": "2026-04-18T02:19:19Z",
+      "updated": "2026-04-18T02:19:19Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/.gitignore",
+        "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/README.md",
+        "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/fineweb_4096_bpe.model",
+        "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/fineweb_4096_bpe.vocab",
+        "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/scripts/build_sp4096.py",
+        "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/scripts/rebuild.sh",
+        "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/scripts/tokenizer_specs.sp4096.json",
+        "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1707,
+      "title": "Add SP10240 + FreqGPTQ + lowercase tokenization: 1.07399 BPB",
+      "author": "nothingLiva",
+      "state": "OPEN",
+      "created": "2026-04-17T23:43:27Z",
+      "updated": "2026-04-18T00:20:45Z",
+      "bpb": 1.07399,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + INT6 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/README.md",
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/submission.json",
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_gpt.py",
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_seed1337_log.txt",
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_seed2024_log.txt",
+        "records/track_10min_16mb/2026-04-11_FreqWeightedGPTQ_BPB1.0954/train_seed42_log.txt",
+        "records/track_10min_16mb/2026-04-17_LowercaseTokenization_107399BPB/README.md",
+        "records/track_10min_16mb/2026-04-17_LowercaseTokenization_107399BPB/submission.json",
+        "records/track_10min_16mb/2026-04-17_LowercaseTokenization_107399BPB/train_gpt.py",
+        "records/track_10min_16mb/2026-04-17_LowercaseTokenization_107399BPB/train_log_seed1337.txt",
+        "records/track_10min_16mb/2026-04-17_LowercaseTokenization_107399BPB/train_log_seed2024.txt",
+        "records/track_10min_16mb/2026-04-17_LowercaseTokenization_107399BPB/train_log_seed42.txt",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1706,
       "title": "Non-record: SP8192 + QK5.4 + Legal Score-First TTT(4) — val_bpb 1.08149 (seed 1337)",
@@ -42,9 +116,9 @@
       "number": 1705,
       "title": "Record: K_KVShare_Wider FLA — val_bpb 1.0339 (3-seed mean)",
       "author": "genji0306",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-17T22:59:15Z",
-      "updated": "2026-04-17T23:31:50Z",
+      "updated": "2026-04-18T00:20:42Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": null,
@@ -80,12 +154,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1704,
@@ -298,7 +371,7 @@
       "author": "arsenis-cmd",
       "state": "OPEN",
       "created": "2026-04-17T16:17:23Z",
-      "updated": "2026-04-17T16:17:23Z",
+      "updated": "2026-04-18T01:00:38Z",
       "bpb": 1.00995,
       "seeds": 3,
       "artifact_bytes": 16600916,
@@ -519,7 +592,7 @@
       "author": "joshEng1",
       "state": "OPEN",
       "created": "2026-04-17T09:12:41Z",
-      "updated": "2026-04-17T09:12:41Z",
+      "updated": "2026-04-18T02:15:03Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -528,7 +601,8 @@
         "records/track_non_record_16mb/2026-04-04_RandomMLPUpAdapterAblation/README.md",
         "records/track_non_record_16mb/2026-04-04_RandomMLPUpAdapterAblation/run.sh",
         "records/track_non_record_16mb/2026-04-04_RandomMLPUpAdapterAblation/submission.json",
-        "records/track_non_record_16mb/2026-04-04_RandomMLPUpAdapterAblation/train_gpt.py"
+        "records/track_non_record_16mb/2026-04-04_RandomMLPUpAdapterAblation/train_gpt.py",
+        "train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -22263,7 +22337,7 @@
       "author": "mradassaad",
       "state": "OPEN",
       "created": "2026-03-30T00:55:11Z",
-      "updated": "2026-04-17T19:21:25Z",
+      "updated": "2026-04-18T01:28:46Z",
       "bpb": 1.5633,
       "seeds": null,
       "artifact_bytes": 10892315,
