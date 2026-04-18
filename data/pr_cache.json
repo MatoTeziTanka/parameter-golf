@@ -1,7 +1,179 @@
 {
-  "last_fetch": "2026-04-18T02:42:49.995826+00:00",
-  "api_calls_used": 57,
+  "last_fetch": "2026-04-18T05:10:20.026333+00:00",
+  "api_calls_used": 58,
   "prs": [
+    {
+      "number": 1712,
+      "title": "Record: GatedDeltaNet FLA + Brotli (No TTT) — val_bpb 1.01902 (3-seed mean)",
+      "author": "aamodbhatt",
+      "state": "OPEN",
+      "created": "2026-04-18T04:15:15Z",
+      "updated": "2026-04-18T04:15:15Z",
+      "bpb": 1.0172,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_NoTTT/README.md",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_NoTTT/architectures.py",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_NoTTT/configs.py",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_NoTTT/requirements.txt",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_NoTTT/submission.json",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_NoTTT/train_gdn_7k.py",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_NoTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_NoTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_NoTTT/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_NoTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1711,
+      "title": "Record: GatedDeltaNet FLA + Score-First TTT + Brotli — val_bpb 1.00980 (3-seed mean)",
+      "author": "aamodbhatt",
+      "state": "OPEN",
+      "created": "2026-04-18T04:15:03Z",
+      "updated": "2026-04-18T04:15:03Z",
+      "bpb": 1.00803,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_ScoreFirstTTT/README.md",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_ScoreFirstTTT/architectures.py",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_ScoreFirstTTT/configs.py",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_ScoreFirstTTT/requirements.txt",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_ScoreFirstTTT/submission.json",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_ScoreFirstTTT/train_gdn_7k.py",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_ScoreFirstTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_ScoreFirstTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_ScoreFirstTTT/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-18_GDN_FLA_ScoreFirstTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1710,
+      "title": "submission: SFT — Random Feature Adapters (Learning adapters on rando…",
+      "author": "AVINASH0052",
+      "state": "OPEN",
+      "created": "2026-04-18T03:59:40Z",
+      "updated": "2026-04-18T04:29:09Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 13400000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-17_SFT_RandomFeatureAdapters/README.md",
+        "records/track_10min_16mb/2026-04-17_SFT_RandomFeatureAdapters/run_leaderboard_8xh100.sh",
+        "records/track_10min_16mb/2026-04-17_SFT_RandomFeatureAdapters/run_smoke_1gpu.sh",
+        "records/track_10min_16mb/2026-04-17_SFT_RandomFeatureAdapters/submission.json",
+        "records/track_10min_16mb/2026-04-17_SFT_RandomFeatureAdapters/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1709,
+      "title": "Non-record: XSA F.normalize fix + byte-shuffle/brotli + Muon WD as compression knob",
+      "author": "Bananakin1",
+      "state": "OPEN",
+      "created": "2026-04-18T03:01:16Z",
+      "updated": "2026-04-18T03:01:16Z",
+      "bpb": 1.1812,
+      "seeds": null,
+      "artifact_bytes": 15960000,
+      "technique_summary": "Muon + INT6",
+      "file_paths": [
+        ".gitignore",
+        "CLAUDE.md",
+        "LOCAL_LLM_SETUP.md",
+        "Modelfile",
+        "RESEARCH_JOURNAL.md",
+        "SETUP_PLAN.md",
+        "autoresearch/prepare_reference.py",
+        "autoresearch/program.md",
+        "autoresearch/program_original.md",
+        "autoresearch/train_reference.py",
+        "eval_postproc.py",
+        "experiments/r2/results.tsv",
+        "experiments/r2/results_summary.md",
+        "experiments/r3/exp10_vrl_bema_xsa11.py",
+        "experiments/r3/exp11_vrl_xsa11_noema.py",
+        "experiments/r3/exp12_ema_extended_qat.py",
+        "experiments/r3/exp13_wd_bigram_fix.py",
+        "experiments/r3/exp14_wd08_brotli.py",
+        "experiments/r3/exp15_qkgain5_mlp4x.py",
+        "experiments/r3/exp9_full_7000.py",
+        "experiments/r3/results_final.md",
+        "experiments/results_summary.txt",
+        "records/track_non_record_16mb/2026-04-17_WD_CompressionLever_ByteShuffleBrotli_XSANormalizeFix/README.md",
+        "records/track_non_record_16mb/2026-04-17_WD_CompressionLever_ByteShuffleBrotli_XSANormalizeFix/requirements.txt",
+        "records/track_non_record_16mb/2026-04-17_WD_CompressionLever_ByteShuffleBrotli_XSANormalizeFix/submission.json",
+        "records/track_non_record_16mb/2026-04-17_WD_CompressionLever_ByteShuffleBrotli_XSANormalizeFix/train_gpt.py",
+        "runpod_cli.sh",
+        "runpod_deploy.sh",
+        "runpodctl.tar.gz",
+        "train_gpt_3070.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1708,
       "title": "Add FineWeb SP4096 tokenizer package",
