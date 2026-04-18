@@ -1,7 +1,82 @@
 {
-  "last_fetch": "2026-04-18T17:06:29.875296+00:00",
-  "api_calls_used": 69,
+  "last_fetch": "2026-04-18T18:03:19.516529+00:00",
+  "api_calls_used": 70,
   "prs": [
+    {
+      "number": 1722,
+      "title": "Record: Trinity SLOT v3 + Pre-Quant TTT — val_bpb 0.65802 (3-seed mean)",
+      "author": "deborahnelson8788726",
+      "state": "OPEN",
+      "created": "2026-04-18T17:38:15Z",
+      "updated": "2026-04-18T17:38:15Z",
+      "bpb": 0.65604,
+      "seeds": 3,
+      "artifact_bytes": 15800000,
+      "technique_summary": "TTT + GPTQ + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/requirements.txt",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/submission.json",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_gpt.py",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_seed314_slot_v2.log",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_seeds_42_999_slot_v2.log",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_v3_3seeds.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1721,
+      "title": "WIP: FreqGPTQ + GatedDeltaNet + Adaptive Quantization",
+      "author": "OlesStankevych",
+      "state": "CLOSED",
+      "created": "2026-04-18T17:37:36Z",
+      "updated": "2026-04-18T17:39:38Z",
+      "bpb": 1.00995,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/README.md",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/architectures.py",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/configs.py",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/requirements.txt",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/submission.json",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/train_gdn_7k.py",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1720,
       "title": "Notable: SP8192 + 3-Layer Recurrence + Parallel Residuals - 5-Seed Quantization Reference and SDClip Ablations",
@@ -23451,7 +23526,7 @@
       "author": "serdardoesml",
       "state": "OPEN",
       "created": "2026-03-29T18:09:25Z",
-      "updated": "2026-04-12T13:07:13Z",
+      "updated": "2026-04-18T17:29:12Z",
       "bpb": 1.2542,
       "seeds": null,
       "artifact_bytes": 15982324,
@@ -46844,7 +46919,7 @@
       "author": "harborglowvintage-oss",
       "state": "OPEN",
       "created": "2026-03-22T18:19:48Z",
-      "updated": "2026-04-11T20:08:38Z",
+      "updated": "2026-04-18T18:00:57Z",
       "bpb": 1.14638,
       "seeds": 1337,
       "artifact_bytes": 15736555,
