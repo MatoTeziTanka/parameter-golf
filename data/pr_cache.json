@@ -1,7 +1,51 @@
 {
-  "last_fetch": "2026-04-18T11:08:18.354068+00:00",
-  "api_calls_used": 63,
+  "last_fetch": "2026-04-18T11:58:16.844896+00:00",
+  "api_calls_used": 64,
   "prs": [
+    {
+      "number": 1718,
+      "title": "Non-record: Eval-time lever ablations on SP8192 absolute-RoPE stack (companion to PR #1716)",
+      "author": "himanshudongre",
+      "state": "OPEN",
+      "created": "2026-04-18T11:47:34Z",
+      "updated": "2026-04-18T11:47:34Z",
+      "bpb": 1.07882,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-18_EvalTimeAblations_SP8192/README.md",
+        "records/track_non_record_16mb/2026-04-18_EvalTimeAblations_SP8192/adaptive_hadamard_gptq.py",
+        "records/track_non_record_16mb/2026-04-18_EvalTimeAblations_SP8192/kv_cache_chain.py",
+        "records/track_non_record_16mb/2026-04-18_EvalTimeAblations_SP8192/patches/ngram_cache_eval.py",
+        "records/track_non_record_16mb/2026-04-18_EvalTimeAblations_SP8192/patches/pack_submission.py",
+        "records/track_non_record_16mb/2026-04-18_EvalTimeAblations_SP8192/patches/patch_pathav3_inline.py",
+        "records/track_non_record_16mb/2026-04-18_EvalTimeAblations_SP8192/patches/patch_qat_v3.py",
+        "records/track_non_record_16mb/2026-04-18_EvalTimeAblations_SP8192/patches/patch_swa.py",
+        "records/track_non_record_16mb/2026-04-18_EvalTimeAblations_SP8192/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval",
+        "ngram_path",
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path",
+        "path:eval-cache-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 1717,
       "title": "[4090 Reproduction] Achieve 1.1249 val_bpb (Note: 18KB over limit)",
