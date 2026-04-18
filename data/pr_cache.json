@@ -1,14 +1,46 @@
 {
-  "last_fetch": "2026-04-18T18:03:19.516529+00:00",
-  "api_calls_used": 70,
+  "last_fetch": "2026-04-18T19:23:47.035599+00:00",
+  "api_calls_used": 71,
   "prs": [
+    {
+      "number": 1723,
+      "title": "Record: Nairi submission: 9L 512D vocab1024 - val_bpb 0.5384 (3-seed mean)",
+      "author": "SlavH",
+      "state": "OPEN",
+      "created": "2026-04-18T18:19:18Z",
+      "updated": "2026-04-18T19:21:31Z",
+      "bpb": null,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-17_Nairi_9L_512D_Vocab1024/README.md",
+        "records/track_10min_16mb/2026-04-17_Nairi_9L_512D_Vocab1024/submission.json",
+        "records/track_10min_16mb/2026-04-17_Nairi_9L_512D_Vocab1024/train_gpt.py",
+        "records/track_10min_16mb/2026-04-17_Nairi_9L_512D_Vocab1024/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1722,
       "title": "Record: Trinity SLOT v3 + Pre-Quant TTT — val_bpb 0.65802 (3-seed mean)",
       "author": "deborahnelson8788726",
       "state": "OPEN",
       "created": "2026-04-18T17:38:15Z",
-      "updated": "2026-04-18T17:38:15Z",
+      "updated": "2026-04-18T18:03:57Z",
       "bpb": 0.65604,
       "seeds": 3,
       "artifact_bytes": 15800000,
