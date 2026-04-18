@@ -1,7 +1,44 @@
 {
-  "last_fetch": "2026-04-18T15:07:01.760289+00:00",
-  "api_calls_used": 67,
+  "last_fetch": "2026-04-18T16:02:22.937881+00:00",
+  "api_calls_used": 68,
   "prs": [
+    {
+      "number": 1720,
+      "title": "Notable: SP8192 + 3-Layer Recurrence + Parallel Residuals - 5-Seed Quantization Reference and SDClip Ablations",
+      "author": "kiyoaki",
+      "state": "OPEN",
+      "created": "2026-04-18T15:51:09Z",
+      "updated": "2026-04-18T15:51:09Z",
+      "bpb": 0.01102,
+      "seeds": 5,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-19_SP8192_3LayerRecur_ParResid_QK525_NoTTT/README.md",
+        "records/track_10min_16mb/2026-04-19_SP8192_3LayerRecur_ParResid_QK525_NoTTT/submission.json",
+        "records/track_10min_16mb/2026-04-19_SP8192_3LayerRecur_ParResid_QK525_NoTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-19_SP8192_3LayerRecur_ParResid_QK525_NoTTT/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-19_SP8192_3LayerRecur_ParResid_QK525_NoTTT/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-19_SP8192_3LayerRecur_ParResid_QK525_NoTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-19_SP8192_3LayerRecur_ParResid_QK525_NoTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-19_SP8192_3LayerRecur_ParResid_QK525_NoTTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "NOTABLE",
+      "flags": [
+        "title-contains-notable"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1718,
       "title": "Non-record: Eval-time lever ablations on SP8192 absolute-RoPE stack (companion to PR #1716)",
