@@ -1,7 +1,79 @@
 {
-  "last_fetch": "2026-04-18T09:24:22.758922+00:00",
-  "api_calls_used": 61,
+  "last_fetch": "2026-04-18T10:08:14.496624+00:00",
+  "api_calls_used": 62,
   "prs": [
+    {
+      "number": 1716,
+      "title": "Record: SP8192 + BigramHash d=32 + Path A v3 passthrough quantization — val_bpb 1.07882 (3-seed mean)",
+      "author": "himanshudongre",
+      "state": "OPEN",
+      "created": "2026-04-18T09:33:06Z",
+      "updated": "2026-04-18T09:33:06Z",
+      "bpb": 1.081,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_SP8192_BigramHash32_PathAv3/README.md",
+        "records/track_10min_16mb/2026-04-18_SP8192_BigramHash32_PathAv3/submission.json",
+        "records/track_10min_16mb/2026-04-18_SP8192_BigramHash32_PathAv3/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_SP8192_BigramHash32_PathAv3/train_gpt_stacked_v2_fixed.py",
+        "records/track_10min_16mb/2026-04-18_SP8192_BigramHash32_PathAv3/train_seed314.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_BigramHash32_PathAv3/train_seed42.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_BigramHash32_PathAv3/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1715,
+      "title": "Record: QK-Gain 5.5 — val_bpb 1.0809 (3-seed mean)",
+      "author": "G3sparky",
+      "state": "OPEN",
+      "created": "2026-04-18T09:28:39Z",
+      "updated": "2026-04-18T09:32:15Z",
+      "bpb": 1.0809,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_QK525to55_DepthRecur_ParResid_SP8192_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-04-18_QK525to55_DepthRecur_ParResid_SP8192_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-04-18_QK525to55_DepthRecur_ParResid_SP8192_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_QK525to55_DepthRecur_ParResid_SP8192_LegalTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-18_QK525to55_DepthRecur_ParResid_SP8192_LegalTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-18_QK525to55_DepthRecur_ParResid_SP8192_LegalTTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1714,
       "title": "SP8192 + 3-Layer Recurrence + Parallel Residuals + QK-Gain 5.5 + SGD-TTT [LoRA-TTT Future Work]",
@@ -1979,11 +2051,11 @@
     },
     {
       "number": 1661,
-      "title": "Non-record: 11L DepthRec PolarNS SWA",
+      "title": "11L depth-rec polar-ns swa, pre-q bpb 1.1444",
       "author": "anderamondarainh-stack",
       "state": "OPEN",
       "created": "2026-04-16T06:52:37Z",
-      "updated": "2026-04-16T06:52:37Z",
+      "updated": "2026-04-18T10:07:57Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 15999891,
@@ -2001,7 +2073,7 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
-      "track": "non-record",
+      "track": "record",
       "technique_type": "neural",
       "technique_tags": [
         "neural"
