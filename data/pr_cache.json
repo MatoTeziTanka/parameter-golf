@@ -1,7 +1,45 @@
 {
-  "last_fetch": "2026-04-18T22:38:48.239708+00:00",
-  "api_calls_used": 75,
+  "last_fetch": "2026-04-18T23:38:56.971516+00:00",
+  "api_calls_used": 76,
   "prs": [
+    {
+      "number": 1726,
+      "title": "Non-record: Depth Recurrence Sweep — Systematic Layer Loop Ablation",
+      "author": "krishs0404",
+      "state": "OPEN",
+      "created": "2026-04-18T23:27:03Z",
+      "updated": "2026-04-18T23:27:03Z",
+      "bpb": 0.006,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-15_DepthRecurrenceSweep/README.md",
+        "records/track_non_record_16mb/2026-04-15_DepthRecurrenceSweep/baseline.txt",
+        "records/track_non_record_16mb/2026-04-15_DepthRecurrenceSweep/exp_a_minimal.txt",
+        "records/track_non_record_16mb/2026-04-15_DepthRecurrenceSweep/exp_b_heavy.txt",
+        "records/track_non_record_16mb/2026-04-15_DepthRecurrenceSweep/exp_c_late.txt",
+        "records/track_non_record_16mb/2026-04-15_DepthRecurrenceSweep/exp_d_early.txt",
+        "records/track_non_record_16mb/2026-04-15_DepthRecurrenceSweep/exp_e_early_act.txt",
+        "records/track_non_record_16mb/2026-04-15_DepthRecurrenceSweep/gptq_ablation.log",
+        "records/track_non_record_16mb/2026-04-15_DepthRecurrenceSweep/ref_1gpu.txt",
+        "records/track_non_record_16mb/2026-04-15_DepthRecurrenceSweep/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1725,
       "title": "Add near-SOTA SP8192 LegalTTT 3-seed reproduction",
@@ -30412,7 +30450,7 @@
       "author": "Meirzhan05",
       "state": "OPEN",
       "created": "2026-03-26T23:28:31Z",
-      "updated": "2026-04-14T17:20:45Z",
+      "updated": "2026-04-18T23:20:53Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 3000000,
@@ -30421,7 +30459,9 @@
         "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/README.md",
         "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/setup.sh",
         "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/submission.json",
-        "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/train_gpt.py"
+        "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_ImprovedSOTA/setup.sh",
+        "records/track_10min_16mb/2026-04-18_ImprovedSOTA/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
