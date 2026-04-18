@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-18T08:00:52.864879+00:00",
-  "api_calls_used": 60,
+  "last_fetch": "2026-04-18T09:24:22.758922+00:00",
+  "api_calls_used": 61,
   "prs": [
     {
       "number": 1714,
@@ -8,11 +8,11 @@
       "author": "Anakintano",
       "state": "OPEN",
       "created": "2026-04-18T08:00:51Z",
-      "updated": "2026-04-18T08:00:51Z",
-      "bpb": 1.0914,
+      "updated": "2026-04-18T08:34:42Z",
+      "bpb": 0.006,
       "seeds": 42,
       "artifact_bytes": 15970000,
-      "technique_summary": "TTT + LoRA + GPTQ + INT6 + INT8 + EMA",
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + INT8 + EMA",
       "file_paths": [
         "records/track_10min_16mb/2026-04-18_SP8192_3LRecur_ParResid_QK55_SGD-TTT_LoRaTTT-FW/README.md",
         "records/track_10min_16mb/2026-04-18_SP8192_3LRecur_ParResid_QK55_SGD-TTT_LoRaTTT-FW/train_gpt.py"
@@ -20,7 +20,8 @@
       "maintainer_comments": [],
       "compliance_keywords": [
         "ttt",
-        "gptq_eval"
+        "gptq_eval",
+        "leaky_relu"
       ],
       "track": "record",
       "technique_type": "ttt",
