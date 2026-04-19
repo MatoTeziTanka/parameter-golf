@@ -1,7 +1,152 @@
 {
-  "last_fetch": "2026-04-18T23:38:56.971516+00:00",
-  "api_calls_used": 76,
+  "last_fetch": "2026-04-19T03:17:39.607003+00:00",
+  "api_calls_used": 77,
   "prs": [
+    {
+      "number": 1730,
+      "title": "Add SP8192 QK4 legal TTT non-record entry (1.08449 BPB)",
+      "author": "N10ELabs",
+      "state": "OPEN",
+      "created": "2026-04-19T03:12:34Z",
+      "updated": "2026-04-19T03:16:42Z",
+      "bpb": 1.08449,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-19_SP8192_QK4_LegalTTT_8xH100_Reproduction/README.md",
+        "records/track_non_record_16mb/2026-04-19_SP8192_QK4_LegalTTT_8xH100_Reproduction/eval_legal_ttt_from_artifact.py",
+        "records/track_non_record_16mb/2026-04-19_SP8192_QK4_LegalTTT_8xH100_Reproduction/legal_ttt_seed1337.log",
+        "records/track_non_record_16mb/2026-04-19_SP8192_QK4_LegalTTT_8xH100_Reproduction/submission.json",
+        "records/track_non_record_16mb/2026-04-19_SP8192_QK4_LegalTTT_8xH100_Reproduction/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-19_SP8192_QK4_LegalTTT_8xH100_Reproduction/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1729,
+      "title": "Record: CaseOps Tokenizer + Tapered WD - val_bpb 1.0678 (3-seed mean)",
+      "author": "romeerp",
+      "state": "OPEN",
+      "created": "2026-04-19T02:12:48Z",
+      "updated": "2026-04-19T02:26:19Z",
+      "bpb": 1.0678,
+      "seeds": 3,
+      "artifact_bytes": 15940000,
+      "technique_summary": "TTT + Muon",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_PR1626_CaseOps_Taper/README.md",
+        "records/track_10min_16mb/2026-04-18_PR1626_CaseOps_Taper/cached_challenge_fineweb.py",
+        "records/track_10min_16mb/2026-04-18_PR1626_CaseOps_Taper/download_hf_docs_and_tokenize.py",
+        "records/track_10min_16mb/2026-04-18_PR1626_CaseOps_Taper/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-18_PR1626_CaseOps_Taper/requirements.txt",
+        "records/track_10min_16mb/2026-04-18_PR1626_CaseOps_Taper/submission.json",
+        "records/track_10min_16mb/2026-04-18_PR1626_CaseOps_Taper/tokenizer_specs_export_caseops_v1_reserved_only.json",
+        "records/track_10min_16mb/2026-04-18_PR1626_CaseOps_Taper/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_PR1626_CaseOps_Taper/train_seed0.log",
+        "records/track_10min_16mb/2026-04-18_PR1626_CaseOps_Taper/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-18_PR1626_CaseOps_Taper/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "cache_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1728,
+      "title": "Non-record: Neural Base Model, No TTT — Parcae + Gates + Layered Windows (val_bpb 1.07706)",
+      "author": "mikeapedia",
+      "state": "OPEN",
+      "created": "2026-04-19T01:22:49Z",
+      "updated": "2026-04-19T01:22:49Z",
+      "bpb": 1.07706,
+      "seeds": 1337,
+      "artifact_bytes": 15962729,
+      "technique_summary": "TTT + SSM + LoRA + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-18_NeuralBaseModel_NoTTT_ParcaeGates/README.md",
+        "records/track_non_record_16mb/2026-04-18_NeuralBaseModel_NoTTT_ParcaeGates/submission.json",
+        "records/track_non_record_16mb/2026-04-18_NeuralBaseModel_NoTTT_ParcaeGates/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1727,
+      "title": "Record: SP8192 MP-SGD TTT (4 phases) + QK-Gain 5.25 — val_bpb 1.07217 (3-seed mean)",
+      "author": "yahya010",
+      "state": "OPEN",
+      "created": "2026-04-18T23:55:57Z",
+      "updated": "2026-04-18T23:55:57Z",
+      "bpb": 1.07217,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + GPTQ + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/README.md",
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/submission.json",
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/train_seed0.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1726,
       "title": "Non-record: Depth Recurrence Sweep — Systematic Layer Loop Ablation",
@@ -2785,13 +2930,16 @@
       "author": "alexdwu13",
       "state": "OPEN",
       "created": "2026-04-15T21:32:27Z",
-      "updated": "2026-04-15T21:47:07Z",
+      "updated": "2026-04-19T02:43:03Z",
       "bpb": null,
       "seeds": null,
-      "artifact_bytes": null,
+      "artifact_bytes": 16000000,
       "technique_summary": "",
       "file_paths": [
-        "records/track_10min_16mb/working/train_gpt.py"
+        "pgolf.py",
+        "records/track_10min_16mb/working/results.tsv",
+        "records/track_10min_16mb/working/train_gpt.py",
+        "research_plan.md"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -2805,7 +2953,6 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -30450,7 +30597,7 @@
       "author": "Meirzhan05",
       "state": "OPEN",
       "created": "2026-03-26T23:28:31Z",
-      "updated": "2026-04-18T23:20:53Z",
+      "updated": "2026-04-19T03:12:36Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 3000000,
