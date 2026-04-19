@@ -1,14 +1,58 @@
 {
-  "last_fetch": "2026-04-19T13:08:38.533854+00:00",
-  "api_calls_used": 84,
+  "last_fetch": "2026-04-19T14:10:07.845802+00:00",
+  "api_calls_used": 85,
   "prs": [
+    {
+      "number": 1741,
+      "title": "Non-record: #1610 reproduction (Δ=+1.9e-5 BPB), n-gram posterior corrector negative result, quantized-eval-only path fix",
+      "author": "amrayach",
+      "state": "OPEN",
+      "created": "2026-04-19T13:20:57Z",
+      "updated": "2026-04-19T13:20:57Z",
+      "bpb": 1.129,
+      "seeds": 5,
+      "artifact_bytes": 15999394,
+      "technique_summary": "TTT + LoRA + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/README.md",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/ablation_1a.log",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/ablation_1b.log",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/ablation_1c.log",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/ablation_summary.json",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/provenance/commit_sha.txt",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/provenance/env_fingerprint.txt",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/provenance/hardware_info.txt",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/reproduction_summary.json",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/requirements.txt",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/submission.json",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-19_pr1610_reproduction_corrector_negative/train_seed0.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1740,
       "title": "Non-record: #1610 reproduction (Δ=+1.9e-5 BPB), n-gram posterior corrector negative result, quantized-eval-only path fix",
       "author": "amrayach",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-19T13:07:08Z",
-      "updated": "2026-04-19T13:07:08Z",
+      "updated": "2026-04-19T13:15:08Z",
       "bpb": 1.129,
       "seeds": 5,
       "artifact_bytes": 15999394,
@@ -76,9 +120,9 @@
         "cache"
       ],
       "technique_source": "text",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "body:ngram-body"
+        "closed-no-maintainer-comment"
       ],
       "confidence": "LOW"
     },
