@@ -1,14 +1,173 @@
 {
-  "last_fetch": "2026-04-19T03:17:39.607003+00:00",
-  "api_calls_used": 77,
+  "last_fetch": "2026-04-19T05:40:14.971102+00:00",
+  "api_calls_used": 78,
   "prs": [
     {
+      "number": 1734,
+      "title": "Record: GatedDeltaNet + Legal TTT + Brotli-11 — val_bpb 1.01080 (3-seed mean, VALID artifacts)",
+      "author": "yahya010",
+      "state": "CLOSED",
+      "created": "2026-04-19T05:00:42Z",
+      "updated": "2026-04-19T05:35:47Z",
+      "bpb": 1.0108,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-19_GatedDeltaNet_MacroPhase_Brotli_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-04-19_GatedDeltaNet_MacroPhase_Brotli_LegalTTT/architectures.py",
+        "records/track_10min_16mb/2026-04-19_GatedDeltaNet_MacroPhase_Brotli_LegalTTT/configs.py",
+        "records/track_10min_16mb/2026-04-19_GatedDeltaNet_MacroPhase_Brotli_LegalTTT/requirements.txt",
+        "records/track_10min_16mb/2026-04-19_GatedDeltaNet_MacroPhase_Brotli_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-04-19_GatedDeltaNet_MacroPhase_Brotli_LegalTTT/train_gdn_7k.py",
+        "records/track_10min_16mb/2026-04-19_GatedDeltaNet_MacroPhase_Brotli_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-19_GatedDeltaNet_MacroPhase_Brotli_LegalTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-19_GatedDeltaNet_MacroPhase_Brotli_LegalTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-19_GatedDeltaNet_MacroPhase_Brotli_LegalTTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1733,
+      "title": "Non-record: Ternary MLP Quantization — Void Fraction (val_bpb 1.3262, 10.9MB)",
+      "author": "G3sparky",
+      "state": "OPEN",
+      "created": "2026-04-19T04:59:01Z",
+      "updated": "2026-04-19T05:01:02Z",
+      "bpb": 1.3262,
+      "seeds": null,
+      "artifact_bytes": 10900000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-19_Ternary_MLP_GPTQ_VoidFraction_SP8192/README.md",
+        "records/track_10min_16mb/2026-04-19_Ternary_MLP_GPTQ_VoidFraction_SP8192/submission.json",
+        "records/track_10min_16mb/2026-04-19_Ternary_MLP_GPTQ_VoidFraction_SP8192/train_gpt.py",
+        "records/track_10min_16mb/2026-04-19_Ternary_MLP_GPTQ_VoidFraction_SP8192/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1732,
+      "title": "Record: SP8192 + Hadamard Rotation + AWQ + Layer-wise Precision + Hessian-Aware Calibration + Legal TTT — val_bpb 1.0785",
+      "author": "Victory963",
+      "state": "OPEN",
+      "created": "2026-04-19T03:38:30Z",
+      "updated": "2026-04-19T03:52:03Z",
+      "bpb": 1.0785,
+      "seeds": 3,
+      "artifact_bytes": 15980000,
+      "technique_summary": "TTT + Muon + INT6 + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/DEPLOYMENT.md",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/README.md",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/RUNPOD_QUICKSTART.md",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/collect_results.sh",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/deploy.sh",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/download_data.sh",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/requirements.txt",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/run_training.sh",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/setup_runpod.sh",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/submission.json",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/train_all_seeds.sh",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/train_gpt_sp8192_fusion.py",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/train_seed314.log",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/train_seed42.log",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/train_seed999.log",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/upload_to_github.sh"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "text",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1731,
+      "title": "Record: SP8192 + Hadamard Rotation + AWQ + Layer-wise Precision + Hessian-Aware Calibration + Legal TTT — val_bpb 1.0785 (3-seed mean)",
+      "author": "Victory963",
+      "state": "CLOSED",
+      "created": "2026-04-19T03:27:48Z",
+      "updated": "2026-04-19T03:30:29Z",
+      "bpb": 1.0785,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/README.md",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/submission.json",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/train_seed314.log",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/train_seed42.log",
+        "records/track_10min_16mb/2026-04-19_SP8192_QuantumFusionPlus_Hadamard_AWQ/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "text",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
       "number": 1730,
-      "title": "Add SP8192 QK4 legal TTT non-record entry (1.08449 BPB)",
+      "title": "Non-record: QK4 Legal TTT Reproduction (1.08449 BPB)",
       "author": "N10ELabs",
       "state": "OPEN",
       "created": "2026-04-19T03:12:34Z",
-      "updated": "2026-04-19T03:16:42Z",
+      "updated": "2026-04-19T03:21:27Z",
       "bpb": 1.08449,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -1158,7 +1317,7 @@
       "author": "arsenis-cmd",
       "state": "OPEN",
       "created": "2026-04-17T16:17:23Z",
-      "updated": "2026-04-18T05:40:08Z",
+      "updated": "2026-04-19T05:26:07Z",
       "bpb": 1.00995,
       "seeds": 3,
       "artifact_bytes": 16600916,
