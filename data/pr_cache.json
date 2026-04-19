@@ -1,7 +1,47 @@
 {
-  "last_fetch": "2026-04-19T09:50:59.594878+00:00",
-  "api_calls_used": 81,
+  "last_fetch": "2026-04-19T10:42:46.002508+00:00",
+  "api_calls_used": 82,
   "prs": [
+    {
+      "number": 1736,
+      "title": "Record: SP8192 + CaseOps + GatedAttn + QuantGate + Loop45 + PhasedTTT — val_bpb 1.06549",
+      "author": "dexhunter",
+      "state": "OPEN",
+      "created": "2026-04-19T09:55:58Z",
+      "updated": "2026-04-19T09:55:58Z",
+      "bpb": 0.0007,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-19_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT/README.md",
+        "records/track_10min_16mb/2026-04-19_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-19_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-19_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT/submission.json",
+        "records/track_10min_16mb/2026-04-19_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-19_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-19_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT/train_seed0.log",
+        "records/track_10min_16mb/2026-04-19_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-19_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
     {
       "number": 1735,
       "title": "Record: SP8192 + Parallel Pre-Quant TTT — val_bpb 1.0429 (3-seed mean)",
