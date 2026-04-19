@@ -1,7 +1,43 @@
 {
-  "last_fetch": "2026-04-19T07:24:40.212055+00:00",
-  "api_calls_used": 79,
+  "last_fetch": "2026-04-19T08:32:05.857161+00:00",
+  "api_calls_used": 80,
   "prs": [
+    {
+      "number": 1735,
+      "title": "Record: SP8192 + Parallel Pre-Quant TTT — val_bpb 1.0429 (3-seed mean)",
+      "author": "AjAnubolu",
+      "state": "OPEN",
+      "created": "2026-04-19T07:46:18Z",
+      "updated": "2026-04-19T07:46:18Z",
+      "bpb": 1.0429,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_SP8192_ParallelPreQuantTTT/README.md",
+        "records/track_10min_16mb/2026-04-18_SP8192_ParallelPreQuantTTT/submission.json",
+        "records/track_10min_16mb/2026-04-18_SP8192_ParallelPreQuantTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_SP8192_ParallelPreQuantTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_ParallelPreQuantTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_ParallelPreQuantTTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1734,
       "title": "Record: GatedDeltaNet + Legal TTT + Brotli-11 — val_bpb 1.01080 (3-seed mean, VALID artifacts)",
