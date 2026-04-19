@@ -1,7 +1,42 @@
 {
-  "last_fetch": "2026-04-19T14:10:07.845802+00:00",
-  "api_calls_used": 85,
+  "last_fetch": "2026-04-19T15:07:23.334986+00:00",
+  "api_calls_used": 86,
   "prs": [
+    {
+      "number": 1743,
+      "title": "WIP: FreqGPTQ + GatedDeltaNet + Adaptive Quantization",
+      "author": "OleStan",
+      "state": "OPEN",
+      "created": "2026-04-19T14:41:04Z",
+      "updated": "2026-04-19T14:42:17Z",
+      "bpb": 1.00995,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/README.md",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/architectures.py",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/configs.py",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/requirements.txt",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/submission.json",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/train_gdn_7k.py",
+        "records/track_10min_16mb/2026-04-18_FreqGPTQ_GatedDeltaNet_AdaptiveQuant/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1741,
       "title": "Non-record: #1610 reproduction (Δ=+1.9e-5 BPB), n-gram posterior corrector negative result, quantized-eval-only path fix",
@@ -291,7 +326,7 @@
       "author": "AjAnubolu",
       "state": "OPEN",
       "created": "2026-04-19T07:46:18Z",
-      "updated": "2026-04-19T07:46:18Z",
+      "updated": "2026-04-19T14:59:36Z",
       "bpb": 1.0429,
       "seeds": 3,
       "artifact_bytes": 16000000,
