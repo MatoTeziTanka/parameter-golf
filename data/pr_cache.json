@@ -1,7 +1,86 @@
 {
-  "last_fetch": "2026-04-20T15:53:21.269406+00:00",
-  "api_calls_used": 102,
+  "last_fetch": "2026-04-20T17:07:46.336179+00:00",
+  "api_calls_used": 103,
   "prs": [
+    {
+      "number": 1751,
+      "title": "Parallel-Residual+SwiGLU+11layer",
+      "author": "Pravin-dev06",
+      "state": "OPEN",
+      "created": "2026-04-20T16:59:00Z",
+      "updated": "2026-04-20T16:59:00Z",
+      "bpb": 1.2193,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "SwiGLU + INT8",
+      "file_paths": [
+        ".gitignore",
+        "final_model.int8.ptz",
+        "final_model.pt",
+        "logs/baseline_sp1024.txt",
+        "logs/baseline_sp1024_parallel-residuals.txt",
+        "logs/parallel_swiglu_1x4090.txt",
+        "logs/parallel_swiglu_qk2.5_h100.txt",
+        "logs/parallel_swiglu_qk2.5_num-layer-11_h100.txt",
+        "records/track_non_record_16mb/2026_04_20_SwiGLU_Parallel-Residual_1x4090/README.md",
+        "records/track_non_record_16mb/2026_04_20_SwiGLU_Parallel-Residual_1x4090/parallel_swiglu_1x4090.txt",
+        "records/track_non_record_16mb/2026_04_20_SwiGLU_Parallel-Residual_1x4090/parallel_swiglu_qk2.5_h100.txt",
+        "records/track_non_record_16mb/2026_04_20_SwiGLU_Parallel-Residual_1x4090/parallel_swiglu_qk2.5_num-layer-11_h100.txt",
+        "records/track_non_record_16mb/2026_04_20_SwiGLU_Parallel-Residual_1x4090/submission.json",
+        "records/track_non_record_16mb/2026_04_20_SwiGLU_Parallel-Residual_1x4090/train_gpt.py",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1750,
+      "title": "Add W104 SP8192 LegalTTT record candidate",
+      "author": "teslaeco",
+      "state": "OPEN",
+      "created": "2026-04-20T15:54:45Z",
+      "updated": "2026-04-20T16:43:47Z",
+      "bpb": 1.08089556,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-20_SP8192_LegalTTT_W104_RecordCandidate_1080896/README.md",
+        "records/track_10min_16mb/2026-04-20_SP8192_LegalTTT_W104_RecordCandidate_1080896/submission.json",
+        "records/track_10min_16mb/2026-04-20_SP8192_LegalTTT_W104_RecordCandidate_1080896/train_gpt.py",
+        "records/track_10min_16mb/2026-04-20_SP8192_LegalTTT_W104_RecordCandidate_1080896/train_seed314.log",
+        "records/track_10min_16mb/2026-04-20_SP8192_LegalTTT_W104_RecordCandidate_1080896/train_seed42.log",
+        "records/track_10min_16mb/2026-04-20_SP8192_LegalTTT_W104_RecordCandidate_1080896/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1749,
       "title": "GDN-Hybrid + Legal Score-First TTT + Full-Hessian GPTQ Int6",
@@ -8038,7 +8117,7 @@
       "author": "samacqua",
       "state": "OPEN",
       "created": "2026-04-11T00:21:22Z",
-      "updated": "2026-04-13T15:05:07Z",
+      "updated": "2026-04-20T15:56:44Z",
       "bpb": 1.07336,
       "seeds": 0,
       "artifact_bytes": 15990000,
