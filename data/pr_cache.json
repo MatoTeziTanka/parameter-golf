@@ -1,7 +1,75 @@
 {
-  "last_fetch": "2026-04-20T12:06:59.480610+00:00",
-  "api_calls_used": 100,
+  "last_fetch": "2026-04-20T14:19:15.142620+00:00",
+  "api_calls_used": 101,
   "prs": [
+    {
+      "number": 1749,
+      "title": "GDN-Hybrid + Legal Score-First TTT + Full-Hessian GPTQ Int6",
+      "author": "gracebml",
+      "state": "OPEN",
+      "created": "2026-04-20T13:24:13Z",
+      "updated": "2026-04-20T13:24:13Z",
+      "bpb": 4.1097,
+      "seeds": 42,
+      "artifact_bytes": 13931533,
+      "technique_summary": "TTT + SSM + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-20_GDN_Hybrid_ScoreFirst_TTT_HessianGPTQ_Int6/README.md",
+        "records/track_non_record_16mb/2026-04-20_GDN_Hybrid_ScoreFirst_TTT_HessianGPTQ_Int6/requirements.txt",
+        "records/track_non_record_16mb/2026-04-20_GDN_Hybrid_ScoreFirst_TTT_HessianGPTQ_Int6/submission.json",
+        "records/track_non_record_16mb/2026-04-20_GDN_Hybrid_ScoreFirst_TTT_HessianGPTQ_Int6/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-20_GDN_Hybrid_ScoreFirst_TTT_HessianGPTQ_Int6/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1748,
+      "title": "basic submission improving baseline",
+      "author": "elad-simbalista",
+      "state": "OPEN",
+      "created": "2026-04-20T12:28:30Z",
+      "updated": "2026-04-20T12:28:30Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-20_EMA_Muon_row_GPTQ/README.md",
+        "records/track_non_record_16mb/2026-04-20_EMA_Muon_row_GPTQ/submission.json",
+        "records/track_non_record_16mb/2026-04-20_EMA_Muon_row_GPTQ/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-20_EMA_Muon_row_GPTQ/train_log.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1747,
       "title": "Submission: SP8192 + Partial RoPE (16/64) + GPTQ SDClip + SGD TTT — val_bpb 1.0820 (3-seed mean)",
@@ -966,7 +1034,7 @@
       "author": "SlavH",
       "state": "OPEN",
       "created": "2026-04-18T18:19:18Z",
-      "updated": "2026-04-19T09:25:30Z",
+      "updated": "2026-04-20T14:02:27Z",
       "bpb": null,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -1983,17 +2051,18 @@
       "author": "X-Abhishek-X",
       "state": "OPEN",
       "created": "2026-04-17T12:00:44Z",
-      "updated": "2026-04-17T12:23:44Z",
+      "updated": "2026-04-20T12:52:04Z",
       "bpb": 1.0759,
       "seeds": 3,
       "artifact_bytes": 15698706,
       "technique_summary": "TTT + LoRA + GPTQ + INT6",
       "file_paths": [
-        "submission.json",
-        "train_gpt.py",
-        "train_seed1337.log",
-        "train_seed2024.log",
-        "train_seed42.log"
+        "records/track_10min_16mb/2026-04-17_Stage3_SpinQuant_MPSGDTTT_1.0759/README.md",
+        "records/track_10min_16mb/2026-04-17_Stage3_SpinQuant_MPSGDTTT_1.0759/submission.json",
+        "records/track_10min_16mb/2026-04-17_Stage3_SpinQuant_MPSGDTTT_1.0759/train_gpt.py",
+        "records/track_10min_16mb/2026-04-17_Stage3_SpinQuant_MPSGDTTT_1.0759/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-17_Stage3_SpinQuant_MPSGDTTT_1.0759/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-17_Stage3_SpinQuant_MPSGDTTT_1.0759/train_seed42.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
