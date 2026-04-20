@@ -1,7 +1,45 @@
 {
-  "last_fetch": "2026-04-20T00:02:43.618967+00:00",
-  "api_calls_used": 95,
+  "last_fetch": "2026-04-20T03:58:27.911295+00:00",
+  "api_calls_used": 96,
   "prs": [
+    {
+      "number": 1747,
+      "title": "Submission: SP8192 + Partial RoPE (16/64) + GPTQ SDClip + SGD TTT — val_bpb 1.0820 (3-seed mean)",
+      "author": "swapp1990",
+      "state": "OPEN",
+      "created": "2026-04-20T02:34:16Z",
+      "updated": "2026-04-20T02:34:16Z",
+      "bpb": 1.082,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_SP8192_11L_MLP4x_PartialRoPE16_GPTQ_SDClip_SGDTTT/README.md",
+        "records/track_10min_16mb/2026-04-18_SP8192_11L_MLP4x_PartialRoPE16_GPTQ_SDClip_SGDTTT/submission.json",
+        "records/track_10min_16mb/2026-04-18_SP8192_11L_MLP4x_PartialRoPE16_GPTQ_SDClip_SGDTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_SP8192_11L_MLP4x_PartialRoPE16_GPTQ_SDClip_SGDTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_11L_MLP4x_PartialRoPE16_GPTQ_SDClip_SGDTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_11L_MLP4x_PartialRoPE16_GPTQ_SDClip_SGDTTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1746,
       "title": "submission: Three-Layer Governance Probe + Cheap Gate v2 (Signs-of-Life)",
@@ -483,7 +521,7 @@
       "author": "AjAnubolu",
       "state": "OPEN",
       "created": "2026-04-19T07:46:18Z",
-      "updated": "2026-04-19T20:37:54Z",
+      "updated": "2026-04-20T03:42:50Z",
       "bpb": 1.0429,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -9239,7 +9277,7 @@
       "author": "G3sparky",
       "state": "OPEN",
       "created": "2026-04-09T07:52:14Z",
-      "updated": "2026-04-18T12:16:36Z",
+      "updated": "2026-04-20T02:52:28Z",
       "bpb": 1.122,
       "seeds": null,
       "artifact_bytes": 15900000,
