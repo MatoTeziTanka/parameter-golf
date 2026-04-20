@@ -1,18 +1,92 @@
 {
-  "last_fetch": "2026-04-20T21:12:03.135909+00:00",
-  "api_calls_used": 106,
+  "last_fetch": "2026-04-20T22:09:40.630525+00:00",
+  "api_calls_used": 107,
   "prs": [
     {
+      "number": 1755,
+      "title": "Record: SP8192 + 3-Layer Recurrence + Parallel Residuals + QK-Gain 5.25 + Legal TTT + CaseOps Tokenizer — val_bpb 1.07462 (3-seed mean)",
+      "author": "OE-GOD",
+      "state": "OPEN",
+      "created": "2026-04-20T22:08:24Z",
+      "updated": "2026-04-20T22:08:24Z",
+      "bpb": 1.07462,
+      "seeds": 3,
+      "artifact_bytes": 15991629,
+      "technique_summary": "TTT + LoRA + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-20_SP8192_3LayerRecur_ParResid_QK525_LegalTTT_CaseOps/README.md",
+        "records/track_10min_16mb/2026-04-20_SP8192_3LayerRecur_ParResid_QK525_LegalTTT_CaseOps/submission.json",
+        "records/track_10min_16mb/2026-04-20_SP8192_3LayerRecur_ParResid_QK525_LegalTTT_CaseOps/train_gpt.py",
+        "records/track_10min_16mb/2026-04-20_SP8192_3LayerRecur_ParResid_QK525_LegalTTT_CaseOps/train_seed314.log",
+        "records/track_10min_16mb/2026-04-20_SP8192_3LayerRecur_ParResid_QK525_LegalTTT_CaseOps/train_seed42.log",
+        "records/track_10min_16mb/2026-04-20_SP8192_3LayerRecur_ParResid_QK525_LegalTTT_CaseOps/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1754,
+      "title": "Add non-record submission: SP8192 baseline + LZMA code-wrap",
+      "author": "upascal",
+      "state": "OPEN",
+      "created": "2026-04-20T21:38:30Z",
+      "updated": "2026-04-20T21:38:30Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15988151,
+      "technique_summary": "TTT + GPTQ + INT6 + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-19_baseline_plus_lzma_codewrap/README.md",
+        "records/track_non_record_16mb/2026-04-19_baseline_plus_lzma_codewrap/submission.json",
+        "records/track_non_record_16mb/2026-04-19_baseline_plus_lzma_codewrap/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-19_baseline_plus_lzma_codewrap/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
       "number": 1753,
-      "title": "Non-record submission: Lottery Ticket Hypothesis with a few float parameters",
+      "title": "Non-record: Lottery Ticket Hypothesis with a few float parameters",
       "author": "Abhishek-Dalvi410",
       "state": "OPEN",
       "created": "2026-04-20T21:11:59Z",
-      "updated": "2026-04-20T21:11:59Z",
-      "bpb": null,
+      "updated": "2026-04-20T21:22:03Z",
+      "bpb": 1.2917,
       "seeds": null,
-      "artifact_bytes": null,
-      "technique_summary": "",
+      "artifact_bytes": 14845665,
+      "technique_summary": "INT8",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-20_Lottery-Ticket-Hypothesis/README.md",
         "records/track_non_record_16mb/2026-04-20_Lottery-Ticket-Hypothesis/submission.json",
@@ -29,9 +103,7 @@
       "technique_source": "text",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -41,7 +113,7 @@
       "author": "luccifer00",
       "state": "OPEN",
       "created": "2026-04-20T19:41:25Z",
-      "updated": "2026-04-20T19:41:25Z",
+      "updated": "2026-04-20T21:14:06Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -111,15 +183,15 @@
     },
     {
       "number": 1750,
-      "title": "Add W104 SP8192 LegalTTT record candidate",
+      "title": "Non-record: W104 SP8192 LegalTTT 3-seed replay, mean val_bpb 1.08089556",
       "author": "teslaeco",
       "state": "OPEN",
       "created": "2026-04-20T15:54:45Z",
-      "updated": "2026-04-20T16:43:47Z",
-      "bpb": 1.08089556,
-      "seeds": null,
+      "updated": "2026-04-20T21:13:28Z",
+      "bpb": null,
+      "seeds": 3,
       "artifact_bytes": null,
-      "technique_summary": "TTT",
+      "technique_summary": "",
       "file_paths": [
         "records/track_10min_16mb/2026-04-20_SP8192_LegalTTT_W104_RecordCandidate_1080896/README.md",
         "records/track_10min_16mb/2026-04-20_SP8192_LegalTTT_W104_RecordCandidate_1080896/submission.json",
@@ -129,10 +201,8 @@
         "records/track_10min_16mb/2026-04-20_SP8192_LegalTTT_W104_RecordCandidate_1080896/train_seed999.log"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [
-        "ttt"
-      ],
-      "track": "record",
+      "compliance_keywords": [],
+      "track": "non-record",
       "technique_type": "ttt",
       "technique_tags": [
         "ttt"
@@ -140,7 +210,7 @@
       "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown",
+        "no-bpb",
         "artifact-unknown"
       ],
       "confidence": "HIGH"
