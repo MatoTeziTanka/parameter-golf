@@ -1,7 +1,46 @@
 {
-  "last_fetch": "2026-04-20T22:09:40.630525+00:00",
-  "api_calls_used": 107,
+  "last_fetch": "2026-04-20T23:10:22.128003+00:00",
+  "api_calls_used": 108,
   "prs": [
+    {
+      "number": 1756,
+      "title": "Record: CaseOps Tokenizer + Recurrence Depth Curriculum + Base Arch Stack — val_bpb 1.06505",
+      "author": "romeerp",
+      "state": "OPEN",
+      "created": "2026-04-20T22:22:21Z",
+      "updated": "2026-04-20T22:32:39Z",
+      "bpb": 0.00043,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + LoRA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-20_SP8192_CaseOps_GatedAttn_QuantGate_Loop134_Curriculum_PhasedTTT/README.md",
+        "records/track_10min_16mb/2026-04-20_SP8192_CaseOps_GatedAttn_QuantGate_Loop134_Curriculum_PhasedTTT/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-20_SP8192_CaseOps_GatedAttn_QuantGate_Loop134_Curriculum_PhasedTTT/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-20_SP8192_CaseOps_GatedAttn_QuantGate_Loop134_Curriculum_PhasedTTT/submission.json",
+        "records/track_10min_16mb/2026-04-20_SP8192_CaseOps_GatedAttn_QuantGate_Loop134_Curriculum_PhasedTTT/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-20_SP8192_CaseOps_GatedAttn_QuantGate_Loop134_Curriculum_PhasedTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-20_SP8192_CaseOps_GatedAttn_QuantGate_Loop134_Curriculum_PhasedTTT/train_seed0.log",
+        "records/track_10min_16mb/2026-04-20_SP8192_CaseOps_GatedAttn_QuantGate_Loop134_Curriculum_PhasedTTT/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-20_SP8192_CaseOps_GatedAttn_QuantGate_Loop134_Curriculum_PhasedTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1755,
       "title": "Record: SP8192 + 3-Layer Recurrence + Parallel Residuals + QK-Gain 5.25 + Legal TTT + CaseOps Tokenizer — val_bpb 1.07462 (3-seed mean)",
@@ -1279,7 +1318,7 @@
       "author": "deborahnelson8788726",
       "state": "OPEN",
       "created": "2026-04-18T17:38:15Z",
-      "updated": "2026-04-20T18:26:39Z",
+      "updated": "2026-04-20T22:12:47Z",
       "bpb": 0.65604,
       "seeds": 3,
       "artifact_bytes": 15800000,
