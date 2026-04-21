@@ -1,7 +1,77 @@
 {
-  "last_fetch": "2026-04-21T15:17:17.161069+00:00",
-  "api_calls_used": 116,
+  "last_fetch": "2026-04-21T16:36:32.786150+00:00",
+  "api_calls_used": 117,
   "prs": [
+    {
+      "number": 1764,
+      "title": "Add non-record no-looping SOTA-stack submission scaffold",
+      "author": "gmn0105",
+      "state": "OPEN",
+      "created": "2026-04-21T15:32:05Z",
+      "updated": "2026-04-21T15:32:05Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-21_NoLooping_SOTAStack_5Shards_1xH100/README.md",
+        "records/track_non_record_16mb/2026-04-21_NoLooping_SOTAStack_5Shards_1xH100/requirements.txt",
+        "records/track_non_record_16mb/2026-04-21_NoLooping_SOTAStack_5Shards_1xH100/submission.json",
+        "records/track_non_record_16mb/2026-04-21_NoLooping_SOTAStack_5Shards_1xH100/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-21_NoLooping_SOTAStack_5Shards_1xH100/train_seed0.log",
+        "records/track_non_record_16mb/2026-04-21_NoLooping_SOTAStack_5Shards_1xH100/train_seed1337.log",
+        "records/track_non_record_16mb/2026-04-21_NoLooping_SOTAStack_5Shards_1xH100/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1763,
+      "title": "Add non-record SP8192 proxy-stack submission (3-seed)",
+      "author": "gmn0105",
+      "state": "OPEN",
+      "created": "2026-04-21T15:20:09Z",
+      "updated": "2026-04-21T15:20:09Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-21_SP8192_ProxyStack_5Shards_1xH100/README.md",
+        "records/track_non_record_16mb/2026-04-21_SP8192_ProxyStack_5Shards_1xH100/requirements.txt",
+        "records/track_non_record_16mb/2026-04-21_SP8192_ProxyStack_5Shards_1xH100/submission.json",
+        "records/track_non_record_16mb/2026-04-21_SP8192_ProxyStack_5Shards_1xH100/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-21_SP8192_ProxyStack_5Shards_1xH100/train_seed0.log",
+        "records/track_non_record_16mb/2026-04-21_SP8192_ProxyStack_5Shards_1xH100/train_seed1337.log",
+        "records/track_non_record_16mb/2026-04-21_SP8192_ProxyStack_5Shards_1xH100/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1762,
       "title": "Non-record: Mac mini M4 16GB, no H100s, still golfing (val_bpb=1.5200)",
@@ -4412,6 +4482,42 @@
         "path:ngram-path"
       ],
       "confidence": "MEDIUM"
+    },
+    {
+      "number": 1640,
+      "title": "[Non-record] Universal Transformer Depth Recurrence INT6",
+      "author": "thestbobo",
+      "state": "OPEN",
+      "created": "2026-04-15T10:59:46Z",
+      "updated": "2026-04-21T16:01:02Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + GPTQ + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-15_UniversalTransformer_DepthRecurrence_INT6/README.md",
+        "records/track_non_record_16mb/2026-04-15_UniversalTransformer_DepthRecurrence_INT6/requirements.txt",
+        "records/track_non_record_16mb/2026-04-15_UniversalTransformer_DepthRecurrence_INT6/submission.json",
+        "records/track_non_record_16mb/2026-04-15_UniversalTransformer_DepthRecurrence_INT6/train.log",
+        "records/track_non_record_16mb/2026-04-15_UniversalTransformer_DepthRecurrence_INT6/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
     },
     {
       "number": 1639,
