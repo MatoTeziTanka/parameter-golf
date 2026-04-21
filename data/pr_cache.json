@@ -1,7 +1,45 @@
 {
-  "last_fetch": "2026-04-21T21:53:15.903542+00:00",
-  "api_calls_used": 121,
+  "last_fetch": "2026-04-21T22:44:37.183266+00:00",
+  "api_calls_used": 122,
   "prs": [
+    {
+      "number": 1765,
+      "title": "Alpha-Scaled LoRA + Warm-start A + WD 1.0 — val_bpb 1.07266 (3-seed mean)",
+      "author": "renqianluo",
+      "state": "OPEN",
+      "created": "2026-04-21T22:22:51Z",
+      "updated": "2026-04-21T22:22:51Z",
+      "bpb": 1.07423,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-21_AlphaLoRA_WarmStart_HighWD_1.07266/README.md",
+        "records/track_10min_16mb/2026-04-21_AlphaLoRA_WarmStart_HighWD_1.07266/requirements.txt",
+        "records/track_10min_16mb/2026-04-21_AlphaLoRA_WarmStart_HighWD_1.07266/submission.json",
+        "records/track_10min_16mb/2026-04-21_AlphaLoRA_WarmStart_HighWD_1.07266/train_gpt.py",
+        "records/track_10min_16mb/2026-04-21_AlphaLoRA_WarmStart_HighWD_1.07266/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-21_AlphaLoRA_WarmStart_HighWD_1.07266/train_seed314.log",
+        "records/track_10min_16mb/2026-04-21_AlphaLoRA_WarmStart_HighWD_1.07266/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1764,
       "title": "Add non-record no-looping SOTA-stack submission scaffold",
@@ -9881,7 +9919,7 @@
       "author": "G3sparky",
       "state": "OPEN",
       "created": "2026-04-09T07:52:14Z",
-      "updated": "2026-04-20T02:52:28Z",
+      "updated": "2026-04-21T21:53:45Z",
       "bpb": 1.122,
       "seeds": null,
       "artifact_bytes": 15900000,
@@ -16068,9 +16106,9 @@
       "number": 1329,
       "title": "Record: Per-Sample SLOT + TTT + LR=0.024 + Stride=96 — val_bpb 0.63614 (3-seed mean)",
       "author": "renqianluo",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-04T07:35:11Z",
-      "updated": "2026-04-11T20:14:57Z",
+      "updated": "2026-04-21T22:30:14Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 15991012,
@@ -16095,11 +16133,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1328,
