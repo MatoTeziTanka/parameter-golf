@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-20T23:11:01Z",
+  "generated_at": "2026-04-21T00:07:38Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1674,
-    "matched_pr_count": 1245,
+    "pr_count": 1675,
+    "matched_pr_count": 1246,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -12,7 +12,7 @@
       "ALIVE": 278,
       "AT_RISK": 99,
       "DEAD": 483,
-      "INCOMPLETE": 804,
+      "INCOMPLETE": 805,
       "UNKNOWN": 0
     }
   },
@@ -47820,12 +47820,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 38,
-      "author_count": 26,
+      "count": 39,
+      "author_count": 27,
       "alive_count": 4,
       "dead_count": 6,
       "at_risk_count": 2,
-      "incomplete_count": 24,
+      "incomplete_count": 25,
       "unknown_count": 0,
       "best_alive": {
         "number": 1728,
@@ -48180,6 +48180,20 @@
               "status": "ALIVE",
               "bpb": 4.1097,
               "created": "2026-04-20T13:24:13Z"
+            }
+          ]
+        },
+        {
+          "author": "aiejvn",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1757,
+              "author": "aiejvn",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-20T23:26:14Z"
             }
           ]
         },
@@ -48548,6 +48562,13 @@
           "status": "ALIVE",
           "bpb": 4.1097,
           "created": "2026-04-20T13:24:13Z"
+        },
+        {
+          "number": 1757,
+          "author": "aiejvn",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-20T23:26:14Z"
         }
       ]
     },
@@ -110547,12 +110568,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 38,
-      "author_count": 26,
+      "count": 39,
+      "author_count": 27,
       "alive_count": 4,
       "dead_count": 6,
       "at_risk_count": 2,
-      "incomplete_count": 24,
+      "incomplete_count": 25,
       "unknown_count": 0,
       "best_alive": {
         "number": 1728,
@@ -110907,6 +110928,20 @@
               "status": "ALIVE",
               "bpb": 4.1097,
               "created": "2026-04-20T13:24:13Z"
+            }
+          ]
+        },
+        {
+          "author": "aiejvn",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 1757,
+              "author": "aiejvn",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-04-20T23:26:14Z"
             }
           ]
         },
@@ -111275,6 +111310,13 @@
           "status": "ALIVE",
           "bpb": 4.1097,
           "created": "2026-04-20T13:24:13Z"
+        },
+        {
+          "number": 1757,
+          "author": "aiejvn",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-04-20T23:26:14Z"
         }
       ]
     },
@@ -113714,28 +113756,28 @@
       "left": "LeakyReLU\u00b2",
       "right": "SSM/Mamba/S4D",
       "left_count": 108,
-      "right_count": 38,
+      "right_count": 39,
       "left_people": 84,
-      "right_people": 26,
-      "score": 4104
+      "right_people": 27,
+      "score": 4212
     },
     {
       "left": "BigramHash",
       "right": "SSM/Mamba/S4D",
       "left_count": 91,
-      "right_count": 38,
+      "right_count": 39,
       "left_people": 79,
-      "right_people": 26,
-      "score": 3458
+      "right_people": 27,
+      "score": 3549
     },
     {
       "left": "SWA",
       "right": "SSM/Mamba/S4D",
       "left_count": 83,
-      "right_count": 38,
+      "right_count": 39,
       "left_people": 70,
-      "right_people": 26,
-      "score": 3154
+      "right_people": 27,
+      "score": 3237
     },
     {
       "left": "QAT",
@@ -113774,6 +113816,15 @@
       "score": 2436
     },
     {
+      "left": "SwiGLU",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 59,
+      "right_count": 39,
+      "left_people": 49,
+      "right_people": 27,
+      "score": 2301
+    },
+    {
       "left": "BigramHash",
       "right": "JEPA",
       "left_count": 91,
@@ -113790,15 +113841,6 @@
       "left_people": 84,
       "right_people": 17,
       "score": 2268
-    },
-    {
-      "left": "SwiGLU",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 59,
-      "right_count": 38,
-      "left_people": 49,
-      "right_people": 26,
-      "score": 2242
     },
     {
       "left": "XSA",
@@ -113936,6 +113978,15 @@
       "score": 948
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Parallel Muon",
+      "left_count": 39,
+      "right_count": 23,
+      "left_people": 27,
+      "right_people": 13,
+      "score": 897
+    },
+    {
       "left": "GPTQ",
       "right": "Differential Attention",
       "left_count": 446,
@@ -113952,15 +114003,6 @@
       "left_people": 209,
       "right_people": 2,
       "score": 892
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Parallel Muon",
-      "left_count": 38,
-      "right_count": 23,
-      "left_people": 26,
-      "right_people": 13,
-      "score": 874
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -114172,29 +114214,29 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Weight Sharing",
-      "left_count": 38,
+      "left_count": 39,
       "right_count": 8,
-      "left_people": 26,
+      "left_people": 27,
       "right_people": 5,
-      "score": 304
+      "score": 312
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "Value Residual",
-      "left_count": 38,
+      "left_count": 39,
       "right_count": 7,
-      "left_people": 26,
+      "left_people": 27,
       "right_people": 6,
-      "score": 266
+      "score": 273
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "Progressive Depth",
-      "left_count": 38,
+      "left_count": 39,
       "right_count": 7,
-      "left_people": 26,
+      "left_people": 27,
       "right_people": 3,
-      "score": 266
+      "score": 273
     },
     {
       "left": "QAT",
@@ -114424,20 +114466,20 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Differential Attention",
-      "left_count": 38,
+      "left_count": 39,
       "right_count": 2,
-      "left_people": 26,
+      "left_people": 27,
       "right_people": 2,
-      "score": 76
+      "score": 78
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "U-Net skips",
-      "left_count": 38,
+      "left_count": 39,
       "right_count": 2,
-      "left_people": 26,
+      "left_people": 27,
       "right_people": 2,
-      "score": 76
+      "score": 78
     },
     {
       "left": "SwiGLU",
@@ -114532,11 +114574,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Flash Attention",
-      "left_count": 38,
+      "left_count": 39,
       "right_count": 1,
-      "left_people": 26,
+      "left_people": 27,
       "right_people": 1,
-      "score": 38
+      "score": 39
     },
     {
       "left": "Ternary Weights",
