@@ -1,20 +1,55 @@
 {
-  "last_fetch": "2026-04-21T03:51:59.894646+00:00",
-  "api_calls_used": 110,
+  "last_fetch": "2026-04-21T06:04:34.782179+00:00",
+  "api_calls_used": 111,
   "prs": [
+    {
+      "number": 1759,
+      "title": "Non-record: SP8192 + LoRA on tied embedding (1.07994, 1 seed)",
+      "author": "yijieyuan",
+      "state": "OPEN",
+      "created": "2026-04-21T05:21:33Z",
+      "updated": "2026-04-21T05:21:33Z",
+      "bpb": 0.00085,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "LoRA + GPTQ + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-21_LoRA_Embedding/README.md",
+        "records/track_non_record_16mb/2026-04-21_LoRA_Embedding/submission.json",
+        "records/track_non_record_16mb/2026-04-21_LoRA_Embedding/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-21_LoRA_Embedding/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1758,
       "title": "Record: PR #1738 + PreQuant TTT LR=1e-3 + Unfrozen — val_bpb 1.02767 (3-seed mean)",
       "author": "kilojoules",
       "state": "OPEN",
       "created": "2026-04-21T03:26:24Z",
-      "updated": "2026-04-21T03:43:20Z",
+      "updated": "2026-04-21T03:52:59Z",
       "bpb": 1.02939,
       "seeds": 3,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + GPTQ",
       "file_paths": [
         "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/README.md",
+        "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/figs/freeze_sweep.png",
+        "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/figs/ttt_convergence.png",
         "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/submission.json",
         "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/train_gpt.py",
         "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/train_seed43.log",
@@ -74,7 +109,7 @@
       "author": "romeerp",
       "state": "OPEN",
       "created": "2026-04-20T22:22:21Z",
-      "updated": "2026-04-20T22:32:39Z",
+      "updated": "2026-04-21T04:01:40Z",
       "bpb": 0.00043,
       "seeds": 3,
       "artifact_bytes": null,
@@ -867,7 +902,7 @@
       "author": "dexhunter",
       "state": "OPEN",
       "created": "2026-04-19T09:55:58Z",
-      "updated": "2026-04-19T09:55:58Z",
+      "updated": "2026-04-21T03:52:16Z",
       "bpb": 0.0007,
       "seeds": 3,
       "artifact_bytes": 16000000,
