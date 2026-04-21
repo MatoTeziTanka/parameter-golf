@@ -1,7 +1,41 @@
 {
-  "last_fetch": "2026-04-21T00:06:51.219157+00:00",
-  "api_calls_used": 109,
+  "last_fetch": "2026-04-21T03:51:59.894646+00:00",
+  "api_calls_used": 110,
   "prs": [
+    {
+      "number": 1758,
+      "title": "Record: PR #1738 + PreQuant TTT LR=1e-3 + Unfrozen — val_bpb 1.02767 (3-seed mean)",
+      "author": "kilojoules",
+      "state": "OPEN",
+      "created": "2026-04-21T03:26:24Z",
+      "updated": "2026-04-21T03:43:20Z",
+      "bpb": 1.02939,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/README.md",
+        "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/submission.json",
+        "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/train_gpt.py",
+        "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/train_seed43.log",
+        "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/train_seed44.log",
+        "records/track_10min_16mb/2026-04-20_SP8192_PreQuantTTT_Unfrozen_LR1e3/train_seed45.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1757,
       "title": "[Non-record] H-Net MAMBA Outer-Layer Ablation: OL2 collapses, OL1 converges to 1.5194 INT6 BPB",
@@ -57945,7 +57979,7 @@
       "author": "GMaN1911",
       "state": "OPEN",
       "created": "2026-03-20T05:12:18Z",
-      "updated": "2026-04-11T20:11:15Z",
+      "updated": "2026-04-21T01:53:09Z",
       "bpb": 1.1812,
       "seeds": null,
       "artifact_bytes": 16000000,
