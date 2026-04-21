@@ -1,7 +1,41 @@
 {
-  "last_fetch": "2026-04-21T08:17:56.066350+00:00",
-  "api_calls_used": 112,
+  "last_fetch": "2026-04-21T10:00:51.600703+00:00",
+  "api_calls_used": 113,
   "prs": [
+    {
+      "number": 1760,
+      "title": "Non-record: SP8192 + dim=464 + Pre-Quantization TTT + Brotli (1.1863 BPB)",
+      "author": "BrandtChristian",
+      "state": "OPEN",
+      "created": "2026-04-21T09:07:58Z",
+      "updated": "2026-04-21T09:07:59Z",
+      "bpb": 1.1863,
+      "seeds": null,
+      "artifact_bytes": 15915528,
+      "technique_summary": "TTT + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-21_SP8192_dim464_PreqTTT_brotli/README.md",
+        "records/track_non_record_16mb/2026-04-21_SP8192_dim464_PreqTTT_brotli/submission.json",
+        "records/track_non_record_16mb/2026-04-21_SP8192_dim464_PreqTTT_brotli/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-21_SP8192_dim464_PreqTTT_brotli/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1759,
       "title": "Non-record: SP8192 + LoRA on tied embedding (1.07994, 1 seed)",
