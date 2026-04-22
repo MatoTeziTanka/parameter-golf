@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-22T17:05:42.908467+00:00",
-  "api_calls_used": 132,
+  "last_fetch": "2026-04-22T18:39:02.150898+00:00",
+  "api_calls_used": 133,
   "prs": [
     {
       "number": 1776,
@@ -291,11 +291,11 @@
     },
     {
       "number": 1767,
-      "title": "Alpha=144 LoRA + Warm-start A + WD 1.0 — val_bpb 1.07209 (3-seed mean)",
+      "title": "Record: Alpha=144 LoRA + Warm-start A + WD 1.0 — val_bpb 1.07209 (3-seed mean)",
       "author": "renqianluo",
       "state": "OPEN",
       "created": "2026-04-22T01:40:27Z",
-      "updated": "2026-04-22T01:40:27Z",
+      "updated": "2026-04-22T18:17:14Z",
       "bpb": 1.07423,
       "seeds": 2,
       "artifact_bytes": 15940000,
@@ -366,11 +366,11 @@
     },
     {
       "number": 1765,
-      "title": "Alpha-Scaled LoRA + Warm-start A + WD 1.0 — val_bpb 1.07266 (3-seed mean)",
+      "title": "Record: Alpha-Scaled LoRA + Warm-start A + WD 1.0 — val_bpb 1.07266 (3-seed mean)",
       "author": "renqianluo",
       "state": "OPEN",
       "created": "2026-04-21T22:22:51Z",
-      "updated": "2026-04-21T22:22:51Z",
+      "updated": "2026-04-22T18:17:26Z",
       "bpb": 1.07423,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -11657,7 +11657,7 @@
       "author": "viasky657",
       "state": "OPEN",
       "created": "2026-04-08T02:12:10Z",
-      "updated": "2026-04-22T17:00:16Z",
+      "updated": "2026-04-22T17:20:17Z",
       "bpb": 0.4118,
       "seeds": null,
       "artifact_bytes": null,
@@ -12799,9 +12799,9 @@
       "number": 1430,
       "title": "Record: Per-Sample SLOT + N-gram Order-22 + TTT + LR=0.432 — val_bpb 0.39642 (3-seed mean)",
       "author": "renqianluo",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-07T02:53:34Z",
-      "updated": "2026-04-11T20:14:47Z",
+      "updated": "2026-04-22T18:18:23Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -12830,12 +12830,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "body:ngram-body",
-        "path:ngram-path"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "MEDIUM"
+      "confidence": "LOW"
     },
     {
       "number": 1429,
