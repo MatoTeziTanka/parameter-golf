@@ -1,7 +1,81 @@
 {
-  "last_fetch": "2026-04-22T02:51:36.532069+00:00",
-  "api_calls_used": 124,
+  "last_fetch": "2026-04-22T05:29:13.915456+00:00",
+  "api_calls_used": 125,
   "prs": [
+    {
+      "number": 1769,
+      "title": "Record: SP8192 CaseOps stack retune (MLP clip 10→12) → 1.06453",
+      "author": "dexhunter",
+      "state": "OPEN",
+      "created": "2026-04-22T03:36:07Z",
+      "updated": "2026-04-22T03:36:07Z",
+      "bpb": 1.06453,
+      "seeds": 5,
+      "artifact_bytes": 20818,
+      "technique_summary": "TTT + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/README.md",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/submission.json",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_gpt.py",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_seed1.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_seed314.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_seed777.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1768,
+      "title": "Add non-record 16MB SP1024 ShareVLast3 3-seed submission",
+      "author": "lkk688",
+      "state": "OPEN",
+      "created": "2026-04-22T03:03:14Z",
+      "updated": "2026-04-22T03:03:14Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/README.md",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/config.json",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/requirements.txt",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/seed_runs.csv",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/submission.json",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/train.log",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1767,
       "title": "Alpha=144 LoRA + Warm-start A + WD 1.0 — val_bpb 1.07209 (3-seed mean)",
@@ -32023,39 +32097,39 @@
     },
     {
       "number": 910,
-      "title": "2L QAT Int4-MLP + Int6-Attn",
+      "title": "12L QAT Int4-MLP + Int6-Attn (Non-record)",
       "author": "Meirzhan05",
       "state": "OPEN",
       "created": "2026-03-26T23:28:31Z",
-      "updated": "2026-04-19T03:12:36Z",
-      "bpb": null,
-      "seeds": null,
+      "updated": "2026-04-22T04:19:47Z",
+      "bpb": 0.069,
+      "seeds": 3,
       "artifact_bytes": 3000000,
-      "technique_summary": "GPTQ + INT6",
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA",
       "file_paths": [
         "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/README.md",
         "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/setup.sh",
         "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/submission.json",
-        "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/train_gpt.py",
-        "records/track_10min_16mb/2026-04-18_ImprovedSOTA/setup.sh",
-        "records/track_10min_16mb/2026-04-18_ImprovedSOTA/train_gpt.py"
+        "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
-        "gptq_eval"
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
       ],
-      "track": "record",
-      "technique_type": "neural",
+      "track": "non-record",
+      "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "AT_RISK",
       "flags": [
-        "no-bpb",
-        "seeds-unknown"
+        "suspiciously-low-bpb"
       ],
-      "confidence": "HIGH"
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
     },
     {
       "number": 909,
