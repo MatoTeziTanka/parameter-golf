@@ -1,7 +1,77 @@
 {
-  "last_fetch": "2026-04-22T10:48:04.992924+00:00",
-  "api_calls_used": 128,
+  "last_fetch": "2026-04-22T12:00:06.959734+00:00",
+  "api_calls_used": 129,
   "prs": [
+    {
+      "number": 1773,
+      "title": "Non-record: SDClip-matched FakeQuantize — reduces quant degradation from +0.17 to +0.044",
+      "author": "Amanbig",
+      "state": "OPEN",
+      "created": "2026-04-22T11:45:55Z",
+      "updated": "2026-04-22T11:45:55Z",
+      "bpb": 1.1387,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-18_Amanbig_v11_sdclip_fakequant/README.md",
+        "records/track_10min_16mb/2026-04-18_Amanbig_v11_sdclip_fakequant/requirements.txt",
+        "records/track_10min_16mb/2026-04-18_Amanbig_v11_sdclip_fakequant/submission.json",
+        "records/track_10min_16mb/2026-04-18_Amanbig_v11_sdclip_fakequant/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_Amanbig_v11_sdclip_fakequant/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1771,
+      "title": "Record: SP8192 CaseOps + V13 Curriculum + SmearGate + LoRA-TTT — val_bpb 1.06513 (3-seed mean)",
+      "author": "bigbag",
+      "state": "OPEN",
+      "created": "2026-04-22T11:08:50Z",
+      "updated": "2026-04-22T11:08:59Z",
+      "bpb": 1.06513,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_V13_L2_LoRA_TTT/README.md",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_V13_L2_LoRA_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_V13_L2_LoRA_TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_V13_L2_LoRA_TTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_V13_L2_LoRA_TTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_V13_L2_LoRA_TTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1770,
       "title": "Record: SP8192 + 3-Layer Recurrence + Parallel Residuals + QK-Gain 5.25 + Legal TTT + V-Gated — val_bpb 1.0796 (3-seed mean)",
