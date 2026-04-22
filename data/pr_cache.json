@@ -1,14 +1,93 @@
 {
-  "last_fetch": "2026-04-22T14:04:18.412602+00:00",
-  "api_calls_used": 130,
+  "last_fetch": "2026-04-22T15:51:10.959395+00:00",
+  "api_calls_used": 131,
   "prs": [
+    {
+      "number": 1776,
+      "title": "Record: SP8192 ParResid 3LayerLoop QK5.25 LegalTTT — 1.08083 BPB",
+      "author": "anmarhindi",
+      "state": "OPEN",
+      "created": "2026-04-22T14:59:39Z",
+      "updated": "2026-04-22T14:59:39Z",
+      "bpb": 1.08083,
+      "seeds": 3,
+      "artifact_bytes": 15970000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-22_SP8192_ParResid_3LayerLoop_QK525_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-04-22_SP8192_ParResid_3LayerLoop_QK525_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-04-22_SP8192_ParResid_3LayerLoop_QK525_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-22_SP8192_ParResid_3LayerLoop_QK525_LegalTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_ParResid_3LayerLoop_QK525_LegalTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_ParResid_3LayerLoop_QK525_LegalTTT/train_seed7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1775,
+      "title": "Record: SP8192 + No Gates + Multi-Phase Global SGD TTT — val_bpb 1.07285 (3-seed mean)",
+      "author": "dentity007",
+      "state": "OPEN",
+      "created": "2026-04-22T14:24:23Z",
+      "updated": "2026-04-22T14:24:23Z",
+      "bpb": 0.0028,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + LoRA + N-gram",
+      "file_paths": [
+        "APPROACH.md",
+        "records/track_10min_16mb/2026-04-22_SP8192_NoGates_MPSGD_3phase_1.0729/README.md",
+        "records/track_10min_16mb/2026-04-22_SP8192_NoGates_MPSGD_3phase_1.0729/submission.json",
+        "records/track_10min_16mb/2026-04-22_SP8192_NoGates_MPSGD_3phase_1.0729/train_gpt.py",
+        "records/track_10min_16mb/2026-04-22_SP8192_NoGates_MPSGD_3phase_1.0729/train_seed0.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_NoGates_MPSGD_3phase_1.0729/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_NoGates_MPSGD_3phase_1.0729/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1774,
       "title": "Record: 12L Shared-Specific Attention (d=16) + MLP 4.5x (3-seed mean val_bpb 1.0981)",
       "author": "aruniyer",
       "state": "OPEN",
       "created": "2026-04-22T13:45:13Z",
-      "updated": "2026-04-22T14:01:59Z",
+      "updated": "2026-04-22T15:04:55Z",
       "bpb": 1.0981,
       "seeds": 3,
       "artifact_bytes": 15990000,
