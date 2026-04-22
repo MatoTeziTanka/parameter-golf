@@ -1,7 +1,46 @@
 {
-  "last_fetch": "2026-04-22T20:06:40.382936+00:00",
-  "api_calls_used": 134,
+  "last_fetch": "2026-04-22T21:26:53.105032+00:00",
+  "api_calls_used": 135,
   "prs": [
+    {
+      "number": 1779,
+      "title": "Record: SP8192 + CaseOps + Gated Attention + Quant Gate + Loop4-5 + Phased TTT + Frozen Recurrent Alpha — val_bpb 1.06421",
+      "author": "leon2k2k2k",
+      "state": "OPEN",
+      "created": "2026-04-22T21:10:14Z",
+      "updated": "2026-04-22T21:12:33Z",
+      "bpb": 1.06421,
+      "seeds": 3,
+      "artifact_bytes": 15980000,
+      "technique_summary": "TTT + LoRA + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_RecurAlpha/README.md",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_RecurAlpha/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_RecurAlpha/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_RecurAlpha/submission.json",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_RecurAlpha/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_RecurAlpha/train_gpt.py",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_RecurAlpha/train_seed1.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_RecurAlpha/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_RecurAlpha/train_seed777.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1778,
       "title": "[Non record] Mercury in Retrograde - text diffusion model",
