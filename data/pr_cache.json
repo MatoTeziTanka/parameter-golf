@@ -1,7 +1,82 @@
 {
-  "last_fetch": "2026-04-21T23:38:07.168554+00:00",
-  "api_calls_used": 123,
+  "last_fetch": "2026-04-22T02:51:36.532069+00:00",
+  "api_calls_used": 124,
   "prs": [
+    {
+      "number": 1767,
+      "title": "Alpha=144 LoRA + Warm-start A + WD 1.0 — val_bpb 1.07209 (3-seed mean)",
+      "author": "renqianluo",
+      "state": "OPEN",
+      "created": "2026-04-22T01:40:27Z",
+      "updated": "2026-04-22T01:40:27Z",
+      "bpb": 1.07423,
+      "seeds": 2,
+      "artifact_bytes": 15940000,
+      "technique_summary": "TTT + LoRA + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-22_AlphaLoRA144_WarmStart_WD1_1.07209/README.md",
+        "records/track_10min_16mb/2026-04-22_AlphaLoRA144_WarmStart_WD1_1.07209/requirements.txt",
+        "records/track_10min_16mb/2026-04-22_AlphaLoRA144_WarmStart_WD1_1.07209/submission.json",
+        "records/track_10min_16mb/2026-04-22_AlphaLoRA144_WarmStart_WD1_1.07209/train_gpt.py",
+        "records/track_10min_16mb/2026-04-22_AlphaLoRA144_WarmStart_WD1_1.07209/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-22_AlphaLoRA144_WarmStart_WD1_1.07209/train_seed314.log",
+        "records/track_10min_16mb/2026-04-22_AlphaLoRA144_WarmStart_WD1_1.07209/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1766,
+      "title": "SP8192 + CaseOps + Loop345 + Recur-Alpha + PhasedTTT",
+      "author": "tashapais",
+      "state": "OPEN",
+      "created": "2026-04-22T00:15:01Z",
+      "updated": "2026-04-22T00:15:01Z",
+      "bpb": null,
+      "seeds": 42,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-21_SP8192_CaseOps_GatedAttn_QuantGate_Loop345_RecurAlpha_PhasedTTT/README.md",
+        "records/track_10min_16mb/2026-04-21_SP8192_CaseOps_GatedAttn_QuantGate_Loop345_RecurAlpha_PhasedTTT/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-21_SP8192_CaseOps_GatedAttn_QuantGate_Loop345_RecurAlpha_PhasedTTT/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-21_SP8192_CaseOps_GatedAttn_QuantGate_Loop345_RecurAlpha_PhasedTTT/submission.json",
+        "records/track_10min_16mb/2026-04-21_SP8192_CaseOps_GatedAttn_QuantGate_Loop345_RecurAlpha_PhasedTTT/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-21_SP8192_CaseOps_GatedAttn_QuantGate_Loop345_RecurAlpha_PhasedTTT/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1765,
       "title": "Alpha-Scaled LoRA + Warm-start A + WD 1.0 — val_bpb 1.07266 (3-seed mean)",
@@ -1195,7 +1270,7 @@
       "author": "G3sparky",
       "state": "OPEN",
       "created": "2026-04-19T04:59:01Z",
-      "updated": "2026-04-19T12:42:27Z",
+      "updated": "2026-04-22T01:46:18Z",
       "bpb": 1.3262,
       "seeds": null,
       "artifact_bytes": 10900000,
@@ -9919,7 +9994,7 @@
       "author": "G3sparky",
       "state": "OPEN",
       "created": "2026-04-09T07:52:14Z",
-      "updated": "2026-04-21T21:53:45Z",
+      "updated": "2026-04-22T01:46:17Z",
       "bpb": 1.122,
       "seeds": null,
       "artifact_bytes": 15900000,
