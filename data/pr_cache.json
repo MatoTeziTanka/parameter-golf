@@ -1,7 +1,39 @@
 {
-  "last_fetch": "2026-04-22T21:26:53.105032+00:00",
-  "api_calls_used": 135,
+  "last_fetch": "2026-04-22T22:23:59.671003+00:00",
+  "api_calls_used": 136,
   "prs": [
+    {
+      "number": 1780,
+      "title": "Add progressive recurrence SP8192 record submission",
+      "author": "wisebreadloaf",
+      "state": "OPEN",
+      "created": "2026-04-22T21:49:22Z",
+      "updated": "2026-04-22T21:49:22Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-20_SP8192_Progressive3LayerRecurrence_ParResid_QK525_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-04-20_SP8192_Progressive3LayerRecurrence_ParResid_QK525_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-04-20_SP8192_Progressive3LayerRecurrence_ParResid_QK525_LegalTTT/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1779,
       "title": "Record: SP8192 + CaseOps + Gated Attention + Quant Gate + Loop4-5 + Phased TTT + Frozen Recurrent Alpha — val_bpb 1.06421",
