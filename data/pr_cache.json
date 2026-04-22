@@ -1,7 +1,38 @@
 {
-  "last_fetch": "2026-04-22T12:00:06.959734+00:00",
-  "api_calls_used": 129,
+  "last_fetch": "2026-04-22T14:04:18.412602+00:00",
+  "api_calls_used": 130,
   "prs": [
+    {
+      "number": 1774,
+      "title": "Record: 12L Shared-Specific Attention (d=16) + MLP 4.5x (3-seed mean val_bpb 1.0981)",
+      "author": "aruniyer",
+      "state": "OPEN",
+      "created": "2026-04-22T13:45:13Z",
+      "updated": "2026-04-22T14:01:59Z",
+      "bpb": 1.0981,
+      "seeds": 3,
+      "artifact_bytes": 15990000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1773,
       "title": "Non-record: SDClip-matched FakeQuantize — reduces quant degradation from +0.17 to +0.044",
@@ -24740,7 +24771,7 @@
       "author": "mradassaad",
       "state": "OPEN",
       "created": "2026-03-30T00:55:11Z",
-      "updated": "2026-04-18T01:28:46Z",
+      "updated": "2026-04-22T13:19:20Z",
       "bpb": 1.5633,
       "seeds": null,
       "artifact_bytes": 10892315,
