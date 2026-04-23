@@ -1,7 +1,39 @@
 {
-  "last_fetch": "2026-04-23T06:07:48.506013+00:00",
-  "api_calls_used": 140,
+  "last_fetch": "2026-04-23T08:20:28.505737+00:00",
+  "api_calls_used": 141,
   "prs": [
+    {
+      "number": 1786,
+      "title": "Research/Ablation: Recurrence schedule sweep on April 5 SP8192 stack (V1 hard vs V2/V3 ramps)",
+      "author": "sachinnchaudhary",
+      "state": "OPEN",
+      "created": "2026-04-23T06:43:44Z",
+      "updated": "2026-04-23T06:43:44Z",
+      "bpb": 1.0918307,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-05_SP8192_GPTQ-Embeddings_SDClip_Loop45x2/train_gpt_human.py",
+        "records/track_non_record_16mb/2026-04-23_RecurrenceSchedule_Ablation/README.md",
+        "run_modal.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1785,
       "title": "Record: SP4096 + byte-level PPM adaptive-λ mixture — val_bpb 1.01925 (3-seed)",
