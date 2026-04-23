@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-23T19:16:18.638561+00:00",
-  "api_calls_used": 146,
+  "last_fetch": "2026-04-23T20:31:39.336049+00:00",
+  "api_calls_used": 147,
   "prs": [
     {
       "number": 1791,
@@ -156,12 +156,12 @@
     },
     {
       "number": 1787,
-      "title": "Record: PR #1736 + Polar Express NS + MIN_LR + Sparse Attn Gate + Fused CE — val_bpb 1.06378",
+      "title": "feat(submission): PR #1736 + Polar Express NS + MIN_LR + Sparse Attn Gate + Fused CE + PR #1767 TTT — val_bpb 1.06335",
       "author": "nprime06",
       "state": "OPEN",
       "created": "2026-04-23T08:54:38Z",
-      "updated": "2026-04-23T08:55:22Z",
-      "bpb": 1.06378,
+      "updated": "2026-04-23T20:20:52Z",
+      "bpb": 1.06335,
       "seeds": 3,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + Muon + LoRA + INT8 + EMA",
@@ -174,7 +174,14 @@
         "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/train_gpt.py",
         "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/train_seed0.log",
         "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/train_seed1234.log",
-        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/train_seed42.log"
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/train_seed42.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/ttt_pr1767/seed_0.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/ttt_pr1767/seed_0_result.json",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/ttt_pr1767/seed_1234.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/ttt_pr1767/seed_1234_result.json",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/ttt_pr1767/seed_42.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/ttt_pr1767/seed_42_result.json",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/ttt_pr1767/summary.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -6217,7 +6224,7 @@
       "author": "adityasasidhar",
       "state": "OPEN",
       "created": "2026-04-14T12:49:52Z",
-      "updated": "2026-04-23T14:12:27Z",
+      "updated": "2026-04-23T20:22:36Z",
       "bpb": 1.2192,
       "seeds": 3,
       "artifact_bytes": 15913674,
