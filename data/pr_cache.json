@@ -1,7 +1,156 @@
 {
-  "last_fetch": "2026-04-23T21:50:49.549366+00:00",
-  "api_calls_used": 148,
+  "last_fetch": "2026-04-23T22:51:16.272596+00:00",
+  "api_calls_used": 149,
   "prs": [
+    {
+      "number": 1795,
+      "title": "Record: SP4096 + byte-level PPM adaptive-λ mixture — val_bpb 0.95165 (full-val, 3-seed)",
+      "author": "OE-GOD",
+      "state": "OPEN",
+      "created": "2026-04-23T22:46:07Z",
+      "updated": "2026-04-23T22:46:07Z",
+      "bpb": 0.95165,
+      "seeds": 3,
+      "artifact_bytes": 152570124,
+      "technique_summary": "TTT + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/README.md",
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/submission.json",
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/train_gpt.py",
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1794,
+      "title": "Add 2026-04-23_SP8192_PerLayerClip_UnfrozenTTT_1.0849",
+      "author": "Programmerryoki",
+      "state": "OPEN",
+      "created": "2026-04-23T22:32:12Z",
+      "updated": "2026-04-23T22:32:12Z",
+      "bpb": 1.0849,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-23_SP8192_PerLayerClip_UnfrozenTTT_1.0849/README.md",
+        "records/track_10min_16mb/2026-04-23_SP8192_PerLayerClip_UnfrozenTTT_1.0849/submission.json",
+        "records/track_10min_16mb/2026-04-23_SP8192_PerLayerClip_UnfrozenTTT_1.0849/train_gpt.py",
+        "records/track_10min_16mb/2026-04-23_SP8192_PerLayerClip_UnfrozenTTT_1.0849/train_seed2026.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_PerLayerClip_UnfrozenTTT_1.0849/train_seed30.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_PerLayerClip_UnfrozenTTT_1.0849/train_seed4.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1793,
+      "title": "[Non-Record] Procedural Scaffolds for RMLA (1.5782 BPB RTX4090)",
+      "author": "sunburnt716",
+      "state": "OPEN",
+      "created": "2026-04-23T22:27:18Z",
+      "updated": "2026-04-23T22:27:18Z",
+      "bpb": 1.5782,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon",
+      "file_paths": [
+        ".gitignore",
+        "LICENSE",
+        "README.md",
+        "THIRD_PARTY_NOTICES.md",
+        "data/README.md",
+        "data/cached_challenge_fineweb.py",
+        "data/download_hf_docs_and_tokenize.py",
+        "data/tokenizer_specs.json",
+        "final_model.int8.ptz",
+        "logs/024e3b9a-f48d-487b-926f-22ecdca08de4.txt",
+        "logs/02df79dd-01f5-4f62-a44c-6a57de691367.txt",
+        "logs/094a2578-75d0-4fbc-9cf0-411027c17610.txt",
+        "logs/0d0153ea-e300-4da2-ad10-b65b08ddd663.txt",
+        "logs/0df468b1-86db-4037-abfa-7d7bb9692a48.txt",
+        "logs/13abb31f-4978-48b3-9ed9-5ba646ca1122.txt",
+        "logs/163f3108-d56e-4e1c-bcc9-832a28e71cf8.txt",
+        "logs/1ad4b373-b6de-43ce-9d53-d301c0fb61e0.txt",
+        "logs/1c686345-5c15-430d-a415-e83ee17d0a30.txt",
+        "logs/260af537-25d5-4a9d-b48d-7c1822735faf.txt",
+        "logs/2c4b00e4-917a-43ad-802f-4f579bbfdfca.txt",
+        "logs/2d2d813e-e397-4814-aa9e-56444a80bdef.txt",
+        "logs/327f7a3f-59bb-4489-941f-c20d59c4ea0f.txt",
+        "logs/3ec80ef7-1ee8-4923-b7d9-16bc4a5a63ad.txt",
+        "logs/3edfbcb1-56da-410d-abb8-e1e13608bf38.txt",
+        "logs/48f720f3-78e1-4168-9459-ef36a537594f.txt",
+        "logs/532e02fb-6761-414a-8c18-9dc43a28b35d.txt",
+        "logs/5f2da422-4374-4ed9-915f-450f34960093.txt",
+        "logs/5f66513f-d4f9-4908-926e-3082b857a5b7.txt",
+        "logs/64b0ed13-30bc-415c-8bf8-6f8fe23c88f2.txt",
+        "logs/72c12cfd-87ce-4b41-b403-80ed614a2407.txt",
+        "logs/779030c8-98da-496f-a6b4-3a016351675a.txt",
+        "logs/8318a8de-902d-45a7-a89f-30e03aff310e.txt",
+        "logs/91d0af43-dfff-4aef-810d-1446a5b9bd73.txt",
+        "logs/97ca4344-5613-4f66-8454-9036a70a1933.txt",
+        "logs/98a2f3cb-7789-4f53-bb59-d2a9455e418f.txt",
+        "logs/9de11056-d47b-4fd6-a773-fd357c32378c.txt",
+        "logs/a9bc1535-5b13-4814-8214-732193eef014.txt",
+        "logs/a9d2d46a-ff0c-4d09-bc49-0b0a2d26b21f.txt",
+        "logs/aa1fbf5c-7d97-4763-926e-b9043be7a57a.txt",
+        "logs/aa71cd10-624e-4630-91fe-56afe3f7af76.txt",
+        "logs/b648c805-7552-48aa-a74c-59a513936948.txt",
+        "logs/b96a533c-7a48-4313-b421-fef4fb34cded.txt",
+        "logs/baf33739-5bde-470b-be0a-6dd092219f6d.txt",
+        "logs/bb50137b-6062-4fb8-ba1e-dc2074202f2f.txt",
+        "logs/bbbbef41-7b37-4614-8ec5-de47ccc27b0c.txt",
+        "logs/c877c699-b34a-4097-939f-7162107f6a52.txt",
+        "logs/e4540723-bbe2-4015-9ff4-428b30a4652b.txt",
+        "logs/f0c9fb38-e4a6-4351-87af-6bec0049f5ed.txt",
+        "logs/ff4caef0-b072-4498-9b05-8fc2bc926854.txt",
+        "records/track_10min_16mb/2026-03-17_LoRA_TTT/README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1792,
       "title": "Record: Polar Express NS + MIN_LR + GatedAttn + Alpha LoRA — val_bpb 1.07006 (3-seed mean)",
@@ -271,9 +420,9 @@
       "number": 1785,
       "title": "Record: SP4096 + byte-level PPM adaptive-λ mixture — val_bpb 1.01925 (3-seed)",
       "author": "OE-GOD",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-23T05:51:12Z",
-      "updated": "2026-04-23T14:17:44Z",
+      "updated": "2026-04-23T22:50:03Z",
       "bpb": 1.01925,
       "seeds": 3,
       "artifact_bytes": 15982254,
@@ -298,9 +447,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1784,
@@ -22591,9 +22742,9 @@
       "number": 1184,
       "title": "Record: Scylla + Full GPTQ + XSA-all + FA3 — val_bpb 0.9485 (3-seed mean)",
       "author": "icryo",
-      "state": "CLOSED",
+      "state": "MERGED",
       "created": "2026-03-31T16:01:28Z",
-      "updated": "2026-04-03T03:45:28Z",
+      "updated": "2026-04-23T22:03:27Z",
       "bpb": 0.9485,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -22619,11 +22770,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "DEAD",
+      "status": "ALIVE",
       "flags": [
-        "closed-no-maintainer-comment"
+        "merged-to-leaderboard"
       ],
-      "confidence": "LOW"
+      "confidence": "HIGH"
     },
     {
       "number": 1183,
@@ -23837,9 +23988,9 @@
       "number": 1148,
       "title": "Record: 11L Muon Legal TTT + Entropy-Adaptive Epochs (8×H100) — val_bpb 1.1179 (3-seed mean)",
       "author": "aamodbhatt",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-03-30T19:31:05Z",
-      "updated": "2026-04-11T20:15:22Z",
+      "updated": "2026-04-23T22:03:07Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 15944410,
@@ -23864,9 +24015,9 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "no-bpb"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -24018,7 +24169,7 @@
       "author": "simon-marcus",
       "state": "CLOSED",
       "created": "2026-03-30T18:53:55Z",
-      "updated": "2026-04-06T12:08:26Z",
+      "updated": "2026-04-23T22:03:42Z",
       "bpb": 1.08056553,
       "seeds": 2,
       "artifact_bytes": null,
@@ -24043,7 +24194,9 @@
         "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/train_seed2026.log",
         "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Submission-format issue: the diff is path-clean under `records/track_10min_16mb/`, but it is not a single clean submission folder. It includes both the intended Scylla folder and an unrelated older `2026-03-26_WaterLOO_FullRescore_SelfExclusion_0.0990/` record folder. Please split or trim this PR to just `records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/` with its README, tokenizer metadata, submission JSON, code, and logs."
+      ],
       "compliance_keywords": [
         "ttt"
       ],
@@ -24055,9 +24208,9 @@
       "technique_source": "code",
       "status": "DEAD",
       "flags": [
-        "closed-no-maintainer-comment"
+        "closed-with-maintainer-comment"
       ],
-      "confidence": "LOW"
+      "confidence": "MEDIUM"
     },
     {
       "number": 1142,
@@ -24898,7 +25051,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-03-30T04:57:49Z",
-      "updated": "2026-04-02T17:22:04Z",
+      "updated": "2026-04-23T22:03:42Z",
       "bpb": 1.1099,
       "seeds": 3,
       "artifact_bytes": 15554053,
@@ -24955,7 +25108,9 @@
         "experiments/Bandit/train_gpt.py",
         "experiments/Biology_concepts/FINDINGS.md"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Submission-format issue: this PR is not records-folder-only. The diff adds a large `experiments/...` tree and other files outside `records/track_10min_16mb/` (238 outside-record files in the file list). The Rascal record folder has useful README/submission/code/logs, but the PR should be trimmed to only the intended `records/track_10min_16mb/2026-03-30_Rascal_8xH100/` submission folder for review."
+      ],
       "compliance_keywords": [
         "gptq_eval"
       ],
@@ -27190,9 +27345,9 @@
       "number": 1060,
       "title": "Record: 1.1122 BPB — Coprime-Stride Loader + Full GPTQ + XSA-all (3-seed mean)",
       "author": "dexhunter",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-03-29T06:15:28Z",
-      "updated": "2026-04-11T20:05:24Z",
+      "updated": "2026-04-23T22:03:14Z",
       "bpb": 1.1122,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -27219,7 +27374,9 @@
       ],
       "technique_source": "code",
       "status": "ALIVE",
-      "flags": [],
+      "flags": [
+        "merged-to-leaderboard"
+      ],
       "confidence": "HIGH"
     },
     {
@@ -28281,7 +28438,7 @@
       "author": "michaelwinczuk",
       "state": "OPEN",
       "created": "2026-03-28T18:38:55Z",
-      "updated": "2026-04-11T20:02:38Z",
+      "updated": "2026-04-23T22:03:42Z",
       "bpb": 0.0037,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -28299,7 +28456,10 @@
         "records/track_10min_16mb/2026-03-27_LeakyReLU075_LegalTTT_ParallelMuon_TunedLR/submission.json",
         "records/track_10min_16mb/2026-03-27_LeakyReLU075_LegalTTT_ParallelMuon_TunedLR/train_gpt.py"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: please clean code to move everything into records foldre, then will merge",
+        "cocohearts: Submission-format issue: this PR is not records-folder-only. It adds an extra top-level `our_submission/` tree outside `records/track_10min_16mb/`. The record folder itself also has only `README.md`, `submission.json`, and `train_gpt.py`; it does not include the seed logs/full repro evidence expected for review. Please trim/resubmit as a single `records/track_10min_16mb/.../` folder with the full details needed to reproduce."
+      ],
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "ttt",
@@ -28772,7 +28932,7 @@
       "author": "abaybektursun",
       "state": "MERGED",
       "created": "2026-03-28T13:34:01Z",
-      "updated": "2026-04-02T08:28:01Z",
+      "updated": "2026-04-23T21:57:04Z",
       "bpb": 1.1147,
       "seeds": 3,
       "artifact_bytes": 15910000,
@@ -55322,7 +55482,7 @@
       "author": "jfprincz",
       "state": "MERGED",
       "created": "2026-03-20T23:25:59Z",
-      "updated": "2026-03-23T17:23:10Z",
+      "updated": "2026-04-23T21:58:25Z",
       "bpb": 1.1271,
       "seeds": 2,
       "artifact_bytes": 15534645,
@@ -56012,7 +56172,7 @@
       "author": "unnir",
       "state": "MERGED",
       "created": "2026-03-20T20:42:43Z",
-      "updated": "2026-03-23T17:22:37Z",
+      "updated": "2026-04-23T21:58:25Z",
       "bpb": 1.1307,
       "seeds": 1337,
       "artifact_bytes": 15892986,
@@ -56974,7 +57134,7 @@
       "author": "saml212",
       "state": "OPEN",
       "created": "2026-03-20T17:47:19Z",
-      "updated": "2026-03-23T18:33:43Z",
+      "updated": "2026-04-23T21:58:25Z",
       "bpb": 1.14,
       "seeds": 3,
       "artifact_bytes": 15700000,
@@ -58239,7 +58399,7 @@
       "author": "jfprincz",
       "state": "OPEN",
       "created": "2026-03-20T09:27:08Z",
-      "updated": "2026-04-11T20:07:13Z",
+      "updated": "2026-04-23T21:58:24Z",
       "bpb": 1.1318,
       "seeds": 2,
       "artifact_bytes": 15689380,
@@ -58883,7 +59043,7 @@
       "author": "thwu1",
       "state": "MERGED",
       "created": "2026-03-20T06:55:17Z",
-      "updated": "2026-03-20T18:51:12Z",
+      "updated": "2026-04-23T21:58:24Z",
       "bpb": 1.1428,
       "seeds": null,
       "artifact_bytes": 15521020,
@@ -61924,7 +62084,7 @@
       "author": "aruniyer",
       "state": "MERGED",
       "created": "2026-03-19T14:15:44Z",
-      "updated": "2026-03-20T18:44:49Z",
+      "updated": "2026-04-23T21:58:24Z",
       "bpb": null,
       "seeds": 5,
       "artifact_bytes": null,
@@ -62164,7 +62324,7 @@
       "author": "samacqua",
       "state": "MERGED",
       "created": "2026-03-19T11:57:16Z",
-      "updated": "2026-03-20T01:57:32Z",
+      "updated": "2026-04-23T21:58:24Z",
       "bpb": 2.0731,
       "seeds": null,
       "artifact_bytes": null,
@@ -62204,7 +62364,7 @@
       "author": "unixmadtoonslab",
       "state": "OPEN",
       "created": "2026-03-19T10:51:00Z",
-      "updated": "2026-03-21T16:34:18Z",
+      "updated": "2026-04-23T21:58:24Z",
       "bpb": 1.14327,
       "seeds": 3,
       "artifact_bytes": 1000000,
@@ -62392,7 +62552,7 @@
       "author": "AntDX316",
       "state": "CLOSED",
       "created": "2026-03-19T09:35:07Z",
-      "updated": "2026-03-20T10:42:02Z",
+      "updated": "2026-04-23T21:58:24Z",
       "bpb": 1.35091763,
       "seeds": null,
       "artifact_bytes": 14301562,
@@ -62578,7 +62738,7 @@
       "author": "aquariouseworkman",
       "state": "MERGED",
       "created": "2026-03-19T07:42:39Z",
-      "updated": "2026-03-20T18:40:28Z",
+      "updated": "2026-04-23T21:58:24Z",
       "bpb": 1.1556,
       "seeds": 1337,
       "artifact_bytes": 15878809,
@@ -62614,7 +62774,7 @@
       "author": "yesbhautik",
       "state": "OPEN",
       "created": "2026-03-19T07:32:20Z",
-      "updated": "2026-04-02T05:09:45Z",
+      "updated": "2026-04-23T21:58:24Z",
       "bpb": 1.125,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -62651,7 +62811,7 @@
       "author": "yahya010",
       "state": "MERGED",
       "created": "2026-03-19T07:19:15Z",
-      "updated": "2026-03-20T18:26:38Z",
+      "updated": "2026-04-23T21:58:23Z",
       "bpb": 1.1821,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -62720,7 +62880,7 @@
       "author": "saml212",
       "state": "MERGED",
       "created": "2026-03-19T06:57:07Z",
-      "updated": "2026-03-20T02:28:56Z",
+      "updated": "2026-04-23T21:58:23Z",
       "bpb": 1.2154,
       "seeds": null,
       "artifact_bytes": 15910000,
@@ -62755,7 +62915,7 @@
       "author": "notapplica",
       "state": "MERGED",
       "created": "2026-03-19T06:52:24Z",
-      "updated": "2026-03-20T03:15:00Z",
+      "updated": "2026-04-23T21:58:23Z",
       "bpb": 1.1748,
       "seeds": 2,
       "artifact_bytes": 14700000,
@@ -62984,7 +63144,7 @@
       "author": "kshitizz36",
       "state": "CLOSED",
       "created": "2026-03-19T06:26:03Z",
-      "updated": "2026-03-20T19:01:55Z",
+      "updated": "2026-04-23T21:58:23Z",
       "bpb": 1.1888,
       "seeds": null,
       "artifact_bytes": 15680000,
@@ -63018,7 +63178,7 @@
       "author": "spokane-way",
       "state": "MERGED",
       "created": "2026-03-19T05:53:41Z",
-      "updated": "2026-03-19T21:04:16Z",
+      "updated": "2026-04-23T21:58:23Z",
       "bpb": 1.2014,
       "seeds": 1,
       "artifact_bytes": null,
@@ -63081,7 +63241,7 @@
       "author": "mattqlf",
       "state": "MERGED",
       "created": "2026-03-19T05:36:48Z",
-      "updated": "2026-03-19T19:40:59Z",
+      "updated": "2026-04-23T21:58:22Z",
       "bpb": 1.1925,
       "seeds": null,
       "artifact_bytes": 15874829,
@@ -63114,7 +63274,7 @@
       "author": "spokane-way",
       "state": "MERGED",
       "created": "2026-03-19T03:57:50Z",
-      "updated": "2026-03-19T17:25:29Z",
+      "updated": "2026-04-23T21:58:23Z",
       "bpb": 1.2064,
       "seeds": 1337,
       "artifact_bytes": null,
@@ -63361,7 +63521,7 @@
       "author": "chonchiog",
       "state": "MERGED",
       "created": "2026-03-19T01:14:05Z",
-      "updated": "2026-03-19T17:16:51Z",
+      "updated": "2026-04-23T21:58:22Z",
       "bpb": 0.0005,
       "seeds": 2,
       "artifact_bytes": 16000000,
