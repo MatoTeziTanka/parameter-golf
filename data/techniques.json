@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-23T20:32:30Z",
+  "generated_at": "2026-04-23T21:51:35Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1707,
-    "matched_pr_count": 1272,
+    "pr_count": 1708,
+    "matched_pr_count": 1273,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -12,7 +12,7 @@
       "ALIVE": 289,
       "AT_RISK": 99,
       "DEAD": 491,
-      "INCOMPLETE": 818,
+      "INCOMPLETE": 819,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 689,
+      "count": 690,
       "author_count": 323,
       "alive_count": 167,
       "dead_count": 218,
       "at_risk_count": 59,
-      "incomplete_count": 244,
+      "incomplete_count": 245,
       "unknown_count": 0,
       "best_alive": {
         "number": 1722,
@@ -1189,6 +1189,76 @@
           ]
         },
         {
+          "author": "renqianluo",
+          "pr_count": 9,
+          "best_bpb": 0.29882,
+          "prs": [
+            {
+              "number": 1318,
+              "author": "renqianluo",
+              "status": "ALIVE",
+              "bpb": 1.00955,
+              "created": "2026-04-03T23:52:29Z"
+            },
+            {
+              "number": 1328,
+              "author": "renqianluo",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-04T07:16:36Z"
+            },
+            {
+              "number": 1329,
+              "author": "renqianluo",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-04T07:35:11Z"
+            },
+            {
+              "number": 1430,
+              "author": "renqianluo",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-07T02:53:34Z"
+            },
+            {
+              "number": 1605,
+              "author": "renqianluo",
+              "status": "DEAD",
+              "bpb": 0.29882,
+              "created": "2026-04-13T20:37:29Z"
+            },
+            {
+              "number": 1765,
+              "author": "renqianluo",
+              "status": "INCOMPLETE",
+              "bpb": 1.07423,
+              "created": "2026-04-21T22:22:51Z"
+            },
+            {
+              "number": 1767,
+              "author": "renqianluo",
+              "status": "INCOMPLETE",
+              "bpb": 1.07423,
+              "created": "2026-04-22T01:40:27Z"
+            },
+            {
+              "number": 1784,
+              "author": "renqianluo",
+              "status": "ALIVE",
+              "bpb": 1.4,
+              "created": "2026-04-23T04:53:40Z"
+            },
+            {
+              "number": 1792,
+              "author": "renqianluo",
+              "status": "INCOMPLETE",
+              "bpb": 1.07189,
+              "created": "2026-04-23T21:36:19Z"
+            }
+          ]
+        },
+        {
           "author": "hypery11",
           "pr_count": 9,
           "best_bpb": 0.544,
@@ -1255,69 +1325,6 @@
               "status": "AT_RISK",
               "bpb": 0.544,
               "created": "2026-03-26T07:07:51Z"
-            }
-          ]
-        },
-        {
-          "author": "renqianluo",
-          "pr_count": 8,
-          "best_bpb": 0.29882,
-          "prs": [
-            {
-              "number": 1318,
-              "author": "renqianluo",
-              "status": "ALIVE",
-              "bpb": 1.00955,
-              "created": "2026-04-03T23:52:29Z"
-            },
-            {
-              "number": 1328,
-              "author": "renqianluo",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-04-04T07:16:36Z"
-            },
-            {
-              "number": 1329,
-              "author": "renqianluo",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-04-04T07:35:11Z"
-            },
-            {
-              "number": 1430,
-              "author": "renqianluo",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-04-07T02:53:34Z"
-            },
-            {
-              "number": 1605,
-              "author": "renqianluo",
-              "status": "DEAD",
-              "bpb": 0.29882,
-              "created": "2026-04-13T20:37:29Z"
-            },
-            {
-              "number": 1765,
-              "author": "renqianluo",
-              "status": "INCOMPLETE",
-              "bpb": 1.07423,
-              "created": "2026-04-21T22:22:51Z"
-            },
-            {
-              "number": 1767,
-              "author": "renqianluo",
-              "status": "INCOMPLETE",
-              "bpb": 1.07423,
-              "created": "2026-04-22T01:40:27Z"
-            },
-            {
-              "number": 1784,
-              "author": "renqianluo",
-              "status": "ALIVE",
-              "bpb": 1.4,
-              "created": "2026-04-23T04:53:40Z"
             }
           ]
         },
@@ -11941,6 +11948,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.0339,
           "created": "2026-04-23T16:48:22Z"
+        },
+        {
+          "number": 1792,
+          "author": "renqianluo",
+          "status": "INCOMPLETE",
+          "bpb": 1.07189,
+          "created": "2026-04-23T21:36:19Z"
         }
       ]
     },
@@ -57919,12 +57933,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 689,
+      "count": 690,
       "author_count": 323,
       "alive_count": 167,
       "dead_count": 218,
       "at_risk_count": 59,
-      "incomplete_count": 244,
+      "incomplete_count": 245,
       "unknown_count": 0,
       "best_alive": {
         "number": 1722,
@@ -59088,6 +59102,76 @@
           ]
         },
         {
+          "author": "renqianluo",
+          "pr_count": 9,
+          "best_bpb": 0.29882,
+          "prs": [
+            {
+              "number": 1318,
+              "author": "renqianluo",
+              "status": "ALIVE",
+              "bpb": 1.00955,
+              "created": "2026-04-03T23:52:29Z"
+            },
+            {
+              "number": 1328,
+              "author": "renqianluo",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-04T07:16:36Z"
+            },
+            {
+              "number": 1329,
+              "author": "renqianluo",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-04T07:35:11Z"
+            },
+            {
+              "number": 1430,
+              "author": "renqianluo",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-04-07T02:53:34Z"
+            },
+            {
+              "number": 1605,
+              "author": "renqianluo",
+              "status": "DEAD",
+              "bpb": 0.29882,
+              "created": "2026-04-13T20:37:29Z"
+            },
+            {
+              "number": 1765,
+              "author": "renqianluo",
+              "status": "INCOMPLETE",
+              "bpb": 1.07423,
+              "created": "2026-04-21T22:22:51Z"
+            },
+            {
+              "number": 1767,
+              "author": "renqianluo",
+              "status": "INCOMPLETE",
+              "bpb": 1.07423,
+              "created": "2026-04-22T01:40:27Z"
+            },
+            {
+              "number": 1784,
+              "author": "renqianluo",
+              "status": "ALIVE",
+              "bpb": 1.4,
+              "created": "2026-04-23T04:53:40Z"
+            },
+            {
+              "number": 1792,
+              "author": "renqianluo",
+              "status": "INCOMPLETE",
+              "bpb": 1.07189,
+              "created": "2026-04-23T21:36:19Z"
+            }
+          ]
+        },
+        {
           "author": "hypery11",
           "pr_count": 9,
           "best_bpb": 0.544,
@@ -59154,69 +59238,6 @@
               "status": "AT_RISK",
               "bpb": 0.544,
               "created": "2026-03-26T07:07:51Z"
-            }
-          ]
-        },
-        {
-          "author": "renqianluo",
-          "pr_count": 8,
-          "best_bpb": 0.29882,
-          "prs": [
-            {
-              "number": 1318,
-              "author": "renqianluo",
-              "status": "ALIVE",
-              "bpb": 1.00955,
-              "created": "2026-04-03T23:52:29Z"
-            },
-            {
-              "number": 1328,
-              "author": "renqianluo",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-04-04T07:16:36Z"
-            },
-            {
-              "number": 1329,
-              "author": "renqianluo",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-04-04T07:35:11Z"
-            },
-            {
-              "number": 1430,
-              "author": "renqianluo",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-04-07T02:53:34Z"
-            },
-            {
-              "number": 1605,
-              "author": "renqianluo",
-              "status": "DEAD",
-              "bpb": 0.29882,
-              "created": "2026-04-13T20:37:29Z"
-            },
-            {
-              "number": 1765,
-              "author": "renqianluo",
-              "status": "INCOMPLETE",
-              "bpb": 1.07423,
-              "created": "2026-04-21T22:22:51Z"
-            },
-            {
-              "number": 1767,
-              "author": "renqianluo",
-              "status": "INCOMPLETE",
-              "bpb": 1.07423,
-              "created": "2026-04-22T01:40:27Z"
-            },
-            {
-              "number": 1784,
-              "author": "renqianluo",
-              "status": "ALIVE",
-              "bpb": 1.4,
-              "created": "2026-04-23T04:53:40Z"
             }
           ]
         },
@@ -69840,6 +69861,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.0339,
           "created": "2026-04-23T16:48:22Z"
+        },
+        {
+          "number": 1792,
+          "author": "renqianluo",
+          "status": "INCOMPLETE",
+          "bpb": 1.07189,
+          "created": "2026-04-23T21:36:19Z"
         }
       ]
     },
@@ -116007,11 +116035,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 689,
+      "left_count": 690,
       "right_count": 2,
       "left_people": 323,
       "right_people": 2,
-      "score": 1378
+      "score": 1380
     },
     {
       "left": "SwiGLU",
@@ -116133,11 +116161,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 689,
+      "left_count": 690,
       "right_count": 1,
       "left_people": 323,
       "right_people": 1,
-      "score": 689
+      "score": 690
     },
     {
       "left": "XSA",
