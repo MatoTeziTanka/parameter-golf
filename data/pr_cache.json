@@ -1,7 +1,78 @@
 {
-  "last_fetch": "2026-04-23T08:20:28.505737+00:00",
-  "api_calls_used": 141,
+  "last_fetch": "2026-04-23T10:06:26.542029+00:00",
+  "api_calls_used": 142,
   "prs": [
+    {
+      "number": 1788,
+      "title": "Non-record- QAT cooldown + INT4 MLP + NuMuon-lite - 1.12 BPB ",
+      "author": "marinabar",
+      "state": "OPEN",
+      "created": "2026-04-23T09:48:38Z",
+      "updated": "2026-04-23T09:48:38Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 2900000,
+      "technique_summary": "GPTQ + INT6",
+      "file_paths": [
+        ".gitignore",
+        "tea_debug.log",
+        "train_gpt_v2.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1787,
+      "title": "Record: PR #1736 + Polar Express NS + MIN_LR + Sparse Attn Gate + Fused CE — val_bpb 1.06378",
+      "author": "nprime06",
+      "state": "OPEN",
+      "created": "2026-04-23T08:54:38Z",
+      "updated": "2026-04-23T08:55:22Z",
+      "bpb": 1.06378,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + LoRA + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/README.md",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/submission.json",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/train_gpt.py",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/train_seed0.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_CaseOps_SparseGate_QuantGate_Loop45_PhasedTTT_PolarNS_MinLR_FusedCE/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1786,
       "title": "Research/Ablation: Recurrence schedule sweep on April 5 SP8192 stack (V1 hard vs V2/V3 ramps)",
@@ -50631,9 +50702,9 @@
       "number": 412,
       "title": "WIP: Shared depth training",
       "author": "tranphat180603",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-22T06:54:57Z",
-      "updated": "2026-04-11T20:16:54Z",
+      "updated": "2026-04-23T08:54:24Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -50650,14 +50721,11 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown",
-        "no-submission-json"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 411,
