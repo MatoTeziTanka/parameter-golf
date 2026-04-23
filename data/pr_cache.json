@@ -1,7 +1,123 @@
 {
-  "last_fetch": "2026-04-23T03:54:41.596567+00:00",
-  "api_calls_used": 139,
+  "last_fetch": "2026-04-23T06:07:48.506013+00:00",
+  "api_calls_used": 140,
   "prs": [
+    {
+      "number": 1785,
+      "title": "Record: SP4096 + byte-level PPM adaptive-λ mixture — val_bpb 1.01925 (3-seed)",
+      "author": "OE-GOD",
+      "state": "OPEN",
+      "created": "2026-04-23T05:51:12Z",
+      "updated": "2026-04-23T05:51:12Z",
+      "bpb": 1.01925,
+      "seeds": 3,
+      "artifact_bytes": 15982254,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/README.md",
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/submission.json",
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/train_gpt.py",
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-23_SP4096_PPM_AdaptiveMix/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1784,
+      "title": "Record: GatedAttn + Alpha-Scaled LoRA + Warm-start A + WD 1.0 — val_bpb 1.07081 (3-seed mean)",
+      "author": "renqianluo",
+      "state": "OPEN",
+      "created": "2026-04-23T04:53:40Z",
+      "updated": "2026-04-23T04:53:40Z",
+      "bpb": 1.4,
+      "seeds": 3,
+      "artifact_bytes": 15930000,
+      "technique_summary": "TTT + LoRA + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-23_GatedAttn_AlphaLoRA144_WarmStart_1.07081/README.md",
+        "records/track_10min_16mb/2026-04-23_GatedAttn_AlphaLoRA144_WarmStart_1.07081/requirements.txt",
+        "records/track_10min_16mb/2026-04-23_GatedAttn_AlphaLoRA144_WarmStart_1.07081/submission.json",
+        "records/track_10min_16mb/2026-04-23_GatedAttn_AlphaLoRA144_WarmStart_1.07081/train_gpt.py",
+        "records/track_10min_16mb/2026-04-23_GatedAttn_AlphaLoRA144_WarmStart_1.07081/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-23_GatedAttn_AlphaLoRA144_WarmStart_1.07081/train_seed314.log",
+        "records/track_10min_16mb/2026-04-23_GatedAttn_AlphaLoRA144_WarmStart_1.07081/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1783,
+      "title": "[record] val_bpb=1.1716 — DEQ Universal Transformer + Seed-LoRA + Mixture of Depths",
+      "author": "ismailntl",
+      "state": "OPEN",
+      "created": "2026-04-23T04:14:05Z",
+      "updated": "2026-04-23T04:30:37Z",
+      "bpb": 1.1716,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "LoRA + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "RUNPOD.md",
+        "experiments/train_gpt_deq.py",
+        "experiments/train_gpt_mod.py",
+        "experiments/train_gpt_seeds.py",
+        "gauntlet.sh",
+        "gauntlet_results.txt",
+        "logs_pod1/gauntlet/gauntlet_baseline_011757.log",
+        "logs_pod1/gauntlet/gauntlet_baseline_012113.log",
+        "logs_pod1/gauntlet/gauntlet_incr_QK55_4loop_015227.log",
+        "logs_pod1/gauntlet_baseline_012113.txt",
+        "logs_pod1/gauntlet_incr.log",
+        "logs_pod1/gauntlet_incr_QK55_4loop_015227.txt",
+        "records/track_10min_16mb/2026-04-23_QK55_4Loop_EarlyParResid_SelectiveTTT/README.md",
+        "records/track_10min_16mb/2026-04-23_QK55_4Loop_EarlyParResid_SelectiveTTT/submission.json",
+        "records/track_10min_16mb/2026-04-23_QK55_4Loop_EarlyParResid_SelectiveTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-23_QK55_4Loop_EarlyParResid_SelectiveTTT/train_log_baseline.log",
+        "records/track_10min_16mb/2026-04-23_QK55_4Loop_EarlyParResid_SelectiveTTT/train_log_seed1337.log",
+        "runpod_setup.sh",
+        "sync_to_runpod.sh"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1782,
       "title": "Non-record: NN + byte-level PPM adaptive-λ mixture demonstration",
@@ -105,7 +221,7 @@
       "author": "leon2k2k2k",
       "state": "OPEN",
       "created": "2026-04-22T21:10:14Z",
-      "updated": "2026-04-23T00:48:06Z",
+      "updated": "2026-04-23T05:25:39Z",
       "bpb": 1.06421,
       "seeds": 3,
       "artifact_bytes": 15980000,
@@ -4550,7 +4666,7 @@
       "author": "NGBao1608",
       "state": "OPEN",
       "created": "2026-04-16T01:26:02Z",
-      "updated": "2026-04-21T12:22:27Z",
+      "updated": "2026-04-23T04:39:29Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -4564,7 +4680,12 @@
         "records/track_non_record_16mb/2026-04-20_HCMUS_Ninepls_EMA_XSA_SmearGate_BigramHash/final_model.int8.ptz",
         "records/track_non_record_16mb/2026-04-20_HCMUS_Ninepls_EMA_XSA_SmearGate_BigramHash/submission.json",
         "records/track_non_record_16mb/2026-04-20_HCMUS_Ninepls_EMA_XSA_SmearGate_BigramHash/train.log",
-        "records/track_non_record_16mb/2026-04-20_HCMUS_Ninepls_EMA_XSA_SmearGate_BigramHash/train_gpt.py"
+        "records/track_non_record_16mb/2026-04-20_HCMUS_Ninepls_EMA_XSA_SmearGate_BigramHash/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-23_HCMUS_ValueResidual_ParallelBlock/README.md",
+        "records/track_non_record_16mb/2026-04-23_HCMUS_ValueResidual_ParallelBlock/final_model.int8.ptz",
+        "records/track_non_record_16mb/2026-04-23_HCMUS_ValueResidual_ParallelBlock/submission.json",
+        "records/track_non_record_16mb/2026-04-23_HCMUS_ValueResidual_ParallelBlock/train.log",
+        "records/track_non_record_16mb/2026-04-23_HCMUS_ValueResidual_ParallelBlock/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
