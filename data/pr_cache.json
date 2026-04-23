@@ -1,14 +1,54 @@
 {
-  "last_fetch": "2026-04-23T22:51:16.272596+00:00",
-  "api_calls_used": 149,
+  "last_fetch": "2026-04-23T23:51:06.371836+00:00",
+  "api_calls_used": 150,
   "prs": [
+    {
+      "number": 1796,
+      "title": "Record: Scylla (novel tokenizer) + Legal Score-First TTT (val_bpb: 1.08056553)",
+      "author": "simon-marcus",
+      "state": "OPEN",
+      "created": "2026-04-23T22:56:22Z",
+      "updated": "2026-04-23T22:56:22Z",
+      "bpb": 1.08056553,
+      "seeds": 2,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/TOKENIZER_VALIDATION.md",
+        "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/candidate.meta.npz",
+        "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/candidate.vocab",
+        "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/manifest.json",
+        "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/train_seed2026.log",
+        "records/track_10min_16mb/2026-03-30_tm0054_AutoresearchTokenizer_LegalTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "cache"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1795,
       "title": "Record: SP4096 + byte-level PPM adaptive-λ mixture — val_bpb 0.95165 (full-val, 3-seed)",
       "author": "OE-GOD",
       "state": "OPEN",
       "created": "2026-04-23T22:46:07Z",
-      "updated": "2026-04-23T22:46:07Z",
+      "updated": "2026-04-23T23:17:31Z",
       "bpb": 0.95165,
       "seeds": 3,
       "artifact_bytes": 152570124,
@@ -342,11 +382,11 @@
     },
     {
       "number": 1787,
-      "title": "feat(submission): PR #1736 + Polar Express NS + MIN_LR + Sparse Attn Gate + Fused CE + PR #1767 TTT — val_bpb 1.06335",
+      "title": "Record: PR #1736 + Polar Express NS + MIN_LR + Sparse Attn Gate + Fused CE + PR #1767 TTT — val_bpb 1.06335",
       "author": "nprime06",
       "state": "OPEN",
       "created": "2026-04-23T08:54:38Z",
-      "updated": "2026-04-23T20:20:52Z",
+      "updated": "2026-04-23T22:56:17Z",
       "bpb": 1.06335,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -24169,7 +24209,7 @@
       "author": "simon-marcus",
       "state": "CLOSED",
       "created": "2026-03-30T18:53:55Z",
-      "updated": "2026-04-23T22:03:42Z",
+      "updated": "2026-04-23T22:57:13Z",
       "bpb": 1.08056553,
       "seeds": 2,
       "artifact_bytes": null,
@@ -26022,7 +26062,7 @@
       "author": "michaelwinczuk",
       "state": "OPEN",
       "created": "2026-03-29T19:53:40Z",
-      "updated": "2026-04-12T14:50:42Z",
+      "updated": "2026-04-23T23:19:25Z",
       "bpb": 0.3958,
       "seeds": 3,
       "artifact_bytes": 15940706,
@@ -26033,7 +26073,11 @@
         "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/neural_baseline_ablation.md",
         "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/submission.json",
         "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/swarm_agents.py",
-        "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/train_gpt.py"
+        "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/train.log",
+        "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/train_gpt.py",
+        "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/train_seed2024.log",
+        "records/track_10min_16mb/2026-03-29_SwarmDesigned_CausalBackoffNgramMixer_0.4027/train_seed7.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -28438,23 +28482,22 @@
       "author": "michaelwinczuk",
       "state": "OPEN",
       "created": "2026-03-28T18:38:55Z",
-      "updated": "2026-04-23T22:03:42Z",
+      "updated": "2026-04-23T23:13:11Z",
       "bpb": 0.0037,
       "seeds": null,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + Muon",
       "file_paths": [
-        "our_submission/README.md",
-        "our_submission/adaptive_quantizer.py",
-        "our_submission/fused_ce.py",
-        "our_submission/mixed_quant_adaptive.py",
-        "our_submission/parse_results.sh",
-        "our_submission/run_experiments.sh",
-        "our_submission/submission.json",
-        "our_submission/train_gpt.py",
         "records/track_10min_16mb/2026-03-27_LeakyReLU075_LegalTTT_ParallelMuon_TunedLR/README.md",
         "records/track_10min_16mb/2026-03-27_LeakyReLU075_LegalTTT_ParallelMuon_TunedLR/submission.json",
-        "records/track_10min_16mb/2026-03-27_LeakyReLU075_LegalTTT_ParallelMuon_TunedLR/train_gpt.py"
+        "records/track_10min_16mb/2026-03-27_LeakyReLU075_LegalTTT_ParallelMuon_TunedLR/train_gpt.py",
+        "records/track_10min_16mb/2026-03-28_MTP2_Funnel_LeakyReLU075_TunedLR/README.md",
+        "records/track_10min_16mb/2026-03-28_MTP2_Funnel_LeakyReLU075_TunedLR/submission.json",
+        "records/track_10min_16mb/2026-03-28_MTP2_Funnel_LeakyReLU075_TunedLR/train.log",
+        "records/track_10min_16mb/2026-03-28_MTP2_Funnel_LeakyReLU075_TunedLR/train_gpt.py",
+        "records/track_10min_16mb/2026-03-28_MTP2_Funnel_LeakyReLU075_TunedLR/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-28_MTP2_Funnel_LeakyReLU075_TunedLR/train_seed2024.log",
+        "records/track_10min_16mb/2026-03-28_MTP2_Funnel_LeakyReLU075_TunedLR/train_seed42.log"
       ],
       "maintainer_comments": [
         "cocohearts: please clean code to move everything into records foldre, then will merge",
