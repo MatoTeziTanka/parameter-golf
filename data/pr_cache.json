@@ -1,7 +1,44 @@
 {
-  "last_fetch": "2026-04-23T13:52:27.653160+00:00",
-  "api_calls_used": 144,
+  "last_fetch": "2026-04-23T15:57:33.882867+00:00",
+  "api_calls_used": 145,
   "prs": [
+    {
+      "number": 1790,
+      "title": "Record: SP8192 + SmearGate + AttnOutGate(w24) + LoRA-TTT Improvements + Phased TTT — val_bpb 1.06991 (3-seed mean)",
+      "author": "miaoyuxun",
+      "state": "OPEN",
+      "created": "2026-04-23T14:14:12Z",
+      "updated": "2026-04-23T14:14:12Z",
+      "bpb": 1.06991,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-23_SP8192_SmearGate_AttnOutGate(w24)_LoRA-TTT Improvements_Phased TTT/README.md",
+        "records/track_10min_16mb/2026-04-23_SP8192_SmearGate_AttnOutGate(w24)_LoRA-TTT Improvements_Phased TTT/submission.json",
+        "records/track_10min_16mb/2026-04-23_SP8192_SmearGate_AttnOutGate(w24)_LoRA-TTT Improvements_Phased TTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-23_SP8192_SmearGate_AttnOutGate(w24)_LoRA-TTT Improvements_Phased TTT/train_seed0.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_SmearGate_AttnOutGate(w24)_LoRA-TTT Improvements_Phased TTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-23_SP8192_SmearGate_AttnOutGate(w24)_LoRA-TTT Improvements_Phased TTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1789,
       "title": "Record: Nairi-Micro - 0.9982 BPB",
@@ -145,7 +182,7 @@
       "author": "OE-GOD",
       "state": "OPEN",
       "created": "2026-04-23T05:51:12Z",
-      "updated": "2026-04-23T05:51:12Z",
+      "updated": "2026-04-23T14:17:44Z",
       "bpb": 1.01925,
       "seeds": 3,
       "artifact_bytes": 15982254,
@@ -6133,7 +6170,7 @@
       "author": "adityasasidhar",
       "state": "OPEN",
       "created": "2026-04-14T12:49:52Z",
-      "updated": "2026-04-23T13:35:27Z",
+      "updated": "2026-04-23T14:12:27Z",
       "bpb": 1.2192,
       "seeds": 3,
       "artifact_bytes": 15913674,
@@ -12088,7 +12125,7 @@
       "author": "viasky657",
       "state": "OPEN",
       "created": "2026-04-08T02:12:10Z",
-      "updated": "2026-04-23T13:20:20Z",
+      "updated": "2026-04-23T15:35:01Z",
       "bpb": 0.4118,
       "seeds": null,
       "artifact_bytes": null,
@@ -12110,6 +12147,8 @@
         "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_bidi_hdc_engine.py",
         "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_bidi_train.py",
         "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_eigen_convergence.py",
+        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_gpu.py",
+        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_safety_oxytocin.py",
         "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_spiral_dsv_lm.py",
         "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/requirements.txt",
         "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/submission.json",
@@ -14971,9 +15010,9 @@
       "number": 1383,
       "title": "Non-record: Neuromodulatory Depth-Recurrent Transformer with FiLM-only TTT (WIP, val_bpb=1.3151)",
       "author": "nirmathur",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-05T14:04:14Z",
-      "updated": "2026-04-11T22:20:21Z",
+      "updated": "2026-04-23T15:22:52Z",
       "bpb": 1.3151,
       "seeds": null,
       "artifact_bytes": 12870000,
@@ -14993,11 +15032,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1382,
