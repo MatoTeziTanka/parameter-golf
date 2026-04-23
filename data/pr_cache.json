@@ -1,7 +1,72 @@
 {
-  "last_fetch": "2026-04-23T00:10:47.695683+00:00",
-  "api_calls_used": 138,
+  "last_fetch": "2026-04-23T03:54:41.596567+00:00",
+  "api_calls_used": 139,
   "prs": [
+    {
+      "number": 1782,
+      "title": "Non-record: NN + byte-level PPM adaptive-λ mixture demonstration",
+      "author": "OE-GOD",
+      "state": "OPEN",
+      "created": "2026-04-23T03:53:48Z",
+      "updated": "2026-04-23T03:53:48Z",
+      "bpb": 1.62394,
+      "seeds": null,
+      "artifact_bytes": 15870887,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-22_SP1024_ByteLevelPPM_AdaptiveMix/README.md",
+        "records/track_non_record_16mb/2026-04-22_SP1024_ByteLevelPPM_AdaptiveMix/submission.json",
+        "records/track_non_record_16mb/2026-04-22_SP1024_ByteLevelPPM_AdaptiveMix/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-22_SP1024_ByteLevelPPM_AdaptiveMix/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1781,
+      "title": "Non-Record Submission: Random Subspace Optimization",
+      "author": "yangguohao",
+      "state": "OPEN",
+      "created": "2026-04-23T02:35:18Z",
+      "updated": "2026-04-23T02:41:19Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-21_RandomLinearMaps/README.md",
+        "records/track_non_record_16mb/2026-04-21_RandomLinearMaps/submission.json",
+        "records/track_non_record_16mb/2026-04-21_RandomLinearMaps/train.sh",
+        "records/track_non_record_16mb/2026-04-21_RandomLinearMaps/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-21_RandomLinearMaps/train_log.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1780,
       "title": "Add progressive recurrence SP8192 record submission",
@@ -40,7 +105,7 @@
       "author": "leon2k2k2k",
       "state": "OPEN",
       "created": "2026-04-22T21:10:14Z",
-      "updated": "2026-04-22T21:12:33Z",
+      "updated": "2026-04-23T00:48:06Z",
       "bpb": 1.06421,
       "seeds": 3,
       "artifact_bytes": 15980000,
@@ -325,7 +390,7 @@
       "author": "dexhunter",
       "state": "OPEN",
       "created": "2026-04-22T03:36:07Z",
-      "updated": "2026-04-22T07:39:26Z",
+      "updated": "2026-04-23T02:41:02Z",
       "bpb": 1.06453,
       "seeds": 5,
       "artifact_bytes": 20818,
@@ -1037,7 +1102,7 @@
       "author": "elad-simbalista",
       "state": "OPEN",
       "created": "2026-04-20T12:28:30Z",
-      "updated": "2026-04-20T12:28:30Z",
+      "updated": "2026-04-23T03:08:50Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1046,7 +1111,11 @@
         "records/track_non_record_16mb/2026-04-20_EMA_Muon_row_GPTQ/README.md",
         "records/track_non_record_16mb/2026-04-20_EMA_Muon_row_GPTQ/submission.json",
         "records/track_non_record_16mb/2026-04-20_EMA_Muon_row_GPTQ/train_gpt.py",
-        "records/track_non_record_16mb/2026-04-20_EMA_Muon_row_GPTQ/train_log.txt"
+        "records/track_non_record_16mb/2026-04-20_EMA_Muon_row_GPTQ/train_log.txt",
+        "records/track_non_record_16mb/2026-04-23_EMA_int6_gptqlite/README.md",
+        "records/track_non_record_16mb/2026-04-23_EMA_int6_gptqlite/submission.json",
+        "records/track_non_record_16mb/2026-04-23_EMA_int6_gptqlite/train.log",
+        "records/track_non_record_16mb/2026-04-23_EMA_int6_gptqlite/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -1543,7 +1612,7 @@
       "author": "dexhunter",
       "state": "OPEN",
       "created": "2026-04-19T09:55:58Z",
-      "updated": "2026-04-22T07:41:58Z",
+      "updated": "2026-04-23T02:39:50Z",
       "bpb": 0.0007,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -38485,9 +38554,9 @@
       "number": 748,
       "title": "Add local-first MLX search workflow",
       "author": "sueun-dev",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-25T17:23:52Z",
-      "updated": "2026-04-12T13:49:56Z",
+      "updated": "2026-04-23T00:24:49Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -38507,14 +38576,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown",
-        "no-submission-json"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 746,
