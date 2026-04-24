@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-24T13:43:05.141376+00:00",
-  "api_calls_used": 156,
+  "last_fetch": "2026-04-24T15:10:51.837911+00:00",
+  "api_calls_used": 157,
   "prs": [
     {
       "number": 1805,
@@ -8498,7 +8498,7 @@
       "author": "skar07",
       "state": "OPEN",
       "created": "2026-04-12T15:45:05Z",
-      "updated": "2026-04-20T17:52:43Z",
+      "updated": "2026-04-24T14:17:06Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -11301,7 +11301,7 @@
       "author": "dippatel1994",
       "state": "OPEN",
       "created": "2026-04-09T12:28:07Z",
-      "updated": "2026-04-12T17:13:39Z",
+      "updated": "2026-04-24T14:41:43Z",
       "bpb": 1.6323,
       "seeds": 42,
       "artifact_bytes": 14090000,
@@ -11991,9 +11991,9 @@
       "number": 1482,
       "title": "Record: SP8192 + Pre-Quant TTT (QK 5.25, 8ep, freeze-1) — val_bpb 1.0787 (3-seed mean)",
       "author": "aamodbhatt",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-08T22:29:02Z",
-      "updated": "2026-04-11T20:14:43Z",
+      "updated": "2026-04-24T14:40:17Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -12021,11 +12021,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1481,
@@ -44521,15 +44521,18 @@
       "author": "Neopolita",
       "state": "OPEN",
       "created": "2026-03-24T09:55:53Z",
-      "updated": "2026-03-24T12:18:00Z",
+      "updated": "2026-04-24T14:35:17Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 13700000,
       "technique_summary": "EMA",
       "file_paths": [
+        "APPROACH.md",
+        "pyproject.toml",
         "records/track_10min_16mb/2026-03-24-11L_AttnRes_GatedAttn_Loops_EMA_Cos_QAT/README.md",
         "records/track_10min_16mb/2026-03-24-11L_AttnRes_GatedAttn_Loops_EMA_Cos_QAT/submission.json",
-        "records/track_10min_16mb/2026-03-24-11L_AttnRes_GatedAttn_Loops_EMA_Cos_QAT/train_gpt.py"
+        "records/track_10min_16mb/2026-03-24-11L_AttnRes_GatedAttn_Loops_EMA_Cos_QAT/train_gpt.py",
+        "train_gpt_mlx_custom.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
