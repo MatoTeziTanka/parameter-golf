@@ -1,7 +1,38 @@
 {
-  "last_fetch": "2026-04-24T21:53:37.830037+00:00",
-  "api_calls_used": 163,
+  "last_fetch": "2026-04-24T22:41:51.563484+00:00",
+  "api_calls_used": 164,
   "prs": [
+    {
+      "number": 1810,
+      "title": "Non-record: H100 SXM SP1024 baseline probe",
+      "author": "icpmacdo",
+      "state": "OPEN",
+      "created": "2026-04-24T22:01:49Z",
+      "updated": "2026-04-24T22:15:46Z",
+      "bpb": 1.3188541,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-24_H100_SXM_SP1024_Baseline_Probe/README.md",
+        "records/track_non_record_16mb/2026-04-24_H100_SXM_SP1024_Baseline_Probe/submission.json",
+        "records/track_non_record_16mb/2026-04-24_H100_SXM_SP1024_Baseline_Probe/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-24_H100_SXM_SP1024_Baseline_Probe/train_h100_sxm_sp1024_probe.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1809,
       "title": "Record: SP8192 + Gram-NS + Polar Express + 3-Layer Recurrence + Parallel Residuals + QK-Gain 5.25 + Legal TTT — val_bpb 1.0800 (3-seed mean)",
