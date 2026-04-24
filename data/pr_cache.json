@@ -1,14 +1,53 @@
 {
-  "last_fetch": "2026-04-24T16:32:51.776783+00:00",
-  "api_calls_used": 158,
+  "last_fetch": "2026-04-24T17:52:12.577222+00:00",
+  "api_calls_used": 159,
   "prs": [
+    {
+      "number": 1807,
+      "title": "Record attempt: SP8192 + 3-Epoch Parallel Pre-Quant TTT + Huber WD Muon (SDPA-friendly) — val_bpb 1.07037 (3-seed mean)Record attempt: SP8192 + 3-Epoch Parallel Pre-Quant TTT + Huber WD Mu…",
+      "author": "davie2009kh",
+      "state": "OPEN",
+      "created": "2026-04-24T17:08:26Z",
+      "updated": "2026-04-24T17:08:26Z",
+      "bpb": 0.01063,
+      "seeds": 3,
+      "artifact_bytes": 137006,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-24_David_SDPA_3EpochTTT_HuberWD/README.md",
+        "records/track_10min_16mb/2026-04-24_David_SDPA_3EpochTTT_HuberWD/submission.json",
+        "records/track_10min_16mb/2026-04-24_David_SDPA_3EpochTTT_HuberWD/train_gpt.py",
+        "records/track_10min_16mb/2026-04-24_David_SDPA_3EpochTTT_HuberWD/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-24_David_SDPA_3EpochTTT_HuberWD/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-24_David_SDPA_3EpochTTT_HuberWD/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
     {
       "number": 1806,
       "title": "Update README leaderboard with recent record submissions",
       "author": "cocohearts",
       "state": "OPEN",
       "created": "2026-04-24T15:35:49Z",
-      "updated": "2026-04-24T15:55:18Z",
+      "updated": "2026-04-24T17:26:19Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -12865,7 +12904,7 @@
       "author": "viasky657",
       "state": "OPEN",
       "created": "2026-04-08T02:12:10Z",
-      "updated": "2026-04-24T15:43:25Z",
+      "updated": "2026-04-24T17:10:37Z",
       "bpb": 0.4118,
       "seeds": null,
       "artifact_bytes": null,
@@ -53049,16 +53088,22 @@
       "author": "SergheiBrinza",
       "state": "OPEN",
       "created": "2026-03-21T20:43:26Z",
-      "updated": "2026-03-21T20:43:26Z",
+      "updated": "2026-04-24T17:49:46Z",
       "bpb": 1.2421,
       "seeds": null,
       "artifact_bytes": 13280000,
       "technique_summary": "INT6",
       "file_paths": [
+        "README.md",
+        "assets/loss_curves.png",
+        "docs/EXPERIMENTS.md",
+        "docs/METHODS.md",
+        "docs/UPSTREAM_README.md",
         "records/track_10min_16mb/2026-03-21_MixedQuant_BigramHash_SWA/README.md",
         "records/track_10min_16mb/2026-03-21_MixedQuant_BigramHash_SWA/submission.json",
         "records/track_10min_16mb/2026-03-21_MixedQuant_BigramHash_SWA/train.log",
-        "records/track_10min_16mb/2026-03-21_MixedQuant_BigramHash_SWA/train_gpt.py"
+        "records/track_10min_16mb/2026-03-21_MixedQuant_BigramHash_SWA/train_gpt.py",
+        "scripts/plot_curves.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
