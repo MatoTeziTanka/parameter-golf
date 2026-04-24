@@ -1,7 +1,49 @@
 {
-  "last_fetch": "2026-04-24T11:41:00.617818+00:00",
-  "api_calls_used": 155,
+  "last_fetch": "2026-04-24T13:43:05.141376+00:00",
+  "api_calls_used": 156,
   "prs": [
+    {
+      "number": 1805,
+      "title": "SP8192 + Compression-Aware QAT on PR #1493, 3-seed val_bpb 1.10314",
+      "author": "yevh",
+      "state": "OPEN",
+      "created": "2026-04-24T12:18:38Z",
+      "updated": "2026-04-24T12:30:00Z",
+      "bpb": 1.10325,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-22_SP8192_CompQAT_PR1493/README.md",
+        "records/track_non_record_16mb/2026-04-22_SP8192_CompQAT_PR1493/article.md",
+        "records/track_non_record_16mb/2026-04-22_SP8192_CompQAT_PR1493/compression_surrogate.py",
+        "records/track_non_record_16mb/2026-04-22_SP8192_CompQAT_PR1493/submission.json",
+        "records/track_non_record_16mb/2026-04-22_SP8192_CompQAT_PR1493/train.log",
+        "records/track_non_record_16mb/2026-04-22_SP8192_CompQAT_PR1493/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-22_SP8192_CompQAT_PR1493/train_seed1338.log",
+        "records/track_non_record_16mb/2026-04-22_SP8192_CompQAT_PR1493/train_seed1339.log",
+        "records/track_non_record_16mb/2026-04-22_SP8192_CompQAT_PR1493/train_seed1340.log",
+        "research/2026-04-22_compqat_campaign/3DCF_Compression_Vs_Packing/README.md",
+        "research/2026-04-22_compqat_campaign/3DCF_Compression_Vs_Packing/article.md",
+        "research/2026-04-22_compqat_campaign/LoRA_TTT_InferenceMode_BugFix/README.md",
+        "research/2026-04-22_compqat_campaign/LoRA_TTT_InferenceMode_BugFix/article.md",
+        "research/2026-04-22_compqat_campaign/README.md",
+        "research/2026-04-22_compqat_campaign/article.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1804,
       "title": "Audit 1698 lineage bpb bytecount",
@@ -12788,7 +12830,7 @@
       "author": "viasky657",
       "state": "OPEN",
       "created": "2026-04-08T02:12:10Z",
-      "updated": "2026-04-23T15:35:01Z",
+      "updated": "2026-04-24T12:36:02Z",
       "bpb": 0.4118,
       "seeds": null,
       "artifact_bytes": null,
@@ -12815,7 +12857,10 @@
         "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_spiral_dsv_lm.py",
         "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/requirements.txt",
         "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/submission.json",
-        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/train_gpt.py"
+        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/train_gpt.py",
+        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/train_seed42.log",
+        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/train_seed7.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
