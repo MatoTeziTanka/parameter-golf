@@ -1,7 +1,90 @@
 {
-  "last_fetch": "2026-04-24T02:55:50.652695+00:00",
-  "api_calls_used": 151,
+  "last_fetch": "2026-04-24T05:39:57.534028+00:00",
+  "api_calls_used": 152,
   "prs": [
+    {
+      "number": 1803,
+      "title": "[WIP] Draft submission — pending 3-seed H100 verification",
+      "author": "sscswapnil",
+      "state": "OPEN",
+      "created": "2026-04-24T03:16:55Z",
+      "updated": "2026-04-24T03:16:55Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 15990000,
+      "technique_summary": "",
+      "file_paths": [
+        ".gitignore",
+        "PROJECT_PLAN.md",
+        "benchmark_compression.py",
+        "build_submission.py",
+        "docs/BRAINSTORM.md",
+        "generate_report.py",
+        "records/submission/train_gpt.py",
+        "requirements.txt",
+        "run_h100.sh",
+        "run_local.py",
+        "run_local_factorized.py",
+        "run_test.bat",
+        "setup_h100.sh",
+        "smoke_test_cpu.py",
+        "sota_decoded.py",
+        "test_svd_compression.py",
+        "train_gpt.py",
+        "train_gpt_baseline_orig.py",
+        "train_gpt_factorized.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1802,
+      "title": "Record: SP8192 + Polar Express NS + Multi-Phase Global TTT — val_bpb 1.0771 (3-seed mean)",
+      "author": "aamodbhatt",
+      "state": "OPEN",
+      "created": "2026-04-24T02:56:08Z",
+      "updated": "2026-04-24T02:56:08Z",
+      "bpb": 1.0771,
+      "seeds": 3,
+      "artifact_bytes": 15990000,
+      "technique_summary": "TTT + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-24_PolarExpress_MultiPhaseTTT/README.md",
+        "records/track_10min_16mb/2026-04-24_PolarExpress_MultiPhaseTTT/submission.json",
+        "records/track_10min_16mb/2026-04-24_PolarExpress_MultiPhaseTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-24_PolarExpress_MultiPhaseTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-24_PolarExpress_MultiPhaseTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-24_PolarExpress_MultiPhaseTTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1801,
       "title": "Record: #1787 + Sparse Gate + Updated Frozen Carry — val_bpb 1.06287",
@@ -622,7 +705,7 @@
       "author": "nprime06",
       "state": "OPEN",
       "created": "2026-04-23T08:54:38Z",
-      "updated": "2026-04-24T00:39:55Z",
+      "updated": "2026-04-24T03:11:46Z",
       "bpb": 1.06335,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -6688,13 +6771,15 @@
       "author": "adityasasidhar",
       "state": "OPEN",
       "created": "2026-04-14T12:49:52Z",
-      "updated": "2026-04-23T20:22:36Z",
+      "updated": "2026-04-24T05:27:32Z",
       "bpb": 1.2192,
       "seeds": 3,
       "artifact_bytes": 15913674,
       "technique_summary": "TTT + Muon + INT6 + INT8",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-14_Single_H100_8L_int6attn_int8mlp_3mlp_GQA_QAT015_1.21/README.md",
+        "records/track_non_record_16mb/2026-04-14_Single_H100_8L_int6attn_int8mlp_3mlp_GQA_QAT015_1.21/patch.py",
+        "records/track_non_record_16mb/2026-04-14_Single_H100_8L_int6attn_int8mlp_3mlp_GQA_QAT015_1.21/script",
         "records/track_non_record_16mb/2026-04-14_Single_H100_8L_int6attn_int8mlp_3mlp_GQA_QAT015_1.21/seed1.log",
         "records/track_non_record_16mb/2026-04-14_Single_H100_8L_int6attn_int8mlp_3mlp_GQA_QAT015_1.21/seed1337.log",
         "records/track_non_record_16mb/2026-04-14_Single_H100_8L_int6attn_int8mlp_3mlp_GQA_QAT015_1.21/seed42.log",
@@ -15562,7 +15647,7 @@
       "author": "johnlennyt5",
       "state": "OPEN",
       "created": "2026-04-05T13:19:28Z",
-      "updated": "2026-04-12T01:52:23Z",
+      "updated": "2026-04-24T03:12:59Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 7300000,
@@ -15570,6 +15655,7 @@
       "file_paths": [
         "CLAUDE.md",
         "requirements.txt",
+        "specs/CURRENT_STATUS.md",
         "specs/MASTERPLAN.md",
         "specs/arch1_mamba_hybrid.md",
         "train_gpt.py"
