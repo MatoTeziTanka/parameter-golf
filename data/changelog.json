@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.9.4",
+    "date": "2026-04-24",
+    "title": "Funding table data-driven from funding.json; Community Tools section",
+    "changes": [
+      "FUNDING DATA-DRIVEN: funding.json seeded with all 8 existing entries. Sentinel comments added to index.html (AGORA:FUNDING_STATS_START/END, AGORA:FUNDING_TABLE_START/END). run_pipeline.py now renders both the stat-grid and table rows from funding.json on every pipeline run — new entries are one-line JSON edits.",
+      "COMMUNITY TOOLS: New section added to #resources listing @Bortlesboat's three parameter-golf tools: parameter-golf-runpod-starter, parameter-golf-sweeps, parameter-golf-size-checker. Factual descriptions, direct links, submit-your-tool invite line.",
+      "NAV: 'Community Tools' anchor link added to top nav.",
+      "PIPELINE: _render_funding() and _render_funding_stats() functions added to scripts/run_pipeline.py with full type annotations, docstrings, and error handling."
+    ]
+  },
+  {
     "version": "0.9.3",
     "date": "2026-04-20",
     "title": "Funding Transparency refresh — $1,000 RunPod grant received, full 64-transaction Stripe audit",

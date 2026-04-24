@@ -84,6 +84,12 @@ MOD_TRACKER_START = "<!-- AGORA:MOD_TRACKER_START -->"
 MOD_TRACKER_END = "<!-- AGORA:MOD_TRACKER_END -->"
 MOD_TRACKER_PATH = REPO_ROOT / "data" / "mod_tracker.json"
 
+FUNDING_STATS_START = "<!-- AGORA:FUNDING_STATS_START -->"
+FUNDING_STATS_END = "<!-- AGORA:FUNDING_STATS_END -->"
+FUNDING_TABLE_START = "<!-- AGORA:FUNDING_TABLE_START -->"
+FUNDING_TABLE_END = "<!-- AGORA:FUNDING_TABLE_END -->"
+FUNDING_PATH = REPO_ROOT / "data" / "funding.json"
+
 CHECKLIST_PATH = REPO_ROOT / "data" / "checklist.json"
 RULINGS_PATH = REPO_ROOT / "data" / "rulings.json"
 ALERTS_PATH = REPO_ROOT / "data" / "alerts.json"
@@ -731,6 +737,134 @@ def _render_mod_tracker(snapshot: dict[str, Any]) -> str:
     return "\n".join(cards) + "\n" + footer
 
 
+def _render_funding_stats(reports: list[dict[str, Any]], openai_promised_usd: int, openai_promise_url: str, runpod_partner_url: str) -> str:
+    """Render the funding stat-grid from data/funding.json report entries.
+
+    Totals grants and self-funded amounts across all reports, skipping null/unknown
+    values. Mirrors the hardcoded layout: OpenAI promise box + Grants + Self-funded +
+    Participants count.
+    """
+    total_grants: float = 0.0
+    grant_has_plus = False
+    total_self: float = 0.0
+    self_has_plus = False
+
+    for r in reports:
+        g = r.get("grant_usd")
+        if isinstance(g, (int, float)):
+            total_grants += g
+        sf = r.get("self_funded_usd")
+        if isinstance(sf, (int, float)):
+            total_self += sf
+        else:
+            # Display string contains '~' or '+' — mark as approximate
+            display = r.get("self_funded_display", "")
+            if display and display not in ("?", ""):
+                self_has_plus = True
+
+    grants_display = f"${total_grants:,.0f}" if total_grants else "$0"
+    if grant_has_plus:
+        grants_display += "+"
+    self_display = f"${total_self:,.2f}" if total_self else "$0"
+    if self_has_plus:
+        self_display += "+"
+    participant_count = len(reports)
+
+    # Column sub-labels for header row — keep in sync with rendered table header
+    grants_sub = f"${total_grants:,.0f} tracked" if total_grants else "0 tracked"
+    self_sub = f"${total_self:,.2f}+ tracked" if total_self else "0 tracked"
+
+    return (
+        f'<div class="stat-grid">\n'
+        f'  <div class="stat-box"><div class="value"><a href="{escape(openai_promise_url)}" style="color:var(--accent);">'
+        f'${openai_promised_usd:,}</a></div><div class="label">OpenAI Promised '
+        f'(<a href="{escape(runpod_partner_url)}" style="color:var(--blue);font-size:0.7rem;">via RunPod</a>)</div></div>\n'
+        f'  <div class="stat-box" title="Total compute grants distributed to tracked participants">'
+        f'<div class="value">{grants_display}</div><div class="label">Grants Tracked</div></div>\n'
+        f'  <div class="stat-box" title="Total out-of-pocket spending by tracked participants (Stripe, Google Pay, etc.)">'
+        f'<div class="value">{self_display}</div><div class="label">Self-Funded Tracked</div></div>\n'
+        f'  <div class="stat-box" title="Participants who have reported their compute spending">'
+        f'<div class="value">{participant_count}</div><div class="label">Participants Tracked</div></div>\n'
+        f'</div>'
+    )
+
+
+def _render_funding(reports: list[dict[str, Any]], grants_sub: str, self_sub: str) -> str:
+    """Render the funding table tbody rows from data/funding.json report entries.
+
+    Each report entry is expected to have:
+      user (str), grant_usd (float|null), self_funded_display (str),
+      platforms (str), proof_level (str), proof_url (str), proof_label (str),
+      best_pr (int|null), note (str|null).
+
+    Badge CSS class mapping:
+      VERIFIED  -> badge-alive   (green)
+      PENDING   -> badge-incomplete  (grey)
+
+    Returns the inner tbody rows only — the surrounding <table>/<thead>/<tbody>
+    tags live in static HTML outside the sentinel markers.
+    """
+    if not reports:
+        return (
+            '<tr><td colspan="6" style="text-align:center;color:var(--text-dim);">'
+            'No funding reports yet. <a href="https://github.com/MatoTeziTanka/parameter-golf/issues/new'
+            '?template=funding-report.yml">Submit yours.</a></td></tr>'
+        )
+
+    proof_badge_cls: dict[str, str] = {
+        "VERIFIED": "badge-alive",
+        "PENDING": "badge-incomplete",
+    }
+
+    rows: list[str] = []
+    for r in reports:
+        user = escape(r.get("user", "?"))
+        profile_url = f"https://github.com/{r.get('user', '')}"
+
+        # Grant column
+        g = r.get("grant_usd")
+        if g is None:
+            grant_cell = "?"
+        elif g == 0:
+            grant_cell = "$0"
+        else:
+            grant_cell = f"${g:,.0f}" if g == int(g) else f"${g:,.2f}"
+
+        # Self-funded column — prefer display string (preserves '~' and '+' markers)
+        self_cell = escape(r.get("self_funded_display") or "?")
+
+        platforms = escape(r.get("platforms", "?"))
+
+        # Proof cell: badge + link
+        proof_level = r.get("proof_level", "PENDING")
+        badge_cls = proof_badge_cls.get(proof_level, "badge-incomplete")
+        proof_url = r.get("proof_url", "")
+        proof_label = escape(r.get("proof_label", "source"))
+        proof_cell = f'<span class="badge {badge_cls}">{escape(proof_level)}</span>'
+        if proof_url:
+            proof_cell += f' <a href="{escape(proof_url)}" style="font-size:0.75rem;">{proof_label}</a>'
+        note = r.get("note")
+        if note:
+            proof_cell += f' &mdash; <span style="font-size:0.7rem;color:var(--text-dim);">{escape(note)}</span>'
+
+        # Best PR column
+        best_pr = r.get("best_pr")
+        if best_pr:
+            pr_cell = f'<a href="https://github.com/openai/parameter-golf/pull/{best_pr}">#{best_pr}</a>'
+        else:
+            pr_cell = "&mdash;"
+
+        rows.append(
+            f'<tr><td><a href="{escape(profile_url)}">@{user}</a></td>'
+            f'<td>{grant_cell}</td>'
+            f'<td>{self_cell}</td>'
+            f'<td>{platforms}</td>'
+            f'<td>{proof_cell}</td>'
+            f'<td>{pr_cell}</td></tr>'
+        )
+    return "\n".join(rows)
+
+
 def _update_version_bar_from_changelog(html: str, changelog: list[dict[str, Any]], now: datetime) -> str:
     """Sync the version bar with the latest changelog entry."""
     if not changelog:
@@ -1158,6 +1292,32 @@ def main() -> None:
             mod_html = _render_mod_tracker(mod_snapshot)
             html = _replace_between_sentinels(html, MOD_TRACKER_START, MOD_TRACKER_END, mod_html)
             print("[PIPELINE] Mod tracker rendered from data/mod_tracker.json", flush=True)
+
+        # Funding table (data-driven from data/funding.json)
+        if FUNDING_PATH.exists() and FUNDING_TABLE_START in html and FUNDING_TABLE_END in html:
+            with FUNDING_PATH.open("r", encoding="utf-8") as ff:
+                funding_data: dict[str, Any] = json.load(ff)
+            reports: list[dict[str, Any]] = funding_data.get("reports", [])
+            openai_promised = funding_data.get("openai_promised_usd", 1_000_000)
+            promise_url = funding_data.get("openai_promise_url", "https://openai.com/index/parameter-golf/")
+            runpod_url = funding_data.get("runpod_partner_url", "")
+
+            # Compute column sub-labels for table header (totals from reports)
+            total_g = sum(r["grant_usd"] for r in reports if isinstance(r.get("grant_usd"), (int, float)))
+            total_sf = sum(r["self_funded_usd"] for r in reports if isinstance(r.get("self_funded_usd"), (int, float)))
+            grants_sub = f"${total_g:,.0f} tracked"
+            self_sub = f"${total_sf:,.2f}+ tracked"
+
+            funding_rows = _render_funding(reports, grants_sub, self_sub)
+            html = _replace_between_sentinels(html, FUNDING_TABLE_START, FUNDING_TABLE_END, funding_rows)
+            print(f"[PIPELINE] Funding table rendered from data/funding.json ({len(reports)} entries)", flush=True)
+
+            if FUNDING_STATS_START in html and FUNDING_STATS_END in html:
+                stats_html = _render_funding_stats(reports, openai_promised, promise_url, runpod_url)
+                html = _replace_between_sentinels(html, FUNDING_STATS_START, FUNDING_STATS_END, stats_html)
+                print("[PIPELINE] Funding stats rendered from data/funding.json", flush=True)
+        else:
+            print("[WARN] data/funding.json not found or sentinels missing — funding section unchanged", flush=True)
     except RuntimeError as exc:
         print(f"[FATAL] Table replacement failed: {exc}", flush=True)
         sys.exit(1)
