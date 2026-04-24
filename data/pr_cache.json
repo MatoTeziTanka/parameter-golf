@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-24T22:41:51.563484+00:00",
-  "api_calls_used": 164,
+  "last_fetch": "2026-04-24T23:42:22.133056+00:00",
+  "api_calls_used": 165,
   "prs": [
     {
       "number": 1810,
@@ -39,7 +39,7 @@
       "author": "PranavViswanath",
       "state": "OPEN",
       "created": "2026-04-24T21:17:52Z",
-      "updated": "2026-04-24T21:45:27Z",
+      "updated": "2026-04-24T23:08:58Z",
       "bpb": 1.081,
       "seeds": 3,
       "artifact_bytes": 16777216,
@@ -3804,15 +3804,15 @@
     },
     {
       "number": 1707,
-      "title": "Add SP10240 + FreqGPTQ + lowercase tokenization: 1.07399 BPB",
+      "title": "SP10240 + GPTQ + casefold tokenization (optimized): 1.07068 BPB",
       "author": "nothingLiva",
       "state": "OPEN",
       "created": "2026-04-17T23:43:27Z",
-      "updated": "2026-04-22T10:18:58Z",
-      "bpb": 1.07399,
+      "updated": "2026-04-24T23:29:05Z",
+      "bpb": 1.07068,
       "seeds": 3,
       "artifact_bytes": 16000000,
-      "technique_summary": "Muon + INT6 + EMA",
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA",
       "file_paths": [
         "records/track_10min_16mb/2026-04-17_LowercaseTokenization_107399BPB/README.md",
         "records/track_10min_16mb/2026-04-17_LowercaseTokenization_107399BPB/submission.json",
@@ -3823,9 +3823,12 @@
         "train_gpt.py"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
       "track": "record",
-      "technique_type": "neural",
+      "technique_type": "ttt",
       "technique_tags": [
         "gptq"
       ],
