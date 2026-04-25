@@ -1,7 +1,42 @@
 {
-  "last_fetch": "2026-04-25T14:46:23.095338+00:00",
-  "api_calls_used": 175,
+  "last_fetch": "2026-04-25T15:42:19.867776+00:00",
+  "api_calls_used": 176,
   "prs": [
+    {
+      "number": 1816,
+      "title": "Draft non-record: qk525 nopqttt clip1500 BQ11 legal score-first TTT, pending 8×H100 multi-seed validation",
+      "author": "JiaJunDeng5930",
+      "state": "OPEN",
+      "created": "2026-04-25T14:52:23Z",
+      "updated": "2026-04-25T14:52:55Z",
+      "bpb": 1.3915172403965905,
+      "seeds": 0,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-25_qk525_nopqttt_clip1500_bq11_legal_ttt/README.md",
+        "records/track_10min_16mb/2026-04-25_qk525_nopqttt_clip1500_bq11_legal_ttt/submission.json",
+        "records/track_10min_16mb/2026-04-25_qk525_nopqttt_clip1500_bq11_legal_ttt/summary.json",
+        "records/track_10min_16mb/2026-04-25_qk525_nopqttt_clip1500_bq11_legal_ttt/train.log",
+        "records/track_10min_16mb/2026-04-25_qk525_nopqttt_clip1500_bq11_legal_ttt/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-0",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1815,
       "title": "War-room: add pre-H100 smoke bundle",
@@ -13146,12 +13181,13 @@
       "author": "viasky657",
       "state": "OPEN",
       "created": "2026-04-08T02:12:10Z",
-      "updated": "2026-04-24T17:10:37Z",
+      "updated": "2026-04-25T15:07:10Z",
       "bpb": 0.4118,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
+        "plans/spiral_dsv_eigen_integration.md",
         "records/track_10min_16mb/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/README.md",
         "records/track_10min_16mb/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/_hash_grad_train.py",
         "records/track_10min_16mb/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/_semantic_layer.py",
@@ -13164,16 +13200,14 @@
         "records/track_10min_16mb/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/train_20260408T012041.log",
         "records/track_10min_16mb/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/train_20260408T012629.log",
         "records/track_10min_16mb/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/2026-04-07_HDC_1_Step_Grad_DSV_Radial_Slyvester_Hadamard_Matrix_Symmetry/train_gpt.py",
-        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/README.md",
-        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_bidi_hdc_engine.py",
-        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_bidi_train.py",
-        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_eigen_convergence.py",
-        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_gpu.py",
-        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_safety_oxytocin.py",
-        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/_spiral_dsv_lm.py",
-        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/requirements.txt",
-        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/submission.json",
-        "records/track_10min_16mb/2026-04-22_FullBiDirHDC_Complete_Replacement/train_gpt.py"
+        "records/track_10min_16mb/2026-04-25_SpiralDSV_Eigen_DSVOnly/README.md",
+        "records/track_10min_16mb/2026-04-25_SpiralDSV_Eigen_DSVOnly/_eigen_convergence.py",
+        "records/track_10min_16mb/2026-04-25_SpiralDSV_Eigen_DSVOnly/_gpu.py",
+        "records/track_10min_16mb/2026-04-25_SpiralDSV_Eigen_DSVOnly/_semantic_layer.py",
+        "records/track_10min_16mb/2026-04-25_SpiralDSV_Eigen_DSVOnly/_spiral_dsv_lm.py",
+        "records/track_10min_16mb/2026-04-25_SpiralDSV_Eigen_DSVOnly/requirements.txt",
+        "records/track_10min_16mb/2026-04-25_SpiralDSV_Eigen_DSVOnly/submission.json",
+        "records/track_10min_16mb/2026-04-25_SpiralDSV_Eigen_DSVOnly/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
