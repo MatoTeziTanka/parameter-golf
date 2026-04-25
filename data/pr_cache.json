@@ -1,7 +1,43 @@
 {
-  "last_fetch": "2026-04-25T15:42:19.867776+00:00",
-  "api_calls_used": 176,
+  "last_fetch": "2026-04-25T16:49:37.223160+00:00",
+  "api_calls_used": 177,
   "prs": [
+    {
+      "number": 1817,
+      "title": "Non-Record: Crawler 3f+2cx2 d=832 + Mixed Int5 GPTQ + TTT — val_bpb 1.0903 (1-hour cluster)",
+      "author": "Tonyy1977",
+      "state": "OPEN",
+      "created": "2026-04-25T15:46:15Z",
+      "updated": "2026-04-25T15:47:25Z",
+      "bpb": 1.0903,
+      "seeds": null,
+      "artifact_bytes": 15867420,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-25_CrawlerTransformer_d832_1hrCluster_MixedInt5_TTT/README.md",
+        "records/track_non_record_16mb/2026-04-25_CrawlerTransformer_d832_1hrCluster_MixedInt5_TTT/requirements.txt",
+        "records/track_non_record_16mb/2026-04-25_CrawlerTransformer_d832_1hrCluster_MixedInt5_TTT/submission.json",
+        "records/track_non_record_16mb/2026-04-25_CrawlerTransformer_d832_1hrCluster_MixedInt5_TTT/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-25_CrawlerTransformer_d832_1hrCluster_MixedInt5_TTT/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1816,
       "title": "Draft non-record: qk525 nopqttt clip1500 BQ11 legal score-first TTT, pending 8×H100 multi-seed validation",
@@ -178,9 +214,9 @@
       "number": 1811,
       "title": "Non-record: BitNet 65M params — val_bpb 1.235",
       "author": "peytontolbert",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-25T04:44:40Z",
-      "updated": "2026-04-25T04:51:00Z",
+      "updated": "2026-04-25T16:42:28Z",
       "bpb": 0.0009,
       "seeds": null,
       "artifact_bytes": 14330708,
@@ -200,11 +236,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1810,
@@ -13181,7 +13217,7 @@
       "author": "viasky657",
       "state": "OPEN",
       "created": "2026-04-08T02:12:10Z",
-      "updated": "2026-04-25T15:07:10Z",
+      "updated": "2026-04-25T15:42:32Z",
       "bpb": 0.4118,
       "seeds": null,
       "artifact_bytes": null,
