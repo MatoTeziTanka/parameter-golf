@@ -1,7 +1,86 @@
 {
-  "last_fetch": "2026-04-25T16:49:37.223160+00:00",
-  "api_calls_used": 177,
+  "last_fetch": "2026-04-25T17:40:07.460827+00:00",
+  "api_calls_used": 178,
   "prs": [
+    {
+      "number": 1819,
+      "title": "CTM-Golf: Triple Recurrence + Guided Hebbian Learning + Annealed λ",
+      "author": "DuoNeural",
+      "state": "OPEN",
+      "created": "2026-04-25T17:17:39Z",
+      "updated": "2026-04-25T17:17:39Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15280000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-25_CTMGolf_GHL_AnnealedLambda/README.md",
+        "train_ctm_golf.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1818,
+      "title": "Non-record: Post-Quantization Damage Gap — 11L GPTQ Int6 + Curriculum + Sliding TTT (3-seed, 8xH100)",
+      "author": "taka6745",
+      "state": "OPEN",
+      "created": "2026-04-25T16:57:59Z",
+      "updated": "2026-04-25T17:33:15Z",
+      "bpb": 0.02,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/README.md",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/figures/fig1_damage_gap.png",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/figures/fig2_ttt_recovery.png",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/figures/fig3_curriculum_schedule.png",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/figures/fig4_per_seed_bars.png",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/figures/fig5_freezedry_histogram.png",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/figures/fig6_sparsity_24.png",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/figures/fig7_followups.png",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/requirements.txt",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/submission.json",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/train_log_seed1337.log",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/train_log_seed2024.log",
+        "records/track_non_record_16mb/2026-04-26_PostQuantDamageGap_11L_GPTQ_TTT_Curriculum/train_log_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
     {
       "number": 1817,
       "title": "Non-Record: Crawler 3f+2cx2 d=832 + Mixed Int5 GPTQ + TTT — val_bpb 1.0903 (1-hour cluster)",
