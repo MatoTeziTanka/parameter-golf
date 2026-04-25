@@ -1,7 +1,76 @@
 {
-  "last_fetch": "2026-04-25T08:06:12.832319+00:00",
-  "api_calls_used": 169,
+  "last_fetch": "2026-04-25T09:28:37.037678+00:00",
+  "api_calls_used": 170,
   "prs": [
+    {
+      "number": 1814,
+      "title": "Add lowercase SP10240 QK 5.125 ablation",
+      "author": "suryavanshi",
+      "state": "OPEN",
+      "created": "2026-04-25T09:10:26Z",
+      "updated": "2026-04-25T09:10:26Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-25_LowercaseSP10240_QK5125_Ablation/README.md",
+        "records/track_10min_16mb/2026-04-25_LowercaseSP10240_QK5125_Ablation/submission.json",
+        "records/track_10min_16mb/2026-04-25_LowercaseSP10240_QK5125_Ablation/train_gpt.py",
+        "records/track_10min_16mb/2026-04-25_LowercaseSP10240_QK5125_Ablation/train_seed42_modal.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1813,
+      "title": "Record: Scylla QK5.25 depth recurrence, val_bpb 0.94166",
+      "author": "djeidy",
+      "state": "OPEN",
+      "created": "2026-04-25T08:20:03Z",
+      "updated": "2026-04-25T08:20:03Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-25_Scylla_QK525_DepthRecurrence_Experiment/README.md",
+        "records/track_10min_16mb/2026-04-25_Scylla_QK525_DepthRecurrence_Experiment/submission.json",
+        "records/track_10min_16mb/2026-04-25_Scylla_QK525_DepthRecurrence_Experiment/train_gpt.py",
+        "records/track_10min_16mb/2026-04-25_Scylla_QK525_DepthRecurrence_Experiment/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-25_Scylla_QK525_DepthRecurrence_Experiment/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-25_Scylla_QK525_DepthRecurrence_Experiment/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1812,
       "title": "Records: SP8192 + LegalTTT 4ep — 1.0729 (Δ -0.0081 vs 04-09, p<1e-7)",
@@ -109,7 +178,7 @@
       "author": "PranavViswanath",
       "state": "OPEN",
       "created": "2026-04-24T21:17:52Z",
-      "updated": "2026-04-24T23:08:58Z",
+      "updated": "2026-04-25T08:11:33Z",
       "bpb": 1.081,
       "seeds": 3,
       "artifact_bytes": 16777216,
@@ -7058,12 +7127,13 @@
       "author": "Magumbian",
       "state": "OPEN",
       "created": "2026-04-14T13:08:34Z",
-      "updated": "2026-04-23T17:27:49Z",
+      "updated": "2026-04-25T09:28:04Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
+        "records/track_10min_16mb/2026-04-14_ConvCompressedNodeFusion_v1/README.md",
         "records/track_10min_16mb/2026-04-14_ConvCompressedNodeFusion_v1/submission.json",
         "records/track_10min_16mb/2026-04-14_ConvCompressedNodeFusion_v1/train.log",
         "records/track_10min_16mb/2026-04-14_ConvCompressedNodeFusion_v1/train_gpt.py"
