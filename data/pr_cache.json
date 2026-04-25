@@ -1,7 +1,45 @@
 {
-  "last_fetch": "2026-04-25T05:15:05.315722+00:00",
-  "api_calls_used": 167,
+  "last_fetch": "2026-04-25T06:51:11.851511+00:00",
+  "api_calls_used": 168,
   "prs": [
+    {
+      "number": 1812,
+      "title": "Records: SP8192 + LegalTTT 4ep — 1.0729 (Δ -0.0081 vs 04-09, p<1e-7)",
+      "author": "EthanNing",
+      "state": "OPEN",
+      "created": "2026-04-25T06:21:31Z",
+      "updated": "2026-04-25T06:21:31Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-25_SP8192_3LayerRecur_LegalTTT_4ep/README.md",
+        "records/track_10min_16mb/2026-04-25_SP8192_3LayerRecur_LegalTTT_4ep/seed314.log",
+        "records/track_10min_16mb/2026-04-25_SP8192_3LayerRecur_LegalTTT_4ep/seed42.log",
+        "records/track_10min_16mb/2026-04-25_SP8192_3LayerRecur_LegalTTT_4ep/seed999.log",
+        "records/track_10min_16mb/2026-04-25_SP8192_3LayerRecur_LegalTTT_4ep/submission.json",
+        "records/track_10min_16mb/2026-04-25_SP8192_3LayerRecur_LegalTTT_4ep/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1811,
       "title": "Non-record: BitNet 65M params — val_bpb 1.235",
@@ -63468,7 +63506,7 @@
       "author": "yesbhautik",
       "state": "OPEN",
       "created": "2026-03-19T07:32:20Z",
-      "updated": "2026-04-23T21:58:24Z",
+      "updated": "2026-04-25T06:05:39Z",
       "bpb": 1.125,
       "seeds": 3,
       "artifact_bytes": 16000000,
