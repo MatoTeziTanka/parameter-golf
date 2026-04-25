@@ -1,7 +1,38 @@
 {
-  "last_fetch": "2026-04-25T18:58:27.641705+00:00",
-  "api_calls_used": 179,
+  "last_fetch": "2026-04-25T19:49:19.591346+00:00",
+  "api_calls_used": 180,
   "prs": [
+    {
+      "number": 1821,
+      "title": "Hierarchical Quantized Embedding (HQE): Zipf-law mixed precision",
+      "author": "anjing00monyet-arch",
+      "state": "OPEN",
+      "created": "2026-04-25T19:45:52Z",
+      "updated": "2026-04-25T19:45:52Z",
+      "bpb": 1.3825,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "INT6 + INT8",
+      "file_paths": [
+        "hierarchical_embed.py",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1820,
       "title": "Non-record: Kitchen Sink — ACT vs Masked Recurrence, 8192-Bigram (val_bpb 1.4011)",
@@ -11241,7 +11272,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-09T21:37:43Z",
-      "updated": "2026-04-25T14:24:06Z",
+      "updated": "2026-04-25T19:49:03Z",
       "bpb": 1.1117,
       "seeds": 3,
       "artifact_bytes": 16777216,
@@ -11253,6 +11284,9 @@
         "README.md",
         "bench_ns_modal.py",
         "closing_the_gap_5day_plan.md",
+        "data/docs_selected.source_manifest.json",
+        "data/tokenizers/scylla.meta.npz",
+        "data/tokenizers/scylla.vocab",
         "day1_defaults.md",
         "debug_roundtrip.py",
         "debug_roundtrip_full.py",
@@ -11293,10 +11327,7 @@
         "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_seed1337.log",
         "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_seed2025.log",
         "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_seed42.log",
-        "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/README.md",
-        "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/RESULTS.md",
-        "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/fineweb_8192_bpe.model",
-        "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/fineweb_8192_bpe.vocab"
+        "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/README.md"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
