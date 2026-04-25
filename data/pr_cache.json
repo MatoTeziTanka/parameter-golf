@@ -1,7 +1,37 @@
 {
-  "last_fetch": "2026-04-25T12:02:47.508095+00:00",
-  "api_calls_used": 173,
+  "last_fetch": "2026-04-25T13:43:57.537601+00:00",
+  "api_calls_used": 174,
   "prs": [
+    {
+      "number": 1815,
+      "title": "War-room: add pre-H100 smoke bundle",
+      "author": "omar07ibrahim",
+      "state": "OPEN",
+      "created": "2026-04-25T12:51:26Z",
+      "updated": "2026-04-25T12:51:26Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "tools/pre_h100_smoke.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1814,
       "title": "Add lowercase SP10240 QK 5.125 ablation",
@@ -11029,7 +11059,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-09T21:37:43Z",
-      "updated": "2026-04-11T20:05:22Z",
+      "updated": "2026-04-25T12:27:42Z",
       "bpb": 1.1117,
       "seeds": 3,
       "artifact_bytes": 16777216,
@@ -11040,6 +11070,8 @@
         "3seed_s7.log",
         "README.md",
         "bench_ns_modal.py",
+        "closing_the_gap_5day_plan.md",
+        "day1_defaults.md",
         "debug_roundtrip.py",
         "debug_roundtrip_full.py",
         "gram_ns_integration.md",
@@ -11082,9 +11114,7 @@
         "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/RESULTS.md",
         "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/fineweb_8192_bpe.model",
         "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/fineweb_8192_bpe.vocab",
-        "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/requirements.txt",
-        "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/run_cuda_ternary.sh",
-        "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/setup.sh"
+        "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/requirements.txt"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
