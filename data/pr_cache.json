@@ -1,7 +1,39 @@
 {
-  "last_fetch": "2026-04-25T17:40:07.460827+00:00",
-  "api_calls_used": 178,
+  "last_fetch": "2026-04-25T18:58:27.641705+00:00",
+  "api_calls_used": 179,
   "prs": [
+    {
+      "number": 1820,
+      "title": "Non-record: Kitchen Sink — ACT vs Masked Recurrence, 8192-Bigram (val_bpb 1.4011)",
+      "author": "aiejvn",
+      "state": "OPEN",
+      "created": "2026-04-25T18:20:08Z",
+      "updated": "2026-04-25T18:20:08Z",
+      "bpb": 0.003,
+      "seeds": null,
+      "artifact_bytes": 91104,
+      "technique_summary": "TTT + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-24_KitchenSink_UT22_ACT_MaskedRecur_8192Bigram/README.md",
+        "records/track_non_record_16mb/2026-04-24_KitchenSink_UT22_ACT_MaskedRecur_8192Bigram/submission.json",
+        "records/track_non_record_16mb/2026-04-24_KitchenSink_UT22_ACT_MaskedRecur_8192Bigram/train_gpt_universal.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1819,
       "title": "CTM-Golf: Triple Recurrence + Guided Hebbian Learning + Annealed λ",
