@@ -1,7 +1,39 @@
 {
-  "last_fetch": "2026-04-25T02:44:57.757255+00:00",
-  "api_calls_used": 166,
+  "last_fetch": "2026-04-25T05:15:05.315722+00:00",
+  "api_calls_used": 167,
   "prs": [
+    {
+      "number": 1811,
+      "title": "Non-record: BitNet 65M params — val_bpb 1.235",
+      "author": "peytontolbert",
+      "state": "OPEN",
+      "created": "2026-04-25T04:44:40Z",
+      "updated": "2026-04-25T04:51:00Z",
+      "bpb": 0.0009,
+      "seeds": null,
+      "artifact_bytes": 14330708,
+      "technique_summary": "Muon + SwiGLU + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-25_ModelStack_RuntimeRow_BitNet_65M_SP1024_CTX4096/README.md",
+        "records/track_non_record_16mb/2026-04-25_ModelStack_RuntimeRow_BitNet_65M_SP1024_CTX4096/run_65m_full.sh",
+        "records/track_non_record_16mb/2026-04-25_ModelStack_RuntimeRow_BitNet_65M_SP1024_CTX4096/submission.json",
+        "records/track_non_record_16mb/2026-04-25_ModelStack_RuntimeRow_BitNet_65M_SP1024_CTX4096/train.log",
+        "records/track_non_record_16mb/2026-04-25_ModelStack_RuntimeRow_BitNet_65M_SP1024_CTX4096/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1810,
       "title": "Non-record: H100 SXM SP1024 baseline probe",
