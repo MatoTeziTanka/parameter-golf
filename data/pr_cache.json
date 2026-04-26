@@ -1,7 +1,146 @@
 {
-  "last_fetch": "2026-04-26T07:46:08.917872+00:00",
-  "api_calls_used": 187,
+  "last_fetch": "2026-04-26T09:05:20.325725+00:00",
+  "api_calls_used": 188,
   "prs": [
+    {
+      "number": 1828,
+      "title": "Non-record: ETD Hybrid (3 enc + 3×3 think + 4 dec) + Int5 GPTQ + MuonEqR + U-Net — 1.1169 BPB",
+      "author": "5en5e1",
+      "state": "OPEN",
+      "created": "2026-04-26T08:44:08Z",
+      "updated": "2026-04-26T08:44:08Z",
+      "bpb": 1.1169,
+      "seeds": null,
+      "artifact_bytes": 15865354,
+      "technique_summary": "TTT + GPTQ + INT8 + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-26_SP8192_ETD_3x3DepthRecur_Int5GPTQ_MuonEqR_UNet/README.md",
+        "records/track_non_record_16mb/2026-04-26_SP8192_ETD_3x3DepthRecur_Int5GPTQ_MuonEqR_UNet/submission.json",
+        "records/track_non_record_16mb/2026-04-26_SP8192_ETD_3x3DepthRecur_Int5GPTQ_MuonEqR_UNet/train.log",
+        "records/track_non_record_16mb/2026-04-26_SP8192_ETD_3x3DepthRecur_Int5GPTQ_MuonEqR_UNet/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1827,
+      "title": "wow",
+      "author": "LaZeAsh",
+      "state": "CLOSED",
+      "created": "2026-04-26T08:18:41Z",
+      "updated": "2026-04-26T08:19:13Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1826,
+      "title": "Record: SP8192 + PE + SmearGate + AttnOutGate + 4ep TTT — val_bpb 1.0770 (3-seed mean)",
+      "author": "EthanYangTW",
+      "state": "OPEN",
+      "created": "2026-04-26T08:16:13Z",
+      "updated": "2026-04-26T08:18:42Z",
+      "bpb": 1.077,
+      "seeds": 3,
+      "artifact_bytes": 15980000,
+      "technique_summary": "TTT + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-26_V2_PE_MinLR_AttnGate/README.md",
+        "records/track_10min_16mb/2026-04-26_V2_PE_MinLR_AttnGate/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1825,
+      "title": "Record: SP8192 + PE + SmearGate + AttnOutGate + 4ep TTT — val_bpb 1.0770 (3-seed mean)",
+      "author": "EthanYangTW",
+      "state": "CLOSED",
+      "created": "2026-04-26T08:00:44Z",
+      "updated": "2026-04-26T08:15:15Z",
+      "bpb": 1.077,
+      "seeds": 3,
+      "artifact_bytes": 15980000,
+      "technique_summary": "TTT + N-gram",
+      "file_paths": [
+        "docs/superpowers/plans/2026-04-23-mtp-implementation.md",
+        "docs/superpowers/specs/2026-04-23-mtp-design.md",
+        "records/track_10min_16mb/2026-04-12_SP8192_LegalSOTA_Clean/README.md",
+        "records/track_10min_16mb/2026-04-12_SP8192_LegalSOTA_Clean/submission.json",
+        "records/track_10min_16mb/2026-04-12_SP8192_LegalSOTA_Clean/train_gpt.py",
+        "records/track_10min_16mb/2026-04-12_SP8192_LegalSOTA_Clean/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-12_SP8192_LegalSOTA_Clean/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-12_SP8192_LegalSOTA_Clean/train_seed42.log",
+        "records/track_10min_16mb/2026-04-16_WeightShared_DynamicL_INT2_TinyLoop/train_parametergolf.py",
+        "records/track_10min_16mb/2026-04-26_V2_PE_MinLR_AttnGate/README.md",
+        "records/track_10min_16mb/2026-04-26_V2_PE_MinLR_AttnGate/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1824,
       "title": "MuonTTT_WeightTiedRecurrence_RoPE_RMSNorm_1xH100",
