@@ -1,7 +1,43 @@
 {
-  "last_fetch": "2026-04-26T16:50:11.810391+00:00",
-  "api_calls_used": 195,
+  "last_fetch": "2026-04-26T17:41:40.973334+00:00",
+  "api_calls_used": 196,
   "prs": [
+    {
+      "number": 1837,
+      "title": "[non-record / wishlist] E2E TTT — full-model SGD per chunk, val_bpb 1.07063, demonstrates \"healing property\"",
+      "author": "X-Abhishek-X",
+      "state": "OPEN",
+      "created": "2026-04-26T17:15:11Z",
+      "updated": "2026-04-26T17:35:57Z",
+      "bpb": 0.00527,
+      "seeds": 1,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + SSM + LoRA + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/PORTFOLIO_SUMMARY.md",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/README.md",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/e2e_proof.log",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/submission.json",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-1"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1836,
       "title": "hardik_top5_run submission package",
@@ -1476,7 +1512,7 @@
       "author": "dexhunter",
       "state": "OPEN",
       "created": "2026-04-24T00:31:27Z",
-      "updated": "2026-04-26T15:32:11Z",
+      "updated": "2026-04-26T16:53:56Z",
       "bpb": 1.06157,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -1503,7 +1539,9 @@
         "records/track_10min_16mb/2026-04-24_PR1787Base_Smear_LQERAsym_PhasedTTT_1.06157/train_seed314.log",
         "records/track_10min_16mb/2026-04-24_PR1787Base_Smear_LQERAsym_PhasedTTT_1.06157/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Audit note from the frontier pass:\n\nI would not merge/rebank the current #1797 score as-is. The old CaseOps byte inflation issue appears fixed in the current head: `prepare_caseops_data.py` delegates byte accounting to `surface_piece_original_byte_counts(...)`, and synthetic checks found no positive sidecar byte overcounts from the U+E001..U+E004 operators.\n\nThe remaining blocker is separate: current SmearGate crosses document boundaries. In both the normal/eval path and the TTT path it applies:"
+      ],
       "compliance_keywords": [
         "ttt",
         "gptq_eval"
