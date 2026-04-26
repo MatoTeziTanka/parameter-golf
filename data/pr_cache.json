@@ -1,7 +1,40 @@
 {
-  "last_fetch": "2026-04-26T21:05:37.698219+00:00",
-  "api_calls_used": 199,
+  "last_fetch": "2026-04-26T22:03:58.316498+00:00",
+  "api_calls_used": 200,
   "prs": [
+    {
+      "number": 1839,
+      "title": "Add artifact-aware LateQAT fixed-plan record",
+      "author": "cardona",
+      "state": "OPEN",
+      "created": "2026-04-26T21:35:33Z",
+      "updated": "2026-04-26T21:35:33Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-25_ArtifactAwareLateQATFixedPlan/README.md",
+        "records/track_10min_16mb/2026-04-25_ArtifactAwareLateQATFixedPlan/submission.json",
+        "records/track_10min_16mb/2026-04-25_ArtifactAwareLateQATFixedPlan/train.log",
+        "records/track_10min_16mb/2026-04-25_ArtifactAwareLateQATFixedPlan/train_gpt.py",
+        "records/track_10min_16mb/2026-04-25_ArtifactAwareLateQATFixedPlan/train_gpt_human.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1838,
       "title": "Codex/scylla sub105 plans",
