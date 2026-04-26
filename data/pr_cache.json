@@ -1,7 +1,42 @@
 {
-  "last_fetch": "2026-04-26T03:21:44.294674+00:00",
-  "api_calls_used": 185,
+  "last_fetch": "2026-04-26T05:55:36.894561+00:00",
+  "api_calls_used": 186,
   "prs": [
+    {
+      "number": 1824,
+      "title": "MuonTTT_WeightTiedRecurrence_RoPE_RMSNorm_1xH100",
+      "author": "arkhamHack",
+      "state": "OPEN",
+      "created": "2026-04-26T04:44:22Z",
+      "updated": "2026-04-26T04:44:22Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "logs/r4_512_ttt5_seed1337.txt",
+        "logs/r4_dim512_qat_ttt_seed1337.txt",
+        "logs/r4_dim512_seed42.txt",
+        "logs/recurrent_sp1024_seed1337.txt",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1823,
       "title": "Add Adapter Memory TTT submission",
@@ -439,7 +474,7 @@
       "author": "EthanNing",
       "state": "OPEN",
       "created": "2026-04-25T06:21:31Z",
-      "updated": "2026-04-25T06:21:31Z",
+      "updated": "2026-04-26T05:53:34Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -452,7 +487,9 @@
         "records/track_10min_16mb/2026-04-25_SP8192_3LayerRecur_LegalTTT_4ep/submission.json",
         "records/track_10min_16mb/2026-04-25_SP8192_3LayerRecur_LegalTTT_4ep/train_gpt.py"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: haha lol thats a very small diff man"
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -615,21 +652,36 @@
       "number": 1806,
       "title": "Update README leaderboard with recent record submissions",
       "author": "cocohearts",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-24T15:35:49Z",
-      "updated": "2026-04-25T10:43:45Z",
+      "updated": "2026-04-26T04:49:13Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "TTT + Muon + GPTQ",
       "file_paths": [
-        "README.md"
+        "README.md",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/README.md",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/submission.json",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_seed2025.log",
+        "records/track_10min_16mb/2026-03-28_MuonTTT_EntropyAdaptive_11L_8xH100/train_seed42.log",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/README.md",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/candidate.meta.npz",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/candidate.vocab",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/submission.json",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/train_gpt.py",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/train_seed2025.log",
+        "records/track_10min_16mb/2026-03-31_Scylla_FullGPTQ_XSA11_FA3_0.9485/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: hi sorry thanks for correction lemme triple check"
+      ],
       "compliance_keywords": [
         "ttt",
-        "gptq_eval",
-        "leaky_relu"
+        "gptq_eval"
       ],
       "track": "record",
       "technique_type": "ttt",
@@ -637,12 +689,9 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown",
-        "no-submission-json"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -23855,7 +23904,7 @@
       "author": "icryo",
       "state": "MERGED",
       "created": "2026-03-31T16:01:28Z",
-      "updated": "2026-04-23T22:03:27Z",
+      "updated": "2026-04-26T04:47:19Z",
       "bpb": 0.9485,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -25101,7 +25150,7 @@
       "author": "aamodbhatt",
       "state": "MERGED",
       "created": "2026-03-30T19:31:05Z",
-      "updated": "2026-04-23T22:03:07Z",
+      "updated": "2026-04-26T04:47:19Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 15944410,
@@ -25280,7 +25329,7 @@
       "author": "simon-marcus",
       "state": "CLOSED",
       "created": "2026-03-30T18:53:55Z",
-      "updated": "2026-04-23T22:57:13Z",
+      "updated": "2026-04-26T04:47:19Z",
       "bpb": 1.08056553,
       "seeds": 2,
       "artifact_bytes": null,
@@ -29553,7 +29602,7 @@
       "author": "michaelwinczuk",
       "state": "OPEN",
       "created": "2026-03-28T18:38:55Z",
-      "updated": "2026-04-23T23:13:11Z",
+      "updated": "2026-04-26T04:47:19Z",
       "bpb": 0.0037,
       "seeds": null,
       "artifact_bytes": 16000000,
