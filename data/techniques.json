@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-26T22:04:38Z",
+  "generated_at": "2026-04-26T23:08:11Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1753,
-    "matched_pr_count": 1306,
+    "pr_count": 1756,
+    "matched_pr_count": 1307,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 301,
+      "ALIVE": 302,
       "AT_RISK": 104,
-      "DEAD": 498,
-      "INCOMPLETE": 840,
+      "DEAD": 499,
+      "INCOMPLETE": 841,
       "UNKNOWN": 0
     }
   },
@@ -49885,12 +49885,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 41,
-      "author_count": 29,
+      "count": 42,
+      "author_count": 30,
       "alive_count": 4,
       "dead_count": 6,
       "at_risk_count": 2,
-      "incomplete_count": 27,
+      "incomplete_count": 28,
       "unknown_count": 0,
       "best_alive": {
         "number": 1728,
@@ -50245,6 +50245,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.848,
               "created": "2026-03-20T15:09:53Z"
+            }
+          ]
+        },
+        {
+          "author": "Azura-Whiston",
+          "pr_count": 1,
+          "best_bpb": 1.8838,
+          "prs": [
+            {
+              "number": 1842,
+              "author": "Azura-Whiston",
+              "status": "INCOMPLETE",
+              "bpb": 1.8838,
+              "created": "2026-04-26T22:54:53Z"
             }
           ]
         },
@@ -50676,6 +50690,13 @@
           "status": "INCOMPLETE",
           "bpb": 0.00527,
           "created": "2026-04-26T17:15:11Z"
+        },
+        {
+          "number": 1842,
+          "author": "Azura-Whiston",
+          "status": "INCOMPLETE",
+          "bpb": 1.8838,
+          "created": "2026-04-26T22:54:53Z"
         }
       ]
     },
@@ -115412,12 +115433,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 41,
-      "author_count": 29,
+      "count": 42,
+      "author_count": 30,
       "alive_count": 4,
       "dead_count": 6,
       "at_risk_count": 2,
-      "incomplete_count": 27,
+      "incomplete_count": 28,
       "unknown_count": 0,
       "best_alive": {
         "number": 1728,
@@ -115772,6 +115793,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.848,
               "created": "2026-03-20T15:09:53Z"
+            }
+          ]
+        },
+        {
+          "author": "Azura-Whiston",
+          "pr_count": 1,
+          "best_bpb": 1.8838,
+          "prs": [
+            {
+              "number": 1842,
+              "author": "Azura-Whiston",
+              "status": "INCOMPLETE",
+              "bpb": 1.8838,
+              "created": "2026-04-26T22:54:53Z"
             }
           ]
         },
@@ -116203,6 +116238,13 @@
           "status": "INCOMPLETE",
           "bpb": 0.00527,
           "created": "2026-04-26T17:15:11Z"
+        },
+        {
+          "number": 1842,
+          "author": "Azura-Whiston",
+          "status": "INCOMPLETE",
+          "bpb": 1.8838,
+          "created": "2026-04-26T22:54:53Z"
         }
       ]
     },
@@ -118642,28 +118684,28 @@
       "left": "LeakyReLU\u00b2",
       "right": "SSM/Mamba/S4D",
       "left_count": 109,
-      "right_count": 41,
+      "right_count": 42,
       "left_people": 85,
-      "right_people": 29,
-      "score": 4469
+      "right_people": 30,
+      "score": 4578
     },
     {
       "left": "BigramHash",
       "right": "SSM/Mamba/S4D",
       "left_count": 91,
-      "right_count": 41,
+      "right_count": 42,
       "left_people": 79,
-      "right_people": 29,
-      "score": 3731
+      "right_people": 30,
+      "score": 3822
     },
     {
       "left": "SWA",
       "right": "SSM/Mamba/S4D",
       "left_count": 83,
-      "right_count": 41,
+      "right_count": 42,
       "left_people": 70,
-      "right_people": 29,
-      "score": 3403
+      "right_people": 30,
+      "score": 3486
     },
     {
       "left": "QAT",
@@ -118693,6 +118735,15 @@
       "score": 2714
     },
     {
+      "left": "SwiGLU",
+      "right": "SSM/Mamba/S4D",
+      "left_count": 60,
+      "right_count": 42,
+      "left_people": 50,
+      "right_people": 30,
+      "score": 2520
+    },
+    {
       "left": "QAT",
       "right": "MoE",
       "left_count": 118,
@@ -118700,15 +118751,6 @@
       "left_people": 94,
       "right_people": 17,
       "score": 2478
-    },
-    {
-      "left": "SwiGLU",
-      "right": "SSM/Mamba/S4D",
-      "left_count": 60,
-      "right_count": 41,
-      "left_people": 50,
-      "right_people": 29,
-      "score": 2460
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -118864,6 +118906,15 @@
       "score": 968
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Parallel Muon",
+      "left_count": 42,
+      "right_count": 23,
+      "left_people": 30,
+      "right_people": 13,
+      "score": 966
+    },
+    {
       "left": "GPTQ",
       "right": "Differential Attention",
       "left_count": 474,
@@ -118880,15 +118931,6 @@
       "left_people": 224,
       "right_people": 2,
       "score": 948
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Parallel Muon",
-      "left_count": 41,
-      "right_count": 23,
-      "left_people": 29,
-      "right_people": 13,
-      "score": 943
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -119100,29 +119142,29 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Weight Sharing",
-      "left_count": 41,
+      "left_count": 42,
       "right_count": 8,
-      "left_people": 29,
+      "left_people": 30,
       "right_people": 5,
-      "score": 328
+      "score": 336
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "Value Residual",
-      "left_count": 41,
+      "left_count": 42,
       "right_count": 7,
-      "left_people": 29,
+      "left_people": 30,
       "right_people": 6,
-      "score": 287
+      "score": 294
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "Progressive Depth",
-      "left_count": 41,
+      "left_count": 42,
       "right_count": 7,
-      "left_people": 29,
+      "left_people": 30,
       "right_people": 3,
-      "score": 287
+      "score": 294
     },
     {
       "left": "QAT",
@@ -119341,6 +119383,24 @@
       "score": 85
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Differential Attention",
+      "left_count": 42,
+      "right_count": 2,
+      "left_people": 30,
+      "right_people": 2,
+      "score": 84
+    },
+    {
+      "left": "SSM/Mamba/S4D",
+      "right": "U-Net skips",
+      "left_count": 42,
+      "right_count": 2,
+      "left_people": 30,
+      "right_people": 2,
+      "score": 84
+    },
+    {
       "left": "SWA",
       "right": "Flash Attention",
       "left_count": 83,
@@ -119348,24 +119408,6 @@
       "left_people": 70,
       "right_people": 1,
       "score": 83
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Differential Attention",
-      "left_count": 41,
-      "right_count": 2,
-      "left_people": 29,
-      "right_people": 2,
-      "score": 82
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "U-Net skips",
-      "left_count": 41,
-      "right_count": 2,
-      "left_people": 29,
-      "right_people": 2,
-      "score": 82
     },
     {
       "left": "SwiGLU",
@@ -119440,6 +119482,15 @@
       "score": 46
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Flash Attention",
+      "left_count": 42,
+      "right_count": 1,
+      "left_people": 30,
+      "right_people": 1,
+      "score": 42
+    },
+    {
       "left": "MoE",
       "right": "Differential Attention",
       "left_count": 21,
@@ -119456,15 +119507,6 @@
       "left_people": 17,
       "right_people": 2,
       "score": 42
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Flash Attention",
-      "left_count": 41,
-      "right_count": 1,
-      "left_people": 29,
-      "right_people": 1,
-      "score": 41
     },
     {
       "left": "Ternary Weights",
