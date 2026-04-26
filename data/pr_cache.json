@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-04-26T12:05:07.090879+00:00",
-  "api_calls_used": 191,
+  "last_fetch": "2026-04-26T13:46:43.938657+00:00",
+  "api_calls_used": 192,
   "prs": [
     {
       "number": 1831,
@@ -214,16 +214,26 @@
       "author": "arkhamHack",
       "state": "OPEN",
       "created": "2026-04-26T04:44:22Z",
-      "updated": "2026-04-26T04:44:22Z",
+      "updated": "2026-04-26T13:39:35Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
+        "logs/r4_512_sp8192_seed2025.txt",
         "logs/r4_512_ttt5_seed1337.txt",
         "logs/r4_dim512_qat_ttt_seed1337.txt",
         "logs/r4_dim512_seed42.txt",
         "logs/recurrent_sp1024_seed1337.txt",
+        "records/track_10min_16mb/2026-04-26_MuonTTT_WeightTiedRecurrence_RoPE_RMSNorm_1xH100/README.md",
+        "records/track_10min_16mb/2026-04-26_MuonTTT_WeightTiedRecurrence_RoPE_RMSNorm_1xH100/submission.json",
+        "records/track_10min_16mb/2026-04-26_MuonTTT_WeightTiedRecurrence_RoPE_RMSNorm_1xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-04-26_MuonTTT_WeightTiedRecurrence_RoPE_RMSNorm_1xH100/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-26_MuonTTT_WeightTiedRecurrence_RoPE_RMSNorm_1xH100/train_seed42.log",
+        "records/track_10min_16mb/2026-04-26_SP8192_MuonTTT_WeightTiedRecurrence_RoPE_RMSNorm_1xH100/README.md",
+        "records/track_10min_16mb/2026-04-26_SP8192_MuonTTT_WeightTiedRecurrence_RoPE_RMSNorm_1xH100/submission.json",
+        "records/track_10min_16mb/2026-04-26_SP8192_MuonTTT_WeightTiedRecurrence_RoPE_RMSNorm_1xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-04-26_SP8192_MuonTTT_WeightTiedRecurrence_RoPE_RMSNorm_1xH100/train_seed2025.log",
         "train_gpt.py"
       ],
       "maintainer_comments": [],
@@ -238,8 +248,7 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
-        "no-submission-json"
+        "artifact-unknown"
       ],
       "confidence": "HIGH"
     },
