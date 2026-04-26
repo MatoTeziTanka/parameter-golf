@@ -1,7 +1,74 @@
 {
-  "last_fetch": "2026-04-26T10:12:33.788924+00:00",
-  "api_calls_used": 189,
+  "last_fetch": "2026-04-26T11:12:09.705092+00:00",
+  "api_calls_used": 190,
   "prs": [
+    {
+      "number": 1831,
+      "title": "Non-record: Polar Express NS Coefficient Ablation on #1809 (val_bpb 1.08154)",
+      "author": "Christopher-Lee-McClendon",
+      "state": "OPEN",
+      "created": "2026-04-26T11:07:10Z",
+      "updated": "2026-04-26T11:07:10Z",
+      "bpb": 0.00024,
+      "seeds": 42,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-26_SP8192_PolarExpress_Ablation/README.md",
+        "records/track_non_record_16mb/2026-04-26_SP8192_PolarExpress_Ablation/baseline_seed42.log",
+        "records/track_non_record_16mb/2026-04-26_SP8192_PolarExpress_Ablation/submission.json",
+        "records/track_non_record_16mb/2026-04-26_SP8192_PolarExpress_Ablation/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-26_SP8192_PolarExpress_Ablation/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
+    {
+      "number": 1829,
+      "title": "Add non-record submission: HybridSSM SparseAttention MixedQuant",
+      "author": "estesryan",
+      "state": "OPEN",
+      "created": "2026-04-26T10:22:27Z",
+      "updated": "2026-04-26T10:22:27Z",
+      "bpb": 1.20473575,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "SSM + INT6 + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-26_HybridSSM_SparseAttention_MixedQuant/README.md",
+        "records/track_non_record_16mb/2026-04-26_HybridSSM_SparseAttention_MixedQuant/submission.json",
+        "records/track_non_record_16mb/2026-04-26_HybridSSM_SparseAttention_MixedQuant/train.log",
+        "records/track_non_record_16mb/2026-04-26_HybridSSM_SparseAttention_MixedQuant/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1828,
       "title": "Non-record: ETD Hybrid (3 enc + 3×3 think + 4 dec) + Int5 GPTQ + MuonEqR + U-Net — 1.1169 BPB",
@@ -1213,7 +1280,7 @@
       "author": "dexhunter",
       "state": "OPEN",
       "created": "2026-04-24T00:31:27Z",
-      "updated": "2026-04-24T02:05:12Z",
+      "updated": "2026-04-26T10:38:02Z",
       "bpb": 1.06157,
       "seeds": 3,
       "artifact_bytes": 16000000,
