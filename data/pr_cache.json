@@ -1,7 +1,123 @@
 {
-  "last_fetch": "2026-04-26T13:46:43.938657+00:00",
-  "api_calls_used": 192,
+  "last_fetch": "2026-04-26T14:49:11.952244+00:00",
+  "api_calls_used": 193,
   "prs": [
+    {
+      "number": 1834,
+      "title": "Record: NgramRes + Sliding-Window Attention + Legal Score-First TTT. …",
+      "author": "ghrua",
+      "state": "OPEN",
+      "created": "2026-04-26T14:17:26Z",
+      "updated": "2026-04-26T14:17:26Z",
+      "bpb": 1.08034,
+      "seeds": 3,
+      "artifact_bytes": 15990000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-26_SP8192_NgramRes_SWA_LegalTTT/README.md",
+        "records/track_10min_16mb/2026-04-26_SP8192_NgramRes_SWA_LegalTTT/submission.json",
+        "records/track_10min_16mb/2026-04-26_SP8192_NgramRes_SWA_LegalTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-26_SP8192_NgramRes_SWA_LegalTTT/train_gpt.readable.py",
+        "records/track_10min_16mb/2026-04-26_SP8192_NgramRes_SWA_LegalTTT/train_seed314.log",
+        "records/track_10min_16mb/2026-04-26_SP8192_NgramRes_SWA_LegalTTT/train_seed42.log",
+        "records/track_10min_16mb/2026-04-26_SP8192_NgramRes_SWA_LegalTTT/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path",
+        "compliance-override:score-first-ttt"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1833,
+      "title": "WIP Record: SP8192 + CaseOps + Depth Curriculum + FreqGPTQ + PPM adaptive-λ mixture — val_bpb 0.90687688 (1-seed)",
+      "author": "pragnyanramtha",
+      "state": "OPEN",
+      "created": "2026-04-26T14:07:21Z",
+      "updated": "2026-04-26T14:07:21Z",
+      "bpb": 1.07238,
+      "seeds": 1,
+      "artifact_bytes": 24500000,
+      "technique_summary": "TTT + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/record3/43.log",
+        "records/track_10min_16mb/record3/lossless_caps.py",
+        "records/track_10min_16mb/record3/prepare_caseops_data.py",
+        "records/track_10min_16mb/record3/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/record3/train_gpt.py",
+        "run.sh",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-1",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1832,
+      "title": "RunPod SP8192 QK-Gain 5.25 seed 42 reproduction evidence",
+      "author": "sricursion",
+      "state": "OPEN",
+      "created": "2026-04-26T14:02:57Z",
+      "updated": "2026-04-26T14:37:43Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-26_RunPod_SP8192_QK525_Reproduction_Seed42/README.md",
+        "records/track_non_record_16mb/2026-04-26_RunPod_SP8192_QK525_Reproduction_Seed42/pack_seed42_recovery.log",
+        "records/track_non_record_16mb/2026-04-26_RunPod_SP8192_QK525_Reproduction_Seed42/requirements.txt",
+        "records/track_non_record_16mb/2026-04-26_RunPod_SP8192_QK525_Reproduction_Seed42/submission.json",
+        "records/track_non_record_16mb/2026-04-26_RunPod_SP8192_QK525_Reproduction_Seed42/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-26_RunPod_SP8192_QK525_Reproduction_Seed42/train_gpt_unpacked.py",
+        "records/track_non_record_16mb/2026-04-26_RunPod_SP8192_QK525_Reproduction_Seed42/train_gpt_unpacked.sha256",
+        "records/track_non_record_16mb/2026-04-26_RunPod_SP8192_QK525_Reproduction_Seed42/train_seed42_runpod.log",
+        "records/track_non_record_16mb/2026-04-26_RunPod_SP8192_QK525_Reproduction_Seed42/verify_unpacked_source.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1831,
       "title": "Non-record: Polar Express NS Coefficient Ablation on #1809 (val_bpb 1.08154)",
