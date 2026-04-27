@@ -1,14 +1,90 @@
 {
-  "last_fetch": "2026-04-27T07:15:09.817090+00:00",
-  "api_calls_used": 204,
+  "last_fetch": "2026-04-27T09:38:16.026638+00:00",
+  "api_calls_used": 205,
   "prs": [
+    {
+      "number": 1854,
+      "title": "Record: PR #1797 base + PPM-D byte mixture — val_bpb 0.90236 (3-seed mean)",
+      "author": "ndokutovich",
+      "state": "OPEN",
+      "created": "2026-04-27T09:36:55Z",
+      "updated": "2026-04-27T09:36:55Z",
+      "bpb": 0.90236,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_PR1797Base_PPMD_0.90236/README.md",
+        "records/track_10min_16mb/2026-04-27_PR1797Base_PPMD_0.90236/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-27_PR1797Base_PPMD_0.90236/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-27_PR1797Base_PPMD_0.90236/submission.json",
+        "records/track_10min_16mb/2026-04-27_PR1797Base_PPMD_0.90236/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-27_PR1797Base_PPMD_0.90236/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_PR1797Base_PPMD_0.90236/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-27_PR1797Base_PPMD_0.90236/train_seed314.log",
+        "records/track_10min_16mb/2026-04-27_PR1797Base_PPMD_0.90236/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1852,
+      "title": "Record: Pre-Quant TTT + Void Compass — val_bpb 1.0282 (3-seed mean)",
+      "author": "G3sparky",
+      "state": "OPEN",
+      "created": "2026-04-27T08:28:45Z",
+      "updated": "2026-04-27T08:48:25Z",
+      "bpb": 1.0282,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_PreQuantTTT_VoidCompass_QK525/README.md",
+        "records/track_10min_16mb/2026-04-27_PreQuantTTT_VoidCompass_QK525/submission.json",
+        "records/track_10min_16mb/2026-04-27_PreQuantTTT_VoidCompass_QK525/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_PreQuantTTT_VoidCompass_QK525/train_seed314.log",
+        "records/track_10min_16mb/2026-04-27_PreQuantTTT_VoidCompass_QK525/train_seed42.log",
+        "records/track_10min_16mb/2026-04-27_PreQuantTTT_VoidCompass_QK525/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1851,
       "title": "Record: val_bpb = 1.06128 SmearGate BOS Fix + PR #1787 Base + Smear Gate + LQER Asymmetric + Phased TTT",
       "author": "aquariouseworkman",
       "state": "OPEN",
       "created": "2026-04-27T06:56:51Z",
-      "updated": "2026-04-27T06:56:51Z",
+      "updated": "2026-04-27T08:11:43Z",
       "bpb": 1.06128,
       "seeds": null,
       "artifact_bytes": 16000000,
