@@ -1,7 +1,195 @@
 {
-  "last_fetch": "2026-04-27T16:08:30.829999+00:00",
-  "api_calls_used": 206,
+  "last_fetch": "2026-04-27T17:49:09.158380+00:00",
+  "api_calls_used": 207,
   "prs": [
+    {
+      "number": 1864,
+      "title": "Hardik sota submission",
+      "author": "hardik-bhalekar",
+      "state": "OPEN",
+      "created": "2026-04-27T17:48:49Z",
+      "updated": "2026-04-27T17:48:50Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/hardik_sota_run/README.md",
+        "records/track_10min_16mb/hardik_sota_run/submission.json",
+        "records/track_10min_16mb/hardik_sota_run/train_gpt.py",
+        "records/track_10min_16mb/hardik_top5_run/README.md",
+        "records/track_10min_16mb/hardik_top5_run/requirements.txt",
+        "records/track_10min_16mb/hardik_top5_run/submission.json",
+        "records/track_10min_16mb/hardik_top5_run/train.log",
+        "records/track_10min_16mb/hardik_top5_run/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1863,
+      "title": "Innovation Architecture: Arterial Mixer (N-Lane Transformer)",
+      "author": "seinare",
+      "state": "CLOSED",
+      "created": "2026-04-27T16:44:40Z",
+      "updated": "2026-04-27T16:47:44Z",
+      "bpb": 1.2008,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + MoE + N-gram",
+      "file_paths": [
+        "README.md",
+        "runpod_artifacts/10l_a384x2_mix192_h3_xsa1024_w4096_unet1024_slotrope_mlp2_10m_sp1024_wd3000/10l_a384x2_mix192_h3_xsa1024_w4096_unet1024_slotrope_mlp2_10m_sp1024_wd3000.log",
+        "train_gpt_arterial_mixer.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1862,
+      "title": "Add SkipQuant Adapter TTT causal PPM-D byte mixture",
+      "author": "Hetul803",
+      "state": "OPEN",
+      "created": "2026-04-27T16:42:31Z",
+      "updated": "2026-04-27T16:42:31Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT_PPM_EXP/README.md",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT_PPM_EXP/commands.txt",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT_PPM_EXP/results.tsv",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT_PPM_EXP/submission.json",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT_PPM_EXP/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "prefill"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1861,
+      "title": "SkipQuant Adapter TTT + Causal PPM-D Byte Mixture (~1.1876 BPB 1M slice, ~0.8997 est)",
+      "author": "Hetul803",
+      "state": "CLOSED",
+      "created": "2026-04-27T16:37:37Z",
+      "updated": "2026-04-27T16:53:33Z",
+      "bpb": 1.1876,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "monster_stack_experiment.py",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/README.md",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/eval_seed314.log",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/eval_seed42.log",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/eval_seed999.log",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/submission.json",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/README.md",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/eval_seed314.log",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/eval_seed42.log",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/eval_seed999.log",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/submission.json",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT_PPM_EXP/README.md",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT_PPM_EXP/commands.txt",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT_PPM_EXP/results.tsv",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT_PPM_EXP/submission.json",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT_PPM_EXP/train_gpt.py",
+        "requirements.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "prefill"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 1860,
+      "title": "Hymba10B_SP1024_7x512_KV4_8h_unet",
+      "author": "szecsip",
+      "state": "OPEN",
+      "created": "2026-04-27T16:35:44Z",
+      "updated": "2026-04-27T16:35:44Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "SSM",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-27_Hymba10B_SP1024_7x512_KV4_8h_unet/README.md",
+        "records/track_non_record_16mb/2026-04-27_Hymba10B_SP1024_7x512_KV4_8h_unet/run_log.txt",
+        "records/track_non_record_16mb/2026-04-27_Hymba10B_SP1024_7x512_KV4_8h_unet/submission.json",
+        "records/track_non_record_16mb/2026-04-27_Hymba10B_SP1024_7x512_KV4_8h_unet/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1855,
       "title": "Record: SP8192 + LQER + Sparse Attn Gate + BOS-Fixed SmearGate + 9-Hparam Greedy Stack — val_bpb 1.06108 (3-seed mean)",
@@ -235,16 +423,17 @@
     },
     {
       "number": 1848,
-      "title": "val_bpb 0.86548 (3-seed mean) Mikey",
+      "title": "val_bpb 0.87980 (3-seed mean) Mikey",
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-04-27T04:19:36Z",
-      "updated": "2026-04-27T04:23:18Z",
+      "updated": "2026-04-27T16:47:02Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
+        "README.md",
         "records/track_10min_16mb/2026-04-27_Mikey/README.md",
         "records/track_10min_16mb/2026-04-27_Mikey/submission.json",
         "records/track_10min_16mb/2026-04-27_Mikey/train_gpt.py",
@@ -728,7 +917,7 @@
       "author": "hardik-bhalekar",
       "state": "OPEN",
       "created": "2026-04-26T16:36:39Z",
-      "updated": "2026-04-27T06:47:52Z",
+      "updated": "2026-04-27T17:36:19Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -5461,7 +5650,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-04-18T02:19:19Z",
-      "updated": "2026-04-18T02:19:19Z",
+      "updated": "2026-04-27T17:09:35Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -5471,6 +5660,7 @@
         "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/README.md",
         "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/fineweb_4096_bpe.model",
         "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/fineweb_4096_bpe.vocab",
+        "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/maybe this is good",
         "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/scripts/build_sp4096.py",
         "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/scripts/rebuild.sh",
         "records/track_non_record_16mb/2026-04-17_SP4096_Tokenizer_Audit/scripts/tokenizer_specs.sp4096.json",
@@ -12579,7 +12769,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-09T21:37:43Z",
-      "updated": "2026-04-27T10:58:08Z",
+      "updated": "2026-04-27T16:57:51Z",
       "bpb": 1.1117,
       "seeds": 3,
       "artifact_bytes": 16777216,
@@ -12589,6 +12779,8 @@
         "3seed_s42.log",
         "3seed_s7.log",
         "README.md",
+        "a1_ste_qat_recur.log",
+        "a2_noisy_qat_recur.log",
         "bench_ns_modal.py",
         "closing_the_gap_5day_plan.md",
         "data/docs_selected.source_manifest.json",
@@ -12632,9 +12824,7 @@
         "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/README.md",
         "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/submission.json",
         "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_gpt.py",
-        "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_seed1337.log",
-        "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_seed2025.log",
-        "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_seed42.log"
+        "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_seed1337.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -55479,7 +55669,7 @@
       "author": "Skrisps26",
       "state": "OPEN",
       "created": "2026-03-21T16:43:25Z",
-      "updated": "2026-04-27T11:42:20Z",
+      "updated": "2026-04-27T16:40:52Z",
       "bpb": 1.2838,
       "seeds": null,
       "artifact_bytes": 14449000,
