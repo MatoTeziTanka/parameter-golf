@@ -1,14 +1,184 @@
 {
-  "last_fetch": "2026-04-27T17:49:09.158380+00:00",
-  "api_calls_used": 207,
+  "last_fetch": "2026-04-27T19:27:55.983366+00:00",
+  "api_calls_used": 208,
   "prs": [
+    {
+      "number": 1868,
+      "title": "Record: SmearGate BOS Fix 3-Seed Reproduction — val_bpb 1.06145 (3-seed mean)",
+      "author": "Christopher-Lee-McClendon",
+      "state": "OPEN",
+      "created": "2026-04-27T19:20:15Z",
+      "updated": "2026-04-27T19:20:15Z",
+      "bpb": 1.06145,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/README.md",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/submission.json",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_seed314.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1867,
+      "title": "Train gpt 0427 - 1.708bpb",
+      "author": "lijuncheng16",
+      "state": "OPEN",
+      "created": "2026-04-27T19:06:10Z",
+      "updated": "2026-04-27T19:06:55Z",
+      "bpb": 1.708,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + GPTQ + EMA",
+      "file_paths": [
+        "run_3seeds.sh",
+        "run_3seeds_s9.sh",
+        "train_gpt_0427.py",
+        "train_gpt_s9.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1866,
+      "title": "Non-record: Trinity Ternary CPU v3 — Apple M1 Pro 72h, val_bpb 1.5042",
+      "author": "deborahnelson8788726",
+      "state": "OPEN",
+      "created": "2026-04-27T18:23:43Z",
+      "updated": "2026-04-27T18:23:43Z",
+      "bpb": 1.5042,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/README.md",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/requirements.txt",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/submission.json",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_gpt.py",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_seed314_slot_v2.log",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_seeds_42_999_slot_v2.log",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_v3_3seeds.log",
+        "records/track_10min_16mb/2026-04-02_Trinity_Hybrid_Ternary_GPTQ_XSA/train_v6_seed42.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/README.md",
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/submission.json",
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/train_gpt.py",
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/train_seed0.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-18_SP8192_MPSGD_QKGain525/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-22_Trinity_Ternary_CPU_M1Pro/README.md",
+        "records/track_non_record_16mb/2026-04-22_Trinity_Ternary_CPU_M1Pro/eval_results.json",
+        "records/track_non_record_16mb/2026-04-22_Trinity_Ternary_CPU_M1Pro/final_model.trinity.ptz",
+        "records/track_non_record_16mb/2026-04-22_Trinity_Ternary_CPU_M1Pro/pack_and_eval.py",
+        "records/track_non_record_16mb/2026-04-22_Trinity_Ternary_CPU_M1Pro/submission.json",
+        "records/track_non_record_16mb/2026-04-22_Trinity_Ternary_CPU_M1Pro/train.log",
+        "records/track_non_record_16mb/2026-04-22_Trinity_Ternary_CPU_M1Pro/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-24_Trinity_Ternary_CPU_v2/README.md",
+        "records/track_non_record_16mb/2026-04-24_Trinity_Ternary_CPU_v2/eval_results_v3.json",
+        "records/track_non_record_16mb/2026-04-24_Trinity_Ternary_CPU_v2/final_model_v3.trinity.ptz",
+        "records/track_non_record_16mb/2026-04-24_Trinity_Ternary_CPU_v2/pack_and_eval_v3.py",
+        "records/track_non_record_16mb/2026-04-24_Trinity_Ternary_CPU_v2/submission.json",
+        "records/track_non_record_16mb/2026-04-24_Trinity_Ternary_CPU_v2/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-24_Trinity_Ternary_CPU_v2/train_gpt_v3.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "cache",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1865,
+      "title": "val_bpb 0.87480 (3-seed mean) Donnie",
+      "author": "newjordan",
+      "state": "OPEN",
+      "created": "2026-04-27T17:59:57Z",
+      "updated": "2026-04-27T18:01:00Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_Donnie/README.md",
+        "records/track_10min_16mb/2026-04-27_Donnie/submission.json",
+        "records/track_10min_16mb/2026-04-27_Donnie/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_Donnie/train_seed300.log",
+        "records/track_10min_16mb/2026-04-27_Donnie/train_seed42.log",
+        "records/track_10min_16mb/2026-04-27_Donnie/train_seed444.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1864,
       "title": "Hardik sota submission",
       "author": "hardik-bhalekar",
       "state": "OPEN",
       "created": "2026-04-27T17:48:49Z",
-      "updated": "2026-04-27T17:48:50Z",
+      "updated": "2026-04-27T19:00:43Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -950,7 +1120,7 @@
       "author": "anmarhindi",
       "state": "OPEN",
       "created": "2026-04-26T16:23:42Z",
-      "updated": "2026-04-26T16:27:26Z",
+      "updated": "2026-04-27T18:30:57Z",
       "bpb": 1.00136,
       "seeds": 3,
       "artifact_bytes": 6980,
@@ -1138,8 +1308,8 @@
       "author": "estesryan",
       "state": "OPEN",
       "created": "2026-04-26T10:22:27Z",
-      "updated": "2026-04-26T10:22:27Z",
-      "bpb": 1.20473575,
+      "updated": "2026-04-27T18:33:19Z",
+      "bpb": 1.19863713,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "SSM + INT6 + INT8",
@@ -22866,9 +23036,9 @@
       "number": 1246,
       "title": "Record: Trinity v7+skip — val_bpb 0.22311 (3-seed mean, NEW #1)",
       "author": "deborahnelson8788726",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-02T02:44:32Z",
-      "updated": "2026-04-22T08:41:28Z",
+      "updated": "2026-04-27T18:30:40Z",
       "bpb": 0.22509,
       "seeds": 3,
       "artifact_bytes": null,
@@ -22902,11 +23072,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1245,
