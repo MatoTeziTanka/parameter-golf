@@ -1,7 +1,157 @@
 {
-  "last_fetch": "2026-04-27T04:07:39.423693+00:00",
-  "api_calls_used": 203,
+  "last_fetch": "2026-04-27T07:15:09.817090+00:00",
+  "api_calls_used": 204,
   "prs": [
+    {
+      "number": 1851,
+      "title": "Record: val_bpb = 1.06128 SmearGate BOS Fix + PR #1787 Base + Smear Gate + LQER Asymmetric + Phased TTT",
+      "author": "aquariouseworkman",
+      "state": "OPEN",
+      "created": "2026-04-27T06:56:51Z",
+      "updated": "2026-04-27T06:56:51Z",
+      "bpb": 1.06128,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/README.md",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/submission.json",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1850,
+      "title": "Record: SP8192 + Strict Full-Val Byte PPM Mixture — 1.00495 BPB (3-seed mean)",
+      "author": "someone114514",
+      "state": "OPEN",
+      "created": "2026-04-27T06:20:47Z",
+      "updated": "2026-04-27T06:29:38Z",
+      "bpb": 1.00425333,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-26_SP8192_StrictFullValPPM/README.md",
+        "records/track_10min_16mb/2026-04-26_SP8192_StrictFullValPPM/submission.json",
+        "records/track_10min_16mb/2026-04-26_SP8192_StrictFullValPPM/train_gpt.py",
+        "records/track_10min_16mb/2026-04-26_SP8192_StrictFullValPPM/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-26_SP8192_StrictFullValPPM/train_seed42.log",
+        "records/track_10min_16mb/2026-04-26_SP8192_StrictFullValPPM/train_seed7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1849,
+      "title": "Draft Base PR1493 + pruning + q-symbol entropy coding compute-grant checkpoint",
+      "author": "VedantKmr0",
+      "state": "OPEN",
+      "created": "2026-04-27T06:18:45Z",
+      "updated": "2026-04-27T06:18:45Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-26_PR1493_Pruning_Entropy_ComputeGrant/README.md",
+        "records/track_non_record_16mb/2026-04-26_PR1493_Pruning_Entropy_ComputeGrant/grant_estimate_q_entropy.py",
+        "records/track_non_record_16mb/2026-04-26_PR1493_Pruning_Entropy_ComputeGrant/grant_eval_mlp_zero_ablation.py",
+        "records/track_non_record_16mb/2026-04-26_PR1493_Pruning_Entropy_ComputeGrant/grant_generate_mlp_cap_masks.py",
+        "records/track_non_record_16mb/2026-04-26_PR1493_Pruning_Entropy_ComputeGrant/grant_generate_mlp_softcap_masks.py",
+        "records/track_non_record_16mb/2026-04-26_PR1493_Pruning_Entropy_ComputeGrant/submission.json",
+        "records/track_non_record_16mb/2026-04-26_PR1493_Pruning_Entropy_ComputeGrant/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-26_PR1493_Pruning_Entropy_ComputeGrant/train_gpt_pr1493.py",
+        "records/track_non_record_16mb/2026-04-26_PR1493_Pruning_Entropy_ComputeGrant/train_pr1493_capture.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1848,
+      "title": "val_bpb 0.86548 (3-seed mean) Mikey",
+      "author": "newjordan",
+      "state": "OPEN",
+      "created": "2026-04-27T04:19:36Z",
+      "updated": "2026-04-27T04:23:18Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_Mikey/README.md",
+        "records/track_10min_16mb/2026-04-27_Mikey/submission.json",
+        "records/track_10min_16mb/2026-04-27_Mikey/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_Mikey/train_seed300.log",
+        "records/track_10min_16mb/2026-04-27_Mikey/train_seed42.log",
+        "records/track_10min_16mb/2026-04-27_Mikey/train_seed444.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1847,
       "title": "[codex] Add pg-grader app source",
@@ -462,7 +612,7 @@
       "author": "hardik-bhalekar",
       "state": "OPEN",
       "created": "2026-04-26T16:36:39Z",
-      "updated": "2026-04-27T02:35:44Z",
+      "updated": "2026-04-27T06:47:52Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -533,7 +683,7 @@
       "author": "ghrua",
       "state": "OPEN",
       "created": "2026-04-26T14:17:26Z",
-      "updated": "2026-04-26T14:17:26Z",
+      "updated": "2026-04-27T04:37:38Z",
       "bpb": 1.08034,
       "seeds": 3,
       "artifact_bytes": 15990000,
@@ -12299,7 +12449,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-09T21:37:43Z",
-      "updated": "2026-04-25T19:49:03Z",
+      "updated": "2026-04-27T04:14:14Z",
       "bpb": 1.1117,
       "seeds": 3,
       "artifact_bytes": 16777216,
@@ -12312,6 +12462,7 @@
         "bench_ns_modal.py",
         "closing_the_gap_5day_plan.md",
         "data/docs_selected.source_manifest.json",
+        "data/tokenizer_specs.json",
         "data/tokenizers/scylla.meta.npz",
         "data/tokenizers/scylla.vocab",
         "day1_defaults.md",
@@ -12353,8 +12504,7 @@
         "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_gpt.py",
         "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_seed1337.log",
         "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_seed2025.log",
-        "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_seed42.log",
-        "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/README.md"
+        "records/track_10min_16mb/2026-03-23_LeakyReLU_LegalTTT_ParallelMuon/train_seed42.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
