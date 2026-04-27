@@ -1,7 +1,87 @@
 {
-  "last_fetch": "2026-04-27T22:56:33.956293+00:00",
-  "api_calls_used": 210,
+  "last_fetch": "2026-04-27T23:58:22.063962+00:00",
+  "api_calls_used": 211,
   "prs": [
+    {
+      "number": 1877,
+      "title": "Record: SP8192 + Order-6 Strict Full-Val Byte PPM — 0.96255 BPB (3-seed mean)",
+      "author": "someone114514",
+      "state": "OPEN",
+      "created": "2026-04-27T23:35:14Z",
+      "updated": "2026-04-27T23:36:56Z",
+      "bpb": 0.96255,
+      "seeds": 3,
+      "artifact_bytes": 15997000,
+      "technique_summary": "TTT + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_SP8192_Order6StrictBytePPM/README.md",
+        "records/track_10min_16mb/2026-04-27_SP8192_Order6StrictBytePPM/submission.json",
+        "records/track_10min_16mb/2026-04-27_SP8192_Order6StrictBytePPM/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_SP8192_Order6StrictBytePPM/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-27_SP8192_Order6StrictBytePPM/train_seed42.log",
+        "records/track_10min_16mb/2026-04-27_SP8192_Order6StrictBytePPM/train_seed7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1876,
+      "title": "Non-record: Coprime-Stride Loader + Full GPTQ + Score-First TTT (3-seed mean 1.08008 BPB)",
+      "author": "Meirzhan05",
+      "state": "OPEN",
+      "created": "2026-04-27T23:15:38Z",
+      "updated": "2026-04-27T23:15:38Z",
+      "bpb": 1.08008,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "download_sp8192.py",
+        "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/README.md",
+        "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/setup.sh",
+        "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/submission.json",
+        "records/track_10min_16mb/2026-03-25_QAT_Int4MLP_12L/train_gpt.py",
+        "records/track_10min_16mb/2026-04-25_CoprimeStride_GPTQ_TTT/README.md",
+        "records/track_10min_16mb/2026-04-25_CoprimeStride_GPTQ_TTT/submission.json",
+        "records/track_10min_16mb/2026-04-25_CoprimeStride_GPTQ_TTT/train_gpt.py",
+        "research/05_mtp_experiment_results.md",
+        "setup_server.sh",
+        "train_gpt_improved.py",
+        "train_gpt_improved_compressed.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1875,
       "title": "Claude/busy thompson 9c94f9",
@@ -680,7 +760,7 @@
       "author": "someone114514",
       "state": "OPEN",
       "created": "2026-04-27T06:20:47Z",
-      "updated": "2026-04-27T06:29:38Z",
+      "updated": "2026-04-27T23:40:23Z",
       "bpb": 1.00425333,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -8255,7 +8335,7 @@
       "author": "powerpratik",
       "state": "OPEN",
       "created": "2026-04-15T19:46:32Z",
-      "updated": "2026-04-16T20:38:46Z",
+      "updated": "2026-04-27T23:22:46Z",
       "bpb": 1.0616,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -13098,7 +13178,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-09T21:37:43Z",
-      "updated": "2026-04-27T16:57:51Z",
+      "updated": "2026-04-27T23:15:53Z",
       "bpb": 1.1117,
       "seeds": 3,
       "artifact_bytes": 16777216,
