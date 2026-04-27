@@ -1,7 +1,114 @@
 {
-  "last_fetch": "2026-04-27T20:40:12.632538+00:00",
-  "api_calls_used": 208,
+  "last_fetch": "2026-04-27T21:55:19.260440+00:00",
+  "api_calls_used": 209,
   "prs": [
+    {
+      "number": 1874,
+      "title": "Record: PR #1790 + Polar Express NS + MIN_LR + LQER Asym Rank-4 — val_bpb 1.06766 (3-seed mean)",
+      "author": "AjAnubolu",
+      "state": "OPEN",
+      "created": "2026-04-27T21:42:12Z",
+      "updated": "2026-04-27T21:42:12Z",
+      "bpb": 1.06766,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-25_SP8192_PolarExpressNS_MinLR_LQERAsymR4/README.md",
+        "records/track_10min_16mb/2026-04-25_SP8192_PolarExpressNS_MinLR_LQERAsymR4/submission.json",
+        "records/track_10min_16mb/2026-04-25_SP8192_PolarExpressNS_MinLR_LQERAsymR4/train_gpt.py",
+        "records/track_10min_16mb/2026-04-25_SP8192_PolarExpressNS_MinLR_LQERAsymR4/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-25_SP8192_PolarExpressNS_MinLR_LQERAsymR4/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-25_SP8192_PolarExpressNS_MinLR_LQERAsymR4/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1873,
+      "title": "Record: SP10240 Casefold + TTT + GPTQ + PPM-D — val_bpb 0.82005771 (3-seed mean)",
+      "author": "schattenjuwel",
+      "state": "OPEN",
+      "created": "2026-04-27T21:35:09Z",
+      "updated": "2026-04-27T21:35:09Z",
+      "bpb": 0.82005771,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/records/track_10min_16mb/2026-04-27_SP10240Casefold_TTT_GPTQ_PPM-D_BPB0.8201/README.md",
+        "records/track_10min_16mb/records/track_10min_16mb/2026-04-27_SP10240Casefold_TTT_GPTQ_PPM-D_BPB0.8201/submission.json",
+        "records/track_10min_16mb/records/track_10min_16mb/2026-04-27_SP10240Casefold_TTT_GPTQ_PPM-D_BPB0.8201/train_gpt.py",
+        "records/track_10min_16mb/records/track_10min_16mb/2026-04-27_SP10240Casefold_TTT_GPTQ_PPM-D_BPB0.8201/train_gpt_log_seed123.txt",
+        "records/track_10min_16mb/records/track_10min_16mb/2026-04-27_SP10240Casefold_TTT_GPTQ_PPM-D_BPB0.8201/train_gpt_log_seed42.txt",
+        "records/track_10min_16mb/records/track_10min_16mb/2026-04-27_SP10240Casefold_TTT_GPTQ_PPM-D_BPB0.8201/train_gpt_log_seed999.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1871,
+      "title": "val_bpb 0.85330 (3-seed mean) Leo",
+      "author": "newjordan",
+      "state": "OPEN",
+      "created": "2026-04-27T20:54:43Z",
+      "updated": "2026-04-27T20:55:32Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_Leo/README.md",
+        "records/track_10min_16mb/2026-04-27_Leo/submission.json",
+        "records/track_10min_16mb/2026-04-27_Leo/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_Leo/train_seed300.log",
+        "records/track_10min_16mb/2026-04-27_Leo/train_seed42.log",
+        "records/track_10min_16mb/2026-04-27_Leo/train_seed444.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1868,
       "title": "Record: SmearGate BOS Fix 3-Seed Reproduction — val_bpb 1.06145 (3-seed mean)",
@@ -15026,7 +15133,7 @@
       "author": "viasky657",
       "state": "OPEN",
       "created": "2026-04-08T02:12:10Z",
-      "updated": "2026-04-27T02:31:19Z",
+      "updated": "2026-04-27T21:42:12Z",
       "bpb": 0.4067,
       "seeds": null,
       "artifact_bytes": null,
