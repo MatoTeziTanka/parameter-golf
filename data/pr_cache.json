@@ -1,7 +1,83 @@
 {
-  "last_fetch": "2026-04-26T23:07:30.265840+00:00",
-  "api_calls_used": 201,
+  "last_fetch": "2026-04-27T00:05:44.349557+00:00",
+  "api_calls_used": 202,
   "prs": [
+    {
+      "number": 1844,
+      "title": "Add SkipQuant Adapter TTT (int4 skip_gates/weights + 4-epoch TTT)",
+      "author": "Hetul803",
+      "state": "OPEN",
+      "created": "2026-04-26T23:30:55Z",
+      "updated": "2026-04-26T23:30:55Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15998150,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "monster_stack_experiment.py",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/README.md",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/eval_seed314.log",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/eval_seed42.log",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/eval_seed999.log",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/submission.json",
+        "records/track_10min_16mb/2026-04-25_Hetul_AdapterMemoryTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/README.md",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/eval_seed314.log",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/eval_seed42.log",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/eval_seed999.log",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/submission.json",
+        "records/track_10min_16mb/2026-04-26_Hetul_SkipQuantAdapterTTT/train_gpt.py",
+        "requirements.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1843,
+      "title": "[train_gpt.py] Autodetect muon warmup from measured step speed",
+      "author": "flappybird1084",
+      "state": "OPEN",
+      "created": "2026-04-26T23:28:27Z",
+      "updated": "2026-04-26T23:32:02Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "Muon",
+      "file_paths": [
+        "train_gpt.py",
+        "train_gpt_mlx.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1842,
       "title": "[Non-record] H-Net dynamic chunking — Path B (attention-only, byte-level)",
@@ -588,7 +664,7 @@
       "author": "EthanYangTW",
       "state": "OPEN",
       "created": "2026-04-26T08:16:13Z",
-      "updated": "2026-04-26T23:05:34Z",
+      "updated": "2026-04-26T23:08:27Z",
       "bpb": 1.077,
       "seeds": 3,
       "artifact_bytes": 15980000,
