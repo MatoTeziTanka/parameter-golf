@@ -1,7 +1,74 @@
 {
-  "last_fetch": "2026-04-28T11:21:40.229853+00:00",
-  "api_calls_used": 215,
+  "last_fetch": "2026-04-28T13:14:36.263197+00:00",
+  "api_calls_used": 216,
   "prs": [
+    {
+      "number": 1889,
+      "title": "Add draft Arman SP8192 credit-blocked record",
+      "author": "thearmankarapetyan",
+      "state": "OPEN",
+      "created": "2026-04-28T12:33:21Z",
+      "updated": "2026-04-28T12:33:21Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_Arman_SP8192_4epSplitWD_CreditBlocked/README.md",
+        "records/track_10min_16mb/2026-04-28_Arman_SP8192_4epSplitWD_CreditBlocked/submission.json",
+        "records/track_10min_16mb/2026-04-28_Arman_SP8192_4epSplitWD_CreditBlocked/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1888,
+      "title": "13L Tensor-Train Attention + BigramHash 8192",
+      "author": "NikitaBabenko",
+      "state": "OPEN",
+      "created": "2026-04-28T11:50:59Z",
+      "updated": "2026-04-28T12:23:03Z",
+      "bpb": 1.1691,
+      "seeds": null,
+      "artifact_bytes": 14916215,
+      "technique_summary": "Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-28_V40_TensorTrain_13L_BigramHash8192/README.md",
+        "records/track_non_record_16mb/2026-04-28_V40_TensorTrain_13L_BigramHash8192/final_model.int6.ptz",
+        "records/track_non_record_16mb/2026-04-28_V40_TensorTrain_13L_BigramHash8192/requirements.txt",
+        "records/track_non_record_16mb/2026-04-28_V40_TensorTrain_13L_BigramHash8192/submission.json",
+        "records/track_non_record_16mb/2026-04-28_V40_TensorTrain_13L_BigramHash8192/train.log",
+        "records/track_non_record_16mb/2026-04-28_V40_TensorTrain_13L_BigramHash8192/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1887,
       "title": "Add tns15june SP8192 frontier submission",
@@ -975,7 +1042,7 @@
       "author": "G3sparky",
       "state": "OPEN",
       "created": "2026-04-27T12:42:33Z",
-      "updated": "2026-04-28T07:19:37Z",
+      "updated": "2026-04-28T11:41:18Z",
       "bpb": 0.9944,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -1121,11 +1188,11 @@
     },
     {
       "number": 1851,
-      "title": "Record: val_bpb = 1.06128 SmearGate BOS Fix + PR #1787 Base + Smear Gate + LQER Asymmetric + Phased TTT",
+      "title": "Record: val_bpb = 1.06128 SmearGate BOS Fix + PR #1787 Base + Smear Gate + LQER Asymmetric + Phased TTT (3 seed mean)",
       "author": "aquariouseworkman",
       "state": "OPEN",
       "created": "2026-04-27T06:56:51Z",
-      "updated": "2026-04-27T08:11:43Z",
+      "updated": "2026-04-28T12:45:53Z",
       "bpb": 1.06128,
       "seeds": null,
       "artifact_bytes": 16000000,
