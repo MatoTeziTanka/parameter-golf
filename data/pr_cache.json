@@ -1,7 +1,113 @@
 {
-  "last_fetch": "2026-04-28T06:38:05.161730+00:00",
-  "api_calls_used": 213,
+  "last_fetch": "2026-04-28T09:24:54.399240+00:00",
+  "api_calls_used": 214,
   "prs": [
+    {
+      "number": 1887,
+      "title": "Add tns15june SP8192 frontier submission",
+      "author": "tns15june",
+      "state": "OPEN",
+      "created": "2026-04-28T07:23:54Z",
+      "updated": "2026-04-28T07:25:34Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04_tns15june_v1/README.md",
+        "records/track_10min_16mb/2026-04_tns15june_v1/requirements.txt",
+        "records/track_10min_16mb/2026-04_tns15june_v1/run.sh",
+        "records/track_10min_16mb/2026-04_tns15june_v1/submission.json",
+        "records/track_10min_16mb/2026-04_tns15june_v1/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1886,
+      "title": "Record: Fused softcap CE + WD=2.0 (warm-start stability fix) — val_bpb 1.06957 (3-seed mean)",
+      "author": "renqianluo",
+      "state": "OPEN",
+      "created": "2026-04-28T07:03:03Z",
+      "updated": "2026-04-28T07:03:03Z",
+      "bpb": 1.121,
+      "seeds": 2,
+      "artifact_bytes": 15980000,
+      "technique_summary": "TTT + LoRA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_FusedCE_WD20_PolarNS_RunPod_1.06957/README.md",
+        "records/track_10min_16mb/2026-04-28_FusedCE_WD20_PolarNS_RunPod_1.06957/requirements.txt",
+        "records/track_10min_16mb/2026-04-28_FusedCE_WD20_PolarNS_RunPod_1.06957/submission.json",
+        "records/track_10min_16mb/2026-04-28_FusedCE_WD20_PolarNS_RunPod_1.06957/train_gpt.py",
+        "records/track_10min_16mb/2026-04-28_FusedCE_WD20_PolarNS_RunPod_1.06957/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-28_FusedCE_WD20_PolarNS_RunPod_1.06957/train_seed314.log",
+        "records/track_10min_16mb/2026-04-28_FusedCE_WD20_PolarNS_RunPod_1.06957/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1885,
+      "title": "Record: PR #1850 + Anti-Hijack Gate — val_bpb 0.99445 (full val)",
+      "author": "leon2k2k2k",
+      "state": "OPEN",
+      "created": "2026-04-28T06:45:51Z",
+      "updated": "2026-04-28T07:27:32Z",
+      "bpb": 0.99291,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_050_PPM_Mixture_AntiHijack/README.md",
+        "records/track_10min_16mb/2026-04-28_050_PPM_Mixture_AntiHijack/submission.json",
+        "records/track_10min_16mb/2026-04-28_050_PPM_Mixture_AntiHijack/train_gpt.py",
+        "records/track_10min_16mb/2026-04-28_050_PPM_Mixture_AntiHijack/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-28_050_PPM_Mixture_AntiHijack/train_seed42.log",
+        "records/track_10min_16mb/2026-04-28_050_PPM_Mixture_AntiHijack/train_seed7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1884,
       "title": "Experiment: SmearGate BOS Fix + train-only logit calibration",
@@ -196,7 +302,7 @@
       "author": "okezue",
       "state": "OPEN",
       "created": "2026-04-28T02:05:03Z",
-      "updated": "2026-04-28T02:07:52Z",
+      "updated": "2026-04-28T07:16:18Z",
       "bpb": 1.0803,
       "seeds": null,
       "artifact_bytes": 15977914,
@@ -861,6 +967,40 @@
         "seeds-unknown",
         "artifact-unknown"
       ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1858,
+      "title": "Record: Score-First TTT + PPM-D Byte Mixture — mix_bpb 0.9946 (3-seed mean)",
+      "author": "G3sparky",
+      "state": "OPEN",
+      "created": "2026-04-27T12:42:33Z",
+      "updated": "2026-04-28T07:19:37Z",
+      "bpb": 0.9944,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_ScoreFirstTTT_PPMD_QK525/README.md",
+        "records/track_10min_16mb/2026-04-27_ScoreFirstTTT_PPMD_QK525/submission.json",
+        "records/track_10min_16mb/2026-04-27_ScoreFirstTTT_PPMD_QK525/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_ScoreFirstTTT_PPMD_QK525/train_seed314.log",
+        "records/track_10min_16mb/2026-04-27_ScoreFirstTTT_PPMD_QK525/train_seed42.log",
+        "records/track_10min_16mb/2026-04-27_ScoreFirstTTT_PPMD_QK525/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -13442,7 +13582,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-09T21:37:43Z",
-      "updated": "2026-04-27T23:15:53Z",
+      "updated": "2026-04-28T06:41:18Z",
       "bpb": 1.1117,
       "seeds": 3,
       "artifact_bytes": 16777216,
@@ -24570,7 +24710,7 @@
       "author": "Hieuabssy",
       "state": "OPEN",
       "created": "2026-04-01T13:39:21Z",
-      "updated": "2026-04-28T05:59:38Z",
+      "updated": "2026-04-28T09:17:44Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -62761,9 +62901,9 @@
       "number": 165,
       "title": "[WIP] jtakahashi0604 - tiny experiments",
       "author": "jtakahashi0604",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-20T04:06:31Z",
-      "updated": "2026-03-28T00:28:52Z",
+      "updated": "2026-04-28T08:08:03Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -62780,14 +62920,11 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown",
-        "no-submission-json"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 164,
