@@ -1,7 +1,156 @@
 {
-  "last_fetch": "2026-04-28T15:58:06.214594+00:00",
-  "api_calls_used": 217,
+  "last_fetch": "2026-04-28T17:53:42.645547+00:00",
+  "api_calls_used": 218,
   "prs": [
+    {
+      "number": 1898,
+      "title": "Record: Partial SpinQuant (start_layer=5) + EMBED_BITS=6 + PR#1855 Hparams + PR#1851 Base — val_bpb 1.06614 (3-seed mean)",
+      "author": "X-Abhishek-X",
+      "state": "OPEN",
+      "created": "2026-04-28T17:52:05Z",
+      "updated": "2026-04-28T17:52:05Z",
+      "bpb": 1.06484,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_PartialSpinQuant_EMBED6_CaseOps_PhasedTTT/README.md",
+        "records/track_10min_16mb/2026-04-28_PartialSpinQuant_EMBED6_CaseOps_PhasedTTT/submission.json",
+        "records/track_10min_16mb/2026-04-28_PartialSpinQuant_EMBED6_CaseOps_PhasedTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-28_PartialSpinQuant_EMBED6_CaseOps_PhasedTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-28_PartialSpinQuant_EMBED6_CaseOps_PhasedTTT/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-28_PartialSpinQuant_EMBED6_CaseOps_PhasedTTT/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/PORTFOLIO_SUMMARY.md",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/README.md",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/e2e_proof.log",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/submission.json",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-27_SpinQuantV1_PR1851Base_LQERAsym_PhasedTTT/README.md",
+        "records/track_non_record_16mb/2026-04-27_SpinQuantV1_PR1851Base_LQERAsym_PhasedTTT/submission.json",
+        "records/track_non_record_16mb/2026-04-27_SpinQuantV1_PR1851Base_LQERAsym_PhasedTTT/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-27_SpinQuantV1_PR1851Base_LQERAsym_PhasedTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1897,
+      "title": "Record: SP4096 5L MLP6 BigramHash XSA5 — val_bpb 1.1636",
+      "author": "Blitzo125",
+      "state": "OPEN",
+      "created": "2026-04-28T17:07:13Z",
+      "updated": "2026-04-28T17:07:13Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-25_SP4096_5L_MLP6_BigramHash_XSA5/README.md",
+        "records/track_10min_16mb/2026-04-25_SP4096_5L_MLP6_BigramHash_XSA5/submission.json",
+        "records/track_10min_16mb/2026-04-25_SP4096_5L_MLP6_BigramHash_XSA5/train.log",
+        "records/track_10min_16mb/2026-04-25_SP4096_5L_MLP6_BigramHash_XSA5/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1896,
+      "title": "Record: Flower Brain 6-Cell Ternary Architecture — val_bpb 1.1155 (unlimited compute)",
+      "author": "G3sparky",
+      "state": "OPEN",
+      "created": "2026-04-28T16:37:32Z",
+      "updated": "2026-04-28T16:43:04Z",
+      "bpb": 1.1155,
+      "seeds": null,
+      "artifact_bytes": 10400000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/README.md",
+        "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/cells.py",
+        "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/compression_cell.py",
+        "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/run1_h100.log",
+        "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/submission.json",
+        "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/train_gpt_ternary.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1895,
+      "title": "Record: SP8192 + 3GDN/8FA 4096 + Attention Sink (val_bpb 1.07849)",
+      "author": "VFYAS",
+      "state": "OPEN",
+      "created": "2026-04-28T16:30:13Z",
+      "updated": "2026-04-28T17:42:59Z",
+      "bpb": 1.07849,
+      "seeds": 3,
+      "artifact_bytes": 22112,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + INT8 + N-gram + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28-SP8192_3GDN8FA_4096S_AttnSink/README.md",
+        "records/track_10min_16mb/2026-04-28-SP8192_3GDN8FA_4096S_AttnSink/final_seed1337_v2.txt",
+        "records/track_10min_16mb/2026-04-28-SP8192_3GDN8FA_4096S_AttnSink/final_seed42_v2.txt",
+        "records/track_10min_16mb/2026-04-28-SP8192_3GDN8FA_4096S_AttnSink/final_seed777_v2.txt",
+        "records/track_10min_16mb/2026-04-28-SP8192_3GDN8FA_4096S_AttnSink/submission.json",
+        "records/track_10min_16mb/2026-04-28-SP8192_3GDN8FA_4096S_AttnSink/train_gpt.py",
+        "records/track_10min_16mb/2026-04-28-SP8192_3GDN8FA_4096S_AttnSink/train_gpt_source.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1894,
       "title": "[Non-record] SP8192 + MuonEq-R + Loop@0.42 + RECUR_AB + QAT-lite + Compact Artifact - Val 1.09960971",
@@ -538,7 +687,7 @@
       "author": "okezue",
       "state": "OPEN",
       "created": "2026-04-28T02:05:03Z",
-      "updated": "2026-04-28T07:16:18Z",
+      "updated": "2026-04-28T16:49:34Z",
       "bpb": 1.0803,
       "seeds": null,
       "artifact_bytes": 15977914,
@@ -1249,7 +1398,7 @@
       "author": "codemath3000",
       "state": "OPEN",
       "created": "2026-04-27T10:49:13Z",
-      "updated": "2026-04-28T15:36:51Z",
+      "updated": "2026-04-28T17:28:16Z",
       "bpb": 1.06108,
       "seeds": 3,
       "artifact_bytes": 16000000,
