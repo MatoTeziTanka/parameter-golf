@@ -1,14 +1,129 @@
 {
-  "last_fetch": "2026-04-28T03:57:55.261369+00:00",
-  "api_calls_used": 212,
+  "last_fetch": "2026-04-28T06:38:05.161730+00:00",
+  "api_calls_used": 213,
   "prs": [
+    {
+      "number": 1884,
+      "title": "Experiment: SmearGate BOS Fix + train-only logit calibration",
+      "author": "someone114514",
+      "state": "OPEN",
+      "created": "2026-04-28T05:32:32Z",
+      "updated": "2026-04-28T05:32:32Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/README.md",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/submission.json",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_seed314.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1883,
+      "title": "Record: PR #1854 neural stack — budget-compliant 1.06777 (3-seed mean)",
+      "author": "robbiebusinessacc",
+      "state": "OPEN",
+      "created": "2026-04-28T05:17:41Z",
+      "updated": "2026-04-28T05:17:41Z",
+      "bpb": 0.01323,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_PR1854_BudgetCompliant_1.0678/README.md",
+        "records/track_10min_16mb/2026-04-28_PR1854_BudgetCompliant_1.0678/final_model.int6.ptz",
+        "records/track_10min_16mb/2026-04-28_PR1854_BudgetCompliant_1.0678/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-28_PR1854_BudgetCompliant_1.0678/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-28_PR1854_BudgetCompliant_1.0678/submission.json",
+        "records/track_10min_16mb/2026-04-28_PR1854_BudgetCompliant_1.0678/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-28_PR1854_BudgetCompliant_1.0678/train_gpt.py",
+        "records/track_10min_16mb/2026-04-28_PR1854_BudgetCompliant_1.0678/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-28_PR1854_BudgetCompliant_1.0678/train_seed314.log",
+        "records/track_10min_16mb/2026-04-28_PR1854_BudgetCompliant_1.0678/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
+    {
+      "number": 1882,
+      "title": "add 10L hybrid SWA 2048 record",
+      "author": "jmattew",
+      "state": "OPEN",
+      "created": "2026-04-28T05:09:19Z",
+      "updated": "2026-04-28T05:09:19Z",
+      "bpb": 0.0231,
+      "seeds": null,
+      "artifact_bytes": 15551524,
+      "technique_summary": "Muon + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_10L_HybridSWA2048_FP16Embed/README.md",
+        "records/track_10min_16mb/2026-04-27_10L_HybridSWA2048_FP16Embed/submission.json",
+        "records/track_10min_16mb/2026-04-27_10L_HybridSWA2048_FP16Embed/train.log",
+        "records/track_10min_16mb/2026-04-27_10L_HybridSWA2048_FP16Embed/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1881,
       "title": "Record: PR #1797 base + PPM-D byte mixture (v2, full-val coverage) — mix_bpb 0.9019 / quantized_ttt 1.0621",
       "author": "ndokutovich",
       "state": "OPEN",
       "created": "2026-04-28T03:50:13Z",
-      "updated": "2026-04-28T03:50:13Z",
+      "updated": "2026-04-28T06:02:54Z",
       "bpb": 0.019,
       "seeds": 3,
       "artifact_bytes": 15950000,
@@ -284,11 +399,11 @@
     },
     {
       "number": 1874,
-      "title": "Record: PR #1790 + Polar Express NS + MIN_LR + LQER Asym Rank-4 — val_bpb 1.06766 (3-seed mean)",
+      "title": "Record: SP8192 + Polar Express NS + MIN_LR + LQER Asym Rank-4 — val_bpb 1.06766 (3-seed mean)",
       "author": "AjAnubolu",
       "state": "OPEN",
       "created": "2026-04-27T21:42:12Z",
-      "updated": "2026-04-27T21:42:12Z",
+      "updated": "2026-04-28T05:48:19Z",
       "bpb": 1.06766,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -24455,7 +24570,7 @@
       "author": "Hieuabssy",
       "state": "OPEN",
       "created": "2026-04-01T13:39:21Z",
-      "updated": "2026-04-28T03:51:16Z",
+      "updated": "2026-04-28T05:59:38Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -24467,7 +24582,8 @@
         "log/train_seed_1337.txt",
         "log/train_seed_2026.txt",
         "log/train_seed_42.txt",
-        "train_gpt.py"
+        "train_gpt.py",
+        "train_gpt2.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
