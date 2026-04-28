@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T13:15:45Z",
+  "generated_at": "2026-04-28T15:58:59Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1796,
-    "matched_pr_count": 1337,
+    "pr_count": 1800,
+    "matched_pr_count": 1340,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 313,
-      "AT_RISK": 104,
+      "ALIVE": 314,
+      "AT_RISK": 105,
       "DEAD": 505,
-      "INCOMPLETE": 864,
+      "INCOMPLETE": 866,
       "UNKNOWN": 0
     }
   },
@@ -20,11 +20,11 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 744,
+      "count": 746,
       "author_count": 341,
-      "alive_count": 190,
+      "alive_count": 191,
       "dead_count": 225,
-      "at_risk_count": 64,
+      "at_risk_count": 65,
       "incomplete_count": 264,
       "unknown_count": 0,
       "best_alive": {
@@ -2631,6 +2631,34 @@
           ]
         },
         {
+          "author": "ChideraIbe123",
+          "pr_count": 3,
+          "best_bpb": 0.0008,
+          "prs": [
+            {
+              "number": 1625,
+              "author": "ChideraIbe123",
+              "status": "INCOMPLETE",
+              "bpb": 1.1104,
+              "created": "2026-04-14T22:18:26Z"
+            },
+            {
+              "number": 1679,
+              "author": "ChideraIbe123",
+              "status": "INCOMPLETE",
+              "bpb": 0.0008,
+              "created": "2026-04-16T20:16:25Z"
+            },
+            {
+              "number": 1894,
+              "author": "ChideraIbe123",
+              "status": "ALIVE",
+              "bpb": 1.09960971,
+              "created": "2026-04-28T15:45:40Z"
+            }
+          ]
+        },
+        {
           "author": "ADIITJ",
           "pr_count": 3,
           "best_bpb": 0.0009,
@@ -3303,6 +3331,34 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 3,
+          "best_bpb": 1.1201,
+          "prs": [
+            {
+              "number": 768,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1201,
+              "created": "2026-03-25T21:19:18Z"
+            },
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
+            }
+          ]
+        },
+        {
           "author": "CiprianFlorin-Ifrim",
           "pr_count": 3,
           "best_bpb": 1.1239,
@@ -3467,27 +3523,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-17T21:31:24Z"
-            }
-          ]
-        },
-        {
-          "author": "ChideraIbe123",
-          "pr_count": 2,
-          "best_bpb": 0.0008,
-          "prs": [
-            {
-              "number": 1625,
-              "author": "ChideraIbe123",
-              "status": "INCOMPLETE",
-              "bpb": 1.1104,
-              "created": "2026-04-14T22:18:26Z"
-            },
-            {
-              "number": 1679,
-              "author": "ChideraIbe123",
-              "status": "INCOMPLETE",
-              "bpb": 0.0008,
-              "created": "2026-04-16T20:16:25Z"
             }
           ]
         },
@@ -4349,27 +4384,6 @@
               "status": "ALIVE",
               "bpb": 1.1178,
               "created": "2026-03-24T17:40:34Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 2,
-          "best_bpb": 1.1201,
-          "prs": [
-            {
-              "number": 768,
-              "author": "mradassaad",
-              "status": "ALIVE",
-              "bpb": 1.1201,
-              "created": "2026-03-25T21:19:18Z"
-            },
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
             }
           ]
         },
@@ -12837,6 +12851,20 @@
           "status": "INCOMPLETE",
           "bpb": 1.121,
           "created": "2026-04-28T07:03:03Z"
+        },
+        {
+          "number": 1890,
+          "author": "mradassaad",
+          "status": "AT_RISK",
+          "bpb": 1.1456,
+          "created": "2026-04-28T14:27:48Z"
+        },
+        {
+          "number": 1894,
+          "author": "ChideraIbe123",
+          "status": "ALIVE",
+          "bpb": 1.09960971,
+          "created": "2026-04-28T15:45:40Z"
         }
       ]
     },
@@ -22341,12 +22369,12 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 491,
+      "count": 493,
       "author_count": 315,
       "alive_count": 119,
       "dead_count": 110,
-      "at_risk_count": 44,
-      "incomplete_count": 216,
+      "at_risk_count": 45,
+      "incomplete_count": 217,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -23342,6 +23370,34 @@
           ]
         },
         {
+          "author": "peytontolbert",
+          "pr_count": 3,
+          "best_bpb": 0.0009,
+          "prs": [
+            {
+              "number": 155,
+              "author": "peytontolbert",
+              "status": "INCOMPLETE",
+              "bpb": 1.2202,
+              "created": "2026-03-20T02:06:35Z"
+            },
+            {
+              "number": 1811,
+              "author": "peytontolbert",
+              "status": "DEAD",
+              "bpb": 0.0009,
+              "created": "2026-04-25T04:44:40Z"
+            },
+            {
+              "number": 1891,
+              "author": "peytontolbert",
+              "status": "INCOMPLETE",
+              "bpb": 1.2205,
+              "created": "2026-04-28T14:30:01Z"
+            }
+          ]
+        },
+        {
           "author": "michaelwinczuk",
           "pr_count": 3,
           "best_bpb": 0.0037,
@@ -23779,27 +23835,6 @@
               "status": "ALIVE",
               "bpb": 1.1269,
               "created": "2026-03-28T11:56:23Z"
-            }
-          ]
-        },
-        {
-          "author": "peytontolbert",
-          "pr_count": 2,
-          "best_bpb": 0.0009,
-          "prs": [
-            {
-              "number": 155,
-              "author": "peytontolbert",
-              "status": "INCOMPLETE",
-              "bpb": 1.2202,
-              "created": "2026-03-20T02:06:35Z"
-            },
-            {
-              "number": 1811,
-              "author": "peytontolbert",
-              "status": "DEAD",
-              "bpb": 0.0009,
-              "created": "2026-04-25T04:44:40Z"
             }
           ]
         },
@@ -24367,6 +24402,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.14430187,
               "created": "2026-04-02T02:25:48Z"
+            }
+          ]
+        },
+        {
+          "author": "mradassaad",
+          "pr_count": 2,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -27069,20 +27125,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.5568,
               "created": "2026-04-06T07:44:28Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 1,
-          "best_bpb": 1.5633,
-          "prs": [
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
             }
           ]
         },
@@ -31434,17 +31476,31 @@
           "status": "INCOMPLETE",
           "bpb": 1.1691,
           "created": "2026-04-28T11:50:59Z"
+        },
+        {
+          "number": 1890,
+          "author": "mradassaad",
+          "status": "AT_RISK",
+          "bpb": 1.1456,
+          "created": "2026-04-28T14:27:48Z"
+        },
+        {
+          "number": 1891,
+          "author": "peytontolbert",
+          "status": "INCOMPLETE",
+          "bpb": 1.2205,
+          "created": "2026-04-28T14:30:01Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 488,
+      "count": 490,
       "author_count": 232,
-      "alive_count": 145,
+      "alive_count": 146,
       "dead_count": 135,
-      "at_risk_count": 48,
+      "at_risk_count": 49,
       "incomplete_count": 155,
       "unknown_count": 0,
       "best_alive": {
@@ -33862,6 +33918,27 @@
           ]
         },
         {
+          "author": "ChideraIbe123",
+          "pr_count": 2,
+          "best_bpb": 0.2282,
+          "prs": [
+            {
+              "number": 1507,
+              "author": "ChideraIbe123",
+              "status": "DEAD",
+              "bpb": 0.2282,
+              "created": "2026-04-09T18:15:53Z"
+            },
+            {
+              "number": 1894,
+              "author": "ChideraIbe123",
+              "status": "ALIVE",
+              "bpb": 1.09960971,
+              "created": "2026-04-28T15:45:40Z"
+            }
+          ]
+        },
+        {
           "author": "minh-stakc",
           "pr_count": 2,
           "best_bpb": 0.6672,
@@ -34173,6 +34250,27 @@
               "status": "ALIVE",
               "bpb": 1.1172,
               "created": "2026-03-26T00:41:32Z"
+            }
+          ]
+        },
+        {
+          "author": "mradassaad",
+          "pr_count": 2,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1355,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.1526,
+              "created": "2026-04-04T19:04:09Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -34558,20 +34656,6 @@
               "status": "AT_RISK",
               "bpb": 0.2056,
               "created": "2026-03-29T00:59:25Z"
-            }
-          ]
-        },
-        {
-          "author": "ChideraIbe123",
-          "pr_count": 1,
-          "best_bpb": 0.2282,
-          "prs": [
-            {
-              "number": 1507,
-              "author": "ChideraIbe123",
-              "status": "DEAD",
-              "bpb": 0.2282,
-              "created": "2026-04-09T18:15:53Z"
             }
           ]
         },
@@ -35636,20 +35720,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1476,
               "created": "2026-03-24T01:10:26Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 1,
-          "best_bpb": 1.1526,
-          "prs": [
-            {
-              "number": 1355,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.1526,
-              "created": "2026-04-04T19:04:09Z"
             }
           ]
         },
@@ -39910,23 +39980,37 @@
           "status": "INCOMPLETE",
           "bpb": 1.1691,
           "created": "2026-04-28T11:50:59Z"
+        },
+        {
+          "number": 1890,
+          "author": "mradassaad",
+          "status": "AT_RISK",
+          "bpb": 1.1456,
+          "created": "2026-04-28T14:27:48Z"
+        },
+        {
+          "number": 1894,
+          "author": "ChideraIbe123",
+          "status": "ALIVE",
+          "bpb": 1.09960971,
+          "created": "2026-04-28T15:45:40Z"
         }
       ]
     },
     {
       "name": "QAT",
       "kind": "legal",
-      "count": 119,
-      "author_count": 94,
-      "alive_count": 18,
+      "count": 120,
+      "author_count": 95,
+      "alive_count": 19,
       "dead_count": 32,
       "at_risk_count": 3,
       "incomplete_count": 66,
       "unknown_count": 0,
       "best_alive": {
-        "number": 1805,
-        "author": "yevh",
-        "bpb": 1.10325
+        "number": 1894,
+        "author": "ChideraIbe123",
+        "bpb": 1.09960971
       },
       "people": [
         {
@@ -40479,6 +40563,20 @@
               "status": "DEAD",
               "bpb": 1.0208,
               "created": "2026-04-16T21:56:08Z"
+            }
+          ]
+        },
+        {
+          "author": "ChideraIbe123",
+          "pr_count": 1,
+          "best_bpb": 1.09960971,
+          "prs": [
+            {
+              "number": 1894,
+              "author": "ChideraIbe123",
+              "status": "ALIVE",
+              "bpb": 1.09960971,
+              "created": "2026-04-28T15:45:40Z"
             }
           ]
         },
@@ -42254,6 +42352,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.31,
           "created": "2026-04-27T02:34:58Z"
+        },
+        {
+          "number": 1894,
+          "author": "ChideraIbe123",
+          "status": "ALIVE",
+          "bpb": 1.09960971,
+          "created": "2026-04-28T15:45:40Z"
         }
       ]
     },
@@ -50858,11 +50963,11 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 43,
+      "count": 44,
       "author_count": 31,
       "alive_count": 4,
       "dead_count": 6,
-      "at_risk_count": 2,
+      "at_risk_count": 3,
       "incomplete_count": 29,
       "unknown_count": 0,
       "best_alive": {
@@ -50935,6 +51040,34 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 3,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1355,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.1526,
+              "created": "2026-04-04T19:04:09Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
+            }
+          ]
+        },
+        {
           "author": "mkenney2",
           "pr_count": 3,
           "best_bpb": 1.147,
@@ -50980,27 +51113,6 @@
               "status": "ALIVE",
               "bpb": 1.07706,
               "created": "2026-04-19T01:22:49Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 2,
-          "best_bpb": 1.1526,
-          "prs": [
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
-            },
-            {
-              "number": 1355,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.1526,
-              "created": "2026-04-04T19:04:09Z"
             }
           ]
         },
@@ -51691,6 +51803,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-27T16:35:44Z"
+        },
+        {
+          "number": 1890,
+          "author": "mradassaad",
+          "status": "AT_RISK",
+          "bpb": 1.1456,
+          "created": "2026-04-28T14:27:48Z"
         }
       ]
     },
@@ -60488,11 +60607,11 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 744,
+      "count": 746,
       "author_count": 341,
-      "alive_count": 190,
+      "alive_count": 191,
       "dead_count": 225,
-      "at_risk_count": 64,
+      "at_risk_count": 65,
       "incomplete_count": 264,
       "unknown_count": 0,
       "best_alive": {
@@ -63099,6 +63218,34 @@
           ]
         },
         {
+          "author": "ChideraIbe123",
+          "pr_count": 3,
+          "best_bpb": 0.0008,
+          "prs": [
+            {
+              "number": 1625,
+              "author": "ChideraIbe123",
+              "status": "INCOMPLETE",
+              "bpb": 1.1104,
+              "created": "2026-04-14T22:18:26Z"
+            },
+            {
+              "number": 1679,
+              "author": "ChideraIbe123",
+              "status": "INCOMPLETE",
+              "bpb": 0.0008,
+              "created": "2026-04-16T20:16:25Z"
+            },
+            {
+              "number": 1894,
+              "author": "ChideraIbe123",
+              "status": "ALIVE",
+              "bpb": 1.09960971,
+              "created": "2026-04-28T15:45:40Z"
+            }
+          ]
+        },
+        {
           "author": "ADIITJ",
           "pr_count": 3,
           "best_bpb": 0.0009,
@@ -63771,6 +63918,34 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 3,
+          "best_bpb": 1.1201,
+          "prs": [
+            {
+              "number": 768,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1201,
+              "created": "2026-03-25T21:19:18Z"
+            },
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
+            }
+          ]
+        },
+        {
           "author": "CiprianFlorin-Ifrim",
           "pr_count": 3,
           "best_bpb": 1.1239,
@@ -63935,27 +64110,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-17T21:31:24Z"
-            }
-          ]
-        },
-        {
-          "author": "ChideraIbe123",
-          "pr_count": 2,
-          "best_bpb": 0.0008,
-          "prs": [
-            {
-              "number": 1625,
-              "author": "ChideraIbe123",
-              "status": "INCOMPLETE",
-              "bpb": 1.1104,
-              "created": "2026-04-14T22:18:26Z"
-            },
-            {
-              "number": 1679,
-              "author": "ChideraIbe123",
-              "status": "INCOMPLETE",
-              "bpb": 0.0008,
-              "created": "2026-04-16T20:16:25Z"
             }
           ]
         },
@@ -64817,27 +64971,6 @@
               "status": "ALIVE",
               "bpb": 1.1178,
               "created": "2026-03-24T17:40:34Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 2,
-          "best_bpb": 1.1201,
-          "prs": [
-            {
-              "number": 768,
-              "author": "mradassaad",
-              "status": "ALIVE",
-              "bpb": 1.1201,
-              "created": "2026-03-25T21:19:18Z"
-            },
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
             }
           ]
         },
@@ -73305,18 +73438,32 @@
           "status": "INCOMPLETE",
           "bpb": 1.121,
           "created": "2026-04-28T07:03:03Z"
+        },
+        {
+          "number": 1890,
+          "author": "mradassaad",
+          "status": "AT_RISK",
+          "bpb": 1.1456,
+          "created": "2026-04-28T14:27:48Z"
+        },
+        {
+          "number": 1894,
+          "author": "ChideraIbe123",
+          "status": "ALIVE",
+          "bpb": 1.09960971,
+          "created": "2026-04-28T15:45:40Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 491,
+      "count": 493,
       "author_count": 315,
       "alive_count": 119,
       "dead_count": 110,
-      "at_risk_count": 44,
-      "incomplete_count": 216,
+      "at_risk_count": 45,
+      "incomplete_count": 217,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -74312,6 +74459,34 @@
           ]
         },
         {
+          "author": "peytontolbert",
+          "pr_count": 3,
+          "best_bpb": 0.0009,
+          "prs": [
+            {
+              "number": 155,
+              "author": "peytontolbert",
+              "status": "INCOMPLETE",
+              "bpb": 1.2202,
+              "created": "2026-03-20T02:06:35Z"
+            },
+            {
+              "number": 1811,
+              "author": "peytontolbert",
+              "status": "DEAD",
+              "bpb": 0.0009,
+              "created": "2026-04-25T04:44:40Z"
+            },
+            {
+              "number": 1891,
+              "author": "peytontolbert",
+              "status": "INCOMPLETE",
+              "bpb": 1.2205,
+              "created": "2026-04-28T14:30:01Z"
+            }
+          ]
+        },
+        {
           "author": "michaelwinczuk",
           "pr_count": 3,
           "best_bpb": 0.0037,
@@ -74749,27 +74924,6 @@
               "status": "ALIVE",
               "bpb": 1.1269,
               "created": "2026-03-28T11:56:23Z"
-            }
-          ]
-        },
-        {
-          "author": "peytontolbert",
-          "pr_count": 2,
-          "best_bpb": 0.0009,
-          "prs": [
-            {
-              "number": 155,
-              "author": "peytontolbert",
-              "status": "INCOMPLETE",
-              "bpb": 1.2202,
-              "created": "2026-03-20T02:06:35Z"
-            },
-            {
-              "number": 1811,
-              "author": "peytontolbert",
-              "status": "DEAD",
-              "bpb": 0.0009,
-              "created": "2026-04-25T04:44:40Z"
             }
           ]
         },
@@ -75337,6 +75491,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.14430187,
               "created": "2026-04-02T02:25:48Z"
+            }
+          ]
+        },
+        {
+          "author": "mradassaad",
+          "pr_count": 2,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -78039,20 +78214,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.5568,
               "created": "2026-04-06T07:44:28Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 1,
-          "best_bpb": 1.5633,
-          "prs": [
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
             }
           ]
         },
@@ -82404,6 +82565,20 @@
           "status": "INCOMPLETE",
           "bpb": 1.1691,
           "created": "2026-04-28T11:50:59Z"
+        },
+        {
+          "number": 1890,
+          "author": "mradassaad",
+          "status": "AT_RISK",
+          "bpb": 1.1456,
+          "created": "2026-04-28T14:27:48Z"
+        },
+        {
+          "number": 1891,
+          "author": "peytontolbert",
+          "status": "INCOMPLETE",
+          "bpb": 1.2205,
+          "created": "2026-04-28T14:30:01Z"
         }
       ]
     },
@@ -91908,11 +92083,11 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 488,
+      "count": 490,
       "author_count": 232,
-      "alive_count": 145,
+      "alive_count": 146,
       "dead_count": 135,
-      "at_risk_count": 48,
+      "at_risk_count": 49,
       "incomplete_count": 155,
       "unknown_count": 0,
       "best_alive": {
@@ -94330,6 +94505,27 @@
           ]
         },
         {
+          "author": "ChideraIbe123",
+          "pr_count": 2,
+          "best_bpb": 0.2282,
+          "prs": [
+            {
+              "number": 1507,
+              "author": "ChideraIbe123",
+              "status": "DEAD",
+              "bpb": 0.2282,
+              "created": "2026-04-09T18:15:53Z"
+            },
+            {
+              "number": 1894,
+              "author": "ChideraIbe123",
+              "status": "ALIVE",
+              "bpb": 1.09960971,
+              "created": "2026-04-28T15:45:40Z"
+            }
+          ]
+        },
+        {
           "author": "minh-stakc",
           "pr_count": 2,
           "best_bpb": 0.6672,
@@ -94641,6 +94837,27 @@
               "status": "ALIVE",
               "bpb": 1.1172,
               "created": "2026-03-26T00:41:32Z"
+            }
+          ]
+        },
+        {
+          "author": "mradassaad",
+          "pr_count": 2,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1355,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.1526,
+              "created": "2026-04-04T19:04:09Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -95026,20 +95243,6 @@
               "status": "AT_RISK",
               "bpb": 0.2056,
               "created": "2026-03-29T00:59:25Z"
-            }
-          ]
-        },
-        {
-          "author": "ChideraIbe123",
-          "pr_count": 1,
-          "best_bpb": 0.2282,
-          "prs": [
-            {
-              "number": 1507,
-              "author": "ChideraIbe123",
-              "status": "DEAD",
-              "bpb": 0.2282,
-              "created": "2026-04-09T18:15:53Z"
             }
           ]
         },
@@ -96104,20 +96307,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.1476,
               "created": "2026-03-24T01:10:26Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 1,
-          "best_bpb": 1.1526,
-          "prs": [
-            {
-              "number": 1355,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.1526,
-              "created": "2026-04-04T19:04:09Z"
             }
           ]
         },
@@ -100378,6 +100567,20 @@
           "status": "INCOMPLETE",
           "bpb": 1.1691,
           "created": "2026-04-28T11:50:59Z"
+        },
+        {
+          "number": 1890,
+          "author": "mradassaad",
+          "status": "AT_RISK",
+          "bpb": 1.1456,
+          "created": "2026-04-28T14:27:48Z"
+        },
+        {
+          "number": 1894,
+          "author": "ChideraIbe123",
+          "status": "ALIVE",
+          "bpb": 1.09960971,
+          "created": "2026-04-28T15:45:40Z"
         }
       ]
     },
@@ -105640,17 +105843,17 @@
     {
       "name": "QAT",
       "kind": "legal",
-      "count": 119,
-      "author_count": 94,
-      "alive_count": 18,
+      "count": 120,
+      "author_count": 95,
+      "alive_count": 19,
       "dead_count": 32,
       "at_risk_count": 3,
       "incomplete_count": 66,
       "unknown_count": 0,
       "best_alive": {
-        "number": 1805,
-        "author": "yevh",
-        "bpb": 1.10325
+        "number": 1894,
+        "author": "ChideraIbe123",
+        "bpb": 1.09960971
       },
       "people": [
         {
@@ -106203,6 +106406,20 @@
               "status": "DEAD",
               "bpb": 1.0208,
               "created": "2026-04-16T21:56:08Z"
+            }
+          ]
+        },
+        {
+          "author": "ChideraIbe123",
+          "pr_count": 1,
+          "best_bpb": 1.09960971,
+          "prs": [
+            {
+              "number": 1894,
+              "author": "ChideraIbe123",
+              "status": "ALIVE",
+              "bpb": 1.09960971,
+              "created": "2026-04-28T15:45:40Z"
             }
           ]
         },
@@ -107978,6 +108195,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.31,
           "created": "2026-04-27T02:34:58Z"
+        },
+        {
+          "number": 1894,
+          "author": "ChideraIbe123",
+          "status": "ALIVE",
+          "bpb": 1.09960971,
+          "created": "2026-04-28T15:45:40Z"
         }
       ]
     },
@@ -117652,11 +117876,11 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 43,
+      "count": 44,
       "author_count": 31,
       "alive_count": 4,
       "dead_count": 6,
-      "at_risk_count": 2,
+      "at_risk_count": 3,
       "incomplete_count": 29,
       "unknown_count": 0,
       "best_alive": {
@@ -117729,6 +117953,34 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 3,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1355,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.1526,
+              "created": "2026-04-04T19:04:09Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
+            }
+          ]
+        },
+        {
           "author": "mkenney2",
           "pr_count": 3,
           "best_bpb": 1.147,
@@ -117774,27 +118026,6 @@
               "status": "ALIVE",
               "bpb": 1.07706,
               "created": "2026-04-19T01:22:49Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 2,
-          "best_bpb": 1.1526,
-          "prs": [
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
-            },
-            {
-              "number": 1355,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.1526,
-              "created": "2026-04-04T19:04:09Z"
             }
           ]
         },
@@ -118485,6 +118716,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-27T16:35:44Z"
+        },
+        {
+          "number": 1890,
+          "author": "mradassaad",
+          "status": "AT_RISK",
+          "bpb": 1.1456,
+          "created": "2026-04-28T14:27:48Z"
         }
       ]
     },
@@ -120966,46 +121204,46 @@
       "left": "LeakyReLU\u00b2",
       "right": "SSM/Mamba/S4D",
       "left_count": 109,
-      "right_count": 43,
+      "right_count": 44,
       "left_people": 85,
       "right_people": 31,
-      "score": 4687
+      "score": 4796
     },
     {
       "left": "BigramHash",
       "right": "SSM/Mamba/S4D",
       "left_count": 92,
-      "right_count": 43,
+      "right_count": 44,
       "left_people": 80,
       "right_people": 31,
-      "score": 3956
+      "score": 4048
     },
     {
       "left": "SWA",
       "right": "SSM/Mamba/S4D",
       "left_count": 84,
-      "right_count": 43,
+      "right_count": 44,
       "left_people": 71,
       "right_people": 31,
-      "score": 3612
+      "score": 3696
     },
     {
       "left": "QAT",
       "right": "JEPA",
-      "left_count": 119,
+      "left_count": 120,
       "right_count": 25,
-      "left_people": 94,
+      "left_people": 95,
       "right_people": 23,
-      "score": 2975
+      "score": 3000
     },
     {
       "left": "QAT",
       "right": "Parallel Muon",
-      "left_count": 119,
+      "left_count": 120,
       "right_count": 23,
-      "left_people": 94,
+      "left_people": 95,
       "right_people": 13,
-      "score": 2737
+      "score": 2760
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -121019,20 +121257,20 @@
     {
       "left": "QAT",
       "right": "MoE",
-      "left_count": 119,
+      "left_count": 120,
       "right_count": 22,
-      "left_people": 94,
+      "left_people": 95,
       "right_people": 18,
-      "score": 2618
+      "score": 2640
     },
     {
       "left": "SwiGLU",
       "right": "SSM/Mamba/S4D",
       "left_count": 60,
-      "right_count": 43,
+      "right_count": 44,
       "left_people": 50,
       "right_people": 31,
-      "score": 2580
+      "score": 2640
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -121145,11 +121383,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 744,
+      "left_count": 746,
       "right_count": 2,
       "left_people": 341,
       "right_people": 2,
-      "score": 1488
+      "score": 1492
     },
     {
       "left": "SwiGLU",
@@ -121181,38 +121419,38 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Parallel Muon",
-      "left_count": 43,
+      "left_count": 44,
       "right_count": 23,
       "left_people": 31,
       "right_people": 13,
-      "score": 989
+      "score": 1012
     },
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 491,
+      "left_count": 493,
       "right_count": 2,
       "left_people": 315,
       "right_people": 2,
-      "score": 982
+      "score": 986
     },
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 488,
+      "left_count": 490,
       "right_count": 2,
       "left_people": 232,
       "right_people": 2,
-      "score": 976
+      "score": 980
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 488,
+      "left_count": 490,
       "right_count": 2,
       "left_people": 232,
       "right_people": 2,
-      "score": 976
+      "score": 980
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -121226,20 +121464,20 @@
     {
       "left": "QAT",
       "right": "Value Residual",
-      "left_count": 119,
+      "left_count": 120,
       "right_count": 7,
-      "left_people": 94,
+      "left_people": 95,
       "right_people": 6,
-      "score": 833
+      "score": 840
     },
     {
       "left": "QAT",
       "right": "Progressive Depth",
-      "left_count": 119,
+      "left_count": 120,
       "right_count": 7,
-      "left_people": 94,
+      "left_people": 95,
       "right_people": 3,
-      "score": 833
+      "score": 840
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -121262,11 +121500,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 744,
+      "left_count": 746,
       "right_count": 1,
       "left_people": 341,
       "right_people": 1,
-      "score": 744
+      "score": 746
     },
     {
       "left": "BigramHash",
@@ -121379,11 +121617,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 488,
+      "left_count": 490,
       "right_count": 1,
       "left_people": 232,
       "right_people": 1,
-      "score": 488
+      "score": 490
     },
     {
       "left": "SwiGLU",
@@ -121424,38 +121662,38 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Weight Sharing",
-      "left_count": 43,
+      "left_count": 44,
       "right_count": 8,
       "left_people": 31,
       "right_people": 5,
-      "score": 344
+      "score": 352
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "Value Residual",
-      "left_count": 43,
+      "left_count": 44,
       "right_count": 7,
       "left_people": 31,
       "right_people": 6,
-      "score": 301
+      "score": 308
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "Progressive Depth",
-      "left_count": 43,
+      "left_count": 44,
       "right_count": 7,
       "left_people": 31,
       "right_people": 3,
-      "score": 301
+      "score": 308
     },
     {
       "left": "QAT",
       "right": "Differential Attention",
-      "left_count": 119,
+      "left_count": 120,
       "right_count": 2,
-      "left_people": 94,
+      "left_people": 95,
       "right_people": 2,
-      "score": 238
+      "score": 240
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -121611,6 +121849,15 @@
       "score": 140
     },
     {
+      "left": "QAT",
+      "right": "Flash Attention",
+      "left_count": 120,
+      "right_count": 1,
+      "left_people": 95,
+      "right_people": 1,
+      "score": 120
+    },
+    {
       "left": "SwiGLU",
       "right": "Differential Attention",
       "left_count": 60,
@@ -121627,15 +121874,6 @@
       "left_people": 50,
       "right_people": 2,
       "score": 120
-    },
-    {
-      "left": "QAT",
-      "right": "Flash Attention",
-      "left_count": 119,
-      "right_count": 1,
-      "left_people": 94,
-      "right_people": 1,
-      "score": 119
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -121658,20 +121896,20 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Differential Attention",
-      "left_count": 43,
+      "left_count": 44,
       "right_count": 2,
       "left_people": 31,
       "right_people": 2,
-      "score": 86
+      "score": 88
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "U-Net skips",
-      "left_count": 43,
+      "left_count": 44,
       "right_count": 2,
       "left_people": 31,
       "right_people": 2,
-      "score": 86
+      "score": 88
     },
     {
       "left": "XSA",
@@ -121764,6 +122002,15 @@
       "score": 46
     },
     {
+      "left": "SSM/Mamba/S4D",
+      "right": "Flash Attention",
+      "left_count": 44,
+      "right_count": 1,
+      "left_people": 31,
+      "right_people": 1,
+      "score": 44
+    },
+    {
       "left": "MoE",
       "right": "Differential Attention",
       "left_count": 22,
@@ -121780,15 +122027,6 @@
       "left_people": 18,
       "right_people": 2,
       "score": 44
-    },
-    {
-      "left": "SSM/Mamba/S4D",
-      "right": "Flash Attention",
-      "left_count": 43,
-      "right_count": 1,
-      "left_people": 31,
-      "right_people": 1,
-      "score": 43
     },
     {
       "left": "Ternary Weights",
