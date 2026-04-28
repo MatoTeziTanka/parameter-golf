@@ -1,7 +1,84 @@
 {
-  "last_fetch": "2026-04-28T19:45:19.694963+00:00",
-  "api_calls_used": 219,
+  "last_fetch": "2026-04-28T21:09:41.747183+00:00",
+  "api_calls_used": 220,
   "prs": [
+    {
+      "number": 1909,
+      "title": "  Record  val_bpb 1.06996: Independent 3-seed reproduction of PR #1874 +    TTT_LORA_RANK=192  ",
+      "author": "GodlyDonuts",
+      "state": "OPEN",
+      "created": "2026-04-28T20:05:50Z",
+      "updated": "2026-04-28T20:05:50Z",
+      "bpb": 1.079,
+      "seeds": 3,
+      "artifact_bytes": 45076,
+      "technique_summary": "TTT + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/README.md",
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/models/champion_3seed_314.int6.ptz",
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/models/champion_3seed_42.int6.ptz",
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/models/champion_3seed_999.int6.ptz",
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/models/pr1874_baseline_rank128_seed42.int6.ptz",
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/models/sweep_rank192_seed42.int6.ptz",
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/requirements.txt",
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/submission.json",
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/train_gpt.py",
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/train_seed314.log",
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/train_seed42.log",
+        "records/track_10min_16mb/2026-04-28_TTT_LORA_RANK_192_on_PR1874/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1908,
+      "title": "Record: PR #1855 base + activation-aware GPTQ mixed precision - val_bpb 1.06081 (3-seed mean)",
+      "author": "romeerp",
+      "state": "OPEN",
+      "created": "2026-04-28T19:49:20Z",
+      "updated": "2026-04-28T20:54:36Z",
+      "bpb": 1.06081076,
+      "seeds": 3,
+      "artifact_bytes": 15990000,
+      "technique_summary": "TTT + GPTQ + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_PR1855Base_AWQGPTQ_StepMatched/README.md",
+        "records/track_10min_16mb/2026-04-28_PR1855Base_AWQGPTQ_StepMatched/requirements.txt",
+        "records/track_10min_16mb/2026-04-28_PR1855Base_AWQGPTQ_StepMatched/submission.json",
+        "records/track_10min_16mb/2026-04-28_PR1855Base_AWQGPTQ_StepMatched/train_gpt.py",
+        "records/track_10min_16mb/2026-04-28_PR1855Base_AWQGPTQ_StepMatched/train_seed0.log",
+        "records/track_10min_16mb/2026-04-28_PR1855Base_AWQGPTQ_StepMatched/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-28_PR1855Base_AWQGPTQ_StepMatched/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1907,
       "title": "Newton-Muon × PR #1874's document-packed loader: a controlled negative result",
@@ -206,15 +283,18 @@
       "author": "cocohearts",
       "state": "OPEN",
       "created": "2026-04-28T18:57:39Z",
-      "updated": "2026-04-28T19:40:10Z",
+      "updated": "2026-04-28T20:59:11Z",
       "bpb": null,
-      "seeds": 3,
+      "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
         "README.md"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Addressed both follow-up comments in the README table. I added #1855 as the new top row using the combined 6-sample evidence from the submission plus independent reproduction (one-sided Welch p≈0.127 vs #1851/#1868). I also added #1529 and #1584 to reflect score-at-opening chronology before #1518's later score update; #1584 is marked as a systems-only progression row, so the statistical-significance requirement is waived under the README rule. Direct #1784/#1797 remain excluded under the p<0.25 ",
+        "cocohearts: Addressed both follow-up comments in the README table. I added #1855 as the new top row using the combined 6-sample evidence from the submission plus independent reproduction (one-sided Welch p≈0.127 vs #1851/#1868). I also added #1529 and #1584 to reflect score-at-opening chronology before #1518's later score update; #1584 is marked as a systems-only progression row, so the statistical-significance requirement is waived under the README rule. Direct #1784/#1797 remain excluded under the p<0.25 "
+      ],
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "neural",
@@ -225,6 +305,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
+        "seeds-unknown",
         "artifact-unknown",
         "no-submission-json"
       ],
@@ -273,7 +354,7 @@
       "author": "cocohearts",
       "state": "OPEN",
       "created": "2026-04-28T18:37:32Z",
-      "updated": "2026-04-28T19:32:16Z",
+      "updated": "2026-04-28T20:18:38Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -412,7 +493,7 @@
       "author": "G3sparky",
       "state": "OPEN",
       "created": "2026-04-28T16:37:32Z",
-      "updated": "2026-04-28T16:43:04Z",
+      "updated": "2026-04-28T20:22:27Z",
       "bpb": 1.1155,
       "seeds": null,
       "artifact_bytes": 10400000,
@@ -1221,7 +1302,7 @@
       "author": "AjAnubolu",
       "state": "OPEN",
       "created": "2026-04-27T21:42:12Z",
-      "updated": "2026-04-28T05:48:19Z",
+      "updated": "2026-04-28T20:15:17Z",
       "bpb": 1.06766,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -1365,7 +1446,7 @@
       "author": "lijuncheng16",
       "state": "OPEN",
       "created": "2026-04-27T19:06:10Z",
-      "updated": "2026-04-28T15:33:58Z",
+      "updated": "2026-04-28T20:33:34Z",
       "bpb": 1.078,
       "seeds": null,
       "artifact_bytes": null,
@@ -1378,6 +1459,7 @@
         "tokenizer/prepare_caseops_data.py",
         "tokenizer/retokenize_corpus.py",
         "train_gpt_0427.py",
+        "train_gpt_s0_pr1851_mod.py",
         "train_gpt_s9.py",
         "train_gpt_s9_caseops_lqer.py"
       ],
@@ -12229,24 +12311,26 @@
     },
     {
       "number": 1565,
-      "title": "val_bpb 1.1036 - 12L sp9000 + depth recurrence + hash-TTT",
+      "title": "val_bpb 1.0902 - 12L sp9000 + AttnOutGate + SmearGate + LQER",
       "author": "Idan3011",
       "state": "OPEN",
       "created": "2026-04-12T07:23:33Z",
-      "updated": "2026-04-12T07:23:33Z",
-      "bpb": 0.023,
+      "updated": "2026-04-28T21:00:20Z",
+      "bpb": 0.013,
       "seeds": null,
-      "artifact_bytes": 15700000,
+      "artifact_bytes": 14960000,
       "technique_summary": "TTT + Muon + GPTQ + INT8 + EMA",
       "file_paths": [
-        "records/track_10min_16mb/2026-04-12_idan3011_12L_sp9000_HashTTT/README.md",
-        "records/track_10min_16mb/2026-04-12_idan3011_12L_sp9000_HashTTT/submission.json",
-        "records/track_10min_16mb/2026-04-12_idan3011_12L_sp9000_HashTTT/train.log",
+        "records/track_10min_16mb/2026-04-28_idan3011_12L_sp9000_AttnOutGate_SmearGate/README.md",
+        "records/track_10min_16mb/2026-04-28_idan3011_12L_sp9000_AttnOutGate_SmearGate/submission.json",
+        "records/track_10min_16mb/2026-04-28_idan3011_12L_sp9000_AttnOutGate_SmearGate/train.log",
+        "requirements.txt",
         "train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
         "ttt",
+        "two_pass",
         "gptq_eval",
         "leaky_relu"
       ],
