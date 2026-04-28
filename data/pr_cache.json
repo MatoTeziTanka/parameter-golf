@@ -1,20 +1,51 @@
 {
-  "last_fetch": "2026-04-28T22:32:14.807190+00:00",
-  "api_calls_used": 221,
+  "last_fetch": "2026-04-28T23:57:24.780805+00:00",
+  "api_calls_used": 222,
   "prs": [
     {
+      "number": 1912,
+      "title": "Improve contest submission",
+      "author": "WesSwogger",
+      "state": "OPEN",
+      "created": "2026-04-28T23:36:49Z",
+      "updated": "2026-04-28T23:36:49Z",
+      "bpb": 1.31630527,
+      "seeds": null,
+      "artifact_bytes": 15154431,
+      "technique_summary": "",
+      "file_paths": [
+        ".gitignore",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
       "number": 1911,
-      "title": "Add CaseOps pre-quant TTT record (1.0354 BPB)",
+      "title": "{RECORD} CaseOps pre-quant TTT record (1.0354 BPB)",
       "author": "dttdrv",
       "state": "OPEN",
       "created": "2026-04-28T22:29:52Z",
-      "updated": "2026-04-28T22:29:52Z",
-      "bpb": 1.0354,
+      "updated": "2026-04-28T22:41:05Z",
+      "bpb": 1.08389912,
       "seeds": 3,
       "artifact_bytes": 16000000,
-      "technique_summary": "LeakyReLU² + TTT + Muon + GPTQ + INT6 + INT8 + EMA",
+      "technique_summary": "LeakyReLU² + TTT + Muon + GPTQ + INT6 + INT8 + EMA + N-gram + Two-pass",
       "file_paths": [
         "records/track_10min_16mb/2026-04-19_SP8192_PreQuantTTT_CaseOps_V15/README.md",
+        "records/track_10min_16mb/2026-04-19_SP8192_PreQuantTTT_CaseOps_V15/requirements.txt",
         "records/track_10min_16mb/2026-04-19_SP8192_PreQuantTTT_CaseOps_V15/submission.json",
         "records/track_10min_16mb/2026-04-19_SP8192_PreQuantTTT_CaseOps_V15/train_gpt.py",
         "records/track_10min_16mb/2026-04-19_SP8192_PreQuantTTT_CaseOps_V15/train_seed1337.log",
@@ -24,11 +55,14 @@
       "maintainer_comments": [],
       "compliance_keywords": [
         "ttt",
+        "ngram",
+        "two_pass",
         "gptq_eval",
+        "cache_eval",
         "leaky_relu"
       ],
       "track": "record",
-      "technique_type": "ttt",
+      "technique_type": "hybrid",
       "technique_tags": [
         "neural"
       ],
@@ -14453,7 +14487,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-09T21:37:43Z",
-      "updated": "2026-04-28T21:33:44Z",
+      "updated": "2026-04-28T23:53:27Z",
       "bpb": 1.1117,
       "seeds": 3,
       "artifact_bytes": 16777216,
