@@ -1,14 +1,341 @@
 {
-  "last_fetch": "2026-04-28T17:53:42.645547+00:00",
-  "api_calls_used": 218,
+  "last_fetch": "2026-04-28T19:45:19.694963+00:00",
+  "api_calls_used": 219,
   "prs": [
     {
+      "number": 1907,
+      "title": "Newton-Muon × PR #1874's document-packed loader: a controlled negative result",
+      "author": "GodlyDonuts",
+      "state": "OPEN",
+      "created": "2026-04-28T19:43:11Z",
+      "updated": "2026-04-28T19:43:11Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-28_NewtonMuon_DocPacking_NegativeResult/README.md",
+        "records/track_non_record_16mb/2026-04-28_NewtonMuon_DocPacking_NegativeResult/models/baseline_pr1874_seed42.int6.ptz",
+        "records/track_non_record_16mb/2026-04-28_NewtonMuon_DocPacking_NegativeResult/models/nm_default.int6.ptz",
+        "records/track_non_record_16mb/2026-04-28_NewtonMuon_DocPacking_NegativeResult/models/nm_smoke.int6.ptz",
+        "records/track_non_record_16mb/2026-04-28_NewtonMuon_DocPacking_NegativeResult/requirements.txt",
+        "records/track_non_record_16mb/2026-04-28_NewtonMuon_DocPacking_NegativeResult/submission.json",
+        "records/track_non_record_16mb/2026-04-28_NewtonMuon_DocPacking_NegativeResult/train_baseline_seed42.log",
+        "records/track_non_record_16mb/2026-04-28_NewtonMuon_DocPacking_NegativeResult/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-28_NewtonMuon_DocPacking_NegativeResult/train_nm_default.log",
+        "records/track_non_record_16mb/2026-04-28_NewtonMuon_DocPacking_NegativeResult/train_nm_smoke.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1906,
+      "title": "Record: PR #1797 reproduction — val_bpb 1.06136 (3-seed mean)",
+      "author": "AayushBaniya2006",
+      "state": "OPEN",
+      "created": "2026-04-28T19:40:08Z",
+      "updated": "2026-04-28T19:40:08Z",
+      "bpb": 0.00199,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + GPTQ + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-25_PR1797Reproduction_3Seed_1.06136/README.md",
+        "records/track_10min_16mb/2026-04-25_PR1797Reproduction_3Seed_1.06136/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-25_PR1797Reproduction_3Seed_1.06136/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-25_PR1797Reproduction_3Seed_1.06136/submission.json",
+        "records/track_10min_16mb/2026-04-25_PR1797Reproduction_3Seed_1.06136/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-25_PR1797Reproduction_3Seed_1.06136/train_gpt.py",
+        "records/track_10min_16mb/2026-04-25_PR1797Reproduction_3Seed_1.06136/train_seed0.log",
+        "records/track_10min_16mb/2026-04-25_PR1797Reproduction_3Seed_1.06136/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-25_PR1797Reproduction_3Seed_1.06136/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
+    {
+      "number": 1905,
+      "title": "Report: PPM-D byte-level scoring is not a valid probability distribution, and why it appears to gain",
+      "author": "leon2k2k2k",
+      "state": "OPEN",
+      "created": "2026-04-28T19:14:26Z",
+      "updated": "2026-04-28T19:15:10Z",
+      "bpb": 1.08335,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "eval/2026-04-29_ppm_invalidity_report.md",
+        "experiments/run_all.sh",
+        "experiments/run_exp10_3layer_recur.sh",
+        "experiments/run_exp11_11L_narrow.sh",
+        "experiments/run_exp12_wide_mlp.sh",
+        "experiments/run_exp13_seq2048.sh",
+        "experiments/run_exp14_warmdown2400.sh",
+        "experiments/run_exp5_sp4096_baseline.sh",
+        "experiments/run_exp6_sp4096_recurrence.sh",
+        "experiments/run_exp7_sp4096_recur_qkgain.sh",
+        "experiments/run_exp8_qkgain3.sh",
+        "experiments/run_exp9_qkgain4.sh",
+        "experiments/setup_pod.sh",
+        "testing/inspect_with_ppm.py",
+        "testing/ppm_scorer.c",
+        "testing/show_5_artifact_examples.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1904,
+      "title": "Non-record submission: Activation-Space CSA on SP1024 (8xH100)",
+      "author": "lucribas",
+      "state": "OPEN",
+      "created": "2026-04-28T19:10:33Z",
+      "updated": "2026-04-28T19:10:33Z",
+      "bpb": 1.2875,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "LoRA + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-28_ActivationSpaceCSA_SP1024_8xH100/README.md",
+        "records/track_non_record_16mb/2026-04-28_ActivationSpaceCSA_SP1024_8xH100/final_model.int8.ptz",
+        "records/track_non_record_16mb/2026-04-28_ActivationSpaceCSA_SP1024_8xH100/requirements.txt",
+        "records/track_non_record_16mb/2026-04-28_ActivationSpaceCSA_SP1024_8xH100/submission.json",
+        "records/track_non_record_16mb/2026-04-28_ActivationSpaceCSA_SP1024_8xH100/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-28_ActivationSpaceCSA_SP1024_8xH100/training.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1903,
+      "title": "Record: 0.9418 BPB — BigramHash + MuonEqR + 3L-Recurrence + SDClip (3-seed mean)",
+      "author": "GrishaKhumaryan",
+      "state": "OPEN",
+      "created": "2026-04-28T19:07:50Z",
+      "updated": "2026-04-28T19:12:53Z",
+      "bpb": 0.9418,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_GrishaKhumaryan_SOTA_BigramHash_MuonEqR/README.md",
+        "records/track_10min_16mb/2026-04-28_GrishaKhumaryan_SOTA_BigramHash_MuonEqR/submission.json",
+        "records/track_10min_16mb/2026-04-28_GrishaKhumaryan_SOTA_BigramHash_MuonEqR/submission_global_seed1337.json",
+        "records/track_10min_16mb/2026-04-28_GrishaKhumaryan_SOTA_BigramHash_MuonEqR/submission_global_seed2025.json",
+        "records/track_10min_16mb/2026-04-28_GrishaKhumaryan_SOTA_BigramHash_MuonEqR/submission_global_seed42.json",
+        "records/track_10min_16mb/2026-04-28_GrishaKhumaryan_SOTA_BigramHash_MuonEqR/train.log",
+        "records/track_10min_16mb/2026-04-28_GrishaKhumaryan_SOTA_BigramHash_MuonEqR/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "two_pass"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1902,
+      "title": "Update Parameter Golf leaderboard with BOS fix",
+      "author": "cocohearts",
+      "state": "OPEN",
+      "created": "2026-04-28T18:57:39Z",
+      "updated": "2026-04-28T19:40:10Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1901,
+      "title": "Record: 0.8335 BPB — DualHash + AdaMuon + MoE + SDClip (3-seed mean)",
+      "author": "Karen042009",
+      "state": "OPEN",
+      "created": "2026-04-28T18:40:59Z",
+      "updated": "2026-04-28T19:00:30Z",
+      "bpb": 0.8335,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + MoE + INT6 + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_KarenPoghosyan_DualHash_AdaMuon_MoE/README.md",
+        "records/track_10min_16mb/2026-04-28_KarenPoghosyan_DualHash_AdaMuon_MoE/submission.json",
+        "records/track_10min_16mb/2026-04-28_KarenPoghosyan_DualHash_AdaMuon_MoE/submission_global_seed1337.json",
+        "records/track_10min_16mb/2026-04-28_KarenPoghosyan_DualHash_AdaMuon_MoE/submission_global_seed2025.json",
+        "records/track_10min_16mb/2026-04-28_KarenPoghosyan_DualHash_AdaMuon_MoE/submission_global_seed42.json",
+        "records/track_10min_16mb/2026-04-28_KarenPoghosyan_DualHash_AdaMuon_MoE/train.log",
+        "records/track_10min_16mb/2026-04-28_KarenPoghosyan_DualHash_AdaMuon_MoE/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "two_pass"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1900,
+      "title": "Update Parameter Golf leaderboard",
+      "author": "cocohearts",
+      "state": "OPEN",
+      "created": "2026-04-28T18:37:32Z",
+      "updated": "2026-04-28T19:32:16Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1899,
+      "title": "Update Parameter Golf leaderboard",
+      "author": "cocohearts",
+      "state": "OPEN",
+      "created": "2026-04-28T18:37:24Z",
+      "updated": "2026-04-28T18:58:01Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
       "number": 1898,
-      "title": "Record: Partial SpinQuant (start_layer=5) + EMBED_BITS=6 + PR#1855 Hparams + PR#1851 Base — val_bpb 1.06614 (3-seed mean)",
+      "title": "Record: Partial SpinQuant (start_layer=5) + PR#1851 Stack — val_bpb 1.06614 (3-seed mean)",
       "author": "X-Abhishek-X",
       "state": "OPEN",
       "created": "2026-04-28T17:52:05Z",
-      "updated": "2026-04-28T17:52:05Z",
+      "updated": "2026-04-28T17:56:21Z",
       "bpb": 1.06484,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -1176,7 +1503,7 @@
       "author": "hardik-bhalekar",
       "state": "OPEN",
       "created": "2026-04-27T17:48:49Z",
-      "updated": "2026-04-27T19:00:43Z",
+      "updated": "2026-04-28T18:03:00Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -2119,7 +2446,7 @@
       "author": "hardik-bhalekar",
       "state": "OPEN",
       "created": "2026-04-26T16:36:39Z",
-      "updated": "2026-04-27T17:36:19Z",
+      "updated": "2026-04-28T18:01:03Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -56876,7 +57203,7 @@
       "author": "Skrisps26",
       "state": "OPEN",
       "created": "2026-03-21T16:43:25Z",
-      "updated": "2026-04-27T22:50:07Z",
+      "updated": "2026-04-28T18:14:22Z",
       "bpb": 1.2838,
       "seeds": null,
       "artifact_bytes": 14449000,
