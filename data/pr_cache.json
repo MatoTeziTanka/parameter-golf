@@ -1,7 +1,146 @@
 {
-  "last_fetch": "2026-04-29T22:32:23.326758+00:00",
-  "api_calls_used": 233,
+  "last_fetch": "2026-04-29T23:57:25.620160+00:00",
+  "api_calls_used": 234,
   "prs": [
+    {
+      "number": 1952,
+      "title": "Non-record: Energy as the missing leaderboard axis - Wh per bpb drop across 5 configs",
+      "author": "jayyvk",
+      "state": "OPEN",
+      "created": "2026-04-29T23:30:36Z",
+      "updated": "2026-04-29T23:31:35Z",
+      "bpb": 0.001,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + GPTQ + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/README.md",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/data/hardware.txt",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/data/matcha/lb_11l_ema_gptq.jsonl",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/data/matcha/lb_baseline.jsonl",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/data/matcha/lb_lora_ttt.jsonl",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/data/matcha/lb_par_resid_dr.jsonl",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/data/matcha/lb_slide64.jsonl",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/data/pg_logs/lb_11l_ema_gptq.txt",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/data/pg_logs/lb_baseline.txt",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/data/pg_logs/lb_lora_ttt.txt",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/data/pg_logs/lb_par_resid_dr.txt",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/data/pg_logs/lb_slide64.txt",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/figures/01_hero_loss_vs_energy.png",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/figures/02_loss_vs_cumulative_energy.png",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/figures/03_energy_efficiency.png",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/figures/04_train_vs_post_train_energy.png",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/figures/05_per_gpu_deviation.png",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/notebook/report.ipynb",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/scripts/analyze.py",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/scripts/plot.py",
+        "records/track_non_record_16mb/2026-04-29_Energy_Instrumentation_5Configs/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
+    {
+      "number": 1951,
+      "title": "Sophonics LoRA Int5 DeepMLP non-record submission",
+      "author": "DesperateTomatoCultivator",
+      "state": "OPEN",
+      "created": "2026-04-29T23:04:52Z",
+      "updated": "2026-04-29T23:04:52Z",
+      "bpb": 1.352204,
+      "seeds": null,
+      "artifact_bytes": 10842720,
+      "technique_summary": "LoRA",
+      "file_paths": [
+        "notebooks/sophonic_colab.ipynb",
+        "records/track_non_record_16mb/2026-03-27_Sophonics_LoRA_Int5_DeepMLP/README.md",
+        "records/track_non_record_16mb/2026-03-27_Sophonics_LoRA_Int5_DeepMLP/base_train.log",
+        "records/track_non_record_16mb/2026-03-27_Sophonics_LoRA_Int5_DeepMLP/environment_5090.log",
+        "records/track_non_record_16mb/2026-03-27_Sophonics_LoRA_Int5_DeepMLP/repair_train.log",
+        "records/track_non_record_16mb/2026-03-27_Sophonics_LoRA_Int5_DeepMLP/requirements.txt",
+        "records/track_non_record_16mb/2026-03-27_Sophonics_LoRA_Int5_DeepMLP/sophonic_submission_check.py",
+        "records/track_non_record_16mb/2026-03-27_Sophonics_LoRA_Int5_DeepMLP/submission.json",
+        "records/track_non_record_16mb/2026-03-27_Sophonics_LoRA_Int5_DeepMLP/submission_check.log",
+        "records/track_non_record_16mb/2026-03-27_Sophonics_LoRA_Int5_DeepMLP/train_gpt.py",
+        "sophonic/__init__.py",
+        "sophonic/budget.py",
+        "sophonic/quantize.py",
+        "sophonic/residuals.py",
+        "sophonic/router.py",
+        "sophonic_eval.py",
+        "sophonic_live_runtime.py",
+        "sophonic_lora_repair.py",
+        "sophonic_oracle.py",
+        "sophonic_submission_check.py",
+        "train_sophonic.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1950,
+      "title": "Record: Compliant PR #1934 Reproduction (GPTQ_RESERVE=5.5) — val_bpb 1.06003 (3-seed)",
+      "author": "Christopher-Lee-McClendon",
+      "state": "OPEN",
+      "created": "2026-04-29T22:49:04Z",
+      "updated": "2026-04-29T22:49:04Z",
+      "bpb": 1.06003,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/README.md",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/requirements.txt",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/seed314_log.txt",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/seed42_log.txt",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/seed999_log.txt",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/submission.json",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/train.log",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1949,
       "title": "Non-record: Paper-Folded Recurrent GPT SP8192 5-fold, 20.2min (val_bpb 1.19084839)",
@@ -1230,7 +1369,7 @@
       "author": "aquariouseworkman",
       "state": "CLOSED",
       "created": "2026-04-29T06:58:00Z",
-      "updated": "2026-04-29T19:57:55Z",
+      "updated": "2026-04-29T23:10:42Z",
       "bpb": 0.00022,
       "seeds": 3,
       "artifact_bytes": null,
@@ -10431,7 +10570,7 @@
       "author": "MarioPaerle",
       "state": "OPEN",
       "created": "2026-04-16T12:32:56Z",
-      "updated": "2026-04-29T20:07:08Z",
+      "updated": "2026-04-29T22:42:19Z",
       "bpb": 1.07139,
       "seeds": 2,
       "artifact_bytes": 16000000,
