@@ -1,7 +1,121 @@
 {
-  "last_fetch": "2026-04-29T14:39:07.536270+00:00",
-  "api_calls_used": 228,
+  "last_fetch": "2026-04-29T16:43:29.444546+00:00",
+  "api_calls_used": 229,
   "prs": [
+    {
+      "number": 1935,
+      "title": "Record candidate: PR #1855 + TTT_LORA_RANK=56 — val_bpb 1.05997 (s42)",
+      "author": "vimeto",
+      "state": "OPEN",
+      "created": "2026-04-29T16:30:40Z",
+      "updated": "2026-04-29T16:30:40Z",
+      "bpb": 0.0078,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/submission_2026_04_29_b180_tlr56_SUB106/README.md",
+        "records/submission_2026_04_29_b180_tlr56_SUB106/final_model.int6.ptz",
+        "records/submission_2026_04_29_b180_tlr56_SUB106/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/submission_2026_04_29_b180_tlr56_SUB106/lossless_caps.py",
+        "records/submission_2026_04_29_b180_tlr56_SUB106/lumi_train_ttt_17928157.log",
+        "records/submission_2026_04_29_b180_tlr56_SUB106/prepare_caseops_data.py",
+        "records/submission_2026_04_29_b180_tlr56_SUB106/submission.json",
+        "records/submission_2026_04_29_b180_tlr56_SUB106/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
+    {
+      "number": 1934,
+      "title": "Record: SP8192 CaseOps + TTT + GPTQ + LRZIP — val_bpb 1.05993 (3-seed mean)",
+      "author": "liujshi",
+      "state": "OPEN",
+      "created": "2026-04-29T16:20:57Z",
+      "updated": "2026-04-29T16:33:58Z",
+      "bpb": 1.05993,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_SP8192_LQER_CaseOp_Per-group_Lrzip/README.md",
+        "records/track_10min_16mb/2026-04-29_SP8192_LQER_CaseOp_Per-group_Lrzip/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-29_SP8192_LQER_CaseOp_Per-group_Lrzip/prepare_caseops_data_mp.py",
+        "records/track_10min_16mb/2026-04-29_SP8192_LQER_CaseOp_Per-group_Lrzip/submission.json",
+        "records/track_10min_16mb/2026-04-29_SP8192_LQER_CaseOp_Per-group_Lrzip/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-29_SP8192_LQER_CaseOp_Per-group_Lrzip/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_SP8192_LQER_CaseOp_Per-group_Lrzip/train_seed314.log",
+        "records/track_10min_16mb/2026-04-29_SP8192_LQER_CaseOp_Per-group_Lrzip/train_seed42.log",
+        "records/track_10min_16mb/2026-04-29_SP8192_LQER_CaseOp_Per-group_Lrzip/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1933,
+      "title": "Record: SP8192 + yahya010 NN base + byte-PPM mixer — val_bpb 0.99145 …",
+      "author": "deborahnelson8788726",
+      "state": "OPEN",
+      "created": "2026-04-29T15:44:44Z",
+      "updated": "2026-04-29T15:44:44Z",
+      "bpb": 0.99145,
+      "seeds": 3,
+      "artifact_bytes": 152574319,
+      "technique_summary": "TTT + LoRA + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_PPM_SP8192_yahya_base/README.md",
+        "records/track_10min_16mb/2026-04-29_PPM_SP8192_yahya_base/submission.json",
+        "records/track_10min_16mb/2026-04-29_PPM_SP8192_yahya_base/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_PPM_SP8192_yahya_base/train_seed0.log",
+        "records/track_10min_16mb/2026-04-29_PPM_SP8192_yahya_base/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-29_PPM_SP8192_yahya_base/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1932,
       "title": "Add SP8192 Family3+ QK5.75 TTT16K LR0.0075 (1.0796 BPB)",
@@ -110,7 +224,7 @@
       "author": "davie2009kh",
       "state": "OPEN",
       "created": "2026-04-29T13:06:06Z",
-      "updated": "2026-04-29T13:06:06Z",
+      "updated": "2026-04-29T15:26:57Z",
       "bpb": 0.94569,
       "seeds": 3,
       "artifact_bytes": 15870000,
@@ -408,7 +522,7 @@
       "author": "jorge-asenjo",
       "state": "OPEN",
       "created": "2026-04-29T10:26:34Z",
-      "updated": "2026-04-29T12:31:50Z",
+      "updated": "2026-04-29T15:55:03Z",
       "bpb": 1.06533,
       "seeds": 3,
       "artifact_bytes": null,
@@ -480,7 +594,7 @@
       "author": "oresamadom",
       "state": "OPEN",
       "created": "2026-04-29T09:10:07Z",
-      "updated": "2026-04-29T09:10:07Z",
+      "updated": "2026-04-29T14:53:21Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -660,15 +774,15 @@
     },
     {
       "number": 1916,
-      "title": "Non-record: Framework for Legal Score-First PPM-D Mixtures",
+      "title": "Non-record: Audited Byte-Level Neural/PPM-D Mixture BPB = 1.5221 (Full Validation) — Framework for Legal Score-First PPM-D Mixtures",
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-04-29T03:41:15Z",
-      "updated": "2026-04-29T03:41:15Z",
-      "bpb": 1.5459,
+      "updated": "2026-04-29T14:45:21Z",
+      "bpb": 0.021,
       "seeds": null,
-      "artifact_bytes": 15975706,
-      "technique_summary": "INT6",
+      "artifact_bytes": 151078222,
+      "technique_summary": "TTT + GPTQ",
       "file_paths": [
         ".gitignore",
         "AGENTS.md",
@@ -686,9 +800,18 @@
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/audits/exp_1876_ppmd/normalization_audit.json",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/audits/exp_1876_ppmd/static_provenance.json",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/legality/ppm_notes.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/legality/ppmd-legality-proof-fullval-result.md",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/legality/ppmd-legality-proof-implementation.md",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/legality/ppmd-legality-proof-result.md",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/legality/ppmd-legality-proof.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/path_a_archive/PATH_A_STATUS.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/path_a_archive/eval_path_a_ppmd.py",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/path_a_archive/path-a-ppmd-cpp-backend-complete.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/path_a_archive/path-a-ppmd-cpp-backend-plan.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/path_a_archive/path-a-ppmd-cuda-backend-plan.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/path_a_archive/path-a-ppmd-cuda-runpod-execution-plan.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/path_a_archive/path-a-ppmd-eval-complete.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/path_a_archive/path-a-ppmd-eval-plan.md",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-a-ppmd-cpp-backend-complete.md",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-a-ppmd-cpp-backend-plan.md",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-a-ppmd-cuda-backend-plan.md",
@@ -704,27 +827,21 @@
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/path_b_prod_8gpu/path_b_sliding_merge_manifest.json",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/path_b_prod_8gpu_fullval/path_b_sliding_accounting_audit.json",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/path_b_prod_8gpu_fullval/path_b_sliding_merge_manifest.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/path_b_prod_8gpu_fullval_local_score/path_b_sliding_full.json",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/path_b_prod_8gpu_local_score/path_b_sliding_subset_8000000.json",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/prod_8gpu_s42v2/artifacts.txt",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/prod_8gpu_s42v2/launcher_state.json",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/scripts/eval_path_a_ppmd.py",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/scripts/eval_path_b_ppmd.py",
-        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/submission.json",
-        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/tests/test_exp1876_ppmd_legality_audit.py",
-        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/tests/test_path_a_ppmd_eval.py",
-        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/tests/test_path_b_ppmd_eval.py",
-        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/train.log",
-        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/train_gpt.py",
-        "results/exp_1876_ppmd/prod_8gpu_s42v2/final_model.int6.ptz",
-        "results/exp_1876_ppmd/train_gpt_merged.py",
-        "scripts/cpu_smoke.py",
-        "scripts/eval_path_a_ppmd.py",
-        "scripts/eval_path_b_ppmd.py"
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/scripts/fast_score.py"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
       "track": "non-record",
-      "technique_type": "neural",
+      "technique_type": "ttt",
       "technique_tags": [
         "ttt",
         "gptq"
@@ -1638,15 +1755,15 @@
     },
     {
       "number": 1891,
-      "title": "Add Model Stack BitNet MLP2304 overtone run",
+      "title": "Non-record: Model-Stack BitNet MLP2304 overtone (val_bpb: 1.2205)",
       "author": "peytontolbert",
       "state": "OPEN",
       "created": "2026-04-28T14:30:01Z",
-      "updated": "2026-04-28T14:30:01Z",
+      "updated": "2026-04-29T16:31:07Z",
       "bpb": 1.2205,
       "seeds": null,
       "artifact_bytes": 15612895,
-      "technique_summary": "Muon",
+      "technique_summary": "Muon + INT8",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-25_ModelStack_RuntimeRow_BitNet_65M_SP1024_CTX4096/README.md",
         "records/track_non_record_16mb/2026-04-25_ModelStack_RuntimeRow_BitNet_65M_SP1024_CTX4096/run_65m_full.sh",
@@ -6265,21 +6382,21 @@
     },
     {
       "number": 1762,
-      "title": "Non-record: Mac mini M4 16GB, no H100s, still golfing (val_bpb=1.5200)",
+      "title": "Non-record: Mac mini M4 16GB, no H100s, still golfing (val_bpb=1.5111)",
       "author": "frido22",
       "state": "OPEN",
       "created": "2026-04-21T14:58:26Z",
-      "updated": "2026-04-21T15:03:45Z",
-      "bpb": 1.52,
+      "updated": "2026-04-29T16:30:26Z",
+      "bpb": 1.5111,
       "seeds": null,
-      "artifact_bytes": 16000000,
+      "artifact_bytes": null,
       "technique_summary": "INT8 + EMA",
       "file_paths": [
-        "records/track_non_record_16mb/2026-04-21_MLX_MacminiM4_16GB_RecurrentTailQK_ImportSafe/README.md",
-        "records/track_non_record_16mb/2026-04-21_MLX_MacminiM4_16GB_RecurrentTailQK_ImportSafe/requirements.txt",
-        "records/track_non_record_16mb/2026-04-21_MLX_MacminiM4_16GB_RecurrentTailQK_ImportSafe/submission.json",
-        "records/track_non_record_16mb/2026-04-21_MLX_MacminiM4_16GB_RecurrentTailQK_ImportSafe/train.log",
-        "records/track_non_record_16mb/2026-04-21_MLX_MacminiM4_16GB_RecurrentTailQK_ImportSafe/train_gpt.py"
+        "records/track_non_record_16mb/2026-04-25_MLX_MacminiM4_16GB_StagedReverseTailCurriculum/README.md",
+        "records/track_non_record_16mb/2026-04-25_MLX_MacminiM4_16GB_StagedReverseTailCurriculum/requirements.txt",
+        "records/track_non_record_16mb/2026-04-25_MLX_MacminiM4_16GB_StagedReverseTailCurriculum/submission.json",
+        "records/track_non_record_16mb/2026-04-25_MLX_MacminiM4_16GB_StagedReverseTailCurriculum/train.log",
+        "records/track_non_record_16mb/2026-04-25_MLX_MacminiM4_16GB_StagedReverseTailCurriculum/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -6291,7 +6408,8 @@
       "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-unknown"
+        "seeds-unknown",
+        "artifact-unknown"
       ],
       "confidence": "HIGH"
     },
