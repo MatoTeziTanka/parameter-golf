@@ -1,7 +1,81 @@
 {
-  "last_fetch": "2026-04-29T21:16:01.766958+00:00",
-  "api_calls_used": 232,
+  "last_fetch": "2026-04-29T22:32:23.326758+00:00",
+  "api_calls_used": 233,
   "prs": [
+    {
+      "number": 1949,
+      "title": "Non-record: Paper-Folded Recurrent GPT SP8192 5-fold, 20.2min (val_bpb 1.19084839)",
+      "author": "ymrohit",
+      "state": "OPEN",
+      "created": "2026-04-29T21:42:23Z",
+      "updated": "2026-04-29T22:02:44Z",
+      "bpb": 1.1864,
+      "seeds": null,
+      "artifact_bytes": 13701318,
+      "technique_summary": "TTT + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-29_FoldedRecurrentGPT_SP8192_5Fold_20min/README.md",
+        "records/track_non_record_16mb/2026-04-29_FoldedRecurrentGPT_SP8192_5Fold_20min/run_8xh100_nonrecord.sh",
+        "records/track_non_record_16mb/2026-04-29_FoldedRecurrentGPT_SP8192_5Fold_20min/submission.json",
+        "records/track_non_record_16mb/2026-04-29_FoldedRecurrentGPT_SP8192_5Fold_20min/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-29_FoldedRecurrentGPT_SP8192_5Fold_20min/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1948,
+      "title": "Record: Leaky ReLU Slope + GPTQ Reverse-Cholesky Speedup + PR #1938 (val_bpb = 1.06242)",
+      "author": "TimS-ml",
+      "state": "OPEN",
+      "created": "2026-04-29T21:29:42Z",
+      "updated": "2026-04-29T21:59:16Z",
+      "bpb": 1.06242,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_ReLU-Slope_Reverse-Cholesky-GPTQ_SP8192_CaseOps_PhasedTTT_PolarNS_FusedCE/README.md",
+        "records/track_10min_16mb/2026-04-29_ReLU-Slope_Reverse-Cholesky-GPTQ_SP8192_CaseOps_PhasedTTT_PolarNS_FusedCE/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-29_ReLU-Slope_Reverse-Cholesky-GPTQ_SP8192_CaseOps_PhasedTTT_PolarNS_FusedCE/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-29_ReLU-Slope_Reverse-Cholesky-GPTQ_SP8192_CaseOps_PhasedTTT_PolarNS_FusedCE/submission.json",
+        "records/track_10min_16mb/2026-04-29_ReLU-Slope_Reverse-Cholesky-GPTQ_SP8192_CaseOps_PhasedTTT_PolarNS_FusedCE/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-29_ReLU-Slope_Reverse-Cholesky-GPTQ_SP8192_CaseOps_PhasedTTT_PolarNS_FusedCE/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.vocab",
+        "records/track_10min_16mb/2026-04-29_ReLU-Slope_Reverse-Cholesky-GPTQ_SP8192_CaseOps_PhasedTTT_PolarNS_FusedCE/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_ReLU-Slope_Reverse-Cholesky-GPTQ_SP8192_CaseOps_PhasedTTT_PolarNS_FusedCE/train_seed1334.log",
+        "records/track_10min_16mb/2026-04-29_ReLU-Slope_Reverse-Cholesky-GPTQ_SP8192_CaseOps_PhasedTTT_PolarNS_FusedCE/train_seed42.log",
+        "records/track_10min_16mb/2026-04-29_ReLU-Slope_Reverse-Cholesky-GPTQ_SP8192_CaseOps_PhasedTTT_PolarNS_FusedCE/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1947,
       "title": "Negative result: qTTT + AdamW on PR #1493 base (val_bpb 1.08902)",
@@ -81,11 +155,11 @@
     },
     {
       "number": 1945,
-      "title": "Record: PR #1908 base + AWQ-lite + Asymmetric Logit Rescale - val_bpb 1.05932 (3-seed mean)",
+      "title": "Record: PR #1908 base + AWQ-lite + Asymmetric Logit Rescale - val_bpb 1.05943 (3-seed mean, all strict <600s)",
       "author": "alertcat",
       "state": "OPEN",
       "created": "2026-04-29T19:20:30Z",
-      "updated": "2026-04-29T20:53:48Z",
+      "updated": "2026-04-29T21:50:48Z",
       "bpb": 0.00149,
       "seeds": 3,
       "artifact_bytes": 15986941,
@@ -1846,7 +1920,7 @@
       "author": "cocohearts",
       "state": "MERGED",
       "created": "2026-04-28T18:57:39Z",
-      "updated": "2026-04-29T19:10:40Z",
+      "updated": "2026-04-29T22:18:56Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": null,
@@ -2220,10 +2294,10 @@
       "author": "peytontolbert",
       "state": "OPEN",
       "created": "2026-04-28T14:30:01Z",
-      "updated": "2026-04-29T16:31:07Z",
+      "updated": "2026-04-29T22:28:40Z",
       "bpb": 1.2205,
       "seeds": null,
-      "artifact_bytes": 15612895,
+      "artifact_bytes": 12183763,
       "technique_summary": "Muon + INT8",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-25_ModelStack_RuntimeRow_BitNet_65M_SP1024_CTX4096/README.md",

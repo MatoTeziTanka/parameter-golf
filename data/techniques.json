@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-29T21:16:58Z",
+  "generated_at": "2026-04-29T22:33:10Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1853,
-    "matched_pr_count": 1385,
+    "pr_count": 1855,
+    "matched_pr_count": 1387,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 330,
+      "ALIVE": 331,
       "AT_RISK": 107,
       "DEAD": 520,
-      "INCOMPLETE": 886,
+      "INCOMPLETE": 887,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 779,
-      "author_count": 354,
-      "alive_count": 207,
+      "count": 781,
+      "author_count": 355,
+      "alive_count": 208,
       "dead_count": 233,
       "at_risk_count": 67,
-      "incomplete_count": 271,
+      "incomplete_count": 272,
       "unknown_count": 0,
       "best_alive": {
         "number": 1736,
@@ -3359,6 +3359,34 @@
           ]
         },
         {
+          "author": "ymrohit",
+          "pr_count": 3,
+          "best_bpb": 1.09161722,
+          "prs": [
+            {
+              "number": 555,
+              "author": "ymrohit",
+              "status": "DEAD",
+              "bpb": 1.09161722,
+              "created": "2026-03-23T17:06:44Z"
+            },
+            {
+              "number": 988,
+              "author": "ymrohit",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-03-27T21:50:09Z"
+            },
+            {
+              "number": 1949,
+              "author": "ymrohit",
+              "status": "INCOMPLETE",
+              "bpb": 1.1864,
+              "created": "2026-04-29T21:42:23Z"
+            }
+          ]
+        },
+        {
           "author": "Upsalla",
           "pr_count": 3,
           "best_bpb": 1.0941,
@@ -4426,27 +4454,6 @@
               "status": "DEAD",
               "bpb": 1.11,
               "created": "2026-03-24T02:56:33Z"
-            }
-          ]
-        },
-        {
-          "author": "ymrohit",
-          "pr_count": 2,
-          "best_bpb": 1.09161722,
-          "prs": [
-            {
-              "number": 555,
-              "author": "ymrohit",
-              "status": "DEAD",
-              "bpb": 1.09161722,
-              "created": "2026-03-23T17:06:44Z"
-            },
-            {
-              "number": 988,
-              "author": "ymrohit",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-03-27T21:50:09Z"
             }
           ]
         },
@@ -5567,6 +5574,20 @@
               "status": "ALIVE",
               "bpb": 1.0616,
               "created": "2026-04-15T19:46:32Z"
+            }
+          ]
+        },
+        {
+          "author": "TimS-ml",
+          "pr_count": 1,
+          "best_bpb": 1.06242,
+          "prs": [
+            {
+              "number": 1948,
+              "author": "TimS-ml",
+              "status": "ALIVE",
+              "bpb": 1.06242,
+              "created": "2026-04-29T21:29:42Z"
             }
           ]
         },
@@ -13418,6 +13439,20 @@
           "status": "ALIVE",
           "bpb": 1.08902,
           "created": "2026-04-29T20:34:31Z"
+        },
+        {
+          "number": 1948,
+          "author": "TimS-ml",
+          "status": "ALIVE",
+          "bpb": 1.06242,
+          "created": "2026-04-29T21:29:42Z"
+        },
+        {
+          "number": 1949,
+          "author": "ymrohit",
+          "status": "INCOMPLETE",
+          "bpb": 1.1864,
+          "created": "2026-04-29T21:42:23Z"
         }
       ]
     },
@@ -23055,9 +23090,9 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 514,
-      "author_count": 241,
-      "alive_count": 157,
+      "count": 515,
+      "author_count": 242,
+      "alive_count": 158,
       "dead_count": 140,
       "at_risk_count": 53,
       "incomplete_count": 159,
@@ -26684,6 +26719,20 @@
               "status": "ALIVE",
               "bpb": 1.0616,
               "created": "2026-04-15T19:46:32Z"
+            }
+          ]
+        },
+        {
+          "author": "TimS-ml",
+          "pr_count": 1,
+          "best_bpb": 1.06242,
+          "prs": [
+            {
+              "number": 1948,
+              "author": "TimS-ml",
+              "status": "ALIVE",
+              "bpb": 1.06242,
+              "created": "2026-04-29T21:29:42Z"
             }
           ]
         },
@@ -31952,6 +32001,13 @@
           "status": "INCOMPLETE",
           "bpb": 0.00022,
           "created": "2026-04-29T19:51:35Z"
+        },
+        {
+          "number": 1948,
+          "author": "TimS-ml",
+          "status": "ALIVE",
+          "bpb": 1.06242,
+          "created": "2026-04-29T21:29:42Z"
         }
       ]
     },
@@ -43758,9 +43814,9 @@
     {
       "name": "LeakyReLU\u00b2",
       "kind": "legal",
-      "count": 110,
-      "author_count": 85,
-      "alive_count": 26,
+      "count": 111,
+      "author_count": 86,
+      "alive_count": 27,
       "dead_count": 36,
       "at_risk_count": 7,
       "incomplete_count": 41,
@@ -44377,6 +44433,20 @@
               "status": "DEAD",
               "bpb": 1.0622,
               "created": "2026-03-23T09:35:11Z"
+            }
+          ]
+        },
+        {
+          "author": "TimS-ml",
+          "pr_count": 1,
+          "best_bpb": 1.06242,
+          "prs": [
+            {
+              "number": 1948,
+              "author": "TimS-ml",
+              "status": "ALIVE",
+              "bpb": 1.06242,
+              "created": "2026-04-29T21:29:42Z"
             }
           ]
         },
@@ -45907,6 +45977,13 @@
           "status": "ALIVE",
           "bpb": 1.08389912,
           "created": "2026-04-28T22:29:52Z"
+        },
+        {
+          "number": 1948,
+          "author": "TimS-ml",
+          "status": "ALIVE",
+          "bpb": 1.06242,
+          "created": "2026-04-29T21:29:42Z"
         }
       ]
     },
@@ -62469,12 +62546,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 779,
-      "author_count": 354,
-      "alive_count": 207,
+      "count": 781,
+      "author_count": 355,
+      "alive_count": 208,
       "dead_count": 233,
       "at_risk_count": 67,
-      "incomplete_count": 271,
+      "incomplete_count": 272,
       "unknown_count": 0,
       "best_alive": {
         "number": 1736,
@@ -65808,6 +65885,34 @@
           ]
         },
         {
+          "author": "ymrohit",
+          "pr_count": 3,
+          "best_bpb": 1.09161722,
+          "prs": [
+            {
+              "number": 555,
+              "author": "ymrohit",
+              "status": "DEAD",
+              "bpb": 1.09161722,
+              "created": "2026-03-23T17:06:44Z"
+            },
+            {
+              "number": 988,
+              "author": "ymrohit",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-03-27T21:50:09Z"
+            },
+            {
+              "number": 1949,
+              "author": "ymrohit",
+              "status": "INCOMPLETE",
+              "bpb": 1.1864,
+              "created": "2026-04-29T21:42:23Z"
+            }
+          ]
+        },
+        {
           "author": "Upsalla",
           "pr_count": 3,
           "best_bpb": 1.0941,
@@ -66875,27 +66980,6 @@
               "status": "DEAD",
               "bpb": 1.11,
               "created": "2026-03-24T02:56:33Z"
-            }
-          ]
-        },
-        {
-          "author": "ymrohit",
-          "pr_count": 2,
-          "best_bpb": 1.09161722,
-          "prs": [
-            {
-              "number": 555,
-              "author": "ymrohit",
-              "status": "DEAD",
-              "bpb": 1.09161722,
-              "created": "2026-03-23T17:06:44Z"
-            },
-            {
-              "number": 988,
-              "author": "ymrohit",
-              "status": "DEAD",
-              "bpb": null,
-              "created": "2026-03-27T21:50:09Z"
             }
           ]
         },
@@ -68016,6 +68100,20 @@
               "status": "ALIVE",
               "bpb": 1.0616,
               "created": "2026-04-15T19:46:32Z"
+            }
+          ]
+        },
+        {
+          "author": "TimS-ml",
+          "pr_count": 1,
+          "best_bpb": 1.06242,
+          "prs": [
+            {
+              "number": 1948,
+              "author": "TimS-ml",
+              "status": "ALIVE",
+              "bpb": 1.06242,
+              "created": "2026-04-29T21:29:42Z"
             }
           ]
         },
@@ -75867,6 +75965,20 @@
           "status": "ALIVE",
           "bpb": 1.08902,
           "created": "2026-04-29T20:34:31Z"
+        },
+        {
+          "number": 1948,
+          "author": "TimS-ml",
+          "status": "ALIVE",
+          "bpb": 1.06242,
+          "created": "2026-04-29T21:29:42Z"
+        },
+        {
+          "number": 1949,
+          "author": "ymrohit",
+          "status": "INCOMPLETE",
+          "bpb": 1.1864,
+          "created": "2026-04-29T21:42:23Z"
         }
       ]
     },
@@ -94918,9 +95030,9 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 514,
-      "author_count": 241,
-      "alive_count": 157,
+      "count": 515,
+      "author_count": 242,
+      "alive_count": 158,
       "dead_count": 140,
       "at_risk_count": 53,
       "incomplete_count": 159,
@@ -98547,6 +98659,20 @@
               "status": "ALIVE",
               "bpb": 1.0616,
               "created": "2026-04-15T19:46:32Z"
+            }
+          ]
+        },
+        {
+          "author": "TimS-ml",
+          "pr_count": 1,
+          "best_bpb": 1.06242,
+          "prs": [
+            {
+              "number": 1948,
+              "author": "TimS-ml",
+              "status": "ALIVE",
+              "bpb": 1.06242,
+              "created": "2026-04-29T21:29:42Z"
             }
           ]
         },
@@ -103815,6 +103941,13 @@
           "status": "INCOMPLETE",
           "bpb": 0.00022,
           "created": "2026-04-29T19:51:35Z"
+        },
+        {
+          "number": 1948,
+          "author": "TimS-ml",
+          "status": "ALIVE",
+          "bpb": 1.06242,
+          "created": "2026-04-29T21:29:42Z"
         }
       ]
     },
@@ -111617,9 +111750,9 @@
     {
       "name": "LeakyReLU\u00b2",
       "kind": "legal",
-      "count": 110,
-      "author_count": 85,
-      "alive_count": 26,
+      "count": 111,
+      "author_count": 86,
+      "alive_count": 27,
       "dead_count": 36,
       "at_risk_count": 7,
       "incomplete_count": 41,
@@ -112236,6 +112369,20 @@
               "status": "DEAD",
               "bpb": 1.0622,
               "created": "2026-03-23T09:35:11Z"
+            }
+          ]
+        },
+        {
+          "author": "TimS-ml",
+          "pr_count": 1,
+          "best_bpb": 1.06242,
+          "prs": [
+            {
+              "number": 1948,
+              "author": "TimS-ml",
+              "status": "ALIVE",
+              "bpb": 1.06242,
+              "created": "2026-04-29T21:29:42Z"
             }
           ]
         },
@@ -113766,6 +113913,13 @@
           "status": "ALIVE",
           "bpb": 1.08389912,
           "created": "2026-04-28T22:29:52Z"
+        },
+        {
+          "number": 1948,
+          "author": "TimS-ml",
+          "status": "ALIVE",
+          "bpb": 1.06242,
+          "created": "2026-04-29T21:29:42Z"
         }
       ]
     },
@@ -124918,20 +125072,20 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "SWA",
-      "left_count": 110,
+      "left_count": 111,
       "right_count": 84,
-      "left_people": 85,
+      "left_people": 86,
       "right_people": 71,
-      "score": 9240
+      "score": 9324
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "SSM/Mamba/S4D",
-      "left_count": 110,
+      "left_count": 111,
       "right_count": 46,
-      "left_people": 85,
+      "left_people": 86,
       "right_people": 33,
-      "score": 5060
+      "score": 5106
     },
     {
       "left": "BigramHash",
@@ -124972,11 +125126,11 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "JEPA",
-      "left_count": 110,
+      "left_count": 111,
       "right_count": 26,
-      "left_people": 85,
+      "left_people": 86,
       "right_people": 24,
-      "score": 2860
+      "score": 2886
     },
     {
       "left": "SwiGLU",
@@ -124999,11 +125153,11 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "MoE",
-      "left_count": 110,
+      "left_count": 111,
       "right_count": 24,
-      "left_people": 85,
+      "left_people": 86,
       "right_people": 20,
-      "score": 2640
+      "score": 2664
     },
     {
       "left": "BigramHash",
@@ -125017,11 +125171,11 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "Ternary Weights",
-      "left_count": 110,
+      "left_count": 111,
       "right_count": 22,
-      "left_people": 85,
+      "left_people": 86,
       "right_people": 17,
-      "score": 2420
+      "score": 2442
     },
     {
       "left": "XSA",
@@ -125107,11 +125261,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 779,
+      "left_count": 781,
       "right_count": 2,
-      "left_people": 354,
+      "left_people": 355,
       "right_people": 2,
-      "score": 1558
+      "score": 1562
     },
     {
       "left": "SwiGLU",
@@ -125152,20 +125306,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 514,
+      "left_count": 515,
       "right_count": 2,
-      "left_people": 241,
+      "left_people": 242,
       "right_people": 2,
-      "score": 1028
+      "score": 1030
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 514,
+      "left_count": 515,
       "right_count": 2,
-      "left_people": 241,
+      "left_people": 242,
       "right_people": 2,
-      "score": 1028
+      "score": 1030
     },
     {
       "left": "Muon optimizer",
@@ -125179,11 +125333,11 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "Weight Sharing",
-      "left_count": 110,
+      "left_count": 111,
       "right_count": 8,
-      "left_people": 85,
+      "left_people": 86,
       "right_people": 5,
-      "score": 880
+      "score": 888
     },
     {
       "left": "QAT",
@@ -125206,29 +125360,29 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 779,
+      "left_count": 781,
       "right_count": 1,
-      "left_people": 354,
+      "left_people": 355,
       "right_people": 1,
-      "score": 779
+      "score": 781
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "Value Residual",
-      "left_count": 110,
+      "left_count": 111,
       "right_count": 7,
-      "left_people": 85,
+      "left_people": 86,
       "right_people": 6,
-      "score": 770
+      "score": 777
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "Progressive Depth",
-      "left_count": 110,
+      "left_count": 111,
       "right_count": 7,
-      "left_people": 85,
+      "left_people": 86,
       "right_people": 3,
-      "score": 770
+      "score": 777
     },
     {
       "left": "BigramHash",
@@ -125350,11 +125504,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 514,
+      "left_count": 515,
       "right_count": 1,
-      "left_people": 241,
+      "left_people": 242,
       "right_people": 1,
-      "score": 514
+      "score": 515
     },
     {
       "left": "Parallel Muon",
@@ -125422,20 +125576,20 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "Differential Attention",
-      "left_count": 110,
+      "left_count": 111,
       "right_count": 2,
-      "left_people": 85,
+      "left_people": 86,
       "right_people": 2,
-      "score": 220
+      "score": 222
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "U-Net skips",
-      "left_count": 110,
+      "left_count": 111,
       "right_count": 2,
-      "left_people": 85,
+      "left_people": 86,
       "right_people": 2,
-      "score": 220
+      "score": 222
     },
     {
       "left": "JEPA",
@@ -125602,11 +125756,11 @@
     {
       "left": "LeakyReLU\u00b2",
       "right": "Flash Attention",
-      "left_count": 110,
+      "left_count": 111,
       "right_count": 1,
-      "left_people": 85,
+      "left_people": 86,
       "right_people": 1,
-      "score": 110
+      "score": 111
     },
     {
       "left": "BigramHash",
