@@ -1,7 +1,88 @@
 {
-  "last_fetch": "2026-04-29T06:26:35.597581+00:00",
-  "api_calls_used": 224,
+  "last_fetch": "2026-04-29T08:39:01.003064+00:00",
+  "api_calls_used": 225,
   "prs": [
+    {
+      "number": 1919,
+      "title": "Add SP8192 + ParResid + DR + LoRA TTT + Mixed int4/int6/int8 + AWQ su…",
+      "author": "dev-pratap-singh",
+      "state": "OPEN",
+      "created": "2026-04-29T08:13:03Z",
+      "updated": "2026-04-29T08:13:03Z",
+      "bpb": 1.0587,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + LoRA + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_SP8192_ParResid_DR_LoRATTT_MixedQuant_AWQ/README.md",
+        "records/track_10min_16mb/2026-04-29_SP8192_ParResid_DR_LoRATTT_MixedQuant_AWQ/submission.json",
+        "records/track_10min_16mb/2026-04-29_SP8192_ParResid_DR_LoRATTT_MixedQuant_AWQ/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-29_SP8192_ParResid_DR_LoRATTT_MixedQuant_AWQ/README.md",
+        "records/track_non_record_16mb/2026-04-29_SP8192_ParResid_DR_LoRATTT_MixedQuant_AWQ/submission.json",
+        "records/track_non_record_16mb/2026-04-29_SP8192_ParResid_DR_LoRATTT_MixedQuant_AWQ/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1918,
+      "title": "RECORD: 1855 base + AWQ-lite mixed-precision GPTQ — val_bpb 1.06086 (3-seed mean)",
+      "author": "aquariouseworkman",
+      "state": "OPEN",
+      "created": "2026-04-29T06:58:00Z",
+      "updated": "2026-04-29T07:12:04Z",
+      "bpb": 0.00022,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/README.md",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/lossless_caps.py",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/prepare_caseops_data.py",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/requirements.txt",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/submission.json",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_gpt.py",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed1234.log",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed314.log",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed42.log",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/README.md",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/submission.json",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1917,
       "title": "Record: SP4096 5L MLP6 BigramHash XSA5 — val_bpb 1.1636",
@@ -411,7 +492,7 @@
       "author": "romeerp",
       "state": "OPEN",
       "created": "2026-04-28T19:49:20Z",
-      "updated": "2026-04-29T04:23:38Z",
+      "updated": "2026-04-29T07:01:08Z",
       "bpb": 1.06081076,
       "seeds": 3,
       "artifact_bytes": 15990000,
@@ -982,11 +1063,11 @@
       "author": "Hieuabssy",
       "state": "OPEN",
       "created": "2026-04-28T15:21:39Z",
-      "updated": "2026-04-28T15:21:39Z",
-      "bpb": null,
-      "seeds": null,
-      "artifact_bytes": null,
-      "technique_summary": "",
+      "updated": "2026-04-29T07:48:49Z",
+      "bpb": 1.0901,
+      "seeds": 2,
+      "artifact_bytes": 15976317,
+      "technique_summary": "Muon + GPTQ + INT6",
       "file_paths": [
         "records/track_10min_16mb/2026-04-28_11L_ParallelResiduals_UNetSkips_DepthRecur_Muon_ 1.0901/README.md",
         "records/track_10min_16mb/2026-04-28_11L_ParallelResiduals_UNetSkips_DepthRecur_Muon_ 1.0901/requirements.txt",
@@ -998,7 +1079,9 @@
         "train_gpt.py"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
       "track": "record",
       "technique_type": "neural",
       "technique_tags": [
@@ -1007,9 +1090,7 @@
       "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-only-2"
       ],
       "confidence": "HIGH"
     },
@@ -2125,11 +2206,11 @@
     },
     {
       "number": 1858,
-      "title": "Record: Score-First TTT + PPM-D Byte Mixture — mix_bpb 0.9946 (3-seed mean)",
+      "title": "SP8192 + Score-First TTT + QK-Gain 5.25 — Neural-Only val_bpb 1.0810 (3-seed mean)",
       "author": "G3sparky",
       "state": "OPEN",
       "created": "2026-04-27T12:42:33Z",
-      "updated": "2026-04-29T04:57:32Z",
+      "updated": "2026-04-29T06:40:45Z",
       "bpb": 0.9944,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -2243,9 +2324,9 @@
       "number": 1852,
       "title": "Record: Pre-Quant TTT + Void Compass — val_bpb 1.0282 (3-seed mean)",
       "author": "G3sparky",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-27T08:28:45Z",
-      "updated": "2026-04-27T10:21:47Z",
+      "updated": "2026-04-29T06:44:13Z",
       "bpb": 1.0282,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -2269,9 +2350,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1851,
@@ -2279,12 +2362,22 @@
       "author": "aquariouseworkman",
       "state": "OPEN",
       "created": "2026-04-27T06:56:51Z",
-      "updated": "2026-04-28T14:50:19Z",
+      "updated": "2026-04-29T06:44:18Z",
       "bpb": 1.06128,
       "seeds": null,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + GPTQ",
       "file_paths": [
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/README.md",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/lossless_caps.py",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/prepare_caseops_data.py",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/requirements.txt",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/submission.json",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_gpt.py",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed1234.log",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed314.log",
+        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed42.log",
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/README.md",
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/lossless_caps.py",
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/prepare_caseops_data.py",
@@ -7337,9 +7430,9 @@
       "number": 1715,
       "title": "Record: QK-Gain 5.5 — val_bpb 1.0810 (3-seed mean)",
       "author": "G3sparky",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-18T09:28:39Z",
-      "updated": "2026-04-21T21:53:15Z",
+      "updated": "2026-04-29T06:45:08Z",
       "bpb": 1.0809,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -7362,9 +7455,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1714,
@@ -15446,9 +15541,9 @@
       "number": 1494,
       "title": "Record: XSA-all + GPTQ + FA3 dtype fix — val_bpb 1.1161 (3-seed mean)",
       "author": "G3sparky",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-09T07:52:14Z",
-      "updated": "2026-04-22T01:46:17Z",
+      "updated": "2026-04-29T06:45:59Z",
       "bpb": 1.122,
       "seeds": null,
       "artifact_bytes": 15900000,
@@ -15472,11 +15567,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1493,
