@@ -1,7 +1,226 @@
 {
-  "last_fetch": "2026-04-29T16:43:29.444546+00:00",
-  "api_calls_used": 229,
+  "last_fetch": "2026-04-29T18:14:03.926834+00:00",
+  "api_calls_used": 230,
   "prs": [
+    {
+      "number": 1941,
+      "title": "Record: PR #1886 base + per-block MLP output gate (Linear, weight-learnable) — val_bpb 1.06872 (3-seed mean)",
+      "author": "MarioPaerle",
+      "state": "OPEN",
+      "created": "2026-04-29T17:15:32Z",
+      "updated": "2026-04-29T17:15:32Z",
+      "bpb": 1.06872454,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + GPTQ + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_PR1886Base_MLPGateOut/README.md",
+        "records/track_10min_16mb/2026-04-29_PR1886Base_MLPGateOut/submission.json",
+        "records/track_10min_16mb/2026-04-29_PR1886Base_MLPGateOut/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_PR1886Base_MLPGateOut/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-29_PR1886Base_MLPGateOut/train_seed314.log",
+        "records/track_10min_16mb/2026-04-29_PR1886Base_MLPGateOut/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1940,
+      "title": "non record submission: 11 l + int6 + tuned LR + fp16 embed (1.3066 bpb local)",
+      "author": "skamalad",
+      "state": "OPEN",
+      "created": "2026-04-29T17:08:03Z",
+      "updated": "2026-04-29T17:08:03Z",
+      "bpb": 1.3066,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "Muon + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_SK_11L_Int6_TunedLR/README.md",
+        "records/track_non_record_16mb/2026-04-30_SK_11L_Int6_TunedLR/submission.json",
+        "records/track_non_record_16mb/2026-04-30_SK_11L_Int6_TunedLR/train.log",
+        "records/track_non_record_16mb/2026-04-30_SK_11L_Int6_TunedLR/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1939,
+      "title": "[Non-record]: Mamba SSM Golf — SP-1024 8x512 KV4 + int8+zlib(2.0393)",
+      "author": "jacobrak",
+      "state": "OPEN",
+      "created": "2026-04-29T17:07:11Z",
+      "updated": "2026-04-29T17:07:11Z",
+      "bpb": 2.0393,
+      "seeds": null,
+      "artifact_bytes": 14887866,
+      "technique_summary": "SSM + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-29_mamba-ssm_8x512_state8/README.md",
+        "records/track_non_record_16mb/2026-04-29_mamba-ssm_8x512_state8/seed32.log",
+        "records/track_non_record_16mb/2026-04-29_mamba-ssm_8x512_state8/submission.json",
+        "records/track_non_record_16mb/2026-04-29_mamba-ssm_8x512_state8/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1938,
+      "title": "S0/PR1851 + Cap Tokenizer + LQER + Global TTT (val_bpb = 1.0713)",
+      "author": "lijuncheng16",
+      "state": "OPEN",
+      "created": "2026-04-29T16:56:30Z",
+      "updated": "2026-04-29T16:57:15Z",
+      "bpb": 1.0713,
+      "seeds": 1337,
+      "artifact_bytes": 16090000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "PR_DESCRIPTION.md",
+        "final_s0_pr1851_mod_gptq_v2.py",
+        "logs/final_s0_pr1851_v2_seed1334_8gpu_20260429_104925.log",
+        "logs/s0pr1851_cap_lrelu03_8gpu_20260429_093735.log",
+        "logs/s0pr1851_cap_seed42_20260429_095920.log",
+        "logs/s0pr1851_cap_seed42_8gpu_20260429_100236.log",
+        "logs/s0pr1851_final_cap_seed42_8gpu_20260429_104418.log",
+        "logs/s0pr1851_final_cap_seed999_8gpu_20260429_113420.log",
+        "records/track_10min_16mb/2026-04-28_S9_SmearGate_SparseAttn_LQER/README.md",
+        "records/track_10min_16mb/2026-04-28_S9_SmearGate_SparseAttn_LQER/submission.json",
+        "records/track_10min_16mb/2026-04-28_S9_SmearGate_SparseAttn_LQER/train_gpt.py",
+        "records/track_10min_16mb/2026-04-28_S9_SmearGate_SparseAttn_LQER/train_seed42.log",
+        "run_3seeds.sh",
+        "run_3seeds_0409.sh",
+        "run_3seeds_s9.sh",
+        "tokenizer/lossless_caps.py",
+        "tokenizer/prepare_caseops_data.py",
+        "tokenizer/retokenize_corpus.py",
+        "train_gpt_0427.py",
+        "train_gpt_s0_pr1851_mod.py",
+        "train_gpt_s9.py",
+        "train_gpt_s9_caseops_lqer.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1937,
+      "title": "Add LocalGlobal_SwiGLU_SeqPack_MixedQuant submission",
+      "author": "estesryan",
+      "state": "OPEN",
+      "created": "2026-04-29T16:53:45Z",
+      "updated": "2026-04-29T16:53:45Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15538222,
+      "technique_summary": "SwiGLU + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-29_LocalGlobal_SwiGLU_SeqPack_MixedQuant/README.md",
+        "records/track_non_record_16mb/2026-04-29_LocalGlobal_SwiGLU_SeqPack_MixedQuant/submission.json",
+        "records/track_non_record_16mb/2026-04-29_LocalGlobal_SwiGLU_SeqPack_MixedQuant/train.log",
+        "records/track_non_record_16mb/2026-04-29_LocalGlobal_SwiGLU_SeqPack_MixedQuant/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1936,
+      "title": "[Record]: MUDD Connections  + SP8192 + 3-Layer Recurrence + Parallel Residuals + QK-Gain 5.25 + Legal TTT— val_bpb 1.0769  (3-seed mean)",
+      "author": "hilbertmeng",
+      "state": "OPEN",
+      "created": "2026-04-29T16:48:26Z",
+      "updated": "2026-04-29T16:48:26Z",
+      "bpb": 1.0769,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + INT8 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_MUDD_Connections/README.md",
+        "records/track_10min_16mb/2026-04-29_MUDD_Connections/submission.json",
+        "records/track_10min_16mb/2026-04-29_MUDD_Connections/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_MUDD_Connections/train_seed42.txt",
+        "records/track_10min_16mb/2026-04-29_MUDD_Connections/train_seed423.txt",
+        "records/track_10min_16mb/2026-04-29_MUDD_Connections/train_seed424.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "two_pass",
+        "gptq_eval",
+        "cache_eval",
+        "leaky_relu"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1935,
       "title": "Record candidate: PR #1855 + TTT_LORA_RANK=56 — val_bpb 1.05997 (s42)",
@@ -522,7 +741,7 @@
       "author": "jorge-asenjo",
       "state": "OPEN",
       "created": "2026-04-29T10:26:34Z",
-      "updated": "2026-04-29T15:55:03Z",
+      "updated": "2026-04-29T17:23:08Z",
       "bpb": 1.06533,
       "seeds": 3,
       "artifact_bytes": null,
@@ -778,7 +997,7 @@
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-04-29T03:41:15Z",
-      "updated": "2026-04-29T14:45:21Z",
+      "updated": "2026-04-29T17:07:17Z",
       "bpb": 0.021,
       "seeds": null,
       "artifact_bytes": 151078222,
@@ -786,14 +1005,15 @@
       "file_paths": [
         ".gitignore",
         "AGENTS.md",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/README.md",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/lossless_caps.py",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/prepare_caseops_data.py",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/submission.json",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_gpt.py",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_seed1234.log",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_seed314.log",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/README.md",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/submission.json",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/train_seed314.log",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/train_seed42.log",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/README.md",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/audits/exp_1876_ppmd/coverage_audit.json",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/audits/exp_1876_ppmd/denominator_audit.json",
@@ -832,8 +1052,7 @@
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/prod_8gpu_s42v2/artifacts.txt",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/prod_8gpu_s42v2/launcher_state.json",
         "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/scripts/eval_path_a_ppmd.py",
-        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/scripts/eval_path_b_ppmd.py",
-        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/scripts/fast_score.py"
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/scripts/eval_path_b_ppmd.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -1079,7 +1298,7 @@
       "author": "hardik-bhalekar",
       "state": "OPEN",
       "created": "2026-04-28T21:42:23Z",
-      "updated": "2026-04-28T21:46:07Z",
+      "updated": "2026-04-29T17:34:48Z",
       "bpb": 2.0237,
       "seeds": null,
       "artifact_bytes": 7700000,
@@ -1088,7 +1307,9 @@
         "PR_DESCRIPTION.md",
         "notebooks/Parameter_golf.ipynb",
         "records/track_10min_16mb/hardik-sota-final/submission.json",
-        "records/track_10min_16mb/hardik-sota-final/train.log"
+        "records/track_10min_16mb/hardik-sota-final/train.log",
+        "requirements.txt",
+        "train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -2503,24 +2724,27 @@
     },
     {
       "number": 1868,
-      "title": "Record: SmearGate BOS Fix 3-Seed Reproduction — val_bpb 1.06145 (3-seed mean)",
+      "title": "Record: SmearGate BOS Fix 3-Seed Compliance Re-run — val_bpb 1.06141 (3-seed mean)",
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-04-27T19:20:15Z",
-      "updated": "2026-04-27T19:20:15Z",
-      "bpb": 1.06145,
+      "updated": "2026-04-29T17:08:02Z",
+      "bpb": 1.06141,
       "seeds": 3,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + GPTQ",
       "file_paths": [
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/README.md",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/lossless_caps.py",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/prepare_caseops_data.py",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/submission.json",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_gpt.py",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_seed1234.log",
-        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_seed314.log"
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/README.md",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/submission.json",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/train_seed314.log",
+        "records/track_10min_16mb/2026-04-29_SmearGateBOSFix_3Seed_1.06141/train_seed42.log",
+        "results/pr1868_rerun_compliance/train_gpt.py",
+        "scripts/run_1868_rerun.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -2544,13 +2768,14 @@
       "author": "lijuncheng16",
       "state": "OPEN",
       "created": "2026-04-27T19:06:10Z",
-      "updated": "2026-04-29T14:37:31Z",
+      "updated": "2026-04-29T18:13:43Z",
       "bpb": 1.078,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "TTT + GPTQ + EMA",
       "file_paths": [
         "final_s0_pr1851_mod_gptq_v2.py",
+        "final_s0_pr1851_mod_gptq_v2b.py",
         "run_3seeds.sh",
         "run_3seeds_0409.sh",
         "run_3seeds_s9.sh",
@@ -58448,7 +58673,7 @@
       "author": "Skrisps26",
       "state": "OPEN",
       "created": "2026-03-21T16:43:25Z",
-      "updated": "2026-04-29T11:15:47Z",
+      "updated": "2026-04-29T18:10:57Z",
       "bpb": 1.2838,
       "seeds": null,
       "artifact_bytes": 14449000,
