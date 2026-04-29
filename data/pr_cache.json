@@ -1,7 +1,236 @@
 {
-  "last_fetch": "2026-04-28T23:57:24.780805+00:00",
-  "api_calls_used": 222,
+  "last_fetch": "2026-04-29T03:54:12.722771+00:00",
+  "api_calls_used": 223,
   "prs": [
+    {
+      "number": 1916,
+      "title": "Non-record: Framework for Legal Score-First PPM-D Mixtures",
+      "author": "Christopher-Lee-McClendon",
+      "state": "OPEN",
+      "created": "2026-04-29T03:41:15Z",
+      "updated": "2026-04-29T03:41:15Z",
+      "bpb": 1.5459,
+      "seeds": null,
+      "artifact_bytes": 15975706,
+      "technique_summary": "INT6",
+      "file_paths": [
+        ".gitignore",
+        "AGENTS.md",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/README.md",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/submission.json",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_gpt.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_seed314.log",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/README.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/audits/exp_1876_ppmd/coverage_audit.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/audits/exp_1876_ppmd/denominator_audit.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/audits/exp_1876_ppmd/normalization_audit.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/audits/exp_1876_ppmd/static_provenance.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/legality/ppm_notes.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/legality/ppmd-legality-proof-implementation.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/legality/ppmd-legality-proof-result.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/legality/ppmd-legality-proof.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-a-ppmd-cpp-backend-complete.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-a-ppmd-cpp-backend-plan.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-a-ppmd-cuda-backend-plan.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-a-ppmd-cuda-runpod-execution-plan.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-a-ppmd-eval-complete.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-a-ppmd-eval-plan.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-b-byte-eval-complete.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-b-byte-eval-plan.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-b-byte-eval-redteam.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/docs/plans/path-b-byte-eval-runpod-prompt.md",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/requirements.txt",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/path_b_prod_8gpu/path_b_sliding_accounting_audit.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/path_b_prod_8gpu/path_b_sliding_merge_manifest.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/path_b_prod_8gpu_fullval/path_b_sliding_accounting_audit.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/path_b_prod_8gpu_fullval/path_b_sliding_merge_manifest.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/path_b_prod_8gpu_local_score/path_b_sliding_subset_8000000.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/prod_8gpu_s42v2/artifacts.txt",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/results/exp_1876_ppmd/prod_8gpu_s42v2/launcher_state.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/scripts/eval_path_a_ppmd.py",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/scripts/eval_path_b_ppmd.py",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/submission.json",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/tests/test_exp1876_ppmd_legality_audit.py",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/tests/test_path_a_ppmd_eval.py",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/tests/test_path_b_ppmd_eval.py",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/train.log",
+        "records/track_non_record_16mb/2026-04-28_Framework_Legal_ScoreFirst_PPMD_Mixtures/train_gpt.py",
+        "results/exp_1876_ppmd/prod_8gpu_s42v2/final_model.int6.ptz",
+        "results/exp_1876_ppmd/train_gpt_merged.py",
+        "scripts/cpu_smoke.py",
+        "scripts/eval_path_a_ppmd.py",
+        "scripts/eval_path_b_ppmd.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1915,
+      "title": "Add SP8192 CaseOps + legal per-document TTT record (1.0650 BPB)",
+      "author": "AidenGeunGeun",
+      "state": "OPEN",
+      "created": "2026-04-29T02:50:29Z",
+      "updated": "2026-04-29T03:20:49Z",
+      "bpb": 1.0650452,
+      "seeds": 3,
+      "artifact_bytes": 15922155,
+      "technique_summary": "TTT + LoRA + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_AidenKim_SP8192_CaseOps_PerdocTTT_1.0650/README.md",
+        "records/track_10min_16mb/2026-04-28_AidenKim_SP8192_CaseOps_PerdocTTT_1.0650/submission.json",
+        "records/track_10min_16mb/2026-04-28_AidenKim_SP8192_CaseOps_PerdocTTT_1.0650/train_gpt.py",
+        "records/track_10min_16mb/2026-04-28_AidenKim_SP8192_CaseOps_PerdocTTT_1.0650/train_seed0.log",
+        "records/track_10min_16mb/2026-04-28_AidenKim_SP8192_CaseOps_PerdocTTT_1.0650/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-28_AidenKim_SP8192_CaseOps_PerdocTTT_1.0650/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1914,
+      "title": "Non-record: PR #1797 reproduction + EMBED_CLIP relax + 5 ablation studies",
+      "author": "Fija",
+      "state": "OPEN",
+      "created": "2026-04-29T02:16:01Z",
+      "updated": "2026-04-29T02:16:01Z",
+      "bpb": 1.06122,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + INT6",
+      "file_paths": [
+        "SESSION_HANDOFF.md",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/README.md",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/submission.json",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_gpt.py",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_seed1.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_seed314.log",
+        "records/track_10min_16mb/2026-04-22_SP8192_CaseOps_GatedAttn_QuantGate_Loop45_PhasedTTT_MLPClip12/train_seed777.log",
+        "records/track_10min_16mb/2026-04-24_PR1787Base_Smear_LQERAsym_PhasedTTT_1.06157/README.md",
+        "records/track_10min_16mb/2026-04-24_PR1787Base_Smear_LQERAsym_PhasedTTT_1.06157/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-24_PR1787Base_Smear_LQERAsym_PhasedTTT_1.06157/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-24_PR1787Base_Smear_LQERAsym_PhasedTTT_1.06157/submission.json",
+        "records/track_10min_16mb/2026-04-24_PR1787Base_Smear_LQERAsym_PhasedTTT_1.06157/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-24_PR1787Base_Smear_LQERAsym_PhasedTTT_1.06157/train_gpt.py",
+        "records/track_10min_16mb/2026-04-24_PR1787Base_Smear_LQERAsym_PhasedTTT_1.06157/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-24_PR1787Base_Smear_LQERAsym_PhasedTTT_1.06157/train_seed314.log",
+        "records/track_10min_16mb/2026-04-24_PR1787Base_Smear_LQERAsym_PhasedTTT_1.06157/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/README.md",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/lossless_caps.py",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/prepare_caseops_data.py",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/prepare_caseops_data_parallel.py",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/submission.json",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/sweep_eval_val.py",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/test_mixer_gpu.py",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/test_ngram_legality.py",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/tokenizers/fineweb_10240_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/tokenizers/fineweb_10240_bpe_lossless_caps_caseops_v1_reserved.vocab",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_non_record_16mb/2026-04-28_PR1797_EmbedClipRelax_AblationStack/train_gpt.py",
+        "runpod/Dockerfile",
+        "runpod/README.md",
+        "runpod/bootstrap.sh",
+        "runpod/bootstrap_no_volume.sh",
+        "runpod/launch_experiment.sh",
+        "runpod/phase_b_launch.sh",
+        "runpod/phase_b_onpod.sh",
+        "runpod/phase_b_sweep.sh",
+        "runpod/phase_b_v2_onpod.sh",
+        "runpod/phase_g_3seed.sh",
+        "runpod/phase_h_ppm.sh",
+        "runpod/phase_k_ttt_tradeoff.sh",
+        "runpod/phase_l_combo.sh",
+        "runpod/phase_m_lzma.sh",
+        "runpod/phase_n_brotli_mlpclip10.sh",
+        "runpod/phase_o_lzma9.sh",
+        "runpod/phase_p_embed6.sh"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 1913,
+      "title": "[Submission] Multi-Temperature AR GPTQ Calibration on SP8192 Stack — 1.0847 BPB",
+      "author": "Jeffrey-Le",
+      "state": "OPEN",
+      "created": "2026-04-29T00:44:14Z",
+      "updated": "2026-04-29T00:44:14Z",
+      "bpb": 1.0847,
+      "seeds": 2,
+      "artifact_bytes": 16040000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-27_MultiTempARCalib_SP8192/README.md",
+        "records/track_10min_16mb/2026-04-27_MultiTempARCalib_SP8192/seed314.txt",
+        "records/track_10min_16mb/2026-04-27_MultiTempARCalib_SP8192/seed42.txt",
+        "records/track_10min_16mb/2026-04-27_MultiTempARCalib_SP8192/submission.json",
+        "records/track_10min_16mb/2026-04-27_MultiTempARCalib_SP8192/train_gpt_submission.py",
+        "train_gpt_submission.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1912,
       "title": "Improve contest submission",
@@ -1007,15 +1236,17 @@
       "author": "someone114514",
       "state": "OPEN",
       "created": "2026-04-28T05:32:32Z",
-      "updated": "2026-04-28T05:32:32Z",
+      "updated": "2026-04-29T02:09:12Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "TTT + GPTQ",
       "file_paths": [
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/README.md",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/download_caseops_data.py",
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/lossless_caps.py",
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/run_calibrated_seed.sh",
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/submission.json",
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_3Seed_1.06145/train_gpt.py",
@@ -1245,9 +1476,9 @@
       "number": 1878,
       "title": "val_bpb 0.85018 (3-seed mean) Raphe_II",
       "author": "newjordan",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-28T00:40:46Z",
-      "updated": "2026-04-28T00:41:30Z",
+      "updated": "2026-04-29T00:57:42Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1268,13 +1499,11 @@
         "ttt"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1877,
@@ -1472,9 +1701,9 @@
       "number": 1871,
       "title": "val_bpb 0.85330 (3-seed mean) Leo",
       "author": "newjordan",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-27T20:54:43Z",
-      "updated": "2026-04-27T20:55:32Z",
+      "updated": "2026-04-29T00:57:45Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1495,13 +1724,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1868,
@@ -1647,9 +1874,9 @@
       "number": 1865,
       "title": "val_bpb 0.87480 (3-seed mean) Donnie",
       "author": "newjordan",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-27T17:59:57Z",
-      "updated": "2026-04-27T18:01:00Z",
+      "updated": "2026-04-29T00:57:39Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1671,13 +1898,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1864,
@@ -2136,9 +2361,9 @@
       "number": 1848,
       "title": "val_bpb 0.87980 (3-seed mean) Mikey",
       "author": "newjordan",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-27T04:19:36Z",
-      "updated": "2026-04-27T16:47:02Z",
+      "updated": "2026-04-29T00:57:35Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -2160,13 +2385,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1847,
@@ -14487,7 +14710,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-09T21:37:43Z",
-      "updated": "2026-04-28T23:53:27Z",
+      "updated": "2026-04-29T01:09:26Z",
       "bpb": 1.1117,
       "seeds": 3,
       "artifact_bytes": 16777216,
