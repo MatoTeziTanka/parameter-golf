@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-29T18:14:59Z",
+  "generated_at": "2026-04-29T20:01:27Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 1847,
-    "matched_pr_count": 1381,
+    "pr_count": 1852,
+    "matched_pr_count": 1384,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 324,
-      "AT_RISK": 108,
-      "DEAD": 518,
-      "INCOMPLETE": 887,
+      "ALIVE": 329,
+      "AT_RISK": 107,
+      "DEAD": 520,
+      "INCOMPLETE": 886,
       "UNKNOWN": 0
     }
   },
@@ -20,17 +20,17 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 776,
+      "count": 778,
       "author_count": 353,
-      "alive_count": 202,
-      "dead_count": 231,
-      "at_risk_count": 68,
-      "incomplete_count": 274,
+      "alive_count": 206,
+      "dead_count": 233,
+      "at_risk_count": 67,
+      "incomplete_count": 271,
       "unknown_count": 0,
       "best_alive": {
-        "number": 1722,
-        "author": "deborahnelson8788726",
-        "bpb": 0.65604
+        "number": 1736,
+        "author": "dexhunter",
+        "bpb": 0.0007
       },
       "people": [
         {
@@ -125,7 +125,7 @@
             {
               "number": 1514,
               "author": "dexhunter",
-              "status": "AT_RISK",
+              "status": "ALIVE",
               "bpb": 1.07983,
               "created": "2026-04-09T23:37:30Z"
             },
@@ -174,7 +174,7 @@
             {
               "number": 1736,
               "author": "dexhunter",
-              "status": "AT_RISK",
+              "status": "ALIVE",
               "bpb": 0.0007,
               "created": "2026-04-19T09:55:58Z"
             },
@@ -2085,7 +2085,7 @@
             {
               "number": 1610,
               "author": "romeerp",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": null,
               "created": "2026-04-14T04:50:50Z"
             },
@@ -2743,6 +2743,34 @@
           ]
         },
         {
+          "author": "aquariouseworkman",
+          "pr_count": 3,
+          "best_bpb": 0.00022,
+          "prs": [
+            {
+              "number": 1851,
+              "author": "aquariouseworkman",
+              "status": "ALIVE",
+              "bpb": 1.06128,
+              "created": "2026-04-27T06:56:51Z"
+            },
+            {
+              "number": 1918,
+              "author": "aquariouseworkman",
+              "status": "DEAD",
+              "bpb": 0.00022,
+              "created": "2026-04-29T06:58:00Z"
+            },
+            {
+              "number": 1946,
+              "author": "aquariouseworkman",
+              "status": "INCOMPLETE",
+              "bpb": 0.00022,
+              "created": "2026-04-29T19:51:35Z"
+            }
+          ]
+        },
+        {
           "author": "ChideraIbe123",
           "pr_count": 3,
           "best_bpb": 0.0008,
@@ -2795,6 +2823,34 @@
               "status": "ALIVE",
               "bpb": 1.1269,
               "created": "2026-03-28T11:56:23Z"
+            }
+          ]
+        },
+        {
+          "author": "alertcat",
+          "pr_count": 3,
+          "best_bpb": 0.00149,
+          "prs": [
+            {
+              "number": 338,
+              "author": "alertcat",
+              "status": "DEAD",
+              "bpb": 1.1254,
+              "created": "2026-03-21T11:07:02Z"
+            },
+            {
+              "number": 1738,
+              "author": "alertcat",
+              "status": "ALIVE",
+              "bpb": 1.0354,
+              "created": "2026-04-19T12:10:41Z"
+            },
+            {
+              "number": 1945,
+              "author": "alertcat",
+              "status": "AT_RISK",
+              "bpb": 0.00149,
+              "created": "2026-04-29T19:20:30Z"
             }
           ]
         },
@@ -3128,7 +3184,7 @@
             {
               "number": 1530,
               "author": "samacqua",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.07336,
               "created": "2026-04-11T00:21:22Z"
             }
@@ -3639,27 +3695,6 @@
           ]
         },
         {
-          "author": "aquariouseworkman",
-          "pr_count": 2,
-          "best_bpb": 0.00022,
-          "prs": [
-            {
-              "number": 1851,
-              "author": "aquariouseworkman",
-              "status": "INCOMPLETE",
-              "bpb": 1.06128,
-              "created": "2026-04-27T06:56:51Z"
-            },
-            {
-              "number": 1918,
-              "author": "aquariouseworkman",
-              "status": "INCOMPLETE",
-              "bpb": 0.00022,
-              "created": "2026-04-29T06:58:00Z"
-            }
-          ]
-        },
-        {
           "author": "AayushBaniya2006",
           "pr_count": 2,
           "best_bpb": 0.00199,
@@ -4080,27 +4115,6 @@
           ]
         },
         {
-          "author": "alertcat",
-          "pr_count": 2,
-          "best_bpb": 1.0354,
-          "prs": [
-            {
-              "number": 338,
-              "author": "alertcat",
-              "status": "DEAD",
-              "bpb": 1.1254,
-              "created": "2026-03-21T11:07:02Z"
-            },
-            {
-              "number": 1738,
-              "author": "alertcat",
-              "status": "ALIVE",
-              "bpb": 1.0354,
-              "created": "2026-04-19T12:10:41Z"
-            }
-          ]
-        },
-        {
           "author": "AjAnubolu",
           "pr_count": 2,
           "best_bpb": 1.0429,
@@ -4199,7 +4213,7 @@
             {
               "number": 1941,
               "author": "MarioPaerle",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.06872454,
               "created": "2026-04-29T17:15:32Z"
             }
@@ -11770,7 +11784,7 @@
         {
           "number": 1514,
           "author": "dexhunter",
-          "status": "AT_RISK",
+          "status": "ALIVE",
           "bpb": 1.07983,
           "created": "2026-04-09T23:37:30Z"
         },
@@ -11826,7 +11840,7 @@
         {
           "number": 1530,
           "author": "samacqua",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.07336,
           "created": "2026-04-11T00:21:22Z"
         },
@@ -12127,7 +12141,7 @@
         {
           "number": 1610,
           "author": "romeerp",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": null,
           "created": "2026-04-14T04:50:50Z"
         },
@@ -12540,7 +12554,7 @@
         {
           "number": 1736,
           "author": "dexhunter",
-          "status": "AT_RISK",
+          "status": "ALIVE",
           "bpb": 0.0007,
           "created": "2026-04-19T09:55:58Z"
         },
@@ -13002,7 +13016,7 @@
         {
           "number": 1851,
           "author": "aquariouseworkman",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.06128,
           "created": "2026-04-27T06:56:51Z"
         },
@@ -13254,7 +13268,7 @@
         {
           "number": 1918,
           "author": "aquariouseworkman",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 0.00022,
           "created": "2026-04-29T06:58:00Z"
         },
@@ -13366,9 +13380,23 @@
         {
           "number": 1941,
           "author": "MarioPaerle",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.06872454,
           "created": "2026-04-29T17:15:32Z"
+        },
+        {
+          "number": 1945,
+          "author": "alertcat",
+          "status": "AT_RISK",
+          "bpb": 0.00149,
+          "created": "2026-04-29T19:20:30Z"
+        },
+        {
+          "number": 1946,
+          "author": "aquariouseworkman",
+          "status": "INCOMPLETE",
+          "bpb": 0.00022,
+          "created": "2026-04-29T19:51:35Z"
         }
       ]
     },
@@ -13377,8 +13405,8 @@
       "kind": "legal",
       "count": 543,
       "author_count": 287,
-      "alive_count": 130,
-      "dead_count": 161,
+      "alive_count": 129,
+      "dead_count": 162,
       "at_risk_count": 49,
       "incomplete_count": 197,
       "unknown_count": 0,
@@ -16014,7 +16042,7 @@
             {
               "number": 1941,
               "author": "MarioPaerle",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.06872454,
               "created": "2026-04-29T17:15:32Z"
             }
@@ -22997,7 +23025,7 @@
         {
           "number": 1941,
           "author": "MarioPaerle",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.06872454,
           "created": "2026-04-29T17:15:32Z"
         }
@@ -23006,12 +23034,12 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 512,
+      "count": 514,
       "author_count": 241,
       "alive_count": 157,
-      "dead_count": 138,
-      "at_risk_count": 52,
-      "incomplete_count": 160,
+      "dead_count": 140,
+      "at_risk_count": 53,
+      "incomplete_count": 159,
       "unknown_count": 0,
       "best_alive": {
         "number": 1722,
@@ -24875,6 +24903,34 @@
           ]
         },
         {
+          "author": "aquariouseworkman",
+          "pr_count": 3,
+          "best_bpb": 0.00022,
+          "prs": [
+            {
+              "number": 1851,
+              "author": "aquariouseworkman",
+              "status": "ALIVE",
+              "bpb": 1.06128,
+              "created": "2026-04-27T06:56:51Z"
+            },
+            {
+              "number": 1918,
+              "author": "aquariouseworkman",
+              "status": "DEAD",
+              "bpb": 0.00022,
+              "created": "2026-04-29T06:58:00Z"
+            },
+            {
+              "number": 1946,
+              "author": "aquariouseworkman",
+              "status": "INCOMPLETE",
+              "bpb": 0.00022,
+              "created": "2026-04-29T19:51:35Z"
+            }
+          ]
+        },
+        {
           "author": "vimeto",
           "pr_count": 3,
           "best_bpb": 0.0078,
@@ -25351,27 +25407,6 @@
           ]
         },
         {
-          "author": "aquariouseworkman",
-          "pr_count": 2,
-          "best_bpb": 0.00022,
-          "prs": [
-            {
-              "number": 1851,
-              "author": "aquariouseworkman",
-              "status": "INCOMPLETE",
-              "bpb": 1.06128,
-              "created": "2026-04-27T06:56:51Z"
-            },
-            {
-              "number": 1918,
-              "author": "aquariouseworkman",
-              "status": "INCOMPLETE",
-              "bpb": 0.00022,
-              "created": "2026-04-29T06:58:00Z"
-            }
-          ]
-        },
-        {
           "author": "ADIITJ",
           "pr_count": 2,
           "best_bpb": 0.0009,
@@ -25389,6 +25424,27 @@
               "status": "ALIVE",
               "bpb": 1.1269,
               "created": "2026-03-28T11:56:23Z"
+            }
+          ]
+        },
+        {
+          "author": "alertcat",
+          "pr_count": 2,
+          "best_bpb": 0.00149,
+          "prs": [
+            {
+              "number": 1738,
+              "author": "alertcat",
+              "status": "ALIVE",
+              "bpb": 1.0354,
+              "created": "2026-04-19T12:10:41Z"
+            },
+            {
+              "number": 1945,
+              "author": "alertcat",
+              "status": "AT_RISK",
+              "bpb": 0.00149,
+              "created": "2026-04-29T19:20:30Z"
             }
           ]
         },
@@ -25701,7 +25757,7 @@
             {
               "number": 1941,
               "author": "MarioPaerle",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.06872454,
               "created": "2026-04-29T17:15:32Z"
             }
@@ -26537,20 +26593,6 @@
               "status": "ALIVE",
               "bpb": 1.02846,
               "created": "2026-04-21T03:26:24Z"
-            }
-          ]
-        },
-        {
-          "author": "alertcat",
-          "pr_count": 1,
-          "best_bpb": 1.0354,
-          "prs": [
-            {
-              "number": 1738,
-              "author": "alertcat",
-              "status": "ALIVE",
-              "bpb": 1.0354,
-              "created": "2026-04-19T12:10:41Z"
             }
           ]
         },
@@ -31620,7 +31662,7 @@
         {
           "number": 1851,
           "author": "aquariouseworkman",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.06128,
           "created": "2026-04-27T06:56:51Z"
         },
@@ -31795,7 +31837,7 @@
         {
           "number": 1918,
           "author": "aquariouseworkman",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 0.00022,
           "created": "2026-04-29T06:58:00Z"
         },
@@ -31872,21 +31914,35 @@
         {
           "number": 1941,
           "author": "MarioPaerle",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.06872454,
           "created": "2026-04-29T17:15:32Z"
+        },
+        {
+          "number": 1945,
+          "author": "alertcat",
+          "status": "AT_RISK",
+          "bpb": 0.00149,
+          "created": "2026-04-29T19:20:30Z"
+        },
+        {
+          "number": 1946,
+          "author": "aquariouseworkman",
+          "status": "INCOMPLETE",
+          "bpb": 0.00022,
+          "created": "2026-04-29T19:51:35Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 507,
-      "author_count": 325,
-      "alive_count": 127,
+      "count": 508,
+      "author_count": 326,
+      "alive_count": 128,
       "dead_count": 111,
-      "at_risk_count": 46,
-      "incomplete_count": 221,
+      "at_risk_count": 45,
+      "incomplete_count": 222,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -32105,7 +32161,7 @@
             {
               "number": 1514,
               "author": "dexhunter",
-              "status": "AT_RISK",
+              "status": "ALIVE",
               "bpb": 1.07983,
               "created": "2026-04-09T23:37:30Z"
             },
@@ -36459,6 +36515,20 @@
           ]
         },
         {
+          "author": "dcynth",
+          "pr_count": 1,
+          "best_bpb": 1.2238,
+          "prs": [
+            {
+              "number": 1942,
+              "author": "dcynth",
+              "status": "INCOMPLETE",
+              "bpb": 1.2238,
+              "created": "2026-04-29T18:35:58Z"
+            }
+          ]
+        },
+        {
           "author": "Akasxh",
           "pr_count": 1,
           "best_bpb": 1.232,
@@ -40628,7 +40698,7 @@
         {
           "number": 1514,
           "author": "dexhunter",
-          "status": "AT_RISK",
+          "status": "ALIVE",
           "bpb": 1.07983,
           "created": "2026-04-09T23:37:30Z"
         },
@@ -41268,6 +41338,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.3066,
           "created": "2026-04-29T17:08:03Z"
+        },
+        {
+          "number": 1942,
+          "author": "dcynth",
+          "status": "INCOMPLETE",
+          "bpb": 1.2238,
+          "created": "2026-04-29T18:35:58Z"
         }
       ]
     },
@@ -55807,9 +55884,9 @@
       "kind": "banned",
       "count": 320,
       "author_count": 127,
-      "alive_count": 81,
+      "alive_count": 82,
       "dead_count": 118,
-      "at_risk_count": 71,
+      "at_risk_count": 70,
       "incomplete_count": 46,
       "unknown_count": 0,
       "best_alive": {
@@ -56386,7 +56463,7 @@
             {
               "number": 1514,
               "author": "dexhunter",
-              "status": "AT_RISK",
+              "status": "ALIVE",
               "bpb": 1.07983,
               "created": "2026-04-09T23:37:30Z"
             },
@@ -60562,7 +60639,7 @@
         {
           "number": 1514,
           "author": "dexhunter",
-          "status": "AT_RISK",
+          "status": "ALIVE",
           "bpb": 1.07983,
           "created": "2026-04-09T23:37:30Z"
         },
@@ -62350,17 +62427,17 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 776,
+      "count": 778,
       "author_count": 353,
-      "alive_count": 202,
-      "dead_count": 231,
-      "at_risk_count": 68,
-      "incomplete_count": 274,
+      "alive_count": 206,
+      "dead_count": 233,
+      "at_risk_count": 67,
+      "incomplete_count": 271,
       "unknown_count": 0,
       "best_alive": {
-        "number": 1722,
-        "author": "deborahnelson8788726",
-        "bpb": 0.65604
+        "number": 1736,
+        "author": "dexhunter",
+        "bpb": 0.0007
       },
       "people": [
         {
@@ -62455,7 +62532,7 @@
             {
               "number": 1514,
               "author": "dexhunter",
-              "status": "AT_RISK",
+              "status": "ALIVE",
               "bpb": 1.07983,
               "created": "2026-04-09T23:37:30Z"
             },
@@ -62504,7 +62581,7 @@
             {
               "number": 1736,
               "author": "dexhunter",
-              "status": "AT_RISK",
+              "status": "ALIVE",
               "bpb": 0.0007,
               "created": "2026-04-19T09:55:58Z"
             },
@@ -64415,7 +64492,7 @@
             {
               "number": 1610,
               "author": "romeerp",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": null,
               "created": "2026-04-14T04:50:50Z"
             },
@@ -65073,6 +65150,34 @@
           ]
         },
         {
+          "author": "aquariouseworkman",
+          "pr_count": 3,
+          "best_bpb": 0.00022,
+          "prs": [
+            {
+              "number": 1851,
+              "author": "aquariouseworkman",
+              "status": "ALIVE",
+              "bpb": 1.06128,
+              "created": "2026-04-27T06:56:51Z"
+            },
+            {
+              "number": 1918,
+              "author": "aquariouseworkman",
+              "status": "DEAD",
+              "bpb": 0.00022,
+              "created": "2026-04-29T06:58:00Z"
+            },
+            {
+              "number": 1946,
+              "author": "aquariouseworkman",
+              "status": "INCOMPLETE",
+              "bpb": 0.00022,
+              "created": "2026-04-29T19:51:35Z"
+            }
+          ]
+        },
+        {
           "author": "ChideraIbe123",
           "pr_count": 3,
           "best_bpb": 0.0008,
@@ -65125,6 +65230,34 @@
               "status": "ALIVE",
               "bpb": 1.1269,
               "created": "2026-03-28T11:56:23Z"
+            }
+          ]
+        },
+        {
+          "author": "alertcat",
+          "pr_count": 3,
+          "best_bpb": 0.00149,
+          "prs": [
+            {
+              "number": 338,
+              "author": "alertcat",
+              "status": "DEAD",
+              "bpb": 1.1254,
+              "created": "2026-03-21T11:07:02Z"
+            },
+            {
+              "number": 1738,
+              "author": "alertcat",
+              "status": "ALIVE",
+              "bpb": 1.0354,
+              "created": "2026-04-19T12:10:41Z"
+            },
+            {
+              "number": 1945,
+              "author": "alertcat",
+              "status": "AT_RISK",
+              "bpb": 0.00149,
+              "created": "2026-04-29T19:20:30Z"
             }
           ]
         },
@@ -65458,7 +65591,7 @@
             {
               "number": 1530,
               "author": "samacqua",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.07336,
               "created": "2026-04-11T00:21:22Z"
             }
@@ -65969,27 +66102,6 @@
           ]
         },
         {
-          "author": "aquariouseworkman",
-          "pr_count": 2,
-          "best_bpb": 0.00022,
-          "prs": [
-            {
-              "number": 1851,
-              "author": "aquariouseworkman",
-              "status": "INCOMPLETE",
-              "bpb": 1.06128,
-              "created": "2026-04-27T06:56:51Z"
-            },
-            {
-              "number": 1918,
-              "author": "aquariouseworkman",
-              "status": "INCOMPLETE",
-              "bpb": 0.00022,
-              "created": "2026-04-29T06:58:00Z"
-            }
-          ]
-        },
-        {
           "author": "AayushBaniya2006",
           "pr_count": 2,
           "best_bpb": 0.00199,
@@ -66410,27 +66522,6 @@
           ]
         },
         {
-          "author": "alertcat",
-          "pr_count": 2,
-          "best_bpb": 1.0354,
-          "prs": [
-            {
-              "number": 338,
-              "author": "alertcat",
-              "status": "DEAD",
-              "bpb": 1.1254,
-              "created": "2026-03-21T11:07:02Z"
-            },
-            {
-              "number": 1738,
-              "author": "alertcat",
-              "status": "ALIVE",
-              "bpb": 1.0354,
-              "created": "2026-04-19T12:10:41Z"
-            }
-          ]
-        },
-        {
           "author": "AjAnubolu",
           "pr_count": 2,
           "best_bpb": 1.0429,
@@ -66529,7 +66620,7 @@
             {
               "number": 1941,
               "author": "MarioPaerle",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.06872454,
               "created": "2026-04-29T17:15:32Z"
             }
@@ -74100,7 +74191,7 @@
         {
           "number": 1514,
           "author": "dexhunter",
-          "status": "AT_RISK",
+          "status": "ALIVE",
           "bpb": 1.07983,
           "created": "2026-04-09T23:37:30Z"
         },
@@ -74156,7 +74247,7 @@
         {
           "number": 1530,
           "author": "samacqua",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.07336,
           "created": "2026-04-11T00:21:22Z"
         },
@@ -74457,7 +74548,7 @@
         {
           "number": 1610,
           "author": "romeerp",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": null,
           "created": "2026-04-14T04:50:50Z"
         },
@@ -74870,7 +74961,7 @@
         {
           "number": 1736,
           "author": "dexhunter",
-          "status": "AT_RISK",
+          "status": "ALIVE",
           "bpb": 0.0007,
           "created": "2026-04-19T09:55:58Z"
         },
@@ -75332,7 +75423,7 @@
         {
           "number": 1851,
           "author": "aquariouseworkman",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.06128,
           "created": "2026-04-27T06:56:51Z"
         },
@@ -75584,7 +75675,7 @@
         {
           "number": 1918,
           "author": "aquariouseworkman",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 0.00022,
           "created": "2026-04-29T06:58:00Z"
         },
@@ -75696,21 +75787,35 @@
         {
           "number": 1941,
           "author": "MarioPaerle",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.06872454,
           "created": "2026-04-29T17:15:32Z"
+        },
+        {
+          "number": 1945,
+          "author": "alertcat",
+          "status": "AT_RISK",
+          "bpb": 0.00149,
+          "created": "2026-04-29T19:20:30Z"
+        },
+        {
+          "number": 1946,
+          "author": "aquariouseworkman",
+          "status": "INCOMPLETE",
+          "bpb": 0.00022,
+          "created": "2026-04-29T19:51:35Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 507,
-      "author_count": 325,
-      "alive_count": 127,
+      "count": 508,
+      "author_count": 326,
+      "alive_count": 128,
       "dead_count": 111,
-      "at_risk_count": 46,
-      "incomplete_count": 221,
+      "at_risk_count": 45,
+      "incomplete_count": 222,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -75929,7 +76034,7 @@
             {
               "number": 1514,
               "author": "dexhunter",
-              "status": "AT_RISK",
+              "status": "ALIVE",
               "bpb": 1.07983,
               "created": "2026-04-09T23:37:30Z"
             },
@@ -80283,6 +80388,20 @@
           ]
         },
         {
+          "author": "dcynth",
+          "pr_count": 1,
+          "best_bpb": 1.2238,
+          "prs": [
+            {
+              "number": 1942,
+              "author": "dcynth",
+              "status": "INCOMPLETE",
+              "bpb": 1.2238,
+              "created": "2026-04-29T18:35:58Z"
+            }
+          ]
+        },
+        {
           "author": "Akasxh",
           "pr_count": 1,
           "best_bpb": 1.232,
@@ -84452,7 +84571,7 @@
         {
           "number": 1514,
           "author": "dexhunter",
-          "status": "AT_RISK",
+          "status": "ALIVE",
           "bpb": 1.07983,
           "created": "2026-04-09T23:37:30Z"
         },
@@ -85092,6 +85211,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.3066,
           "created": "2026-04-29T17:08:03Z"
+        },
+        {
+          "number": 1942,
+          "author": "dcynth",
+          "status": "INCOMPLETE",
+          "bpb": 1.2238,
+          "created": "2026-04-29T18:35:58Z"
         }
       ]
     },
@@ -85100,8 +85226,8 @@
       "kind": "legal",
       "count": 543,
       "author_count": 287,
-      "alive_count": 130,
-      "dead_count": 161,
+      "alive_count": 129,
+      "dead_count": 162,
       "at_risk_count": 49,
       "incomplete_count": 197,
       "unknown_count": 0,
@@ -87737,7 +87863,7 @@
             {
               "number": 1941,
               "author": "MarioPaerle",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.06872454,
               "created": "2026-04-29T17:15:32Z"
             }
@@ -94720,7 +94846,7 @@
         {
           "number": 1941,
           "author": "MarioPaerle",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.06872454,
           "created": "2026-04-29T17:15:32Z"
         }
@@ -94729,12 +94855,12 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 512,
+      "count": 514,
       "author_count": 241,
       "alive_count": 157,
-      "dead_count": 138,
-      "at_risk_count": 52,
-      "incomplete_count": 160,
+      "dead_count": 140,
+      "at_risk_count": 53,
+      "incomplete_count": 159,
       "unknown_count": 0,
       "best_alive": {
         "number": 1722,
@@ -96598,6 +96724,34 @@
           ]
         },
         {
+          "author": "aquariouseworkman",
+          "pr_count": 3,
+          "best_bpb": 0.00022,
+          "prs": [
+            {
+              "number": 1851,
+              "author": "aquariouseworkman",
+              "status": "ALIVE",
+              "bpb": 1.06128,
+              "created": "2026-04-27T06:56:51Z"
+            },
+            {
+              "number": 1918,
+              "author": "aquariouseworkman",
+              "status": "DEAD",
+              "bpb": 0.00022,
+              "created": "2026-04-29T06:58:00Z"
+            },
+            {
+              "number": 1946,
+              "author": "aquariouseworkman",
+              "status": "INCOMPLETE",
+              "bpb": 0.00022,
+              "created": "2026-04-29T19:51:35Z"
+            }
+          ]
+        },
+        {
           "author": "vimeto",
           "pr_count": 3,
           "best_bpb": 0.0078,
@@ -97074,27 +97228,6 @@
           ]
         },
         {
-          "author": "aquariouseworkman",
-          "pr_count": 2,
-          "best_bpb": 0.00022,
-          "prs": [
-            {
-              "number": 1851,
-              "author": "aquariouseworkman",
-              "status": "INCOMPLETE",
-              "bpb": 1.06128,
-              "created": "2026-04-27T06:56:51Z"
-            },
-            {
-              "number": 1918,
-              "author": "aquariouseworkman",
-              "status": "INCOMPLETE",
-              "bpb": 0.00022,
-              "created": "2026-04-29T06:58:00Z"
-            }
-          ]
-        },
-        {
           "author": "ADIITJ",
           "pr_count": 2,
           "best_bpb": 0.0009,
@@ -97112,6 +97245,27 @@
               "status": "ALIVE",
               "bpb": 1.1269,
               "created": "2026-03-28T11:56:23Z"
+            }
+          ]
+        },
+        {
+          "author": "alertcat",
+          "pr_count": 2,
+          "best_bpb": 0.00149,
+          "prs": [
+            {
+              "number": 1738,
+              "author": "alertcat",
+              "status": "ALIVE",
+              "bpb": 1.0354,
+              "created": "2026-04-19T12:10:41Z"
+            },
+            {
+              "number": 1945,
+              "author": "alertcat",
+              "status": "AT_RISK",
+              "bpb": 0.00149,
+              "created": "2026-04-29T19:20:30Z"
             }
           ]
         },
@@ -97424,7 +97578,7 @@
             {
               "number": 1941,
               "author": "MarioPaerle",
-              "status": "ALIVE",
+              "status": "DEAD",
               "bpb": 1.06872454,
               "created": "2026-04-29T17:15:32Z"
             }
@@ -98260,20 +98414,6 @@
               "status": "ALIVE",
               "bpb": 1.02846,
               "created": "2026-04-21T03:26:24Z"
-            }
-          ]
-        },
-        {
-          "author": "alertcat",
-          "pr_count": 1,
-          "best_bpb": 1.0354,
-          "prs": [
-            {
-              "number": 1738,
-              "author": "alertcat",
-              "status": "ALIVE",
-              "bpb": 1.0354,
-              "created": "2026-04-19T12:10:41Z"
             }
           ]
         },
@@ -103343,7 +103483,7 @@
         {
           "number": 1851,
           "author": "aquariouseworkman",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.06128,
           "created": "2026-04-27T06:56:51Z"
         },
@@ -103518,7 +103658,7 @@
         {
           "number": 1918,
           "author": "aquariouseworkman",
-          "status": "INCOMPLETE",
+          "status": "DEAD",
           "bpb": 0.00022,
           "created": "2026-04-29T06:58:00Z"
         },
@@ -103595,9 +103735,23 @@
         {
           "number": 1941,
           "author": "MarioPaerle",
-          "status": "ALIVE",
+          "status": "DEAD",
           "bpb": 1.06872454,
           "created": "2026-04-29T17:15:32Z"
+        },
+        {
+          "number": 1945,
+          "author": "alertcat",
+          "status": "AT_RISK",
+          "bpb": 0.00149,
+          "created": "2026-04-29T19:20:30Z"
+        },
+        {
+          "number": 1946,
+          "author": "aquariouseworkman",
+          "status": "INCOMPLETE",
+          "bpb": 0.00022,
+          "created": "2026-04-29T19:51:35Z"
         }
       ]
     },
@@ -103606,9 +103760,9 @@
       "kind": "banned",
       "count": 320,
       "author_count": 127,
-      "alive_count": 81,
+      "alive_count": 82,
       "dead_count": 118,
-      "at_risk_count": 71,
+      "at_risk_count": 70,
       "incomplete_count": 46,
       "unknown_count": 0,
       "best_alive": {
@@ -104185,7 +104339,7 @@
             {
               "number": 1514,
               "author": "dexhunter",
-              "status": "AT_RISK",
+              "status": "ALIVE",
               "bpb": 1.07983,
               "created": "2026-04-09T23:37:30Z"
             },
@@ -108361,7 +108515,7 @@
         {
           "number": 1514,
           "author": "dexhunter",
-          "status": "AT_RISK",
+          "status": "ALIVE",
           "bpb": 1.07983,
           "created": "2026-04-09T23:37:30Z"
         },
@@ -124869,11 +125023,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 776,
+      "left_count": 778,
       "right_count": 2,
       "left_people": 353,
       "right_people": 2,
-      "score": 1552
+      "score": 1556
     },
     {
       "left": "SwiGLU",
@@ -124914,29 +125068,29 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 512,
+      "left_count": 514,
       "right_count": 2,
       "left_people": 241,
       "right_people": 2,
-      "score": 1024
+      "score": 1028
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 512,
+      "left_count": 514,
       "right_count": 2,
       "left_people": 241,
       "right_people": 2,
-      "score": 1024
+      "score": 1028
     },
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 507,
+      "left_count": 508,
       "right_count": 2,
-      "left_people": 325,
+      "left_people": 326,
       "right_people": 2,
-      "score": 1014
+      "score": 1016
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -124968,11 +125122,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 776,
+      "left_count": 778,
       "right_count": 1,
       "left_people": 353,
       "right_people": 1,
-      "score": 776
+      "score": 778
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -125112,11 +125266,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 512,
+      "left_count": 514,
       "right_count": 1,
       "left_people": 241,
       "right_people": 1,
-      "score": 512
+      "score": 514
     },
     {
       "left": "Parallel Muon",

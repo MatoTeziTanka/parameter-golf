@@ -1,14 +1,211 @@
 {
-  "last_fetch": "2026-04-29T18:14:03.926834+00:00",
-  "api_calls_used": 230,
+  "last_fetch": "2026-04-29T20:00:17.513203+00:00",
+  "api_calls_used": 231,
   "prs": [
+    {
+      "number": 1946,
+      "title": "Record: base + AWQ-lite mixed-precision GPTQ — val_bpb 1.06086 (3-seed mean)",
+      "author": "aquariouseworkman",
+      "state": "OPEN",
+      "created": "2026-04-29T19:51:35Z",
+      "updated": "2026-04-29T19:58:31Z",
+      "bpb": 0.00022,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_AWQ_lite_mixedprecision_GPTQ/README.md",
+        "records/track_10min_16mb/2026-04-29_AWQ_lite_mixedprecision_GPTQ/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-29_AWQ_lite_mixedprecision_GPTQ/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-29_AWQ_lite_mixedprecision_GPTQ/requirements.txt",
+        "records/track_10min_16mb/2026-04-29_AWQ_lite_mixedprecision_GPTQ/submission.json",
+        "records/track_10min_16mb/2026-04-29_AWQ_lite_mixedprecision_GPTQ/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-29_AWQ_lite_mixedprecision_GPTQ/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed314.log",
+        "records/track_10min_16mb/2026-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1945,
+      "title": "Record: PR #1908 base + AWQ-lite + Asymmetric Logit Rescale - val_bpb 1.05932 (3-seed mean)",
+      "author": "alertcat",
+      "state": "OPEN",
+      "created": "2026-04-29T19:20:30Z",
+      "updated": "2026-04-29T19:20:30Z",
+      "bpb": 0.00149,
+      "seeds": 3,
+      "artifact_bytes": 15986941,
+      "technique_summary": "TTT + LoRA + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_V18_PR1797Tuned_FullStack/README.md",
+        "records/track_10min_16mb/2026-04-29_V18_PR1797Tuned_FullStack/V18_README.md",
+        "records/track_10min_16mb/2026-04-29_V18_PR1797Tuned_FullStack/finalize_v18.sh",
+        "records/track_10min_16mb/2026-04-29_V18_PR1797Tuned_FullStack/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-29_V18_PR1797Tuned_FullStack/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-29_V18_PR1797Tuned_FullStack/run_v18_2more.sh",
+        "records/track_10min_16mb/2026-04-29_V18_PR1797Tuned_FullStack/run_v18_3seeds.sh",
+        "records/track_10min_16mb/2026-04-29_V18_PR1797Tuned_FullStack/run_v18_scout.sh",
+        "records/track_10min_16mb/2026-04-29_V18_PR1797Tuned_FullStack/submission.json",
+        "records/track_10min_16mb/2026-04-29_V18_PR1797Tuned_FullStack/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-29_V18_PR1797Tuned_FullStack/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/V19_README.md",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/V21_README.md",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/requirements.txt",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/run_baseline_verify.sh",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/run_v19_3seeds.sh",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/run_v19_scout.sh",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/run_v19b_simonmarcus_scout.sh",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/run_v19c_stacked_scout.sh",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/run_v20_scout.sh",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/run_v21_3seeds.sh",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/run_v21_full_stack_scout.sh",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/run_v21_seeds_0_1234_optimized.sh",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/submission.json",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/train_seed0.log",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-30_V19_PR1908_AsymLogit_WD2/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
+    {
+      "number": 1944,
+      "title": "adaLN_recurrence [val_bpb=1.255 on 4 x H100]",
+      "author": "dmitriymyan1",
+      "state": "OPEN",
+      "created": "2026-04-29T19:13:12Z",
+      "updated": "2026-04-29T19:13:12Z",
+      "bpb": 1.255,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "adaLN_recurrence/README.md",
+        "adaLN_recurrence/requirements.txt",
+        "adaLN_recurrence/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1943,
+      "title": " Add PR1720 no-val-pause negative result",
+      "author": "LoBreeze",
+      "state": "OPEN",
+      "created": "2026-04-29T18:51:08Z",
+      "updated": "2026-04-29T18:51:08Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_PR1720_NoValPause_NegativeResult/README.md",
+        "records/track_non_record_16mb/2026-04-30_PR1720_NoValPause_NegativeResult/submission.json",
+        "records/track_non_record_16mb/2026-04-30_PR1720_NoValPause_NegativeResult/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_PR1720_NoValPause_NegativeResult/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1942,
+      "title": "Submission/muoneqr weight decay",
+      "author": "dcynth",
+      "state": "OPEN",
+      "created": "2026-04-29T18:35:58Z",
+      "updated": "2026-04-29T18:36:27Z",
+      "bpb": 1.2238,
+      "seeds": null,
+      "artifact_bytes": 15879569,
+      "technique_summary": "Muon",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-26_MuonEqR_WeightDecay/README.md",
+        "records/track_10min_16mb/2026-04-26_MuonEqR_WeightDecay/submission.json",
+        "records/track_10min_16mb/2026-04-26_MuonEqR_WeightDecay/train_gpt.py",
+        "records/track_10min_16mb/2026-04-26_MuonEqR_WeightDecay/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-26_MuonEqR_WeightDecay/train_seed1338.log",
+        "records/track_10min_16mb/2026-04-26_MuonEqR_WeightDecay/train_seed1339.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1941,
       "title": "Record: PR #1886 base + per-block MLP output gate (Linear, weight-learnable) — val_bpb 1.06872 (3-seed mean)",
       "author": "MarioPaerle",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-29T17:15:32Z",
-      "updated": "2026-04-29T17:15:32Z",
+      "updated": "2026-04-29T19:50:58Z",
       "bpb": 1.06872454,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -33,9 +230,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 1940,
@@ -914,9 +1113,9 @@
       "number": 1918,
       "title": "RECORD: 1855 base + AWQ-lite mixed-precision GPTQ — val_bpb 1.06086 (3-seed mean)",
       "author": "aquariouseworkman",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-29T06:58:00Z",
-      "updated": "2026-04-29T07:12:04Z",
+      "updated": "2026-04-29T19:57:55Z",
       "bpb": 0.00022,
       "seeds": 3,
       "artifact_bytes": null,
@@ -952,11 +1151,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1917,
@@ -1604,11 +1803,11 @@
       "number": 1902,
       "title": "Update Parameter Golf leaderboard with BOS fix",
       "author": "cocohearts",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-28T18:57:39Z",
-      "updated": "2026-04-29T13:04:44Z",
+      "updated": "2026-04-29T19:10:40Z",
       "bpb": null,
-      "seeds": null,
+      "seeds": 3,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
@@ -1625,12 +1824,9 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown",
-        "no-submission-json"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -2728,7 +2924,7 @@
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-04-27T19:20:15Z",
-      "updated": "2026-04-29T17:08:02Z",
+      "updated": "2026-04-29T19:20:36Z",
       "bpb": 1.06141,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -3128,9 +3324,9 @@
       "number": 1855,
       "title": "Record: SP8192 + LQER + Sparse Attn Gate + BOS-Fixed SmearGate + 9-Hparam Greedy Stack — val_bpb 1.06108 (3-seed mean)",
       "author": "codemath3000",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-27T10:49:13Z",
-      "updated": "2026-04-28T17:28:16Z",
+      "updated": "2026-04-29T19:18:39Z",
       "bpb": 1.06108,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -3161,7 +3357,9 @@
       ],
       "technique_source": "code",
       "status": "ALIVE",
-      "flags": [],
+      "flags": [
+        "merged-to-leaderboard"
+      ],
       "confidence": "HIGH"
     },
     {
@@ -3248,22 +3446,12 @@
       "author": "aquariouseworkman",
       "state": "OPEN",
       "created": "2026-04-27T06:56:51Z",
-      "updated": "2026-04-29T06:44:18Z",
+      "updated": "2026-04-29T19:36:09Z",
       "bpb": 1.06128,
-      "seeds": null,
+      "seeds": 3,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + GPTQ",
       "file_paths": [
-        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/README.md",
-        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/lossless_caps.py",
-        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/prepare_caseops_data.py",
-        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/requirements.txt",
-        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/submission.json",
-        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
-        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_gpt.py",
-        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed1234.log",
-        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed314.log",
-        "records/track_10min_16mb/2020-04-29_AWQ_lite_mixedprecision_GPTQ/train_seed42.log",
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/README.md",
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/lossless_caps.py",
         "records/track_10min_16mb/2026-04-27_SmearGateBOSFix_PR1787Base_LQERAsym_PhasedTTT/prepare_caseops_data.py",
@@ -3285,10 +3473,8 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -5775,9 +5961,9 @@
       "number": 1787,
       "title": "Record: PR #1736 + Polar Express NS + MIN_LR + Sparse Attn Gate + Fused CE + PR #1767 TTT — val_bpb 1.06335",
       "author": "nprime06",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-23T08:54:38Z",
-      "updated": "2026-04-24T21:37:58Z",
+      "updated": "2026-04-29T19:18:35Z",
       "bpb": 1.06335,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -5812,7 +5998,9 @@
       ],
       "technique_source": "code",
       "status": "ALIVE",
-      "flags": [],
+      "flags": [
+        "merged-to-leaderboard"
+      ],
       "confidence": "HIGH"
     },
     {
@@ -6351,9 +6539,9 @@
       "number": 1769,
       "title": "Record: SP8192 + CaseOps + GatedAttn + QuantGate + Loop4-5 + PhasedTTT + MLPClip12 — val_bpb 1.06453 (5-seed mean)",
       "author": "dexhunter",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-22T03:36:07Z",
-      "updated": "2026-04-23T02:41:02Z",
+      "updated": "2026-04-29T19:18:31Z",
       "bpb": 1.06453,
       "seeds": 5,
       "artifact_bytes": 20818,
@@ -6384,7 +6572,9 @@
       ],
       "technique_source": "code",
       "status": "ALIVE",
-      "flags": [],
+      "flags": [
+        "merged-to-leaderboard"
+      ],
       "confidence": "HIGH"
     },
     {
@@ -7576,9 +7766,9 @@
       "number": 1736,
       "title": "Record: SP8192 + CaseOps + GatedAttn + QuantGate + Loop45 + PhasedTTT — val_bpb 1.06549",
       "author": "dexhunter",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-19T09:55:58Z",
-      "updated": "2026-04-23T02:39:50Z",
+      "updated": "2026-04-29T19:18:28Z",
       "bpb": 0.0007,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -7605,12 +7795,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "AT_RISK",
+      "status": "ALIVE",
       "flags": [
-        "suspiciously-low-bpb"
+        "merged-to-leaderboard"
       ],
-      "confidence": "MEDIUM",
-      "flag_reason": "Suspiciously low BPB — likely non-neural"
+      "confidence": "HIGH"
     },
     {
       "number": 1735,
@@ -7848,9 +8037,9 @@
       "number": 1729,
       "title": "Record: CaseOps Tokenizer + Tapered WD - val_bpb 1.0678 (3-seed mean)",
       "author": "romeerp",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-19T02:12:48Z",
-      "updated": "2026-04-19T02:26:19Z",
+      "updated": "2026-04-29T19:18:24Z",
       "bpb": 1.0678,
       "seeds": 3,
       "artifact_bytes": 15940000,
@@ -7881,7 +8070,9 @@
       ],
       "technique_source": "code",
       "status": "ALIVE",
-      "flags": [],
+      "flags": [
+        "merged-to-leaderboard"
+      ],
       "confidence": "HIGH"
     },
     {
@@ -10119,7 +10310,7 @@
       "author": "MarioPaerle",
       "state": "OPEN",
       "created": "2026-04-16T12:32:56Z",
-      "updated": "2026-04-17T16:20:05Z",
+      "updated": "2026-04-29T19:20:34Z",
       "bpb": 1.07139,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -10194,7 +10385,7 @@
       "author": "mrbese",
       "state": "OPEN",
       "created": "2026-04-16T07:57:05Z",
-      "updated": "2026-04-16T07:57:05Z",
+      "updated": "2026-04-29T18:24:07Z",
       "bpb": 1.3571,
       "seeds": 3,
       "artifact_bytes": 7600000,
@@ -11492,9 +11683,9 @@
       "number": 1626,
       "title": "Record: VarLen Attention + Fused MLP + Multi-Phase Global SGD TTT — val_bpb 1.07193 (3-seed mean)",
       "author": "dexhunter",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-14T23:52:27Z",
-      "updated": "2026-04-15T00:01:18Z",
+      "updated": "2026-04-29T19:18:20Z",
       "bpb": 1.07193,
       "seeds": 3,
       "artifact_bytes": 15930000,
@@ -11520,7 +11711,9 @@
       ],
       "technique_source": "code",
       "status": "ALIVE",
-      "flags": [],
+      "flags": [
+        "merged-to-leaderboard"
+      ],
       "confidence": "HIGH"
     },
     {
@@ -12106,9 +12299,9 @@
       "number": 1610,
       "title": "Record: VarLenAttn + PhasingTTT - val_bpb 1.0728 (3-seed mean)",
       "author": "romeerp",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-14T04:50:50Z",
-      "updated": "2026-04-14T15:10:26Z",
+      "updated": "2026-04-29T19:18:16Z",
       "bpb": null,
       "seeds": 0,
       "artifact_bytes": 16000000,
@@ -12133,10 +12326,9 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "no-bpb",
-        "seeds-only-0"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -15122,9 +15314,9 @@
       "number": 1530,
       "title": "Record: Varlen attention + fused MLP + doc-independent TTT (1.07336)",
       "author": "samacqua",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-11T00:21:22Z",
-      "updated": "2026-04-20T15:56:44Z",
+      "updated": "2026-04-29T19:18:12Z",
       "bpb": 1.07336,
       "seeds": 0,
       "artifact_bytes": 15990000,
@@ -15150,9 +15342,9 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "seeds-only-0"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -15162,7 +15354,7 @@
       "author": "msisovic",
       "state": "OPEN",
       "created": "2026-04-11T00:04:56Z",
-      "updated": "2026-04-13T14:30:37Z",
+      "updated": "2026-04-29T19:20:33Z",
       "bpb": 1.07578747,
       "seeds": 3,
       "artifact_bytes": 15980000,
@@ -15651,9 +15843,9 @@
       "number": 1514,
       "title": "Record: SP8192 + Muon 0.97 + Legal Score-First TTT — val_bpb 1.07983 (3-seed mean)",
       "author": "dexhunter",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-09T23:37:30Z",
-      "updated": "2026-04-10T02:17:05Z",
+      "updated": "2026-04-29T19:18:08Z",
       "bpb": 1.07983,
       "seeds": 3,
       "artifact_bytes": 15990000,
@@ -15681,12 +15873,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "AT_RISK",
+      "status": "ALIVE",
       "flags": [
-        "path:ngram-path",
-        "compliance-override:score-first-ttt"
+        "merged-to-leaderboard"
       ],
-      "confidence": "LOW"
+      "confidence": "HIGH"
     },
     {
       "number": 1513,
@@ -58673,7 +58864,7 @@
       "author": "Skrisps26",
       "state": "OPEN",
       "created": "2026-03-21T16:43:25Z",
-      "updated": "2026-04-29T18:10:57Z",
+      "updated": "2026-04-29T18:47:31Z",
       "bpb": 1.2838,
       "seeds": null,
       "artifact_bytes": 14449000,
