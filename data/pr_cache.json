@@ -1,7 +1,147 @@
 {
-  "last_fetch": "2026-04-29T08:39:01.003064+00:00",
-  "api_calls_used": 225,
+  "last_fetch": "2026-04-29T10:58:37.324170+00:00",
+  "api_calls_used": 226,
   "prs": [
+    {
+      "number": 1923,
+      "title": "Record: SP8192 #1855 Base + Asymmetric Logit Rescale — val_bpb 1.06577 (3-seed mean)",
+      "author": "jorge-asenjo",
+      "state": "OPEN",
+      "created": "2026-04-29T10:26:34Z",
+      "updated": "2026-04-29T10:49:45Z",
+      "bpb": 1.06533,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + LoRA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/README.md",
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/submission.json",
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/train_seed0.log",
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "two_pass"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1922,
+      "title": "JEPA Implementation Path: Add Non-Record 10-Minute SP8192 BPE Submission with Self-Contained Data Setup",
+      "author": "divagr18",
+      "state": "OPEN",
+      "created": "2026-04-29T09:14:43Z",
+      "updated": "2026-04-29T09:16:14Z",
+      "bpb": 1.1797,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-29_SP8192_BPE_JPCR_Distill_8xH100/README.md",
+        "records/track_non_record_16mb/2026-04-29_SP8192_BPE_JPCR_Distill_8xH100/fineweb_8192_bpe.model",
+        "records/track_non_record_16mb/2026-04-29_SP8192_BPE_JPCR_Distill_8xH100/fineweb_8192_bpe.vocab",
+        "records/track_non_record_16mb/2026-04-29_SP8192_BPE_JPCR_Distill_8xH100/reqs.txt",
+        "records/track_non_record_16mb/2026-04-29_SP8192_BPE_JPCR_Distill_8xH100/setup_sp8192_data.sh",
+        "records/track_non_record_16mb/2026-04-29_SP8192_BPE_JPCR_Distill_8xH100/submission.json",
+        "records/track_non_record_16mb/2026-04-29_SP8192_BPE_JPCR_Distill_8xH100/train.log",
+        "records/track_non_record_16mb/2026-04-29_SP8192_BPE_JPCR_Distill_8xH100/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1921,
+      "title": "Add RTX2070 non-record smoke baseline",
+      "author": "oresamadom",
+      "state": "OPEN",
+      "created": "2026-04-29T09:10:07Z",
+      "updated": "2026-04-29T09:10:07Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-29_rtx2070_smoke_auditable_turtle/README.md",
+        "records/track_non_record_16mb/2026-04-29_rtx2070_smoke_auditable_turtle/submission.json",
+        "records/track_non_record_16mb/2026-04-29_rtx2070_smoke_auditable_turtle/train.log",
+        "records/track_non_record_16mb/2026-04-29_rtx2070_smoke_auditable_turtle/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1920,
+      "title": "Record: SP8192 PR #1874 + TTT_CHUNK_SIZE=32 — val_bpb 1.06990 (3-seed mean)",
+      "author": "bigbag",
+      "state": "OPEN",
+      "created": "2026-04-29T08:40:18Z",
+      "updated": "2026-04-29T08:40:29Z",
+      "bpb": 1.0699,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + LoRA + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1874_ChunkTTT32/README.md",
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1874_ChunkTTT32/submission.json",
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1874_ChunkTTT32/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1874_ChunkTTT32/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1874_ChunkTTT32/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-29_SP8192_PR1874_ChunkTTT32/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1919,
       "title": "Add SP8192 + ParResid + DR + LoRA TTT + Mixed int4/int6/int8 + AWQ su…",
@@ -2210,11 +2350,11 @@
       "author": "G3sparky",
       "state": "OPEN",
       "created": "2026-04-27T12:42:33Z",
-      "updated": "2026-04-29T06:40:45Z",
-      "bpb": 0.9944,
+      "updated": "2026-04-29T09:58:24Z",
+      "bpb": 1.081,
       "seeds": 3,
-      "artifact_bytes": 16000000,
-      "technique_summary": "TTT",
+      "artifact_bytes": 15996321,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8",
       "file_paths": [
         "records/track_10min_16mb/2026-04-27_ScoreFirstTTT_PPMD_QK525/README.md",
         "records/track_10min_16mb/2026-04-27_ScoreFirstTTT_PPMD_QK525/submission.json",
@@ -2225,7 +2365,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
-        "ttt"
+        "ttt",
+        "gptq_eval"
       ],
       "track": "record",
       "technique_type": "ttt",
@@ -4112,7 +4253,7 @@
       "author": "abi2024",
       "state": "OPEN",
       "created": "2026-04-24T08:15:39Z",
-      "updated": "2026-04-27T11:37:57Z",
+      "updated": "2026-04-29T10:25:38Z",
       "bpb": 1.07431,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -4137,6 +4278,14 @@
         "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/empirical_validation/run3_yahya_full_lut.json",
         "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/empirical_validation/run3_yahya_full_lut.log",
         "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/empirical_validation/run3_yahya_full_lut.py",
+        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/empirical_validation/run4_seq_len_1024.json",
+        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/empirical_validation/run4_seq_len_1024.log",
+        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/empirical_validation/run4_seq_len_1024.py",
+        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/empirical_validation/run4_summary.md",
+        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/empirical_validation/run5_bug_decomposition.json",
+        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/empirical_validation/run5_bug_decomposition.log",
+        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/empirical_validation/run5_bug_decomposition.py",
+        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/empirical_validation/run5_summary.md",
         "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/methodology.md",
         "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/per_pr/1735.json",
         "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/per_pr/1736.json",
@@ -4158,14 +4307,8 @@
         "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/per_pr_v2/1779.json",
         "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/per_pr_v2/1784.json",
         "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/per_pr_v2/1785.json",
-        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/results.md",
-        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/submission.json",
-        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/tests/fixtures/buggy_byte_token.py",
-        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/tests/fixtures/buggy_missing_is_unused.py",
-        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/tests/fixtures/buggy_train_gpt.py",
-        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/tests/fixtures/buggy_triple.py",
-        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/tests/test_canonical_rescore.py",
-        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/writeup.md"
+        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/per_pr_v2/1795.json",
+        "records/track_non_record_16mb/2026-04-24_BPB_ByteCount_Audit/results.md"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -4178,8 +4321,10 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-submission-json"
+      ],
       "confidence": "HIGH"
     },
     {
@@ -14836,7 +14981,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-09T21:37:43Z",
-      "updated": "2026-04-29T06:22:34Z",
+      "updated": "2026-04-29T10:22:49Z",
       "bpb": 1.1117,
       "seeds": 3,
       "artifact_bytes": 16777216,
@@ -14891,7 +15036,7 @@
         "logs/pko_run1.log",
         "logs/pko_run1.txt",
         "logs/pr1493_baseline.txt",
-        "logs/profile_day1.txt"
+        "logs/pr1493_wd_paired_s42.stdout"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -54192,18 +54337,62 @@
       "author": "harborglowvintage-oss",
       "state": "OPEN",
       "created": "2026-03-22T18:19:48Z",
-      "updated": "2026-04-18T18:00:57Z",
+      "updated": "2026-04-29T10:56:16Z",
       "bpb": 1.14638,
       "seeds": 1337,
       "artifact_bytes": 15736555,
       "technique_summary": "INT6",
       "file_paths": [
+        "README.md",
         "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/README.md",
         "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/submission.json",
         "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/train_gpt.py",
         "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/train_seed1337.log",
         "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/train_seed1337_swa_boost.log",
-        "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/train_seed2024.log"
+        "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/train_seed2024.log",
+        "requirements.txt",
+        "scripts/agx_part3_mlr_scan_launcher.sh",
+        "scripts/agx_part4_mlr_022_launcher.sh",
+        "scripts/agx_part4_slr_scan_launcher.sh",
+        "scripts/agx_queue.sh",
+        "scripts/arbiter_launcher.sh",
+        "scripts/decision_chart.py",
+        "scripts/graph_offensive_launcher.sh",
+        "scripts/graph_probe.py",
+        "scripts/h100_pod_launch.sh",
+        "scripts/hgv_analysis_worker.sh",
+        "scripts/hgv_smart_crunch.py",
+        "scripts/micro_gptq_triage.py",
+        "scripts/micro_triage_launcher.sh",
+        "scripts/migrate_csv.py",
+        "scripts/mlr_fine_scan_launcher.sh",
+        "scripts/mlr_floor_scan_launcher.sh",
+        "scripts/mlr_low_scan_launcher.sh",
+        "scripts/nano_queue_s01.sh",
+        "scripts/nano_s15_wd_scan_launcher.sh",
+        "scripts/nano_s16_wd_wall_launcher.sh",
+        "scripts/nano_s20_optics_launcher.sh",
+        "scripts/overnight_queue.sh",
+        "scripts/parse_log.py",
+        "scripts/queue_phase234.sh",
+        "scripts/queue_s12.sh",
+        "scripts/queue_s13.sh",
+        "scripts/queue_s14.sh",
+        "scripts/queue_s15.sh",
+        "scripts/queue_s16.sh",
+        "scripts/queue_s9_s11.sh",
+        "scripts/run_experiment.sh",
+        "scripts/smoke_test.sh",
+        "scripts/sota_replay_launcher.sh",
+        "scripts/soup_eval.py",
+        "scripts/spark_thread_needle_launcher.sh",
+        "scripts/squid_monitor.sh",
+        "scripts/squid_monitor_watch.sh",
+        "scripts/sweep_runner.sh",
+        "scripts/sweeps/agx_micro_b_training.tsv",
+        "scripts/sweeps/agx_part3_mlr_scan.tsv",
+        "scripts/sweeps/agx_part4_mlr_022.tsv",
+        "scripts/sweeps/agx_part4_slr_scan.tsv"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
