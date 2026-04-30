@@ -1,7 +1,186 @@
 {
-  "last_fetch": "2026-04-30T09:14:49.726081+00:00",
-  "api_calls_used": 237,
+  "last_fetch": "2026-04-30T11:14:24.541093+00:00",
+  "api_calls_used": 238,
   "prs": [
+    {
+      "number": 1976,
+      "title": "Non-record: AWQ 2xH100 proxy no-compile quantized eval",
+      "author": "Devchandrasen",
+      "state": "OPEN",
+      "created": "2026-04-30T10:32:55Z",
+      "updated": "2026-04-30T10:32:55Z",
+      "bpb": 1.15828615,
+      "seeds": 42,
+      "artifact_bytes": 16000000,
+      "technique_summary": "GPTQ",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_Devchandrasen_AWQ2GPU_ProxyNoCompile/README.md",
+        "records/track_non_record_16mb/2026-04-30_Devchandrasen_AWQ2GPU_ProxyNoCompile/eval_seed42_existing_artifact_nocompile.log",
+        "records/track_non_record_16mb/2026-04-30_Devchandrasen_AWQ2GPU_ProxyNoCompile/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_Devchandrasen_AWQ2GPU_ProxyNoCompile/submission.json",
+        "records/track_non_record_16mb/2026-04-30_Devchandrasen_AWQ2GPU_ProxyNoCompile/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_Devchandrasen_AWQ2GPU_ProxyNoCompile/train_seed42_original_compile_crash.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1975,
+      "title": "Non-record: LeakyReLU2 + MuonWD + SlidingWindowEval, val_bpb=1.2111",
+      "author": "RishabhPrakash5",
+      "state": "OPEN",
+      "created": "2026-04-30T10:31:17Z",
+      "updated": "2026-04-30T10:31:17Z",
+      "bpb": 1.2111,
+      "seeds": null,
+      "artifact_bytes": 12803252,
+      "technique_summary": "LeakyReLU² + Muon",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_LeakyReLU2_MuonWD_SlidingWindowEval/README.md",
+        "records/track_non_record_16mb/2026-04-30_LeakyReLU2_MuonWD_SlidingWindowEval/submission.json",
+        "records/track_non_record_16mb/2026-04-30_LeakyReLU2_MuonWD_SlidingWindowEval/train.log",
+        "records/track_non_record_16mb/2026-04-30_LeakyReLU2_MuonWD_SlidingWindowEval/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1974,
+      "title": "SP8192 + Depth Recurrence + Parallel Residuals + TTT + SDCLIP + GPTQ-Brotli — 1.2192 BPB (LLMAdvisor.ai)",
+      "author": "harborglowvintage-oss",
+      "state": "OPEN",
+      "created": "2026-04-30T09:46:57Z",
+      "updated": "2026-04-30T09:46:57Z",
+      "bpb": 1.2192,
+      "seeds": 1337,
+      "artifact_bytes": 15457746,
+      "technique_summary": "TTT + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_SP8192_DepthRecur_ParResid_TTT_GptqBrotli/README.md",
+        "records/track_10min_16mb/2026-04-30_SP8192_DepthRecur_ParResid_TTT_GptqBrotli/final_e7_s1337_ttt.log",
+        "records/track_10min_16mb/2026-04-30_SP8192_DepthRecur_ParResid_TTT_GptqBrotli/submission.json",
+        "records/track_10min_16mb/2026-04-30_SP8192_DepthRecur_ParResid_TTT_GptqBrotli/train_gpt_sota_decoded.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "text",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1973,
+      "title": "SP8192 + Depth Recurrence + Parallel Residuals + TTT + SDCLIP + GPTQ-Brotli — 1.2192 BPB (LLMAdvisor.ai) [SUPERSEDED]",
+      "author": "harborglowvintage-oss",
+      "state": "CLOSED",
+      "created": "2026-04-30T09:42:44Z",
+      "updated": "2026-04-30T10:02:28Z",
+      "bpb": 1.2192,
+      "seeds": 1337,
+      "artifact_bytes": 15457746,
+      "technique_summary": "TTT + GPTQ + INT6",
+      "file_paths": [
+        "README.md",
+        "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/README.md",
+        "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/submission.json",
+        "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/train_gpt.py",
+        "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/train_seed1337.log",
+        "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/train_seed1337_swa_boost.log",
+        "records/track_10min_16mb/2026-03-22_Int5Int6_BigramHash_SmearGate_SWA_LLMAdvisor/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-30_SP8192_DepthRecur_ParResid_TTT_GptqBrotli/README.md",
+        "records/track_10min_16mb/2026-04-30_SP8192_DepthRecur_ParResid_TTT_GptqBrotli/final_e7_s1337_ttt.log",
+        "records/track_10min_16mb/2026-04-30_SP8192_DepthRecur_ParResid_TTT_GptqBrotli/submission.json",
+        "records/track_10min_16mb/2026-04-30_SP8192_DepthRecur_ParResid_TTT_GptqBrotli/train_gpt_sota_decoded.py",
+        "requirements.txt",
+        "scripts/agx_part3_mlr_scan_launcher.sh",
+        "scripts/agx_part4_mlr_022_launcher.sh",
+        "scripts/agx_part4_slr_scan_launcher.sh",
+        "scripts/agx_queue.sh",
+        "scripts/arbiter_launcher.sh",
+        "scripts/decision_chart.py",
+        "scripts/graph_offensive_launcher.sh",
+        "scripts/graph_probe.py",
+        "scripts/h100_pod_launch.sh",
+        "scripts/hgv_analysis_worker.sh",
+        "scripts/hgv_smart_crunch.py",
+        "scripts/micro_gptq_triage.py",
+        "scripts/micro_triage_launcher.sh",
+        "scripts/migrate_csv.py",
+        "scripts/mlr_fine_scan_launcher.sh",
+        "scripts/mlr_floor_scan_launcher.sh",
+        "scripts/mlr_low_scan_launcher.sh",
+        "scripts/nano_queue_s01.sh",
+        "scripts/nano_s15_wd_scan_launcher.sh",
+        "scripts/nano_s16_wd_wall_launcher.sh",
+        "scripts/nano_s20_optics_launcher.sh",
+        "scripts/overnight_queue.sh",
+        "scripts/parse_log.py",
+        "scripts/queue_phase234.sh",
+        "scripts/queue_s12.sh",
+        "scripts/queue_s13.sh",
+        "scripts/queue_s14.sh",
+        "scripts/queue_s15.sh",
+        "scripts/queue_s16.sh",
+        "scripts/queue_s9_s11.sh",
+        "scripts/run_experiment.sh",
+        "scripts/smoke_test.sh",
+        "scripts/sota_replay_launcher.sh",
+        "scripts/soup_eval.py",
+        "scripts/spark_thread_needle_launcher.sh",
+        "scripts/squid_monitor.sh",
+        "scripts/squid_monitor_watch.sh",
+        "scripts/sweep_runner.sh"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 1972,
       "title": "Record: SP10240 SimCTG + PreQuantTTT — 1.03983 sliding-window (3-seed)",
@@ -1985,22 +2164,22 @@
     },
     {
       "number": 1923,
-      "title": "Record: SP8192 #1855 Base + Asymmetric Logit Rescale — val_bpb 1.06577 (3-seed mean)",
+      "title": "Record: SP8192 #1855 Base + Asymmetric Logit Rescale + AWQ-lite — val_bpb 1.05971 (3-seed mean, full val)",
       "author": "jorge-asenjo",
       "state": "OPEN",
       "created": "2026-04-29T10:26:34Z",
-      "updated": "2026-04-29T17:23:08Z",
+      "updated": "2026-04-30T10:23:52Z",
       "bpb": 1.06533,
       "seeds": 3,
       "artifact_bytes": null,
       "technique_summary": "TTT + LoRA",
       "file_paths": [
-        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/README.md",
-        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/submission.json",
-        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/train_gpt.py",
-        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/train_seed0.log",
-        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/train_seed1234.log",
-        "records/track_10min_16mb/2026-04-29_SP8192_PR1855Base_AsymLogitRescale_1.0658/train_seed42.log"
+        "records/track_10min_16mb/2026-04-30_SP8192_AsymLogit_AWQLite_FullVal_1.0597/README.md",
+        "records/track_10min_16mb/2026-04-30_SP8192_AsymLogit_AWQLite_FullVal_1.0597/submission.json",
+        "records/track_10min_16mb/2026-04-30_SP8192_AsymLogit_AWQLite_FullVal_1.0597/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_SP8192_AsymLogit_AWQLite_FullVal_1.0597/train_seed0.log",
+        "records/track_10min_16mb/2026-04-30_SP8192_AsymLogit_AWQLite_FullVal_1.0597/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-30_SP8192_AsymLogit_AWQLite_FullVal_1.0597/train_seed42.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -2507,7 +2686,7 @@
       "author": "dttdrv",
       "state": "OPEN",
       "created": "2026-04-28T22:29:52Z",
-      "updated": "2026-04-28T22:41:05Z",
+      "updated": "2026-04-30T10:35:10Z",
       "bpb": 1.08389912,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -48696,9 +48875,9 @@
       "number": 665,
       "title": "Add LLMAdvisor submission: 1.14638 BPB (track_10min_16mb)",
       "author": "harborglowvintage-oss",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-25T00:57:10Z",
-      "updated": "2026-04-11T20:08:36Z",
+      "updated": "2026-04-30T09:33:52Z",
       "bpb": 1.14638,
       "seeds": 3,
       "artifact_bytes": 15736555,
@@ -48719,9 +48898,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 664,
