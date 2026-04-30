@@ -1,7 +1,227 @@
 {
-  "last_fetch": "2026-04-29T23:57:25.620160+00:00",
-  "api_calls_used": 234,
+  "last_fetch": "2026-04-30T03:55:43.307774+00:00",
+  "api_calls_used": 235,
   "prs": [
+    {
+      "number": 1958,
+      "title": "Record: PreQuantTTT + Sliding Window on PR #1855 stack, val_bpb=1.01355 (3-seed)",
+      "author": "okezue",
+      "state": "OPEN",
+      "created": "2026-04-30T03:26:04Z",
+      "updated": "2026-04-30T03:26:04Z",
+      "bpb": 1.01355,
+      "seeds": 3,
+      "artifact_bytes": 16148947,
+      "technique_summary": "TTT + Muon + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_PreQuantTTT_on_SOTA/README.md",
+        "records/track_10min_16mb/2026-04-28_PreQuantTTT_on_SOTA/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-28_PreQuantTTT_on_SOTA/submission.json",
+        "records/track_10min_16mb/2026-04-28_PreQuantTTT_on_SOTA/train_gpt.py",
+        "records/track_10min_16mb/2026-04-28_PreQuantTTT_on_SOTA/train_seed314.log",
+        "records/track_10min_16mb/2026-04-28_PreQuantTTT_on_SOTA/train_seed42.log",
+        "records/track_10min_16mb/2026-04-28_PreQuantTTT_on_SOTA/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1957,
+      "title": "record submission: nGPT",
+      "author": "mhlov000111",
+      "state": "OPEN",
+      "created": "2026-04-30T02:55:58Z",
+      "updated": "2026-04-30T02:55:58Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_nGPT/README.md",
+        "records/track_10min_16mb/2026-04-29_nGPT/log0.txt",
+        "records/track_10min_16mb/2026-04-29_nGPT/submission.json",
+        "records/track_10min_16mb/2026-04-29_nGPT/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1956,
+      "title": "Record: PR #1908 reproduction with compliant 600s wallclock — val_bpb 1.06044 (3-seed mean)",
+      "author": "AayushBaniya2006",
+      "state": "OPEN",
+      "created": "2026-04-30T02:18:14Z",
+      "updated": "2026-04-30T02:18:14Z",
+      "bpb": 1.06043952,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_PR1908Repro_Compliant600s_VAL_BPB_1.06044/README.md",
+        "records/track_10min_16mb/2026-04-29_PR1908Repro_Compliant600s_VAL_BPB_1.06044/requirements.txt",
+        "records/track_10min_16mb/2026-04-29_PR1908Repro_Compliant600s_VAL_BPB_1.06044/submission.json",
+        "records/track_10min_16mb/2026-04-29_PR1908Repro_Compliant600s_VAL_BPB_1.06044/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_PR1908Repro_Compliant600s_VAL_BPB_1.06044/train_seed0.log",
+        "records/track_10min_16mb/2026-04-29_PR1908Repro_Compliant600s_VAL_BPB_1.06044/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-29_PR1908Repro_Compliant600s_VAL_BPB_1.06044/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1955,
+      "title": "Non-record submission: E03 QK-Gain Scaling (4.0)",
+      "author": "Bsanath27",
+      "state": "OPEN",
+      "created": "2026-04-30T02:16:28Z",
+      "updated": "2026-04-30T02:37:01Z",
+      "bpb": 6.7946,
+      "seeds": null,
+      "artifact_bytes": 5150000,
+      "technique_summary": "GPTQ + EMA",
+      "file_paths": [
+        "docs/ANALYSIS_SUMMARY.md",
+        "docs/RUN_GUIDE.md",
+        "docs/analyze_techniques.py",
+        "docs/analyze_top_prs.py",
+        "docs/complete-techniques-mapping.md",
+        "docs/local-techniques-analysis.md",
+        "docs/top-prs-analysis.md",
+        "docs/training-log.md",
+        "models/model_001_sota_baseline/README.md",
+        "models/model_001_sota_baseline/para.py",
+        "models/model_001_sota_baseline/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_E03_QK-Gain-4.0/README.md",
+        "records/track_non_record_16mb/2026-04-30_E03_QK-Gain-4.0/submission.json",
+        "records/track_non_record_16mb/2026-04-30_E03_QK-Gain-4.0/train.log",
+        "records/track_non_record_16mb/2026-04-30_E03_QK-Gain-4.0/train_gpt_mlx.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1954,
+      "title": "Add SP8192 QK525 TTT006 under-16MB submission",
+      "author": "Syed-M-Zeeshan",
+      "state": "OPEN",
+      "created": "2026-04-30T01:34:27Z",
+      "updated": "2026-04-30T03:24:09Z",
+      "bpb": 1.08113832,
+      "seeds": 3,
+      "artifact_bytes": 15994309,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_SP8192_QK525_TTT006_Under16_1.08114/README.md",
+        "records/track_10min_16mb/2026-04-30_SP8192_QK525_TTT006_Under16_1.08114/submission.json",
+        "records/track_10min_16mb/2026-04-30_SP8192_QK525_TTT006_Under16_1.08114/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_SP8192_QK525_TTT006_Under16_1.08114/train_seed314.log",
+        "records/track_10min_16mb/2026-04-30_SP8192_QK525_TTT006_Under16_1.08114/train_seed42.log",
+        "records/track_10min_16mb/2026-04-30_SP8192_QK525_TTT006_Under16_1.08114/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1953,
+      "title": "Record: PR #1945 base + 2560 long-context + no_qv TTT mask + TTT LR 0.75 + QK_GAIN 5.25 — val_bpb 1.05855 (3-seed mean)",
+      "author": "andrewbaggio1",
+      "state": "OPEN",
+      "created": "2026-04-30T01:00:42Z",
+      "updated": "2026-04-30T01:44:40Z",
+      "bpb": 1.0585537,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + GPTQ + INT6 + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_on_1945_1.0586/README.md",
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_on_1945_1.0586/submission.json",
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_on_1945_1.0586/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_on_1945_1.0586/train_seed0.log",
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_on_1945_1.0586/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_on_1945_1.0586/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
     {
       "number": 1952,
       "title": "Non-record: Energy as the missing leaderboard axis - Wh per bpb drop across 5 configs",
@@ -181,7 +401,7 @@
       "author": "TimS-ml",
       "state": "OPEN",
       "created": "2026-04-29T21:29:42Z",
-      "updated": "2026-04-29T21:59:16Z",
+      "updated": "2026-04-30T02:47:54Z",
       "bpb": 1.06242,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -390,16 +610,16 @@
       "author": "LoBreeze",
       "state": "OPEN",
       "created": "2026-04-29T18:51:08Z",
-      "updated": "2026-04-29T18:51:08Z",
+      "updated": "2026-04-30T01:35:59Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
       "technique_summary": "",
       "file_paths": [
-        "records/track_non_record_16mb/2026-04-30_PR1720_NoValPause_NegativeResult/README.md",
-        "records/track_non_record_16mb/2026-04-30_PR1720_NoValPause_NegativeResult/submission.json",
-        "records/track_non_record_16mb/2026-04-30_PR1720_NoValPause_NegativeResult/train_gpt.py",
-        "records/track_non_record_16mb/2026-04-30_PR1720_NoValPause_NegativeResult/train_seed42.log"
+        "records/track_non_record_16mb/2026-04-30_PR1471_HessianHalfGroup_NegativeResult/README.md",
+        "records/track_non_record_16mb/2026-04-30_PR1471_HessianHalfGroup_NegativeResult/submission.json",
+        "records/track_non_record_16mb/2026-04-30_PR1471_HessianHalfGroup_NegativeResult/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_PR1471_HessianHalfGroup_NegativeResult/train_seed42.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
@@ -820,18 +1040,20 @@
     },
     {
       "number": 1931,
-      "title": "Add SP8192 legal TTT size-cleared seed42 fallback",
+      "title": "Add SP8192 legal TTT size-cleared fallback",
       "author": "jaydenpiao",
       "state": "OPEN",
       "created": "2026-04-29T13:56:44Z",
-      "updated": "2026-04-29T13:56:44Z",
+      "updated": "2026-04-30T00:44:45Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + GPTQ",
       "file_paths": [
         "records/track_10min_16mb/2026-04-29_SP8192_3LayerRecur_LegalTTT4ep_KVLowbitSizeClear/README.md",
+        "records/track_10min_16mb/2026-04-29_SP8192_3LayerRecur_LegalTTT4ep_KVLowbitSizeClear/command_seed314.txt",
         "records/track_10min_16mb/2026-04-29_SP8192_3LayerRecur_LegalTTT4ep_KVLowbitSizeClear/command_seed42.txt",
+        "records/track_10min_16mb/2026-04-29_SP8192_3LayerRecur_LegalTTT4ep_KVLowbitSizeClear/seed314.log",
         "records/track_10min_16mb/2026-04-29_SP8192_3LayerRecur_LegalTTT4ep_KVLowbitSizeClear/seed42.log",
         "records/track_10min_16mb/2026-04-29_SP8192_3LayerRecur_LegalTTT4ep_KVLowbitSizeClear/submission.json",
         "records/track_10min_16mb/2026-04-29_SP8192_3LayerRecur_LegalTTT4ep_KVLowbitSizeClear/train_gpt.py"
@@ -3179,9 +3401,9 @@
       "number": 1868,
       "title": "Record: SmearGate BOS Fix 3-Seed Compliance Re-run — val_bpb 1.06141 (3-seed mean)",
       "author": "Christopher-Lee-McClendon",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-27T19:20:15Z",
-      "updated": "2026-04-29T20:25:42Z",
+      "updated": "2026-04-30T01:10:20Z",
       "bpb": 1.06145,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -3215,7 +3437,9 @@
       ],
       "technique_source": "code",
       "status": "ALIVE",
-      "flags": [],
+      "flags": [
+        "merged-to-leaderboard"
+      ],
       "confidence": "HIGH"
     },
     {
@@ -3704,9 +3928,9 @@
       "number": 1851,
       "title": "Record: val_bpb = 1.06128 SmearGate BOS Fix + PR #1787 Base + Smear Gate + LQER Asymmetric + Phased TTT (indirect 3 seed mean)",
       "author": "aquariouseworkman",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-27T06:56:51Z",
-      "updated": "2026-04-29T19:36:09Z",
+      "updated": "2026-04-30T01:10:16Z",
       "bpb": 1.06128,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -3734,7 +3958,9 @@
       ],
       "technique_source": "code",
       "status": "ALIVE",
-      "flags": [],
+      "flags": [
+        "merged-to-leaderboard"
+      ],
       "confidence": "HIGH"
     },
     {
@@ -6450,7 +6676,7 @@
       "author": "yangguohao",
       "state": "OPEN",
       "created": "2026-04-23T02:35:18Z",
-      "updated": "2026-04-23T02:41:19Z",
+      "updated": "2026-04-30T02:39:25Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -10568,9 +10794,9 @@
       "number": 1667,
       "title": "RECORD:  SmearGate + Attention Output Gate + Legal TTT | val_bpb=1.07139",
       "author": "MarioPaerle",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-16T12:32:56Z",
-      "updated": "2026-04-29T22:42:19Z",
+      "updated": "2026-04-30T01:09:57Z",
       "bpb": 1.07139,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -10597,9 +10823,9 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "seeds-only-2"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -15614,20 +15840,19 @@
       "author": "msisovic",
       "state": "OPEN",
       "created": "2026-04-11T00:04:56Z",
-      "updated": "2026-04-29T19:20:33Z",
+      "updated": "2026-04-30T01:57:43Z",
       "bpb": 1.07578747,
       "seeds": 3,
       "artifact_bytes": 15980000,
       "technique_summary": "TTT + EMA",
       "file_paths": [
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/README.md",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/requirements.txt",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/submission.json",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/train_gpt.py",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/train_gpt_human.py",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/train_seed1337.log",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/train_seed2024.log",
-        "records/track_10min_16mb/2026-04-11_ImrpovedParallelResiduals/train_seed42.log"
+        "records/track_10min_16mb/2026-04-11_ImprovedParallelResiduals_CUTLASS_EVT/README.md",
+        "records/track_10min_16mb/2026-04-11_ImprovedParallelResiduals_CUTLASS_EVT/requirements.txt",
+        "records/track_10min_16mb/2026-04-11_ImprovedParallelResiduals_CUTLASS_EVT/submission.json",
+        "records/track_10min_16mb/2026-04-11_ImprovedParallelResiduals_CUTLASS_EVT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-11_ImprovedParallelResiduals_CUTLASS_EVT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-11_ImprovedParallelResiduals_CUTLASS_EVT/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-11_ImprovedParallelResiduals_CUTLASS_EVT/train_seed42.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -16178,7 +16403,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-09T21:37:43Z",
-      "updated": "2026-04-29T11:30:27Z",
+      "updated": "2026-04-30T02:18:18Z",
       "bpb": 1.1117,
       "seeds": 3,
       "artifact_bytes": 16777216,
@@ -55534,7 +55759,7 @@
       "author": "harborglowvintage-oss",
       "state": "OPEN",
       "created": "2026-03-22T18:19:48Z",
-      "updated": "2026-04-29T11:45:06Z",
+      "updated": "2026-04-30T01:57:01Z",
       "bpb": 1.14638,
       "seeds": 1337,
       "artifact_bytes": 15736555,
