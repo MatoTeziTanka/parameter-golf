@@ -1,7 +1,190 @@
 {
-  "last_fetch": "2026-04-30T11:14:24.541093+00:00",
-  "api_calls_used": 238,
+  "last_fetch": "2026-04-30T13:06:32.550876+00:00",
+  "api_calls_used": 239,
   "prs": [
+    {
+      "number": 1980,
+      "title": "Non-record: final-day SP8192 reproduction and mHC-lite local probe",
+      "author": "Kbediako",
+      "state": "OPEN",
+      "created": "2026-04-30T12:14:51Z",
+      "updated": "2026-04-30T12:14:51Z",
+      "bpb": 1.07383884,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_MHCLite_AttnSink_Local5080/README.md",
+        "records/track_non_record_16mb/2026-04-30_MHCLite_AttnSink_Local5080/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_MHCLite_AttnSink_Local5080/submission.json",
+        "records/track_non_record_16mb/2026-04-30_MHCLite_AttnSink_Local5080/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_MHCLite_AttnSink_Local5080/train_seed1337_local5080_cap598.log",
+        "records/track_non_record_16mb/2026-04-30_MHCLite_AttnSink_Local5080/train_seed2025_local5080_cap598.log",
+        "records/track_non_record_16mb/2026-04-30_MHCLite_AttnSink_Local5080/train_seed42_local5080_cap598.log",
+        "records/track_non_record_16mb/2026-04-30_SP8192_MPSGD_QKGain525_ReproSeed42/README.md",
+        "records/track_non_record_16mb/2026-04-30_SP8192_MPSGD_QKGain525_ReproSeed42/controller_seed42.log",
+        "records/track_non_record_16mb/2026-04-30_SP8192_MPSGD_QKGain525_ReproSeed42/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_SP8192_MPSGD_QKGain525_ReproSeed42/submission.json",
+        "records/track_non_record_16mb/2026-04-30_SP8192_MPSGD_QKGain525_ReproSeed42/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_SP8192_MPSGD_QKGain525_ReproSeed42/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1979,
+      "title": "[Non-record] Long-Train Artifact Scaling: post-TTT BPB = 1.0399, artifact size constant across 10–60 min",
+      "author": "Christopher-Lee-McClendon",
+      "state": "OPEN",
+      "created": "2026-04-30T12:11:36Z",
+      "updated": "2026-04-30T12:11:36Z",
+      "bpb": 0.00975,
+      "seeds": 3,
+      "artifact_bytes": 9089,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/README.md",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/requirements.txt",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/seed314_log.txt",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/seed42_log.txt",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/seed999_log.txt",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/submission.json",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/train.log",
+        "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/README.md",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/notes/IMPLEMENTATION_NOTES.md",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/pgolf_stdout.txt",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_10min.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_20min.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_30min.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_45min.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_60min.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/experiment_summary.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/scaling_results.csv",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/scripts/analyze_scaling.py",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/scripts/make_larger_variant_plan.py",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/scripts/run_longtrain_scaling.sh",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/submission.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/train.log",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
+    {
+      "number": 1978,
+      "title": "Non-record: GolfParty — composable scaffolding for every Requests-for-PRs item",
+      "author": "EthanYangTW",
+      "state": "OPEN",
+      "created": "2026-04-30T11:50:52Z",
+      "updated": "2026-04-30T11:59:25Z",
+      "bpb": 0.01668,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + SSM + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-26_V2_PE_MinLR_AttnGate/README.md",
+        "records/track_10min_16mb/2026-04-26_V2_PE_MinLR_AttnGate/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/README.md",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/notes/diffusion.md",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/notes/e2e_ttt.md",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/notes/hnet.md",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/notes/jepa.md",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/notes/long_context.md",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/notes/megakernel.md",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/notes/rla.md",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/notes/ssm.md",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/notes/universal.md",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/run_kitchen_3seed.sh",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/submission.json",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/train_seed0.log",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-30_GolfParty_AllChecks/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1977,
+      "title": "SP8192 + PolarExpressNS + MIN_LR + LQER Asym Rank-4 | val_bpb=1.07302 (3-seed mean)",
+      "author": "sahiee-dev",
+      "state": "OPEN",
+      "created": "2026-04-30T11:41:50Z",
+      "updated": "2026-04-30T11:41:50Z",
+      "bpb": 1.07302,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_SP8192_PolarExpressNS_MinLR_LQERAsymR4/README.md",
+        "records/track_10min_16mb/2026-04-30_SP8192_PolarExpressNS_MinLR_LQERAsymR4/submission.json",
+        "records/track_10min_16mb/2026-04-30_SP8192_PolarExpressNS_MinLR_LQERAsymR4/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_SP8192_PolarExpressNS_MinLR_LQERAsymR4/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-30_SP8192_PolarExpressNS_MinLR_LQERAsymR4/train_seed2025.log",
+        "records/track_10min_16mb/2026-04-30_SP8192_PolarExpressNS_MinLR_LQERAsymR4/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 1976,
       "title": "Non-record: AWQ 2xH100 proxy no-compile quantized eval",
@@ -187,7 +370,7 @@
       "author": "BharathSShankar",
       "state": "OPEN",
       "created": "2026-04-30T08:57:17Z",
-      "updated": "2026-04-30T08:57:17Z",
+      "updated": "2026-04-30T11:31:27Z",
       "bpb": 1.03983,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -3238,7 +3421,7 @@
       "author": "G3sparky",
       "state": "OPEN",
       "created": "2026-04-28T16:37:32Z",
-      "updated": "2026-04-29T20:37:51Z",
+      "updated": "2026-04-30T11:14:35Z",
       "bpb": 1.1155,
       "seeds": null,
       "artifact_bytes": 10400000,
@@ -3247,6 +3430,9 @@
         "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/README.md",
         "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/cells.py",
         "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/compression_cell.py",
+        "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/mainboard_seed314.log",
+        "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/mainboard_seed42.log",
+        "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/mainboard_seed999.log",
         "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/run1_h100.log",
         "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/submission.json",
         "records/track_non_record_16mb/2026-04-29_FlowerBrain_TernaryArchitecture/train_gpt_ternary.py",
@@ -3480,9 +3666,9 @@
       "number": 1889,
       "title": "Add draft Arman SP8192 credit-blocked record",
       "author": "thearmankarapetyan",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-28T12:33:21Z",
-      "updated": "2026-04-30T04:45:58Z",
+      "updated": "2026-04-30T11:18:29Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -3500,13 +3686,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 1888,
@@ -17155,7 +17339,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-09T21:37:43Z",
-      "updated": "2026-04-30T02:18:18Z",
+      "updated": "2026-04-30T12:19:55Z",
       "bpb": 1.1117,
       "seeds": 3,
       "artifact_bytes": 16777216,
@@ -17167,6 +17351,10 @@
         "3seed_s7.log",
         "EXPERIMENTS.md",
         "README.md",
+        "_top_ref/README.md",
+        "_top_ref/lossless_caps.py",
+        "_top_ref/prepare_caseops_data.py",
+        "_top_ref/train_gpt.py",
         "a1_ste_qat_recur.log",
         "a2_noisy_qat_recur.log",
         "bench_ns_modal.py",
@@ -17206,11 +17394,7 @@
         "logs/ncu_profile2.txt",
         "logs/ncu_profile4.txt",
         "logs/ncu_profile5.txt",
-        "logs/perf_test.txt",
-        "logs/pko_run1.log",
-        "logs/pko_run1.txt",
-        "logs/pr1493_baseline.txt",
-        "logs/pr1493_wd_paired_iha_s42.stdout"
+        "logs/perf_test.txt"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
