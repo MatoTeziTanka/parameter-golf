@@ -1,7 +1,186 @@
 {
-  "last_fetch": "2026-04-30T03:55:43.307774+00:00",
-  "api_calls_used": 235,
+  "last_fetch": "2026-04-30T06:31:39.742607+00:00",
+  "api_calls_used": 236,
   "prs": [
+    {
+      "number": 1963,
+      "title": "SP8192 + LongCtx NoQV QK5.25 Prefix2750 — 1.05827 BPB (seed 42)",
+      "author": "someone114514",
+      "state": "OPEN",
+      "created": "2026-04-30T06:21:11Z",
+      "updated": "2026-04-30T06:21:11Z",
+      "bpb": 1.05826976,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_Prefix2750/README.md",
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_Prefix2750/download_caseops_data.py",
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_Prefix2750/requirements.txt",
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_Prefix2750/submission.json",
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_Prefix2750/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_Prefix2750/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1962,
+      "title": "Record candidate: PR #1855 + Adaptive Hessian-Sensitivity GPTQ Clip — val_bpb 1.06310 (3-seed mean)",
+      "author": "chris-colinsky",
+      "state": "OPEN",
+      "created": "2026-04-30T05:39:36Z",
+      "updated": "2026-04-30T05:39:36Z",
+      "bpb": 1.0631,
+      "seeds": 3,
+      "artifact_bytes": 15900000,
+      "technique_summary": "TTT + GPTQ + INT6 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_AdaptiveHessianClip_PR1855_1.0631/README.md",
+        "records/track_10min_16mb/2026-04-30_AdaptiveHessianClip_PR1855_1.0631/submission.json",
+        "records/track_10min_16mb/2026-04-30_AdaptiveHessianClip_PR1855_1.0631/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_AdaptiveHessianClip_PR1855_1.0631/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-30_AdaptiveHessianClip_PR1855_1.0631/train_seed42.log",
+        "records/track_10min_16mb/2026-04-30_AdaptiveHessianClip_PR1855_1.0631/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1961,
+      "title": "Non-record: Mini-Hymba hybrid attention+SSM heads (arXiv:2411.13676)",
+      "author": "aparna-1407",
+      "state": "OPEN",
+      "created": "2026-04-30T05:36:50Z",
+      "updated": "2026-04-30T06:31:26Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 6838905,
+      "technique_summary": "TTT + SSM + GPTQ + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_MiniHymba_HybridAttnSSM/README.md",
+        "records/track_10min_16mb/2026-04-29_MiniHymba_HybridAttnSSM/hymba_layer.py",
+        "records/track_10min_16mb/2026-04-29_MiniHymba_HybridAttnSSM/submission.json",
+        "records/track_10min_16mb/2026-04-29_MiniHymba_HybridAttnSSM/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1960,
+      "title": "Attempted H200 run: learned pipeline bottlenecks",
+      "author": "XiaokunDuan",
+      "state": "OPEN",
+      "created": "2026-04-30T05:21:38Z",
+      "updated": "2026-04-30T05:21:38Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_Attempted_H200_Learnings/README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1959,
+      "title": "Record: SP8192 + 3-layer recurrence + byte-PPM mixer — val_bpb 0.99621 (3-seed mean)",
+      "author": "remg1997",
+      "state": "OPEN",
+      "created": "2026-04-30T05:08:06Z",
+      "updated": "2026-04-30T05:10:08Z",
+      "bpb": 0.06487,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_SP8192_PPMMixer_BigbagStack/README.md",
+        "records/track_10min_16mb/2026-04-29_SP8192_PPMMixer_BigbagStack/compliance_seed42.log",
+        "records/track_10min_16mb/2026-04-29_SP8192_PPMMixer_BigbagStack/submission.json",
+        "records/track_10min_16mb/2026-04-29_SP8192_PPMMixer_BigbagStack/train_gpt.py",
+        "records/track_10min_16mb/2026-04-29_SP8192_PPMMixer_BigbagStack/train_seed314.log",
+        "records/track_10min_16mb/2026-04-29_SP8192_PPMMixer_BigbagStack/train_seed42.log",
+        "records/track_10min_16mb/2026-04-29_SP8192_PPMMixer_BigbagStack/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
     {
       "number": 1958,
       "title": "Record: PreQuantTTT + Sliding Window on PR #1855 stack, val_bpb=1.01355 (3-seed)",
@@ -2730,7 +2909,7 @@
       "author": "thearmankarapetyan",
       "state": "OPEN",
       "created": "2026-04-28T12:33:21Z",
-      "updated": "2026-04-28T12:33:21Z",
+      "updated": "2026-04-30T04:45:58Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -3810,7 +3989,7 @@
       "author": "codemath3000",
       "state": "MERGED",
       "created": "2026-04-27T10:49:13Z",
-      "updated": "2026-04-29T19:18:39Z",
+      "updated": "2026-04-30T06:30:23Z",
       "bpb": 1.06108,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -31533,13 +31712,16 @@
       "author": "MichaelMcCulloch",
       "state": "OPEN",
       "created": "2026-03-30T02:56:58Z",
-      "updated": "2026-04-11T20:50:49Z",
-      "bpb": 0.2532,
-      "seeds": 3,
-      "artifact_bytes": 11400000,
-      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + EMA + N-gram",
+      "updated": "2026-04-30T04:32:17Z",
+      "bpb": 0.2523,
+      "seeds": 1337,
+      "artifact_bytes": 11600000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + INT8 + N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/README.md",
+        "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/run_seed1337.log",
+        "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/run_seed42.log",
+        "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/run_seed7.log",
         "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/submission.json",
         "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/train_gpt.py"
       ],
@@ -32251,11 +32433,11 @@
       "author": "MichaelMcCulloch",
       "state": "CLOSED",
       "created": "2026-03-29T18:22:17Z",
-      "updated": "2026-03-29T21:16:01Z",
-      "bpb": null,
-      "seeds": null,
-      "artifact_bytes": null,
-      "technique_summary": "",
+      "updated": "2026-04-30T04:31:40Z",
+      "bpb": 0.2523,
+      "seeds": 1337,
+      "artifact_bytes": 11600000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + INT8 + N-gram",
       "file_paths": [
         ".gitignore",
         "ablation.py",
@@ -32273,15 +32455,21 @@
         "pr_sources/pr738_train_gpt.py",
         "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/README.md",
         "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/submission.json",
+        "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/train_gpt.min.py",
         "records/track_10min_16mb/2026-03-29_FullStack_TTT_Ngram_KNN_TurboQuant/train_gpt.py",
         "run_ablation.sh",
         "run_all_ablations.sh",
         "run_phase2.sh",
         "search.py",
+        "sweep_arch.py",
         "validate.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval",
         "ngram_path"
       ],
       "track": "record",
