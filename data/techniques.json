@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-01T22:59:01Z",
+  "generated_at": "2026-05-01T23:59:36Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 2030,
-    "matched_pr_count": 1529,
+    "pr_count": 2040,
+    "matched_pr_count": 1532,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
       "ALIVE": 371,
-      "AT_RISK": 125,
+      "AT_RISK": 130,
       "DEAD": 542,
-      "INCOMPLETE": 981,
+      "INCOMPLETE": 986,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 885,
-      "author_count": 406,
+      "count": 888,
+      "author_count": 408,
       "alive_count": 243,
       "dead_count": 247,
-      "at_risk_count": 81,
-      "incomplete_count": 312,
+      "at_risk_count": 83,
+      "incomplete_count": 313,
       "unknown_count": 0,
       "best_alive": {
         "number": 1736,
@@ -496,8 +496,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.03387,
+              "status": "AT_RISK",
+              "bpb": 0.00885746,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -2267,6 +2267,48 @@
           ]
         },
         {
+          "author": "anmarhindi",
+          "pr_count": 5,
+          "best_bpb": 0.979556,
+          "prs": [
+            {
+              "number": 1776,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.08083,
+              "created": "2026-04-22T14:59:39Z"
+            },
+            {
+              "number": 1835,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.00136,
+              "created": "2026-04-26T16:23:42Z"
+            },
+            {
+              "number": 2032,
+              "author": "anmarhindi",
+              "status": "DEAD",
+              "bpb": 1.029282,
+              "created": "2026-04-30T22:42:04Z"
+            },
+            {
+              "number": 2039,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.015784,
+              "created": "2026-04-30T23:19:33Z"
+            },
+            {
+              "number": 2138,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 0.979556,
+              "created": "2026-05-01T23:56:48Z"
+            }
+          ]
+        },
+        {
           "author": "G3sparky",
           "pr_count": 5,
           "best_bpb": 1.0282,
@@ -2592,41 +2634,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-30T22:42:03Z"
-            }
-          ]
-        },
-        {
-          "author": "anmarhindi",
-          "pr_count": 4,
-          "best_bpb": 1.00136,
-          "prs": [
-            {
-              "number": 1776,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.08083,
-              "created": "2026-04-22T14:59:39Z"
-            },
-            {
-              "number": 1835,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.00136,
-              "created": "2026-04-26T16:23:42Z"
-            },
-            {
-              "number": 2032,
-              "author": "anmarhindi",
-              "status": "DEAD",
-              "bpb": 1.029282,
-              "created": "2026-04-30T22:42:04Z"
-            },
-            {
-              "number": 2039,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.015784,
-              "created": "2026-04-30T23:19:33Z"
             }
           ]
         },
@@ -6211,6 +6218,34 @@
               "status": "INCOMPLETE",
               "bpb": 1.0543,
               "created": "2026-04-30T20:51:31Z"
+            }
+          ]
+        },
+        {
+          "author": "TanishGudise",
+          "pr_count": 1,
+          "best_bpb": 1.0567,
+          "prs": [
+            {
+              "number": 2130,
+              "author": "TanishGudise",
+              "status": "AT_RISK",
+              "bpb": 1.0567,
+              "created": "2026-05-01T23:22:40Z"
+            }
+          ]
+        },
+        {
+          "author": "varunneal",
+          "pr_count": 1,
+          "best_bpb": 1.05749,
+          "prs": [
+            {
+              "number": 2139,
+              "author": "varunneal",
+              "status": "INCOMPLETE",
+              "bpb": 1.05749,
+              "created": "2026-05-01T23:57:50Z"
             }
           ]
         },
@@ -14829,8 +14864,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "ALIVE",
-          "bpb": 1.03387,
+          "status": "AT_RISK",
+          "bpb": 0.00885746,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -15266,17 +15301,38 @@
           "status": "AT_RISK",
           "bpb": 1.05874,
           "created": "2026-05-01T22:50:46Z"
+        },
+        {
+          "number": 2130,
+          "author": "TanishGudise",
+          "status": "AT_RISK",
+          "bpb": 1.0567,
+          "created": "2026-05-01T23:22:40Z"
+        },
+        {
+          "number": 2138,
+          "author": "anmarhindi",
+          "status": "ALIVE",
+          "bpb": 0.979556,
+          "created": "2026-05-01T23:56:48Z"
+        },
+        {
+          "number": 2139,
+          "author": "varunneal",
+          "status": "INCOMPLETE",
+          "bpb": 1.05749,
+          "created": "2026-05-01T23:57:50Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 580,
-      "author_count": 272,
+      "count": 582,
+      "author_count": 273,
       "alive_count": 184,
       "dead_count": 152,
-      "at_risk_count": 61,
+      "at_risk_count": 63,
       "incomplete_count": 178,
       "unknown_count": 0,
       "best_alive": {
@@ -15806,7 +15862,7 @@
         {
           "author": "Christopher-Lee-McClendon",
           "pr_count": 13,
-          "best_bpb": 0.00975,
+          "best_bpb": 0.00885746,
           "prs": [
             {
               "number": 456,
@@ -15895,8 +15951,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.03387,
+              "status": "AT_RISK",
+              "bpb": 0.00885746,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -17190,6 +17246,41 @@
           ]
         },
         {
+          "author": "anmarhindi",
+          "pr_count": 4,
+          "best_bpb": 0.979556,
+          "prs": [
+            {
+              "number": 1776,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.08083,
+              "created": "2026-04-22T14:59:39Z"
+            },
+            {
+              "number": 2032,
+              "author": "anmarhindi",
+              "status": "DEAD",
+              "bpb": 1.029282,
+              "created": "2026-04-30T22:42:04Z"
+            },
+            {
+              "number": 2039,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.015784,
+              "created": "2026-04-30T23:19:33Z"
+            },
+            {
+              "number": 2138,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 0.979556,
+              "created": "2026-05-01T23:56:48Z"
+            }
+          ]
+        },
+        {
           "author": "renqianluo",
           "pr_count": 4,
           "best_bpb": 1.00955,
@@ -17599,34 +17690,6 @@
               "status": "AT_RISK",
               "bpb": 1.05874,
               "created": "2026-05-01T22:50:46Z"
-            }
-          ]
-        },
-        {
-          "author": "anmarhindi",
-          "pr_count": 3,
-          "best_bpb": 1.015784,
-          "prs": [
-            {
-              "number": 1776,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.08083,
-              "created": "2026-04-22T14:59:39Z"
-            },
-            {
-              "number": 2032,
-              "author": "anmarhindi",
-              "status": "DEAD",
-              "bpb": 1.029282,
-              "created": "2026-04-30T22:42:04Z"
-            },
-            {
-              "number": 2039,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.015784,
-              "created": "2026-04-30T23:19:33Z"
             }
           ]
         },
@@ -19370,6 +19433,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.052,
               "created": "2026-04-30T23:56:35Z"
+            }
+          ]
+        },
+        {
+          "author": "TanishGudise",
+          "pr_count": 1,
+          "best_bpb": 1.0567,
+          "prs": [
+            {
+              "number": 2130,
+              "author": "TanishGudise",
+              "status": "AT_RISK",
+              "bpb": 1.0567,
+              "created": "2026-05-01T23:22:40Z"
             }
           ]
         },
@@ -25062,8 +25139,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "ALIVE",
-          "bpb": 1.03387,
+          "status": "AT_RISK",
+          "bpb": 0.00885746,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -25310,17 +25387,31 @@
           "status": "AT_RISK",
           "bpb": 1.05874,
           "created": "2026-05-01T22:50:46Z"
+        },
+        {
+          "number": 2130,
+          "author": "TanishGudise",
+          "status": "AT_RISK",
+          "bpb": 1.0567,
+          "created": "2026-05-01T23:22:40Z"
+        },
+        {
+          "number": 2138,
+          "author": "anmarhindi",
+          "status": "ALIVE",
+          "bpb": 0.979556,
+          "created": "2026-05-01T23:56:48Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 575,
-      "author_count": 300,
+      "count": 577,
+      "author_count": 301,
       "alive_count": 143,
       "dead_count": 166,
-      "at_risk_count": 55,
+      "at_risk_count": 57,
       "incomplete_count": 205,
       "unknown_count": 0,
       "best_alive": {
@@ -25715,8 +25806,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.03387,
+              "status": "AT_RISK",
+              "bpb": 0.00885746,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -26730,6 +26821,41 @@
           ]
         },
         {
+          "author": "anmarhindi",
+          "pr_count": 4,
+          "best_bpb": 0.979556,
+          "prs": [
+            {
+              "number": 1776,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.08083,
+              "created": "2026-04-22T14:59:39Z"
+            },
+            {
+              "number": 2032,
+              "author": "anmarhindi",
+              "status": "DEAD",
+              "bpb": 1.029282,
+              "created": "2026-04-30T22:42:04Z"
+            },
+            {
+              "number": 2039,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.015784,
+              "created": "2026-04-30T23:19:33Z"
+            },
+            {
+              "number": 2138,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 0.979556,
+              "created": "2026-05-01T23:56:48Z"
+            }
+          ]
+        },
+        {
           "author": "mikeapedia",
           "pr_count": 4,
           "best_bpb": 1.06681663,
@@ -27146,34 +27272,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.06767,
               "created": "2026-05-01T21:10:38Z"
-            }
-          ]
-        },
-        {
-          "author": "anmarhindi",
-          "pr_count": 3,
-          "best_bpb": 1.015784,
-          "prs": [
-            {
-              "number": 1776,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.08083,
-              "created": "2026-04-22T14:59:39Z"
-            },
-            {
-              "number": 2032,
-              "author": "anmarhindi",
-              "status": "DEAD",
-              "bpb": 1.029282,
-              "created": "2026-04-30T22:42:04Z"
-            },
-            {
-              "number": 2039,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.015784,
-              "created": "2026-04-30T23:19:33Z"
             }
           ]
         },
@@ -29323,6 +29421,20 @@
               "status": "DEAD",
               "bpb": 1.0487,
               "created": "2026-03-23T14:36:16Z"
+            }
+          ]
+        },
+        {
+          "author": "TanishGudise",
+          "pr_count": 1,
+          "best_bpb": 1.0567,
+          "prs": [
+            {
+              "number": 2130,
+              "author": "TanishGudise",
+              "status": "AT_RISK",
+              "bpb": 1.0567,
+              "created": "2026-05-01T23:22:40Z"
             }
           ]
         },
@@ -35330,8 +35442,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "ALIVE",
-          "bpb": 1.03387,
+          "status": "AT_RISK",
+          "bpb": 0.00885746,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -35480,17 +35592,31 @@
           "status": "INCOMPLETE",
           "bpb": 1.06767,
           "created": "2026-05-01T21:10:38Z"
+        },
+        {
+          "number": 2130,
+          "author": "TanishGudise",
+          "status": "AT_RISK",
+          "bpb": 1.0567,
+          "created": "2026-05-01T23:22:40Z"
+        },
+        {
+          "number": 2138,
+          "author": "anmarhindi",
+          "status": "ALIVE",
+          "bpb": 0.979556,
+          "created": "2026-05-01T23:56:48Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 543,
-      "author_count": 349,
+      "count": 545,
+      "author_count": 350,
       "alive_count": 137,
       "dead_count": 115,
-      "at_risk_count": 47,
+      "at_risk_count": 49,
       "incomplete_count": 242,
       "unknown_count": 0,
       "best_alive": {
@@ -35738,6 +35864,69 @@
           ]
         },
         {
+          "author": "Christopher-Lee-McClendon",
+          "pr_count": 8,
+          "best_bpb": 0.00321,
+          "prs": [
+            {
+              "number": 456,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.1532,
+              "created": "2026-03-22T20:02:06Z"
+            },
+            {
+              "number": 461,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.14458,
+              "created": "2026-03-22T21:35:04Z"
+            },
+            {
+              "number": 526,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.14252,
+              "created": "2026-03-23T12:36:14Z"
+            },
+            {
+              "number": 537,
+              "author": "Christopher-Lee-McClendon",
+              "status": "ALIVE",
+              "bpb": 1.13872,
+              "created": "2026-03-23T15:02:29Z"
+            },
+            {
+              "number": 598,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.1334,
+              "created": "2026-03-24T04:54:11Z"
+            },
+            {
+              "number": 1170,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 0.00321,
+              "created": "2026-03-31T04:52:31Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
+            },
+            {
+              "number": 2008,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 0.00885746,
+              "created": "2026-04-30T20:06:37Z"
+            }
+          ]
+        },
+        {
           "author": "newjordan",
           "pr_count": 8,
           "best_bpb": 0.005,
@@ -35797,62 +35986,6 @@
               "status": "DEAD",
               "bpb": 1.08540457,
               "created": "2026-04-04T04:50:40Z"
-            }
-          ]
-        },
-        {
-          "author": "Christopher-Lee-McClendon",
-          "pr_count": 7,
-          "best_bpb": 0.00321,
-          "prs": [
-            {
-              "number": 456,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.1532,
-              "created": "2026-03-22T20:02:06Z"
-            },
-            {
-              "number": 461,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.14458,
-              "created": "2026-03-22T21:35:04Z"
-            },
-            {
-              "number": 526,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.14252,
-              "created": "2026-03-23T12:36:14Z"
-            },
-            {
-              "number": 537,
-              "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.13872,
-              "created": "2026-03-23T15:02:29Z"
-            },
-            {
-              "number": 598,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.1334,
-              "created": "2026-03-24T04:54:11Z"
-            },
-            {
-              "number": 1170,
-              "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00321,
-              "created": "2026-03-31T04:52:31Z"
-            },
-            {
-              "number": 1232,
-              "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 1.0929,
-              "created": "2026-04-01T20:31:50Z"
             }
           ]
         },
@@ -38590,6 +38723,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.0339,
               "created": "2026-04-23T16:48:22Z"
+            }
+          ]
+        },
+        {
+          "author": "TanishGudise",
+          "pr_count": 1,
+          "best_bpb": 1.0567,
+          "prs": [
+            {
+              "number": 2130,
+              "author": "TanishGudise",
+              "status": "AT_RISK",
+              "bpb": 1.0567,
+              "created": "2026-05-01T23:22:40Z"
             }
           ]
         },
@@ -45372,6 +45519,13 @@
           "created": "2026-04-30T18:30:26Z"
         },
         {
+          "number": 2008,
+          "author": "Christopher-Lee-McClendon",
+          "status": "AT_RISK",
+          "bpb": 0.00885746,
+          "created": "2026-04-30T20:06:37Z"
+        },
+        {
           "number": 2009,
           "author": "SlavH",
           "status": "ALIVE",
@@ -45545,6 +45699,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.06767,
           "created": "2026-05-01T21:10:38Z"
+        },
+        {
+          "number": 2130,
+          "author": "TanishGudise",
+          "status": "AT_RISK",
+          "bpb": 1.0567,
+          "created": "2026-05-01T23:22:40Z"
         }
       ]
     },
@@ -61055,11 +61216,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 359,
-      "author_count": 148,
-      "alive_count": 92,
+      "count": 361,
+      "author_count": 149,
+      "alive_count": 93,
       "dead_count": 126,
-      "at_risk_count": 81,
+      "at_risk_count": 82,
       "incomplete_count": 55,
       "unknown_count": 0,
       "best_alive": {
@@ -62175,6 +62336,48 @@
           ]
         },
         {
+          "author": "anmarhindi",
+          "pr_count": 5,
+          "best_bpb": 0.979556,
+          "prs": [
+            {
+              "number": 1776,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.08083,
+              "created": "2026-04-22T14:59:39Z"
+            },
+            {
+              "number": 1835,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.00136,
+              "created": "2026-04-26T16:23:42Z"
+            },
+            {
+              "number": 2032,
+              "author": "anmarhindi",
+              "status": "DEAD",
+              "bpb": 1.029282,
+              "created": "2026-04-30T22:42:04Z"
+            },
+            {
+              "number": 2039,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.015784,
+              "created": "2026-04-30T23:19:33Z"
+            },
+            {
+              "number": 2138,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 0.979556,
+              "created": "2026-05-01T23:56:48Z"
+            }
+          ]
+        },
+        {
           "author": "EthanYangTW",
           "pr_count": 5,
           "best_bpb": 1.077,
@@ -62493,41 +62696,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.05826976,
               "created": "2026-04-30T06:21:11Z"
-            }
-          ]
-        },
-        {
-          "author": "anmarhindi",
-          "pr_count": 4,
-          "best_bpb": 1.00136,
-          "prs": [
-            {
-              "number": 1776,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.08083,
-              "created": "2026-04-22T14:59:39Z"
-            },
-            {
-              "number": 1835,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.00136,
-              "created": "2026-04-26T16:23:42Z"
-            },
-            {
-              "number": 2032,
-              "author": "anmarhindi",
-              "status": "DEAD",
-              "bpb": 1.029282,
-              "created": "2026-04-30T22:42:04Z"
-            },
-            {
-              "number": 2039,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.015784,
-              "created": "2026-04-30T23:19:33Z"
             }
           ]
         },
@@ -63872,6 +64040,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.052,
               "created": "2026-04-30T23:56:35Z"
+            }
+          ]
+        },
+        {
+          "author": "TanishGudise",
+          "pr_count": 1,
+          "best_bpb": 1.0567,
+          "prs": [
+            {
+              "number": 2130,
+              "author": "TanishGudise",
+              "status": "AT_RISK",
+              "bpb": 1.0567,
+              "created": "2026-05-01T23:22:40Z"
             }
           ]
         },
@@ -67131,6 +67313,20 @@
           "status": "AT_RISK",
           "bpb": 1.05874,
           "created": "2026-05-01T22:50:46Z"
+        },
+        {
+          "number": 2130,
+          "author": "TanishGudise",
+          "status": "AT_RISK",
+          "bpb": 1.0567,
+          "created": "2026-05-01T23:22:40Z"
+        },
+        {
+          "number": 2138,
+          "author": "anmarhindi",
+          "status": "ALIVE",
+          "bpb": 0.979556,
+          "created": "2026-05-01T23:56:48Z"
         }
       ]
     },
@@ -68335,12 +68531,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 885,
-      "author_count": 406,
+      "count": 888,
+      "author_count": 408,
       "alive_count": 243,
       "dead_count": 247,
-      "at_risk_count": 81,
-      "incomplete_count": 312,
+      "at_risk_count": 83,
+      "incomplete_count": 313,
       "unknown_count": 0,
       "best_alive": {
         "number": 1736,
@@ -68811,8 +69007,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.03387,
+              "status": "AT_RISK",
+              "bpb": 0.00885746,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -70582,6 +70778,48 @@
           ]
         },
         {
+          "author": "anmarhindi",
+          "pr_count": 5,
+          "best_bpb": 0.979556,
+          "prs": [
+            {
+              "number": 1776,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.08083,
+              "created": "2026-04-22T14:59:39Z"
+            },
+            {
+              "number": 1835,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.00136,
+              "created": "2026-04-26T16:23:42Z"
+            },
+            {
+              "number": 2032,
+              "author": "anmarhindi",
+              "status": "DEAD",
+              "bpb": 1.029282,
+              "created": "2026-04-30T22:42:04Z"
+            },
+            {
+              "number": 2039,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.015784,
+              "created": "2026-04-30T23:19:33Z"
+            },
+            {
+              "number": 2138,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 0.979556,
+              "created": "2026-05-01T23:56:48Z"
+            }
+          ]
+        },
+        {
           "author": "G3sparky",
           "pr_count": 5,
           "best_bpb": 1.0282,
@@ -70907,41 +71145,6 @@
               "status": "INCOMPLETE",
               "bpb": null,
               "created": "2026-04-30T22:42:03Z"
-            }
-          ]
-        },
-        {
-          "author": "anmarhindi",
-          "pr_count": 4,
-          "best_bpb": 1.00136,
-          "prs": [
-            {
-              "number": 1776,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.08083,
-              "created": "2026-04-22T14:59:39Z"
-            },
-            {
-              "number": 1835,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.00136,
-              "created": "2026-04-26T16:23:42Z"
-            },
-            {
-              "number": 2032,
-              "author": "anmarhindi",
-              "status": "DEAD",
-              "bpb": 1.029282,
-              "created": "2026-04-30T22:42:04Z"
-            },
-            {
-              "number": 2039,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.015784,
-              "created": "2026-04-30T23:19:33Z"
             }
           ]
         },
@@ -74526,6 +74729,34 @@
               "status": "INCOMPLETE",
               "bpb": 1.0543,
               "created": "2026-04-30T20:51:31Z"
+            }
+          ]
+        },
+        {
+          "author": "TanishGudise",
+          "pr_count": 1,
+          "best_bpb": 1.0567,
+          "prs": [
+            {
+              "number": 2130,
+              "author": "TanishGudise",
+              "status": "AT_RISK",
+              "bpb": 1.0567,
+              "created": "2026-05-01T23:22:40Z"
+            }
+          ]
+        },
+        {
+          "author": "varunneal",
+          "pr_count": 1,
+          "best_bpb": 1.05749,
+          "prs": [
+            {
+              "number": 2139,
+              "author": "varunneal",
+              "status": "INCOMPLETE",
+              "bpb": 1.05749,
+              "created": "2026-05-01T23:57:50Z"
             }
           ]
         },
@@ -83144,8 +83375,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "ALIVE",
-          "bpb": 1.03387,
+          "status": "AT_RISK",
+          "bpb": 0.00885746,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -83581,17 +83812,38 @@
           "status": "AT_RISK",
           "bpb": 1.05874,
           "created": "2026-05-01T22:50:46Z"
+        },
+        {
+          "number": 2130,
+          "author": "TanishGudise",
+          "status": "AT_RISK",
+          "bpb": 1.0567,
+          "created": "2026-05-01T23:22:40Z"
+        },
+        {
+          "number": 2138,
+          "author": "anmarhindi",
+          "status": "ALIVE",
+          "bpb": 0.979556,
+          "created": "2026-05-01T23:56:48Z"
+        },
+        {
+          "number": 2139,
+          "author": "varunneal",
+          "status": "INCOMPLETE",
+          "bpb": 1.05749,
+          "created": "2026-05-01T23:57:50Z"
         }
       ]
     },
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 543,
-      "author_count": 349,
+      "count": 545,
+      "author_count": 350,
       "alive_count": 137,
       "dead_count": 115,
-      "at_risk_count": 47,
+      "at_risk_count": 49,
       "incomplete_count": 242,
       "unknown_count": 0,
       "best_alive": {
@@ -83839,6 +84091,69 @@
           ]
         },
         {
+          "author": "Christopher-Lee-McClendon",
+          "pr_count": 8,
+          "best_bpb": 0.00321,
+          "prs": [
+            {
+              "number": 456,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.1532,
+              "created": "2026-03-22T20:02:06Z"
+            },
+            {
+              "number": 461,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.14458,
+              "created": "2026-03-22T21:35:04Z"
+            },
+            {
+              "number": 526,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.14252,
+              "created": "2026-03-23T12:36:14Z"
+            },
+            {
+              "number": 537,
+              "author": "Christopher-Lee-McClendon",
+              "status": "ALIVE",
+              "bpb": 1.13872,
+              "created": "2026-03-23T15:02:29Z"
+            },
+            {
+              "number": 598,
+              "author": "Christopher-Lee-McClendon",
+              "status": "INCOMPLETE",
+              "bpb": 1.1334,
+              "created": "2026-03-24T04:54:11Z"
+            },
+            {
+              "number": 1170,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 0.00321,
+              "created": "2026-03-31T04:52:31Z"
+            },
+            {
+              "number": 1232,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 1.0929,
+              "created": "2026-04-01T20:31:50Z"
+            },
+            {
+              "number": 2008,
+              "author": "Christopher-Lee-McClendon",
+              "status": "AT_RISK",
+              "bpb": 0.00885746,
+              "created": "2026-04-30T20:06:37Z"
+            }
+          ]
+        },
+        {
           "author": "newjordan",
           "pr_count": 8,
           "best_bpb": 0.005,
@@ -83898,62 +84213,6 @@
               "status": "DEAD",
               "bpb": 1.08540457,
               "created": "2026-04-04T04:50:40Z"
-            }
-          ]
-        },
-        {
-          "author": "Christopher-Lee-McClendon",
-          "pr_count": 7,
-          "best_bpb": 0.00321,
-          "prs": [
-            {
-              "number": 456,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.1532,
-              "created": "2026-03-22T20:02:06Z"
-            },
-            {
-              "number": 461,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.14458,
-              "created": "2026-03-22T21:35:04Z"
-            },
-            {
-              "number": 526,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.14252,
-              "created": "2026-03-23T12:36:14Z"
-            },
-            {
-              "number": 537,
-              "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.13872,
-              "created": "2026-03-23T15:02:29Z"
-            },
-            {
-              "number": 598,
-              "author": "Christopher-Lee-McClendon",
-              "status": "INCOMPLETE",
-              "bpb": 1.1334,
-              "created": "2026-03-24T04:54:11Z"
-            },
-            {
-              "number": 1170,
-              "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00321,
-              "created": "2026-03-31T04:52:31Z"
-            },
-            {
-              "number": 1232,
-              "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 1.0929,
-              "created": "2026-04-01T20:31:50Z"
             }
           ]
         },
@@ -86691,6 +86950,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.0339,
               "created": "2026-04-23T16:48:22Z"
+            }
+          ]
+        },
+        {
+          "author": "TanishGudise",
+          "pr_count": 1,
+          "best_bpb": 1.0567,
+          "prs": [
+            {
+              "number": 2130,
+              "author": "TanishGudise",
+              "status": "AT_RISK",
+              "bpb": 1.0567,
+              "created": "2026-05-01T23:22:40Z"
             }
           ]
         },
@@ -93473,6 +93746,13 @@
           "created": "2026-04-30T18:30:26Z"
         },
         {
+          "number": 2008,
+          "author": "Christopher-Lee-McClendon",
+          "status": "AT_RISK",
+          "bpb": 0.00885746,
+          "created": "2026-04-30T20:06:37Z"
+        },
+        {
           "number": 2009,
           "author": "SlavH",
           "status": "ALIVE",
@@ -93646,17 +93926,24 @@
           "status": "INCOMPLETE",
           "bpb": 1.06767,
           "created": "2026-05-01T21:10:38Z"
+        },
+        {
+          "number": 2130,
+          "author": "TanishGudise",
+          "status": "AT_RISK",
+          "bpb": 1.0567,
+          "created": "2026-05-01T23:22:40Z"
         }
       ]
     },
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 575,
-      "author_count": 300,
+      "count": 577,
+      "author_count": 301,
       "alive_count": 143,
       "dead_count": 166,
-      "at_risk_count": 55,
+      "at_risk_count": 57,
       "incomplete_count": 205,
       "unknown_count": 0,
       "best_alive": {
@@ -94051,8 +94338,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.03387,
+              "status": "AT_RISK",
+              "bpb": 0.00885746,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -95066,6 +95353,41 @@
           ]
         },
         {
+          "author": "anmarhindi",
+          "pr_count": 4,
+          "best_bpb": 0.979556,
+          "prs": [
+            {
+              "number": 1776,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.08083,
+              "created": "2026-04-22T14:59:39Z"
+            },
+            {
+              "number": 2032,
+              "author": "anmarhindi",
+              "status": "DEAD",
+              "bpb": 1.029282,
+              "created": "2026-04-30T22:42:04Z"
+            },
+            {
+              "number": 2039,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.015784,
+              "created": "2026-04-30T23:19:33Z"
+            },
+            {
+              "number": 2138,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 0.979556,
+              "created": "2026-05-01T23:56:48Z"
+            }
+          ]
+        },
+        {
           "author": "mikeapedia",
           "pr_count": 4,
           "best_bpb": 1.06681663,
@@ -95482,34 +95804,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.06767,
               "created": "2026-05-01T21:10:38Z"
-            }
-          ]
-        },
-        {
-          "author": "anmarhindi",
-          "pr_count": 3,
-          "best_bpb": 1.015784,
-          "prs": [
-            {
-              "number": 1776,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.08083,
-              "created": "2026-04-22T14:59:39Z"
-            },
-            {
-              "number": 2032,
-              "author": "anmarhindi",
-              "status": "DEAD",
-              "bpb": 1.029282,
-              "created": "2026-04-30T22:42:04Z"
-            },
-            {
-              "number": 2039,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.015784,
-              "created": "2026-04-30T23:19:33Z"
             }
           ]
         },
@@ -97659,6 +97953,20 @@
               "status": "DEAD",
               "bpb": 1.0487,
               "created": "2026-03-23T14:36:16Z"
+            }
+          ]
+        },
+        {
+          "author": "TanishGudise",
+          "pr_count": 1,
+          "best_bpb": 1.0567,
+          "prs": [
+            {
+              "number": 2130,
+              "author": "TanishGudise",
+              "status": "AT_RISK",
+              "bpb": 1.0567,
+              "created": "2026-05-01T23:22:40Z"
             }
           ]
         },
@@ -103666,8 +103974,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "ALIVE",
-          "bpb": 1.03387,
+          "status": "AT_RISK",
+          "bpb": 0.00885746,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -103816,17 +104124,31 @@
           "status": "INCOMPLETE",
           "bpb": 1.06767,
           "created": "2026-05-01T21:10:38Z"
+        },
+        {
+          "number": 2130,
+          "author": "TanishGudise",
+          "status": "AT_RISK",
+          "bpb": 1.0567,
+          "created": "2026-05-01T23:22:40Z"
+        },
+        {
+          "number": 2138,
+          "author": "anmarhindi",
+          "status": "ALIVE",
+          "bpb": 0.979556,
+          "created": "2026-05-01T23:56:48Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 580,
-      "author_count": 272,
+      "count": 582,
+      "author_count": 273,
       "alive_count": 184,
       "dead_count": 152,
-      "at_risk_count": 61,
+      "at_risk_count": 63,
       "incomplete_count": 178,
       "unknown_count": 0,
       "best_alive": {
@@ -104356,7 +104678,7 @@
         {
           "author": "Christopher-Lee-McClendon",
           "pr_count": 13,
-          "best_bpb": 0.00975,
+          "best_bpb": 0.00885746,
           "prs": [
             {
               "number": 456,
@@ -104445,8 +104767,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "ALIVE",
-              "bpb": 1.03387,
+              "status": "AT_RISK",
+              "bpb": 0.00885746,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -105740,6 +106062,41 @@
           ]
         },
         {
+          "author": "anmarhindi",
+          "pr_count": 4,
+          "best_bpb": 0.979556,
+          "prs": [
+            {
+              "number": 1776,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.08083,
+              "created": "2026-04-22T14:59:39Z"
+            },
+            {
+              "number": 2032,
+              "author": "anmarhindi",
+              "status": "DEAD",
+              "bpb": 1.029282,
+              "created": "2026-04-30T22:42:04Z"
+            },
+            {
+              "number": 2039,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.015784,
+              "created": "2026-04-30T23:19:33Z"
+            },
+            {
+              "number": 2138,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 0.979556,
+              "created": "2026-05-01T23:56:48Z"
+            }
+          ]
+        },
+        {
           "author": "renqianluo",
           "pr_count": 4,
           "best_bpb": 1.00955,
@@ -106149,34 +106506,6 @@
               "status": "AT_RISK",
               "bpb": 1.05874,
               "created": "2026-05-01T22:50:46Z"
-            }
-          ]
-        },
-        {
-          "author": "anmarhindi",
-          "pr_count": 3,
-          "best_bpb": 1.015784,
-          "prs": [
-            {
-              "number": 1776,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.08083,
-              "created": "2026-04-22T14:59:39Z"
-            },
-            {
-              "number": 2032,
-              "author": "anmarhindi",
-              "status": "DEAD",
-              "bpb": 1.029282,
-              "created": "2026-04-30T22:42:04Z"
-            },
-            {
-              "number": 2039,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.015784,
-              "created": "2026-04-30T23:19:33Z"
             }
           ]
         },
@@ -107920,6 +108249,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.052,
               "created": "2026-04-30T23:56:35Z"
+            }
+          ]
+        },
+        {
+          "author": "TanishGudise",
+          "pr_count": 1,
+          "best_bpb": 1.0567,
+          "prs": [
+            {
+              "number": 2130,
+              "author": "TanishGudise",
+              "status": "AT_RISK",
+              "bpb": 1.0567,
+              "created": "2026-05-01T23:22:40Z"
             }
           ]
         },
@@ -113612,8 +113955,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "ALIVE",
-          "bpb": 1.03387,
+          "status": "AT_RISK",
+          "bpb": 0.00885746,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -113860,17 +114203,31 @@
           "status": "AT_RISK",
           "bpb": 1.05874,
           "created": "2026-05-01T22:50:46Z"
+        },
+        {
+          "number": 2130,
+          "author": "TanishGudise",
+          "status": "AT_RISK",
+          "bpb": 1.0567,
+          "created": "2026-05-01T23:22:40Z"
+        },
+        {
+          "number": 2138,
+          "author": "anmarhindi",
+          "status": "ALIVE",
+          "bpb": 0.979556,
+          "created": "2026-05-01T23:56:48Z"
         }
       ]
     },
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 359,
-      "author_count": 148,
-      "alive_count": 92,
+      "count": 361,
+      "author_count": 149,
+      "alive_count": 93,
       "dead_count": 126,
-      "at_risk_count": 81,
+      "at_risk_count": 82,
       "incomplete_count": 55,
       "unknown_count": 0,
       "best_alive": {
@@ -114986,6 +115343,48 @@
           ]
         },
         {
+          "author": "anmarhindi",
+          "pr_count": 5,
+          "best_bpb": 0.979556,
+          "prs": [
+            {
+              "number": 1776,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.08083,
+              "created": "2026-04-22T14:59:39Z"
+            },
+            {
+              "number": 1835,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.00136,
+              "created": "2026-04-26T16:23:42Z"
+            },
+            {
+              "number": 2032,
+              "author": "anmarhindi",
+              "status": "DEAD",
+              "bpb": 1.029282,
+              "created": "2026-04-30T22:42:04Z"
+            },
+            {
+              "number": 2039,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 1.015784,
+              "created": "2026-04-30T23:19:33Z"
+            },
+            {
+              "number": 2138,
+              "author": "anmarhindi",
+              "status": "ALIVE",
+              "bpb": 0.979556,
+              "created": "2026-05-01T23:56:48Z"
+            }
+          ]
+        },
+        {
           "author": "EthanYangTW",
           "pr_count": 5,
           "best_bpb": 1.077,
@@ -115304,41 +115703,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.05826976,
               "created": "2026-04-30T06:21:11Z"
-            }
-          ]
-        },
-        {
-          "author": "anmarhindi",
-          "pr_count": 4,
-          "best_bpb": 1.00136,
-          "prs": [
-            {
-              "number": 1776,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.08083,
-              "created": "2026-04-22T14:59:39Z"
-            },
-            {
-              "number": 1835,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.00136,
-              "created": "2026-04-26T16:23:42Z"
-            },
-            {
-              "number": 2032,
-              "author": "anmarhindi",
-              "status": "DEAD",
-              "bpb": 1.029282,
-              "created": "2026-04-30T22:42:04Z"
-            },
-            {
-              "number": 2039,
-              "author": "anmarhindi",
-              "status": "ALIVE",
-              "bpb": 1.015784,
-              "created": "2026-04-30T23:19:33Z"
             }
           ]
         },
@@ -116683,6 +117047,20 @@
               "status": "INCOMPLETE",
               "bpb": 1.052,
               "created": "2026-04-30T23:56:35Z"
+            }
+          ]
+        },
+        {
+          "author": "TanishGudise",
+          "pr_count": 1,
+          "best_bpb": 1.0567,
+          "prs": [
+            {
+              "number": 2130,
+              "author": "TanishGudise",
+              "status": "AT_RISK",
+              "bpb": 1.0567,
+              "created": "2026-05-01T23:22:40Z"
             }
           ]
         },
@@ -119942,6 +120320,20 @@
           "status": "AT_RISK",
           "bpb": 1.05874,
           "created": "2026-05-01T22:50:46Z"
+        },
+        {
+          "number": 2130,
+          "author": "TanishGudise",
+          "status": "AT_RISK",
+          "bpb": 1.0567,
+          "created": "2026-05-01T23:22:40Z"
+        },
+        {
+          "number": 2138,
+          "author": "anmarhindi",
+          "status": "ALIVE",
+          "bpb": 0.979556,
+          "created": "2026-05-01T23:56:48Z"
         }
       ]
     },
@@ -136830,11 +137222,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 885,
+      "left_count": 888,
       "right_count": 2,
-      "left_people": 406,
+      "left_people": 408,
       "right_people": 2,
-      "score": 1770
+      "score": 1776
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -136848,38 +137240,38 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 580,
+      "left_count": 582,
       "right_count": 2,
-      "left_people": 272,
+      "left_people": 273,
       "right_people": 2,
-      "score": 1160
+      "score": 1164
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 580,
+      "left_count": 582,
       "right_count": 2,
-      "left_people": 272,
+      "left_people": 273,
       "right_people": 2,
-      "score": 1160
+      "score": 1164
     },
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 575,
+      "left_count": 577,
       "right_count": 2,
-      "left_people": 300,
+      "left_people": 301,
       "right_people": 2,
-      "score": 1150
+      "score": 1154
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 575,
+      "left_count": 577,
       "right_count": 2,
-      "left_people": 300,
+      "left_people": 301,
       "right_people": 2,
-      "score": 1150
+      "score": 1154
     },
     {
       "left": "QAT",
@@ -136893,11 +137285,11 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 543,
+      "left_count": 545,
       "right_count": 2,
-      "left_people": 349,
+      "left_people": 350,
       "right_people": 2,
-      "score": 1086
+      "score": 1090
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -136920,11 +137312,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 885,
+      "left_count": 888,
       "right_count": 1,
-      "left_people": 406,
+      "left_people": 408,
       "right_people": 1,
-      "score": 885
+      "score": 888
     },
     {
       "left": "QAT",
@@ -137055,20 +137447,20 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 580,
+      "left_count": 582,
       "right_count": 1,
-      "left_people": 272,
+      "left_people": 273,
       "right_people": 1,
-      "score": 580
+      "score": 582
     },
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 575,
+      "left_count": 577,
       "right_count": 1,
-      "left_people": 300,
+      "left_people": 301,
       "right_people": 1,
-      "score": 575
+      "score": 577
     },
     {
       "left": "Ternary Weights",

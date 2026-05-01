@@ -1,7 +1,426 @@
 {
-  "last_fetch": "2026-05-01T22:58:16.568527+00:00",
-  "api_calls_used": 259,
+  "last_fetch": "2026-05-01T23:58:35.149467+00:00",
+  "api_calls_used": 260,
   "prs": [
+    {
+      "number": 2139,
+      "title": "[Record candidate] TTT Peer-LoRA Ensemble on PR #2014, val_bpb = 1.05749",
+      "author": "varunneal",
+      "state": "OPEN",
+      "created": "2026-05-01T23:57:50Z",
+      "updated": "2026-05-01T23:57:50Z",
+      "bpb": 1.05749,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + LoRA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_TTT_Ensemble/README.md",
+        "records/track_10min_16mb/2026-04-30_TTT_Ensemble/submission.json",
+        "records/track_10min_16mb/2026-04-30_TTT_Ensemble/submit.sh",
+        "records/track_10min_16mb/2026-04-30_TTT_Ensemble/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2138,
+      "title": "Record: SP8192 + Sliding-Window Eval + Lock-In Byte Mixer - val_bpb 0.979556",
+      "author": "anmarhindi",
+      "state": "OPEN",
+      "created": "2026-05-01T23:56:48Z",
+      "updated": "2026-05-01T23:58:22Z",
+      "bpb": 0.979556,
+      "seeds": 3,
+      "artifact_bytes": 15810458,
+      "technique_summary": "TTT + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/README.md",
+        "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/final_model.int6.ptz",
+        "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/submission.json",
+        "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/train_seed1337.log",
+        "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/train_seed314.log",
+        "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2137,
+      "title": "Non-record: notes on the recurrence band (mixing parameters, MLP sizing, loop sizing)",
+      "author": "leon2k2k2k",
+      "state": "OPEN",
+      "created": "2026-05-01T23:56:43Z",
+      "updated": "2026-05-01T23:56:43Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-02_RecurrenceBandNotes_leon2k2k2k/README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2136,
+      "title": "Record candidate: PR #2130 base + GATE_WINDOW=8 + GPTQ_CALIBRATION_BATCHES=32",
+      "author": "codemath3000",
+      "state": "OPEN",
+      "created": "2026-05-01T23:48:59Z",
+      "updated": "2026-05-01T23:48:59Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8_Calib32/README.md",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8_Calib32/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8_Calib32/online_ngram_state.c",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8_Calib32/online_ngram_tilt.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8_Calib32/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8_Calib32/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8_Calib32/submission.json",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8_Calib32/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8_Calib32/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 2135,
+      "title": "Record candidate: PR #2130 base + GPTQ_CALIBRATION_BATCHES=32",
+      "author": "codemath3000",
+      "state": "OPEN",
+      "created": "2026-05-01T23:48:57Z",
+      "updated": "2026-05-01T23:48:57Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/README.md",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/online_ngram_state.c",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/online_ngram_tilt.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/submission.json",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 2134,
+      "title": "Record candidate: PR #2130 base + GATE_WINDOW=8",
+      "author": "codemath3000",
+      "state": "OPEN",
+      "created": "2026-05-01T23:48:55Z",
+      "updated": "2026-05-01T23:48:55Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8/README.md",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8/online_ngram_state.c",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8/online_ngram_tilt.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8/submission.json",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_GW8/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 2133,
+      "title": "Record candidate: PR #2014 base + GATE_WINDOW=8 + GPTQ_CALIBRATION_BATCHES=32",
+      "author": "codemath3000",
+      "state": "OPEN",
+      "created": "2026-05-01T23:48:53Z",
+      "updated": "2026-05-01T23:48:53Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8_Calib32/README.md",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8_Calib32/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8_Calib32/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8_Calib32/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8_Calib32/submission.json",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8_Calib32/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8_Calib32/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2132,
+      "title": "Record candidate: PR #2014 base + GPTQ_CALIBRATION_BATCHES=32",
+      "author": "codemath3000",
+      "state": "OPEN",
+      "created": "2026-05-01T23:48:51Z",
+      "updated": "2026-05-01T23:48:51Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_Calib32/README.md",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_Calib32/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_Calib32/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_Calib32/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_Calib32/submission.json",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_Calib32/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_Calib32/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2131,
+      "title": "Record candidate: PR #2014 base + GATE_WINDOW=8",
+      "author": "codemath3000",
+      "state": "OPEN",
+      "created": "2026-05-01T23:48:50Z",
+      "updated": "2026-05-01T23:48:50Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8/README.md",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8/submission.json",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2014Base_GW8/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2130,
+      "title": "Record candidate: 1.05670 BPB — token-only n-gram tilt + AsymLogit + #2060 levers + NUM_PHASES=1",
+      "author": "TanishGudise",
+      "state": "OPEN",
+      "created": "2026-05-01T23:22:40Z",
+      "updated": "2026-05-01T23:49:47Z",
+      "bpb": 1.0567,
+      "seeds": 3,
+      "artifact_bytes": 15950000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + EMA + N-gram",
+      "file_paths": [
+        ".gitignore",
+        "LAUNCH_COMMANDS.md",
+        "PRD_MAX_SOTA.md",
+        "STATUS.md",
+        "SUBMISSION_FINAL/README.md",
+        "SUBMISSION_FINAL/lossless_caps.py",
+        "SUBMISSION_FINAL/online_ngram_state.c",
+        "SUBMISSION_FINAL/online_ngram_tilt.py",
+        "SUBMISSION_FINAL/prepare_caseops_data.py",
+        "SUBMISSION_FINAL/submission.json",
+        "SUBMISSION_FINAL/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "SUBMISSION_FINAL/train_gpt.py",
+        "SUBMISSION_FINAL/train_seed0.log",
+        "SUBMISSION_FINAL/train_seed314.log",
+        "SUBMISSION_FINAL/train_seed42.log",
+        "SUBMISSION_STATUS.md",
+        "build_submission.py",
+        "logs/000c5815-f2d5-424b-ba6e-381de204f744.txt",
+        "logs/0134f358-e05b-487b-a098-08f98016fe5f.txt",
+        "logs/043a8ea2-3f4f-4003-90b1-17cac21c3e00.txt",
+        "logs/04f8a10e-0920-4027-a0e1-57ab2807d05a.txt",
+        "logs/07567442-4ae7-4bca-9ebb-ae3f59818778.txt",
+        "logs/0a54529c-1a9a-49a4-93fc-ae22f80eb3ac.txt",
+        "logs/0f3be933-5b0c-439a-a973-c20978ae12ee.txt",
+        "logs/159b564b-7572-4a9c-8a43-274c182dbc20.txt",
+        "logs/1a56726c-0bd9-4dae-af4c-947879fe3c35.txt",
+        "logs/1a58ef5d-7ecf-4d15-8280-896a4272a168.txt",
+        "logs/1c909fbe-6fce-48f9-bb5a-5d17ca732d5c.txt",
+        "logs/1d137bb2-e8e7-4fa1-951d-890bcffd0283.txt",
+        "logs/1d18b563-808c-40b2-a502-92fd2fbc1c54.txt",
+        "logs/1d6f8af4-4df6-4d1d-92e6-6683e57239f8.txt",
+        "logs/26e2eb08-d9f6-4884-9e8d-04cc34599b32.txt",
+        "logs/2964680a-1b0d-44de-86c5-4d77c759ef7e.txt",
+        "logs/2a9ca7e7-ac73-4627-891a-f3bb93df5257.txt",
+        "logs/2db2c895-b9fd-4e4a-a5d8-d9c7772e9384.txt",
+        "logs/3594da35-2481-49da-886a-1685478f2cf1.txt",
+        "logs/365fd83c-6d24-4b29-8c75-7c80512d574a.txt",
+        "logs/3a01e7b9-4bca-4560-984e-18e8b39142c5.txt",
+        "logs/3b7e66c3-01fa-4c32-8139-c79a65c5d4ed.txt",
+        "logs/3c66279f-79b7-41cc-8ac9-fe3852079ade.txt",
+        "logs/3levers_no_optrot_seed314_20260428_2209.log",
+        "logs/413c7c41-93e9-483e-b398-012a831ff6ce.txt",
+        "logs/45c2f43c-4d36-4259-a589-0975b5d6be22.txt",
+        "logs/47224c92-f5d0-4010-9d21-a3eced18c5ad.txt",
+        "logs/4c73432f-aae5-47c7-a990-df15cbf99656.txt",
+        "logs/5085b487-75b9-49b5-9264-793b7ac02599.txt",
+        "logs/54d99ff9-c6b4-49cf-aaea-40f7f9a2f5fd.txt",
+        "logs/5670dd99-ef81-41dc-9cdb-d742abca9170.txt",
+        "logs/568732a1-ee21-4bc2-ab85-e7c54d12757a.txt",
+        "logs/5842d194-3225-4639-b9c4-7618d1a55f67.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 2129,
       "title": "Non-record: Confidence-Adaptive N-gram Boost on PR #2018 stack, val_bpb=1.05874",
@@ -795,11 +1214,11 @@
     },
     {
       "number": 2109,
-      "title": "Track 2: PR #1855 + MP3 marker-pair fusion + alias smear boundary (val_bpb 1.05917838, 3-seed avg)",
+      "title": "Record: PR #1855 + MP3 marker-pair fusion + alias smear boundary — val_bpb 1.05918 (3-seed mean)",
       "author": "izlley",
       "state": "OPEN",
       "created": "2026-05-01T07:04:41Z",
-      "updated": "2026-05-01T08:43:00Z",
+      "updated": "2026-05-01T23:51:31Z",
       "bpb": 1.05917838,
       "seeds": 3,
       "artifact_bytes": 15907150,
@@ -1607,62 +2026,18 @@
       "author": "AlirezaAlampour",
       "state": "OPEN",
       "created": "2026-05-01T04:05:48Z",
-      "updated": "2026-05-01T22:51:57Z",
+      "updated": "2026-05-01T23:08:16Z",
       "bpb": null,
       "seeds": 42,
-      "artifact_bytes": 15500000,
-      "technique_summary": "TTT + Muon + INT8 + EMA + N-gram",
+      "artifact_bytes": 14040000,
+      "technique_summary": "TTT + Muon + INT6 + INT8 + EMA + N-gram",
       "file_paths": [
-        ".gitignore",
-        "CONTEXT_FOR_HUMANS.md",
-        "CONTEXT_FOR_LLMs.md",
-        "Dockerfile",
-        "README.md",
-        "app.py",
-        "autoresearch.py",
-        "configs/default.yaml",
-        "docker-compose.yml",
-        "eval/__init__.py",
-        "eval/evaluate.py",
-        "eval/ngram_cache.py",
-        "eval/ttt.py",
-        "experiments/results/baseline_10layer_d512.csv",
-        "experiments/results/lr_finder_lr_finder_5x4_d512.csv",
-        "experiments/results/overnight_20260405_235113.csv",
-        "experiments/results/overnight_20260405_235207.csv",
-        "experiments/results/overnight_20260405_235945.csv",
-        "experiments/results/shared_10x2_d512.csv",
-        "experiments/results/shared_3x7_d512.csv",
-        "experiments/results/shared_4x5_d512.csv",
-        "experiments/results/shared_5x4_d384.csv",
-        "experiments/results/shared_5x4_d448.csv",
-        "experiments/results/shared_5x4_d512.csv",
-        "experiments/results/shared_5x4_d512_mlp2.0.csv",
-        "experiments/results/shared_5x4_d512_mlp2.5.csv",
-        "experiments/results/shared_5x4_d512_mlp3.5.csv",
-        "experiments/results/shared_5x4_d512_mlp4.0.csv",
-        "experiments/results/shared_5x4_d576.csv",
-        "experiments/results/shared_5x4_d640.csv",
-        "experiments/results/shared_6x3_d512.csv",
-        "experiments/results/shared_7x3_d512.csv",
-        "experiments/results/smoke_test.csv",
-        "experiments/results/smoke_test_tiny.csv",
-        "experiments_v2.sh",
-        "models/__init__.py",
-        "models/tiny_gpt.py",
-        "models/tiny_gpt_shared.py",
-        "models/tiny_mamba.py",
-        "overnight_batch.sh",
-        "program.md",
         "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/README.md",
         "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/eval_spark.py",
         "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/ngram_cache.py",
         "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/requirements.txt",
         "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/submission.json",
-        "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/train_gpt.py",
-        "requirements.txt",
-        "run_experiment.sh",
-        "run_tracker.py"
+        "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -1760,7 +2135,7 @@
       "author": "deniskurlov",
       "state": "OPEN",
       "created": "2026-05-01T04:01:01Z",
-      "updated": "2026-05-01T21:28:30Z",
+      "updated": "2026-05-01T23:34:44Z",
       "bpb": 1.1381,
       "seeds": 3,
       "artifact_bytes": 15720000,
@@ -4949,11 +5324,11 @@
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-04-30T20:06:37Z",
-      "updated": "2026-05-01T22:57:27Z",
-      "bpb": 1.03387,
+      "updated": "2026-05-01T23:43:04Z",
+      "bpb": 0.00885746,
       "seeds": 3,
       "artifact_bytes": 15926271,
-      "technique_summary": "TTT + LoRA + GPTQ + EMA",
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + EMA",
       "file_paths": [
         "AGENTS.md",
         "pr_4h_longtrain_body.md",
@@ -5018,9 +5393,12 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
     },
     {
       "number": 2007,
@@ -11814,7 +12192,7 @@
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-04-26T11:07:10Z",
-      "updated": "2026-04-26T20:28:16Z",
+      "updated": "2026-05-01T23:28:10Z",
       "bpb": 0.00024,
       "seeds": 42,
       "artifact_bytes": 16000000,
