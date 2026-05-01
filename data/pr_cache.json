@@ -1,14 +1,111 @@
 {
-  "last_fetch": "2026-05-01T12:01:11.114624+00:00",
-  "api_calls_used": 251,
+  "last_fetch": "2026-05-01T13:59:58.714462+00:00",
+  "api_calls_used": 252,
   "prs": [
+    {
+      "number": 2121,
+      "title": "Record candidate: StageB v2 CaseOps TTT seed42 1.06099764",
+      "author": "Kbediako",
+      "state": "OPEN",
+      "created": "2026-05-01T13:51:10Z",
+      "updated": "2026-05-01T13:51:10Z",
+      "bpb": 1.06099764,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + LoRA + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/README.md",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/runpod_terminal_summary.json",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/submission.json",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/train_seed42.log",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed314.log",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed42.log",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2120,
+      "title": "non-record - mockingbird - sota copy/10kvocab",
+      "author": "newjordan",
+      "state": "OPEN",
+      "created": "2026-05-01T12:53:24Z",
+      "updated": "2026-05-01T13:58:03Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + LoRA + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/README.md",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/submission.json",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/README.md",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/build/run_sp10240_build.sh",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/build/run_sp10240_upload.sh",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/build/sp10240_build.log",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/caseops/build_sp10240_caseops_local.sh",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/caseops/download_sp10240_first80_from_hf.sh",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/caseops/download_sp10240_full124_from_hf.sh",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/caseops/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/caseops/prepare_sp10240_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/caseops/stream_pr1855_caseops_to_pod.sh",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/caseops/upload_sp10240_caseops_to_hf.sh",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/notes/2026-04-30_10k_caseops_hf_lane.md",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/notes/2026-04-30_claude_sp10240_bytefit_plan.md",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/tokenizer/fineweb_10240_bpe.model",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/tokenizer/fineweb_10240_bpe.vocab",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/tokenizer/fineweb_10240_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/tokenizer/fineweb_10240_bpe_lossless_caps_caseops_v1_reserved.vocab",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/tokenization_10kvocab/tokenizer/tokenizer_specs_sp10240.json",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/train_seed0.log",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/train_seed1.log",
+        "records/track_10min_16mb/2026-05-01_Mockingbird_8xH100/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2119,
       "title": "Non-record: PR1953 K+O-only TTT + QK_GAIN_INIT=5.35",
       "author": "dexhunter",
       "state": "OPEN",
       "created": "2026-05-01T12:00:30Z",
-      "updated": "2026-05-01T12:00:30Z",
+      "updated": "2026-05-01T13:59:20Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 15978954,
@@ -5130,7 +5227,7 @@
       "author": "User123331",
       "state": "OPEN",
       "created": "2026-04-30T17:40:23Z",
-      "updated": "2026-04-30T17:40:23Z",
+      "updated": "2026-05-01T13:33:04Z",
       "bpb": 1.0878,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -7869,7 +7966,7 @@
       "author": "squ11z1",
       "state": "OPEN",
       "created": "2026-04-29T12:02:54Z",
-      "updated": "2026-05-01T10:42:31Z",
+      "updated": "2026-05-01T12:10:56Z",
       "bpb": 0.005,
       "seeds": 3,
       "artifact_bytes": 18204,
