@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-05-01T19:47:38.774451+00:00",
-  "api_calls_used": 256,
+  "last_fetch": "2026-05-01T20:56:53.897856+00:00",
+  "api_calls_used": 257,
   "prs": [
     {
       "number": 2126,
@@ -8,7 +8,7 @@
       "author": "AlstonTang",
       "state": "OPEN",
       "created": "2026-05-01T19:09:14Z",
-      "updated": "2026-05-01T19:09:58Z",
+      "updated": "2026-05-01T20:11:50Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -215,12 +215,12 @@
     },
     {
       "number": 2121,
-      "title": "Record candidate: StageB v2 CaseOps TTT seed42 1.06099764",
+      "title": "Record candidate: StageB v2 CaseOps TTT seed42 1.06095913",
       "author": "Kbediako",
       "state": "OPEN",
       "created": "2026-05-01T13:51:10Z",
-      "updated": "2026-05-01T15:24:44Z",
-      "bpb": 1.06099764,
+      "updated": "2026-05-01T20:15:41Z",
+      "bpb": 1.06095913,
       "seeds": 3,
       "artifact_bytes": null,
       "technique_summary": "TTT + LoRA + GPTQ",
@@ -230,6 +230,7 @@
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/prepare_caseops_data.py",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/requirements.txt",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/runpod_seed0_1234_summary.json",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/runpod_seed42_rank128_final_summary.jsonl",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/runpod_terminal_summary.json",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/submission.json",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
@@ -241,6 +242,7 @@
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed1234.log",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed314.log",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed42.log",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed42_rank128_final.log",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed999.log"
       ],
       "maintainer_comments": [],
@@ -2244,7 +2246,7 @@
       "author": "jamesEmerson112",
       "state": "OPEN",
       "created": "2026-05-01T02:13:22Z",
-      "updated": "2026-05-01T17:55:14Z",
+      "updated": "2026-05-01T20:08:34Z",
       "bpb": 1.0066,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -4867,11 +4869,11 @@
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-04-30T20:06:37Z",
-      "updated": "2026-05-01T18:13:12Z",
-      "bpb": 0.00802,
+      "updated": "2026-05-01T20:34:22Z",
+      "bpb": 0.00802237,
       "seeds": 3,
       "artifact_bytes": 15926271,
-      "technique_summary": "TTT + LoRA + GPTQ + INT6",
+      "technique_summary": "TTT + LoRA + GPTQ + EMA",
       "file_paths": [
         "pr_4h_longtrain_body.md",
         "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/README.md",
@@ -4900,6 +4902,10 @@
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_45min.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_60min.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/experiment_summary.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/followups/240min_ttt_only_control.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/followups/300min_stage_decomposition.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/followups/360min_prequant_followup.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/followups/followup_controls_summary.csv",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/scaling_results.csv",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/sliding_eval_summary.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/ttt_sweep_manifest.json",
@@ -4912,11 +4918,13 @@
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/submission.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/train.log",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/train_gpt.py",
+        "scripts/pod_selfterm.py",
         "scripts/run_longtrain_scaling.py",
         "scripts/run_longtrain_ttt_sweep.py",
+        "scripts/runpod_http_rehearsal.py",
+        "scripts/runpod_safe.py",
         "tests/test_launcher_longtrain.py",
-        "tests/test_resume_checkpoint.py",
-        "tests/test_ttt_sweep.py"
+        "tests/test_resume_checkpoint.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -10818,7 +10826,7 @@
       "author": "codemath3000",
       "state": "MERGED",
       "created": "2026-04-27T10:49:13Z",
-      "updated": "2026-05-01T19:06:47Z",
+      "updated": "2026-05-01T19:51:07Z",
       "bpb": 1.06108,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -67202,10 +67210,10 @@
     {
       "number": 330,
       "title": "Non-record: 11L Int6 + Online Logit Bias (val_bpb=1.1609)",
-      "author": "bopmite",
-      "state": "OPEN",
+      "author": "rresident",
+      "state": "CLOSED",
       "created": "2026-03-21T09:09:45Z",
-      "updated": "2026-04-11T20:10:15Z",
+      "updated": "2026-05-01T19:58:21Z",
       "bpb": 1.1609,
       "seeds": null,
       "artifact_bytes": null,
@@ -67224,12 +67232,11 @@
         "ttt"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 329,
