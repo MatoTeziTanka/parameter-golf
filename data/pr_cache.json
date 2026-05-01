@@ -1,7 +1,44 @@
 {
-  "last_fetch": "2026-05-01T20:56:53.897856+00:00",
-  "api_calls_used": 257,
+  "last_fetch": "2026-05-01T21:58:18.999438+00:00",
+  "api_calls_used": 258,
   "prs": [
+    {
+      "number": 2128,
+      "title": "Non-record: Post-Quantization LoRA Distillation (LCQ) on PR #1855 stack, val_bpb=1.06767",
+      "author": "okezue",
+      "state": "OPEN",
+      "created": "2026-05-01T21:10:38Z",
+      "updated": "2026-05-01T21:10:38Z",
+      "bpb": 1.06767,
+      "seeds": 2,
+      "artifact_bytes": 15912974,
+      "technique_summary": "Muon + LoRA + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_PostQuantLoRADistill_KL_NonRecord/README.md",
+        "records/track_10min_16mb/2026-05-01_PostQuantLoRADistill_KL_NonRecord/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_PostQuantLoRADistill_KL_NonRecord/submission.json",
+        "records/track_10min_16mb/2026-05-01_PostQuantLoRADistill_KL_NonRecord/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_PostQuantLoRADistill_KL_NonRecord/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2126,
       "title": "Non-record: Redoing ZerO initialization + Follow-up to PR 2104",
@@ -1680,7 +1717,7 @@
       "author": "deniskurlov",
       "state": "OPEN",
       "created": "2026-05-01T04:01:01Z",
-      "updated": "2026-05-01T14:23:58Z",
+      "updated": "2026-05-01T21:28:30Z",
       "bpb": 1.1381,
       "seeds": 3,
       "artifact_bytes": 15720000,
@@ -2246,7 +2283,7 @@
       "author": "jamesEmerson112",
       "state": "OPEN",
       "created": "2026-05-01T02:13:22Z",
-      "updated": "2026-05-01T20:08:34Z",
+      "updated": "2026-05-01T21:09:28Z",
       "bpb": 1.0066,
       "seeds": 3,
       "artifact_bytes": 16000000,
