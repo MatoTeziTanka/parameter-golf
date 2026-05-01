@@ -1,7 +1,87 @@
 {
-  "last_fetch": "2026-05-01T09:03:09.018412+00:00",
-  "api_calls_used": 249,
+  "last_fetch": "2026-05-01T10:52:38.913552+00:00",
+  "api_calls_used": 250,
   "prs": [
+    {
+      "number": 2117,
+      "title": "Record support: 3-seed reproduction of PR #2101 + 3 ablations — val_b…",
+      "author": "JulianTang2027",
+      "state": "OPEN",
+      "created": "2026-05-01T09:54:15Z",
+      "updated": "2026-05-01T09:54:15Z",
+      "bpb": 0.00349,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_PR2101_3Seed_Support/README.md",
+        "records/track_10min_16mb/2026-05-01_PR2101_3Seed_Support/ablation_grad_centralize_seed42.log",
+        "records/track_10min_16mb/2026-05-01_PR2101_3Seed_Support/ablation_label_smooth_005_seed42.log",
+        "records/track_10min_16mb/2026-05-01_PR2101_3Seed_Support/ablation_ttt_local_lr_085_seed42.log",
+        "records/track_10min_16mb/2026-05-01_PR2101_3Seed_Support/submission.json",
+        "records/track_10min_16mb/2026-05-01_PR2101_3Seed_Support/train_seed0.log",
+        "records/track_10min_16mb/2026-05-01_PR2101_3Seed_Support/train_seed1234.log",
+        "records/track_10min_16mb/2026-05-01_PR2101_3Seed_Support/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2116,
+      "title": "Non-record: Inhibitory layer on PR #1851 stack (val_bpb 1.06438)",
+      "author": "cloud-777-boy",
+      "state": "OPEN",
+      "created": "2026-05-01T09:25:05Z",
+      "updated": "2026-05-01T09:33:09Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 15996198,
+      "technique_summary": "TTT + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-03-18_Quasi10Bfrom50B_SP1024_9x512_KV4_4h_pgut3/parameter-golf-mage fork.zip",
+        "records/track_non_record_16mb/inhibitor_layers_777-cloud-boy/LICENSE",
+        "records/track_non_record_16mb/inhibitor_layers_777-cloud-boy/README.md",
+        "records/track_non_record_16mb/inhibitor_layers_777-cloud-boy/THIRD_PARTY_NOTICES.md",
+        "records/track_non_record_16mb/inhibitor_layers_777-cloud-boy/final_model.int6.ptz",
+        "records/track_non_record_16mb/inhibitor_layers_777-cloud-boy/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_non_record_16mb/inhibitor_layers_777-cloud-boy/lossless_caps.py",
+        "records/track_non_record_16mb/inhibitor_layers_777-cloud-boy/prepare_caseops_data.py",
+        "records/track_non_record_16mb/inhibitor_layers_777-cloud-boy/requirements.txt",
+        "records/track_non_record_16mb/inhibitor_layers_777-cloud-boy/submission.json",
+        "records/track_non_record_16mb/inhibitor_layers_777-cloud-boy/train_gpt.py",
+        "records/track_non_record_16mb/inhibitor_layers_777-cloud-boy/train_log759a01c5-bd97-4ac6-b7fd-f21cc1afc0a4.txt",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2115,
       "title": "Non-record: Hopper regenerated adapters + B2B kernel prototype — documented negative result",
@@ -1554,7 +1634,7 @@
       "author": "teslaeco",
       "state": "OPEN",
       "created": "2026-05-01T02:57:30Z",
-      "updated": "2026-05-01T03:09:36Z",
+      "updated": "2026-05-01T09:47:44Z",
       "bpb": 0.92967555,
       "seeds": 3,
       "artifact_bytes": 15920000,
@@ -7709,7 +7789,7 @@
       "author": "squ11z1",
       "state": "OPEN",
       "created": "2026-04-29T12:02:54Z",
-      "updated": "2026-04-29T12:02:54Z",
+      "updated": "2026-05-01T10:42:31Z",
       "bpb": 0.005,
       "seeds": 3,
       "artifact_bytes": 18204,
