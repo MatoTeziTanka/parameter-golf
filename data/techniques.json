@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-01T14:01:00Z",
+  "generated_at": "2026-05-01T15:10:22Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 2023,
-    "matched_pr_count": 1523,
+    "pr_count": 2024,
+    "matched_pr_count": 1524,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -12,7 +12,7 @@
       "ALIVE": 371,
       "AT_RISK": 123,
       "DEAD": 540,
-      "INCOMPLETE": 978,
+      "INCOMPLETE": 979,
       "UNKNOWN": 0
     }
   },
@@ -56871,12 +56871,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 58,
-      "author_count": 42,
+      "count": 59,
+      "author_count": 43,
       "alive_count": 6,
       "dead_count": 7,
       "at_risk_count": 3,
-      "incomplete_count": 40,
+      "incomplete_count": 41,
       "unknown_count": 0,
       "best_alive": {
         "number": 1728,
@@ -57501,6 +57501,20 @@
           ]
         },
         {
+          "author": "KenMalloy",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 2122,
+              "author": "KenMalloy",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-05-01T15:06:21Z"
+            }
+          ]
+        },
+        {
           "author": "KRGulaj",
           "pr_count": 1,
           "best_bpb": null,
@@ -57991,6 +58005,13 @@
           "status": "INCOMPLETE",
           "bpb": 0.013,
           "created": "2026-05-01T07:13:26Z"
+        },
+        {
+          "number": 2122,
+          "author": "KenMalloy",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-05-01T15:06:21Z"
         }
       ]
     },
@@ -130876,12 +130897,12 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 58,
-      "author_count": 42,
+      "count": 59,
+      "author_count": 43,
       "alive_count": 6,
       "dead_count": 7,
       "at_risk_count": 3,
-      "incomplete_count": 40,
+      "incomplete_count": 41,
       "unknown_count": 0,
       "best_alive": {
         "number": 1728,
@@ -131506,6 +131527,20 @@
           ]
         },
         {
+          "author": "KenMalloy",
+          "pr_count": 1,
+          "best_bpb": null,
+          "prs": [
+            {
+              "number": 2122,
+              "author": "KenMalloy",
+              "status": "INCOMPLETE",
+              "bpb": null,
+              "created": "2026-05-01T15:06:21Z"
+            }
+          ]
+        },
+        {
           "author": "KRGulaj",
           "pr_count": 1,
           "best_bpb": null,
@@ -131996,6 +132031,13 @@
           "status": "INCOMPLETE",
           "bpb": 0.013,
           "created": "2026-05-01T07:13:26Z"
+        },
+        {
+          "number": 2122,
+          "author": "KenMalloy",
+          "status": "INCOMPLETE",
+          "bpb": null,
+          "created": "2026-05-01T15:06:21Z"
         }
       ]
     },
@@ -135974,28 +136016,28 @@
       "left": "LeakyReLU\u00b2",
       "right": "SSM/Mamba/S4D",
       "left_count": 115,
-      "right_count": 58,
+      "right_count": 59,
       "left_people": 89,
-      "right_people": 42,
-      "score": 6670
+      "right_people": 43,
+      "score": 6785
     },
     {
       "left": "BigramHash",
       "right": "SSM/Mamba/S4D",
       "left_count": 97,
-      "right_count": 58,
+      "right_count": 59,
       "left_people": 84,
-      "right_people": 42,
-      "score": 5626
+      "right_people": 43,
+      "score": 5723
     },
     {
       "left": "SWA",
       "right": "SSM/Mamba/S4D",
       "left_count": 87,
-      "right_count": 58,
+      "right_count": 59,
       "left_people": 74,
-      "right_people": 42,
-      "score": 5046
+      "right_people": 43,
+      "score": 5133
     },
     {
       "left": "QAT",
@@ -136153,11 +136195,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Parallel Muon",
-      "left_count": 58,
+      "left_count": 59,
       "right_count": 23,
-      "left_people": 42,
+      "left_people": 43,
       "right_people": 13,
-      "score": 1334
+      "score": 1357
     },
     {
       "left": "GPTQ",
@@ -136405,11 +136447,20 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Value Residual",
-      "left_count": 58,
+      "left_count": 59,
       "right_count": 9,
-      "left_people": 42,
+      "left_people": 43,
       "right_people": 7,
-      "score": 522
+      "score": 531
+    },
+    {
+      "left": "SSM/Mamba/S4D",
+      "right": "Weight Sharing",
+      "left_count": 59,
+      "right_count": 8,
+      "left_people": 43,
+      "right_people": 5,
+      "score": 472
     },
     {
       "left": "SwiGLU",
@@ -136422,21 +136473,12 @@
     },
     {
       "left": "SSM/Mamba/S4D",
-      "right": "Weight Sharing",
-      "left_count": 58,
-      "right_count": 8,
-      "left_people": 42,
-      "right_people": 5,
-      "score": 464
-    },
-    {
-      "left": "SSM/Mamba/S4D",
       "right": "Progressive Depth",
-      "left_count": 58,
+      "left_count": 59,
       "right_count": 7,
-      "left_people": 42,
+      "left_people": 43,
       "right_people": 3,
-      "score": 406
+      "score": 413
     },
     {
       "left": "JEPA",
@@ -136630,20 +136672,20 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Differential Attention",
-      "left_count": 58,
+      "left_count": 59,
       "right_count": 2,
-      "left_people": 42,
+      "left_people": 43,
       "right_people": 2,
-      "score": 116
+      "score": 118
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "U-Net skips",
-      "left_count": 58,
+      "left_count": 59,
       "right_count": 2,
-      "left_people": 42,
+      "left_people": 43,
       "right_people": 2,
-      "score": 116
+      "score": 118
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -136711,11 +136753,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Flash Attention",
-      "left_count": 58,
+      "left_count": 59,
       "right_count": 1,
-      "left_people": 42,
+      "left_people": 43,
       "right_people": 1,
-      "score": 58
+      "score": 59
     },
     {
       "left": "JEPA",

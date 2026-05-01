@@ -1,7 +1,46 @@
 {
-  "last_fetch": "2026-05-01T13:59:58.714462+00:00",
-  "api_calls_used": 252,
+  "last_fetch": "2026-05-01T15:09:18.292862+00:00",
+  "api_calls_used": 253,
   "prs": [
+    {
+      "number": 2122,
+      "title": "Add SemanticEngine CareSSM submission",
+      "author": "KenMalloy",
+      "state": "OPEN",
+      "created": "2026-05-01T15:06:21Z",
+      "updated": "2026-05-01T15:08:59Z",
+      "bpb": null,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "SSM",
+      "file_paths": [
+        "docs/plans/2026-05-01-semanticengine-implementation.md",
+        "docs/plans/2026-05-01-semanticengine-submission-design.md",
+        "records/track_10min_16mb/2026-05-01_SemanticEngine_CareSSM/README.md",
+        "records/track_10min_16mb/2026-05-01_SemanticEngine_CareSSM/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_SemanticEngine_CareSSM/submission.json",
+        "records/track_10min_16mb/2026-05-01_SemanticEngine_CareSSM/tokenizers/.gitkeep",
+        "records/track_10min_16mb/2026-05-01_SemanticEngine_CareSSM/train_gpt.py",
+        "tests/submission/__init__.py",
+        "tests/submission/test_train_gpt_hyperparams.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2121,
       "title": "Record candidate: StageB v2 CaseOps TTT seed42 1.06099764",
@@ -146,7 +185,7 @@
       "author": "aquariouseworkman",
       "state": "OPEN",
       "created": "2026-05-01T11:24:29Z",
-      "updated": "2026-05-01T11:24:29Z",
+      "updated": "2026-05-01T14:55:40Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1458,7 +1497,7 @@
       "author": "deniskurlov",
       "state": "OPEN",
       "created": "2026-05-01T04:01:01Z",
-      "updated": "2026-05-01T04:01:01Z",
+      "updated": "2026-05-01T14:23:58Z",
       "bpb": 1.1381,
       "seeds": 3,
       "artifact_bytes": 15720000,
