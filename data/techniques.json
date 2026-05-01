@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-01T21:59:08Z",
+  "generated_at": "2026-05-01T22:59:01Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 2029,
-    "matched_pr_count": 1528,
+    "pr_count": 2030,
+    "matched_pr_count": 1529,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 370,
+      "ALIVE": 371,
       "AT_RISK": 125,
       "DEAD": 542,
       "INCOMPLETE": 981,
@@ -20,9 +20,9 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 884,
+      "count": 885,
       "author_count": 406,
-      "alive_count": 242,
+      "alive_count": 243,
       "dead_count": 247,
       "at_risk_count": 81,
       "incomplete_count": 312,
@@ -496,8 +496,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00802237,
+              "status": "ALIVE",
+              "bpb": 1.03387,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -2701,6 +2701,41 @@
           ]
         },
         {
+          "author": "okezue",
+          "pr_count": 4,
+          "best_bpb": 1.01355,
+          "prs": [
+            {
+              "number": 1043,
+              "author": "okezue",
+              "status": "INCOMPLETE",
+              "bpb": 1.1261,
+              "created": "2026-03-28T23:07:58Z"
+            },
+            {
+              "number": 1879,
+              "author": "okezue",
+              "status": "INCOMPLETE",
+              "bpb": 1.0803,
+              "created": "2026-04-28T02:05:03Z"
+            },
+            {
+              "number": 1958,
+              "author": "okezue",
+              "status": "DEAD",
+              "bpb": 1.01355,
+              "created": "2026-04-30T03:26:04Z"
+            },
+            {
+              "number": 2129,
+              "author": "okezue",
+              "status": "AT_RISK",
+              "bpb": 1.05874,
+              "created": "2026-05-01T22:50:46Z"
+            }
+          ]
+        },
+        {
           "author": "BharathSShankar",
           "pr_count": 4,
           "best_bpb": 1.03983,
@@ -3572,34 +3607,6 @@
               "status": "DEAD",
               "bpb": 1.0108,
               "created": "2026-04-19T05:00:42Z"
-            }
-          ]
-        },
-        {
-          "author": "okezue",
-          "pr_count": 3,
-          "best_bpb": 1.01355,
-          "prs": [
-            {
-              "number": 1043,
-              "author": "okezue",
-              "status": "INCOMPLETE",
-              "bpb": 1.1261,
-              "created": "2026-03-28T23:07:58Z"
-            },
-            {
-              "number": 1879,
-              "author": "okezue",
-              "status": "INCOMPLETE",
-              "bpb": 1.0803,
-              "created": "2026-04-28T02:05:03Z"
-            },
-            {
-              "number": 1958,
-              "author": "okezue",
-              "status": "DEAD",
-              "bpb": 1.01355,
-              "created": "2026-04-30T03:26:04Z"
             }
           ]
         },
@@ -14822,8 +14829,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "AT_RISK",
-          "bpb": 0.00802237,
+          "status": "ALIVE",
+          "bpb": 1.03387,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -15252,15 +15259,22 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-05-01T15:58:50Z"
+        },
+        {
+          "number": 2129,
+          "author": "okezue",
+          "status": "AT_RISK",
+          "bpb": 1.05874,
+          "created": "2026-05-01T22:50:46Z"
         }
       ]
     },
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 579,
+      "count": 580,
       "author_count": 272,
-      "alive_count": 183,
+      "alive_count": 184,
       "dead_count": 152,
       "at_risk_count": 61,
       "incomplete_count": 178,
@@ -15792,7 +15806,7 @@
         {
           "author": "Christopher-Lee-McClendon",
           "pr_count": 13,
-          "best_bpb": 0.00802237,
+          "best_bpb": 0.00975,
           "prs": [
             {
               "number": 456,
@@ -15881,8 +15895,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00802237,
+              "status": "ALIVE",
+              "bpb": 1.03387,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -17561,6 +17575,34 @@
           ]
         },
         {
+          "author": "okezue",
+          "pr_count": 3,
+          "best_bpb": 1.01355,
+          "prs": [
+            {
+              "number": 1958,
+              "author": "okezue",
+              "status": "DEAD",
+              "bpb": 1.01355,
+              "created": "2026-04-30T03:26:04Z"
+            },
+            {
+              "number": 2128,
+              "author": "okezue",
+              "status": "INCOMPLETE",
+              "bpb": 1.06767,
+              "created": "2026-05-01T21:10:38Z"
+            },
+            {
+              "number": 2129,
+              "author": "okezue",
+              "status": "AT_RISK",
+              "bpb": 1.05874,
+              "created": "2026-05-01T22:50:46Z"
+            }
+          ]
+        },
+        {
           "author": "anmarhindi",
           "pr_count": 3,
           "best_bpb": 1.015784,
@@ -18215,27 +18257,6 @@
               "status": "ALIVE",
               "bpb": 0.9485,
               "created": "2026-03-31T16:01:28Z"
-            }
-          ]
-        },
-        {
-          "author": "okezue",
-          "pr_count": 2,
-          "best_bpb": 1.01355,
-          "prs": [
-            {
-              "number": 1958,
-              "author": "okezue",
-              "status": "DEAD",
-              "bpb": 1.01355,
-              "created": "2026-04-30T03:26:04Z"
-            },
-            {
-              "number": 2128,
-              "author": "okezue",
-              "status": "INCOMPLETE",
-              "bpb": 1.06767,
-              "created": "2026-05-01T21:10:38Z"
             }
           ]
         },
@@ -25041,8 +25062,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "AT_RISK",
-          "bpb": 0.00802237,
+          "status": "ALIVE",
+          "bpb": 1.03387,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -25282,6 +25303,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.06767,
           "created": "2026-05-01T21:10:38Z"
+        },
+        {
+          "number": 2129,
+          "author": "okezue",
+          "status": "AT_RISK",
+          "bpb": 1.05874,
+          "created": "2026-05-01T22:50:46Z"
         }
       ]
     },
@@ -25290,9 +25318,9 @@
       "kind": "legal",
       "count": 575,
       "author_count": 300,
-      "alive_count": 142,
+      "alive_count": 143,
       "dead_count": 166,
-      "at_risk_count": 56,
+      "at_risk_count": 55,
       "incomplete_count": 205,
       "unknown_count": 0,
       "best_alive": {
@@ -25687,8 +25715,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00802237,
+              "status": "ALIVE",
+              "bpb": 1.03387,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -35302,8 +35330,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "AT_RISK",
-          "bpb": 0.00802237,
+          "status": "ALIVE",
+          "bpb": 1.03387,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -61027,11 +61055,11 @@
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 358,
+      "count": 359,
       "author_count": 148,
       "alive_count": 92,
       "dead_count": 126,
-      "at_risk_count": 80,
+      "at_risk_count": 81,
       "incomplete_count": 55,
       "unknown_count": 0,
       "best_alive": {
@@ -62763,6 +62791,34 @@
           ]
         },
         {
+          "author": "okezue",
+          "pr_count": 3,
+          "best_bpb": 1.01355,
+          "prs": [
+            {
+              "number": 1958,
+              "author": "okezue",
+              "status": "DEAD",
+              "bpb": 1.01355,
+              "created": "2026-04-30T03:26:04Z"
+            },
+            {
+              "number": 2128,
+              "author": "okezue",
+              "status": "INCOMPLETE",
+              "bpb": 1.06767,
+              "created": "2026-05-01T21:10:38Z"
+            },
+            {
+              "number": 2129,
+              "author": "okezue",
+              "status": "AT_RISK",
+              "bpb": 1.05874,
+              "created": "2026-05-01T22:50:46Z"
+            }
+          ]
+        },
+        {
           "author": "stukenov",
           "pr_count": 3,
           "best_bpb": 1.0222,
@@ -63228,27 +63284,6 @@
               "status": "DEAD",
               "bpb": 1.0108,
               "created": "2026-04-19T05:00:42Z"
-            }
-          ]
-        },
-        {
-          "author": "okezue",
-          "pr_count": 2,
-          "best_bpb": 1.01355,
-          "prs": [
-            {
-              "number": 1958,
-              "author": "okezue",
-              "status": "DEAD",
-              "bpb": 1.01355,
-              "created": "2026-04-30T03:26:04Z"
-            },
-            {
-              "number": 2128,
-              "author": "okezue",
-              "status": "INCOMPLETE",
-              "bpb": 1.06767,
-              "created": "2026-05-01T21:10:38Z"
             }
           ]
         },
@@ -67089,6 +67124,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.06767,
           "created": "2026-05-01T21:10:38Z"
+        },
+        {
+          "number": 2129,
+          "author": "okezue",
+          "status": "AT_RISK",
+          "bpb": 1.05874,
+          "created": "2026-05-01T22:50:46Z"
         }
       ]
     },
@@ -68293,9 +68335,9 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 884,
+      "count": 885,
       "author_count": 406,
-      "alive_count": 242,
+      "alive_count": 243,
       "dead_count": 247,
       "at_risk_count": 81,
       "incomplete_count": 312,
@@ -68769,8 +68811,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00802237,
+              "status": "ALIVE",
+              "bpb": 1.03387,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -70974,6 +71016,41 @@
           ]
         },
         {
+          "author": "okezue",
+          "pr_count": 4,
+          "best_bpb": 1.01355,
+          "prs": [
+            {
+              "number": 1043,
+              "author": "okezue",
+              "status": "INCOMPLETE",
+              "bpb": 1.1261,
+              "created": "2026-03-28T23:07:58Z"
+            },
+            {
+              "number": 1879,
+              "author": "okezue",
+              "status": "INCOMPLETE",
+              "bpb": 1.0803,
+              "created": "2026-04-28T02:05:03Z"
+            },
+            {
+              "number": 1958,
+              "author": "okezue",
+              "status": "DEAD",
+              "bpb": 1.01355,
+              "created": "2026-04-30T03:26:04Z"
+            },
+            {
+              "number": 2129,
+              "author": "okezue",
+              "status": "AT_RISK",
+              "bpb": 1.05874,
+              "created": "2026-05-01T22:50:46Z"
+            }
+          ]
+        },
+        {
           "author": "BharathSShankar",
           "pr_count": 4,
           "best_bpb": 1.03983,
@@ -71845,34 +71922,6 @@
               "status": "DEAD",
               "bpb": 1.0108,
               "created": "2026-04-19T05:00:42Z"
-            }
-          ]
-        },
-        {
-          "author": "okezue",
-          "pr_count": 3,
-          "best_bpb": 1.01355,
-          "prs": [
-            {
-              "number": 1043,
-              "author": "okezue",
-              "status": "INCOMPLETE",
-              "bpb": 1.1261,
-              "created": "2026-03-28T23:07:58Z"
-            },
-            {
-              "number": 1879,
-              "author": "okezue",
-              "status": "INCOMPLETE",
-              "bpb": 1.0803,
-              "created": "2026-04-28T02:05:03Z"
-            },
-            {
-              "number": 1958,
-              "author": "okezue",
-              "status": "DEAD",
-              "bpb": 1.01355,
-              "created": "2026-04-30T03:26:04Z"
             }
           ]
         },
@@ -83095,8 +83144,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "AT_RISK",
-          "bpb": 0.00802237,
+          "status": "ALIVE",
+          "bpb": 1.03387,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -83525,6 +83574,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-05-01T15:58:50Z"
+        },
+        {
+          "number": 2129,
+          "author": "okezue",
+          "status": "AT_RISK",
+          "bpb": 1.05874,
+          "created": "2026-05-01T22:50:46Z"
         }
       ]
     },
@@ -93598,9 +93654,9 @@
       "kind": "legal",
       "count": 575,
       "author_count": 300,
-      "alive_count": 142,
+      "alive_count": 143,
       "dead_count": 166,
-      "at_risk_count": 56,
+      "at_risk_count": 55,
       "incomplete_count": 205,
       "unknown_count": 0,
       "best_alive": {
@@ -93995,8 +94051,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00802237,
+              "status": "ALIVE",
+              "bpb": 1.03387,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -103610,8 +103666,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "AT_RISK",
-          "bpb": 0.00802237,
+          "status": "ALIVE",
+          "bpb": 1.03387,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -103766,9 +103822,9 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 579,
+      "count": 580,
       "author_count": 272,
-      "alive_count": 183,
+      "alive_count": 184,
       "dead_count": 152,
       "at_risk_count": 61,
       "incomplete_count": 178,
@@ -104300,7 +104356,7 @@
         {
           "author": "Christopher-Lee-McClendon",
           "pr_count": 13,
-          "best_bpb": 0.00802237,
+          "best_bpb": 0.00975,
           "prs": [
             {
               "number": 456,
@@ -104389,8 +104445,8 @@
             {
               "number": 2008,
               "author": "Christopher-Lee-McClendon",
-              "status": "AT_RISK",
-              "bpb": 0.00802237,
+              "status": "ALIVE",
+              "bpb": 1.03387,
               "created": "2026-04-30T20:06:37Z"
             }
           ]
@@ -106069,6 +106125,34 @@
           ]
         },
         {
+          "author": "okezue",
+          "pr_count": 3,
+          "best_bpb": 1.01355,
+          "prs": [
+            {
+              "number": 1958,
+              "author": "okezue",
+              "status": "DEAD",
+              "bpb": 1.01355,
+              "created": "2026-04-30T03:26:04Z"
+            },
+            {
+              "number": 2128,
+              "author": "okezue",
+              "status": "INCOMPLETE",
+              "bpb": 1.06767,
+              "created": "2026-05-01T21:10:38Z"
+            },
+            {
+              "number": 2129,
+              "author": "okezue",
+              "status": "AT_RISK",
+              "bpb": 1.05874,
+              "created": "2026-05-01T22:50:46Z"
+            }
+          ]
+        },
+        {
           "author": "anmarhindi",
           "pr_count": 3,
           "best_bpb": 1.015784,
@@ -106723,27 +106807,6 @@
               "status": "ALIVE",
               "bpb": 0.9485,
               "created": "2026-03-31T16:01:28Z"
-            }
-          ]
-        },
-        {
-          "author": "okezue",
-          "pr_count": 2,
-          "best_bpb": 1.01355,
-          "prs": [
-            {
-              "number": 1958,
-              "author": "okezue",
-              "status": "DEAD",
-              "bpb": 1.01355,
-              "created": "2026-04-30T03:26:04Z"
-            },
-            {
-              "number": 2128,
-              "author": "okezue",
-              "status": "INCOMPLETE",
-              "bpb": 1.06767,
-              "created": "2026-05-01T21:10:38Z"
             }
           ]
         },
@@ -113549,8 +113612,8 @@
         {
           "number": 2008,
           "author": "Christopher-Lee-McClendon",
-          "status": "AT_RISK",
-          "bpb": 0.00802237,
+          "status": "ALIVE",
+          "bpb": 1.03387,
           "created": "2026-04-30T20:06:37Z"
         },
         {
@@ -113790,17 +113853,24 @@
           "status": "INCOMPLETE",
           "bpb": 1.06767,
           "created": "2026-05-01T21:10:38Z"
+        },
+        {
+          "number": 2129,
+          "author": "okezue",
+          "status": "AT_RISK",
+          "bpb": 1.05874,
+          "created": "2026-05-01T22:50:46Z"
         }
       ]
     },
     {
       "name": "N-gram Cache",
       "kind": "banned",
-      "count": 358,
+      "count": 359,
       "author_count": 148,
       "alive_count": 92,
       "dead_count": 126,
-      "at_risk_count": 80,
+      "at_risk_count": 81,
       "incomplete_count": 55,
       "unknown_count": 0,
       "best_alive": {
@@ -115532,6 +115602,34 @@
           ]
         },
         {
+          "author": "okezue",
+          "pr_count": 3,
+          "best_bpb": 1.01355,
+          "prs": [
+            {
+              "number": 1958,
+              "author": "okezue",
+              "status": "DEAD",
+              "bpb": 1.01355,
+              "created": "2026-04-30T03:26:04Z"
+            },
+            {
+              "number": 2128,
+              "author": "okezue",
+              "status": "INCOMPLETE",
+              "bpb": 1.06767,
+              "created": "2026-05-01T21:10:38Z"
+            },
+            {
+              "number": 2129,
+              "author": "okezue",
+              "status": "AT_RISK",
+              "bpb": 1.05874,
+              "created": "2026-05-01T22:50:46Z"
+            }
+          ]
+        },
+        {
           "author": "stukenov",
           "pr_count": 3,
           "best_bpb": 1.0222,
@@ -115997,27 +116095,6 @@
               "status": "DEAD",
               "bpb": 1.0108,
               "created": "2026-04-19T05:00:42Z"
-            }
-          ]
-        },
-        {
-          "author": "okezue",
-          "pr_count": 2,
-          "best_bpb": 1.01355,
-          "prs": [
-            {
-              "number": 1958,
-              "author": "okezue",
-              "status": "DEAD",
-              "bpb": 1.01355,
-              "created": "2026-04-30T03:26:04Z"
-            },
-            {
-              "number": 2128,
-              "author": "okezue",
-              "status": "INCOMPLETE",
-              "bpb": 1.06767,
-              "created": "2026-05-01T21:10:38Z"
             }
           ]
         },
@@ -119858,6 +119935,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.06767,
           "created": "2026-05-01T21:10:38Z"
+        },
+        {
+          "number": 2129,
+          "author": "okezue",
+          "status": "AT_RISK",
+          "bpb": 1.05874,
+          "created": "2026-05-01T22:50:46Z"
         }
       ]
     },
@@ -136746,11 +136830,11 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 884,
+      "left_count": 885,
       "right_count": 2,
       "left_people": 406,
       "right_people": 2,
-      "score": 1768
+      "score": 1770
     },
     {
       "left": "SSM/Mamba/S4D",
@@ -136764,20 +136848,20 @@
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 579,
+      "left_count": 580,
       "right_count": 2,
       "left_people": 272,
       "right_people": 2,
-      "score": 1158
+      "score": 1160
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 579,
+      "left_count": 580,
       "right_count": 2,
       "left_people": 272,
       "right_people": 2,
-      "score": 1158
+      "score": 1160
     },
     {
       "left": "EMA",
@@ -136836,11 +136920,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 884,
+      "left_count": 885,
       "right_count": 1,
       "left_people": 406,
       "right_people": 1,
-      "score": 884
+      "score": 885
     },
     {
       "left": "QAT",
@@ -136971,11 +137055,11 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 579,
+      "left_count": 580,
       "right_count": 1,
       "left_people": 272,
       "right_people": 1,
-      "score": 579
+      "score": 580
     },
     {
       "left": "EMA",

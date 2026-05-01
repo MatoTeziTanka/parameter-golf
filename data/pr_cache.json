@@ -1,14 +1,57 @@
 {
-  "last_fetch": "2026-05-01T21:58:18.999438+00:00",
-  "api_calls_used": 258,
+  "last_fetch": "2026-05-01T22:58:16.568527+00:00",
+  "api_calls_used": 259,
   "prs": [
+    {
+      "number": 2129,
+      "title": "Non-record: Confidence-Adaptive N-gram Boost on PR #2018 stack, val_bpb=1.05874",
+      "author": "okezue",
+      "state": "OPEN",
+      "created": "2026-05-01T22:50:46Z",
+      "updated": "2026-05-01T22:50:46Z",
+      "bpb": 1.05874,
+      "seeds": 2,
+      "artifact_bytes": 15990227,
+      "technique_summary": "TTT + GPTQ + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_AdaptiveBoost_NgramTilt_NonRecord/README.md",
+        "records/track_10min_16mb/2026-05-01_AdaptiveBoost_NgramTilt_NonRecord/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_AdaptiveBoost_NgramTilt_NonRecord/online_ngram_state.c",
+        "records/track_10min_16mb/2026-05-01_AdaptiveBoost_NgramTilt_NonRecord/online_ngram_tilt.py",
+        "records/track_10min_16mb/2026-05-01_AdaptiveBoost_NgramTilt_NonRecord/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_AdaptiveBoost_NgramTilt_NonRecord/run.sh",
+        "records/track_10min_16mb/2026-05-01_AdaptiveBoost_NgramTilt_NonRecord/submission.json",
+        "records/track_10min_16mb/2026-05-01_AdaptiveBoost_NgramTilt_NonRecord/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_AdaptiveBoost_NgramTilt_NonRecord/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "ngram_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 2128,
       "title": "Non-record: Post-Quantization LoRA Distillation (LCQ) on PR #1855 stack, val_bpb=1.06767",
       "author": "okezue",
       "state": "OPEN",
       "created": "2026-05-01T21:10:38Z",
-      "updated": "2026-05-01T21:10:38Z",
+      "updated": "2026-05-01T22:47:34Z",
       "bpb": 1.06767,
       "seeds": 2,
       "artifact_bytes": 15912974,
@@ -1564,7 +1607,7 @@
       "author": "AlirezaAlampour",
       "state": "OPEN",
       "created": "2026-05-01T04:05:48Z",
-      "updated": "2026-05-01T05:27:40Z",
+      "updated": "2026-05-01T22:51:57Z",
       "bpb": null,
       "seeds": 42,
       "artifact_bytes": 15500000,
@@ -2283,7 +2326,7 @@
       "author": "jamesEmerson112",
       "state": "OPEN",
       "created": "2026-05-01T02:13:22Z",
-      "updated": "2026-05-01T21:09:28Z",
+      "updated": "2026-05-01T22:03:07Z",
       "bpb": 1.0066,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -4902,16 +4945,17 @@
     },
     {
       "number": 2008,
-      "title": "[Non-Record] 6h Long-Train Scaling + TTT Sweep: Post-TTT BPB 1.03471",
+      "title": "[Non-Record] 6h Long-Train Scaling + TTT Sweep: Post-TTT BPB 1.03387",
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-04-30T20:06:37Z",
-      "updated": "2026-05-01T20:34:22Z",
-      "bpb": 0.00802237,
+      "updated": "2026-05-01T22:57:27Z",
+      "bpb": 1.03387,
       "seeds": 3,
       "artifact_bytes": 15926271,
       "technique_summary": "TTT + LoRA + GPTQ + EMA",
       "file_paths": [
+        "AGENTS.md",
         "pr_4h_longtrain_body.md",
         "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/README.md",
         "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/requirements.txt",
@@ -4932,6 +4976,7 @@
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/README.md",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/notes/IMPLEMENTATION_NOTES.md",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/pgolf_stdout.txt",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/reproducibility.md",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_10min.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_20min.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_30min.json",
@@ -4943,6 +4988,7 @@
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/followups/300min_stage_decomposition.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/followups/360min_prequant_followup.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/followups/followup_controls_summary.csv",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/followups/qv_ablation_sweep_summary.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/scaling_results.csv",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/sliding_eval_summary.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/ttt_sweep_manifest.json",
@@ -4958,10 +5004,7 @@
         "scripts/pod_selfterm.py",
         "scripts/run_longtrain_scaling.py",
         "scripts/run_longtrain_ttt_sweep.py",
-        "scripts/runpod_http_rehearsal.py",
-        "scripts/runpod_safe.py",
-        "tests/test_launcher_longtrain.py",
-        "tests/test_resume_checkpoint.py"
+        "scripts/runpod_http_rehearsal.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -4975,12 +5018,9 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "AT_RISK",
-      "flags": [
-        "suspiciously-low-bpb"
-      ],
-      "confidence": "MEDIUM",
-      "flag_reason": "Suspiciously low BPB — likely non-neural"
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
     },
     {
       "number": 2007,
