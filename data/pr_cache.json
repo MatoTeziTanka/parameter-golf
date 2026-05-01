@@ -1,7 +1,50 @@
 {
-  "last_fetch": "2026-05-01T18:00:52.441309+00:00",
-  "api_calls_used": 255,
+  "last_fetch": "2026-05-01T19:47:38.774451+00:00",
+  "api_calls_used": 256,
   "prs": [
+    {
+      "number": 2126,
+      "title": "Non-record: Redoing ZerO initialization + Follow-up to PR 2104",
+      "author": "AlstonTang",
+      "state": "OPEN",
+      "created": "2026-05-01T19:09:14Z",
+      "updated": "2026-05-01T19:09:58Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_ZerO _init+progressive_kv_rope_and_mlp_mult/56869d79-f695-4ef4-a7ee-2ff630965978.txt",
+        "records/track_non_record_16mb/2026-04-30_ZerO _init+progressive_kv_rope_and_mlp_mult/README.md",
+        "records/track_non_record_16mb/2026-04-30_ZerO _init+progressive_kv_rope_and_mlp_mult/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_ZerO _init+progressive_kv_rope_and_mlp_mult/submission.json",
+        "records/track_non_record_16mb/2026-04-30_ZerO _init+progressive_kv_rope_and_mlp_mult/train_gpt.py",
+        "records/track_non_record_16mb/2026-05-01_Follow_up_to_PR_2104/README.md",
+        "records/track_non_record_16mb/2026-05-01_Follow_up_to_PR_2104/requirements.txt",
+        "records/track_non_record_16mb/2026-05-01_Follow_up_to_PR_2104/run_logs/24d3334a-0ddf-45ca-8be8-9dbd470f8866.txt",
+        "records/track_non_record_16mb/2026-05-01_Follow_up_to_PR_2104/run_logs/3c25e790-2f8a-4c36-881c-67066cf1e465.txt",
+        "records/track_non_record_16mb/2026-05-01_Follow_up_to_PR_2104/run_logs/8c0bf12c-29d7-4dad-8cb7-6fa04b89b309.txt",
+        "records/track_non_record_16mb/2026-05-01_Follow_up_to_PR_2104/run_logs/bf9a8898-d4e8-40dd-8786-320b140eb700.txt",
+        "records/track_non_record_16mb/2026-05-01_Follow_up_to_PR_2104/run_logs/e31e596e-e21a-4c48-829c-78233c992cc8.txt",
+        "records/track_non_record_16mb/2026-05-01_Follow_up_to_PR_2104/run_logs/fe927335-4827-415a-b543-8b5d2706de4c.txt",
+        "records/track_non_record_16mb/2026-05-01_Follow_up_to_PR_2104/submission.json",
+        "records/track_non_record_16mb/2026-05-01_Follow_up_to_PR_2104/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2125,
       "title": "add pr2069 best 8xh100 submission package",
@@ -2585,7 +2628,7 @@
       "author": "alexdwu13",
       "state": "OPEN",
       "created": "2026-05-01T00:20:17Z",
-      "updated": "2026-05-01T00:25:39Z",
+      "updated": "2026-05-01T18:55:54Z",
       "bpb": 0.0044,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -4824,11 +4867,11 @@
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-04-30T20:06:37Z",
-      "updated": "2026-05-01T15:51:53Z",
-      "bpb": 0.004,
+      "updated": "2026-05-01T18:13:12Z",
+      "bpb": 0.00802,
       "seeds": 3,
       "artifact_bytes": 15926271,
-      "technique_summary": "TTT + LoRA",
+      "technique_summary": "TTT + LoRA + GPTQ + INT6",
       "file_paths": [
         "pr_4h_longtrain_body.md",
         "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/README.md",
@@ -4858,9 +4901,11 @@
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_60min.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/experiment_summary.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/scaling_results.csv",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/sliding_eval_summary.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/ttt_sweep_manifest.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/ttt_sweep_results.csv",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/ttt_sweep_summary.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/v_sliding_window_control_variant_result.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/scripts/analyze_scaling.py",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/scripts/make_larger_variant_plan.py",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/scripts/run_longtrain_scaling.sh",
@@ -4875,7 +4920,8 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
-        "ttt"
+        "ttt",
+        "gptq_eval"
       ],
       "track": "non-record",
       "technique_type": "ttt",
@@ -10772,7 +10818,7 @@
       "author": "codemath3000",
       "state": "MERGED",
       "created": "2026-04-27T10:49:13Z",
-      "updated": "2026-04-30T17:50:14Z",
+      "updated": "2026-05-01T19:06:47Z",
       "bpb": 1.06108,
       "seeds": 3,
       "artifact_bytes": 16000000,
