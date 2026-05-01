@@ -1,7 +1,497 @@
 {
-  "last_fetch": "2026-05-01T06:39:06.632757+00:00",
-  "api_calls_used": 248,
+  "last_fetch": "2026-05-01T09:03:09.018412+00:00",
+  "api_calls_used": 249,
   "prs": [
+    {
+      "number": 2115,
+      "title": "Non-record: Hopper regenerated adapters + B2B kernel prototype — documented negative result",
+      "author": "Sacmaj",
+      "state": "OPEN",
+      "created": "2026-05-01T08:12:06Z",
+      "updated": "2026-05-01T09:00:09Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "LoRA + INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/README.md",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/include/gemm_hopper/generator.hpp",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/include/gemm_hopper/reference.hpp",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/include/gemm_hopper/ternary.hpp",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/python/__init__.py",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/python/gemm_hopper.py",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/python/gemm_hopper_native.cpp",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/python/gemm_hopper_native_kernel.cu",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/requirements.txt",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/src/reference.cpp",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/submission.json",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/train_runpod_1h100_base_ablation_297step.log",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/train_runpod_1h100_native_10m.log",
+        "records/track_non_record_16mb/2026-04-28_HopperRegenAdapterB2B/train_runpod_1h100_smart_roles_ablation_297step.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2114,
+      "title": "Non-record: UT7 delta-residual + RLMA-rank320 — documented failed direction (val_bpb 1.29740, 2-seed 1xH100)",
+      "author": "Sacmaj",
+      "state": "OPEN",
+      "created": "2026-05-01T07:45:45Z",
+      "updated": "2026-05-01T07:45:45Z",
+      "bpb": 1.2974,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/README.md",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/launch_10min_sanity.sh",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/launch_production.sh",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/submission.json",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/supporting_logs/README.md",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/supporting_logs/clip_sweep_seed314.log",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/supporting_logs/delta_residual_240step_seed42.log",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/supporting_logs/old_residual_240step_seed42.log",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/supporting_logs/rank256_noTTT_screen_60step.log",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/supporting_logs/rank320_screen_seed42.log",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/train_seed314.log",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-30_UT7_delta_recurrent_clean/train_seed42_cap_hardening.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2113,
+      "title": "Non-record: CustomToken2050 Compact Core 416d, 1.3967 BPB two-day proof of direction",
+      "author": "Carter2565",
+      "state": "OPEN",
+      "created": "2026-05-01T07:23:18Z",
+      "updated": "2026-05-01T07:23:18Z",
+      "bpb": 1.3967,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_CustomToken2050_CompactCore_416d_1.3967/README.md",
+        "records/track_non_record_16mb/2026-04-30_CustomToken2050_CompactCore_416d_1.3967/submission.json",
+        "records/track_non_record_16mb/2026-04-30_CustomToken2050_CompactCore_416d_1.3967/train.log",
+        "records/track_non_record_16mb/2026-04-30_CustomToken2050_CompactCore_416d_1.3967/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2112,
+      "title": "Non record: In DRAM compute quantized ternary + int4",
+      "author": "fingoldin",
+      "state": "OPEN",
+      "created": "2026-05-01T07:17:13Z",
+      "updated": "2026-05-01T07:29:36Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/in_dram/README.md",
+        "records/in_dram/img/Fig_12.png",
+        "records/in_dram/img/Fig_14.png",
+        "records/in_dram/log.txt",
+        "records/in_dram/submission.json",
+        "records/in_dram/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2111,
+      "title": "Non-record: competition research notes",
+      "author": "himanshudongre",
+      "state": "OPEN",
+      "created": "2026-05-01T07:13:26Z",
+      "updated": "2026-05-01T07:28:59Z",
+      "bpb": 0.013,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + SSM + GPTQ + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-01_Competition_Research_Notes/README.md",
+        "records/track_non_record_16mb/2026-05-01_Competition_Research_Notes/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2110,
+      "title": "Non-record: final frontier autopsy",
+      "author": "himanshudongre",
+      "state": "OPEN",
+      "created": "2026-05-01T07:11:10Z",
+      "updated": "2026-05-01T07:22:38Z",
+      "bpb": 1.06385301,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-01_Final_Frontier_Autopsy/README.md",
+        "records/track_non_record_16mb/2026-05-01_Final_Frontier_Autopsy/logs/planA_2018_qaware_gate32_seed1337.log",
+        "records/track_non_record_16mb/2026-05-01_Final_Frontier_Autopsy/logs/planA_metrics_and_decision.jsonish",
+        "records/track_non_record_16mb/2026-05-01_Final_Frontier_Autopsy/logs/planB_2018_native_gate32_seed1337_prequant_killed.log",
+        "records/track_non_record_16mb/2026-05-01_Final_Frontier_Autopsy/logs/planB_metrics_and_decision.jsonish",
+        "records/track_non_record_16mb/2026-05-01_Final_Frontier_Autopsy/logs/planC_terminal_observation.md",
+        "records/track_non_record_16mb/2026-05-01_Final_Frontier_Autopsy/scripts/patch_bigramhash_frontier.py",
+        "records/track_non_record_16mb/2026-05-01_Final_Frontier_Autopsy/scripts/patch_path_a_v3_small_frontier.py",
+        "records/track_non_record_16mb/2026-05-01_Final_Frontier_Autopsy/scripts/patch_qaware_ngram_2018.py",
+        "records/track_non_record_16mb/2026-05-01_Final_Frontier_Autopsy/scripts/pod_move39_gate_scout.sh",
+        "records/track_non_record_16mb/2026-05-01_Final_Frontier_Autopsy/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "ngram_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 2109,
+      "title": "Track 2: PR #1855 + MP3 marker-pair fusion + alias smear boundary (val_bpb 1.05917838, 3-seed avg)",
+      "author": "izlley",
+      "state": "OPEN",
+      "created": "2026-05-01T07:04:41Z",
+      "updated": "2026-05-01T08:43:00Z",
+      "bpb": 1.05917838,
+      "seeds": 3,
+      "artifact_bytes": 15907150,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/README.md",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/alias_map.json",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/download_docs.py",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/prepare_marker_pair_v3.py",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/requirements.txt",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/run_3seed.sh",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/submission.json",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_seed0.log",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_seed314.log",
+        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2108,
+      "title": "Closed: superseded non-record draft",
+      "author": "himanshudongre",
+      "state": "CLOSED",
+      "created": "2026-05-01T07:01:38Z",
+      "updated": "2026-05-01T07:08:41Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/PR_BODY.md",
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/README.md",
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/logs/planA_2018_qaware_gate32_seed1337.log",
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/logs/planA_metrics_and_decision.jsonish",
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/logs/planB_2018_native_gate32_seed1337_prequant_killed.log",
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/logs/planB_metrics_and_decision.jsonish",
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/logs/planC_terminal_observation.md",
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/scripts/patch_bigramhash_frontier.py",
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/scripts/patch_path_a_v3_small_frontier.py",
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/scripts/patch_qaware_ngram_2018.py",
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/scripts/pod_move39_gate_scout.sh",
+        "records/track_non_record_16mb/2026-05-01_LastDay_Frontier_Transfer_Autopsy/submission.json",
+        "records/track_non_record_16mb/2026-05-01_Parameter_Golf_Competition_Synthesis/MAINTAINER_BRIEF.md",
+        "records/track_non_record_16mb/2026-05-01_Parameter_Golf_Competition_Synthesis/OPENAI_RESEARCH_BRIEF.md",
+        "records/track_non_record_16mb/2026-05-01_Parameter_Golf_Competition_Synthesis/PARTICIPATION_ARC.md",
+        "records/track_non_record_16mb/2026-05-01_Parameter_Golf_Competition_Synthesis/PR_BODY.md",
+        "records/track_non_record_16mb/2026-05-01_Parameter_Golf_Competition_Synthesis/README.md",
+        "records/track_non_record_16mb/2026-05-01_Parameter_Golf_Competition_Synthesis/RESEARCH_NOTES.md",
+        "records/track_non_record_16mb/2026-05-01_Parameter_Golf_Competition_Synthesis/SOURCES.md",
+        "records/track_non_record_16mb/2026-05-01_Parameter_Golf_Competition_Synthesis/submission.json"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram_path"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 2107,
+      "title": "[Non-record] 1.1999 BPB on a single H100 GPU (~1.064 BPB on 8x): Adaptive Recurrent Transformer Architecture",
+      "author": "TidalTunes",
+      "state": "OPEN",
+      "created": "2026-05-01T07:00:55Z",
+      "updated": "2026-05-01T07:26:08Z",
+      "bpb": 1.1999,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/README.md",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/logs/art_1_dashboard_20260417_013525_a3d8aea8.stdout.log",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/logs/art_2_5_dashboard_20260420_004715_e49b5f70.stdout.log",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/logs/art_2_dashboard_20260419_161439_9b946387.stdout.log",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/logs/art_3_dashboard_20260419_225908_cf9443b3.stdout.log",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/logs/art_saved_rope_ttt_dashboard_20260429_162729_57cac6b0.stdout.log",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/logs/pr1812_art_dashboard_20260429_224456_a9eaabed.stdout.log",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/logs/pr1855_simple_art_dashboard_20260430_224429_ad4a36d5.stdout.log",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/logs/pr1855_soft_art_dashboard_20260430_204203_abf0ec8e.stdout.log",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/logs/triple_art_small_batch_dashboard_20260429_192817_de3b33e8.stdout.log",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/submission.json",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/train_gpt.py",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/training_files/art_1.py",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/training_files/art_2.py",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/training_files/art_2_5.py",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/training_files/art_3.py",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/training_files/art_saved_rope_ttt.py",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/training_files/pr1812_art.py",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/training_files/pr1855_simple_art.py",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/training_files/pr1855_soft_art.py",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/training_files/run_variant.py",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/training_files/train_gpt_base_prettt.py",
+        "records/track_non_record_16mb/2026-05-01_AdaptiveRecurrentTransformer_ART/training_files/triple_art_small_batch.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2106,
+      "title": "Record: SP8192+DepthRec+Half batch SWA+Polar NS+Phased LoRa TTT - val_bpb 1.089 (best), val_bpb 1.090 (3-seed mean) - PiyushDatta",
+      "author": "PiyushDatta",
+      "state": "OPEN",
+      "created": "2026-05-01T06:56:53Z",
+      "updated": "2026-05-01T08:37:10Z",
+      "bpb": null,
+      "seeds": 2,
+      "artifact_bytes": 15999684,
+      "technique_summary": "TTT + SwiGLU + LoRA + GPTQ + Two-pass",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/README.md",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/decompress_train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/eval_only.py",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/generate_submission_logs.py",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/logs/seed_314.log",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/logs/seed_42.log",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/logs/seed_999.log",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/logs_summary.md",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/requirements.txt",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/run_final_submission.sh",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/runpod_8xh100_parameter_golf_setup.md",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/submission.json",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/train_gpt_decompressed.py",
+        "records/track_10min_16mb/2026-04-30_PiyushDatta_SP8192_DepthRecur_PolarNS_LoRATTT/train_gpt_readable.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "two_pass",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2105,
+      "title": "Record: H-Net Fixed-Stride + Muon (byte-level) | val_bpb=1.9058",
+      "author": "firfre",
+      "state": "OPEN",
+      "created": "2026-05-01T06:55:05Z",
+      "updated": "2026-05-01T06:57:43Z",
+      "bpb": 1.9058,
+      "seeds": null,
+      "artifact_bytes": 13040000,
+      "technique_summary": "Muon + SSM + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_HNet_FixedStride8_Muon_2-6-2/README.md",
+        "records/track_10min_16mb/2026-04-30_HNet_FixedStride8_Muon_2-6-2/requirements.txt",
+        "records/track_10min_16mb/2026-04-30_HNet_FixedStride8_Muon_2-6-2/submission.json",
+        "records/track_10min_16mb/2026-04-30_HNet_FixedStride8_Muon_2-6-2/train_hnet_v5.py",
+        "records/track_non_record_16mb/2026-04-30_HNet_Mamba_Byte260_DynamicRouting/README.md",
+        "records/track_non_record_16mb/2026-04-30_HNet_Mamba_Byte260_DynamicRouting/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_HNet_Mamba_Byte260_DynamicRouting/submission.json",
+        "records/track_non_record_16mb/2026-04-30_HNet_Mamba_Byte260_DynamicRouting/train_hnet_repo_pg.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2104,
+      "title": "Non-record: ZerO Initalization + Progressive KV, RoPE proportion and base, and MLP mult from 9-layer, 512-dim, 8-head, and maximum 4-kv-head model",
+      "author": "AlstonTang",
+      "state": "OPEN",
+      "created": "2026-05-01T06:49:47Z",
+      "updated": "2026-05-01T06:59:38Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_ZerO _init+progressive_kv_rope_and_mlp_mult/56869d79-f695-4ef4-a7ee-2ff630965978.txt",
+        "records/track_non_record_16mb/2026-04-30_ZerO _init+progressive_kv_rope_and_mlp_mult/README.md",
+        "records/track_non_record_16mb/2026-04-30_ZerO _init+progressive_kv_rope_and_mlp_mult/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_ZerO _init+progressive_kv_rope_and_mlp_mult/submission.json",
+        "records/track_non_record_16mb/2026-04-30_ZerO _init+progressive_kv_rope_and_mlp_mult/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2103,
       "title": "Add 16MB SP1024 Value Residual + PPM mixture submission ppm_mix_bpb 0.829467",
@@ -504,7 +994,7 @@
       "author": "SPThole",
       "state": "OPEN",
       "created": "2026-05-01T04:06:23Z",
-      "updated": "2026-05-01T04:06:23Z",
+      "updated": "2026-05-01T07:34:44Z",
       "bpb": 1.231,
       "seeds": 3,
       "artifact_bytes": 5070000,
@@ -531,6 +1021,7 @@
         "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/pr_summary.md",
         "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/run_all_experiments_token_limit.sh",
         "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/run_wt_exp.sh",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/submission.json",
         "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/train_gpt_exp_wt.py",
         "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/train_gpt_prism_token_limit.py"
       ],
@@ -544,10 +1035,8 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
-      "flags": [
-        "no-submission-json"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -26419,9 +26908,9 @@
       "number": 1410,
       "title": "Record: 11L LatentMask TTT + GPTQ + Product-Key Bigram + Brotli — val_bpb 1.1124 (3-seed mean)",
       "author": "izlley",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-06T07:19:55Z",
-      "updated": "2026-04-11T20:02:26Z",
+      "updated": "2026-05-01T07:26:05Z",
       "bpb": 0.002,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -26445,12 +26934,11 @@
         "ttt"
       ],
       "technique_source": "code",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "suspiciously-low-bpb"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "MEDIUM",
-      "flag_reason": "Suspiciously low BPB — likely non-neural"
+      "confidence": "LOW"
     },
     {
       "number": 1408,
