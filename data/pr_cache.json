@@ -1,7 +1,90 @@
 {
-  "last_fetch": "2026-05-01T10:52:38.913552+00:00",
-  "api_calls_used": 250,
+  "last_fetch": "2026-05-01T12:01:11.114624+00:00",
+  "api_calls_used": 251,
   "prs": [
+    {
+      "number": 2119,
+      "title": "Non-record: PR1953 K+O-only TTT + QK_GAIN_INIT=5.35",
+      "author": "dexhunter",
+      "state": "OPEN",
+      "created": "2026-05-01T12:00:30Z",
+      "updated": "2026-05-01T12:00:30Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 15978954,
+      "technique_summary": "TTT + LoRA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-01_PR1953_KO_QK535_3seed_NonRecord/README.md",
+        "records/track_non_record_16mb/2026-05-01_PR1953_KO_QK535_3seed_NonRecord/lossless_caps.py",
+        "records/track_non_record_16mb/2026-05-01_PR1953_KO_QK535_3seed_NonRecord/prepare_caseops_data.py",
+        "records/track_non_record_16mb/2026-05-01_PR1953_KO_QK535_3seed_NonRecord/requirements.txt",
+        "records/track_non_record_16mb/2026-05-01_PR1953_KO_QK535_3seed_NonRecord/run.py",
+        "records/track_non_record_16mb/2026-05-01_PR1953_KO_QK535_3seed_NonRecord/submission.json",
+        "records/track_non_record_16mb/2026-05-01_PR1953_KO_QK535_3seed_NonRecord/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_non_record_16mb/2026-05-01_PR1953_KO_QK535_3seed_NonRecord/train_gpt.py",
+        "records/track_non_record_16mb/2026-05-01_PR1953_KO_QK535_3seed_NonRecord/train_seed314.log",
+        "records/track_non_record_16mb/2026-05-01_PR1953_KO_QK535_3seed_NonRecord/train_seed42.log",
+        "records/track_non_record_16mb/2026-05-01_PR1953_KO_QK535_3seed_NonRecord/train_seed7.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2118,
+      "title": "Record: 1.0435 Gated XSA + token-only n-gram tilt + LQER top-1 + AWQ-lite + AsymLogit) with GPTQ_RESERVE_SECONDS=2.0 and corrected CaseOps data preparation",
+      "author": "aquariouseworkman",
+      "state": "OPEN",
+      "created": "2026-05-01T11:24:29Z",
+      "updated": "2026-05-01T11:24:29Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/online_ngram_state.c",
+        "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/online_ngram_tilt.py",
+        "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/submission.json",
+        "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/train_seed1234.log",
+        "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/train_seed314.log",
+        "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 2117,
       "title": "Record support: 3-seed reproduction of PR #2101 + 3 ablations — val_b…",
@@ -3194,29 +3277,26 @@
     },
     {
       "number": 2039,
-      "title": "Record: SP8192 + Sliding-Window Eval + Conditional-PPM Byte Mixer Full-Val - val_bpb 1.027004",
+      "title": "Record: SP8192 + Sliding-Window Eval + Conditional-PPM Byte Mixer Full-Val - val_bpb 1.015784",
       "author": "anmarhindi",
       "state": "OPEN",
       "created": "2026-04-30T23:19:33Z",
-      "updated": "2026-05-01T01:17:48Z",
-      "bpb": 1.027004,
+      "updated": "2026-05-01T11:10:35Z",
+      "bpb": 1.015784,
       "seeds": 3,
-      "artifact_bytes": 15592863,
+      "artifact_bytes": 15576768,
       "technique_summary": "TTT + GPTQ + INT6 + EMA + N-gram",
       "file_paths": [
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/README.md",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/eval_seed1337.log",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/eval_seed314.log",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/eval_seed42.log",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/final_model.int6.ptz",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/lossless_caps.py",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/prepare_caseops_data.py",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/submission.json",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/train_gpt.py",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/train_seed1337.log",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/train_seed314.log",
-        "records/track_10min_16mb/2026-04-30_OptE_SlidingWindow_CondPPM/train_seed42.log"
+        "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/README.md",
+        "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/final_model.int6.ptz",
+        "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/submission.json",
+        "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/train_seed314.log",
+        "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/train_seed42.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
