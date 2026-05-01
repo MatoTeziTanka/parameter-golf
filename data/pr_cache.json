@@ -1,14 +1,143 @@
 {
-  "last_fetch": "2026-05-01T15:09:18.292862+00:00",
-  "api_calls_used": 253,
+  "last_fetch": "2026-05-01T16:32:30.964896+00:00",
+  "api_calls_used": 254,
   "prs": [
     {
+      "number": 2125,
+      "title": "add pr2069 best 8xh100 submission package",
+      "author": "tenet-diver",
+      "state": "OPEN",
+      "created": "2026-05-01T15:58:50Z",
+      "updated": "2026-05-01T16:01:42Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_pr2069-best-8xh100_20260501T153233Z/README.md",
+        "records/track_10min_16mb/2026-05-01_pr2069-best-8xh100_20260501T153233Z/candidate_env.json",
+        "records/track_10min_16mb/2026-05-01_pr2069-best-8xh100_20260501T153233Z/packaged_batch_rows.json",
+        "records/track_10min_16mb/2026-05-01_pr2069-best-8xh100_20260501T153233Z/run_result_seed1337.json",
+        "records/track_10min_16mb/2026-05-01_pr2069-best-8xh100_20260501T153233Z/stderr_seed1337.txt",
+        "records/track_10min_16mb/2026-05-01_pr2069-best-8xh100_20260501T153233Z/submission.json",
+        "records/track_10min_16mb/2026-05-01_pr2069-best-8xh100_20260501T153233Z/train.log",
+        "records/track_10min_16mb/2026-05-01_pr2069-best-8xh100_20260501T153233Z/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_pr2069-best-8xh100_20260501T153233Z/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2124,
+      "title": "Record : CaseOps Gated XSA NgramTilt LQER | val_bpb=1.05933439",
+      "author": "vaibhavmishra1",
+      "state": "OPEN",
+      "created": "2026-05-01T15:36:26Z",
+      "updated": "2026-05-01T15:44:38Z",
+      "bpb": 1.05933439,
+      "seeds": 42,
+      "artifact_bytes": 15987537,
+      "technique_summary": "LeakyReLU² + TTT + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/README.md",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/requirements.txt",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/run.sh",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/submission.json",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/train_seed0.log",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "leaky_relu",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 2123,
+      "title": "Record: CaseOps Gated XSA NgramTilt LQER | val_bpb=1.05933439",
+      "author": "vaibhavmishra1",
+      "state": "CLOSED",
+      "created": "2026-05-01T15:26:53Z",
+      "updated": "2026-05-01T15:37:28Z",
+      "bpb": 1.05933439,
+      "seeds": 42,
+      "artifact_bytes": 15987537,
+      "technique_summary": "LeakyReLU² + TTT + GPTQ + EMA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/README.md",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/requirements.txt",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/run.sh",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/submission.json",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/train_seed0.log",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "leaky_relu",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
       "number": 2122,
-      "title": "Add SemanticEngine CareSSM submission",
+      "title": "Non-Record: Add Novel SemanticEngine SSM submission",
       "author": "KenMalloy",
       "state": "OPEN",
       "created": "2026-05-01T15:06:21Z",
-      "updated": "2026-05-01T15:08:59Z",
+      "updated": "2026-05-01T16:26:37Z",
       "bpb": null,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -28,7 +157,7 @@
       "compliance_keywords": [
         "cache_eval"
       ],
-      "track": "record",
+      "track": "non-record",
       "technique_type": "cache",
       "technique_tags": [
         "neural"
@@ -47,7 +176,7 @@
       "author": "Kbediako",
       "state": "OPEN",
       "created": "2026-05-01T13:51:10Z",
-      "updated": "2026-05-01T13:51:10Z",
+      "updated": "2026-05-01T15:24:44Z",
       "bpb": 1.06099764,
       "seeds": 3,
       "artifact_bytes": null,
@@ -57,11 +186,16 @@
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/lossless_caps.py",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/prepare_caseops_data.py",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/runpod_seed0_1234_summary.json",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/runpod_terminal_summary.json",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/submission.json",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/train_seed0.log",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/train_seed1234.log",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/train_seed42.log",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed0.log",
+        "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed1234.log",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed314.log",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed42.log",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed999.log"
@@ -90,7 +224,7 @@
       "author": "newjordan",
       "state": "OPEN",
       "created": "2026-05-01T12:53:24Z",
-      "updated": "2026-05-01T13:58:03Z",
+      "updated": "2026-05-01T15:29:34Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -185,11 +319,11 @@
       "author": "aquariouseworkman",
       "state": "OPEN",
       "created": "2026-05-01T11:24:29Z",
-      "updated": "2026-05-01T14:55:40Z",
-      "bpb": null,
-      "seeds": null,
-      "artifact_bytes": null,
-      "technique_summary": "N-gram",
+      "updated": "2026-05-01T15:44:57Z",
+      "bpb": 1.0435,
+      "seeds": 3,
+      "artifact_bytes": 15986801,
+      "technique_summary": "TTT + LoRA + GPTQ + INT8 + N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/lossless_caps.py",
         "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/online_ngram_state.c",
@@ -205,6 +339,10 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "leaky_relu",
         "ngram_path"
       ],
       "track": "record",
@@ -307,7 +445,7 @@
       "author": "Sacmaj",
       "state": "OPEN",
       "created": "2026-05-01T08:12:06Z",
-      "updated": "2026-05-01T09:00:09Z",
+      "updated": "2026-05-01T15:21:19Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -729,12 +867,14 @@
       "author": "firfre",
       "state": "OPEN",
       "created": "2026-05-01T06:55:05Z",
-      "updated": "2026-05-01T06:57:43Z",
+      "updated": "2026-05-01T16:31:40Z",
       "bpb": 1.9058,
       "seeds": null,
       "artifact_bytes": 13040000,
       "technique_summary": "Muon + SSM + INT6",
       "file_paths": [
+        "HANDOFF.md",
+        "HANDOFF_DEEP.md",
         "records/track_10min_16mb/2026-04-30_HNet_FixedStride8_Muon_2-6-2/README.md",
         "records/track_10min_16mb/2026-04-30_HNet_FixedStride8_Muon_2-6-2/requirements.txt",
         "records/track_10min_16mb/2026-04-30_HNet_FixedStride8_Muon_2-6-2/submission.json",
@@ -764,7 +904,7 @@
       "author": "AlstonTang",
       "state": "OPEN",
       "created": "2026-05-01T06:49:47Z",
-      "updated": "2026-05-01T06:59:38Z",
+      "updated": "2026-05-01T15:49:23Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -1853,7 +1993,7 @@
       "author": "teslaeco",
       "state": "OPEN",
       "created": "2026-05-01T02:57:30Z",
-      "updated": "2026-05-01T09:47:44Z",
+      "updated": "2026-05-01T16:28:20Z",
       "bpb": 0.92967555,
       "seeds": 3,
       "artifact_bytes": 15920000,
@@ -2063,7 +2203,7 @@
       "author": "jamesEmerson112",
       "state": "OPEN",
       "created": "2026-05-01T02:13:22Z",
-      "updated": "2026-05-01T05:24:05Z",
+      "updated": "2026-05-01T15:52:12Z",
       "bpb": 1.0066,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -4682,15 +4822,15 @@
     },
     {
       "number": 2008,
-      "title": "[Non-Record] 4h Long-Train Scaling: Quantized BPB 1.0449",
+      "title": "[Non-Record] 6h Long-Train Scaling + TTT Sweep: Post-TTT BPB 1.03471",
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-04-30T20:06:37Z",
-      "updated": "2026-04-30T20:10:24Z",
-      "bpb": 1.172,
+      "updated": "2026-05-01T15:51:53Z",
+      "bpb": 0.004,
       "seeds": 3,
-      "artifact_bytes": 15932638,
-      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + EMA + N-gram",
+      "artifact_bytes": 15926271,
+      "technique_summary": "TTT + LoRA",
       "file_paths": [
         "pr_4h_longtrain_body.md",
         "records/track_10min_16mb/2026-04-29_PerGroupLRZIP_ComplianceFix_1.06003/README.md",
@@ -4715,10 +4855,14 @@
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_10min.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_20min.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_30min.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_360min.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_45min.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/checkpoint_60min.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/experiment_summary.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/scaling_results.csv",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/ttt_sweep_manifest.json",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/ttt_sweep_results.csv",
+        "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/results/ttt_sweep/ttt_sweep_summary.json",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/scripts/analyze_scaling.py",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/scripts/make_larger_variant_plan.py",
         "records/track_non_record_16mb/2026-04-30_PR1950_LongTrainArtifactScaling/scripts/run_longtrain_scaling.sh",
@@ -4733,21 +4877,21 @@
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
-        "ttt",
-        "ngram",
-        "gptq_eval",
-        "cache_eval"
+        "ttt"
       ],
       "track": "non-record",
-      "technique_type": "hybrid",
+      "technique_type": "ttt",
       "technique_tags": [
         "ttt",
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
     },
     {
       "number": 2007,
