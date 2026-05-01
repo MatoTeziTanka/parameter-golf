@@ -1,7 +1,886 @@
 {
-  "last_fetch": "2026-05-01T03:49:40.603897+00:00",
-  "api_calls_used": 247,
+  "last_fetch": "2026-05-01T06:39:06.632757+00:00",
+  "api_calls_used": 248,
   "prs": [
+    {
+      "number": 2103,
+      "title": "Add 16MB SP1024 Value Residual + PPM mixture submission ppm_mix_bpb 0.829467",
+      "author": "lkk688",
+      "state": "OPEN",
+      "created": "2026-05-01T06:21:22Z",
+      "updated": "2026-05-01T06:21:22Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_SP1024_ValueResid_PPMMix/ train.log",
+        "records/track_10min_16mb/2026-04-30_SP1024_ValueResid_PPMMix/README.md",
+        "records/track_10min_16mb/2026-04-30_SP1024_ValueResid_PPMMix/config.json",
+        "records/track_10min_16mb/2026-04-30_SP1024_ValueResid_PPMMix/requirements.txt",
+        "records/track_10min_16mb/2026-04-30_SP1024_ValueResid_PPMMix/seed_runs.csv",
+        "records/track_10min_16mb/2026-04-30_SP1024_ValueResid_PPMMix/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/README.md",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/config.json",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/requirements.txt",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/seed_runs.csv",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/submission.json",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/train.log",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/README.md",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/config.json",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/seed_runs.csv",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/submission.json",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/train.log",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2102,
+      "title": "Non-record: MoE Upcycling + Depth Recurrence — Quantization Gap Analysis",
+      "author": "MaxIv25",
+      "state": "OPEN",
+      "created": "2026-05-01T06:20:51Z",
+      "updated": "2026-05-01T06:20:51Z",
+      "bpb": 0.024,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + MoE + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "moe_9L_loop_seed42.log",
+        "moe_9L_seed0.log",
+        "moe_9L_seed314.log",
+        "train_gpt_exp4_moe.py",
+        "train_gpt_sota_exp.py",
+        "train_h200_seed0.log",
+        "train_h200_seed314.log",
+        "train_h200_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2101,
+      "title": "Record: AWQ-lite + AsymLogit + GradCentral + ... val_bpb=1.05845",
+      "author": "OnlyJundong",
+      "state": "OPEN",
+      "created": "2026-05-01T05:28:14Z",
+      "updated": "2026-05-01T05:28:14Z",
+      "bpb": 1.05845,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05845/README.md",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05845/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05845/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05845/submission.json",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05845/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05845/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05845/train_seed0.log",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05845/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05845/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2100,
+      "title": "Follow-up: LongCtx No-QV Prefix3500 GlobalTTT LR 0.0008 — 1.05807 BPB seed42",
+      "author": "someone114514",
+      "state": "OPEN",
+      "created": "2026-05-01T05:21:11Z",
+      "updated": "2026-05-01T05:21:11Z",
+      "bpb": 1.05807,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_1.0579/README.md",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_1.0579/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_1.0579/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_1.0579/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_1.0579/run_current_candidate.sh",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_1.0579/submission.json",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_1.0579/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_1.0579/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_1.0579/train_seed0.log",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_1.0579/train_seed1234.log",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_1.0579/train_seed42.log",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_GlobalLR0008_probe/README.md",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_GlobalLR0008_probe/download_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_GlobalLR0008_probe/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_GlobalLR0008_probe/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_GlobalLR0008_probe/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_GlobalLR0008_probe/run_current_candidate.sh",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_GlobalLR0008_probe/submission.json",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_GlobalLR0008_probe/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_GlobalLR0008_probe/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_LongCtx_NoQV_QK525_AsymLogit_LQERg32top4_TTTlocal080_GlobalLR0008_probe/train_seed42_prefix3500_global0008.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2099,
+      "title": "Non-record: EchoHarp + random kitchen-sink adapter",
+      "author": "miles-nash",
+      "state": "OPEN",
+      "created": "2026-05-01T05:12:59Z",
+      "updated": "2026-05-01T05:12:59Z",
+      "bpb": 2.5404976,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_EchoHarp_RandomKitchenSink/README.md",
+        "records/track_non_record_16mb/2026-04-30_EchoHarp_RandomKitchenSink/local_static_check.log",
+        "records/track_non_record_16mb/2026-04-30_EchoHarp_RandomKitchenSink/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_EchoHarp_RandomKitchenSink/submission.json",
+        "records/track_non_record_16mb/2026-04-30_EchoHarp_RandomKitchenSink/train.log",
+        "records/track_non_record_16mb/2026-04-30_EchoHarp_RandomKitchenSink/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2098,
+      "title": "Record: PR #1873 base + tuned PPM gate (T=0.7/H=0.99/L=0.3) — val_bpb 0.80051 (3-seed mean)",
+      "author": "joshuaswanson",
+      "state": "OPEN",
+      "created": "2026-05-01T05:07:40Z",
+      "updated": "2026-05-01T05:07:40Z",
+      "bpb": 0.80050966,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ + INT6",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_SP8192_PPMMixer_O5_TunedGate/README.md",
+        "records/track_10min_16mb/2026-04-30_SP8192_PPMMixer_O5_TunedGate/submission.json",
+        "records/track_10min_16mb/2026-04-30_SP8192_PPMMixer_O5_TunedGate/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_SP8192_PPMMixer_O5_TunedGate/train_seed314.log",
+        "records/track_10min_16mb/2026-04-30_SP8192_PPMMixer_O5_TunedGate/train_seed42.log",
+        "records/track_10min_16mb/2026-04-30_SP8192_PPMMixer_O5_TunedGate/train_seed999.log",
+        "records/track_10min_16mb/2026-05-01_PR1873_PPMOptGate/README.md",
+        "records/track_10min_16mb/2026-05-01_PR1873_PPMOptGate/submission.json",
+        "records/track_10min_16mb/2026-05-01_PR1873_PPMOptGate/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_PR1873_PPMOptGate/train_log_seed314.txt",
+        "records/track_10min_16mb/2026-05-01_PR1873_PPMOptGate/train_log_seed42.txt",
+        "records/track_10min_16mb/2026-05-01_PR1873_PPMOptGate/train_log_seed999.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2097,
+      "title": "record: AWQ-lite + AsymLogit + GradCentr + LabSmooth - 1.05846 BPB",
+      "author": "OnlyJundong",
+      "state": "CLOSED",
+      "created": "2026-05-01T05:03:01Z",
+      "updated": "2026-05-01T05:07:27Z",
+      "bpb": 1.05846,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05846/README.md",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05846/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05846/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05846/submission.json",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05846/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05846/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05846/train_seed0.log",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05846/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-30_Combining_AWQLite_AsymLogit_GradCen_LabSmoo_1.05846/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "number": 2096,
+      "title": "NON-RECORD SUBMISSION ----- Text_diffusion_MDLM------- improved transformer and better metrics for 600 secs ",
+      "author": "laox5",
+      "state": "OPEN",
+      "created": "2026-05-01T04:58:20Z",
+      "updated": "2026-05-01T04:58:20Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "Muon",
+      "file_paths": [
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2095,
+      "title": "Non-record: AttnGate + MiniRecur + EMA (1.1613 BPB)",
+      "author": "bharadwaj1098",
+      "state": "OPEN",
+      "created": "2026-05-01T04:39:47Z",
+      "updated": "2026-05-01T05:27:57Z",
+      "bpb": 1.1613,
+      "seeds": 3,
+      "artifact_bytes": 14870000,
+      "technique_summary": "Muon + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_kv4_both_AttnGate_MiniRecur_EMA_Ablation/README.md",
+        "records/track_non_record_16mb/2026-04-30_kv4_both_AttnGate_MiniRecur_EMA_Ablation/experiment_history.tsv",
+        "records/track_non_record_16mb/2026-04-30_kv4_both_AttnGate_MiniRecur_EMA_Ablation/submission.json",
+        "records/track_non_record_16mb/2026-04-30_kv4_both_AttnGate_MiniRecur_EMA_Ablation/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_kv4_both_AttnGate_MiniRecur_EMA_Ablation/train_seed1337.log",
+        "records/track_non_record_16mb/2026-04-30_kv4_both_AttnGate_MiniRecur_EMA_Ablation/train_seed2024.log",
+        "records/track_non_record_16mb/2026-04-30_kv4_both_AttnGate_MiniRecur_EMA_Ablation/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2094,
+      "title": "Non-record: WSD LR schedule on naive baseline (1×H100)",
+      "author": "Gitcatmeoww",
+      "state": "OPEN",
+      "created": "2026-05-01T04:34:04Z",
+      "updated": "2026-05-01T04:34:04Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 14279445,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_WSD_NaiveBaseline_1xH100/README.md",
+        "records/track_non_record_16mb/2026-04-30_WSD_NaiveBaseline_1xH100/results.tsv",
+        "records/track_non_record_16mb/2026-04-30_WSD_NaiveBaseline_1xH100/submission.json",
+        "records/track_non_record_16mb/2026-04-30_WSD_NaiveBaseline_1xH100/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_WSD_NaiveBaseline_1xH100/train_seed1337.log",
+        "records/track_non_record_16mb/2026-04-30_WSD_NaiveBaseline_1xH100/train_seed2025.log",
+        "records/track_non_record_16mb/2026-04-30_WSD_NaiveBaseline_1xH100/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2093,
+      "title": "Non-record: ACN Output Accumulator on the Naive Baseline",
+      "author": "chrico-bu-uab",
+      "state": "OPEN",
+      "created": "2026-05-01T04:32:06Z",
+      "updated": "2026-05-01T04:32:06Z",
+      "bpb": 1.2244,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_ACN_OutputAccumulator/README.md",
+        "records/track_non_record_16mb/2026-04-30_ACN_OutputAccumulator/baseline_acn.log",
+        "records/track_non_record_16mb/2026-04-30_ACN_OutputAccumulator/baseline_off.log",
+        "records/track_non_record_16mb/2026-04-30_ACN_OutputAccumulator/submission.json",
+        "records/track_non_record_16mb/2026-04-30_ACN_OutputAccumulator/train_gpt.py",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2092,
+      "title": "Non-record: GPTQ-lite Hessian Quantization + EMA — val_bpb 1.2142 (dim384, 11L, 15.5MB)",
+      "author": "dmpta",
+      "state": "OPEN",
+      "created": "2026-05-01T04:29:20Z",
+      "updated": "2026-05-01T04:29:20Z",
+      "bpb": 0.005,
+      "seeds": null,
+      "artifact_bytes": 15500000,
+      "technique_summary": "GPTQ + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_11L_GPTQ-lite_dim384_1.2142/README.md",
+        "records/track_10min_16mb/2026-04-30_11L_GPTQ-lite_dim384_1.2142/final_model.int8.ptz",
+        "records/track_10min_16mb/2026-04-30_11L_GPTQ-lite_dim384_1.2142/gptq_lite.py",
+        "records/track_10min_16mb/2026-04-30_11L_GPTQ-lite_dim384_1.2142/run_gptq_dim384.log",
+        "records/track_10min_16mb/2026-04-30_11L_GPTQ-lite_dim384_1.2142/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2091,
+      "title": "Add ppm mix nonrecord submission - SP8192 + Value Residual + Byte-Level PPM Mixture val_bpb=1.16 ppm_mix_bpb=0.83",
+      "author": "lkk688",
+      "state": "OPEN",
+      "created": "2026-05-01T04:21:06Z",
+      "updated": "2026-05-01T04:21:06Z",
+      "bpb": 1.16,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/README.md",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/config.json",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/requirements.txt",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/seed_runs.csv",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/submission.json",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/train.log",
+        "records/track_non_record_16mb/2026-04-18_SP1024_ShareVLast3_3Seed/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/README.md",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/config.json",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/seed_runs.csv",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/submission.json",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/train.log",
+        "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2090,
+      "title": "[Non-record] Depth Recur + Randomized Linear Maps :: Parameter-efficient Repartitioning for Shared Modules",
+      "author": "SPThole",
+      "state": "OPEN",
+      "created": "2026-05-01T04:06:23Z",
+      "updated": "2026-05-01T04:06:23Z",
+      "bpb": 1.231,
+      "seeds": 3,
+      "artifact_bytes": 5070000,
+      "technique_summary": "GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/README.md",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/detailed_observations.md",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/albert_seed1337_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/albert_seed2024_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/albert_seed42_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/naive_shared_seed1337_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/naive_shared_seed2024_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/naive_shared_seed42_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/prism_adapt_partial4_seed42_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/prism_wo_seed1337_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/prism_wo_seed2024_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/prism_wo_seed42_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/prism_wt_seed1337_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/prism_wt_seed2024_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/prism_wt_seed42_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/standard11_seed1337_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/standard11_seed2024_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/log/standard11_seed42_console.log",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/pr_summary.md",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/run_all_experiments_token_limit.sh",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/run_wt_exp.sh",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/train_gpt_exp_wt.py",
+        "records/track_non_record_16mb/30-04-2026_PRISM_random_repart_projections/train_gpt_prism_token_limit.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2089,
+      "title": "[Non-Record 16MB] Int8 QAT 7L d512 + Sliding Window + N-gram Backoff + TTT",
+      "author": "AlirezaAlampour",
+      "state": "OPEN",
+      "created": "2026-05-01T04:05:48Z",
+      "updated": "2026-05-01T05:27:40Z",
+      "bpb": null,
+      "seeds": 42,
+      "artifact_bytes": 15500000,
+      "technique_summary": "TTT + Muon + INT8 + EMA + N-gram",
+      "file_paths": [
+        ".gitignore",
+        "CONTEXT_FOR_HUMANS.md",
+        "CONTEXT_FOR_LLMs.md",
+        "Dockerfile",
+        "README.md",
+        "app.py",
+        "autoresearch.py",
+        "configs/default.yaml",
+        "docker-compose.yml",
+        "eval/__init__.py",
+        "eval/evaluate.py",
+        "eval/ngram_cache.py",
+        "eval/ttt.py",
+        "experiments/results/baseline_10layer_d512.csv",
+        "experiments/results/lr_finder_lr_finder_5x4_d512.csv",
+        "experiments/results/overnight_20260405_235113.csv",
+        "experiments/results/overnight_20260405_235207.csv",
+        "experiments/results/overnight_20260405_235945.csv",
+        "experiments/results/shared_10x2_d512.csv",
+        "experiments/results/shared_3x7_d512.csv",
+        "experiments/results/shared_4x5_d512.csv",
+        "experiments/results/shared_5x4_d384.csv",
+        "experiments/results/shared_5x4_d448.csv",
+        "experiments/results/shared_5x4_d512.csv",
+        "experiments/results/shared_5x4_d512_mlp2.0.csv",
+        "experiments/results/shared_5x4_d512_mlp2.5.csv",
+        "experiments/results/shared_5x4_d512_mlp3.5.csv",
+        "experiments/results/shared_5x4_d512_mlp4.0.csv",
+        "experiments/results/shared_5x4_d576.csv",
+        "experiments/results/shared_5x4_d640.csv",
+        "experiments/results/shared_6x3_d512.csv",
+        "experiments/results/shared_7x3_d512.csv",
+        "experiments/results/smoke_test.csv",
+        "experiments/results/smoke_test_tiny.csv",
+        "experiments_v2.sh",
+        "models/__init__.py",
+        "models/tiny_gpt.py",
+        "models/tiny_gpt_shared.py",
+        "models/tiny_mamba.py",
+        "overnight_batch.sh",
+        "program.md",
+        "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/README.md",
+        "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/eval_spark.py",
+        "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/ngram_cache.py",
+        "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/submission.json",
+        "records/track_non_record_16mb/2026-04-30_Int8QAT_7L_4xMLP_EMA_SlidingWindow/train_gpt.py",
+        "requirements.txt",
+        "run_experiment.sh",
+        "run_tracker.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "cache_eval",
+        "ngram_path",
+        "cache_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path",
+        "path:eval-cache-path"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "number": 2088,
+      "title": "Non-record: Causal Bigram Blending — eval-time BPB improvement (1×H20…",
+      "author": "MaxIv25",
+      "state": "OPEN",
+      "created": "2026-05-01T04:01:24Z",
+      "updated": "2026-05-01T06:21:40Z",
+      "bpb": 0.011,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT + Muon + GPTQ + INT6 + EMA",
+      "file_paths": [
+        "train_gpt_sota_exp.py",
+        "train_h200_seed0.log",
+        "train_h200_seed314.log",
+        "train_h200_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2087,
+      "title": "Non-record submission: CE + Embedding Aware Loss + Uniformity Loss         ",
+      "author": "sttawm",
+      "state": "OPEN",
+      "created": "2026-05-01T04:01:07Z",
+      "updated": "2026-05-01T04:01:07Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_Embedding_Aware_Loss/README.md",
+        "records/track_non_record_16mb/2026-04-30_Embedding_Aware_Loss/submission.json",
+        "records/track_non_record_16mb/2026-04-30_Embedding_Aware_Loss/train.log",
+        "records/track_non_record_16mb/2026-04-30_Embedding_Aware_Loss/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2086,
+      "title": "Non-record: Quinary quantization + SP16384 + per-group lrzip + TTT - bpb 1.1384",
+      "author": "deniskurlov",
+      "state": "OPEN",
+      "created": "2026-05-01T04:01:01Z",
+      "updated": "2026-05-01T04:01:01Z",
+      "bpb": 1.1381,
+      "seeds": 3,
+      "artifact_bytes": 15720000,
+      "technique_summary": "TTT + Muon",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/README.md",
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/fineweb_16384_bpe.model",
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/fineweb_16384_bpe.vocab",
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/quinary_seed1337.txt",
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/quinary_seed42.txt",
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/quinary_seed7.txt",
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/requirements.txt",
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/run.sh",
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/setup.sh",
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/submission.json",
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-30_Quinary_53M_10L_576d_SP16384_TTT/verify_bpb.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2085,
+      "title": "Create README for VRL Revival and Extended Muon Warmup",
+      "author": "umshahid",
+      "state": "OPEN",
+      "created": "2026-05-01T03:58:00Z",
+      "updated": "2026-05-01T03:58:00Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "Muon",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-29_VRLRevival_ExtendedMuonWarmup/README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2084,
+      "title": "Non-record: k-XSA (k=2) rank-2 subspace XSA with energy cap",
+      "author": "ShadowNinja10",
+      "state": "OPEN",
+      "created": "2026-05-01T03:56:48Z",
+      "updated": "2026-05-01T03:56:48Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-30_SP8192_GPTQ-Embeddings_kXSA_SDClip_Loop45x2/README.md",
+        "records/track_non_record_16mb/2026-04-30_SP8192_GPTQ-Embeddings_kXSA_SDClip_Loop45x2/submission.json",
+        "records/track_non_record_16mb/2026-04-30_SP8192_GPTQ-Embeddings_kXSA_SDClip_Loop45x2/train.log",
+        "records/track_non_record_16mb/2026-04-30_SP8192_GPTQ-Embeddings_kXSA_SDClip_Loop45x2/train_xsa_k.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown",
+        "artifact-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2083,
+      "title": "Record: SP8192 CaseOps v13 PPM tuned gate — fresh 3-seed mean 0.94175270",
+      "author": "NewyorkDev",
+      "state": "OPEN",
+      "created": "2026-05-01T03:53:24Z",
+      "updated": "2026-05-01T05:08:51Z",
+      "bpb": 0.9417527,
+      "seeds": 3,
+      "artifact_bytes": 15988348,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/LEGALITY_AUDIT.md",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/README.md",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/REFERENCES.md",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/eval_seed314_v13_ppm.log",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/eval_seed42_v13_ppm.log",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/eval_seed999_v13_ppm.log",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/fresh_seed314_v13_submit.log",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/fresh_seed42_v13_submit.log",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/fresh_seed999_v13_submit.log",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/submission.json",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/train_seed314.log",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/train_seed42.log",
+        "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/train_seed999.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2082,
+      "title": "Add SP8192 apex over-cap evidence submission",
+      "author": "PrzemyslaV88",
+      "state": "OPEN",
+      "created": "2026-05-01T03:49:43Z",
+      "updated": "2026-05-01T03:49:43Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 415938,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-01_SP8192_ApexStack_OverCap_Evidence/README.md",
+        "records/track_non_record_16mb/2026-05-01_SP8192_ApexStack_OverCap_Evidence/submission.json",
+        "records/track_non_record_16mb/2026-05-01_SP8192_ApexStack_OverCap_Evidence/train.log",
+        "records/track_non_record_16mb/2026-05-01_SP8192_ApexStack_OverCap_Evidence/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2081,
       "title": "Add LoopFullAttnRes + LoopQ + XSA submission",
@@ -41,7 +920,7 @@
       "author": "NewyorkDev",
       "state": "OPEN",
       "created": "2026-05-01T03:43:56Z",
-      "updated": "2026-05-01T03:47:59Z",
+      "updated": "2026-05-01T04:03:08Z",
       "bpb": 0.97271454,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -396,7 +1275,7 @@
       "author": "jamesEmerson112",
       "state": "OPEN",
       "created": "2026-05-01T02:13:22Z",
-      "updated": "2026-05-01T03:18:27Z",
+      "updated": "2026-05-01T05:24:05Z",
       "bpb": 1.0066,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -668,7 +1547,7 @@
       "author": "IanniMuliterno",
       "state": "OPEN",
       "created": "2026-05-01T00:48:09Z",
-      "updated": "2026-05-01T00:48:33Z",
+      "updated": "2026-05-01T05:45:44Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -4119,7 +4998,7 @@
       "author": "hectar-glitches",
       "state": "OPEN",
       "created": "2026-04-30T13:13:22Z",
-      "updated": "2026-05-01T03:37:01Z",
+      "updated": "2026-05-01T04:07:50Z",
       "bpb": 0.00037,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -4172,15 +5051,15 @@
     },
     {
       "number": 1980,
-      "title": "Non-record: final-day SP8192 reproduction and mHC-lite local probe",
+      "title": "Non-record: final-day fallbacks incl. StageB scalar-control no-TTT",
       "author": "Kbediako",
       "state": "OPEN",
       "created": "2026-04-30T12:14:51Z",
-      "updated": "2026-04-30T12:14:51Z",
-      "bpb": 1.07383884,
-      "seeds": 3,
-      "artifact_bytes": 16000000,
-      "technique_summary": "TTT",
+      "updated": "2026-05-01T05:51:59Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 15994521,
+      "technique_summary": "TTT + N-gram",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-30_MHCLite_AttnSink_Local5080/README.md",
         "records/track_non_record_16mb/2026-04-30_MHCLite_AttnSink_Local5080/requirements.txt",
@@ -4194,20 +5073,34 @@
         "records/track_non_record_16mb/2026-04-30_SP8192_MPSGD_QKGain525_ReproSeed42/requirements.txt",
         "records/track_non_record_16mb/2026-04-30_SP8192_MPSGD_QKGain525_ReproSeed42/submission.json",
         "records/track_non_record_16mb/2026-04-30_SP8192_MPSGD_QKGain525_ReproSeed42/train_gpt.py",
-        "records/track_non_record_16mb/2026-04-30_SP8192_MPSGD_QKGain525_ReproSeed42/train_seed42.log"
+        "records/track_non_record_16mb/2026-04-30_SP8192_MPSGD_QKGain525_ReproSeed42/train_seed42.log",
+        "records/track_non_record_16mb/2026-05-01_StageB_ScalarControlQ_NoTTT_1.07468/README.md",
+        "records/track_non_record_16mb/2026-05-01_StageB_ScalarControlQ_NoTTT_1.07468/repro_code_size.txt",
+        "records/track_non_record_16mb/2026-05-01_StageB_ScalarControlQ_NoTTT_1.07468/requant_nottt_seed42.txt",
+        "records/track_non_record_16mb/2026-05-01_StageB_ScalarControlQ_NoTTT_1.07468/requirements.txt",
+        "records/track_non_record_16mb/2026-05-01_StageB_ScalarControlQ_NoTTT_1.07468/scalar_scout_summary.jsonl",
+        "records/track_non_record_16mb/2026-05-01_StageB_ScalarControlQ_NoTTT_1.07468/setup.log",
+        "records/track_non_record_16mb/2026-05-01_StageB_ScalarControlQ_NoTTT_1.07468/stageb_summary.json",
+        "records/track_non_record_16mb/2026-05-01_StageB_ScalarControlQ_NoTTT_1.07468/submission.json",
+        "records/track_non_record_16mb/2026-05-01_StageB_ScalarControlQ_NoTTT_1.07468/train_gpt.py",
+        "records/track_non_record_16mb/2026-05-01_StageB_ScalarControlQ_NoTTT_1.07468/train_seed42.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
-        "ttt"
+        "ttt",
+        "ngram"
       ],
       "track": "non-record",
-      "technique_type": "ttt",
+      "technique_type": "hybrid",
       "technique_tags": [
         "neural"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
       "confidence": "HIGH"
     },
     {
