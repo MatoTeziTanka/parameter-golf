@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-05-02T19:04:45.072304+00:00",
-  "api_calls_used": 272,
+  "last_fetch": "2026-05-02T20:04:39.549856+00:00",
+  "api_calls_used": 273,
   "prs": [
     {
       "number": 2146,
@@ -8,7 +8,7 @@
       "author": "cocohearts",
       "state": "OPEN",
       "created": "2026-05-02T18:08:54Z",
-      "updated": "2026-05-02T19:04:31Z",
+      "updated": "2026-05-02T20:02:46Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": null,
@@ -213,14 +213,14 @@
     },
     {
       "number": 2140,
-      "title": "Record: PR #2014 stack + LeakyReLU 0.3 + strict in-timer n-gram TTT (val_bpb 1.0560)",
+      "title": "Corrected: PR #2014 stack + LeakyReLU 0.3 + token-only in-timer n-gram TTT (val_bpb 1.0570)",
       "author": "simon-marcus",
       "state": "OPEN",
       "created": "2026-05-01T23:59:27Z",
-      "updated": "2026-05-02T18:15:27Z",
+      "updated": "2026-05-02T19:14:54Z",
       "bpb": null,
       "seeds": 3,
-      "artifact_bytes": 15997965,
+      "artifact_bytes": 15989637,
       "technique_summary": "TTT + LoRA + N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/README.md",
@@ -234,7 +234,10 @@
         "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/submission.json",
         "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
         "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_eval_seed0.log",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_eval_seed0_corrected_token_only.log",
         "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_eval_seed314.log",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_eval_seed314_corrected_token_only.log",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_eval_seed42_corrected_token_only.log",
         "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_gpt.py",
         "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_seed42.log"
       ],
@@ -265,9 +268,9 @@
       "number": 2139,
       "title": "[Record candidate] TTT Peer-LoRA Ensemble on PR #2014, val_bpb = 1.05749",
       "author": "varunneal",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-05-01T23:57:50Z",
-      "updated": "2026-05-02T00:03:02Z",
+      "updated": "2026-05-02T19:31:03Z",
       "bpb": 1.05749,
       "seeds": 3,
       "artifact_bytes": 15990000,
@@ -279,7 +282,9 @@
         "records/track_10min_16mb/2026-04-30_TTT_Ensemble/submit.sh",
         "records/track_10min_16mb/2026-04-30_TTT_Ensemble/train_gpt.py"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The evidence is only one seed despite submission.json claiming `three_seeds=true`. Separately, the peer-LoRA ensemble description appears to train/use same-batch validation-derived LoRAs for final scoring, so the strict original-order score-first property is not established."
+      ],
       "compliance_keywords": [
         "ttt"
       ],
@@ -290,9 +295,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-with-maintainer-comment"
+      ],
+      "confidence": "MEDIUM"
     },
     {
       "number": 2138,
@@ -373,9 +380,9 @@
       "author": "codemath3000",
       "state": "CLOSED",
       "created": "2026-05-01T23:48:59Z",
-      "updated": "2026-05-02T08:50:38Z",
+      "updated": "2026-05-02T20:02:20Z",
       "bpb": null,
-      "seeds": null,
+      "seeds": 3,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
@@ -412,7 +419,7 @@
       "author": "codemath3000",
       "state": "OPEN",
       "created": "2026-05-01T23:48:57Z",
-      "updated": "2026-05-02T18:38:33Z",
+      "updated": "2026-05-02T19:41:49Z",
       "bpb": 1.05651,
       "seeds": 3,
       "artifact_bytes": 15947490,
@@ -460,9 +467,9 @@
       "author": "codemath3000",
       "state": "CLOSED",
       "created": "2026-05-01T23:48:55Z",
-      "updated": "2026-05-02T08:50:27Z",
+      "updated": "2026-05-02T20:02:19Z",
       "bpb": null,
-      "seeds": null,
+      "seeds": 3,
       "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
@@ -499,7 +506,7 @@
       "author": "codemath3000",
       "state": "CLOSED",
       "created": "2026-05-01T23:48:53Z",
-      "updated": "2026-05-02T12:46:32Z",
+      "updated": "2026-05-02T20:02:18Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -534,7 +541,7 @@
       "author": "codemath3000",
       "state": "CLOSED",
       "created": "2026-05-01T23:48:51Z",
-      "updated": "2026-05-02T12:46:50Z",
+      "updated": "2026-05-02T20:02:17Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -569,7 +576,7 @@
       "author": "codemath3000",
       "state": "CLOSED",
       "created": "2026-05-01T23:48:50Z",
-      "updated": "2026-05-02T12:46:57Z",
+      "updated": "2026-05-02T20:02:16Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1129,7 +1136,7 @@
       "author": "aquariouseworkman",
       "state": "OPEN",
       "created": "2026-05-01T11:24:29Z",
-      "updated": "2026-05-02T18:52:06Z",
+      "updated": "2026-05-02T19:14:27Z",
       "bpb": 1.0435,
       "seeds": 3,
       "artifact_bytes": 15986801,
@@ -2980,7 +2987,7 @@
       "author": "jamesEmerson112",
       "state": "OPEN",
       "created": "2026-05-01T02:13:22Z",
-      "updated": "2026-05-02T09:28:52Z",
+      "updated": "2026-05-02T19:56:37Z",
       "bpb": 1.0066,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -2993,7 +3000,9 @@
         "records/track_10min_16mb/2026-04-30_SP8192_PR1851_HeadwiseGate_EMA990_SmallBatch/train_seed2025.log",
         "records/track_10min_16mb/2026-04-30_SP8192_PR1851_HeadwiseGate_EMA990_SmallBatch/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The submitted 1.0066 BPB appears to come from CaseOps-tokenized validation with CaseOps byte accounting disabled / wrong byte denominator. The pre-cutoff comments already acknowledge the byte-inflation issue, and I don't see a committed corrected 3-seed full-validation artifact state before the cutoff."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -5107,7 +5116,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-30T21:30:09Z",
-      "updated": "2026-05-02T18:15:00Z",
+      "updated": "2026-05-02T19:22:11Z",
       "bpb": 1.05957,
       "seeds": 3,
       "artifact_bytes": 15901624,
@@ -6537,7 +6546,7 @@
       "author": "TimS-ml",
       "state": "OPEN",
       "created": "2026-04-30T15:19:45Z",
-      "updated": "2026-04-30T20:45:59Z",
+      "updated": "2026-05-02T19:39:03Z",
       "bpb": 1.06184,
       "seeds": 3,
       "artifact_bytes": 16000000,
