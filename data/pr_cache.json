@@ -1,7 +1,47 @@
 {
-  "last_fetch": "2026-05-02T13:19:13.673631+00:00",
-  "api_calls_used": 267,
+  "last_fetch": "2026-05-02T14:30:24.871269+00:00",
+  "api_calls_used": 268,
   "prs": [
+    {
+      "number": 2144,
+      "title": "Non record: Progressive context growth precursor to PR 2014, 12 hours on RTX 4090, val_bpb 0.9697 pre-quant",
+      "author": "simonbissonnette",
+      "state": "OPEN",
+      "created": "2026-05-02T14:12:51Z",
+      "updated": "2026-05-02T14:12:51Z",
+      "bpb": 0.9697649,
+      "seeds": null,
+      "artifact_bytes": 135431355,
+      "technique_summary": "TTT + INT6 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-15_Castor_L7GrowthV4_12h_SP8192/ARTIFACTS.md",
+        "records/track_non_record_16mb/2026-04-15_Castor_L7GrowthV4_12h_SP8192/README.md",
+        "records/track_non_record_16mb/2026-04-15_Castor_L7GrowthV4_12h_SP8192/castor_pretrain_mix_v0.yaml",
+        "records/track_non_record_16mb/2026-04-15_Castor_L7GrowthV4_12h_SP8192/env_utils.py",
+        "records/track_non_record_16mb/2026-04-15_Castor_L7GrowthV4_12h_SP8192/l7grow_v4_castor_12h.env",
+        "records/track_non_record_16mb/2026-04-15_Castor_L7GrowthV4_12h_SP8192/submission.json",
+        "records/track_non_record_16mb/2026-04-15_Castor_L7GrowthV4_12h_SP8192/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-15_Castor_L7GrowthV4_12h_SP8192/train_gpt_human.py",
+        "records/track_non_record_16mb/2026-04-15_Castor_L7GrowthV4_12h_SP8192/train_l7grow_v4_castor.sh",
+        "records/track_non_record_16mb/2026-04-15_Castor_L7GrowthV4_12h_SP8192/train_l7grow_v4_castor_12h.sh",
+        "records/track_non_record_16mb/2026-04-15_Castor_L7GrowthV4_12h_SP8192/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2143,
       "title": "Non-record submission: post-deadline CaseOps + SparseAttnGate + Phased TTT (1.07134 BPB)",
