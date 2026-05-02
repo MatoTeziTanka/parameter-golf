@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-05-02T08:08:30.946383+00:00",
-  "api_calls_used": 263,
+  "last_fetch": "2026-05-02T09:41:59.364794+00:00",
+  "api_calls_used": 264,
   "prs": [
     {
       "number": 2143,
@@ -260,9 +260,9 @@
       "number": 2136,
       "title": "Record candidate: PR #2130 base + GATE_WINDOW=8 + GPTQ_CALIBRATION_BATCHES=32",
       "author": "codemath3000",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-05-01T23:48:59Z",
-      "updated": "2026-05-02T00:18:20Z",
+      "updated": "2026-05-02T08:50:38Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -289,11 +289,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "path:ngram-path"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "MEDIUM"
+      "confidence": "LOW"
     },
     {
       "number": 2135,
@@ -301,11 +301,11 @@
       "author": "codemath3000",
       "state": "OPEN",
       "created": "2026-05-01T23:48:57Z",
-      "updated": "2026-05-01T23:48:57Z",
-      "bpb": null,
-      "seeds": null,
-      "artifact_bytes": null,
-      "technique_summary": "",
+      "updated": "2026-05-02T09:15:51Z",
+      "bpb": 1.05651,
+      "seeds": 3,
+      "artifact_bytes": 15947490,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + EMA + N-gram",
       "file_paths": [
         "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/README.md",
         "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/lossless_caps.py",
@@ -315,14 +315,21 @@
         "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/requirements.txt",
         "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/submission.json",
         "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
-        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/train_gpt.py"
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/train_seed0.log",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/train_seed314.log",
+        "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/train_seed42.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval",
         "ngram_path"
       ],
       "track": "record",
-      "technique_type": "cache",
+      "technique_type": "hybrid",
       "technique_tags": [
         "ttt",
         "gptq"
@@ -338,9 +345,9 @@
       "number": 2134,
       "title": "Record candidate: PR #2130 base + GATE_WINDOW=8",
       "author": "codemath3000",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-05-01T23:48:55Z",
-      "updated": "2026-05-01T23:48:55Z",
+      "updated": "2026-05-02T08:50:27Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -367,11 +374,11 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "path:ngram-path"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "MEDIUM"
+      "confidence": "LOW"
     },
     {
       "number": 2133,
@@ -2118,11 +2125,11 @@
     },
     {
       "number": 2090,
-      "title": "[Non-record] Depth Recur + Randomized Linear Maps :: Parameter-efficient Repartitioning for Shared Modules",
+      "title": "[Non-record] Xtreme Param Sharing -> Depth Recur + Permutated Repartitioning :: Parameter-efficient Repartitioning for Shared Modules",
       "author": "SPThole",
       "state": "OPEN",
       "created": "2026-05-01T04:06:23Z",
-      "updated": "2026-05-01T07:34:44Z",
+      "updated": "2026-05-02T08:26:15Z",
       "bpb": 1.231,
       "seeds": 3,
       "artifact_bytes": 5070000,
@@ -2848,7 +2855,7 @@
       "author": "jamesEmerson112",
       "state": "OPEN",
       "created": "2026-05-01T02:13:22Z",
-      "updated": "2026-05-01T22:03:07Z",
+      "updated": "2026-05-02T09:28:52Z",
       "bpb": 1.0066,
       "seeds": 3,
       "artifact_bytes": 16000000,
