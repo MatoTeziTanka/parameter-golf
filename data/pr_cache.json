@@ -1,7 +1,75 @@
 {
-  "last_fetch": "2026-05-02T06:09:01.798338+00:00",
-  "api_calls_used": 262,
+  "last_fetch": "2026-05-02T08:08:30.946383+00:00",
+  "api_calls_used": 263,
   "prs": [
+    {
+      "number": 2143,
+      "title": "Non-record submission: post-deadline CaseOps + SparseAttnGate + Phased TTT (1.07134 BPB)",
+      "author": "upascal",
+      "state": "OPEN",
+      "created": "2026-05-02T07:19:55Z",
+      "updated": "2026-05-02T07:19:55Z",
+      "bpb": 1.07134,
+      "seeds": null,
+      "artifact_bytes": 15749430,
+      "technique_summary": "TTT + LoRA + GPTQ + INT6",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-02_PostDeadline_CaseOps_SparseAttnGate_PhasedTTT_1.0713/README.md",
+        "records/track_non_record_16mb/2026-05-02_PostDeadline_CaseOps_SparseAttnGate_PhasedTTT_1.0713/final_model.int6.ptz",
+        "records/track_non_record_16mb/2026-05-02_PostDeadline_CaseOps_SparseAttnGate_PhasedTTT_1.0713/run_log.txt",
+        "records/track_non_record_16mb/2026-05-02_PostDeadline_CaseOps_SparseAttnGate_PhasedTTT_1.0713/submission.json",
+        "records/track_non_record_16mb/2026-05-02_PostDeadline_CaseOps_SparseAttnGate_PhasedTTT_1.0713/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "leaky_relu"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2142,
+      "title": "records(non-record-16mb): JEPA-on-LM 14-run ablation (negative result)",
+      "author": "eren23",
+      "state": "OPEN",
+      "created": "2026-05-02T06:53:28Z",
+      "updated": "2026-05-02T06:57:25Z",
+      "bpb": 0.005,
+      "seeds": 2,
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-02_JEPA_Ablation_14run_NegativeResult/README.md",
+        "records/track_non_record_16mb/2026-05-02_JEPA_Ablation_14run_NegativeResult/jepa_lm.py",
+        "records/track_non_record_16mb/2026-05-02_JEPA_Ablation_14run_NegativeResult/submission.json",
+        "records/track_non_record_16mb/2026-05-02_JEPA_Ablation_14run_NegativeResult/train.log",
+        "records/track_non_record_16mb/2026-05-02_JEPA_Ablation_14run_NegativeResult/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-2"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2141,
       "title": "Parameter Golf V2 Optimized Submission",
@@ -939,11 +1007,11 @@
     },
     {
       "number": 2118,
-      "title": "Record: 1.0435 Gated XSA + token-only n-gram tilt + LQER top-1 + AWQ-lite + AsymLogit) with GPTQ_RESERVE_SECONDS=2.0 and corrected CaseOps data preparation",
+      "title": "Record [corrected] : 1.05770 Gated XSA + token-only n-gram tilt + LQER top-1 + AWQ-lite + AsymLogit) with GPTQ_RESERVE_SECONDS=2.0 and corrected CaseOps data preparation",
       "author": "aquariouseworkman",
       "state": "OPEN",
       "created": "2026-05-01T11:24:29Z",
-      "updated": "2026-05-02T05:09:12Z",
+      "updated": "2026-05-02T07:32:58Z",
       "bpb": 1.0435,
       "seeds": 3,
       "artifact_bytes": 15986801,
@@ -1490,7 +1558,7 @@
       "author": "firfre",
       "state": "OPEN",
       "created": "2026-05-01T06:55:05Z",
-      "updated": "2026-05-01T16:54:47Z",
+      "updated": "2026-05-02T07:19:55Z",
       "bpb": 1.9058,
       "seeds": null,
       "artifact_bytes": 13040000,
@@ -3403,13 +3471,20 @@
       "author": "lock757",
       "state": "OPEN",
       "created": "2026-05-01T00:02:00Z",
-      "updated": "2026-05-01T00:45:49Z",
+      "updated": "2026-05-02T06:25:38Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
       "technique_summary": "TTT",
       "file_paths": [
-        "ghost-v7c-emergency-submission.zip"
+        "records/track_10min_16mb/2026-04-30_Ghost_v7C_ResFormerSparse_Leaky_LaCT_experimental/MICRO_SIM_REPORT.md",
+        "records/track_10min_16mb/2026-04-30_Ghost_v7C_ResFormerSparse_Leaky_LaCT_experimental/PATCH_NOTES.md",
+        "records/track_10min_16mb/2026-04-30_Ghost_v7C_ResFormerSparse_Leaky_LaCT_experimental/README.md",
+        "records/track_10min_16mb/2026-04-30_Ghost_v7C_ResFormerSparse_Leaky_LaCT_experimental/micro_sim.py",
+        "records/track_10min_16mb/2026-04-30_Ghost_v7C_ResFormerSparse_Leaky_LaCT_experimental/requirements.txt",
+        "records/track_10min_16mb/2026-04-30_Ghost_v7C_ResFormerSparse_Leaky_LaCT_experimental/run_runpod_v7c_smoke.sh",
+        "records/track_10min_16mb/2026-04-30_Ghost_v7C_ResFormerSparse_Leaky_LaCT_experimental/submission.json",
+        "records/track_10min_16mb/2026-04-30_Ghost_v7C_ResFormerSparse_Leaky_LaCT_experimental/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -3426,8 +3501,7 @@
       "flags": [
         "no-bpb",
         "seeds-unknown",
-        "artifact-unknown",
-        "no-submission-json"
+        "artifact-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -9143,11 +9217,11 @@
       "author": "Blitzo125",
       "state": "OPEN",
       "created": "2026-04-29T06:14:43Z",
-      "updated": "2026-04-29T06:14:43Z",
+      "updated": "2026-05-02T07:53:39Z",
       "bpb": null,
       "seeds": null,
-      "artifact_bytes": null,
-      "technique_summary": "",
+      "artifact_bytes": 16000000,
+      "technique_summary": "INT8",
       "file_paths": [
         "records/track_10min_16mb/2026-04-25_SP4096_5L_MLP6_BigramHash_XSA5/README.md",
         "records/track_10min_16mb/2026-04-25_SP4096_5L_MLP6_BigramHash_XSA5/submission.json",
@@ -9165,8 +9239,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "no-bpb",
-        "seeds-unknown",
-        "artifact-unknown"
+        "seeds-unknown"
       ],
       "confidence": "HIGH"
     },
