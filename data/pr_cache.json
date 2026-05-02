@@ -1,14 +1,56 @@
 {
-  "last_fetch": "2026-05-02T20:04:39.549856+00:00",
-  "api_calls_used": 273,
+  "last_fetch": "2026-05-02T21:09:04.424272+00:00",
+  "api_calls_used": 274,
   "prs": [
+    {
+      "number": 2147,
+      "title": "Codex/trigram ngram tilt",
+      "author": "Sacmaj",
+      "state": "CLOSED",
+      "created": "2026-05-02T20:23:29Z",
+      "updated": "2026-05-02T20:50:21Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": null,
+      "technique_summary": "N-gram",
+      "file_paths": [
+        ".env.example",
+        ".github/dependabot.yml",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "W9_LM_FIRST_DIAGNOSTICS.md",
+        "rebus_coverage_audit.md",
+        "records/track_non_record_16mb/2026-04-02_ARSelfGen_GPTQ_TempScale_Trigram/README.md",
+        "records/track_non_record_16mb/2026-04-02_ARSelfGen_GPTQ_TempScale_Trigram/requirements.txt",
+        "records/track_non_record_16mb/2026-04-02_ARSelfGen_GPTQ_TempScale_Trigram/submission.json",
+        "records/track_non_record_16mb/2026-04-02_ARSelfGen_GPTQ_TempScale_Trigram/train_gpt.py",
+        "records/track_non_record_16mb/2026-05-01_psyarbor_lab_rebus_calculations_w9/README.md",
+        "records/track_non_record_16mb/2026-05-01_psyarbor_lab_rebus_calculations_w9/submission.json",
+        "records/track_non_record_16mb/2026-05-01_psyarbor_lab_rebus_calculations_w9/train_gpt.py",
+        "tools/debug_w9_community_oracle.py",
+        "tools/debug_w9_training_path.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 2146,
       "title": "Update leaderboard with May 1 audited rows",
       "author": "cocohearts",
       "state": "OPEN",
       "created": "2026-05-02T18:08:54Z",
-      "updated": "2026-05-02T20:02:46Z",
+      "updated": "2026-05-02T21:01:02Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": null,
@@ -16,7 +58,9 @@
       "file_paths": [
         "README.md"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Addressed the actionable audit comments:\n\n- Removed PR #2130 from this README update. The `train_shards: 1499` log line plus doubled local `datasets/datasets` path matches the 10k-val-doc local CaseOps prep issue, so it has the same train/val document-overlap problem as PR #2018.\n- Kept PR #2135 out for this cutoff-limited update. The PR was opened pre-cutoff, but the scored 3-seed state/logs landed after `2026-05-02T00:00:00Z`; this audit is applying the scored-state-pushed-before-cutoff rule.\n"
+      ],
       "compliance_keywords": [
         "ngram"
       ],
@@ -350,13 +394,25 @@
       "author": "leon2k2k2k",
       "state": "OPEN",
       "created": "2026-05-01T23:56:43Z",
-      "updated": "2026-05-01T23:59:54Z",
+      "updated": "2026-05-02T20:13:25Z",
       "bpb": 1.06549,
       "seeds": 3,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + EMA",
       "file_paths": [
-        "records/track_non_record_16mb/2026-05-02_RecurrenceBandNotes_leon2k2k2k/README.md"
+        "caseops-memory-leakage/family-tree.md",
+        "caseops-memory-leakage/verdicts.md",
+        "records/track_non_record_16mb/2026-05-02_RecurrenceBandNotes_leon2k2k2k/README.md",
+        "research/ideas/033b-ttt-adapt-alpha-beta-high-lr.md",
+        "research/ideas/035c-polar-ns-on-030-family.md",
+        "research/specs/035c-polar-ns-on-030-family.md",
+        "research/specs/038-smear-lqer-asym-8h.md",
+        "research/specs/039b-loop-band-activation-screen.md",
+        "research/specs/_shelved/039bd-penalized-tanh-plus-040c.md",
+        "research/specs/_shelved/039be-tanh-plus-040c.md",
+        "runs/019b-recur-alpha-manual-constant-full/seed_42/final_model.int6.ptz",
+        "runs/019b-recur-alpha-manual-constant-full/seed_42/train.log",
+        "runs/019b-recur-alpha-manual-constant-full/seed_42/train.tokenizer_path_bug.log"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -611,7 +667,7 @@
       "author": "TanishGudise",
       "state": "OPEN",
       "created": "2026-05-01T23:22:40Z",
-      "updated": "2026-05-02T18:49:38Z",
+      "updated": "2026-05-02T21:01:02Z",
       "bpb": 1.0567,
       "seeds": 3,
       "artifact_bytes": 15950000,
@@ -668,7 +724,9 @@
         "logs/568732a1-ee21-4bc2-ab85-e7c54d12757a.txt",
         "logs/5842d194-3225-4639-b9c4-7618d1a55f67.txt"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Update to the leaderboard audit note: separate from the packaging issue, I now think this should be excluded on data-validity grounds. `SUBMISSION_FINAL/train_seed314.log` reports `train_shards: 1499` and a doubled local `datasets/datasets` CaseOps path, which matches the local `prepare_caseops_data.py --val-docs=10000` fingerprint from Issue #2127. That means docs 10,000-49,999 overlap between training and the scored 50k-doc validation split. This is the same train/val leakage reason PR #2018 i"
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
