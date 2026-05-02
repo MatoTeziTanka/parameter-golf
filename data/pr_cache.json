@@ -1,7 +1,39 @@
 {
-  "last_fetch": "2026-05-02T17:48:36.741587+00:00",
-  "api_calls_used": 271,
+  "last_fetch": "2026-05-02T19:04:45.072304+00:00",
+  "api_calls_used": 272,
   "prs": [
+    {
+      "number": 2146,
+      "title": "Update leaderboard with May 1 audited rows",
+      "author": "cocohearts",
+      "state": "OPEN",
+      "created": "2026-05-02T18:08:54Z",
+      "updated": "2026-05-02T19:04:31Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "N-gram",
+      "file_paths": [
+        "README.md"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ngram"
+      ],
+      "track": "record",
+      "technique_type": "cache",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2145,
       "title": "[Non-record] MHALM V2 non-record submission (1.3477 bpb)",
@@ -185,7 +217,7 @@
       "author": "simon-marcus",
       "state": "OPEN",
       "created": "2026-05-01T23:59:27Z",
-      "updated": "2026-05-02T12:49:13Z",
+      "updated": "2026-05-02T18:15:27Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 15997965,
@@ -206,7 +238,9 @@
         "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_gpt.py",
         "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (cutoff + validity): I don't think this can count for the cutoff-limited leaderboard update. The final scored state was force-pushed after 2026-05-02T00:00:00Z, and the submitted logs still show active within/word n-gram gates (`within_gate` and `word_gate` nonzero), which is the same C1 target-token gating issue. A token-only legal path should have those gates disabled/zero."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -262,12 +296,12 @@
     },
     {
       "number": 2138,
-      "title": "Record: SP8192 + Sliding-Window Eval + Lock-In Byte Mixer - val_bpb 0.979556",
+      "title": "Record: SP8192 + Sliding-Window Eval + Lock-In Byte Mixer - val_bpb 1.067219",
       "author": "anmarhindi",
       "state": "OPEN",
       "created": "2026-05-01T23:56:48Z",
-      "updated": "2026-05-02T17:24:34Z",
-      "bpb": 0.979556,
+      "updated": "2026-05-02T18:21:21Z",
+      "bpb": 1.067219,
       "seeds": 3,
       "artifact_bytes": 15810458,
       "technique_summary": "TTT + GPTQ + INT6 + EMA + N-gram",
@@ -284,7 +318,9 @@
         "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/train_seed314.log",
         "records/track_10min_16mb/2026-05-01_LockInByteMixer_0.979556/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The headline BPB divides by transformed CaseOps/tokenizer bytes (`164,594,398`) rather than the raw validation byte sidecar (`151,074,309`) required for official CaseOps BPB. Recomputing with the raw-byte denominator puts the result around 1.067 BPB, not 0.9796, so it is not a leaderboard win."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -376,7 +412,7 @@
       "author": "codemath3000",
       "state": "OPEN",
       "created": "2026-05-01T23:48:57Z",
-      "updated": "2026-05-02T10:04:59Z",
+      "updated": "2026-05-02T18:38:33Z",
       "bpb": 1.05651,
       "seeds": 3,
       "artifact_bytes": 15947490,
@@ -395,7 +431,9 @@
         "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/train_seed314.log",
         "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (cutoff handling): I don't think this can count for the cutoff-limited leaderboard update. The scored 3-seed state was pushed after 2026-05-02T00:00:00Z; the pre-cutoff commit only had placeholders/null score evidence. This may be reviewable for a later cutoff, but not for the May 1 5pm Pacific cutoff."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -566,7 +604,7 @@
       "author": "TanishGudise",
       "state": "OPEN",
       "created": "2026-05-01T23:22:40Z",
-      "updated": "2026-05-01T23:49:47Z",
+      "updated": "2026-05-02T18:49:38Z",
       "bpb": 1.0567,
       "seeds": 3,
       "artifact_bytes": 15950000,
@@ -813,7 +851,7 @@
       "author": "vaibhavmishra1",
       "state": "OPEN",
       "created": "2026-05-01T15:36:26Z",
-      "updated": "2026-05-01T15:44:38Z",
+      "updated": "2026-05-02T18:15:20Z",
       "bpb": 1.05933439,
       "seeds": 42,
       "artifact_bytes": 15987537,
@@ -831,7 +869,9 @@
         "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/train_seed1234.log",
         "records/track_10min_16mb/2026-04-30_GatedXSA_LQERg32top4_TTTlocal080_NgramTilt_Combined/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is record-ready as submitted. The headline uses a third seed from a different/reference config, while submission.json only verifies two matching-config seeds. A leaderboard row needs a 3-seed mean from the same submitted configuration, with consistent timing/artifact evidence."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -942,7 +982,7 @@
       "author": "Kbediako",
       "state": "OPEN",
       "created": "2026-05-01T13:51:10Z",
-      "updated": "2026-05-01T20:15:41Z",
+      "updated": "2026-05-02T18:15:19Z",
       "bpb": 1.06095913,
       "seeds": 3,
       "artifact_bytes": null,
@@ -968,7 +1008,9 @@
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed42_rank128_final.log",
         "records/track_10min_16mb/2026-05-01_StageBv2_ScalarControlQ_LQTop1_CaseOpsTTT_1.06100/ttt_seed999.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is record-ready as submitted. The headline is a single seed only; the disclosed 3-seed means are worse than PR #1855, and the final process timing evidence exceeds 600s for key runs. This needs a clean matching 3-seed under-cap package to be considered."
+      ],
       "compliance_keywords": [
         "ttt",
         "gptq_eval"
@@ -1087,7 +1129,7 @@
       "author": "aquariouseworkman",
       "state": "OPEN",
       "created": "2026-05-01T11:24:29Z",
-      "updated": "2026-05-02T07:32:58Z",
+      "updated": "2026-05-02T18:52:06Z",
       "bpb": 1.0435,
       "seeds": 3,
       "artifact_bytes": 15986801,
@@ -1105,7 +1147,9 @@
         "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/train_seed314.log",
         "records/track_10min_16mb/2026-05-01_Gated XSA + token-only n-gram TTT + GPTQ_RESERVE=2.0/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row before the cutoff. The pre-cutoff submitted state still had active within/word n-gram experts (`WITHIN_BOOST=0.750`, `WORD_BOOST=0.750`, `AGREE_ADD_BOOST=0.500`), and the logs show nonzero `within_gate`, `word_gate`, and `agree2plus`. That is not token-only and has the same C1 current-target gating issue. The later corrected state was pushed after cutoff."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -1442,7 +1486,7 @@
       "author": "izlley",
       "state": "OPEN",
       "created": "2026-05-01T07:04:41Z",
-      "updated": "2026-05-02T02:56:50Z",
+      "updated": "2026-05-02T18:15:15Z",
       "bpb": 1.05858203,
       "seeds": 3,
       "artifact_bytes": 15906335,
@@ -1463,7 +1507,9 @@
         "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_seed314.log",
         "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row before the cutoff. The latest pre-cutoff state used a non-canonical validation partition, and the canonical correction/evidence was pushed after the 2026-05-02T00:00:00Z cutoff. I would not count the post-cutoff correction for the cutoff-limited leaderboard update."
+      ],
       "compliance_keywords": [
         "ttt",
         "gptq_eval"
@@ -1702,7 +1748,7 @@
       "author": "lkk688",
       "state": "OPEN",
       "created": "2026-05-01T06:21:22Z",
-      "updated": "2026-05-01T06:21:22Z",
+      "updated": "2026-05-02T18:15:14Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -1729,7 +1775,9 @@
         "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/train.log",
         "records/track_non_record_16mb/2026-04-30_SP8192_PPMMix_608d_ValueResid/train_gpt.py"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The record claim is based on a single 1xH100 run, the changed record folder lacks a submission.json, and the PPM mixture has the same byte/token normalization issue: it scores the realized byte sequence rather than providing a full normalized distribution at the official scoring point."
+      ],
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "neural",
@@ -1910,7 +1958,7 @@
       "author": "joshuaswanson",
       "state": "OPEN",
       "created": "2026-05-01T05:07:40Z",
-      "updated": "2026-05-01T05:07:40Z",
+      "updated": "2026-05-02T18:15:12Z",
       "bpb": 0.80050966,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -1929,7 +1977,9 @@
         "records/track_10min_16mb/2026-05-01_PR1873_PPMOptGate/train_log_seed42.txt",
         "records/track_10min_16mb/2026-05-01_PR1873_PPMOptGate/train_log_seed999.txt"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The tuned PPM gate is selected by an offline sweep over dumped validation/NN distributions, which is validation-outcome tuning. The byte-level PPM mixture also fails the C2/full-normalized-distribution audit because it scores the realized byte stream rather than committing a proper normalized next-token distribution before observing the target."
+      ],
       "compliance_keywords": [
         "ttt",
         "gptq_eval"
@@ -2461,7 +2511,7 @@
       "author": "NewyorkDev",
       "state": "OPEN",
       "created": "2026-05-01T03:53:24Z",
-      "updated": "2026-05-01T05:08:51Z",
+      "updated": "2026-05-02T18:15:10Z",
       "bpb": 0.9417527,
       "seeds": 3,
       "artifact_bytes": 15988348,
@@ -2483,7 +2533,9 @@
         "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/train_seed42.log",
         "records/track_10min_16mb/2026-05-01_SP8192_CaseOps_V13_PPM_0.94175/train_seed999.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The submitted PPM mixer scores the realized byte string and mixes realized-token neural probability with PPM probability; it does not define and commit a full normalized distribution over possible next symbols before the target is known. That fails the C2/full-normalization audit for leaderboard scoring."
+      ],
       "compliance_keywords": [
         "ttt"
       ],
@@ -2569,7 +2621,7 @@
       "author": "NewyorkDev",
       "state": "OPEN",
       "created": "2026-05-01T03:43:56Z",
-      "updated": "2026-05-01T04:03:08Z",
+      "updated": "2026-05-02T18:15:09Z",
       "bpb": 0.97271454,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -2591,7 +2643,9 @@
         "records/track_10min_16mb/2026-05-01_BIJEPAXLite_JEPA_PPM_0.97271/train_seed42.log",
         "records/track_10min_16mb/2026-05-01_BIJEPAXLite_JEPA_PPM_0.97271/train_seed999.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The PPM/byte-mixer score has the same C2 normalization problem: it scores the realized byte sequence and mixes that with the NN probability after knowing the realized token, rather than committing a full normalized distribution over possible next tokens/bytes at the scoring point. So the 0.9727 BPB headline should not be merged as a leaderboard score."
+      ],
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "neural",
@@ -2714,7 +2768,7 @@
       "author": "teslaeco",
       "state": "OPEN",
       "created": "2026-05-01T02:57:30Z",
-      "updated": "2026-05-01T16:28:20Z",
+      "updated": "2026-05-02T18:15:07Z",
       "bpb": 0.92967555,
       "seeds": 3,
       "artifact_bytes": 15920000,
@@ -2752,7 +2806,9 @@
         "run_aux_v6_probe.sh",
         "runpod_record_attempt.sh"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The byte-PPM score does not provide a normalized distribution over the official next-token alphabet before seeing the realized token; it scores the realized byte stream/mixer path. The logs also indicate byte accounting inconsistent with the official validation byte denominator, so the headline 0.9296 BPB is not acceptable leaderboard evidence."
+      ],
       "compliance_keywords": [],
       "track": "non-record",
       "technique_type": "ttt",
@@ -4162,7 +4218,7 @@
       "author": "jorge-asenjo",
       "state": "OPEN",
       "created": "2026-04-30T23:20:00Z",
-      "updated": "2026-04-30T23:20:00Z",
+      "updated": "2026-05-02T18:15:04Z",
       "bpb": 0.00416,
       "seeds": 3,
       "artifact_bytes": 15977032,
@@ -4178,7 +4234,9 @@
         "records/track_10min_16mb/2026-05-01_SP8192_InsiderNgram_V21_NoGatedXSA_1.0569/train_seed1234.log",
         "records/track_10min_16mb/2026-05-01_SP8192_InsiderNgram_V21_NoGatedXSA_1.0569/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The n-gram path is not token-only in the submitted logs: seed42 reports nonzero within/word/agree gates (`within_gate=9866847`, `word_gate=2891588`, `agree2plus=303177`). Those gates depend on current target-token class/word information and hit the same C1 issue as the earlier within/word n-gram submissions. A token-only legal path should have those gates disabled/zero."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -4284,7 +4342,7 @@
       "author": "anmarhindi",
       "state": "OPEN",
       "created": "2026-04-30T23:19:33Z",
-      "updated": "2026-05-01T11:10:35Z",
+      "updated": "2026-05-02T18:15:02Z",
       "bpb": 1.015784,
       "seeds": 3,
       "artifact_bytes": 15576768,
@@ -4301,7 +4359,9 @@
         "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/train_seed314.log",
         "records/track_10min_16mb/2026-04-30_CondPPM_1.015784/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The include_space C1/C2 fallback was fixed before cutoff, but the reported cond-PPM BPB still appears to use the wrong scoring surface/denominator: the logs score 9,662,464 tokens / 32,756,252 reconstructed token bytes, while the standard eval for that same split implies about 29.95M raw validation bytes. The official CaseOps BPB denominator should be the raw validation byte sidecar, not reconstructed transfo"
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -5047,7 +5107,7 @@
       "author": "Itssshikhar",
       "state": "OPEN",
       "created": "2026-04-30T21:30:09Z",
-      "updated": "2026-04-30T21:30:09Z",
+      "updated": "2026-05-02T18:15:00Z",
       "bpb": 1.05957,
       "seeds": 3,
       "artifact_bytes": 15901624,
@@ -5063,7 +5123,9 @@
         "records/track_10min_16mb/2026-05-01_PR1851_9HpStack_WDStrong_AR_Pergroup_1.05957/train_seed42.log",
         "records/track_10min_16mb/2026-05-01_PR1851_9HpStack_WDStrong_AR_Pergroup_1.05957/train_seed42.stdout.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is record-ready as submitted. The headline is a single-seed result with no std/p-value evidence. For a score this close to the existing frontier, it needs a matching 3-seed package and significance evidence before it can be treated as a leaderboard row."
+      ],
       "compliance_keywords": [
         "ttt",
         "gptq_eval"
@@ -5124,9 +5186,9 @@
       "number": 2018,
       "title": "Record: Gated XSA + LQER top-1 + strict token-only n-gram TTT (val_bpb: 1.047)",
       "author": "simon-marcus",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-04-30T21:24:13Z",
-      "updated": "2026-05-01T16:44:37Z",
+      "updated": "2026-05-02T18:32:04Z",
       "bpb": 1.047,
       "seeds": 3,
       "artifact_bytes": 15996490,
@@ -5156,7 +5218,9 @@
         "records/track_10min_16mb/2026-04-30_GatedXSA_LQERTop1_IntimerNgramTTT/train_seed2026.log",
         "records/track_10min_16mb/2026-04-30_GatedXSA_LQERTop1_IntimerNgramTTT/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The submitted CaseOps data construction uses training shards after a 10k-doc validation boundary, but the final validation is regenerated from the first 50k documents. That overlaps documents 10,000-49,999 between training and validation, so the 1.047 score is contaminated by train/validation leakage."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -5170,10 +5234,9 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "AT_RISK",
+      "status": "DEAD",
       "flags": [
-        "body:ngram-body",
-        "path:ngram-path"
+        "closed-with-maintainer-comment"
       ],
       "confidence": "MEDIUM"
     },
@@ -5334,7 +5397,7 @@
       "author": "Wilbatronic",
       "state": "OPEN",
       "created": "2026-04-30T20:51:31Z",
-      "updated": "2026-04-30T20:55:59Z",
+      "updated": "2026-05-02T18:14:57Z",
       "bpb": 1.0543,
       "seeds": null,
       "artifact_bytes": null,
@@ -5373,7 +5436,9 @@
         "tail_specific.sh",
         "train_gpt.py"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is record-ready as submitted. The PR title/body claim a 1.0543 BPB result, but I could not find the required records-folder package with submission.json, logs, artifact accounting, and 3-seed full-validation evidence. As-is there is not enough evidence to grade or merge as a leaderboard row."
+      ],
       "compliance_keywords": [
         "ttt"
       ],
@@ -5522,7 +5587,7 @@
       "author": "SlavH",
       "state": "OPEN",
       "created": "2026-04-30T20:19:17Z",
-      "updated": "2026-04-30T20:45:18Z",
+      "updated": "2026-05-02T18:14:55Z",
       "bpb": 1.0500312,
       "seeds": 3,
       "artifact_bytes": 15921334,
@@ -5533,7 +5598,9 @@
         "records/track_10min_16mb/2026-04-30_DepthShare4096_SparseGate_Muon_TTT/train.log",
         "records/track_10min_16mb/2026-04-30_DepthShare4096_SparseGate_Muon_TTT/train_gpt.py"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The claimed score is not a full official validation BPB: the evidence points to 20 random validation minibatches plus a fixed BYTES_PER_TOKEN denominator, not the full validation byte-sidecar accounting. There is also no clean 3-seed full-validation artifact package supporting the headline number."
+      ],
       "compliance_keywords": [
         "ttt"
       ],
@@ -6320,7 +6387,7 @@
       "author": "joshuaswanson",
       "state": "OPEN",
       "created": "2026-04-30T16:37:27Z",
-      "updated": "2026-04-30T16:37:27Z",
+      "updated": "2026-05-02T18:14:54Z",
       "bpb": 0.9429,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -6333,7 +6400,9 @@
         "records/track_10min_16mb/2026-04-30_SP8192_PPMMixer_O5_TunedGate/train_seed42.log",
         "records/track_10min_16mb/2026-04-30_SP8192_PPMMixer_O5_TunedGate/train_seed999.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The byte-PPM mixer does not define a full normalized distribution over the official next-token alphabet before the realized token is known; it scores the realized byte stream by spreading the realized token log-prob across observed bytes. The submitted PPM order/gate choices also appear selected by offline validation-target sweeps, which is not acceptable record evidence."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -6663,7 +6732,7 @@
       "author": "hectar-glitches",
       "state": "OPEN",
       "created": "2026-04-30T13:13:22Z",
-      "updated": "2026-05-01T04:07:50Z",
+      "updated": "2026-05-02T18:14:52Z",
       "bpb": 0.00037,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -6697,7 +6766,9 @@
         "records/track_10min_16mb/2026-04-30_EXP4_BetterThanSOTA/train_gpt.py",
         "requirements.txt"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is record-ready as submitted. The claimed ~1.06071 number depends on an unsupported correction/offset; the raw logged BPBs are around 1.065-1.066, bytes_total is not populated, and the evidence is not a clean records-folder package with a statistically persuasive 3-seed record claim."
+      ],
       "compliance_keywords": [
         "ttt"
       ],
@@ -7096,7 +7167,7 @@
       "author": "BharathSShankar",
       "state": "OPEN",
       "created": "2026-04-30T08:57:17Z",
-      "updated": "2026-04-30T11:31:27Z",
+      "updated": "2026-05-02T18:14:50Z",
       "bpb": 1.03983,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -7110,7 +7181,9 @@
         "records/track_10min_16mb/2026-04-30_SP10240_SimCTG_PreQuantTTT_OptioAI/train_seed2025.log",
         "records/track_10min_16mb/2026-04-30_SP10240_SimCTG_PreQuantTTT_OptioAI/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The reported 1.03983 score is after PreQuantTTT adapts on the validation stream before the final score, so it is score-after-adapt on validation data and violates the score-first/C3 rule. The PR also reports eval operations around 688s, over the 600s eval cap."
+      ],
       "compliance_keywords": [
         "ttt",
         "gptq_eval",
@@ -7483,7 +7556,7 @@
       "author": "someone114514",
       "state": "OPEN",
       "created": "2026-04-30T06:21:11Z",
-      "updated": "2026-04-30T06:21:11Z",
+      "updated": "2026-05-02T18:14:47Z",
       "bpb": 1.05826976,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -7496,7 +7569,9 @@
         "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_Prefix2750/train_gpt.py",
         "records/track_10min_16mb/2026-04-30_LongCtx_NoQV_QK525_Prefix2750/train_seed42.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is record-ready as submitted. The PR reports only a single seed and no std/p-value evidence, and the seed-42 number is essentially a narrow follow-up around PR #1953 rather than a statistically supported new frontier row. Please rerun a matching 3-seed package if this is intended as a leaderboard claim."
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram"
@@ -7630,7 +7705,7 @@
       "author": "remg1997",
       "state": "OPEN",
       "created": "2026-04-30T05:08:06Z",
-      "updated": "2026-04-30T05:10:08Z",
+      "updated": "2026-05-02T18:14:45Z",
       "bpb": 0.06487,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -7644,7 +7719,9 @@
         "records/track_10min_16mb/2026-04-29_SP8192_PPMMixer_BigbagStack/train_seed42.log",
         "records/track_10min_16mb/2026-04-29_SP8192_PPMMixer_BigbagStack/train_seed999.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: Leaderboard audit note (pre-cutoff state): I don't think this is valid as a record row. The logged artifact accounting is over the 16,000,000 byte cap once code is counted: 15,976,086 model bytes + 66,546 code bytes = 16,042,632 total bytes. The compliance evidence also appears to rely on a 4xH100/extended-wallclock projection rather than direct record-track 8xH100 timing. Independently, the byte-PPM mixer would still need the full-normalized-distribution audit before it could be considered."
+      ],
       "compliance_keywords": [
         "ttt"
       ],
@@ -31483,11 +31560,11 @@
       "author": "andrewmouldon",
       "state": "OPEN",
       "created": "2026-04-03T22:01:35Z",
-      "updated": "2026-04-04T14:50:00Z",
+      "updated": "2026-05-02T18:24:13Z",
       "bpb": 1.2262,
       "seeds": 2,
-      "artifact_bytes": 16000000,
-      "technique_summary": "",
+      "artifact_bytes": null,
+      "technique_summary": "LoRA",
       "file_paths": [
         "records/track_non_record_16mb/2026-03-18_BankLinear/README.md",
         "records/track_non_record_16mb/2026-03-18_BankLinear/submission.json",
@@ -31509,7 +31586,8 @@
       "technique_source": "code",
       "status": "INCOMPLETE",
       "flags": [
-        "seeds-only-2"
+        "seeds-only-2",
+        "artifact-unknown"
       ],
       "confidence": "HIGH"
     },
@@ -33539,10 +33617,10 @@
       "author": "andrewmouldon",
       "state": "OPEN",
       "created": "2026-04-02T21:43:19Z",
-      "updated": "2026-04-12T05:44:03Z",
+      "updated": "2026-05-02T18:26:10Z",
       "bpb": 1.2262,
       "seeds": 2,
-      "artifact_bytes": 16000000,
+      "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
         "records/track_non_record_16mb/2026-04-02_Hierarchical_Shared_Attention/README.md",
@@ -33555,9 +33633,11 @@
         "records/track_non_record_16mb/2026-04-02_Hierarchical_Shared_Attention/train_log_hsa_42.txt"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
+      "compliance_keywords": [
+        "cache_eval"
+      ],
       "track": "non-record",
-      "technique_type": "neural",
+      "technique_type": "cache",
       "technique_tags": [
         "neural"
       ],
@@ -33565,6 +33645,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-only-2",
+        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -42128,10 +42209,10 @@
       "author": "andrewmouldon",
       "state": "OPEN",
       "created": "2026-03-28T19:32:40Z",
-      "updated": "2026-04-11T20:51:26Z",
+      "updated": "2026-05-02T18:27:58Z",
       "bpb": 1.2262,
       "seeds": 2,
-      "artifact_bytes": 16000000,
+      "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
         "records/track_non_record_16mb/2026-03-28_ASQU/README.md",
@@ -42154,6 +42235,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-only-2",
+        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -44772,10 +44854,10 @@
       "author": "andrewmouldon",
       "state": "OPEN",
       "created": "2026-03-27T17:09:11Z",
-      "updated": "2026-04-11T20:51:27Z",
+      "updated": "2026-05-02T18:29:39Z",
       "bpb": 1.2262,
       "seeds": 2,
-      "artifact_bytes": 16000000,
+      "artifact_bytes": null,
       "technique_summary": "",
       "file_paths": [
         "records/track_non_record_16mb/2026-03-27_Mixture_of_Convolutions/README.md",
@@ -44801,6 +44883,7 @@
       "status": "INCOMPLETE",
       "flags": [
         "seeds-only-2",
+        "artifact-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
