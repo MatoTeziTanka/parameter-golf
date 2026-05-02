@@ -1,20 +1,103 @@
 {
-  "last_fetch": "2026-05-01T23:58:35.149467+00:00",
-  "api_calls_used": 260,
+  "last_fetch": "2026-05-02T03:40:43.720747+00:00",
+  "api_calls_used": 261,
   "prs": [
+    {
+      "number": 2141,
+      "title": "Parameter Golf V2 Optimized Submission",
+      "author": "Victory963",
+      "state": "OPEN",
+      "created": "2026-05-02T02:23:02Z",
+      "updated": "2026-05-02T02:27:38Z",
+      "bpb": 0.0035,
+      "seeds": 3,
+      "artifact_bytes": null,
+      "technique_summary": "TTT",
+      "file_paths": [
+        "V2_SUBMISSION.md",
+        "train_v2_optimized.py",
+        "v2_3seeds_results.json",
+        "v2_3seeds_summary.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "text",
+      "status": "INCOMPLETE",
+      "flags": [
+        "artifact-unknown",
+        "no-submission-json"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2140,
+      "title": "Record: PR #2014 stack + LeakyReLU 0.3 + strict in-timer n-gram TTT (val_bpb 1.0560)",
+      "author": "simon-marcus",
+      "state": "OPEN",
+      "created": "2026-05-01T23:59:27Z",
+      "updated": "2026-05-02T00:17:09Z",
+      "bpb": null,
+      "seeds": 3,
+      "artifact_bytes": 15997965,
+      "technique_summary": "TTT + LoRA + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/README.md",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/eval_seed42_ngram_p0_c64.log",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/eval_seed42_ngram_p2500_c64.log",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/lossless_caps.py",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/online_ngram_state.c",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/online_ngram_tilt.py",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/requirements.txt",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/submission.json",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_eval_seed0.log",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_eval_seed314.log",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_gpt.py",
+        "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "leaky_relu",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "body:ngram-body",
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 2139,
       "title": "[Record candidate] TTT Peer-LoRA Ensemble on PR #2014, val_bpb = 1.05749",
       "author": "varunneal",
       "state": "OPEN",
       "created": "2026-05-01T23:57:50Z",
-      "updated": "2026-05-01T23:57:50Z",
+      "updated": "2026-05-02T00:03:02Z",
       "bpb": 1.05749,
-      "seeds": null,
-      "artifact_bytes": null,
+      "seeds": 3,
+      "artifact_bytes": 15990000,
       "technique_summary": "TTT + LoRA",
       "file_paths": [
         "records/track_10min_16mb/2026-04-30_TTT_Ensemble/README.md",
+        "records/track_10min_16mb/2026-04-30_TTT_Ensemble/seed42.log",
         "records/track_10min_16mb/2026-04-30_TTT_Ensemble/submission.json",
         "records/track_10min_16mb/2026-04-30_TTT_Ensemble/submit.sh",
         "records/track_10min_16mb/2026-04-30_TTT_Ensemble/train_gpt.py"
@@ -30,11 +113,8 @@
         "gptq"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
-      "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
-      ],
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
@@ -43,7 +123,7 @@
       "author": "anmarhindi",
       "state": "OPEN",
       "created": "2026-05-01T23:56:48Z",
-      "updated": "2026-05-01T23:58:22Z",
+      "updated": "2026-05-02T01:03:44Z",
       "bpb": 0.979556,
       "seeds": 3,
       "artifact_bytes": 15810458,
@@ -84,26 +164,26 @@
       "author": "leon2k2k2k",
       "state": "OPEN",
       "created": "2026-05-01T23:56:43Z",
-      "updated": "2026-05-01T23:56:43Z",
-      "bpb": null,
-      "seeds": null,
+      "updated": "2026-05-01T23:59:54Z",
+      "bpb": 1.06549,
+      "seeds": 3,
       "artifact_bytes": 16000000,
-      "technique_summary": "",
+      "technique_summary": "TTT + EMA",
       "file_paths": [
         "records/track_non_record_16mb/2026-05-02_RecurrenceBandNotes_leon2k2k2k/README.md"
       ],
       "maintainer_comments": [],
-      "compliance_keywords": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
       "track": "non-record",
-      "technique_type": "neural",
+      "technique_type": "ttt",
       "technique_tags": [
         "neural"
       ],
       "technique_source": "text",
       "status": "INCOMPLETE",
       "flags": [
-        "no-bpb",
-        "seeds-unknown",
         "no-submission-json"
       ],
       "confidence": "HIGH"
@@ -114,7 +194,7 @@
       "author": "codemath3000",
       "state": "OPEN",
       "created": "2026-05-01T23:48:59Z",
-      "updated": "2026-05-01T23:48:59Z",
+      "updated": "2026-05-02T00:18:20Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": null,
@@ -1214,14 +1294,14 @@
     },
     {
       "number": 2109,
-      "title": "Record: PR #1855 + MP3 marker-pair fusion + alias smear boundary — val_bpb 1.05918 (3-seed mean)",
+      "title": "Record: PR #1855 + MP3 marker-pair fusion + alias smear boundary — val_bpb 1.05858 (3-seed mean, DGX canonical)",
       "author": "izlley",
       "state": "OPEN",
       "created": "2026-05-01T07:04:41Z",
-      "updated": "2026-05-01T23:51:31Z",
-      "bpb": 1.05917838,
+      "updated": "2026-05-02T02:56:50Z",
+      "bpb": 1.05858203,
       "seeds": 3,
-      "artifact_bytes": 15907150,
+      "artifact_bytes": 15906335,
       "technique_summary": "TTT + GPTQ + INT6 + INT8",
       "file_paths": [
         "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/README.md",
@@ -1236,7 +1316,6 @@
         "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
         "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_gpt.py",
         "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_seed0.log",
-        "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_seed1234.log",
         "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_seed314.log",
         "records/track_10min_16mb/2026-04-30_PR1855_MP3_AliasSmearBoundary/train_seed42.log"
       ],
@@ -5324,7 +5403,7 @@
       "author": "Christopher-Lee-McClendon",
       "state": "OPEN",
       "created": "2026-04-30T20:06:37Z",
-      "updated": "2026-05-01T23:43:04Z",
+      "updated": "2026-05-02T02:17:17Z",
       "bpb": 0.00885746,
       "seeds": 3,
       "artifact_bytes": 15926271,
@@ -66772,9 +66851,9 @@
       "number": 356,
       "title": "Non-record: PR315 repro on 1xH100 PCIe, int6+zstd (val_bpb=1.8338)",
       "author": "sjp611",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-03-21T18:19:12Z",
-      "updated": "2026-04-11T20:13:59Z",
+      "updated": "2026-05-02T01:59:10Z",
       "bpb": 1.8338,
       "seeds": null,
       "artifact_bytes": 10000000,
@@ -66796,11 +66875,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "DEAD",
       "flags": [
-        "seeds-unknown"
+        "closed-no-maintainer-comment"
       ],
-      "confidence": "HIGH"
+      "confidence": "LOW"
     },
     {
       "number": 355,
