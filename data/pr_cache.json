@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-05-02T23:10:31.529283+00:00",
-  "api_calls_used": 276,
+  "last_fetch": "2026-05-03T00:08:21.879784+00:00",
+  "api_calls_used": 277,
   "prs": [
     {
       "number": 2147,
@@ -50,7 +50,7 @@
       "author": "cocohearts",
       "state": "OPEN",
       "created": "2026-05-02T18:08:54Z",
-      "updated": "2026-05-02T22:03:22Z",
+      "updated": "2026-05-02T23:53:55Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": null,
@@ -59,7 +59,8 @@
         "README.md"
       ],
       "maintainer_comments": [
-        "cocohearts: Addressed the actionable audit comments:\n\n- Removed PR #2130 from this README update. The `train_shards: 1499` log line plus doubled local `datasets/datasets` path matches the 10k-val-doc local CaseOps prep issue, so it has the same train/val document-overlap problem as PR #2018.\n- Kept PR #2135 out for this cutoff-limited update. The PR was opened pre-cutoff, but the scored 3-seed state/logs landed after `2026-05-02T00:00:00Z`; this audit is applying the scored-state-pushed-before-cutoff rule.\n"
+        "cocohearts: Updated after applying the grace policy:\n\n- PR #2135 is now included in this README update. The PR/code/scaffold were opened before cutoff, the later commits supplied logs/results, and the logs verify clean canonical CaseOps data (`train_shards: 80`, no doubled `datasets/datasets` path, `val_tokens: 47851520`).\n- PR #2140's corrected token-only state is treated as technically acceptable under grace, but it still does not add a row because earlier PR #2135 is lower: 1.05651 vs 1.05702.\n- PR #2019",
+        "cocohearts: Applying the maintainer grace policy here: if the original idea/code was submitted before cutoff, then later validation/results or narrowly compliance-restoring fixes can be considered.\n\nChanges made in this PR:\n- Added PR #2135 as the new top row: 3-seed mean 1.05650768, p=0.014 vs PR #2014. I verified the logs use clean canonical CaseOps data (`train_shards: 80`, no doubled `datasets/datasets` path, `val_tokens: 47851520`) and token-only n-gram gates.\n- Treated PR #2140's corrected token-only "
       ],
       "compliance_keywords": [
         "ngram"
@@ -261,7 +262,7 @@
       "author": "simon-marcus",
       "state": "OPEN",
       "created": "2026-05-01T23:59:27Z",
-      "updated": "2026-05-02T19:14:54Z",
+      "updated": "2026-05-02T23:36:05Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": 15989637,
@@ -286,7 +287,7 @@
         "records/track_10min_16mb/2026-05-01_PR2014_Leaky03_InTimerNgramTTT_1.0555/train_seed42.log"
       ],
       "maintainer_comments": [
-        "cocohearts: Leaderboard audit note (cutoff + validity): I don't think this can count for the cutoff-limited leaderboard update. The final scored state was force-pushed after 2026-05-02T00:00:00Z, and the submitted logs still show active within/word n-gram gates (`within_gate` and `word_gate` nonzero), which is the same C1 target-token gating issue. A token-only legal path should have those gates disabled/zero."
+        "cocohearts: Update after applying the grace policy: I am treating the corrected token-only state as technically acceptable.\n\nThe correction disables the unintended within-word / word-start / agreement channels, and the corrected score moved worse to 1.05701907. It still does not add a leaderboard row in #2146 because earlier PR #2135 is now included and scores lower (1.05650768), so #2140 is not a chronological frontier.\n"
       ],
       "compliance_keywords": [
         "ttt",
@@ -475,7 +476,7 @@
       "author": "codemath3000",
       "state": "OPEN",
       "created": "2026-05-01T23:48:57Z",
-      "updated": "2026-05-02T19:41:49Z",
+      "updated": "2026-05-02T23:36:04Z",
       "bpb": 1.05651,
       "seeds": 3,
       "artifact_bytes": 15947490,
@@ -495,7 +496,7 @@
         "records/track_10min_16mb/2026-05-01_SP8192_PR2130Base_Calib32/train_seed42.log"
       ],
       "maintainer_comments": [
-        "cocohearts: Leaderboard audit note (cutoff handling): I don't think this can count for the cutoff-limited leaderboard update. The scored 3-seed state was pushed after 2026-05-02T00:00:00Z; the pre-cutoff commit only had placeholders/null score evidence. This may be reviewable for a later cutoff, but not for the May 1 5pm Pacific cutoff."
+        "cocohearts: Update after applying the grace policy: this is now included in leaderboard PR #2146.\n\nThe PR/code/scaffold were opened before cutoff, and the post-cutoff commits supplied the run logs/results. I also verified the submitted logs use clean canonical CaseOps data (`train_shards: 80`, no doubled local `datasets/datasets` path, `val_tokens: 47851520`) and token-only n-gram gates (`within_gate=0 word_gate=0 agree2plus=0`). The leaderboard row uses the submitted 3-seed mean 1.05650768.\n"
       ],
       "compliance_keywords": [
         "ttt",
