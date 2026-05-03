@@ -1,7 +1,48 @@
 {
-  "last_fetch": "2026-05-03T07:06:30.440516+00:00",
-  "api_calls_used": 279,
+  "last_fetch": "2026-05-03T09:04:25.925820+00:00",
+  "api_calls_used": 280,
   "prs": [
+    {
+      "number": 2149,
+      "title": "Non-record: SP8192 + RandProj384 tied embeddings + Pairwise-QK Muon -- Single-seed negative result",
+      "author": "YaseenHQ",
+      "state": "OPEN",
+      "created": "2026-05-03T08:22:53Z",
+      "updated": "2026-05-03T08:22:53Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-03_SP8192_RandProj384_PairMuonQK_NonRecord/README.md",
+        "records/track_non_record_16mb/2026-05-03_SP8192_RandProj384_PairMuonQK_NonRecord/lossless_caps.py",
+        "records/track_non_record_16mb/2026-05-03_SP8192_RandProj384_PairMuonQK_NonRecord/online_ngram_state.c",
+        "records/track_non_record_16mb/2026-05-03_SP8192_RandProj384_PairMuonQK_NonRecord/online_ngram_tilt.py",
+        "records/track_non_record_16mb/2026-05-03_SP8192_RandProj384_PairMuonQK_NonRecord/prepare_caseops_data.py",
+        "records/track_non_record_16mb/2026-05-03_SP8192_RandProj384_PairMuonQK_NonRecord/requirements.txt",
+        "records/track_non_record_16mb/2026-05-03_SP8192_RandProj384_PairMuonQK_NonRecord/submission.json",
+        "records/track_non_record_16mb/2026-05-03_SP8192_RandProj384_PairMuonQK_NonRecord/train_gpt.py",
+        "records/track_non_record_16mb/2026-05-03_SP8192_RandProj384_PairMuonQK_NonRecord/train_seed42.log",
+        "records/track_non_record_16mb/2026-05-03_SP8192_RandProj384_PairMuonQK_NonRecord/ttt_eval_seed42_fail.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 2147,
       "title": "Codex/trigram ngram tilt",
@@ -5991,7 +6032,7 @@
       "author": "cedrichaddad",
       "state": "OPEN",
       "created": "2026-04-30T18:30:26Z",
-      "updated": "2026-04-30T22:31:03Z",
+      "updated": "2026-05-03T07:46:57Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
