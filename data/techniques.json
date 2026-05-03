@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-03T04:28:52Z",
+  "generated_at": "2026-05-03T07:07:12Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 2048,
-    "matched_pr_count": 1542,
+    "pr_count": 2049,
+    "matched_pr_count": 1543,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
     ],
     "status_counts": {
-      "ALIVE": 371,
+      "ALIVE": 381,
       "AT_RISK": 128,
       "DEAD": 552,
-      "INCOMPLETE": 986,
+      "INCOMPLETE": 979,
       "UNKNOWN": 0
     }
   },
@@ -20,12 +20,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 894,
+      "count": 895,
       "author_count": 408,
-      "alive_count": 243,
+      "alive_count": 245,
       "dead_count": 250,
       "at_risk_count": 84,
-      "incomplete_count": 315,
+      "incomplete_count": 314,
       "unknown_count": 0,
       "best_alive": {
         "number": 1736,
@@ -3149,6 +3149,41 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 4,
+          "best_bpb": 1.1201,
+          "prs": [
+            {
+              "number": 768,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1201,
+              "created": "2026-03-25T21:19:18Z"
+            },
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1644,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1473,
+              "created": "2026-04-15T17:30:57Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
+            }
+          ]
+        },
+        {
           "author": "sseanliu",
           "pr_count": 4,
           "best_bpb": 1.1284,
@@ -3978,34 +4013,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.119,
               "created": "2026-03-29T11:31:02Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 3,
-          "best_bpb": 1.1201,
-          "prs": [
-            {
-              "number": 768,
-              "author": "mradassaad",
-              "status": "ALIVE",
-              "bpb": 1.1201,
-              "created": "2026-03-25T21:19:18Z"
-            },
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
-            },
-            {
-              "number": 1890,
-              "author": "mradassaad",
-              "status": "AT_RISK",
-              "bpb": 1.1456,
-              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -7741,7 +7748,7 @@
             {
               "number": 542,
               "author": "ddavidgao",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.1898,
               "created": "2026-03-23T15:25:22Z"
             }
@@ -10055,7 +10062,7 @@
         {
           "number": 542,
           "author": "ddavidgao",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.1898,
           "created": "2026-03-23T15:25:22Z"
         },
@@ -13427,6 +13434,13 @@
           "created": "2026-04-15T08:34:04Z"
         },
         {
+          "number": 1644,
+          "author": "mradassaad",
+          "status": "ALIVE",
+          "bpb": 1.1473,
+          "created": "2026-04-15T17:30:57Z"
+        },
+        {
           "number": 1645,
           "author": "scottcui-georgian",
           "status": "INCOMPLETE",
@@ -15412,9 +15426,9 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 584,
+      "count": 585,
       "author_count": 273,
-      "alive_count": 184,
+      "alive_count": 185,
       "dead_count": 153,
       "at_risk_count": 64,
       "incomplete_count": 178,
@@ -18030,6 +18044,34 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 3,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1355,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.1526,
+              "created": "2026-04-04T19:04:09Z"
+            },
+            {
+              "number": 1644,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1473,
+              "created": "2026-04-15T17:30:57Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
+            }
+          ]
+        },
+        {
           "author": "ADIITJ",
           "pr_count": 2,
           "best_bpb": 0.0009,
@@ -18887,27 +18929,6 @@
               "status": "ALIVE",
               "bpb": 1.1172,
               "created": "2026-03-26T00:41:32Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 2,
-          "best_bpb": 1.1456,
-          "prs": [
-            {
-              "number": 1355,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.1526,
-              "created": "2026-04-04T19:04:09Z"
-            },
-            {
-              "number": 1890,
-              "author": "mradassaad",
-              "status": "AT_RISK",
-              "bpb": 1.1456,
-              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -24290,6 +24311,13 @@
           "created": "2026-04-15T10:59:46Z"
         },
         {
+          "number": 1644,
+          "author": "mradassaad",
+          "status": "ALIVE",
+          "bpb": 1.1473,
+          "created": "2026-04-15T17:30:57Z"
+        },
+        {
           "number": 1646,
           "author": "sergeevii123",
           "status": "INCOMPLETE",
@@ -25519,12 +25547,12 @@
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 580,
-      "author_count": 301,
-      "alive_count": 143,
+      "count": 581,
+      "author_count": 302,
+      "alive_count": 148,
       "dead_count": 167,
       "at_risk_count": 58,
-      "incomplete_count": 206,
+      "incomplete_count": 204,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -27094,14 +27122,14 @@
             {
               "number": 903,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.2064,
               "created": "2026-03-26T22:24:02Z"
             },
             {
               "number": 1388,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.539,
               "created": "2026-04-05T18:47:17Z"
             }
@@ -30468,6 +30496,20 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 1,
+          "best_bpb": 1.1473,
+          "prs": [
+            {
+              "number": 1644,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1473,
+              "created": "2026-04-15T17:30:57Z"
+            }
+          ]
+        },
+        {
           "author": "Skytuhua",
           "pr_count": 1,
           "best_bpb": 1.1476,
@@ -31007,7 +31049,7 @@
             {
               "number": 1443,
               "author": "hardik-bhadani-git",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.3496,
               "created": "2026-04-07T13:51:40Z"
             }
@@ -31021,7 +31063,7 @@
             {
               "number": 1104,
               "author": "DariusFeher",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.3595,
               "created": "2026-03-29T23:52:12Z"
             }
@@ -33202,7 +33244,7 @@
         {
           "number": 903,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.2064,
           "created": "2026-03-26T22:24:02Z"
         },
@@ -33748,7 +33790,7 @@
         {
           "number": 1104,
           "author": "DariusFeher",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.3595,
           "created": "2026-03-29T23:52:12Z"
         },
@@ -34266,7 +34308,7 @@
         {
           "number": 1388,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.539,
           "created": "2026-04-05T18:47:17Z"
         },
@@ -34427,7 +34469,7 @@
         {
           "number": 1443,
           "author": "hardik-bhadani-git",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.3496,
           "created": "2026-04-07T13:51:40Z"
         },
@@ -34983,6 +35025,13 @@
           "status": "DEAD",
           "bpb": 0.039,
           "created": "2026-04-15T02:27:41Z"
+        },
+        {
+          "number": 1644,
+          "author": "mradassaad",
+          "status": "ALIVE",
+          "bpb": 1.1473,
+          "created": "2026-04-15T17:30:57Z"
         },
         {
           "number": 1648,
@@ -35766,17 +35815,17 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 546,
+      "count": 547,
       "author_count": 350,
-      "alive_count": 137,
+      "alive_count": 141,
       "dead_count": 116,
       "at_risk_count": 49,
-      "incomplete_count": 242,
+      "incomplete_count": 241,
       "unknown_count": 0,
       "best_alive": {
-        "number": 1319,
-        "author": "canivel",
-        "bpb": 0.6951
+        "number": 1371,
+        "author": "aarjunsrinivasan",
+        "bpb": 0.003
       },
       "people": [
         {
@@ -36445,7 +36494,7 @@
             {
               "number": 903,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.2064,
               "created": "2026-03-26T22:24:02Z"
             },
@@ -36459,7 +36508,7 @@
             {
               "number": 1388,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.539,
               "created": "2026-04-05T18:47:17Z"
             }
@@ -37246,6 +37295,34 @@
               "status": "INCOMPLETE",
               "bpb": 1.1442,
               "created": "2026-03-21T06:16:06Z"
+            }
+          ]
+        },
+        {
+          "author": "mradassaad",
+          "pr_count": 3,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1644,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1473,
+              "created": "2026-04-15T17:30:57Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -38048,27 +38125,6 @@
           ]
         },
         {
-          "author": "mradassaad",
-          "pr_count": 2,
-          "best_bpb": 1.1456,
-          "prs": [
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
-            },
-            {
-              "number": 1890,
-              "author": "mradassaad",
-              "status": "AT_RISK",
-              "bpb": 1.1456,
-              "created": "2026-04-28T14:27:48Z"
-            }
-          ]
-        },
-        {
           "author": "mahsumaktas",
           "pr_count": 2,
           "best_bpb": 1.1565,
@@ -38545,7 +38601,7 @@
             {
               "number": 1371,
               "author": "aarjunsrinivasan",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 0.003,
               "created": "2026-04-05T04:43:55Z"
             }
@@ -43792,7 +43848,7 @@
         {
           "number": 903,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.2064,
           "created": "2026-03-26T22:24:02Z"
         },
@@ -44653,7 +44709,7 @@
         {
           "number": 1371,
           "author": "aarjunsrinivasan",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 0.003,
           "created": "2026-04-05T04:43:55Z"
         },
@@ -44695,7 +44751,7 @@
         {
           "number": 1388,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.539,
           "created": "2026-04-05T18:47:17Z"
         },
@@ -45209,6 +45265,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-15T10:59:46Z"
+        },
+        {
+          "number": 1644,
+          "author": "mradassaad",
+          "status": "ALIVE",
+          "bpb": 1.1473,
+          "created": "2026-04-15T17:30:57Z"
         },
         {
           "number": 1645,
@@ -48282,10 +48345,10 @@
       "kind": "legal",
       "count": 118,
       "author_count": 91,
-      "alive_count": 27,
+      "alive_count": 28,
       "dead_count": 37,
       "at_risk_count": 11,
-      "incomplete_count": 43,
+      "incomplete_count": 42,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -48490,7 +48553,7 @@
             {
               "number": 1106,
               "author": "agalimova",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.1194,
               "created": "2026-03-30T00:41:22Z"
             }
@@ -50272,7 +50335,7 @@
         {
           "number": 1106,
           "author": "agalimova",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.1194,
           "created": "2026-03-30T00:41:22Z"
         },
@@ -56153,10 +56216,10 @@
       "kind": "legal",
       "count": 67,
       "author_count": 55,
-      "alive_count": 5,
+      "alive_count": 7,
       "dead_count": 24,
       "at_risk_count": 1,
-      "incomplete_count": 36,
+      "incomplete_count": 35,
       "unknown_count": 0,
       "best_alive": {
         "number": 1972,
@@ -56550,7 +56613,7 @@
             {
               "number": 542,
               "author": "ddavidgao",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.1898,
               "created": "2026-03-23T15:25:22Z"
             }
@@ -56704,7 +56767,7 @@
             {
               "number": 1388,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.539,
               "created": "2026-04-05T18:47:17Z"
             }
@@ -57233,7 +57296,7 @@
         {
           "number": 542,
           "author": "ddavidgao",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.1898,
           "created": "2026-03-23T15:25:22Z"
         },
@@ -57359,7 +57422,7 @@
         {
           "number": 1388,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.539,
           "created": "2026-04-05T18:47:17Z"
         },
@@ -57494,9 +57557,9 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 60,
+      "count": 61,
       "author_count": 44,
-      "alive_count": 6,
+      "alive_count": 8,
       "dead_count": 7,
       "at_risk_count": 3,
       "incomplete_count": 42,
@@ -57550,6 +57613,41 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 4,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1355,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.1526,
+              "created": "2026-04-04T19:04:09Z"
+            },
+            {
+              "number": 1644,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1473,
+              "created": "2026-04-15T17:30:57Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
+            }
+          ]
+        },
+        {
           "author": "gowtham0992",
           "pr_count": 3,
           "best_bpb": 1.0467,
@@ -57574,34 +57672,6 @@
               "status": "NOTABLE",
               "bpb": 1.3639,
               "created": "2026-03-31T03:32:38Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 3,
-          "best_bpb": 1.1456,
-          "prs": [
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
-            },
-            {
-              "number": 1355,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.1526,
-              "created": "2026-04-04T19:04:09Z"
-            },
-            {
-              "number": 1890,
-              "author": "mradassaad",
-              "status": "AT_RISK",
-              "bpb": 1.1456,
-              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -57907,7 +57977,7 @@
             {
               "number": 903,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.2064,
               "created": "2026-03-26T22:24:02Z"
             }
@@ -58303,7 +58373,7 @@
         {
           "number": 903,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.2064,
           "created": "2026-03-26T22:24:02Z"
         },
@@ -58474,6 +58544,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.4765,
           "created": "2026-04-14T00:21:52Z"
+        },
+        {
+          "number": 1644,
+          "author": "mradassaad",
+          "status": "ALIVE",
+          "bpb": 1.1473,
+          "created": "2026-04-15T17:30:57Z"
         },
         {
           "number": 1665,
@@ -58664,10 +58741,10 @@
       "kind": "legal",
       "count": 30,
       "author_count": 27,
-      "alive_count": 5,
+      "alive_count": 7,
       "dead_count": 0,
       "at_risk_count": 1,
-      "incomplete_count": 22,
+      "incomplete_count": 21,
       "unknown_count": 0,
       "best_alive": {
         "number": 2080,
@@ -58816,7 +58893,7 @@
             {
               "number": 903,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.2064,
               "created": "2026-03-26T22:24:02Z"
             }
@@ -58872,7 +58949,7 @@
             {
               "number": 1443,
               "author": "hardik-bhadani-git",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.3496,
               "created": "2026-04-07T13:51:40Z"
             }
@@ -59107,7 +59184,7 @@
         {
           "number": 903,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.2064,
           "created": "2026-03-26T22:24:02Z"
         },
@@ -59205,7 +59282,7 @@
         {
           "number": 1443,
           "author": "hardik-bhadani-git",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.3496,
           "created": "2026-04-07T13:51:40Z"
         },
@@ -59293,10 +59370,10 @@
       "kind": "legal",
       "count": 27,
       "author_count": 23,
-      "alive_count": 3,
+      "alive_count": 4,
       "dead_count": 8,
       "at_risk_count": 1,
-      "incomplete_count": 15,
+      "incomplete_count": 14,
       "unknown_count": 0,
       "best_alive": {
         "number": 215,
@@ -59494,7 +59571,7 @@
             {
               "number": 542,
               "author": "ddavidgao",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.1898,
               "created": "2026-03-23T15:25:22Z"
             }
@@ -59708,7 +59785,7 @@
         {
           "number": 542,
           "author": "ddavidgao",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.1898,
           "created": "2026-03-23T15:25:22Z"
         },
@@ -68860,12 +68937,12 @@
     {
       "name": "TTT",
       "kind": "legal",
-      "count": 894,
+      "count": 895,
       "author_count": 408,
-      "alive_count": 243,
+      "alive_count": 245,
       "dead_count": 250,
       "at_risk_count": 84,
-      "incomplete_count": 315,
+      "incomplete_count": 314,
       "unknown_count": 0,
       "best_alive": {
         "number": 1736,
@@ -71989,6 +72066,41 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 4,
+          "best_bpb": 1.1201,
+          "prs": [
+            {
+              "number": 768,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1201,
+              "created": "2026-03-25T21:19:18Z"
+            },
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1644,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1473,
+              "created": "2026-04-15T17:30:57Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
+            }
+          ]
+        },
+        {
           "author": "sseanliu",
           "pr_count": 4,
           "best_bpb": 1.1284,
@@ -72818,34 +72930,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.119,
               "created": "2026-03-29T11:31:02Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 3,
-          "best_bpb": 1.1201,
-          "prs": [
-            {
-              "number": 768,
-              "author": "mradassaad",
-              "status": "ALIVE",
-              "bpb": 1.1201,
-              "created": "2026-03-25T21:19:18Z"
-            },
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
-            },
-            {
-              "number": 1890,
-              "author": "mradassaad",
-              "status": "AT_RISK",
-              "bpb": 1.1456,
-              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -76581,7 +76665,7 @@
             {
               "number": 542,
               "author": "ddavidgao",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.1898,
               "created": "2026-03-23T15:25:22Z"
             }
@@ -78895,7 +78979,7 @@
         {
           "number": 542,
           "author": "ddavidgao",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.1898,
           "created": "2026-03-23T15:25:22Z"
         },
@@ -82267,6 +82351,13 @@
           "created": "2026-04-15T08:34:04Z"
         },
         {
+          "number": 1644,
+          "author": "mradassaad",
+          "status": "ALIVE",
+          "bpb": 1.1473,
+          "created": "2026-04-15T17:30:57Z"
+        },
+        {
           "number": 1645,
           "author": "scottcui-georgian",
           "status": "INCOMPLETE",
@@ -84252,17 +84343,17 @@
     {
       "name": "Muon optimizer",
       "kind": "legal",
-      "count": 546,
+      "count": 547,
       "author_count": 350,
-      "alive_count": 137,
+      "alive_count": 141,
       "dead_count": 116,
       "at_risk_count": 49,
-      "incomplete_count": 242,
+      "incomplete_count": 241,
       "unknown_count": 0,
       "best_alive": {
-        "number": 1319,
-        "author": "canivel",
-        "bpb": 0.6951
+        "number": 1371,
+        "author": "aarjunsrinivasan",
+        "bpb": 0.003
       },
       "people": [
         {
@@ -84931,7 +85022,7 @@
             {
               "number": 903,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.2064,
               "created": "2026-03-26T22:24:02Z"
             },
@@ -84945,7 +85036,7 @@
             {
               "number": 1388,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.539,
               "created": "2026-04-05T18:47:17Z"
             }
@@ -85732,6 +85823,34 @@
               "status": "INCOMPLETE",
               "bpb": 1.1442,
               "created": "2026-03-21T06:16:06Z"
+            }
+          ]
+        },
+        {
+          "author": "mradassaad",
+          "pr_count": 3,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1644,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1473,
+              "created": "2026-04-15T17:30:57Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -86534,27 +86653,6 @@
           ]
         },
         {
-          "author": "mradassaad",
-          "pr_count": 2,
-          "best_bpb": 1.1456,
-          "prs": [
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
-            },
-            {
-              "number": 1890,
-              "author": "mradassaad",
-              "status": "AT_RISK",
-              "bpb": 1.1456,
-              "created": "2026-04-28T14:27:48Z"
-            }
-          ]
-        },
-        {
           "author": "mahsumaktas",
           "pr_count": 2,
           "best_bpb": 1.1565,
@@ -87031,7 +87129,7 @@
             {
               "number": 1371,
               "author": "aarjunsrinivasan",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 0.003,
               "created": "2026-04-05T04:43:55Z"
             }
@@ -92278,7 +92376,7 @@
         {
           "number": 903,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.2064,
           "created": "2026-03-26T22:24:02Z"
         },
@@ -93139,7 +93237,7 @@
         {
           "number": 1371,
           "author": "aarjunsrinivasan",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 0.003,
           "created": "2026-04-05T04:43:55Z"
         },
@@ -93181,7 +93279,7 @@
         {
           "number": 1388,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.539,
           "created": "2026-04-05T18:47:17Z"
         },
@@ -93695,6 +93793,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-15T10:59:46Z"
+        },
+        {
+          "number": 1644,
+          "author": "mradassaad",
+          "status": "ALIVE",
+          "bpb": 1.1473,
+          "created": "2026-04-15T17:30:57Z"
         },
         {
           "number": 1645,
@@ -94366,12 +94471,12 @@
     {
       "name": "EMA",
       "kind": "legal",
-      "count": 580,
-      "author_count": 301,
-      "alive_count": 143,
+      "count": 581,
+      "author_count": 302,
+      "alive_count": 148,
       "dead_count": 167,
       "at_risk_count": 58,
-      "incomplete_count": 206,
+      "incomplete_count": 204,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -95941,14 +96046,14 @@
             {
               "number": 903,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.2064,
               "created": "2026-03-26T22:24:02Z"
             },
             {
               "number": 1388,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.539,
               "created": "2026-04-05T18:47:17Z"
             }
@@ -99315,6 +99420,20 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 1,
+          "best_bpb": 1.1473,
+          "prs": [
+            {
+              "number": 1644,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1473,
+              "created": "2026-04-15T17:30:57Z"
+            }
+          ]
+        },
+        {
           "author": "Skytuhua",
           "pr_count": 1,
           "best_bpb": 1.1476,
@@ -99854,7 +99973,7 @@
             {
               "number": 1443,
               "author": "hardik-bhadani-git",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.3496,
               "created": "2026-04-07T13:51:40Z"
             }
@@ -99868,7 +99987,7 @@
             {
               "number": 1104,
               "author": "DariusFeher",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.3595,
               "created": "2026-03-29T23:52:12Z"
             }
@@ -102049,7 +102168,7 @@
         {
           "number": 903,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.2064,
           "created": "2026-03-26T22:24:02Z"
         },
@@ -102595,7 +102714,7 @@
         {
           "number": 1104,
           "author": "DariusFeher",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.3595,
           "created": "2026-03-29T23:52:12Z"
         },
@@ -103113,7 +103232,7 @@
         {
           "number": 1388,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.539,
           "created": "2026-04-05T18:47:17Z"
         },
@@ -103274,7 +103393,7 @@
         {
           "number": 1443,
           "author": "hardik-bhadani-git",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.3496,
           "created": "2026-04-07T13:51:40Z"
         },
@@ -103830,6 +103949,13 @@
           "status": "DEAD",
           "bpb": 0.039,
           "created": "2026-04-15T02:27:41Z"
+        },
+        {
+          "number": 1644,
+          "author": "mradassaad",
+          "status": "ALIVE",
+          "bpb": 1.1473,
+          "created": "2026-04-15T17:30:57Z"
         },
         {
           "number": 1648,
@@ -104613,9 +104739,9 @@
     {
       "name": "GPTQ",
       "kind": "legal",
-      "count": 584,
+      "count": 585,
       "author_count": 273,
-      "alive_count": 184,
+      "alive_count": 185,
       "dead_count": 153,
       "at_risk_count": 64,
       "incomplete_count": 178,
@@ -107231,6 +107357,34 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 3,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1355,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.1526,
+              "created": "2026-04-04T19:04:09Z"
+            },
+            {
+              "number": 1644,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1473,
+              "created": "2026-04-15T17:30:57Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
+            }
+          ]
+        },
+        {
           "author": "ADIITJ",
           "pr_count": 2,
           "best_bpb": 0.0009,
@@ -108088,27 +108242,6 @@
               "status": "ALIVE",
               "bpb": 1.1172,
               "created": "2026-03-26T00:41:32Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 2,
-          "best_bpb": 1.1456,
-          "prs": [
-            {
-              "number": 1355,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.1526,
-              "created": "2026-04-04T19:04:09Z"
-            },
-            {
-              "number": 1890,
-              "author": "mradassaad",
-              "status": "AT_RISK",
-              "bpb": 1.1456,
-              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -113489,6 +113622,13 @@
           "status": "INCOMPLETE",
           "bpb": null,
           "created": "2026-04-15T10:59:46Z"
+        },
+        {
+          "number": 1644,
+          "author": "mradassaad",
+          "status": "ALIVE",
+          "bpb": 1.1473,
+          "created": "2026-04-15T17:30:57Z"
         },
         {
           "number": 1646,
@@ -123316,10 +123456,10 @@
       "kind": "legal",
       "count": 118,
       "author_count": 91,
-      "alive_count": 27,
+      "alive_count": 28,
       "dead_count": 37,
       "at_risk_count": 11,
-      "incomplete_count": 43,
+      "incomplete_count": 42,
       "unknown_count": 0,
       "best_alive": {
         "number": 1319,
@@ -123524,7 +123664,7 @@
             {
               "number": 1106,
               "author": "agalimova",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.1194,
               "created": "2026-03-30T00:41:22Z"
             }
@@ -125306,7 +125446,7 @@
         {
           "number": 1106,
           "author": "agalimova",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.1194,
           "created": "2026-03-30T00:41:22Z"
         },
@@ -131187,10 +131327,10 @@
       "kind": "legal",
       "count": 67,
       "author_count": 55,
-      "alive_count": 5,
+      "alive_count": 7,
       "dead_count": 24,
       "at_risk_count": 1,
-      "incomplete_count": 36,
+      "incomplete_count": 35,
       "unknown_count": 0,
       "best_alive": {
         "number": 1972,
@@ -131584,7 +131724,7 @@
             {
               "number": 542,
               "author": "ddavidgao",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.1898,
               "created": "2026-03-23T15:25:22Z"
             }
@@ -131738,7 +131878,7 @@
             {
               "number": 1388,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.539,
               "created": "2026-04-05T18:47:17Z"
             }
@@ -132267,7 +132407,7 @@
         {
           "number": 542,
           "author": "ddavidgao",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.1898,
           "created": "2026-03-23T15:25:22Z"
         },
@@ -132393,7 +132533,7 @@
         {
           "number": 1388,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.539,
           "created": "2026-04-05T18:47:17Z"
         },
@@ -132528,9 +132668,9 @@
     {
       "name": "SSM/Mamba/S4D",
       "kind": "legal",
-      "count": 60,
+      "count": 61,
       "author_count": 44,
-      "alive_count": 6,
+      "alive_count": 8,
       "dead_count": 7,
       "at_risk_count": 3,
       "incomplete_count": 42,
@@ -132584,6 +132724,41 @@
           ]
         },
         {
+          "author": "mradassaad",
+          "pr_count": 4,
+          "best_bpb": 1.1456,
+          "prs": [
+            {
+              "number": 1107,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.5633,
+              "created": "2026-03-30T00:55:11Z"
+            },
+            {
+              "number": 1355,
+              "author": "mradassaad",
+              "status": "INCOMPLETE",
+              "bpb": 1.1526,
+              "created": "2026-04-04T19:04:09Z"
+            },
+            {
+              "number": 1644,
+              "author": "mradassaad",
+              "status": "ALIVE",
+              "bpb": 1.1473,
+              "created": "2026-04-15T17:30:57Z"
+            },
+            {
+              "number": 1890,
+              "author": "mradassaad",
+              "status": "AT_RISK",
+              "bpb": 1.1456,
+              "created": "2026-04-28T14:27:48Z"
+            }
+          ]
+        },
+        {
           "author": "gowtham0992",
           "pr_count": 3,
           "best_bpb": 1.0467,
@@ -132608,34 +132783,6 @@
               "status": "NOTABLE",
               "bpb": 1.3639,
               "created": "2026-03-31T03:32:38Z"
-            }
-          ]
-        },
-        {
-          "author": "mradassaad",
-          "pr_count": 3,
-          "best_bpb": 1.1456,
-          "prs": [
-            {
-              "number": 1107,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.5633,
-              "created": "2026-03-30T00:55:11Z"
-            },
-            {
-              "number": 1355,
-              "author": "mradassaad",
-              "status": "INCOMPLETE",
-              "bpb": 1.1526,
-              "created": "2026-04-04T19:04:09Z"
-            },
-            {
-              "number": 1890,
-              "author": "mradassaad",
-              "status": "AT_RISK",
-              "bpb": 1.1456,
-              "created": "2026-04-28T14:27:48Z"
             }
           ]
         },
@@ -132941,7 +133088,7 @@
             {
               "number": 903,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.2064,
               "created": "2026-03-26T22:24:02Z"
             }
@@ -133337,7 +133484,7 @@
         {
           "number": 903,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.2064,
           "created": "2026-03-26T22:24:02Z"
         },
@@ -133508,6 +133655,13 @@
           "status": "INCOMPLETE",
           "bpb": 1.4765,
           "created": "2026-04-14T00:21:52Z"
+        },
+        {
+          "number": 1644,
+          "author": "mradassaad",
+          "status": "ALIVE",
+          "bpb": 1.1473,
+          "created": "2026-04-15T17:30:57Z"
         },
         {
           "number": 1665,
@@ -134915,10 +135069,10 @@
       "kind": "legal",
       "count": 30,
       "author_count": 27,
-      "alive_count": 5,
+      "alive_count": 7,
       "dead_count": 0,
       "at_risk_count": 1,
-      "incomplete_count": 22,
+      "incomplete_count": 21,
       "unknown_count": 0,
       "best_alive": {
         "number": 2080,
@@ -135067,7 +135221,7 @@
             {
               "number": 903,
               "author": "CiprianFlorin-Ifrim",
-              "status": "NOTABLE",
+              "status": "ALIVE",
               "bpb": 1.2064,
               "created": "2026-03-26T22:24:02Z"
             }
@@ -135123,7 +135277,7 @@
             {
               "number": 1443,
               "author": "hardik-bhadani-git",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.3496,
               "created": "2026-04-07T13:51:40Z"
             }
@@ -135358,7 +135512,7 @@
         {
           "number": 903,
           "author": "CiprianFlorin-Ifrim",
-          "status": "NOTABLE",
+          "status": "ALIVE",
           "bpb": 1.2064,
           "created": "2026-03-26T22:24:02Z"
         },
@@ -135456,7 +135610,7 @@
         {
           "number": 1443,
           "author": "hardik-bhadani-git",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.3496,
           "created": "2026-04-07T13:51:40Z"
         },
@@ -135544,10 +135698,10 @@
       "kind": "legal",
       "count": 27,
       "author_count": 23,
-      "alive_count": 3,
+      "alive_count": 4,
       "dead_count": 8,
       "at_risk_count": 1,
-      "incomplete_count": 15,
+      "incomplete_count": 14,
       "unknown_count": 0,
       "best_alive": {
         "number": 215,
@@ -135745,7 +135899,7 @@
             {
               "number": 542,
               "author": "ddavidgao",
-              "status": "INCOMPLETE",
+              "status": "ALIVE",
               "bpb": 1.1898,
               "created": "2026-03-23T15:25:22Z"
             }
@@ -135959,7 +136113,7 @@
         {
           "number": 542,
           "author": "ddavidgao",
-          "status": "INCOMPLETE",
+          "status": "ALIVE",
           "bpb": 1.1898,
           "created": "2026-03-23T15:25:22Z"
         },
@@ -137710,28 +137864,28 @@
       "left": "LeakyReLU\u00b2",
       "right": "SSM/Mamba/S4D",
       "left_count": 118,
-      "right_count": 60,
+      "right_count": 61,
       "left_people": 91,
       "right_people": 44,
-      "score": 7080
+      "score": 7198
     },
     {
       "left": "BigramHash",
       "right": "SSM/Mamba/S4D",
       "left_count": 97,
-      "right_count": 60,
+      "right_count": 61,
       "left_people": 84,
       "right_people": 44,
-      "score": 5820
+      "score": 5917
     },
     {
       "left": "SWA",
       "right": "SSM/Mamba/S4D",
       "left_count": 87,
-      "right_count": 60,
+      "right_count": 61,
       "left_people": 74,
       "right_people": 44,
-      "score": 5220
+      "score": 5307
     },
     {
       "left": "QAT",
@@ -137880,56 +138034,56 @@
     {
       "left": "TTT",
       "right": "Differential Attention",
-      "left_count": 894,
+      "left_count": 895,
       "right_count": 2,
       "left_people": 408,
       "right_people": 2,
-      "score": 1788
+      "score": 1790
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "Parallel Muon",
-      "left_count": 60,
+      "left_count": 61,
       "right_count": 23,
       "left_people": 44,
       "right_people": 13,
-      "score": 1380
+      "score": 1403
     },
     {
       "left": "GPTQ",
       "right": "Differential Attention",
-      "left_count": 584,
+      "left_count": 585,
       "right_count": 2,
       "left_people": 273,
       "right_people": 2,
-      "score": 1168
+      "score": 1170
     },
     {
       "left": "GPTQ",
       "right": "U-Net skips",
-      "left_count": 584,
+      "left_count": 585,
       "right_count": 2,
       "left_people": 273,
       "right_people": 2,
-      "score": 1168
+      "score": 1170
     },
     {
       "left": "EMA",
       "right": "Differential Attention",
-      "left_count": 580,
+      "left_count": 581,
       "right_count": 2,
-      "left_people": 301,
+      "left_people": 302,
       "right_people": 2,
-      "score": 1160
+      "score": 1162
     },
     {
       "left": "EMA",
       "right": "U-Net skips",
-      "left_count": 580,
+      "left_count": 581,
       "right_count": 2,
-      "left_people": 301,
+      "left_people": 302,
       "right_people": 2,
-      "score": 1160
+      "score": 1162
     },
     {
       "left": "QAT",
@@ -137943,11 +138097,11 @@
     {
       "left": "Muon optimizer",
       "right": "Differential Attention",
-      "left_count": 546,
+      "left_count": 547,
       "right_count": 2,
       "left_people": 350,
       "right_people": 2,
-      "score": 1092
+      "score": 1094
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -137970,11 +138124,11 @@
     {
       "left": "TTT",
       "right": "Flash Attention",
-      "left_count": 894,
+      "left_count": 895,
       "right_count": 1,
       "left_people": 408,
       "right_people": 1,
-      "score": 894
+      "score": 895
     },
     {
       "left": "QAT",
@@ -138105,20 +138259,20 @@
     {
       "left": "GPTQ",
       "right": "Flash Attention",
-      "left_count": 584,
+      "left_count": 585,
       "right_count": 1,
       "left_people": 273,
       "right_people": 1,
-      "score": 584
+      "score": 585
     },
     {
       "left": "EMA",
       "right": "Flash Attention",
-      "left_count": 580,
+      "left_count": 581,
       "right_count": 1,
-      "left_people": 301,
+      "left_people": 302,
       "right_people": 1,
-      "score": 580
+      "score": 581
     },
     {
       "left": "Ternary Weights",
@@ -138132,11 +138286,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Value Residual",
-      "left_count": 60,
+      "left_count": 61,
       "right_count": 9,
       "left_people": 44,
       "right_people": 7,
-      "score": 540
+      "score": 549
     },
     {
       "left": "SwiGLU",
@@ -138150,11 +138304,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Weight Sharing",
-      "left_count": 60,
+      "left_count": 61,
       "right_count": 8,
       "left_people": 44,
       "right_people": 5,
-      "score": 480
+      "score": 488
     },
     {
       "left": "SwiGLU",
@@ -138168,11 +138322,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Progressive Depth",
-      "left_count": 60,
+      "left_count": 61,
       "right_count": 7,
       "left_people": 44,
       "right_people": 3,
-      "score": 420
+      "score": 427
     },
     {
       "left": "JEPA",
@@ -138366,20 +138520,20 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Differential Attention",
-      "left_count": 60,
+      "left_count": 61,
       "right_count": 2,
       "left_people": 44,
       "right_people": 2,
-      "score": 120
+      "score": 122
     },
     {
       "left": "SSM/Mamba/S4D",
       "right": "U-Net skips",
-      "left_count": 60,
+      "left_count": 61,
       "right_count": 2,
       "left_people": 44,
       "right_people": 2,
-      "score": 120
+      "score": 122
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -138447,11 +138601,11 @@
     {
       "left": "SSM/Mamba/S4D",
       "right": "Flash Attention",
-      "left_count": 60,
+      "left_count": 61,
       "right_count": 1,
       "left_people": 44,
       "right_people": 1,
-      "score": 60
+      "score": 61
     },
     {
       "left": "JEPA",

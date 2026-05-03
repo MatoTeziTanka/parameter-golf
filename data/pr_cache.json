@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-05-03T04:28:06.076290+00:00",
-  "api_calls_used": 278,
+  "last_fetch": "2026-05-03T07:06:30.440516+00:00",
+  "api_calls_used": 279,
   "prs": [
     {
       "number": 2147,
@@ -50,7 +50,7 @@
       "author": "cocohearts",
       "state": "OPEN",
       "created": "2026-05-02T18:08:54Z",
-      "updated": "2026-05-03T03:16:47Z",
+      "updated": "2026-05-03T06:01:38Z",
       "bpb": null,
       "seeds": 3,
       "artifact_bytes": null,
@@ -3635,9 +3635,9 @@
       "number": 2058,
       "title": "Non-record submission: Learned Adapters on Random Linear Maps",
       "author": "pranavxiyer",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-05-01T00:03:10Z",
-      "updated": "2026-05-01T00:08:13Z",
+      "updated": "2026-05-03T05:29:03Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
@@ -3658,10 +3658,9 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "no-bpb",
-        "seeds-unknown"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -19503,6 +19502,42 @@
       "confidence": "HIGH"
     },
     {
+      "number": 1644,
+      "title": "Non-record: Mamba-3 Hybrid SSM + SP8192 + Legal TTT — 1.1473 bpb",
+      "author": "mradassaad",
+      "state": "MERGED",
+      "created": "2026-04-15T17:30:57Z",
+      "updated": "2026-05-03T05:28:23Z",
+      "bpb": 1.1473,
+      "seeds": null,
+      "artifact_bytes": 15930000,
+      "technique_summary": "TTT + Muon + SSM + GPTQ + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-04-15_Mamba3Hybrid_SP8192_GPTQ_TTT/README.md",
+        "records/track_non_record_16mb/2026-04-15_Mamba3Hybrid_SP8192_GPTQ_TTT/requirements.txt",
+        "records/track_non_record_16mb/2026-04-15_Mamba3Hybrid_SP8192_GPTQ_TTT/submission.json",
+        "records/track_non_record_16mb/2026-04-15_Mamba3Hybrid_SP8192_GPTQ_TTT/train_mamba3_hybrid.py",
+        "records/track_non_record_16mb/2026-04-15_Mamba3Hybrid_SP8192_GPTQ_TTT/train_seed1337.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt"
+      ],
+      "technique_source": "text",
+      "status": "ALIVE",
+      "flags": [
+        "merged-to-leaderboard"
+      ],
+      "confidence": "HIGH"
+    },
+    {
       "number": 1642,
       "title": "Non-record: Causal N-gram Logit Blend — Legal, Bug-Free, Null Result at Scale",
       "author": "himanshudongre",
@@ -26975,9 +27010,9 @@
       "number": 1443,
       "title": "Non-record: ByteJEPA — True Byte-Level JEPA (val_bpb 1.3496)",
       "author": "hardik-bhadani-git",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-07T13:51:40Z",
-      "updated": "2026-04-12T05:20:07Z",
+      "updated": "2026-05-03T05:39:11Z",
       "bpb": 1.3496,
       "seeds": null,
       "artifact_bytes": 15132832,
@@ -26997,9 +27032,9 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "seeds-unknown"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -29048,9 +29083,9 @@
       "number": 1388,
       "title": "[Notable Non-Record Submission] Everything Everywhere All in One Bit: XNOR-mally I'd use floats - 118M XNOR-Net - 1.539 BPB - 10-Min and Unconstrained Runs",
       "author": "CiprianFlorin-Ifrim",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-05T18:47:17Z",
-      "updated": "2026-04-10T04:41:53Z",
+      "updated": "2026-05-03T05:28:57Z",
       "bpb": 1.539,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -29081,9 +29116,9 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "NOTABLE",
+      "status": "ALIVE",
       "flags": [
-        "title-contains-notable"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -29639,9 +29674,9 @@
       "number": 1371,
       "title": "Non-record: Olmo Hybrid (GDN + Attention) for long-context training — 8k/16k/32k crossover study",
       "author": "aarjunsrinivasan",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-05T04:43:55Z",
-      "updated": "2026-04-05T04:43:55Z",
+      "updated": "2026-05-03T05:28:28Z",
       "bpb": 0.003,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -29675,9 +29710,9 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "seeds-only-2"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -30906,9 +30941,9 @@
       "number": 1337,
       "title": " [Non-Record] LegendreGPT: Legendre polynomial depth parameterization",
       "author": "sergimichi",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-04-04T09:40:09Z",
-      "updated": "2026-04-04T09:44:47Z",
+      "updated": "2026-05-03T05:28:38Z",
       "bpb": 1.2079,
       "seeds": null,
       "artifact_bytes": 15700000,
@@ -30927,9 +30962,9 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "seeds-unknown"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -34404,7 +34439,7 @@
       "author": "mkenney2",
       "state": "OPEN",
       "created": "2026-04-02T02:30:36Z",
-      "updated": "2026-04-02T23:05:34Z",
+      "updated": "2026-05-03T05:39:36Z",
       "bpb": 1.147,
       "seeds": 2,
       "artifact_bytes": 15700000,
@@ -34417,7 +34452,9 @@
         "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/submission.json",
         "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/train_gpt.py"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "valerio-oai: Thanks for this submission, I'd like to merge this into the non-record leaderboard.\n\nBefore we merge, could you change the files' location? The PR title marks this as non-record, but the files are currently under:\n\n`records/track_10min_16mb/`\n\nFor it to be an eligible non-record submission, please move it under `records/track_non_record_16mb/...`.\n"
+      ],
       "compliance_keywords": [
         "ttt"
       ],
@@ -39314,20 +39351,22 @@
       "author": "gowtham0992",
       "state": "OPEN",
       "created": "2026-03-30T03:10:16Z",
-      "updated": "2026-04-11T20:13:17Z",
+      "updated": "2026-05-03T06:29:13Z",
       "bpb": 1.3705,
       "seeds": 42,
       "artifact_bytes": 5191021,
       "technique_summary": "LoRA + GPTQ + INT6 + EMA + N-gram",
       "file_paths": [
-        "records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/README.md",
-        "records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/requirements.txt",
-        "records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/run.sh",
-        "records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/submission.json",
-        "records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/train_gpt.py",
-        "records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/train_seed42.txt"
+        "records/track_non_record_16mb/2026-03-29_Random_Adapters_LoRA/README.md",
+        "records/track_non_record_16mb/2026-03-29_Random_Adapters_LoRA/requirements.txt",
+        "records/track_non_record_16mb/2026-03-29_Random_Adapters_LoRA/run.sh",
+        "records/track_non_record_16mb/2026-03-29_Random_Adapters_LoRA/submission.json",
+        "records/track_non_record_16mb/2026-03-29_Random_Adapters_LoRA/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-29_Random_Adapters_LoRA/train_seed42.txt"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "valerio-oai: Thanks for this submission, I'd like to merge this into the non-record leaderboard.\nBefore merge, could you change the files' location? The PR is titled as notable non-record, but the files are under:\n\n`records/track_10min_16mb/2026-03-29_Random_Adapters_LoRA/`\n\nGiven this should be non-record, please move it under `records/track_non_record_16mb/...`.\n"
+      ],
       "compliance_keywords": [
         "ngram",
         "gptq_eval",
@@ -39427,20 +39466,22 @@
       "author": "gowtham0992",
       "state": "OPEN",
       "created": "2026-03-30T02:42:20Z",
-      "updated": "2026-04-11T20:12:12Z",
+      "updated": "2026-05-03T06:15:38Z",
       "bpb": 1.2249,
       "seeds": 42,
       "artifact_bytes": 4946680,
       "technique_summary": "GPTQ + INT6 + EMA + N-gram",
       "file_paths": [
-        "records/track_10min_16mb/2026-03-29_Universal_Transformer/README.md",
-        "records/track_10min_16mb/2026-03-29_Universal_Transformer/requirements.txt",
-        "records/track_10min_16mb/2026-03-29_Universal_Transformer/run.sh",
-        "records/track_10min_16mb/2026-03-29_Universal_Transformer/submission.json",
-        "records/track_10min_16mb/2026-03-29_Universal_Transformer/train_gpt.py",
-        "records/track_10min_16mb/2026-03-29_Universal_Transformer/train_seed42.txt"
+        "records/track_non_record_16mb/2026-03-29_Universal_Transformer/README.md",
+        "records/track_non_record_16mb/2026-03-29_Universal_Transformer/requirements.txt",
+        "records/track_non_record_16mb/2026-03-29_Universal_Transformer/run.sh",
+        "records/track_non_record_16mb/2026-03-29_Universal_Transformer/submission.json",
+        "records/track_non_record_16mb/2026-03-29_Universal_Transformer/train_gpt.py",
+        "records/track_non_record_16mb/2026-03-29_Universal_Transformer/train_seed42.txt"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "valerio-oai: Thanks for this submission, I'd like to merge this into the non-record leaderboard.\n\nBefore we merge, could you change the files' location? The PR title marks this as non-record, but the files are currently under:\n\n`records/track_10min_16mb/`\n\nFor it to be an eligible non-record submission, please move it under `records/track_non_record_16mb/...`.\n"
+      ],
       "compliance_keywords": [
         "ngram",
         "gptq_eval",
@@ -39598,9 +39639,9 @@
       "number": 1106,
       "title": "Non-record: MDLM Diffusion — val_var_bpb 1.1465 (first diffusion to beat AR baseline)",
       "author": "agalimova",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-03-30T00:41:22Z",
-      "updated": "2026-03-30T00:41:22Z",
+      "updated": "2026-05-03T05:28:48Z",
       "bpb": 1.1194,
       "seeds": null,
       "artifact_bytes": null,
@@ -39620,10 +39661,9 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "seeds-unknown",
-        "artifact-unknown"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -39682,9 +39722,9 @@
       "number": 1104,
       "title": "[Non-record] 1-Stage Byte-level H-Net at 17.5M: Dynamic Chunking Learns Whitespace-aligned (Word-like) Boundaries (39x-91x fewer params than H-Net paper)",
       "author": "DariusFeher",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-03-29T23:52:12Z",
-      "updated": "2026-04-04T16:28:07Z",
+      "updated": "2026-05-03T05:28:33Z",
       "bpb": 1.3595,
       "seeds": 2,
       "artifact_bytes": 16000000,
@@ -39706,9 +39746,9 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "seeds-only-2"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -47298,9 +47338,9 @@
       "number": 903,
       "title": "[Notable Non-Record Submission] To JEPA or Not to JEPA: That Is Le Question (32.8M LeWorldModel Mamba2 Style Text Implementation - 1.2064 BPB )",
       "author": "CiprianFlorin-Ifrim",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-03-26T22:24:02Z",
-      "updated": "2026-04-11T20:46:56Z",
+      "updated": "2026-05-03T05:28:43Z",
       "bpb": 1.2064,
       "seeds": null,
       "artifact_bytes": 15750000,
@@ -47325,9 +47365,9 @@
         "neural"
       ],
       "technique_source": "text",
-      "status": "NOTABLE",
+      "status": "ALIVE",
       "flags": [
-        "title-contains-notable"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -60427,9 +60467,9 @@
       "number": 542,
       "title": "Non-Record: DG Attention, Differential-Gated Attention with Depth-Scheduled Novelty Encoding: (val_bpb=1.1898)",
       "author": "ddavidgao",
-      "state": "OPEN",
+      "state": "MERGED",
       "created": "2026-03-23T15:25:22Z",
-      "updated": "2026-04-16T03:46:07Z",
+      "updated": "2026-05-03T05:28:53Z",
       "bpb": 1.1898,
       "seeds": null,
       "artifact_bytes": 16638468,
@@ -60454,9 +60494,9 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "INCOMPLETE",
+      "status": "ALIVE",
       "flags": [
-        "seeds-unknown"
+        "merged-to-leaderboard"
       ],
       "confidence": "HIGH"
     },
@@ -74391,7 +74431,7 @@
       "author": "ankitmaloo",
       "state": "OPEN",
       "created": "2026-03-20T00:20:12Z",
-      "updated": "2026-04-11T22:13:07Z",
+      "updated": "2026-05-03T04:41:53Z",
       "bpb": 1.1925,
       "seeds": null,
       "artifact_bytes": null,
@@ -74400,6 +74440,8 @@
         ".gitignore",
         "bootstrap_cluster.sh",
         "checkpoint.md",
+        "findings.md",
+        "guide.md",
         "hailmary/README.md",
         "hailmary/attack_surfaces.md",
         "hailmary/curation.md",
@@ -74444,9 +74486,7 @@
         "hailmary/runs/20260323_232010/moonshot_core/screen/H7_exact_overlap_eval_plus_ema/config.json",
         "hailmary/runs/20260323_232010/moonshot_core/screen/H7_exact_overlap_eval_plus_ema/train_gpt.py",
         "hailmary/runs/20260323_232016/adhoc/screen/H2_exact_overlap_eval/config.json",
-        "hailmary/runs/20260323_232016/adhoc/screen/H2_exact_overlap_eval/train_gpt.py",
-        "hailmary/runs/20260323_232016/adhoc/screen/H3_ema_export/config.json",
-        "hailmary/runs/20260323_232016/adhoc/screen/H3_ema_export/train_gpt.py"
+        "hailmary/runs/20260323_232016/adhoc/screen/H2_exact_overlap_eval/train_gpt.py"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [],
