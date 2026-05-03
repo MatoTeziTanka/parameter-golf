@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-03T11:47:12Z",
+  "generated_at": "2026-05-03T13:19:05Z",
   "source_cache": "data/pr_cache.json",
   "summary": {
-    "pr_count": 2050,
-    "matched_pr_count": 1544,
+    "pr_count": 2051,
+    "matched_pr_count": 1545,
     "technique_count": 24,
     "untouched_techniques": [
       "GeGLU"
@@ -11,7 +11,7 @@
     "status_counts": {
       "ALIVE": 381,
       "AT_RISK": 129,
-      "DEAD": 552,
+      "DEAD": 553,
       "INCOMPLETE": 979,
       "UNKNOWN": 0
     }
@@ -58802,10 +58802,10 @@
     {
       "name": "JEPA",
       "kind": "legal",
-      "count": 30,
+      "count": 31,
       "author_count": 27,
       "alive_count": 7,
-      "dead_count": 0,
+      "dead_count": 1,
       "at_risk_count": 1,
       "incomplete_count": 21,
       "unknown_count": 0,
@@ -58861,6 +58861,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.2699,
               "created": "2026-04-16T00:29:01Z"
+            }
+          ]
+        },
+        {
+          "author": "hardik-bhadani-git",
+          "pr_count": 2,
+          "best_bpb": 1.3496,
+          "prs": [
+            {
+              "number": 1443,
+              "author": "hardik-bhadani-git",
+              "status": "ALIVE",
+              "bpb": 1.3496,
+              "created": "2026-04-07T13:51:40Z"
+            },
+            {
+              "number": 2150,
+              "author": "hardik-bhadani-git",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-05-03T12:01:09Z"
             }
           ]
         },
@@ -59001,20 +59022,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.3355,
               "created": "2026-03-29T21:23:41Z"
-            }
-          ]
-        },
-        {
-          "author": "hardik-bhadani-git",
-          "pr_count": 1,
-          "best_bpb": 1.3496,
-          "prs": [
-            {
-              "number": 1443,
-              "author": "hardik-bhadani-git",
-              "status": "ALIVE",
-              "bpb": 1.3496,
-              "created": "2026-04-07T13:51:40Z"
             }
           ]
         },
@@ -59425,6 +59432,13 @@
           "status": "INCOMPLETE",
           "bpb": 0.005,
           "created": "2026-05-02T06:53:28Z"
+        },
+        {
+          "number": 2150,
+          "author": "hardik-bhadani-git",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-05-03T12:01:09Z"
         }
       ]
     },
@@ -135193,10 +135207,10 @@
     {
       "name": "JEPA",
       "kind": "legal",
-      "count": 30,
+      "count": 31,
       "author_count": 27,
       "alive_count": 7,
-      "dead_count": 0,
+      "dead_count": 1,
       "at_risk_count": 1,
       "incomplete_count": 21,
       "unknown_count": 0,
@@ -135252,6 +135266,27 @@
               "status": "INCOMPLETE",
               "bpb": 1.2699,
               "created": "2026-04-16T00:29:01Z"
+            }
+          ]
+        },
+        {
+          "author": "hardik-bhadani-git",
+          "pr_count": 2,
+          "best_bpb": 1.3496,
+          "prs": [
+            {
+              "number": 1443,
+              "author": "hardik-bhadani-git",
+              "status": "ALIVE",
+              "bpb": 1.3496,
+              "created": "2026-04-07T13:51:40Z"
+            },
+            {
+              "number": 2150,
+              "author": "hardik-bhadani-git",
+              "status": "DEAD",
+              "bpb": null,
+              "created": "2026-05-03T12:01:09Z"
             }
           ]
         },
@@ -135392,20 +135427,6 @@
               "status": "INCOMPLETE",
               "bpb": 1.3355,
               "created": "2026-03-29T21:23:41Z"
-            }
-          ]
-        },
-        {
-          "author": "hardik-bhadani-git",
-          "pr_count": 1,
-          "best_bpb": 1.3496,
-          "prs": [
-            {
-              "number": 1443,
-              "author": "hardik-bhadani-git",
-              "status": "ALIVE",
-              "bpb": 1.3496,
-              "created": "2026-04-07T13:51:40Z"
             }
           ]
         },
@@ -135816,6 +135837,13 @@
           "status": "INCOMPLETE",
           "bpb": 0.005,
           "created": "2026-05-02T06:53:28Z"
+        },
+        {
+          "number": 2150,
+          "author": "hardik-bhadani-git",
+          "status": "DEAD",
+          "bpb": null,
+          "created": "2026-05-03T12:01:09Z"
         }
       ]
     },
@@ -138017,19 +138045,19 @@
       "left": "QAT",
       "right": "JEPA",
       "left_count": 122,
-      "right_count": 30,
+      "right_count": 31,
       "left_people": 96,
       "right_people": 27,
-      "score": 3660
+      "score": 3782
     },
     {
       "left": "LeakyReLU\u00b2",
       "right": "JEPA",
       "left_count": 118,
-      "right_count": 30,
+      "right_count": 31,
       "left_people": 91,
       "right_people": 27,
-      "score": 3540
+      "score": 3658
     },
     {
       "left": "QAT",
@@ -138053,10 +138081,19 @@
       "left": "BigramHash",
       "right": "JEPA",
       "left_count": 97,
-      "right_count": 30,
+      "right_count": 31,
       "left_people": 84,
       "right_people": 27,
-      "score": 2910
+      "score": 3007
+    },
+    {
+      "left": "XSA",
+      "right": "JEPA",
+      "left_count": 93,
+      "right_count": 31,
+      "left_people": 74,
+      "right_people": 27,
+      "score": 2883
     },
     {
       "left": "LeakyReLU\u00b2",
@@ -138077,22 +138114,13 @@
       "score": 2806
     },
     {
-      "left": "XSA",
-      "right": "JEPA",
-      "left_count": 93,
-      "right_count": 30,
-      "left_people": 74,
-      "right_people": 27,
-      "score": 2790
-    },
-    {
       "left": "SWA",
       "right": "JEPA",
       "left_count": 87,
-      "right_count": 30,
+      "right_count": 31,
       "left_people": 74,
       "right_people": 27,
-      "score": 2610
+      "score": 2697
     },
     {
       "left": "XSA",
@@ -138143,10 +138171,10 @@
       "left": "SwiGLU",
       "right": "JEPA",
       "left_count": 67,
-      "right_count": 30,
+      "right_count": 31,
       "left_people": 55,
       "right_people": 27,
-      "score": 2010
+      "score": 2077
     },
     {
       "left": "SWA",
@@ -138266,6 +138294,15 @@
       "score": 854
     },
     {
+      "left": "JEPA",
+      "right": "MoE",
+      "left_count": 31,
+      "right_count": 27,
+      "left_people": 27,
+      "right_people": 23,
+      "score": 837
+    },
+    {
       "left": "LeakyReLU\u00b2",
       "right": "Progressive Depth",
       "left_count": 118,
@@ -138273,15 +138310,6 @@
       "left_people": 91,
       "right_people": 3,
       "score": 826
-    },
-    {
-      "left": "JEPA",
-      "right": "MoE",
-      "left_count": 30,
-      "right_count": 27,
-      "left_people": 27,
-      "right_people": 23,
-      "score": 810
     },
     {
       "left": "SWA",
@@ -138313,11 +138341,20 @@
     {
       "left": "JEPA",
       "right": "Ternary Weights",
-      "left_count": 30,
+      "left_count": 31,
       "right_count": 24,
       "left_people": 27,
       "right_people": 20,
-      "score": 720
+      "score": 744
+    },
+    {
+      "left": "JEPA",
+      "right": "Parallel Muon",
+      "left_count": 31,
+      "right_count": 23,
+      "left_people": 27,
+      "right_people": 13,
+      "score": 713
     },
     {
       "left": "SWA",
@@ -138327,15 +138364,6 @@
       "left_people": 74,
       "right_people": 5,
       "score": 696
-    },
-    {
-      "left": "JEPA",
-      "right": "Parallel Muon",
-      "left_count": 30,
-      "right_count": 23,
-      "left_people": 27,
-      "right_people": 13,
-      "score": 690
     },
     {
       "left": "BigramHash",
@@ -138457,11 +138485,20 @@
     {
       "left": "JEPA",
       "right": "Value Residual",
-      "left_count": 30,
+      "left_count": 31,
       "right_count": 9,
       "left_people": 27,
       "right_people": 7,
-      "score": 270
+      "score": 279
+    },
+    {
+      "left": "JEPA",
+      "right": "Weight Sharing",
+      "left_count": 31,
+      "right_count": 8,
+      "left_people": 27,
+      "right_people": 5,
+      "score": 248
     },
     {
       "left": "QAT",
@@ -138482,15 +138519,6 @@
       "score": 243
     },
     {
-      "left": "JEPA",
-      "right": "Weight Sharing",
-      "left_count": 30,
-      "right_count": 8,
-      "left_people": 27,
-      "right_people": 5,
-      "score": 240
-    },
-    {
       "left": "LeakyReLU\u00b2",
       "right": "Differential Attention",
       "left_count": 118,
@@ -138509,6 +138537,15 @@
       "score": 236
     },
     {
+      "left": "JEPA",
+      "right": "Progressive Depth",
+      "left_count": 31,
+      "right_count": 7,
+      "left_people": 27,
+      "right_people": 3,
+      "score": 217
+    },
+    {
       "left": "Ternary Weights",
       "right": "Value Residual",
       "left_count": 24,
@@ -138516,15 +138553,6 @@
       "left_people": 20,
       "right_people": 7,
       "score": 216
-    },
-    {
-      "left": "JEPA",
-      "right": "Progressive Depth",
-      "left_count": 30,
-      "right_count": 7,
-      "left_people": 27,
-      "right_people": 3,
-      "score": 210
     },
     {
       "left": "Parallel Muon",
@@ -138725,6 +138753,24 @@
       "score": 63
     },
     {
+      "left": "JEPA",
+      "right": "Differential Attention",
+      "left_count": 31,
+      "right_count": 2,
+      "left_people": 27,
+      "right_people": 2,
+      "score": 62
+    },
+    {
+      "left": "JEPA",
+      "right": "U-Net skips",
+      "left_count": 31,
+      "right_count": 2,
+      "left_people": 27,
+      "right_people": 2,
+      "score": 62
+    },
+    {
       "left": "SSM/Mamba/S4D",
       "right": "Flash Attention",
       "left_count": 61,
@@ -138732,24 +138778,6 @@
       "left_people": 44,
       "right_people": 1,
       "score": 61
-    },
-    {
-      "left": "JEPA",
-      "right": "Differential Attention",
-      "left_count": 30,
-      "right_count": 2,
-      "left_people": 27,
-      "right_people": 2,
-      "score": 60
-    },
-    {
-      "left": "JEPA",
-      "right": "U-Net skips",
-      "left_count": 30,
-      "right_count": 2,
-      "left_people": 27,
-      "right_people": 2,
-      "score": 60
     },
     {
       "left": "Weight Sharing",
@@ -138817,11 +138845,11 @@
     {
       "left": "JEPA",
       "right": "Flash Attention",
-      "left_count": 30,
+      "left_count": 31,
       "right_count": 1,
       "left_people": 27,
       "right_people": 1,
-      "score": 30
+      "score": 31
     },
     {
       "left": "MoE",
