@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-05-03T23:51:52.507179+00:00",
-  "api_calls_used": 293,
+  "last_fetch": "2026-05-04T03:32:52.400284+00:00",
+  "api_calls_used": 294,
   "prs": [
     {
       "number": 2150,
@@ -31087,7 +31087,7 @@
       "author": "aryanbhosale",
       "state": "MERGED",
       "created": "2026-04-04T09:32:35Z",
-      "updated": "2026-04-09T21:11:45Z",
+      "updated": "2026-05-04T02:55:17Z",
       "bpb": 1.0897,
       "seeds": 3,
       "artifact_bytes": 15990000,
@@ -31100,7 +31100,9 @@
         "records/track_10min_16mb/2026-04-04_SP4096_DepthRecurrence_ParallelResid_MuonEqR/train_seed42.log",
         "records/track_10min_16mb/2026-04-04_SP4096_DepthRecurrence_ParallelResid_MuonEqR/train_seed999.log"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: @aryanbhosale maintainer repro note: we are doing a pass over merged leaderboard rows and I cannot currently reproduce this record closely enough.\n\nWhat I ran:\n- Exact submitted record archive for PR #1334.\n- Same seed `42`, same visible hparameter block, same exact ISO FlashAttention wheel we are using for the audit.\n- I noticed our first repro had staged `train_shards: 143` while your submitted log says `train_shards: 80`, so I reran with the staged dataset forced to `80` shards.\n\nCurrent resu"
+      ],
       "compliance_keywords": [
         "ttt",
         "ngram",
@@ -34516,18 +34518,18 @@
       "author": "mkenney2",
       "state": "OPEN",
       "created": "2026-04-02T02:30:36Z",
-      "updated": "2026-05-03T05:39:36Z",
+      "updated": "2026-05-04T00:07:41Z",
       "bpb": 1.147,
       "seeds": 2,
       "artifact_bytes": 15700000,
       "technique_summary": "TTT + SSM + INT8",
       "file_paths": [
-        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/README.md",
-        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/log_seed1337.txt",
-        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/log_seed42.txt",
-        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/log_seed7.txt",
-        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/submission.json",
-        "records/track_10min_16mb/2026-04-01-hymba_ssm4_8L_swa1024/train_gpt.py"
+        "records/track_non_record_16mb/2026-04-01-hymba_ssm4_8L_swa1024/README.md",
+        "records/track_non_record_16mb/2026-04-01-hymba_ssm4_8L_swa1024/log_seed1337.txt",
+        "records/track_non_record_16mb/2026-04-01-hymba_ssm4_8L_swa1024/log_seed42.txt",
+        "records/track_non_record_16mb/2026-04-01-hymba_ssm4_8L_swa1024/log_seed7.txt",
+        "records/track_non_record_16mb/2026-04-01-hymba_ssm4_8L_swa1024/submission.json",
+        "records/track_non_record_16mb/2026-04-01-hymba_ssm4_8L_swa1024/train_gpt.py"
       ],
       "maintainer_comments": [
         "valerio-oai: Thanks for this submission, I'd like to merge this into the non-record leaderboard.\n\nBefore we merge, could you change the files' location? The PR title marks this as non-record, but the files are currently under:\n\n`records/track_10min_16mb/`\n\nFor it to be an eligible non-record submission, please move it under `records/track_non_record_16mb/...`.\n"
@@ -56993,7 +56995,7 @@
       "author": "CiprianFlorin-Ifrim",
       "state": "MERGED",
       "created": "2026-03-24T19:01:27Z",
-      "updated": "2026-04-13T11:48:23Z",
+      "updated": "2026-05-04T02:56:00Z",
       "bpb": 1.157,
       "seeds": 3,
       "artifact_bytes": 15993853,
@@ -57013,7 +57015,8 @@
         "records/track_10min_16mb/2026-03-24_74M_Ternary_UNet_FP8_10L_8192BPE_YaRN_NeoMuon/train_gpt_cuda_ternary.py"
       ],
       "maintainer_comments": [
-        "0hq: Really excellent work!"
+        "0hq: Really excellent work!",
+        "cocohearts: @CiprianFlorin-Ifrim maintainer repro note: we are doing a pass over merged leaderboard rows and I cannot currently reproduce this ternary record.\n\nWhat I tried:\n- Exact submitted record archive for PR #640.\n- Seed `42`.\n- Same visible hparams as the submitted `ternary_log_42.txt`. Our first generated replay command had `TVERSKY_NUM_FEATURES=0` / `TVERSKY_FEATURE_POOLS=0`, but the submitted log has `128` / `1`, so I reran with those corrected.\n- PyTorch is `2.10.0+cu128` in both submitted log an"
       ],
       "compliance_keywords": [
         "ttt"
@@ -76288,7 +76291,7 @@
       "author": "aruniyer",
       "state": "MERGED",
       "created": "2026-03-19T14:15:44Z",
-      "updated": "2026-04-23T21:58:24Z",
+      "updated": "2026-05-04T02:55:46Z",
       "bpb": null,
       "seeds": 5,
       "artifact_bytes": null,
@@ -76299,7 +76302,9 @@
         "records/track_10min_16mb/2026-03-19_MLP3x_QAT_Int6_SlidingWindow/train.log",
         "records/track_10min_16mb/2026-03-19_MLP3x_QAT_Int6_SlidingWindow/train_gpt.py"
       ],
-      "maintainer_comments": [],
+      "maintainer_comments": [
+        "cocohearts: @aruniyer maintainer repro note: we are doing a pass over merged leaderboard rows and I cannot currently reproduce the claimed `1.1502` record from the files in this PR.\n\nThe issue appears to be an internal record mismatch:\n- README/submission claim the updated config is 11L / MLP3x / int6 QAT, `model_params=26,501,720`, mean `val_bpb=1.15015359`, around `10,070` steps in 600s.\n- The included `train.log` does not match that updated config: it is a 21.8M-param older config and ends at `final_slid"
+      ],
       "compliance_keywords": [],
       "track": "record",
       "technique_type": "neural",
