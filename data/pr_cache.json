@@ -1,7 +1,55 @@
 {
-  "last_fetch": "2026-05-05T16:25:59.060842+00:00",
-  "api_calls_used": 307,
+  "last_fetch": "2026-05-05T17:59:33.010484+00:00",
+  "api_calls_used": 308,
   "prs": [
+    {
+      "number": 2158,
+      "title": "Non-record: PR #2135 + MP3 marker-pair fusion",
+      "author": "izlley",
+      "state": "OPEN",
+      "created": "2026-05-05T16:32:49Z",
+      "updated": "2026-05-05T16:32:49Z",
+      "bpb": 1.05887,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + N-gram",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/README.md",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/alias_map.json",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/download_docs.py",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/lossless_caps.py",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/online_ngram_state.c",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/online_ngram_tilt.py",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/prepare_caseops_data.py",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/prepare_marker_pair_v3.py",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/requirements.txt",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/run_3seed.sh",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/submission.json",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/train_gpt.py",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/train_seed0.log",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/train_seed314.log",
+        "records/track_non_record_16mb/2026-05-05_PR2135_MP3_MarkerPairFusion/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "ngram_path"
+      ],
+      "track": "non-record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 2157,
       "title": "Record candidate: PR #1797 + AWQ-lite top3 + LQER 60k on b180-tlr56 — val_bpb 1.06043 (seed=0)",
@@ -500,7 +548,7 @@
       "author": "leon2k2k2k",
       "state": "OPEN",
       "created": "2026-05-01T23:56:43Z",
-      "updated": "2026-05-05T02:33:07Z",
+      "updated": "2026-05-05T17:38:01Z",
       "bpb": 1.06549,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -522,7 +570,9 @@
         "runs/019b-recur-alpha-manual-constant-full/seed_42/train.log",
         "runs/019b-recur-alpha-manual-constant-full/seed_42/train.tokenizer_path_bug.log",
         "writeup/draft.md",
-        "writeup/outline.md"
+        "writeup/draft_v2.md",
+        "writeup/outline.md",
+        "writeup/outline_v2.md"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
@@ -2945,7 +2995,7 @@
       "author": "teslaeco",
       "state": "OPEN",
       "created": "2026-05-01T02:57:30Z",
-      "updated": "2026-05-02T18:15:07Z",
+      "updated": "2026-05-05T17:36:31Z",
       "bpb": 0.92967555,
       "seeds": 3,
       "artifact_bytes": 15920000,
