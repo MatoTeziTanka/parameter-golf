@@ -1,7 +1,40 @@
 {
-  "last_fetch": "2026-05-06T06:19:00.394497+00:00",
-  "api_calls_used": 314,
+  "last_fetch": "2026-05-06T09:04:04.147734+00:00",
+  "api_calls_used": 315,
   "prs": [
+    {
+      "number": 2159,
+      "title": "Swiglu gating_ QAT_Residual Attention Scalin _EMA- Sliding window_Optimizations  for 10min/16MB Track",
+      "author": "visin109",
+      "state": "OPEN",
+      "created": "2026-05-06T07:29:29Z",
+      "updated": "2026-05-06T07:29:29Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "Muon + SwiGLU + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-10_QAT_Swiglu_Residual-Attention-Scaling_Ema_Hyperparameter_tuning/README.md",
+        "records/track_10min_16mb/2026-04-10_QAT_Swiglu_Residual-Attention-Scaling_Ema_Hyperparameter_tuning/final_model.int8.ptz",
+        "records/track_10min_16mb/2026-04-10_QAT_Swiglu_Residual-Attention-Scaling_Ema_Hyperparameter_tuning/submission.json",
+        "records/track_10min_16mb/2026-04-10_QAT_Swiglu_Residual-Attention-Scaling_Ema_Hyperparameter_tuning/train_gpt.py",
+        "records/track_10min_16mb/2026-04-10_QAT_Swiglu_Residual-Attention-Scaling_Ema_Hyperparameter_tuning/train_logs.txt"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "neural"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2158,
       "title": "Non-record: PR #2135 + MP3 marker-pair fusion",
