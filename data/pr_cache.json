@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-05-08T15:43:24.490593+00:00",
-  "api_calls_used": 341,
+  "last_fetch": "2026-05-08T17:22:31.272187+00:00",
+  "api_calls_used": 342,
   "prs": [
     {
       "number": 2161,
@@ -3350,9 +3350,9 @@
       "number": 2069,
       "title": "Non Record:  4xH100 - val_bpb: 1.26066159,  QK5.25 TTT-disabled non-record submission",
       "author": "tenet-diver",
-      "state": "OPEN",
+      "state": "CLOSED",
       "created": "2026-05-01T01:35:15Z",
-      "updated": "2026-05-01T01:42:07Z",
+      "updated": "2026-05-08T16:41:51Z",
       "bpb": 1.26066159,
       "seeds": 3,
       "artifact_bytes": 16000000,
@@ -3381,9 +3381,11 @@
         "neural"
       ],
       "technique_source": "code",
-      "status": "ALIVE",
-      "flags": [],
-      "confidence": "HIGH"
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
     },
     {
       "number": 2068,
@@ -4090,12 +4092,19 @@
       "author": "tenet-diver",
       "state": "OPEN",
       "created": "2026-04-30T23:55:05Z",
-      "updated": "2026-05-01T00:02:11Z",
+      "updated": "2026-05-08T16:39:56Z",
       "bpb": null,
       "seeds": null,
       "artifact_bytes": 16000000,
       "technique_summary": "TTT + INT8",
       "file_paths": [
+        "OTHER_MACHINE_PR_COMMANDS.md",
+        "fastest/generated/.gitkeep",
+        "fastest/generated/fast866_control_baseline/final_model.pt",
+        "nonrecord_ttt_pr_description.md",
+        "open_nonrecord_ttt_pr.sh",
+        "package_4x_best_submission_pr.sh",
+        "pg_4x_pr_body.md",
         "records/track_non_record_16mb/2026-04-30_gpuq-ttt-disabled-runtime-control_1p44421/README.md",
         "records/track_non_record_16mb/2026-04-30_gpuq-ttt-disabled-runtime-control_1p44421/candidate_env.json",
         "records/track_non_record_16mb/2026-04-30_gpuq-ttt-disabled-runtime-control_1p44421/packaged_batch_rows.json",
@@ -4104,7 +4113,10 @@
         "records/track_non_record_16mb/2026-04-30_gpuq-ttt-disabled-runtime-control_1p44421/submission.json",
         "records/track_non_record_16mb/2026-04-30_gpuq-ttt-disabled-runtime-control_1p44421/train.log",
         "records/track_non_record_16mb/2026-04-30_gpuq-ttt-disabled-runtime-control_1p44421/train_gpt.py",
-        "records/track_non_record_16mb/2026-04-30_gpuq-ttt-disabled-runtime-control_1p44421/train_seed1337.log"
+        "records/track_non_record_16mb/2026-04-30_gpuq-ttt-disabled-runtime-control_1p44421/train_seed1337.log",
+        "run_4x_best_now.sh",
+        "run_pr2069_best_8xh100.sh",
+        "setup_and_run_4x_best.sh"
       ],
       "maintainer_comments": [],
       "compliance_keywords": [
