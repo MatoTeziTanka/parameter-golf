@@ -1,7 +1,45 @@
 {
-  "last_fetch": "2026-05-07T23:27:59.735133+00:00",
-  "api_calls_used": 333,
+  "last_fetch": "2026-05-08T01:19:52.825880+00:00",
+  "api_calls_used": 334,
   "prs": [
+    {
+      "number": 2161,
+      "title": "Add SP4096 qk45 budget reproduction candidate",
+      "author": "adiprathapa",
+      "state": "OPEN",
+      "created": "2026-05-07T23:44:10Z",
+      "updated": "2026-05-07T23:44:10Z",
+      "bpb": null,
+      "seeds": null,
+      "artifact_bytes": 16000000,
+      "technique_summary": "",
+      "file_paths": [
+        "records/track_non_record_16mb/2026-05-07_sp4096_budget_repro/EXPERIMENT_PLAN.md",
+        "records/track_non_record_16mb/2026-05-07_sp4096_budget_repro/README.md",
+        "records/track_non_record_16mb/2026-05-07_sp4096_budget_repro/SUBMISSION_NOTE.md",
+        "records/track_non_record_16mb/2026-05-07_sp4096_budget_repro/requirements.txt",
+        "records/track_non_record_16mb/2026-05-07_sp4096_budget_repro/runpod_results/RESULTS.md",
+        "records/track_non_record_16mb/2026-05-07_sp4096_budget_repro/runpod_results/sp4096_1xh100_seed42_86shards_qk45.txt",
+        "records/track_non_record_16mb/2026-05-07_sp4096_budget_repro/runpod_results/sp4096_1xh100_seed42_86shards_retry.txt",
+        "records/track_non_record_16mb/2026-05-07_sp4096_budget_repro/runpod_results/sp4096_qk45_valid_eval.txt",
+        "records/track_non_record_16mb/2026-05-07_sp4096_budget_repro/submission.json",
+        "records/track_non_record_16mb/2026-05-07_sp4096_budget_repro/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [],
+      "track": "non-record",
+      "technique_type": "neural",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "no-bpb",
+        "seeds-unknown"
+      ],
+      "confidence": "HIGH"
+    },
     {
       "number": 2159,
       "title": "Swiglu gating_ QAT_Residual Attention Scalin _EMA- Sliding window_Optimizations  for 10min/16MB Track",
