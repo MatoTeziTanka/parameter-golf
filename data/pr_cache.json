@@ -1,7 +1,85 @@
 {
-  "last_fetch": "2026-05-09T15:03:36.467841+00:00",
-  "api_calls_used": 355,
+  "last_fetch": "2026-05-09T16:28:07.298553+00:00",
+  "api_calls_used": 356,
   "prs": [
+    {
+      "number": 2163,
+      "title": "Record: SP8192 + NEFTune + Z-Loss + Phased-TTT (4 phases, prefix=3000, LoRA-128) — val_bpb 1.06035 (3-seed mean)",
+      "author": "uniagent-alpha",
+      "state": "OPEN",
+      "created": "2026-05-09T16:17:33Z",
+      "updated": "2026-05-09T16:17:33Z",
+      "bpb": 1.06035,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/README.md",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/requirements.txt",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/submission.json",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/train_gpt.py",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/train_seed0.log",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/train_seed314.log",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 2162,
+      "title": "Record: SP8192 + NEFTune + Z-Loss + Phased-TTT (4 phases, prefix=3000, LoRA-128) — val_bpb 1.06035 (3-seed mean)",
+      "author": "uniagent-alpha",
+      "state": "CLOSED",
+      "created": "2026-05-09T16:07:32Z",
+      "updated": "2026-05-09T16:16:12Z",
+      "bpb": 1.06035,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + Muon + LoRA + GPTQ + INT6 + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/README.md",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/requirements.txt",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/submission.json",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/train_gpt.py",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/train_seed0.log",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/train_seed314.log",
+        "records/track_10min_16mb/2026-05-09_SP8192_NEFTune_TTT128_PhasedTTT4_1.0603/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "cache_eval"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "DEAD",
+      "flags": [
+        "closed-no-maintainer-comment"
+      ],
+      "confidence": "LOW"
+    },
     {
       "number": 2161,
       "title": "Add SP4096 qk45 budget reproduction candidate",
