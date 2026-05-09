@@ -1,10 +1,23 @@
 [
   {
+    "version": "0.9.5",
+    "date": "2026-05-09",
+    "title": "Contest Recap published \u2014 parameter-golf closes at PR #1626 (val_bpb 1.07193)",
+    "changes": [
+      "CONTEST CLOSED: openai/parameter-golf reached its frontier on 2026-04-29 when PR #1626 was MERGED by @cocohearts at val_bpb 1.07193 (3-seed mean), technique multi-phase global SGD + phased TTT, original PR author @dexhunter. Per Mato directive 2026-05-09 'the contest is over', Agora pivots from active-submission tracking to community-research archive.",
+      "NEW DOC: docs/contest-recap-2026-05-09.md \u2014 captures (1) final frontier table, (2) what Light Speed Up shipped including PR #769 PROTEUS+STYX submission + dataset republish + dead-end map + 771-PR sweep + community tooling, (3) what was staged but never fired (PR #1626 reproduction at olympus 09_ARCHIVE/benchmarks/parameter-golf-pr1626-2026-05-09-contest-over/), (4) what survives forward including STYX patent #63/975,190 + PYTHIA benchmark + Reproduction Verification Suite, (5) acknowledgements, (6) contact paths.",
+      "ACKNOWLEDGEMENTS: 1600+ PR submitters who pushed frontier from initial 1.1194 baseline down to 1.07193 over six weeks. @0hq + @valerio-oai for rulings. @cocohearts for the merging shepherd work. @dexhunter for the technique. @Bortlesboat for open-source tooling. @d\u00e9m and the Discord community. Ciprian-Florin Ifrim for documentation high-water mark on PR #1388.",
+      "ARCHIVE: olympus side cleanup commit 2b15818 closes 7 contest-scoped OT tasks (OT-20260414-016, -012, -014, -021, -013 + OT-20260415-008 + OT-20260416-003) with cancelled_reason citing the contest-closure pivot. 7 corresponding olympus GH issues closed (#25 #21 #23 #35 #46 #22 #30) with same explanation.",
+      "SURVIVING SCOPE: STYX patent track (#63/975,190, exp 2026-02-03) + PYTHIA benchmark + Reproduction Verification Suite + Frontier Analysis + funding transparency + dead-end map all stay LIVE. Agora pattern (dual leaderboard + ruling history + dead-end map + funding transparency + compute survival guide) is the durable contribution.",
+      "THIS IS A NARRATIVE-ONLY CHANGE: index.html, leaderboard data, classifications, and all other Agora data surfaces remain unchanged. Pipeline regeneration (python3 scripts/run_pipeline.py) needed for changelog version bar to reflect 0.9.5."
+    ]
+  },
+  {
     "version": "0.9.4",
     "date": "2026-04-24",
     "title": "Funding table data-driven from funding.json; Community Tools section",
     "changes": [
-      "FUNDING DATA-DRIVEN: funding.json seeded with all 8 existing entries. Sentinel comments added to index.html (AGORA:FUNDING_STATS_START/END, AGORA:FUNDING_TABLE_START/END). run_pipeline.py now renders both the stat-grid and table rows from funding.json on every pipeline run — new entries are one-line JSON edits.",
+      "FUNDING DATA-DRIVEN: funding.json seeded with all 8 existing entries. Sentinel comments added to index.html (AGORA:FUNDING_STATS_START/END, AGORA:FUNDING_TABLE_START/END). run_pipeline.py now renders both the stat-grid and table rows from funding.json on every pipeline run \u2014 new entries are one-line JSON edits.",
       "COMMUNITY TOOLS: New section added to #resources listing @Bortlesboat's three parameter-golf tools: parameter-golf-runpod-starter, parameter-golf-sweeps, parameter-golf-size-checker. Factual descriptions, direct links, submit-your-tool invite line.",
       "NAV: 'Community Tools' anchor link added to top nav.",
       "PIPELINE: _render_funding() and _render_funding_stats() functions added to scripts/run_pipeline.py with full type annotations, docstrings, and error handling."
@@ -13,24 +26,24 @@
   {
     "version": "0.9.3",
     "date": "2026-04-20",
-    "title": "Funding Transparency refresh — $1,000 RunPod grant received, full 64-transaction Stripe audit",
+    "title": "Funding Transparency refresh \u2014 $1,000 RunPod grant received, full 64-transaction Stripe audit",
     "changes": [
-      "MATO GRANT UPDATED: $25 → $1,029 total ($1,000 RunPod grant from OpenAI Parameter Golf credit program received 2026-04-14 via openai.modelcraft@credits.runpod.io, plus $25 original + $4 RunPod referrals).",
-      "MATO SELF-FUNDED UPDATED: $867.70 → $1,372.70 reflecting 64 Stripe RunPod reloads through Apr 4 2026 (heaviest: Mar 25 $190, Mar 23 $215). All transactions within contest window Mar 18 → Apr 30.",
-      "STAT-GRID: Total Grants Tracked $1,175 → $2,179 (+$1,004). Total Self-Funded Tracked $5,252+ → $5,757+ (+$505 new Mato Stripe). Participants count unchanged at 8.",
+      "MATO GRANT UPDATED: $25 \u2192 $1,029 total ($1,000 RunPod grant from OpenAI Parameter Golf credit program received 2026-04-14 via openai.modelcraft@credits.runpod.io, plus $25 original + $4 RunPod referrals).",
+      "MATO SELF-FUNDED UPDATED: $867.70 \u2192 $1,372.70 reflecting 64 Stripe RunPod reloads through Apr 4 2026 (heaviest: Mar 25 $190, Mar 23 $215). All transactions within contest window Mar 18 \u2192 Apr 30.",
+      "STAT-GRID: Total Grants Tracked $1,175 \u2192 $2,179 (+$1,004). Total Self-Funded Tracked $5,252+ \u2192 $5,757+ (+$505 new Mato Stripe). Participants count unchanged at 8.",
       "PROOF: Mato row still carries VERIFIED badge (RunPod dashboard + Modal API sourced) plus date annotation on the grant receipt.",
-      "SNAPSHOT: Bumped People-section snapshot from 2026-04-06 → 2026-04-20."
+      "SNAPSHOT: Bumped People-section snapshot from 2026-04-06 \u2192 2026-04-20."
     ]
   },
   {
     "version": "0.9.2",
     "date": "2026-04-15",
-    "title": "Parameter-Golf Dead-End Map published — 14-technique community intelligence resource",
+    "title": "Parameter-Golf Dead-End Map published \u2014 14-technique community intelligence resource",
     "changes": [
-      "NEW RESOURCE: docs/dead-end-map-2026-04-15.md — 14 techniques tested at the 16MB budget that didn't work, with deltas, rationale, and revisit conditions.",
-      "Covers: INT4/RVQ/INT5+GPTQ quantization dead-ends, SWA/XSA attention variants, LeakyReLU 0.9 × parallel residuals path-dependent failure, EngramLite (cross-confirmed by Ciprian-Florin Ifrim's 2026-04-14 Discord post), LoopFormer, Scylla/Gravity tokenizer byte-accounting bugs, GDN kernel swap decision, plus compliance-illegal patterns (n-gram family-bug cluster, SLOT under #1336).",
+      "NEW RESOURCE: docs/dead-end-map-2026-04-15.md \u2014 14 techniques tested at the 16MB budget that didn't work, with deltas, rationale, and revisit conditions.",
+      "Covers: INT4/RVQ/INT5+GPTQ quantization dead-ends, SWA/XSA attention variants, LeakyReLU 0.9 \u00d7 parallel residuals path-dependent failure, EngramLite (cross-confirmed by Ciprian-Florin Ifrim's 2026-04-14 Discord post), LoopFormer, Scylla/Gravity tokenizer byte-accounting bugs, GDN kernel swap decision, plus compliance-illegal patterns (n-gram family-bug cluster, SLOT under #1336).",
       "Confidence markers per entry: [V] verified, [D] documented, [I] inferred, [A] assumed.",
-      "Community contribution: invites PRs with others' dead-end data — turns the map into a living resource.",
+      "Community contribution: invites PRs with others' dead-end data \u2014 turns the map into a living resource.",
       "Attribution: every technique credited to source (PROTEUS experimentation, 771-PR sweep findings, or external confirmation). AI-assisted compilation disclosed.",
       "New Resources > Community Intelligence section added to Agora nav landing area."
     ]
@@ -38,17 +51,17 @@
   {
     "version": "0.9.1",
     "date": "2026-04-14",
-    "title": "Community Impact Charts — interactive tooltips, layout polish, auto-fetch wired",
+    "title": "Community Impact Charts \u2014 interactive tooltips, layout polish, auto-fetch wired",
     "changes": [
-      "INTERACTIVE: Hover (or click on mobile) any day column in the Community Activity chart to see a color-coded tooltip with all four metrics — community comments (blue), Agora reviews (purple), new PRs (yellow), PR updates (green). SVG-native, no JS framework.",
+      "INTERACTIVE: Hover (or click on mobile) any day column in the Community Activity chart to see a color-coded tooltip with all four metrics \u2014 community comments (blue), Agora reviews (purple), new PRs (yellow), PR updates (green). SVG-native, no JS framework.",
       "NEW LINE: PR updates/day green line added to activity chart, drawn on top of bars and yellow line for visibility. Shows the +1941% spike in PR updates during the sweep more clearly than the impact cards alone.",
       "AXIS: Both Y-axes ceil to 800 so dual-axis bar/line heights are directly comparable. Left axis (comments) ceils to nearest 200 above max with 800 minimum. Right axis (PRs) matches the same scale so a 548 bar visually exceeds a 479 line as expected.",
       "WIDTH: Analytics section breaks out of the .container max-width using viewport-width CSS. Charts now fill the full screen width on wide monitors instead of being squeezed into a 900px tile.",
       "LAYOUT: Artifact + Technique Popularity charts moved to a 2-column grid; Compliance, Community Activity, and Review Impact charts remain full-width. Responsive collapse to single column below 900px.",
       "TILES: Review Impact card content vertically centered in each tile. Labels, before/during numbers, and percentages no longer hug the top of the card.",
-      "NAV: 'Community Impact' link added to top nav (purple) — anchors directly to #community-activity above the activity chart.",
-      "AUTO-FETCH: scripts/fetch_community_activity.py wired into run_pipeline.py as Step 2b, so the 30-min cron refreshes activity data automatically. (Production verification still pending — tracked as OT-20260414-004.)",
-      "DATA: Activity data extended through Apr 14 16:00 EST. Apr 13 (full day): 31 community comments, 17 PRs, 38 PR updates — community continued reacting to sweep comments 2-3 days later.",
+      "NAV: 'Community Impact' link added to top nav (purple) \u2014 anchors directly to #community-activity above the activity chart.",
+      "AUTO-FETCH: scripts/fetch_community_activity.py wired into run_pipeline.py as Step 2b, so the 30-min cron refreshes activity data automatically. (Production verification still pending \u2014 tracked as OT-20260414-004.)",
+      "DATA: Activity data extended through Apr 14 16:00 EST. Apr 13 (full day): 31 community comments, 17 PRs, 38 PR updates \u2014 community continued reacting to sweep comments 2-3 days later.",
       "REORDER: Yellow PRs/created line drawn first (behind), green PR updates line drawn last (on top) so the larger green spike isn't obscured by the smaller yellow."
     ]
   },
@@ -57,8 +70,8 @@
     "date": "2026-04-13",
     "title": "Community Activity & Agora Review Impact Charts",
     "changes": [
-      "NEW CHART: Community Activity vs. Agora Reviews — dual-axis timeline showing community comments/day (blue bars), Agora review volume (purple bars), and new PRs/day (yellow line) from competition launch through present.",
-      "NEW CHART: Agora Review Impact — before/during comparison cards showing 7-day pre-sweep averages vs. sweep-day averages for community comments (+38%), new PRs (-16%), and PR updates (+1941%).",
+      "NEW CHART: Community Activity vs. Agora Reviews \u2014 dual-axis timeline showing community comments/day (blue bars), Agora review volume (purple bars), and new PRs/day (yellow line) from competition launch through present.",
+      "NEW CHART: Agora Review Impact \u2014 before/during comparison cards showing 7-day pre-sweep averages vs. sweep-day averages for community comments (+38%), new PRs (-16%), and PR updates (+1941%).",
       "DATA: community_activity.csv added to data/ with daily counts of Mato comments, other comments, PRs created, and PRs updated from 2026-03-18 through 2026-04-13.",
       "CHARTS: generate_community_activity() and generate_review_impact() added to scripts/charts.py, wired into run_pipeline.py with AGORA:CHART_ACTIVITY and AGORA:CHART_IMPACT sentinels."
     ]
