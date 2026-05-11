@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-05-11T11:42:02.628204+00:00",
-  "api_calls_used": 184,
+  "last_fetch": "2026-05-11T15:17:35.691063+00:00",
+  "api_calls_used": 185,
   "prs": [
     {
       "number": 2002,
@@ -82,6 +82,46 @@
         "seeds-unknown",
         "no-submission-json"
       ],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1898,
+      "title": "Record: Partial SpinQuant (start_layer=5) + PR#1851 Stack — val_bpb 1.06614 (3-seed mean)",
+      "author": "X-Abhishek-X",
+      "state": "OPEN",
+      "created": "2026-04-28T17:52:05Z",
+      "updated": "2026-05-11T15:15:39Z",
+      "bpb": 1.06484,
+      "seeds": 3,
+      "artifact_bytes": 16000000,
+      "technique_summary": "TTT + GPTQ",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-28_PartialSpinQuant_EMBED6_CaseOps_PhasedTTT/submission.json",
+        "records/track_10min_16mb/2026-04-28_PartialSpinQuant_EMBED6_CaseOps_PhasedTTT/train_gpt.py",
+        "records/track_10min_16mb/2026-04-28_PartialSpinQuant_EMBED6_CaseOps_PhasedTTT/train_seed1337.log",
+        "records/track_10min_16mb/2026-04-28_PartialSpinQuant_EMBED6_CaseOps_PhasedTTT/train_seed2024.log",
+        "records/track_10min_16mb/2026-04-28_PartialSpinQuant_EMBED6_CaseOps_PhasedTTT/train_seed42.log",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/e2e_proof.log",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/submission.json",
+        "records/track_non_record_16mb/2026-04-26_E2E_TTT_FullModelSGD_1.0706/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-27_SpinQuantV1_PR1851Base_LQERAsym_PhasedTTT/submission.json",
+        "records/track_non_record_16mb/2026-04-27_SpinQuantV1_PR1851Base_LQERAsym_PhasedTTT/train_gpt.py",
+        "records/track_non_record_16mb/2026-04-27_SpinQuantV1_PR1851Base_LQERAsym_PhasedTTT/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "ALIVE",
+      "flags": [],
       "confidence": "HIGH"
     },
     {
