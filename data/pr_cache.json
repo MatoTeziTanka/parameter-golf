@@ -1,7 +1,49 @@
 {
-  "last_fetch": "2026-05-16T12:37:06.598805+00:00",
-  "api_calls_used": 234,
+  "last_fetch": "2026-05-16T14:22:58.760286+00:00",
+  "api_calls_used": 235,
   "prs": [
+    {
+      "number": 2049,
+      "title": "[Non-record] PR #1855 + SWA blend — val_bpb 1.06140 (3-seed)",
+      "author": "ishangodawatta",
+      "state": "OPEN",
+      "created": "2026-04-30T23:41:56Z",
+      "updated": "2026-05-16T13:50:10Z",
+      "bpb": 0.00044,
+      "seeds": 3,
+      "artifact_bytes": 9507,
+      "technique_summary": "TTT + GPTQ + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/2026-04-30_SOTA_1855_plus_SWA_106140/README.md",
+        "records/track_10min_16mb/2026-04-30_SOTA_1855_plus_SWA_106140/lossless_caps.py",
+        "records/track_10min_16mb/2026-04-30_SOTA_1855_plus_SWA_106140/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-04-30_SOTA_1855_plus_SWA_106140/requirements.txt",
+        "records/track_10min_16mb/2026-04-30_SOTA_1855_plus_SWA_106140/submission.json",
+        "records/track_10min_16mb/2026-04-30_SOTA_1855_plus_SWA_106140/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/2026-04-30_SOTA_1855_plus_SWA_106140/train_gpt.py",
+        "records/track_10min_16mb/2026-04-30_SOTA_1855_plus_SWA_106140/train_seed0.log",
+        "records/track_10min_16mb/2026-04-30_SOTA_1855_plus_SWA_106140/train_seed1234.log",
+        "records/track_10min_16mb/2026-04-30_SOTA_1855_plus_SWA_106140/train_seed42.log"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "gptq_eval"
+      ],
+      "track": "non-record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "suspiciously-low-bpb"
+      ],
+      "confidence": "MEDIUM",
+      "flag_reason": "Suspiciously low BPB — likely non-neural"
+    },
     {
       "number": 2002,
       "title": "Non-record: Rust/CUDA record-shaped systems stack",
