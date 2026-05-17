@@ -1,6 +1,6 @@
 {
-  "last_fetch": "2026-05-17T07:57:50.988629+00:00",
-  "api_calls_used": 245,
+  "last_fetch": "2026-05-17T09:54:01.633433+00:00",
+  "api_calls_used": 246,
   "prs": [
     {
       "number": 2049,
@@ -165,6 +165,43 @@
       "technique_source": "code",
       "status": "ALIVE",
       "flags": [],
+      "confidence": "HIGH"
+    },
+    {
+      "number": 1833,
+      "title": "WIP Record: SP8192 + CaseOps + Depth Curriculum + FreqGPTQ + PPM adaptive-λ mixture — val_bpb 0.90687688 (1-seed)",
+      "author": "pragnyanramtha",
+      "state": "OPEN",
+      "created": "2026-04-26T14:07:21Z",
+      "updated": "2026-05-17T09:25:23Z",
+      "bpb": 1.07238,
+      "seeds": 1,
+      "artifact_bytes": 24500000,
+      "technique_summary": "TTT + INT6 + INT8 + EMA",
+      "file_paths": [
+        "records/track_10min_16mb/record3/43.log",
+        "records/track_10min_16mb/record3/lossless_caps.py",
+        "records/track_10min_16mb/record3/prepare_caseops_data.py",
+        "records/track_10min_16mb/record3/tokenizers/fineweb_8192_bpe_lossless_caps_caseops_v1_reserved.model",
+        "records/track_10min_16mb/record3/train_gpt.py",
+        "run.sh",
+        "train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt"
+      ],
+      "track": "record",
+      "technique_type": "ttt",
+      "technique_tags": [
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "INCOMPLETE",
+      "flags": [
+        "seeds-only-1",
+        "no-submission-json"
+      ],
       "confidence": "HIGH"
     },
     {
