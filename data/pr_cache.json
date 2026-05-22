@@ -1,7 +1,48 @@
 {
-  "last_fetch": "2026-05-22T09:32:43.969587+00:00",
-  "api_calls_used": 288,
+  "last_fetch": "2026-05-22T12:23:02.726291+00:00",
+  "api_calls_used": 289,
   "prs": [
+    {
+      "number": 2164,
+      "title": "Submission: Asymmetric Logit Rescale + cap-fit bit allocation (PR #2140 fork) [draft, pending 8×H100]",
+      "author": "vimeto",
+      "state": "OPEN",
+      "created": "2026-05-22T10:53:33Z",
+      "updated": "2026-05-22T10:53:33Z",
+      "bpb": 0.00132,
+      "seeds": null,
+      "artifact_bytes": 15981515,
+      "technique_summary": "TTT + GPTQ + INT6 + INT8 + N-gram",
+      "file_paths": [
+        "records/track_10min_16mb/2026-05-13_AsymLogitRescale_CapFit/README.md",
+        "records/track_10min_16mb/2026-05-13_AsymLogitRescale_CapFit/expected_log.txt",
+        "records/track_10min_16mb/2026-05-13_AsymLogitRescale_CapFit/lumi_logs.txt",
+        "records/track_10min_16mb/2026-05-13_AsymLogitRescale_CapFit/online_ngram_state.c",
+        "records/track_10min_16mb/2026-05-13_AsymLogitRescale_CapFit/online_ngram_tilt.py",
+        "records/track_10min_16mb/2026-05-13_AsymLogitRescale_CapFit/prepare_caseops_data.py",
+        "records/track_10min_16mb/2026-05-13_AsymLogitRescale_CapFit/submission.json",
+        "records/track_10min_16mb/2026-05-13_AsymLogitRescale_CapFit/train_gpt.py"
+      ],
+      "maintainer_comments": [],
+      "compliance_keywords": [
+        "ttt",
+        "ngram",
+        "gptq_eval",
+        "ngram_path"
+      ],
+      "track": "record",
+      "technique_type": "hybrid",
+      "technique_tags": [
+        "ttt",
+        "gptq"
+      ],
+      "technique_source": "code",
+      "status": "AT_RISK",
+      "flags": [
+        "path:ngram-path"
+      ],
+      "confidence": "MEDIUM"
+    },
     {
       "number": 2149,
       "title": "Non-record: SP8192 + RandProj384 tied embeddings + Pairwise-QK Muon -- Single-seed negative result",
